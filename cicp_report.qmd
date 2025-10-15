@@ -1,0 +1,1257 @@
+---
+title: "Indiana Advanced Industries"
+subtitle: "Comprehensive Analysis of Employment, Wages, and Economic Growth"
+date: today
+date-format: "MMMM D, YYYY"
+author: "Riley Hudelson-Zipper"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    toc-title: "Contents"
+    number-sections: true
+    code-fold: true
+    code-summary: "Show code"
+    theme: 
+      - cosmo
+      - custom.scss
+    fontsize: 1.1em
+    fig-width: 14
+    fig-height: 9
+    fig-align: center
+    embed-resources: true
+    smooth-scroll: true
+    link-external-newwindow: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+
+library(tidyverse)
+library(scales)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(htmlwidgets)
+
+# Load processed data
+output_dir <- "outputs_20250709"  # Modify to match your output directory
+load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
+
+viz_dir <- file.path(output_dir, "visualizations")
+viz_path <- "outputs_20250709/visualizations"
+
+# Define color palette
+initiative_colors <- c(
+  "Advanced & Traded Industries" = "#1565C0",
+  "AgriNovus" = "#2E7D32",
+  "BioCrossroads" = "#6A1B9A",
+  "Conexus" = "#D84315",
+  "TechPoint" = "#F57C00",
+  "Total Employment" = "#424242"
+)
+
+# Helper function for beautiful tables
+create_table <- function(df, title = NULL, striped = TRUE) {
+  df %>%
+    kable(
+      format = "html",
+      caption = title,
+      digits = 1,
+      format.args = list(big.mark = ","),
+      align = "l",
+      escape = FALSE
+    ) %>%
+    kable_styling(
+      bootstrap_options = c(
+        if(striped) "striped" else NULL, 
+        "hover", 
+        "condensed", 
+        "responsive"
+      ),
+      full_width = FALSE,
+      position = "left",
+      font_size = 13
+    ) %>%
+    row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
+    as.character() %>%
+    htmltools::HTML()
+}
+```
+
+::: {.callout-important icon="false" appearance="simple"}
+## 📊 Executive Summary
+
+Indiana's advanced industries represent a critical component of the state's economic competitiveness. This comprehensive analysis examines **five key initiatives** across employment trends, wage dynamics, regional concentrations, and economic productivity from **`r min(jobs_data$year)` through `r recent_year`**.
+
+### Key Takeaways
+
+```{r executive_summary_metrics}
+#| output: asis
+
+# Calculate headline metrics
+total_advanced_jobs <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment") %>%
+  summarise(total = sum(jobs, na.rm = TRUE)) %>%
+  pull(total)
+
+total_employment <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative == "Total Employment") %>%
+  pull(jobs)
+
+advanced_share <- (total_advanced_jobs / total_employment) * 100
+
+# Top initiative by employment
+top_employer <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment") %>%
+  arrange(desc(jobs)) %>%
+  slice(1)
+
+# Fastest growing initiative
+fastest_growing <- jobs_growth %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment",
+         !is.na(cagr_3yr)) %>%
+  arrange(desc(cagr_3yr)) %>%
+  slice(1)
+
+# Highest wage initiative
+highest_wage <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment",
+         !is.na(wages)) %>%
+  arrange(desc(wages)) %>%
+  slice(1)
+
+# Average wage premium
+avg_wage_all <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative == "Total Employment") %>%
+  pull(wages)
+
+avg_wage_advanced <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment") %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "Indiana") %>%
+      select(initiative, jobs),
+    by = "initiative"
+  ) %>%
+  summarise(avg = weighted.mean(wages, jobs, na.rm = TRUE)) %>%
+  pull(avg)
+
+wage_premium <- ((avg_wage_advanced - avg_wage_all) / avg_wage_all) * 100
+
+cat(sprintf("
+- **%s** is the largest initiative with **%s jobs**
+- **%s** shows the strongest growth at **%.1f%% 3-year CAGR**
+- **%s** offers the highest wages at **%s annually**
+- Advanced industries pay **%.0f%% more** than the state average
+- **Significant regional variation** exists across Indiana's metro areas
+", 
+top_employer$initiative,
+comma(round(top_employer$jobs, 0)),
+fastest_growing$initiative,
+as.numeric(fastest_growing$cagr_3yr),
+highest_wage$initiative,
+dollar(highest_wage$wages, accuracy = 1),
+as.numeric(wage_premium)
+))
+```
+:::
+
+# Indiana State Performance {#sec-indiana}
+
+## Employment Overview
+
+Indiana's advanced industries form a diverse ecosystem spanning manufacturing, life sciences, agriculture innovation, energy/logistics, and technology. Understanding the employment composition across these initiatives is fundamental to assessing the state's economic strengths.
+
+```{r indiana_employment_table}
+#| tbl-cap: "Indiana Employment by Initiative"
+
+# Get total employment for Indiana
+total_employment <- jobs_data %>%
+  filter(
+    display_level == 0,
+    year == recent_year,
+    geo_area == "Indiana",
+    initiative == "Total Employment"
+  ) %>%
+  pull(jobs)
+
+# Prepare a clean lookup table for the growth rates
+growth_rates <- jobs_growth %>%
+  filter(
+    display_level == 0,
+    year == recent_year,
+    geo_area == "Indiana",
+    initiative != "Total Employment"
+  ) %>%
+  select(initiative, cagr_3yr)
+
+# Now, build the main table using a join
+indiana_jobs <- jobs_data %>%
+  filter(
+    display_level == 0, 
+    year == recent_year,
+    geo_area == "Indiana", 
+    initiative != "Total Employment"
+  ) %>%
+  arrange(desc(jobs)) %>%
+  # Join the growth rate data using 'initiative' as the key
+  left_join(growth_rates, by = "initiative") %>%
+  # Now, mutate and format the columns with clean data
+  mutate(
+    `Total Jobs` = scales::comma(round(jobs, 0)),
+    `Share of Total Employment` = sprintf("%.1f%%", (jobs / total_employment) * 100),
+    `3-Yr CAGR` = sprintf("%.1f%%", cagr_3yr)
+  ) %>%
+  select(
+    Initiative = initiative, 
+    `Total Jobs`,
+    `Share of Total Employment`, 
+    `3-Yr CAGR`
+  )
+
+# This function should now receive a correctly formed data frame
+create_table(indiana_jobs, striped = TRUE)
+
+```
+
+::: column-page
+```{r indiana_jobs_viz, fig.height=7}
+#| fig-cap: "Total employment varies significantly across advanced industry initiatives, reflecting Indiana's diverse economic base. Manufacturing-intensive sectors dominate the employment landscape."
+
+knitr::include_url(file.path(viz_path, "01_indiana_jobs_by_initiative.html"), height = "400px")
+```
+:::
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+The employment distribution reveals Indiana's **manufacturing heritage** alongside emerging sectors. The dominance of traditional advanced industries reflects decades of industrial investment, while smaller but growing initiatives in life sciences and technology represent strategic diversification efforts. This portfolio approach provides economic resilience while positioning Indiana for future growth in high-value sectors.
+:::
+
+## Growth Dynamics
+
+Growth rates reveal which initiatives are expanding and which face headwinds. The compound annual growth rate (CAGR) smooths out short-term volatility to show sustained trends.
+
+```{r indiana_growth_table}
+#| tbl-cap: "Indiana Job Growth Metrics by Initiative"
+
+indiana_growth <- jobs_growth %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment",
+         !is.na(cagr_3yr)) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "Indiana") %>%
+      select(initiative, current_jobs = jobs),
+    by = "initiative"
+  ) %>%
+  arrange(desc(cagr_3yr)) %>%
+  mutate(
+    `Current Jobs` = comma(round(current_jobs, 0)),
+    `YoY Growth` = sprintf("%.1f%%", yoy_growth),
+    `3-Year CAGR` = sprintf("%.1f%%", cagr_3yr),
+    `5-Year CAGR` = if_else(!is.na(cagr_5yr), 
+                            sprintf("%.1f%%", cagr_5yr), 
+                            "—")
+  ) %>%
+  select(Initiative = initiative, `Current Jobs`, 
+         `YoY Growth`, `3-Year CAGR`, `5-Year CAGR`)
+
+create_table(indiana_growth)
+```
+
+::: column-page
+```{r indiana_growth_viz, fig.height=7}
+#| fig-cap: "Growth rate disparities across initiatives indicate shifting economic priorities and market dynamics. Positive growth signals expanding opportunities, while contraction suggests structural challenges or market saturation."
+
+knitr::include_url(file.path(viz_path, "02_indiana_growth_by_initiative.html"), height = "400px")
+```
+:::
+
+## Wage Analysis & Economic Value
+
+Wage levels reflect the economic value and skill requirements of the advanced industry sectors. Higher wages typically correlate with greater worker productivity, advanced skills, and capital intensity.
+
+```{r indiana_wage_table}
+#| tbl-cap: "Indiana Average Annual Wages by Initiative"
+
+avg_state_wage <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative == "Total Employment") %>%
+  pull(wages)
+
+indiana_wages <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment",
+         !is.na(wages)) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "Indiana") %>%
+      select(initiative, jobs),
+    by = "initiative"
+  ) %>%
+  arrange(desc(wages)) %>%
+  mutate(
+    `Average Wage` = dollar(wages, accuracy = 1),
+    `vs. State Avg` = sprintf("%+.0f%%", ((wages - avg_state_wage) / avg_state_wage) * 100),
+    `Total Jobs` = comma(round(jobs, 0)),
+    `Total Payroll` = dollar((wages * jobs) / 1e9, accuracy = 0.1, suffix = "B")
+  ) %>%
+  select(Initiative = initiative, `Average Wage`, `vs. State Avg`, 
+         `Total Jobs`, `Total Payroll`)
+
+create_table(indiana_wages)
+```
+
+
+```{r indiana_wage_viz, fig.height=7}
+#| fig-cap: "Wage levels vary substantially across advanced industries, reflecting differences in skill requirements, capital intensity, and market dynamics. Higher-wage initiatives offer greater economic opportunity for Indiana workers."
+
+knitr::include_url(file.path(viz_path, "04_indiana_wages_by_initiative.html"), height = "600px")
+
+```
+
+
+```{r wage_percentile_table}
+#| tbl-cap: "Wage Distribution Across Initiatives (Indiana)"
+
+wage_percentiles <- wage_data %>%
+  filter(display_level >= 2, year == recent_year, 
+         geo_area == "Indiana", !is.na(wages)) %>%
+  group_by(initiative) %>%
+  summarise(
+    `10th Percentile` = dollar(quantile(wages, 0.10, na.rm = TRUE), accuracy = 1),
+    `25th Percentile` = dollar(quantile(wages, 0.25, na.rm = TRUE), accuracy = 1),
+    `Median` = dollar(median(wages, na.rm = TRUE), accuracy = 1),
+    `75th Percentile` = dollar(quantile(wages, 0.75, na.rm = TRUE), accuracy = 1),
+    `90th Percentile` = dollar(quantile(wages, 0.90, na.rm = TRUE), accuracy = 1),
+    `Industries` = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(Median))
+
+create_table(wage_percentiles)
+```
+
+```{r in_us_wage_comparison}
+#| tbl-cap: "Indiana vs. US Average Wages by Initiative"
+
+wage_comparison <- wage_data %>%
+  filter(display_level == 0, year == recent_year,
+         initiative != "Total Employment", !is.na(wages),
+         geo_area %in% c("Indiana", "United States")) %>%
+  select(geo_area, initiative, wages) %>%
+  pivot_wider(names_from = geo_area, values_from = wages) %>%
+  mutate(
+    `Indiana Wage` = dollar(Indiana, accuracy = 1),
+    `US Wage` = dollar(`United States`, accuracy = 1),
+    `Difference` = dollar(Indiana - `United States`, accuracy = 1),
+    `% Difference` = sprintf("%+.1f%%", ((Indiana - `United States`) / `United States`) * 100),
+    Gap = ifelse(Indiana < `United States`, "Below", "Above")
+  ) %>%
+  arrange(desc(Indiana)) %>%
+  select(Initiative = initiative, `Indiana Wage`, `US Wage`, 
+         `Difference`, `% Difference`, Gap)
+
+create_table(wage_comparison)
+```
+
+## Employment Trends Over Time
+
+Historical employment trends reveal how Indiana's advanced industries have evolved through economic cycles, technological change, and market shifts.
+
+::: column-page
+```{r indiana_timeseries_viz, fig.height=8}
+#| fig-cap: "Historical employment trajectories show how each initiative has responded to economic conditions, technological change, and market dynamics. Divergent patterns reveal differential resilience and growth potential. Dashed lines indicate projected employment."
+
+knitr::include_url(file.path(viz_path, "07_jobs_time_series_by_geography.html"), height = "950px")
+
+```
+:::
+
+```{r indiana_timeseries_table}
+#| tbl-cap: "Employment Change Over Analysis Period: Indiana vs United States"
+
+# Get Indiana data
+indiana_change <- jobs_data %>%
+  filter(display_level == 0, geo_area == "Indiana", 
+         initiative != "Total Employment") %>%
+  group_by(initiative) %>%
+  arrange(year) %>%
+  summarise(
+    Start_Year = first(year),
+    End_Year = 2024,
+    IN_Start_Jobs = first(jobs),
+    IN_End_Jobs = last(jobs),
+    .groups = "drop"
+  )
+
+# Get US data
+us_change <- jobs_data %>%
+  filter(display_level == 0, geo_area == "United States", 
+         initiative != "Total Employment") %>%
+  group_by(initiative) %>%
+  arrange(year) %>%
+  summarise(
+    US_Start_Jobs = first(jobs),
+    US_End_Jobs = last(jobs),
+    .groups = "drop"
+  )
+
+# Combine and format
+time_change <- indiana_change %>%
+  left_join(us_change, by = "initiative") %>%
+  mutate(
+    Period = sprintf("%d–%d", Start_Year, End_Year),
+    `IN Starting Employment` = comma(round(IN_Start_Jobs, 0)),
+    `IN Current Employment` = comma(round(IN_End_Jobs, 0)),
+    `IN Change` = comma(round(IN_End_Jobs - IN_Start_Jobs, 0)),
+    `IN % Change` = sprintf("%.1f%%", ((IN_End_Jobs - IN_Start_Jobs) / IN_Start_Jobs) * 100),
+    `US Starting Employment` = comma(round(US_Start_Jobs, 0)),
+    `US Current Employment` = comma(round(US_End_Jobs, 0)),
+    `US Change` = comma(round(US_End_Jobs - US_Start_Jobs, 0)),
+    `US % Change` = sprintf("%.1f%%", ((US_End_Jobs - US_Start_Jobs) / US_Start_Jobs) * 100)
+  ) %>%
+  select(Initiative = initiative, Period, 
+         `IN Starting Employment`, `IN Current Employment`, 
+         `IN Change`, `IN % Change`,
+         `US Starting Employment`, `US Current Employment`,
+         `US Change`, `US % Change`)
+
+create_table(time_change)
+```
+
+```{r}
+#| tbl-cap: "Employment Volatility by Initiative"
+
+volatility <- jobs_growth %>%
+  filter(display_level == 0, geo_area == "Indiana",
+         initiative != "Total Employment",
+         !is.na(yoy_growth), year <= 2024) %>%
+  group_by(initiative) %>%
+  summarise(
+    mean_growth = mean(yoy_growth, na.rm = TRUE),
+    std_dev = sd(yoy_growth, na.rm = TRUE),
+    min_growth = min(yoy_growth, na.rm = TRUE),
+    max_growth = max(yoy_growth, na.rm = TRUE),
+    cov = sd(yoy_growth, na.rm = TRUE) / abs(mean(yoy_growth, na.rm = TRUE)),
+    years = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(cov)) %>%
+  mutate(
+    `Mean YoY Growth` = sprintf("%.1f%%", mean_growth),
+    `Std Dev` = sprintf("%.1f pp", std_dev),
+    `Min YoY Growth` = sprintf("%.1f%%", min_growth),
+    `Max YoY Growth` = sprintf("%.1f%%", max_growth),
+    `Coefficient of Variation` = sprintf("%.2f", cov),
+    `Years Measured` = as.character(years)
+  ) %>%
+  select(Initiative = initiative, `Mean YoY Growth`, `Std Dev`, 
+         `Min YoY Growth`, `Max YoY Growth`, `Coefficient of Variation`, `Years Measured`)
+
+create_table(volatility)
+```
+
+```{r}
+#| output: asis
+
+# Extract values for programmatic insertion
+vol_data <- jobs_growth %>%
+  filter(display_level == 0, geo_area == "Indiana",
+         initiative != "Total Employment",
+         !is.na(yoy_growth)) %>%
+  group_by(initiative) %>%
+  summarise(
+    mean_growth = mean(yoy_growth, na.rm = TRUE),
+    std_dev = sd(yoy_growth, na.rm = TRUE),
+    min_growth = min(yoy_growth, na.rm = TRUE),
+    max_growth = max(yoy_growth, na.rm = TRUE),
+    cov = sd(yoy_growth, na.rm = TRUE) / abs(mean(yoy_growth, na.rm = TRUE)),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(cov))
+
+# Get specific initiative data
+conexus <- vol_data %>% filter(initiative == "Conexus")
+ati <- vol_data %>% filter(initiative == "Advanced & Traded Industries")
+techpoint <- vol_data %>% filter(initiative == "TechPoint")
+agrinou <- vol_data %>% filter(initiative == "AgriNovus")
+bio <- vol_data %>% filter(initiative == "BioCrossroads")
+
+cat(sprintf("
+- **Conexus** (CoV = %.2f) shows the highest volatility, with employment swings ranging from %.1f%% to +%.1f%% despite modest average growth of %.1f%%. This reflects sensitivity to economic cycles in logistics and manufacturing.
+
+- **Advanced & Traded Industries** (CoV = %.2f) exhibits moderate-high volatility, typical of advanced manufacturing and other traded sectors exposed to national and global demand fluctuations.
+
+- **TechPoint, AgriNovus, and BioCrossroads** (CoV ≈ %.2f-%.2f) demonstrate more stable growth patterns. These sectors show consistent expansion with lower cyclical sensitivity, suggesting structural growth drivers rather than cyclical fluctuations.
+
+The standard deviation column shows the typical year-to-year swing in percentage points. For example, Conexus typically varies by ±%.1f percentage points around its mean growth rate of %.1f%%, while BioCrossroads varies by ±%.1f points around %.1f%% average growth.
+",
+conexus$cov,
+conexus$min_growth, conexus$max_growth, conexus$mean_growth,
+ati$cov,
+min(bio$cov, agrinou$cov, techpoint$cov), max(bio$cov, agrinou$cov, techpoint$cov),
+conexus$std_dev, conexus$mean_growth,
+bio$std_dev, bio$mean_growth
+))
+```
+
+# Geographic Distribution {#sec-geography}
+
+## Metropolitan Area Concentration
+
+Advanced industry employment is not uniformly distributed across Indiana. Metro areas vary significantly in their industrial composition, scale, and specialization patterns.
+
+```{r metro_employment_table}
+#| tbl-cap: "Employment by Initiative, Indiana and Metros, 2023"
+
+# Get total employment for each geography
+total_employment <- jobs_data %>%
+  filter(display_level == 0, year == recent_year,
+         initiative == "Total Employment") %>%
+  select(geo_area, total_jobs = jobs)
+
+# Get all metros plus Indiana, pivoted by initiative with percentages
+all_metros_initiatives <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         initiative != "Total Employment") %>%
+  filter(geo_type %in% c("Metro", "State")) %>%
+  select(geo_area, geo_type, initiative, jobs) %>%
+  left_join(total_employment, by = "geo_area") %>%
+  mutate(
+    display_value = sprintf("%s (%.1f%%)", 
+                           comma(round(jobs, 0)), 
+                           (jobs / total_jobs) * 100)
+  ) %>%
+  select(geo_area, geo_type, initiative, display_value, total_jobs) %>%
+  pivot_wider(names_from = initiative, values_from = display_value, values_fill = "0 (0.0%)") %>%
+  mutate(
+    sort_order = if_else(geo_type == "State", 0, 1),
+    `Total Employment` = comma(round(total_jobs, 0))
+  ) %>%
+  arrange(sort_order, geo_area) %>%
+  select(Geography = geo_area, `Total Employment`, 
+         `Advanced & Traded Industries`, AgriNovus, BioCrossroads, Conexus, TechPoint)
+
+all_metros_initiatives %>%
+  kable(
+    format = "html",
+    align = c("l", "r", rep("r", ncol(all_metros_initiatives) - 2)),
+    escape = FALSE
+  ) %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = FALSE,
+    position = "left",
+    font_size = 13
+  ) %>%
+  row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
+  row_spec(1, bold = TRUE, background = "#e3f2fd") %>%  # Highlight Indiana row
+  scroll_box(height = "500px") %>%
+  as.character() %>%
+  htmltools::HTML()
+
+```
+
+## Metro Area Growth Performance
+
+Growth rates reveal which metro areas are **emerging** versus **mature** advanced industry centers. Understanding these dynamics helps target economic development resources.
+
+```{r metro_growth_table}
+#| tbl-cap: "Metro Area Growth Rankings (5-Year CAGR)"
+
+metro_growth <- jobs_growth %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_type == "Metro", initiative != "Total Employment",
+         !is.na(cagr_5yr)) %>%
+  group_by(geo_area) %>%
+  summarise(
+    total_jobs = sum(jobs, na.rm = TRUE),
+    avg_cagr = weighted.mean(cagr_5yr, jobs, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(avg_cagr)) %>%
+  head(15) %>%
+  mutate(
+    Rank = row_number(),
+    `Current Employment` = comma(round(total_jobs, 0)),
+    `5-Year CAGR` = sprintf("%.1f%%", avg_cagr)
+  ) %>%
+  select(Rank, `Metro Area` = geo_area, 
+         `Current Employment`, `5-Year CAGR`)
+
+create_table(metro_growth, striped = TRUE)
+```
+
+::: column-page
+```{r metro_growth_viz, fig.height=12}
+#| fig-cap: "Metro area growth rates vary substantially, with some showing robust expansion while others contract. The dropdown menu allows exploration of growth patterns across all initiatives. Starting and ending employment levels provide context for growth magnitude."
+
+knitr::include_url(file.path(viz_path, "05_all_metros_growth_rates.html"), height = "800px")
+```
+:::
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+Metro performance reveals a **dispersed growth pattern** rather than concentration in Indiana's largest cities. Some smaller metros achieve impressive percentage growth from modest bases, while larger metros show more moderate but substantial absolute growth. This suggests **opportunities exist beyond traditional economic centers**. Policy makers should consider whether rapid-growth smaller metros possess **replicable success factors** or unique circumstances. Growth leaders merit study as potential **models for other regions**.
+:::
+
+## Regional Specialization & Industry Mix
+
+Metro areas develop distinct **industrial specializations** based on history, workforce skills, infrastructure, and institutional anchors. Understanding these patterns reveals competitive advantages.
+
+::: column-page
+```{r metro_mix_viz, fig.height=15}
+#| fig-cap: "Initiative composition varies dramatically across metro areas, revealing distinct regional specializations. Stacked bars show absolute employment scale while proportions indicate relative specialization patterns."
+
+knitr::include_url(file.path(viz_path, "06_metro_initiative_share.html"), height = "1200px")
+```
+:::
+
+```{r metro_specialization_table}
+#| tbl-cap: "Metro Area Dominant Initiatives (Highest Employment Share)"
+
+metro_spec <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_type == "Metro", initiative != "Total Employment") %>%
+  group_by(geo_area) %>%
+  mutate(total_metro = sum(jobs, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(share = (jobs / total_metro) * 100) %>%
+  group_by(geo_area) %>%
+  slice_max(share, n = 1) %>%
+  ungroup() %>%
+  arrange(desc(total_metro)) %>%
+  head(10) %>%
+  mutate(
+    `Dominant Initiative` = initiative,
+    `Share of Metro Advanced Jobs` = sprintf("%.1f%%", share),
+    `Initiative Employment` = comma(round(jobs, 0)),
+    `Total Metro Advanced Jobs` = comma(round(total_metro, 0))
+  ) %>%
+  select(`Metro Area` = geo_area, `Dominant Initiative`, 
+         `Share of Metro Advanced Jobs`, `Initiative Employment`, 
+         `Total Metro Advanced Jobs`)
+
+create_table(metro_spec)
+```
+
+::: {.callout-important icon="false"}
+## 🎯 Strategic Implications
+
+Regional specialization patterns suggest metro areas should pursue **differentiated strategies** rather than one-size-fits-all approaches. Areas with strong concentrations should **deepen their specialization** through cluster development, while more diversified metros might pursue **portfolio strategies**. Understanding dominant initiatives helps align **education/training programs** with local labor market needs and informs **site selection decisions** for firms seeking industry clusters.
+:::
+
+# Comparative Regional Analysis {#sec-comparative}
+
+## Industry Specialization Patterns (Location Quotients)
+
+**Location quotients (LQ)** measure regional industry concentration relative to the national baseline. An LQ \> 1 indicates specialization (higher concentration than US average), while LQ \< 1 suggests underrepresentation.
+
+::: column-page
+```{r lq_heatmap_viz, fig.height=15}
+#| fig-cap: "Location quotients reveal which metro areas specialize in particular initiatives relative to the US average. Red shading (LQ > 1) indicates regional specialization, while blue (LQ < 1) shows underrepresentation. Metro areas can leverage specializations for competitive advantage."
+
+knitr::include_url(file.path(viz_path, "09_location_quotient_heatmap.html"), height = "1200px")
+```
+:::
+
+```{r lq_summary_table}
+#| tbl-cap: "Metro Areas with Strongest Specializations (LQ > 1.5)"
+
+lq_summary <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         initiative != "Total Employment") %>%
+  cross_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "United States", initiative == "Total Employment") %>%
+      select(us_total = jobs)
+  ) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "United States", initiative != "Total Employment") %>%
+      select(initiative, us_initiative_jobs = jobs),
+    by = "initiative"
+  ) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             initiative == "Total Employment") %>%
+      select(geo_area, metro_total = jobs),
+    by = "geo_area"
+  ) %>%
+  mutate(
+    metro_pct = (jobs / metro_total) * 100,
+    us_pct = (us_initiative_jobs / us_total) * 100,
+    lq = metro_pct / us_pct
+  ) %>%
+  filter(geo_type == "Metro", lq > 1.5) %>%
+  arrange(desc(lq)) %>%
+  head(15) %>%
+  mutate(
+    `Location Quotient` = sprintf("%.2f", lq),
+    `Metro %` = sprintf("%.1f%%", metro_pct),
+    `US %` = sprintf("%.1f%%", us_pct)
+  ) %>%
+  select(`Metro Area` = geo_area, Initiative = initiative, 
+         `Location Quotient`, `Metro %`, `US %`)
+
+create_table(lq_summary, striped = TRUE)
+```
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+The location quotient analysis reveals **distinct regional specializations** that reflect historical development paths, institutional anchors (universities, research centers), natural advantages, and policy choices. High LQ values indicate **established competitive advantages** that can be leveraged for further growth. Metro areas with strong specializations should consider **cluster development strategies**, while those lacking specialization might pursue **strategic targeting** of specific initiatives aligned with workforce capabilities and infrastructure.
+:::
+
+## Initiative Composition Across Regions
+
+How do metro areas compare in their initiative mix? This **faceted comparison** shows each initiative's employment share across all regions.
+
+::: column-page
+```{r initiative_faceted_viz, fig.height=18}
+#| fig-cap: "Initiative-specific employment shares across all geographies reveal substantial regional variation. Each panel shows how one initiative's importance varies across metros, providing insights into regional competitive positioning."
+
+knitr::include_url(file.path(viz_path, "10_initiative_mix_faceted.html"), height = "1400px")
+```
+:::
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+The faceted view makes regional variation starkly apparent. Some initiatives show **high geographic concentration** (few metros dominate), while others are more **evenly distributed**. Concentrated initiatives may face **talent competition** and **supply chain bottlenecks** in specialized regions but benefit from **agglomeration economies**. Distributed initiatives suggest more **generalized capability** or **lower barriers to entry**. Understanding these patterns helps guide **recruitment and expansion strategies**.
+:::
+
+## Wage Premiums Across Regions
+
+Do advanced industries pay similar wage premiums everywhere, or do regional labor markets differ? **Wage premium analysis** compares initiative wages to regional overall averages.
+
+::: column-page
+```{r wage_premium_viz, fig.height=18}
+#| fig-cap: "Wage premiums (percentage above regional average) vary significantly across metro areas and initiatives. Positive values (blue) indicate advanced industries pay more than the regional average, while negative values (red) suggest below-average compensation. Regional labor market dynamics create substantial variation."
+
+knitr::include_url(file.path(viz_path, "11_wage_premium_heatmap.html"), height = "1200px")
+```
+:::
+
+```{r wage_premium_table}
+#| tbl-cap: "Highest Wage Premiums by Metro Area and Initiative"
+
+wage_premium_summary <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         initiative != "Total Employment", !is.na(wages)) %>%
+  left_join(
+    wage_data %>%
+      filter(display_level == 0, year == recent_year,
+             initiative == "Total Employment") %>%
+      select(geo_area, total_wage = wages),
+    by = "geo_area"
+  ) %>%
+  mutate(
+    wage_premium = ((wages - total_wage) / total_wage) * 100
+  ) %>%
+  filter(geo_type %in% c("Metro", "State")) %>%
+  arrange(desc(wage_premium)) %>%
+  head(15) %>%
+  mutate(
+    `Initiative Wage` = dollar(wages, accuracy = 1),
+    `Regional Average` = dollar(total_wage, accuracy = 1),
+    `Premium` = sprintf("%+.0f%%", wage_premium)
+  ) %>%
+  select(`Geography` = geo_area, Initiative = initiative, 
+         `Initiative Wage`, `Regional Average`, `Premium`)
+
+create_table(wage_premium_summary)
+```
+
+## Employment Growth Trajectories
+
+How do different regions' growth paths compare over time? **Indexed employment trends** make it easy to see relative performance since a common baseline.
+
+::: column-page
+```{r growth_trajectories_viz, fig.height=14}
+#| fig-cap: "Indexed employment trends (base year = 100) reveal divergent growth trajectories across metro areas. Gray lines show individual metros while Indiana (green) and US (red) provide benchmark comparisons. Dashed lines indicate projected values. Use the dropdown to examine different initiatives."
+
+knitr::include_url(file.path(viz_path, "12_growth_comparison_interactive.html"), height = "1200px")
+```
+:::
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+The indexed view reveals **heterogeneous recovery and growth patterns**. Some metros show **consistent outperformance** of state and national benchmarks, suggesting strong local fundamentals or effective strategies. Others lag persistently, indicating **structural challenges** or competitive disadvantages. The **pandemic shock** created divergent paths—some metros proved resilient while others suffered lasting setbacks. These patterns should inform **targeted interventions** and help identify **best practices** from high-performing regions.
+:::
+
+# Strategic Positioning Analysis {#sec-strategic}
+
+## Growth vs. Scale Quadrant Analysis
+
+The **Growth-Level Quadrant** positions metro areas based on their employment growth rate versus employment share of total metro employment. This reveals strategic positioning.
+
+::: column-page
+```{r quadrant_viz, fig.height=18}
+#| fig-cap: "Quadrant analysis positions metros by growth rate (vertical) and employment share (horizontal), with median values as reference lines. **Stars** (high growth, high share) are thriving clusters. **Emerging** (high growth, low share) are up-and-comers. **Mature** (low growth, high share) are established but slowing. **Declining** sectors merit attention. Use dropdown to examine different initiatives."
+
+knitr::include_url(file.path(viz_path, "13_growth_vs_level_quadrant_interactive.html"), height = "1000px")
+```
+:::
+
+```{r quadrant_table}
+#| tbl-cap: "Metro Strategic Positioning Summary"
+
+quadrant_summary <- jobs_growth %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_type == "Metro", initiative != "Total Employment",
+         !is.na(cagr_5yr)) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             initiative == "Total Employment") %>%
+      select(geo_area, total_employment = jobs),
+    by = "geo_area"
+  ) %>%
+  mutate(
+    employment_share = (jobs / total_employment) * 100
+  ) %>%
+  group_by(initiative) %>%
+  mutate(
+    median_growth = median(cagr_5yr, na.rm = TRUE),
+    median_share = median(employment_share, na.rm = TRUE),
+    quadrant = case_when(
+      cagr_5yr >= median_growth & employment_share >= median_share ~ "⭐ Stars",
+      cagr_5yr >= median_growth & employment_share < median_share ~ "🚀 Emerging",
+      cagr_5yr < median_growth & employment_share >= median_share ~ "📊 Mature",
+      TRUE ~ "⚠️ Declining"
+    )
+  ) %>%
+  ungroup() %>%
+  group_by(initiative, quadrant) %>%
+  summarise(n_metros = n(), .groups = "drop") %>%
+  pivot_wider(names_from = quadrant, values_from = n_metros, values_fill = 0)
+
+create_table(quadrant_summary, striped = TRUE)
+```
+
+::: {.callout-important icon="false"}
+## 🎯 Strategic Implications
+
+**Quadrant positioning** suggests differentiated strategies:
+
+-   **Stars** warrant **sustained investment** and **cluster deepening** to maintain momentum
+-   **Emerging** areas need **infrastructure and talent pipeline development** to support growth
+-   **Mature** sectors require **innovation and productivity initiatives** to reignite growth
+-   **Declining** areas need **transition planning** and **diversification strategies**
+
+The quadrant analysis helps prioritize economic development resources and identify metros that could serve as models for others in similar positions.
+:::
+
+## Growth Acceleration & Deceleration
+
+Is employment growth **speeding up or slowing down**? Comparing early-period to late-period growth rates reveals acceleration or deceleration trends.
+
+::: column-page
+```{r acceleration_viz, fig.height=15}
+#| fig-cap: "Acceleration analysis compares early-period CAGR (horizontal) to late-period CAGR (vertical). Points above the diagonal line show **accelerating** growth, while points below show **decelerating** growth. This reveals momentum shifts and helps identify emerging trends. Use dropdown to examine different initiatives."
+
+knitr::include_url(file.path(viz_path, "14_acceleration_deceleration_interactive.html"), height = "1000px")
+```
+:::
+
+```{r acceleration_table}
+#| tbl-cap: "Metro Areas with Greatest Growth Acceleration"
+
+max_est_year <- 2024
+
+accel_summary <- jobs_data %>%
+  filter(display_level == 0,
+         initiative != "Total Employment",
+         geo_type %in% c("Metro", "State", "US")) %>%
+  arrange(initiative, geo_area, year) %>%
+  group_by(initiative, geo_area, geo_type) %>%
+  summarise(
+    years_available = n(),
+    min_year = min(year),
+    max_year = max_est_year,
+    mid_year = min_year + ceiling((max_year - min_year) / 2),
+    early_cagr = if_else(
+      years_available >= 6,
+      ((jobs[year == mid_year] / jobs[year == min_year])^(1/(mid_year - min_year)) - 1) * 100,
+      NA_real_
+    ),
+    late_cagr = if_else(
+      years_available >= 6,
+      ((jobs[year == max_year] / jobs[year == mid_year])^(1/(max_year - mid_year)) - 1) * 100,
+      NA_real_
+    ),
+    total_jobs = jobs[year == max_year],
+    .groups = "drop"
+  ) %>%
+  filter(!is.na(early_cagr), !is.na(late_cagr),
+         !is.infinite(early_cagr), !is.infinite(late_cagr)) %>%
+  mutate(
+    acceleration = late_cagr - early_cagr,
+    trend = if_else(late_cagr > early_cagr, "Accelerating", "Decelerating")
+  ) %>%
+  filter(trend == "Accelerating", geo_type == "Metro") %>%
+  arrange(desc(acceleration)) %>%
+  head(15) %>%
+  mutate(
+    `Early CAGR` = sprintf("%.1f%%", early_cagr),
+    `Late CAGR` = sprintf("%.1f%%", late_cagr),
+    `Acceleration` = sprintf("%+.1f pp", acceleration),
+    `Current Jobs` = comma(round(total_jobs, 0))
+  ) %>%
+  select(`Metro Area` = geo_area, Initiative = initiative,
+         `Early CAGR`, `Late CAGR`, `Acceleration`, `Current Jobs`)
+
+create_table(accel_summary)
+```
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+Growth acceleration patterns reveal **shifting momentum** across metro areas and initiatives. Metros showing **acceleration** may have recently implemented successful strategies, attracted key investments, or benefited from favorable market trends. Those showing **deceleration** may face emerging headwinds, saturation, or competitive pressure. Understanding these dynamics helps distinguish **durable trends** from temporary fluctuations and can inform forecasting and strategic planning.
+:::
+
+# Economic Productivity & Impact {#sec-productivity}
+
+## GDP Growth vs. Employment Growth
+
+The relationship between **GDP growth** and **jobs growth** reveals productivity dynamics. When GDP grows faster than employment, **productivity is improving**.
+
+::: column-page
+```{r gdp_jobs_scatter_viz, fig.height=14}
+#| fig-cap: "GDP growth vs. jobs growth reveals productivity patterns across metro areas. Points above the diagonal have GDP growing faster than employment (productivity gains). Bubble size represents total jobs. The diagonal line represents proportional growth—points above show productivity improvement."
+
+knitr::include_url(file.path(viz_path, "08_gdp_vs_jobs_growth_scatter.html"), height = "1000px")
+```
+:::
+
+```{r productivity_table}
+#| tbl-cap: "Geographies by Productivity and Employment Growth"
+
+if(exists("gdp_growth") && nrow(gdp_growth) > 0) {
+  productivity_summary <- gdp_growth %>%
+    filter(display_level == 0, 
+           geo_type %in% c("Metro", "State", "US"),
+           initiative == "Total Employment") %>%
+    arrange(geo_area, year) %>%  # Ensure proper ordering for lag
+    group_by(geo_area) %>%  # Group so lag works within each geography
+    mutate(
+      jobs_growth = yoy_growth,  # Already calculated
+      gdp_growth = (grp / lag(grp) - 1) * 100  # Calculate before filtering year
+    ) %>%
+    ungroup() %>%  # Ungroup before filtering
+    filter(year == recent_year,  # NOW filter to recent year
+           !is.na(yoy_growth),
+           !is.na(gdp_growth),
+           !is.infinite(gdp_growth)) %>%
+    mutate(
+      gdp_per_job = grp / jobs,
+      sort_order = case_when(
+        geo_area == "United States" ~ 1,
+        geo_area == "Indiana" ~ 2,
+        TRUE ~ 3
+      )
+    ) %>%
+    arrange(sort_order, geo_area) %>%
+    mutate(
+      `Jobs Growth` = sprintf("%.1f%%", jobs_growth),
+      `GDP Growth` = sprintf("%.1f%%", gdp_growth),
+      `GDP per Job` = dollar(gdp_per_job, accuracy = 1),
+      Year = as.character(recent_year)
+    ) %>%
+    select(Geography = geo_area, Year, `Jobs Growth`, `GDP Growth`,
+           `GDP per Job (Labor Productivity)` = `GDP per Job`)
+  
+  create_table(productivity_summary, striped = TRUE)
+}
+
+```
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+The productivity lens reveals **economic efficiency** beyond raw employment numbers. Regions with **strong productivity gains** (GDP growth exceeding jobs growth) may be adopting automation, improving processes, or shifting to higher-value activities. This is generally positive for **economic output and wages** but may present **workforce transition challenges**. Conversely, regions where jobs grow faster than GDP may indicate **declining productivity** or **wage pressure**, warranting investigation into competitiveness factors.
+:::
+
+# Key Findings {#sec-findings}
+
+## Summary of Critical Insights
+
+::: {.callout-tip icon="false"}
+## 📌 Employment Landscape
+
+```{r findings_employment}
+#| output: asis
+
+# Top 3 by employment
+top3_employment <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment") %>%
+  arrange(desc(jobs)) %>%
+  head(3)
+
+# Top 3 by growth
+top3_growth <- jobs_growth %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment",
+         !is.na(cagr_3yr)) %>%
+  arrange(desc(cagr_3yr)) %>%
+  head(3)
+
+cat("**Scale Leaders:**\n")
+for(i in 1:3) {
+  cat(sprintf("- **%s**: %s jobs\n\n", 
+              top3_employment$initiative[i],
+              comma(round(top3_employment$jobs[i], 0))))
+}
+
+cat("\n**Growth Leaders:**\n\n")
+for(i in 1:3) {
+  cat(sprintf("- **%s**: %.1f%% 3-year CAGR\n\n", 
+              top3_growth$initiative[i],
+              top3_growth$cagr_3yr[i]))
+}
+```
+:::
+
+::: {.callout-tip icon="false"}
+## 💰 Wage & Economic Value
+
+```{r findings_wages}
+#| output: asis
+
+# Top 3 by wages
+top3_wages <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment",
+         !is.na(wages)) %>%
+  arrange(desc(wages)) %>%
+  head(3)
+
+# Calculate total payroll impact
+total_payroll <- wage_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_area == "Indiana", initiative != "Total Employment") %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "Indiana") %>%
+      select(initiative, jobs),
+    by = "initiative"
+  ) %>%
+  summarise(total = sum(wages * jobs, na.rm = TRUE) / 1e9) %>%
+  pull(total)
+
+cat("**Highest-Paying Initiatives:**\n\n")
+for(i in 1:3) {
+  cat(sprintf("- **%s**: %s average annual wage\n\n", 
+              top3_wages$initiative[i],
+              dollar(top3_wages$wages[i], accuracy = 1)))
+}
+
+cat(sprintf("\n**Total Annual Payroll**: %s across all advanced industries\n\n",
+            dollar(total_payroll, accuracy = 0.1, suffix = "B")))
+```
+:::
+
+::: {.callout-tip icon="false"}
+## 🌍 Geographic Patterns
+
+```{r findings_geography}
+#| output: asis
+
+# Top 3 metros by Advanced & Traded Industries share of total employment
+top3_ati_metros <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         geo_type == "Metro") %>%
+  select(geo_area, initiative, jobs) %>%
+  pivot_wider(names_from = initiative, values_from = jobs) %>%
+  mutate(
+    ati_share = (`Advanced & Traded Industries` / `Total Employment`) * 100
+  ) %>%
+  arrange(desc(ati_share)) %>%
+  head(5)
+
+# Most specialized metros
+top_specialists <- jobs_data %>%
+  filter(display_level == 0, year == recent_year, 
+         initiative != "Total Employment") %>%
+  cross_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "United States", initiative == "Total Employment") %>%
+      select(us_total = jobs)
+  ) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year, 
+             geo_area == "United States", initiative != "Total Employment") %>%
+      select(initiative, us_initiative_jobs = jobs),
+    by = "initiative"
+  ) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             initiative == "Total Employment") %>%
+      select(geo_area, metro_total = jobs),
+    by = "geo_area"
+  ) %>%
+  mutate(
+    metro_pct = (jobs / metro_total) * 100,
+    us_pct = (us_initiative_jobs / us_total) * 100,
+    lq = metro_pct / us_pct
+  ) %>%
+  filter(geo_type == "Metro") %>%
+  arrange(desc(lq)) %>%
+  head(5)
+
+cat("**Highest Advanced & Traded Industries Concentration:**\n\n")
+for(i in 1:5) {
+  cat(sprintf("- **%s**: %.1f%% of total employment\n\n", 
+              top3_ati_metros$geo_area[i],
+              top3_ati_metros$ati_share[i]))
+}
+
+cat("**Strongest Specializations (Highest LQ):**\n\n")
+for(i in 1:5) {
+  cat(sprintf("- **%s** - %s (LQ: %.2f)\n\n", 
+              top_specialists$geo_area[i],
+              top_specialists$initiative[i],
+              top_specialists$lq[i]))
+}
+```
+:::
+
+
+# Methodology & Technical Notes {#sec-methodology}
+
+## Geographic Coverage
+
+Analysis includes three geographic levels:
+
+-   **United States**: National benchmarks for comparative analysis
+-   **Indiana**: Statewide aggregates
+-   **Metro Areas**: Metropolitan Statistical Areas (MSAs) within Indiana
+
+## Key Metrics Definitions
+
+```{r methodology_metrics}
+#| tbl-cap: "Metric Definitions and Interpretations"
+
+metrics <- tribble(
+  ~Metric, ~Definition, ~Interpretation,
+  "Jobs", "Total employment in sector/geography", "Scale measure",
+  "Wages", "Average annual wages per worker", "Economic value per worker",
+  "GDP/GRP", "Gross Regional Product", "Total economic output",
+  "YoY Growth", "Year-over-year % change", "Short-term momentum",
+  "CAGR", "Compound Annual Growth Rate", "Sustained trend",
+  "GDP per Job", "GDP ÷ Employment", "Productivity measure",
+  "Location Quotient", "(Local %) ÷ (National %)", "Specialization measure (>1 = specialized)"
+)
+
+create_table(metrics, striped = TRUE)
+```
+
+## Analytical Approaches
+
+### Growth Calculations
+
+-   **Year-over-Year (YoY)**: $(Value_t / Value_{t-1}) - 1$
+-   **CAGR**: $(Value_{end} / Value_{start})^{1/years} - 1$
+-   **Productivity Change**: GDP Growth Rate - Jobs Growth Rate
+
+### Location Quotient
+
+$LQ = \frac{(Regional\ Jobs_i / Regional\ Jobs_{total})}{(National\ Jobs_i / National\ Jobs_{total})}$
+
+Where: - $LQ > 1$: Regional specialization (higher concentration than national average) - $LQ = 1$: Regional concentration matches national average - $LQ < 1$: Regional underrepresentation
+
+### Quadrant Analysis
+
+Uses **median values** as thresholds to classify metros: - **Stars**: Above-median growth AND above-median employment share - **Emerging**: Above-median growth, below-median employment share - **Mature**: Below-median growth, above-median employment share - **Declining**: Below-median growth AND below-median employment share
+
+## Data Quality Notes
+
+-   Employment data sourced from **Quarterly Census of Employment and Wages (QCEW) via Lightcast**
+-   GDP/GRP data from **Bureau of Economic Analysis (BEA)**
+-   Some metro areas may have **suppressed values** for confidentiality
+-   **Projections** (years beyond 2024) indicated by dashed lines in visualizations
+-   All monetary values in **nominal dollars** (not inflation-adjusted)
+
+## Limitations & Caveats
+
+::: callout-warning
+## ⚠️ Important Considerations
+
+1.  **Initiative Overlap**: Some jobs may be counted in multiple initiatives if they meet criteria for more than one classification
+2.  **Geographic Boundaries**: Metro area definitions follow OMB standards and include the *entire* metros, not just the Indiana portions
+3.  **Timing Lags**: GDP data may lag employment data by several months
+4.  **Suppressed Data**: Small cell sizes suppressed for confidentiality may affect some calculations
+5.  **Projection Uncertainty**: Future year estimates (beyond 2024) carry increasing uncertainty
+6.  **Seasonal Adjustment**: Some metrics are not seasonally adjusted
+:::
+
+# Additional Resources {#sec-resources}
+
+## Data Sources
+
+-   **CICP Advanced Industries Dashboard**: <https://www.cicpindiana.com/advanced-industry-dashboard/>
+-   **Bureau of Labor Statistics QCEW**: <https://www.bls.gov/cew/>
+-   **Bureau of Economic Analysis**: <https://www.bea.gov/>
+-   **Lightcast**: <https://www.lightcast.io/>
+
+## Initiative Websites
+
+-   **CICP**: <https://www.cicpindiana.com/>
+-   **AgriNovus Indiana**: <https://agrinovusindiana.com/>
+-   **BioCrossroads**: <https://biocrossroads.com/>
+-   **Conexus Indiana**: <https://conexusindiana.com/>
+-   **TechPoint**: <https://techpoint.org/>
+
+## Contact Information
+
+For questions, additional analysis, or data requests:
+
+**Riley Hudelson-Zipper**\
+Email: zipperr\@iu.edu
+
+------------------------------------------------------------------------
+
+::: {.callout-note icon="false" appearance="minimal"}
+## 📄 Report Information
+
+**Report Generated**: `r format(Sys.Date(), "%B %d, %Y")`\
+**Data Period**: `r min(jobs_data$year)` – `r max(jobs_data$year)`\
+**Most Recent Complete Year**: `r recent_year`\
+**Analysis Version**: v2.0\
+**Output Directory**: `r output_dir`
+
+------------------------------------------------------------------------
+
+*This report was generated using R, Quarto, and the tidyverse ecosystem. Interactive visualizations created with Plotly.*
+:::
+
+\`\`\`

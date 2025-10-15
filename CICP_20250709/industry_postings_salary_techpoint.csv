@@ -1,0 +1,731 @@
+display_level,sector,sector_name,subsector,subsector_name,statefips,countyfips,metrofips,geo_area,Year,naics,naics_title,group_by_sort,sort,posting_hourly_wage
+0,0,Tech Total,,,0,000,00000,United States,2023,000000,,0,0,35.12987477638605
+0,0,Tech Total,,,00,000,14020,Bloomington MSA,2023,000000,,0,0,32.1916488603926
+0,0,Tech Total,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,0,0,32.40429338103952
+0,0,Tech Total,,,00,000,17140,Cincinnati MSA,2023,000000,,0,0,29.64141651033171
+0,0,Tech Total,,,00,000,18020,Columbus MSA,2023,000000,,0,0,34.15085470085555
+0,0,Tech Total,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,0,0,22.414826923072
+0,0,Tech Total,,,00,000,21780,Evansville MSA,2023,000000,,0,0,34.86483100232422
+0,0,Tech Total,,,00,000,23060,Fort Wayne MSA,2023,000000,,0,0,29.49649901381025
+0,0,Tech Total,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,0,0,31.654945054935713
+0,0,Tech Total,,,00,000,29020,Kokomo MSA,2023,000000,,0,0,20.508173076927775
+0,0,Tech Total,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,0,0,32.876889920431026
+0,0,Tech Total,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,0,0,26.750035178231705
+0,0,Tech Total,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,0,0,24.556177884615003
+0,0,Tech Total,,,00,000,34620,Muncie MSA,2023,000000,,0,0,34.27350961539499
+0,0,Tech Total,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,0,0,27.387800480765627
+0,0,Tech Total,,,00,000,45460,Terre Haute MSA,2023,000000,,0,0,29.74824414717826
+0,0,Tech Total,,,18,000,00000,Indiana,2023,000000,,0,0,28.21556350625582
+1,1,IT/Tech Services,,,0,000,00000,United States,2023,000000,,1,1,34.87472527471429
+1,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,27.82197802197143
+1,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,34.38241758242857
+1,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,31.076923076928576
+1,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,000000,,1,1,34.24395604397143
+1,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,22.37123397435
+1,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,000000,,1,1,28.615384615385715
+1,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,25.6967032967
+1,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,30.778021978014287
+1,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,000000,,1,1,20.012419871800002
+1,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,29.92445054945714
+1,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,23.92087912088571
+1,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,24.211618589733334
+1,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,000000,,1,1,32.38901098898572
+1,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,26.153846153857142
+1,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,24.462637362657144
+1,1,IT/Tech Services,,,18,000,00000,Indiana,2023,000000,,1,1,28.320879120857143
+1,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,000000,,1,1,27.963636363636365
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,000000,,1,1,21.029487179488893
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,24.18741258741818
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,23.05538461538
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,000000,,1,1,23.370769230740002
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,18.4206730769125
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,000000,,1,1,24.489423076919998
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,25.81307692308
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,26.09538461538
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,000000,,1,1,19.076923076925002
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,20.00625
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,20.780725524472725
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,21.338461538479997
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,000000,,1,1,23.55849358975
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,23.22634615384
+1,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,20.230769230771433
+1,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,000000,,1,1,23.407692307690912
+1,3,Software,,,0,000,00000,United States,2023,000000,,1,1,51.6615384615
+1,3,Software,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,48.1846153846
+1,3,Software,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,42.0307692308
+1,3,Software,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,32.6769230769
+1,3,Software,,,00,000,18020,Columbus MSA,2023,000000,,1,1,32.615384615400004
+1,3,Software,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,17.5384615385
+1,3,Software,,,00,000,21780,Evansville MSA,2023,000000,,1,1,23.3230769231
+1,3,Software,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,27.8769230769
+1,3,Software,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,47.6923076923
+1,3,Software,,,00,000,29020,Kokomo MSA,2023,000000,,1,1,19.2615384615
+1,3,Software,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,29.9692307692
+1,3,Software,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,20.9846153846
+1,3,Software,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,16.8
+1,3,Software,,,00,000,34620,Muncie MSA,2023,000000,,1,1,29.9076923077
+1,3,Software,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,28.0
+1,3,Software,,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,24.0615384615
+1,3,Software,,,18,000,00000,Indiana,2023,000000,,1,1,47.6923076923
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,000000,,1,1,37.80000000000417
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,000000,,1,1,43.69706730768
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,35.19230769230417
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,31.936036789321744
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,000000,,1,1,45.1076923077
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,26.123942307689997
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,000000,,1,1,45.46762820511333
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,32.594230769238095
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,33.5589743589625
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,000000,,1,1,21.929052197814286
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,42.61072485208461
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,30.896940559431815
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,27.795192307687497
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,000000,,1,1,47.914743589800004
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,30.93351648350714
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,43.4117788462
+1,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,000000,,1,1,29.57692307692084
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,32.6769230769
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,541511,Custom Computer Programming Services ,2,2,38.615384615400004
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,541512,Computer Systems Design Services ,2,2,48.7076923077
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,541513,Computer Facilities Management Services ,2,2,37.3538461538
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,541519,Other Computer Related Services,2,2,39.6
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,611420,Computer Training ,2,2,24.0615384615
+2,1,IT/Tech Services,,,0,000,00000,United States,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,23.1076923077
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,27.0
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,541511,Custom Computer Programming Services ,2,2,22.9538461538
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,541512,Computer Systems Design Services ,2,2,27.0153846154
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,541513,Computer Facilities Management Services ,2,2,29.4153846154
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,541519,Other Computer Related Services,2,2,38.5846153846
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,611420,Computer Training ,2,2,30.7692307692
+2,1,IT/Tech Services,,,00,000,14020,Bloomington MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,19.0153846154
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,31.2
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,541511,Custom Computer Programming Services ,2,2,38.3384615385
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,541512,Computer Systems Design Services ,2,2,50.6461538462
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,541513,Computer Facilities Management Services ,2,2,33.6615384615
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,541519,Other Computer Related Services,2,2,42.0307692308
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,611420,Computer Training ,2,2,21.9692307692
+2,1,IT/Tech Services,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,22.8307692308
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,32.4307692308
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,541511,Custom Computer Programming Services ,2,2,32.4307692308
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,541512,Computer Systems Design Services ,2,2,52.615384615400004
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,541513,Computer Facilities Management Services ,2,2,29.9692307692
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,541519,Other Computer Related Services,2,2,28.9846153846
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,611420,Computer Training ,2,2,19.0153846154
+2,1,IT/Tech Services,,,00,000,17140,Cincinnati MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,22.0923076923
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,19.9384615385
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,541511,Custom Computer Programming Services ,2,2,41.0461538462
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,541512,Computer Systems Design Services ,2,2,31.2
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,541513,Computer Facilities Management Services ,2,2,17.0
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,541519,Other Computer Related Services,2,2,32.6769230769
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,611420,Computer Training ,2,2,83.9384615385
+2,1,IT/Tech Services,,,00,000,18020,Columbus MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,13.9076923077
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,541511,Custom Computer Programming Services ,2,2,23.8153846154
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,541512,Computer Systems Design Services ,2,2,28.0
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,541513,Computer Facilities Management Services ,2,2,29.3269230769
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,541519,Other Computer Related Services,2,2,21.4769230769
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,611420,Computer Training ,2,2,18.9927884615
+2,1,IT/Tech Services,,,00,000,21140,Elkhart-Goshen MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,12.6153846154
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,26.9538461538
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,541511,Custom Computer Programming Services ,2,2,31.9384615385
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,541512,Computer Systems Design Services ,2,2,42.0307692308
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,541513,Computer Facilities Management Services ,2,2,19.2615384615
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,541519,Other Computer Related Services,2,2,29.9692307692
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,611420,Computer Training ,2,2,31.6307692308
+2,1,IT/Tech Services,,,00,000,21780,Evansville MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,18.5230769231
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,27.5692307692
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,541511,Custom Computer Programming Services ,2,2,25.0461538462
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,541512,Computer Systems Design Services ,2,2,28.8615384615
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,541513,Computer Facilities Management Services ,2,2,28.8
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,541519,Other Computer Related Services,2,2,29.9692307692
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,611420,Computer Training ,2,2,19.0153846154
+2,1,IT/Tech Services,,,00,000,23060,Fort Wayne MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,20.6153846154
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,28.8615384615
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,541511,Custom Computer Programming Services ,2,2,27.5076923077
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,541512,Computer Systems Design Services ,2,2,44.7384615385
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,541513,Computer Facilities Management Services ,2,2,37.6
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,541519,Other Computer Related Services,2,2,28.8615384615
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,611420,Computer Training ,2,2,26.8923076923
+2,1,IT/Tech Services,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,20.9846153846
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,12.0
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,541511,Custom Computer Programming Services ,2,2,21.9692307692
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,541512,Computer Systems Design Services ,2,2,28.9846153846
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,541513,Computer Facilities Management Services ,2,2,
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,541519,Other Computer Related Services,2,2,20.1846153846
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,611420,Computer Training ,2,2,19.8899038462
+2,1,IT/Tech Services,,,00,000,29020,Kokomo MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,17.0461538462
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,34.8557692308
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,541511,Custom Computer Programming Services ,2,2,21.9692307692
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,541512,Computer Systems Design Services ,2,2,27.6307692308
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,541513,Computer Facilities Management Services ,2,2,38.0
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,541519,Other Computer Related Services,2,2,43.0153846154
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,611420,Computer Training ,2,2,24.0
+2,1,IT/Tech Services,,,00,000,29200,Lafayette-West Lafayette MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,20.0
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,29.4769230769
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,541511,Custom Computer Programming Services ,2,2,31.2
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,541512,Computer Systems Design Services ,2,2,26.8923076923
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,541513,Computer Facilities Management Services ,2,2,21.8461538462
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,541519,Other Computer Related Services,2,2,20.0
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,611420,Computer Training ,2,2,19.0153846154
+2,1,IT/Tech Services,,,00,000,31140,Louisville/Jefferson County MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,19.0153846154
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,28.8
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,541511,Custom Computer Programming Services ,2,2,26.4
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,541512,Computer Systems Design Services ,2,2,27.9384615385
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,541513,Computer Facilities Management Services ,2,2,
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,541519,Other Computer Related Services,2,2,29.9692307692
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,611420,Computer Training ,2,2,18.9927884615
+2,1,IT/Tech Services,,,00,000,33140,Michigan City-La Porte MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,13.1692307692
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,52.8
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,541511,Custom Computer Programming Services ,2,2,21.9692307692
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,541512,Computer Systems Design Services ,2,2,21.9692307692
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,541513,Computer Facilities Management Services ,2,2,30.9538461538
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,541519,Other Computer Related Services,2,2,29.9692307692
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,611420,Computer Training ,2,2,48.0769230769
+2,1,IT/Tech Services,,,00,000,34620,Muncie MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,20.9846153846
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,17.0461538462
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,541511,Custom Computer Programming Services ,2,2,26.8923076923
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,541512,Computer Systems Design Services ,2,2,31.2
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,541513,Computer Facilities Management Services ,2,2,36.0615384615
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,541519,Other Computer Related Services,2,2,34.8923076923
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,611420,Computer Training ,2,2,19.4461538462
+2,1,IT/Tech Services,,,00,000,43780,South Bend-Mishawaka MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,17.5384615385
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,18.0307692308
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,541511,Custom Computer Programming Services ,2,2,21.1076923077
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,541512,Computer Systems Design Services ,2,2,39.8153846154
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,541513,Computer Facilities Management Services ,2,2,16.8
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,541519,Other Computer Related Services,2,2,33.9076923077
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,611420,Computer Training ,2,2,24.0384615385
+2,1,IT/Tech Services,,,00,000,45460,Terre Haute MSA,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,17.5384615385
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2,2,26.7692307692
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,541511,Custom Computer Programming Services ,2,2,26.1538461538
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,541512,Computer Systems Design Services ,2,2,38.5846153846
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,541513,Computer Facilities Management Services ,2,2,32.6769230769
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,541519,Other Computer Related Services,2,2,30.0
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,611420,Computer Training ,2,2,24.0615384615
+2,1,IT/Tech Services,,,18,000,00000,Indiana,2023,811210,Electronic and Precision Equipment Repair and Maintenance ,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,513110,Newspaper Publishers ,2,2,22.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,513120,Periodical Publishers ,2,2,30.9538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,513130,Book Publishers ,2,2,27.9076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,513199,All Other Publishers ,2,2,27.9076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,517111,Wired Telecommunications Carriers ,2,2,24.307692307700002
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.6307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,517121,Telecommunications Resellers,2,2,26.4307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,517122,Agents for Wireless Telecommunications Services,2,2,24.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,517410,Satellite Telecommunications,2,2,30.3384615385
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,517810,All Other Telecommunications ,2,2,37.3846153846
+2,2,"Telecommunications, Internet Services and Data Hosting",,,0,000,00000,United States,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,34.6769230769
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,513110,Newspaper Publishers ,2,2,25.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,513120,Periodical Publishers ,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,513130,Book Publishers ,2,2,24.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,513199,All Other Publishers ,2,2,15.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,517111,Wired Telecommunications Carriers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.6307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,517121,Telecommunications Resellers,2,2,12.9846153846
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,517410,Satellite Telecommunications,2,2,40.865384615400004
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,517810,All Other Telecommunications ,2,2,18.0307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,14020,Bloomington MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,11.6923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,513110,Newspaper Publishers ,2,2,26.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,513120,Periodical Publishers ,2,2,21.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,513130,Book Publishers ,2,2,15.8153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,513199,All Other Publishers ,2,2,23.3230769231
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,517111,Wired Telecommunications Carriers ,2,2,22.8307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,517121,Telecommunications Resellers,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,517122,Agents for Wireless Telecommunications Services,2,2,15.4461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,517410,Satellite Telecommunications,2,2,39.8153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,517810,All Other Telecommunications ,2,2,25.9076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,33.6615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,513110,Newspaper Publishers ,2,2,24.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,513120,Periodical Publishers ,2,2,27.0153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,513130,Book Publishers ,2,2,21.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,513199,All Other Publishers ,2,2,26.8923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,517111,Wired Telecommunications Carriers ,2,2,18.7692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.5076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,517121,Telecommunications Resellers,2,2,24.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,517122,Agents for Wireless Telecommunications Services,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,517410,Satellite Telecommunications,2,2,21.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,517810,All Other Telecommunications ,2,2,27.6307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,17140,Cincinnati MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,17.0461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,513110,Newspaper Publishers ,2,2,18.4615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,513130,Book Publishers ,2,2,13.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,513199,All Other Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,517111,Wired Telecommunications Carriers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.1076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,517121,Telecommunications Resellers,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,517810,All Other Telecommunications ,2,2,33.6538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,18020,Columbus MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,29.6615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,513110,Newspaper Publishers ,2,2,12.9846153846
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,513130,Book Publishers ,2,2,14.9538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,513199,All Other Publishers ,2,2,13.1692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,517111,Wired Telecommunications Carriers ,2,2,18.75
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,20.4923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,517121,Telecommunications Resellers,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,517410,Satellite Telecommunications,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,517810,All Other Telecommunications ,2,2,23.8153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21140,Elkhart-Goshen MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,23.2
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,513110,Newspaper Publishers ,2,2,13.2
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,513120,Periodical Publishers ,2,2,33.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,513130,Book Publishers ,2,2,10.5
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,513199,All Other Publishers ,2,2,48.0769230769
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,517111,Wired Telecommunications Carriers ,2,2,21.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,517121,Telecommunications Resellers,2,2,24.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,517410,Satellite Telecommunications,2,2,25.2403846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,517810,All Other Telecommunications ,2,2,28.2461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,21780,Evansville MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,513110,Newspaper Publishers ,2,2,16.8
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,513120,Periodical Publishers ,2,2,41.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,513130,Book Publishers ,2,2,10.5
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,513199,All Other Publishers ,2,2,30.8923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,517111,Wired Telecommunications Carriers ,2,2,23.5692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.1076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,517121,Telecommunications Resellers,2,2,28.6153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,517410,Satellite Telecommunications,2,2,48.1230769231
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,517810,All Other Telecommunications ,2,2,18.0307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,23060,Fort Wayne MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,18.5230769231
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,513110,Newspaper Publishers ,2,2,21.2615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,513120,Periodical Publishers ,2,2,30.0923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,513130,Book Publishers ,2,2,16.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,513199,All Other Publishers ,2,2,30.0923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,517111,Wired Telecommunications Carriers ,2,2,21.8461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,517121,Telecommunications Resellers,2,2,23.8153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,517410,Satellite Telecommunications,2,2,25.2923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,517810,All Other Telecommunications ,2,2,43.2615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,27.6307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,513110,Newspaper Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,513120,Periodical Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,513130,Book Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,513199,All Other Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,517111,Wired Telecommunications Carriers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,16.8
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,517121,Telecommunications Resellers,2,2,10.2153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,517410,Satellite Telecommunications,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,517810,All Other Telecommunications ,2,2,37.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29020,Kokomo MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,11.6923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,513110,Newspaper Publishers ,2,2,13.1692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,513120,Periodical Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,513130,Book Publishers ,2,2,10.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,513199,All Other Publishers ,2,2,15.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,517111,Wired Telecommunications Carriers ,2,2,18.75
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,24.1846153846
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,517121,Telecommunications Resellers,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,517410,Satellite Telecommunications,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,517810,All Other Telecommunications ,2,2,47.5
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,29200,Lafayette-West Lafayette MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,11.4461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,513110,Newspaper Publishers ,2,2,15.4461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,513120,Periodical Publishers ,2,2,18.5230769231
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,513130,Book Publishers ,2,2,33.6615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,513199,All Other Publishers ,2,2,14.9538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,517111,Wired Telecommunications Carriers ,2,2,21.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,517121,Telecommunications Resellers,2,2,24.0615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,517122,Agents for Wireless Telecommunications Services,2,2,13.6341346154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,517410,Satellite Telecommunications,2,2,22.8923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,517810,All Other Telecommunications ,2,2,25.0461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,31140,Louisville/Jefferson County MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,18.7692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,513110,Newspaper Publishers ,2,2,28.8461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,513120,Periodical Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,513199,All Other Publishers ,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,22.2153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,517121,Telecommunications Resellers,2,2,20.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,517810,All Other Telecommunications ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,33140,Michigan City-La Porte MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,15.6307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,513110,Newspaper Publishers ,2,2,13.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,513120,Periodical Publishers ,2,2,18.9701923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,513130,Book Publishers ,2,2,55.2884615385
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,513199,All Other Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,517111,Wired Telecommunications Carriers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,24.6769230769
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,517121,Telecommunications Resellers,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,517810,All Other Telecommunications ,2,2,17.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,34620,Muncie MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,11.4461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,513110,Newspaper Publishers ,2,2,14.9538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,513120,Periodical Publishers ,2,2,13.5
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,513130,Book Publishers ,2,2,41.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,513199,All Other Publishers ,2,2,15.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,517111,Wired Telecommunications Carriers ,2,2,41.9692307692
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.6
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,517121,Telecommunications Resellers,2,2,20.9846153846
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,517410,Satellite Telecommunications,2,2,25.2403846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,517810,All Other Telecommunications ,2,2,19.5076923077
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,43780,South Bend-Mishawaka MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,17.5384615385
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,513110,Newspaper Publishers ,2,2,10.0
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,513120,Periodical Publishers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,513130,Book Publishers ,2,2,10.4615384615
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,513199,All Other Publishers ,2,2,48.0769230769
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,517111,Wired Telecommunications Carriers ,2,2,
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,22.3384615385
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,517121,Telecommunications Resellers,2,2,22.2153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,517810,All Other Telecommunications ,2,2,17.0769230769
+2,2,"Telecommunications, Internet Services and Data Hosting",,,00,000,45460,Terre Haute MSA,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,11.4461538462
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,513110,Newspaper Publishers ,2,2,16.8307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,513120,Periodical Publishers ,2,2,26.4
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,513130,Book Publishers ,2,2,16.5538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,513199,All Other Publishers ,2,2,30.0923076923
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,517111,Wired Telecommunications Carriers ,2,2,20.9846153846
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,517112,Wireless Telecommunications Carriers (except Satellite),2,2,21.6307692308
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,517121,Telecommunications Resellers,2,2,23.8153846154
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,517122,Agents for Wireless Telecommunications Services,2,2,18.5
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,517410,Satellite Telecommunications,2,2,26.5230769231
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,517810,All Other Telecommunications ,2,2,36.1538461538
+2,2,"Telecommunications, Internet Services and Data Hosting",,,18,000,00000,Indiana,2023,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2,2,20.0
+2,3,Software,,,0,000,00000,United States,2023,513210,Software Publishers,2,2,51.6615384615
+2,3,Software,,,00,000,14020,Bloomington MSA,2023,513210,Software Publishers,2,2,48.1846153846
+2,3,Software,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,513210,Software Publishers,2,2,42.0307692308
+2,3,Software,,,00,000,17140,Cincinnati MSA,2023,513210,Software Publishers,2,2,32.6769230769
+2,3,Software,,,00,000,18020,Columbus MSA,2023,513210,Software Publishers,2,2,32.615384615400004
+2,3,Software,,,00,000,21140,Elkhart-Goshen MSA,2023,513210,Software Publishers,2,2,17.5384615385
+2,3,Software,,,00,000,21780,Evansville MSA,2023,513210,Software Publishers,2,2,23.3230769231
+2,3,Software,,,00,000,23060,Fort Wayne MSA,2023,513210,Software Publishers,2,2,27.8769230769
+2,3,Software,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,513210,Software Publishers,2,2,47.6923076923
+2,3,Software,,,00,000,29020,Kokomo MSA,2023,513210,Software Publishers,2,2,19.2615384615
+2,3,Software,,,00,000,29200,Lafayette-West Lafayette MSA,2023,513210,Software Publishers,2,2,29.9692307692
+2,3,Software,,,00,000,31140,Louisville/Jefferson County MSA,2023,513210,Software Publishers,2,2,20.9846153846
+2,3,Software,,,00,000,33140,Michigan City-La Porte MSA,2023,513210,Software Publishers,2,2,16.8
+2,3,Software,,,00,000,34620,Muncie MSA,2023,513210,Software Publishers,2,2,29.9076923077
+2,3,Software,,,00,000,43780,South Bend-Mishawaka MSA,2023,513210,Software Publishers,2,2,28.0
+2,3,Software,,,00,000,45460,Terre Haute MSA,2023,513210,Software Publishers,2,2,24.0615384615
+2,3,Software,,,18,000,00000,Indiana,2023,513210,Software Publishers,2,2,47.6923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,333242,Semiconductor Machinery Manufacturing ,2,2,45.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334111,Electronic Computer Manufacturing ,2,2,73.8153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334112,Computer Storage Device Manufacturing ,2,2,50.6461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,46.2153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334210,Telephone Apparatus Manufacturing,2,2,21.4769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,38.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334290,Other Communications Equipment Manufacturing,2,2,40.0923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334310,Audio and Video Equipment Manufacturing,2,2,29.7230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,21.7230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,63.4461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,20.6461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334417,Electronic Connector Manufacturing ,2,2,35.6307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,22.4615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334419,Other Electronic Component Manufacturing ,2,2,28.8923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,52.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,23.4461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,35.1384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,29.7230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,28.4923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,48.2153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334517,Irradiation Apparatus Manufacturing ,2,2,43.2923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,23.3538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,0,000,00000,United States,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,34.8923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334111,Electronic Computer Manufacturing ,2,2,15.1442307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,17.307692307700002
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,68.5096153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,59.2307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,68.8
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,12.4860576923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,39.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,84.1346153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,21.6346153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,50.4615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,14020,Bloomington MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,333242,Semiconductor Machinery Manufacturing ,2,2,35.0769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334111,Electronic Computer Manufacturing ,2,2,32.6769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,42.0307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,26.4
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,45.7230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,20.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,37.1076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,20.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,52.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334417,Electronic Connector Manufacturing ,2,2,19.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,25.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,24.0615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,51.1384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,19.8769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,36.1230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,22.8307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,25.6615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,50.6461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,44.2461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,24.0615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,43.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,333242,Semiconductor Machinery Manufacturing ,2,2,16.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334111,Electronic Computer Manufacturing ,2,2,23.4461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,29.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,34.6461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,21.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,18.5230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,18.0307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,28.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,42.0673076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334417,Electronic Connector Manufacturing ,2,2,17.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,23.4461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,20.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,49.6615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,22.4
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,27.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,20.9230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,20.6153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,39.8153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,120.861538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,20.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,17140,Cincinnati MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,21.6
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334111,Electronic Computer Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,18.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334417,Electronic Connector Manufacturing ,2,2,68.75
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,68.75
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,53.5384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,16.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,18020,Columbus MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334111,Electronic Computer Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,24.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,20.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,13.6817307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,18.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334417,Electronic Connector Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,17.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,17.5384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,55.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,31.25
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,24.4923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,37.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21140,Elkhart-Goshen MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,333242,Semiconductor Machinery Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334111,Electronic Computer Manufacturing ,2,2,15.3298076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,35.0769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,19.9384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,20.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,52.8
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,68.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334417,Electronic Connector Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,29.9076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,68.8
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,31.1384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,33.6
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,84.1346153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,51.5692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,124.519230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,25.8461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,21780,Evansville MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,20.4923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,333242,Semiconductor Machinery Manufacturing ,2,2,32.1230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334111,Electronic Computer Manufacturing ,2,2,19.3846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,20.6153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,19.9384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,27.3230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,73.23076923080001
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,32.3692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,24.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,57.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334417,Electronic Connector Manufacturing ,2,2,43.2692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,22.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,32.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,44.9230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,41.5384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,21.3538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,17.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,32.9326923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,21.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,52.8
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,24.4923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,23060,Fort Wayne MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,24.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,333242,Semiconductor Machinery Manufacturing ,2,2,35.0769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334111,Electronic Computer Manufacturing ,2,2,50.1538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,48.0769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,18.0307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,18.5230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,26.4
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,23.6923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,28.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,16.0615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,74.2769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,77.23076923080001
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334417,Electronic Connector Manufacturing ,2,2,43.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,14.9538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,19.0153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,38.3384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,37.3538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,20.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,28.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,22.4
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,21.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,48.6769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,36.5384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,19.3846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,37.2923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334111,Electronic Computer Manufacturing ,2,2,15.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,17.307692307700002
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,18.1399038462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,27.8153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,31.25
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,20.432692307700002
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29020,Kokomo MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,23.557692307700002
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334111,Electronic Computer Manufacturing ,2,2,44.7149038462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,54.0865384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,18.9149038462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,18.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,48.1230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,46.7692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,57.8461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,68.8
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,31.1384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,40.2461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,55.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,54.0384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,16.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,29200,Lafayette-West Lafayette MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,333242,Semiconductor Machinery Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334111,Electronic Computer Manufacturing ,2,2,25.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,36.1230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,19.2615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,30.9538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,24.0615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,24.4307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,29.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,19.5076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,79.8076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334417,Electronic Connector Manufacturing ,2,2,65.23076923080001
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,12.4923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,19.8769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,48.1230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,35.8769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,24.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,37.3538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,20.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,20.432692307700002
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,19.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,24.0615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,31140,Louisville/Jefferson County MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,14.9538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334111,Electronic Computer Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,17.307692307700002
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,18.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,15.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,15.5076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,50.5769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,27.9384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,51.5692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,25.9615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,33140,Michigan City-La Porte MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334111,Electronic Computer Manufacturing ,2,2,116.184615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,11.6923076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,17.5
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334417,Electronic Connector Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,68.6769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,22.9538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,50.4807692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,34620,Muncie MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334111,Electronic Computer Manufacturing ,2,2,13.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334112,Computer Storage Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,29.0865384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334210,Telephone Apparatus Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,26.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,27.6442307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,56.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334417,Electronic Connector Manufacturing ,2,2,14.9538461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,32.9230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,22.4615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,40.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,32.6769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,38.5230769231
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,21.4153846154
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,50.5846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334517,Irradiation Apparatus Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,25.8461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,43780,South Bend-Mishawaka MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334111,Electronic Computer Manufacturing ,2,2,116.184615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334290,Other Communications Equipment Manufacturing,2,2,20.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334310,Audio and Video Equipment Manufacturing,2,2,26.4423076923
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,41.2307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334417,Electronic Connector Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334419,Other Electronic Component Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,68.6769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,18.0288461538
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,19.4711538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,37.2596153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,00,000,45460,Terre Haute MSA,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,333242,Semiconductor Machinery Manufacturing ,2,2,32.615384615400004
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334111,Electronic Computer Manufacturing ,2,2,44.9846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334112,Computer Storage Device Manufacturing ,2,2,28.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2,2,18.0307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334210,Telephone Apparatus Manufacturing,2,2,20.0
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2,2,24.0615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334290,Other Communications Equipment Manufacturing,2,2,25.0461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334310,Audio and Video Equipment Manufacturing,2,2,24.4307692308
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334412,Bare Printed Circuit Board Manufacturing  ,2,2,18.7692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334413,Semiconductor and Related Device Manufacturing ,2,2,63.9384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2,2,25.6615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334417,Electronic Connector Manufacturing ,2,2,15.9384615385
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2,2,15.5692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334419,Other Electronic Component Manufacturing ,2,2,21.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2,2,48.1846153846
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2,2,40.3076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2,2,21.6
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2,2,28.3692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2,2,21.4769230769
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2,2,21.9692307692
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334516,Analytical Laboratory Instrument Manufacturing ,2,2,50.6461538462
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334517,Irradiation Apparatus Manufacturing ,2,2,53.9076923077
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334519,Other Measuring and Controlling Device Manufacturing ,2,2,20.8615384615
+2,4,"Manufacturing: Computer, Peripheral and Communications Equipment",,,18,000,00000,Indiana,2023,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2,2,23.3230769231

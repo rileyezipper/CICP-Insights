@@ -1,0 +1,103 @@
+sector,statefips,countyfips,metro,geo_area,year,own,disc,naics,repunits,empl,wages
+Total - All Industries,0 ,000,00000,United States,2019,0,0,00,10233822.0,148105091.66,8769108878915.0
+Total - All Industries,0 ,000,00000,United States,2020,0,0,00,10487687.0,139103773.25,8905606771748.0
+Total - All Industries,0 ,000,00000,United States,2021,0,0,00,10909076.0,143780068.41,9720962278782.0
+Total - All Industries,0 ,000,00000,United States,2022,0,0,00,11519312.0,150025655.41,10499737035094.0
+Total - All Industries,0 ,000,00000,United States,2023,0,0,00,11866306.0,153140899.25,11081267615470.0
+Total - All Industries,0 ,000,00000,United States,2024,0,0,00,12100994.0,154870300.16,11708890534015.0
+Total - All Industries,18,000,00000,Indiana,2019,0,0,00,168916.0,3077766.75,150173157764.0
+Total - All Industries,18,000,00000,Indiana,2020,0,0,00,172647.0,2918791.75,151652077962.0
+Total - All Industries,18,000,00000,Indiana,2021,0,0,00,178700.0,3010658.0,165490502583.0
+Total - All Industries,18,000,00000,Indiana,2022,0,0,00,186186.0,3113419.41,180739411695.0
+Total - All Industries,18,000,00000,Indiana,2023,0,0,00,189259.0,3157809.25,188413486946.0
+Total - All Industries,18,000,00000,Indiana,2024,0,0,00,192804.0,3178225.0,199385161408.0
+Total - All Industries,18,000,14020,Bloomington,2019,0,0,00,3366.0,69420.66,3163737075.0
+Total - All Industries,18,000,14020,Bloomington,2020,0,0,00,3430.0,66931.57,3323640186.0
+Total - All Industries,18,000,14020,Bloomington,2021,0,0,00,3486.0,68952.49,3624021893.0
+Total - All Industries,18,000,14020,Bloomington,2022,0,0,00,3636.0,71991.07,3940018343.0
+Total - All Industries,18,000,14020,Bloomington,2023,0,0,00,3704.0,72553.74,4086084094.0
+Total - All Industries,18,000,14020,Bloomington,2024,0,0,00,3787.0,72494.41,4261486329.0
+Total - All Industries,18,000,16980,Chicago-Naperville-Elgin,2019,0,0,00,250141.0,4478574.29,291069003263.0
+Total - All Industries,18,000,16980,Chicago-Naperville-Elgin,2020,0,0,00,249788.0,4131496.12,289672299215.0
+Total - All Industries,18,000,16980,Chicago-Naperville-Elgin,2021,0,0,00,252032.0,4208038.31,312309913099.0
+Total - All Industries,18,000,16980,Chicago-Naperville-Elgin,2022,0,0,00,252993.0,4359531.14,333247857285.0
+Total - All Industries,18,000,16980,Chicago-Naperville-Elgin,2023,0,0,00,253392.0,4436484.38,346410212397.0
+Total - All Industries,18,000,16980,Chicago-Naperville-Elgin,2024,0,0,00,255475.0,4447536.71,358458273865.0
+Total - All Industries,18,000,17140,Cincinnati,2019,0,0,00,1432.0,20024.16,745226124.0
+Total - All Industries,18,000,17140,Cincinnati,2020,0,0,00,1480.0,18915.9,776939368.0
+Total - All Industries,18,000,17140,Cincinnati,2021,0,0,00,1508.0,19260.83,810430636.0
+Total - All Industries,18,000,17140,Cincinnati,2022,0,0,00,1580.0,19951.49,882519324.0
+Total - All Industries,18,000,17140,Cincinnati,2023,0,0,00,1637.0,20321.99,933735211.0
+Total - All Industries,18,000,17140,Cincinnati,2024,0,0,00,1664.0,19758.57,968166545.0
+Total - All Industries,18,000,18020,Columbus,2019,0,0,00,1921.0,51231.0,2932331891.0
+Total - All Industries,18,000,18020,Columbus,2020,0,0,00,1970.0,47571.0,2775258925.0
+Total - All Industries,18,000,18020,Columbus,2021,0,0,00,1990.0,47909.33,2950987032.0
+Total - All Industries,18,000,18020,Columbus,2022,0,0,00,2061.0,49770.08,3259073138.0
+Total - All Industries,18,000,18020,Columbus,2023,0,0,00,2091.0,50375.91,3408057238.0
+Total - All Industries,18,000,18020,Columbus,2024,0,0,00,2125.0,50176.66,3683448440.0
+Total - All Industries,18,000,21140,Elkhart-Goshen,2019,0,0,00,4752.0,132986.75,6412392135.0
+Total - All Industries,18,000,21140,Elkhart-Goshen,2020,0,0,00,4832.0,124783.33,6562600302.0
+Total - All Industries,18,000,21140,Elkhart-Goshen,2021,0,0,00,4923.0,137343.83,8408641817.0
+Total - All Industries,18,000,21140,Elkhart-Goshen,2022,0,0,00,5062.0,141287.5,8880816844.0
+Total - All Industries,18,000,21140,Elkhart-Goshen,2023,0,0,00,5201.0,131336.75,7806251696.0
+Total - All Industries,18,000,21140,Elkhart-Goshen,2024,0,0,00,5308.0,127072.75,7895369684.0
+Total - All Industries,18,000,21780,Evansville,2019,0,0,00,6451.0,134447.4,6457941426.0
+Total - All Industries,18,000,21780,Evansville,2020,0,0,00,6583.0,126881.5,6388103431.0
+Total - All Industries,18,000,21780,Evansville,2021,0,0,00,6666.0,129381.83,6723236681.0
+Total - All Industries,18,000,21780,Evansville,2022,0,0,00,6908.0,132463.57,7164994157.0
+Total - All Industries,18,000,21780,Evansville,2023,0,0,00,7078.0,133688.15,7445785983.0
+Total - All Industries,18,000,21780,Evansville,2024,0,0,00,7200.0,133900.74,7774132823.0
+Total - All Industries,18,000,23060,Fort Wayne,2019,0,0,00,10298.0,214934.83,10073635304.0
+Total - All Industries,18,000,23060,Fort Wayne,2020,0,0,00,10589.0,204406.65,10203180393.0
+Total - All Industries,18,000,23060,Fort Wayne,2021,0,0,00,10827.0,210399.32,11133189690.0
+Total - All Industries,18,000,23060,Fort Wayne,2022,0,0,00,11313.0,218788.91,12072633210.0
+Total - All Industries,18,000,23060,Fort Wayne,2023,0,0,00,11635.0,221799.32,12636426428.0
+Total - All Industries,18,000,23060,Fort Wayne,2024,0,0,00,12013.0,223085.99,13274986761.0
+Total - All Industries,18,000,26900,Indianapolis-Carmel-Greenwood,2019,0,0,00,49263.0,1022244.96,55135037815.0
+Total - All Industries,18,000,26900,Indianapolis-Carmel-Greenwood,2020,0,0,00,51014.0,977259.88,56555054931.0
+Total - All Industries,18,000,26900,Indianapolis-Carmel-Greenwood,2021,0,0,00,52652.0,1013733.38,61284669450.0
+Total - All Industries,18,000,26900,Indianapolis-Carmel-Greenwood,2022,0,0,00,56165.0,1054199.13,67429241233.0
+Total - All Industries,18,000,26900,Indianapolis-Carmel-Greenwood,2023,0,0,00,58187.0,1079074.79,70811601861.0
+Total - All Industries,18,000,26900,Indianapolis-Carmel-Greenwood,2024,0,0,00,60306.0,1092609.21,75958505512.0
+Total - All Industries,18,000,29020,Kokomo,2019,0,0,00,1728.0,38241.66,1942504937.0
+Total - All Industries,18,000,29020,Kokomo,2020,0,0,00,1739.0,36127.91,1772073281.0
+Total - All Industries,18,000,29020,Kokomo,2021,0,0,00,1737.0,35306.33,1791302512.0
+Total - All Industries,18,000,29020,Kokomo,2022,0,0,00,1788.0,34545.33,1901813029.0
+Total - All Industries,18,000,29020,Kokomo,2023,0,0,00,1843.0,35014.58,2057521326.0
+Total - All Industries,18,000,29020,Kokomo,2024,0,0,00,1921.0,35752.83,2231490043.0
+Total - All Industries,18,000,29200,Lafayette-West Lafayette,2019,0,0,00,4287.0,96080.24,4668850473.0
+Total - All Industries,18,000,29200,Lafayette-West Lafayette,2020,0,0,00,4511.0,90744.23,4629946377.0
+Total - All Industries,18,000,29200,Lafayette-West Lafayette,2021,0,0,00,4615.0,94211.49,4845552044.0
+Total - All Industries,18,000,29200,Lafayette-West Lafayette,2022,0,0,00,4889.0,99181.15,5373793957.0
+Total - All Industries,18,000,29200,Lafayette-West Lafayette,2023,0,0,00,4967.0,102239.24,5856054587.0
+Total - All Industries,18,000,29200,Lafayette-West Lafayette,2024,0,0,00,5094.0,102411.49,6162067458.0
+Total - All Industries,18,000,31140,Louisville/Jefferson County,2019,0,0,00,5573.0,101359.65,4240273388.0
+Total - All Industries,18,000,31140,Louisville/Jefferson County,2020,0,0,00,5806.0,97308.23,4359304619.0
+Total - All Industries,18,000,31140,Louisville/Jefferson County,2021,0,0,00,5852.0,100622.15,4749159473.0
+Total - All Industries,18,000,31140,Louisville/Jefferson County,2022,0,0,00,6199.0,104316.66,5216373439.0
+Total - All Industries,18,000,31140,Louisville/Jefferson County,2023,0,0,00,6341.0,106072.24,5436963327.0
+Total - All Industries,18,000,31140,Louisville/Jefferson County,2024,0,0,00,6508.0,107541.49,5909691640.0
+Total - All Industries,18,000,33140,Michigan City-La Porte,2019,0,0,00,2283.0,40362.41,1670456003.0
+Total - All Industries,18,000,33140,Michigan City-La Porte,2020,0,0,00,2298.0,38068.75,1682226571.0
+Total - All Industries,18,000,33140,Michigan City-La Porte,2021,0,0,00,2292.0,38700.91,1826411511.0
+Total - All Industries,18,000,33140,Michigan City-La Porte,2022,0,0,00,2394.0,39742.16,1933166871.0
+Total - All Industries,18,000,33140,Michigan City-La Porte,2023,0,0,00,2451.0,40888.5,2093267128.0
+Total - All Industries,18,000,33140,Michigan City-La Porte,2024,0,0,00,2508.0,40621.83,2153264008.0
+Total - All Industries,18,000,34620,Muncie,2019,0,0,00,2180.0,45126.33,1889704773.0
+Total - All Industries,18,000,34620,Muncie,2020,0,0,00,2200.0,43158.16,1934483016.0
+Total - All Industries,18,000,34620,Muncie,2021,0,0,00,2216.0,43366.08,2024554899.0
+Total - All Industries,18,000,34620,Muncie,2022,0,0,00,2287.0,43989.33,2162100402.0
+Total - All Industries,18,000,34620,Muncie,2023,0,0,00,2331.0,44306.75,2215912882.0
+Total - All Industries,18,000,34620,Muncie,2024,0,0,00,2361.0,44736.33,2296160092.0
+Total - All Industries,18,000,43780,South Bend-Mishawaka,2019,0,0,00,5759.0,124849.58,5765076143.0
+Total - All Industries,18,000,43780,South Bend-Mishawaka,2020,0,0,00,5895.0,114805.33,5714186902.0
+Total - All Industries,18,000,43780,South Bend-Mishawaka,2021,0,0,00,5971.0,115556.91,6191935342.0
+Total - All Industries,18,000,43780,South Bend-Mishawaka,2022,0,0,00,6244.0,118141.83,6675660917.0
+Total - All Industries,18,000,43780,South Bend-Mishawaka,2023,0,0,00,6435.0,120891.33,6923270085.0
+Total - All Industries,18,000,43780,South Bend-Mishawaka,2024,0,0,00,6565.0,120997.91,7179038002.0
+Total - All Industries,18,000,45460,Terre Haute,2019,0,0,00,3560.0,65495.9,2756683612.0
+Total - All Industries,18,000,45460,Terre Haute,2020,0,0,00,3583.0,61901.07,2746722461.0
+Total - All Industries,18,000,45460,Terre Haute,2021,0,0,00,3578.0,62476.16,2891362145.0
+Total - All Industries,18,000,45460,Terre Haute,2022,0,0,00,3694.0,63428.91,3090196353.0
+Total - All Industries,18,000,45460,Terre Haute,2023,0,0,00,3697.0,63809.33,3222393248.0
+Total - All Industries,18,000,45460,Terre Haute,2024,0,0,00,3740.0,64311.32,3373163127.0

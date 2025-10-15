@@ -1,0 +1,1530 @@
+sector_id,sector_name,statefips,countyfips,metrofips,geo_area,year,own,disc,naics,naics_title,repunits,empl,wages
+0,Life Sciences Total,0 ,000,00000,United States,2019,0,0,000000,,130583.0,2442457.33,273702290938.0
+0,Life Sciences Total,0 ,000,00000,United States,2020,0,0,000000,,137986.0,2489769.83,298447148165.0
+0,Life Sciences Total,0 ,000,00000,United States,2021,0,0,000000,,149908.0,2614946.99,328419223975.0
+0,Life Sciences Total,0 ,000,00000,United States,2022,0,0,000000,,165972.0,2758292.52,353186115655.0
+0,Life Sciences Total,0 ,000,00000,United States,2023,0,0,000000,,175358.0,2797957.83,372024940684.0
+0,Life Sciences Total,0 ,000,00000,United States,2024,0,0,000000,,179539.0,2796801.98,392329091633.0
+0,Life Sciences Total,00,000,14020,Bloomington,2019,0,0,000000,,50.0,145.66,10210639.0
+0,Life Sciences Total,00,000,14020,Bloomington,2020,0,0,000000,,53.0,136.75,9414882.0
+0,Life Sciences Total,00,000,14020,Bloomington,2021,0,0,000000,,56.0,150.49,12797861.0
+0,Life Sciences Total,00,000,14020,Bloomington,2022,0,0,000000,,62.0,174.82,18173562.0
+0,Life Sciences Total,00,000,14020,Bloomington,2023,0,0,000000,,70.0,186.32,20503373.0
+0,Life Sciences Total,00,000,14020,Bloomington,2024,0,0,000000,,72.0,208.33,20833909.0
+0,Life Sciences Total,00,000,16980,Chicago-Naperville-Elgin,2019,0,0,000000,,2059.0,72488.64,10124134537.0
+0,Life Sciences Total,00,000,16980,Chicago-Naperville-Elgin,2020,0,0,000000,,2112.0,71787.72,10281372253.0
+0,Life Sciences Total,00,000,16980,Chicago-Naperville-Elgin,2021,0,0,000000,,2243.0,72706.47,10897837624.0
+0,Life Sciences Total,00,000,16980,Chicago-Naperville-Elgin,2022,0,0,000000,,2467.0,71759.21,11376899245.0
+0,Life Sciences Total,00,000,16980,Chicago-Naperville-Elgin,2023,0,0,000000,,2542.0,71969.17,11688685033.0
+0,Life Sciences Total,00,000,16980,Chicago-Naperville-Elgin,2024,0,0,000000,,2538.0,73076.23,11818758301.0
+0,Life Sciences Total,00,000,17140,Cincinnati,2019,0,0,000000,,16.0,6.0,286017.0
+0,Life Sciences Total,00,000,17140,Cincinnati,2020,0,1,000000,,17.0,0.0,0.0
+0,Life Sciences Total,00,000,17140,Cincinnati,2021,0,1,000000,,19.0,0.0,0.0
+0,Life Sciences Total,00,000,17140,Cincinnati,2022,0,0,000000,,21.0,5.83,345989.0
+0,Life Sciences Total,00,000,17140,Cincinnati,2023,0,0,000000,,24.0,5.0,743287.0
+0,Life Sciences Total,00,000,17140,Cincinnati,2024,0,1,000000,,27.0,0.0,0.0
+0,Life Sciences Total,00,000,18020,Columbus,2019,0,1,000000,,21.0,0.0,0.0
+0,Life Sciences Total,00,000,18020,Columbus,2020,0,1,000000,,22.0,0.0,0.0
+0,Life Sciences Total,00,000,18020,Columbus,2021,0,1,000000,,24.0,0.0,0.0
+0,Life Sciences Total,00,000,18020,Columbus,2022,0,1,000000,,29.0,0.0,0.0
+0,Life Sciences Total,00,000,18020,Columbus,2023,0,1,000000,,26.0,0.0,0.0
+0,Life Sciences Total,00,000,18020,Columbus,2024,0,0,000000,,28.0,322.58,20060597.0
+0,Life Sciences Total,00,000,21140,Elkhart-Goshen,2019,0,0,000000,,39.0,382.4,24439506.0
+0,Life Sciences Total,00,000,21140,Elkhart-Goshen,2020,0,0,000000,,42.0,353.81,23542627.0
+0,Life Sciences Total,00,000,21140,Elkhart-Goshen,2021,0,0,000000,,45.0,395.49,26866947.0
+0,Life Sciences Total,00,000,21140,Elkhart-Goshen,2022,0,0,000000,,49.0,258.49,17509573.0
+0,Life Sciences Total,00,000,21140,Elkhart-Goshen,2023,0,0,000000,,46.0,266.48,18300392.0
+0,Life Sciences Total,00,000,21140,Elkhart-Goshen,2024,0,0,000000,,43.0,258.15,18021483.0
+0,Life Sciences Total,00,000,21780,Evansville,2019,0,0,000000,,69.0,535.22,28837494.0
+0,Life Sciences Total,00,000,21780,Evansville,2020,0,0,000000,,71.0,440.9,27792971.0
+0,Life Sciences Total,00,000,21780,Evansville,2021,0,0,000000,,79.0,425.57,28100417.0
+0,Life Sciences Total,00,000,21780,Evansville,2022,0,0,000000,,79.0,396.57,27869537.0
+0,Life Sciences Total,00,000,21780,Evansville,2023,0,0,000000,,81.0,178.9,13324577.0
+0,Life Sciences Total,00,000,21780,Evansville,2024,0,0,000000,,81.0,161.57,11546815.0
+0,Life Sciences Total,00,000,23060,Fort Wayne,2019,0,0,000000,,123.0,768.56,47475410.0
+0,Life Sciences Total,00,000,23060,Fort Wayne,2020,0,0,000000,,123.0,767.31,51693394.0
+0,Life Sciences Total,00,000,23060,Fort Wayne,2021,0,0,000000,,129.0,822.22,56715440.0
+0,Life Sciences Total,00,000,23060,Fort Wayne,2022,0,0,000000,,146.0,842.06,68532010.0
+0,Life Sciences Total,00,000,23060,Fort Wayne,2023,0,0,000000,,157.0,853.82,68260575.0
+0,Life Sciences Total,00,000,23060,Fort Wayne,2024,0,0,000000,,158.0,1008.64,87195438.0
+0,Life Sciences Total,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,0,000000,,740.0,12347.37,1173703198.0
+0,Life Sciences Total,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,0,000000,,808.0,12628.64,1278426601.0
+0,Life Sciences Total,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,0,000000,,881.0,13300.86,1378307327.0
+0,Life Sciences Total,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,0,000000,,1035.0,14683.62,1540269818.0
+0,Life Sciences Total,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,0,000000,,1146.0,15610.79,1694168299.0
+0,Life Sciences Total,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,0,000000,,1195.0,15736.4,2576636771.0
+0,Life Sciences Total,00,000,29020,Kokomo,2019,0,1,000000,,16.0,0.0,0.0
+0,Life Sciences Total,00,000,29020,Kokomo,2020,0,0,000000,,15.0,168.0,8090991.0
+0,Life Sciences Total,00,000,29020,Kokomo,2021,0,0,000000,,16.0,175.0,8033471.0
+0,Life Sciences Total,00,000,29020,Kokomo,2022,0,0,000000,,19.0,165.91,7830076.0
+0,Life Sciences Total,00,000,29020,Kokomo,2023,0,0,000000,,24.0,159.24,7822762.0
+0,Life Sciences Total,00,000,29020,Kokomo,2024,0,0,000000,,26.0,67.24,5425641.0
+0,Life Sciences Total,00,000,29200,Lafayette-West Lafayette,2019,0,0,000000,,110.0,694.15,54345717.0
+0,Life Sciences Total,00,000,29200,Lafayette-West Lafayette,2020,0,0,000000,,117.0,864.72,77174454.0
+0,Life Sciences Total,00,000,29200,Lafayette-West Lafayette,2021,0,0,000000,,124.0,633.48,55626313.0
+0,Life Sciences Total,00,000,29200,Lafayette-West Lafayette,2022,0,0,000000,,140.0,881.48,80895522.0
+0,Life Sciences Total,00,000,29200,Lafayette-West Lafayette,2023,0,0,000000,,164.0,1145.23,111402387.0
+0,Life Sciences Total,00,000,29200,Lafayette-West Lafayette,2024,0,0,000000,,151.0,909.56,87181769.0
+0,Life Sciences Total,00,000,31140,Louisville/Jefferson County,2019,0,0,000000,,52.0,117.99,6087461.0
+0,Life Sciences Total,00,000,31140,Louisville/Jefferson County,2020,0,0,000000,,54.0,90.82,3681991.0
+0,Life Sciences Total,00,000,31140,Louisville/Jefferson County,2021,0,0,000000,,71.0,134.82,6776580.0
+0,Life Sciences Total,00,000,31140,Louisville/Jefferson County,2022,0,0,000000,,79.0,168.16,10054888.0
+0,Life Sciences Total,00,000,31140,Louisville/Jefferson County,2023,0,0,000000,,81.0,81.23,5409478.0
+0,Life Sciences Total,00,000,31140,Louisville/Jefferson County,2024,0,0,000000,,93.0,88.16,6644079.0
+0,Life Sciences Total,00,000,33140,Michigan City-La Porte,2019,0,0,000000,,13.0,56.66,2738897.0
+0,Life Sciences Total,00,000,33140,Michigan City-La Porte,2020,0,0,000000,,16.0,61.58,3446202.0
+0,Life Sciences Total,00,000,33140,Michigan City-La Porte,2021,0,0,000000,,17.0,64.0,3521870.0
+0,Life Sciences Total,00,000,33140,Michigan City-La Porte,2022,0,0,000000,,22.0,97.33,6611670.0
+0,Life Sciences Total,00,000,33140,Michigan City-La Porte,2023,0,0,000000,,24.0,102.91,6506699.0
+0,Life Sciences Total,00,000,33140,Michigan City-La Porte,2024,0,0,000000,,24.0,77.24,4730724.0
+0,Life Sciences Total,00,000,34620,Muncie,2019,0,1,000000,,15.0,0.0,0.0
+0,Life Sciences Total,00,000,34620,Muncie,2020,0,0,000000,,13.0,12.0,949990.0
+0,Life Sciences Total,00,000,34620,Muncie,2021,0,1,000000,,12.0,0.0,0.0
+0,Life Sciences Total,00,000,34620,Muncie,2022,0,0,000000,,15.0,15.5,1391884.0
+0,Life Sciences Total,00,000,34620,Muncie,2023,0,0,000000,,16.0,17.58,1591481.0
+0,Life Sciences Total,00,000,34620,Muncie,2024,0,0,000000,,16.0,18.5,1648785.0
+0,Life Sciences Total,00,000,43780,South Bend-Mishawaka,2019,0,0,000000,,65.0,395.24,30477164.0
+0,Life Sciences Total,00,000,43780,South Bend-Mishawaka,2020,0,0,000000,,70.0,446.98,35426586.0
+0,Life Sciences Total,00,000,43780,South Bend-Mishawaka,2021,0,0,000000,,81.0,474.4,38734320.0
+0,Life Sciences Total,00,000,43780,South Bend-Mishawaka,2022,0,0,000000,,101.0,545.98,48425717.0
+0,Life Sciences Total,00,000,43780,South Bend-Mishawaka,2023,0,0,000000,,106.0,596.49,56156046.0
+0,Life Sciences Total,00,000,43780,South Bend-Mishawaka,2024,0,0,000000,,103.0,816.23,67973350.0
+0,Life Sciences Total,00,000,45460,Terre Haute,2019,0,1,000000,,33.0,0.0,0.0
+0,Life Sciences Total,00,000,45460,Terre Haute,2020,0,1,000000,,29.0,0.0,0.0
+0,Life Sciences Total,00,000,45460,Terre Haute,2021,0,1,000000,,35.0,0.0,0.0
+0,Life Sciences Total,00,000,45460,Terre Haute,2022,0,1,000000,,42.0,0.0,0.0
+0,Life Sciences Total,00,000,45460,Terre Haute,2023,0,0,000000,,42.0,37.25,3667921.0
+0,Life Sciences Total,00,000,45460,Terre Haute,2024,0,0,000000,,37.0,37.41,3474347.0
+0,Life Sciences Total,18,000,00000,Indiana,2019,0,0,000000,,2721.0,65005.18,6499257708.0
+0,Life Sciences Total,18,000,00000,Indiana,2020,0,0,000000,,2924.0,64341.53,6684463720.0
+0,Life Sciences Total,18,000,00000,Indiana,2021,0,0,000000,,3173.0,67247.77,7185745460.0
+0,Life Sciences Total,18,000,00000,Indiana,2022,0,0,000000,,3600.0,71168.94,7733547185.0
+0,Life Sciences Total,18,000,00000,Indiana,2023,0,0,000000,,3766.0,72638.84,8459410837.0
+0,Life Sciences Total,18,000,00000,Indiana,2024,0,0,000000,,3771.0,72282.19,10136423756.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,0,311221,  Wet corn milling,67.0,13210.33,1255466671.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,0,325193,  Ethyl alcohol manufacturing,212.0,10458.58,876033956.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,0,325220,  Artificial fibers and filaments manufacturing,223.0,24953.58,2065259848.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,0,325311,  Nitrogenous fertilizer manufacturing,301.0,8325.33,824448750.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,0,325312,  Phosphatic fertilizer manufacturing,58.0,5705.33,548993250.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,0,325314,"  Fertilizer, mixing only, manufacturing",594.0,9079.25,550839879.0
+1,Ag/Bio,0 ,000,00000,United States,2019,0,1,325320,  Pesticide and other ag. chemical mfg.,369.0,12943.25,1144261462.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,0,311221,  Wet corn milling,67.0,13196.83,1305858626.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,0,325193,  Ethyl alcohol manufacturing,211.0,9974.91,856172459.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,0,325220,  Artificial fibers and filaments manufacturing,223.0,23572.58,2109229680.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,0,325311,  Nitrogenous fertilizer manufacturing,316.0,8635.0,952620849.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,0,325312,  Phosphatic fertilizer manufacturing,64.0,5621.58,544785277.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,0,325314,"  Fertilizer, mixing only, manufacturing",608.0,9116.83,591327685.0
+1,Ag/Bio,0 ,000,00000,United States,2020,0,1,325320,  Pesticide and other ag. chemical mfg.,406.0,13454.16,1258068215.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,0,311221,  Wet corn milling,70.0,13176.91,1436144102.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,0,325193,  Ethyl alcohol manufacturing,219.0,9694.91,874872206.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,0,325220,  Artificial fibers and filaments manufacturing,222.0,23990.25,2200623552.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,0,325311,  Nitrogenous fertilizer manufacturing,327.0,8838.08,986358623.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,0,325312,  Phosphatic fertilizer manufacturing,62.0,5656.16,565040931.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,0,325314,"  Fertilizer, mixing only, manufacturing",618.0,9282.25,626521334.0
+1,Ag/Bio,0 ,000,00000,United States,2021,0,1,325320,  Pesticide and other ag. chemical mfg.,421.0,13859.33,1317230284.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,311221,Wet Corn Milling and Starch Manufacturing,73.0,12761.83,1579759088.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,325193,Ethyl Alcohol Manufacturing,226.0,10000.5,1001014768.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,229.0,25783.91,2526042177.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,325311,Nitrogenous Fertilizer Manufacturing,340.0,8942.41,1117949275.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,325312,Phosphatic Fertilizer Manufacturing,69.0,5795.83,610171143.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,325314,Fertilizer (Mixing Only) Manufacturing,554.0,7361.33,525349053.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,0,325315,Compost Manufacturing,82.0,1008.75,63371923.0
+1,Ag/Bio,0 ,000,00000,United States,2022,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,439.0,14345.41,1478889071.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,311221,Wet Corn Milling and Starch Manufacturing,72.0,13273.08,1667923133.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,325193,Ethyl Alcohol Manufacturing,236.0,10149.5,1032893787.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,236.0,25338.58,2416155035.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,325311,Nitrogenous Fertilizer Manufacturing,341.0,8909.75,1001895626.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,325312,Phosphatic Fertilizer Manufacturing,73.0,5887.5,645028276.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,325314,Fertilizer (Mixing Only) Manufacturing,539.0,7298.75,540830989.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,0,325315,Compost Manufacturing,88.0,1054.58,70028684.0
+1,Ag/Bio,0 ,000,00000,United States,2023,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,482.0,14779.91,1564861268.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,311221,Wet Corn Milling and Starch Manufacturing,72.0,13529.91,1656669356.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,325193,Ethyl Alcohol Manufacturing,242.0,10593.91,1095251166.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,234.0,24085.16,2469036392.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,325311,Nitrogenous Fertilizer Manufacturing,357.0,8879.41,1046113315.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,325312,Phosphatic Fertilizer Manufacturing,71.0,5837.58,639880879.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,325314,Fertilizer (Mixing Only) Manufacturing,537.0,7192.08,558384153.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,0,325315,Compost Manufacturing,99.0,1183.08,92148018.0
+1,Ag/Bio,0 ,000,00000,United States,2024,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,506.0,13948.0,1469187813.0
+1,Ag/Bio,00,000,14020,Bloomington,2019,0,1,325314,"  Fertilizer, mixing only, manufacturing",1.0,0.0,0.0
+1,Ag/Bio,00,000,14020,Bloomington,2020,0,1,325314,"  Fertilizer, mixing only, manufacturing",1.0,0.0,0.0
+1,Ag/Bio,00,000,14020,Bloomington,2021,0,1,325314,"  Fertilizer, mixing only, manufacturing",1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2019,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2019,0,1,325220,  Artificial fibers and filaments manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2019,0,3,311221,  Wet corn milling,5.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2019,0,3,325320,  Pesticide and other ag. chemical mfg.,9.0,292.33,24441639.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2019,0,6,325314,"  Fertilizer, mixing only, manufacturing",12.0,21.25,1035629.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2020,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2020,0,1,325220,  Artificial fibers and filaments manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2020,0,3,311221,  Wet corn milling,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2020,0,6,325320,  Pesticide and other ag. chemical mfg.,11.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2020,0,7,325314,"  Fertilizer, mixing only, manufacturing",11.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2021,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2021,0,1,325220,  Artificial fibers and filaments manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2021,0,3,311221,  Wet corn milling,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2021,0,4,325314,"  Fertilizer, mixing only, manufacturing",10.0,38.25,2306822.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,325320,  Pesticide and other ag. chemical mfg.,12.0,335.41,26931175.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,1,325315,Compost Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,3,311221,Wet Corn Milling and Starch Manufacturing,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,4,325314,Fertilizer (Mixing Only) Manufacturing,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2022,0,7,325320,Pesticide and Other Agricultural Chemical Manufacturing,14.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,2,325315,Compost Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,311221,Wet Corn Milling and Starch Manufacturing,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,4,325314,Fertilizer (Mixing Only) Manufacturing,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2023,0,7,325320,Pesticide and Other Agricultural Chemical Manufacturing,13.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,2,325311,Nitrogenous Fertilizer Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,2,325315,Compost Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,3,311221,Wet Corn Milling and Starch Manufacturing,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,4,325314,Fertilizer (Mixing Only) Manufacturing,6.0,0.0,0.0
+1,Ag/Bio,00,000,16980,Chicago-Naperville-Elgin,2024,0,5,325320,Pesticide and Other Agricultural Chemical Manufacturing,11.0,0.0,0.0
+1,Ag/Bio,00,000,18020,Columbus,2020,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,18020,Columbus,2021,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,18020,Columbus,2022,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,18020,Columbus,2023,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21140,Elkhart-Goshen,2019,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21140,Elkhart-Goshen,2020,0,1,325220,  Artificial fibers and filaments manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21140,Elkhart-Goshen,2021,0,1,325220,  Artificial fibers and filaments manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21140,Elkhart-Goshen,2022,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21140,Elkhart-Goshen,2023,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21140,Elkhart-Goshen,2024,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2019,0,1,325193,  Ethyl alcohol manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2019,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2019,0,2,325320,  Pesticide and other ag. chemical mfg.,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2020,0,1,325193,  Ethyl alcohol manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2020,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2020,0,1,325320,  Pesticide and other ag. chemical mfg.,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2021,0,1,325193,  Ethyl alcohol manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2021,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2021,0,1,325320,  Pesticide and other ag. chemical mfg.,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2022,0,1,325193,Ethyl Alcohol Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2022,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2022,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2023,0,1,325193,Ethyl Alcohol Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2023,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2023,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2024,0,1,325193,Ethyl Alcohol Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,21780,Evansville,2024,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2019,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2019,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2020,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2020,0,1,325314,"  Fertilizer, mixing only, manufacturing",1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2020,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2021,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2021,0,1,325314,"  Fertilizer, mixing only, manufacturing",1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2022,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2022,0,1,325314,Fertilizer (Mixing Only) Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2023,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2023,0,1,325314,Fertilizer (Mixing Only) Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2024,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,23060,Fort Wayne,2024,0,1,325314,Fertilizer (Mixing Only) Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,1,311221,  Wet corn milling,1.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,2,325193,  Ethyl alcohol manufacturing,3.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,2,325320,  Pesticide and other ag. chemical mfg.,3.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,4,325314,"  Fertilizer, mixing only, manufacturing",4.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,1,311221,  Wet corn milling,1.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,1,325220,  Artificial fibers and filaments manufacturing,0.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,2,325193,  Ethyl alcohol manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,3,325320,  Pesticide and other ag. chemical mfg.,3.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,325314,"  Fertilizer, mixing only, manufacturing",4.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,1,311221,  Wet corn milling,2.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,1,325220,  Artificial fibers and filaments manufacturing,0.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,2,325193,  Ethyl alcohol manufacturing,4.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,3,325320,  Pesticide and other ag. chemical mfg.,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,4,325314,"  Fertilizer, mixing only, manufacturing",4.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,1,311221,Wet Corn Milling and Starch Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,2,325193,Ethyl Alcohol Manufacturing,4.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,3,325320,Pesticide and Other Agricultural Chemical Manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,4,325314,Fertilizer (Mixing Only) Manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,1,311221,Wet Corn Milling and Starch Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,325193,Ethyl Alcohol Manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,325320,Pesticide and Other Agricultural Chemical Manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,4,325314,Fertilizer (Mixing Only) Manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,1,311221,Wet Corn Milling and Starch Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,3.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,325193,Ethyl Alcohol Manufacturing,4.0,0.0,0.0
+1,Ag/Bio,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,325314,Fertilizer (Mixing Only) Manufacturing,5.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2019,0,1,311221,  Wet corn milling,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2019,0,2,325320,  Pesticide and other ag. chemical mfg.,3.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2020,0,1,311221,  Wet corn milling,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2020,0,2,325320,  Pesticide and other ag. chemical mfg.,3.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2021,0,1,311221,  Wet corn milling,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2021,0,1,325193,  Ethyl alcohol manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2021,0,2,325320,  Pesticide and other ag. chemical mfg.,3.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2022,0,1,311221,Wet Corn Milling and Starch Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2022,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2022,0,2,325320,Pesticide and Other Agricultural Chemical Manufacturing,3.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2023,0,1,311221,Wet Corn Milling and Starch Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2023,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2023,0,2,325320,Pesticide and Other Agricultural Chemical Manufacturing,3.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2024,0,1,311221,Wet Corn Milling and Starch Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2024,0,1,325193,Ethyl Alcohol Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,29200,Lafayette-West Lafayette,2024,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2019,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2019,0,2,325314,"  Fertilizer, mixing only, manufacturing",2.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2020,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2020,0,2,325314,"  Fertilizer, mixing only, manufacturing",2.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2021,0,1,325320,  Pesticide and other ag. chemical mfg.,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2021,0,2,325314,"  Fertilizer, mixing only, manufacturing",2.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2022,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2022,0,2,325314,Fertilizer (Mixing Only) Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2023,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2023,0,2,325314,Fertilizer (Mixing Only) Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2024,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,31140,Louisville/Jefferson County,2024,0,2,325314,Fertilizer (Mixing Only) Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,00,000,43780,South Bend-Mishawaka,2019,0,1,325193,  Ethyl alcohol manufacturing,0.0,0.0,0.0
+1,Ag/Bio,00,000,45460,Terre Haute,2019,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,45460,Terre Haute,2020,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,45460,Terre Haute,2021,0,1,325311,  Nitrogenous fertilizer manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,45460,Terre Haute,2022,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,45460,Terre Haute,2023,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,00,000,45460,Terre Haute,2024,0,1,325311,Nitrogenous Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2019,0,0,311221,  Wet corn milling,4.0,1327.75,118061567.0
+1,Ag/Bio,18,000,00000,Indiana,2019,0,0,325314,"  Fertilizer, mixing only, manufacturing",17.0,280.41,15809648.0
+1,Ag/Bio,18,000,00000,Indiana,2019,0,1,325193,  Ethyl alcohol manufacturing,14.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2019,0,1,325220,  Artificial fibers and filaments manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2019,0,1,325311,  Nitrogenous fertilizer manufacturing,6.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2019,0,1,325320,  Pesticide and other ag. chemical mfg.,9.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2020,0,0,311221,  Wet corn milling,4.0,1336.5,123572316.0
+1,Ag/Bio,18,000,00000,Indiana,2020,0,0,325314,"  Fertilizer, mixing only, manufacturing",18.0,269.41,15820968.0
+1,Ag/Bio,18,000,00000,Indiana,2020,0,1,325193,  Ethyl alcohol manufacturing,16.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2020,0,1,325220,  Artificial fibers and filaments manufacturing,2.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2020,0,1,325311,  Nitrogenous fertilizer manufacturing,5.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2020,0,1,325320,  Pesticide and other ag. chemical mfg.,18.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2021,0,0,311221,  Wet corn milling,5.0,1330.58,127072572.0
+1,Ag/Bio,18,000,00000,Indiana,2021,0,0,325220,  Artificial fibers and filaments manufacturing,3.0,7.0,484711.0
+1,Ag/Bio,18,000,00000,Indiana,2021,0,0,325314,"  Fertilizer, mixing only, manufacturing",18.0,277.91,17633907.0
+1,Ag/Bio,18,000,00000,Indiana,2021,0,1,325193,  Ethyl alcohol manufacturing,18.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2021,0,1,325311,  Nitrogenous fertilizer manufacturing,4.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2021,0,1,325320,  Pesticide and other ag. chemical mfg.,19.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,0,311221,Wet Corn Milling and Starch Manufacturing,5.0,1331.75,133135026.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,0,325311,Nitrogenous Fertilizer Manufacturing,5.0,22.33,2842066.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,0,325314,Fertilizer (Mixing Only) Manufacturing,15.0,294.41,19673394.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,1,325193,Ethyl Alcohol Manufacturing,18.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,1,325312,Phosphatic Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,1,325315,Compost Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2022,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,20.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,0,311221,Wet Corn Milling and Starch Manufacturing,6.0,1426.58,152128360.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,0,325311,Nitrogenous Fertilizer Manufacturing,4.0,21.83,2628207.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,0,325314,Fertilizer (Mixing Only) Manufacturing,15.0,332.58,23158978.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,1,325193,Ethyl Alcohol Manufacturing,19.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,1,325312,Phosphatic Fertilizer Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,1,325315,Compost Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2023,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,18.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,0,311221,Wet Corn Milling and Starch Manufacturing,6.0,1423.5,153658346.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,0,325311,Nitrogenous Fertilizer Manufacturing,5.0,23.33,2872004.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,0,325314,Fertilizer (Mixing Only) Manufacturing,17.0,334.0,26251539.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,1,325193,Ethyl Alcohol Manufacturing,16.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,1,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,1,325312,Phosphatic Fertilizer Manufacturing,2.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,1,325315,Compost Manufacturing,1.0,0.0,0.0
+1,Ag/Bio,18,000,00000,Indiana,2024,0,1,325320,Pesticide and Other Agricultural Chemical Manufacturing,5.0,0.0,0.0
+2,Pharma,0 ,000,00000,United States,2019,0,0,325411,Medicinal and Botanical Manufacturing,869.0,31887.66,3448646043.0
+2,Pharma,0 ,000,00000,United States,2019,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,356.0,28043.0,2977404722.0
+2,Pharma,0 ,000,00000,United States,2019,0,0,325414,Biological Product (except Diagnostic) Manufacturing,501.0,36274.41,3864293739.0
+2,Pharma,0 ,000,00000,United States,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,3082.0,209715.41,26348494104.0
+2,Pharma,0 ,000,00000,United States,2020,0,0,325411,Medicinal and Botanical Manufacturing,1039.0,34760.33,4097523911.0
+2,Pharma,0 ,000,00000,United States,2020,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,361.0,28791.91,3246604655.0
+2,Pharma,0 ,000,00000,United States,2020,0,0,325414,Biological Product (except Diagnostic) Manufacturing,505.0,38063.83,4420317031.0
+2,Pharma,0 ,000,00000,United States,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,3367.0,212670.0,27904770229.0
+2,Pharma,0 ,000,00000,United States,2021,0,0,325411,Medicinal and Botanical Manufacturing,1206.0,38099.66,4284284188.0
+2,Pharma,0 ,000,00000,United States,2021,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,397.0,33829.5,4023200885.0
+2,Pharma,0 ,000,00000,United States,2021,0,0,325414,Biological Product (except Diagnostic) Manufacturing,554.0,40480.5,4705984664.0
+2,Pharma,0 ,000,00000,United States,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,3804.0,219438.33,29238238374.0
+2,Pharma,0 ,000,00000,United States,2022,0,0,325411,Medicinal and Botanical Manufacturing,1366.0,41120.41,4981768754.0
+2,Pharma,0 ,000,00000,United States,2022,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,434.0,31974.25,3695379046.0
+2,Pharma,0 ,000,00000,United States,2022,0,0,325414,Biological Product (except Diagnostic) Manufacturing,661.0,43817.5,5210786918.0
+2,Pharma,0 ,000,00000,United States,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,4323.0,227139.16,30793875830.0
+2,Pharma,0 ,000,00000,United States,2023,0,0,325411,Medicinal and Botanical Manufacturing,1445.0,42309.41,5592908909.0
+2,Pharma,0 ,000,00000,United States,2023,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,466.0,31394.5,3643744114.0
+2,Pharma,0 ,000,00000,United States,2023,0,0,325414,Biological Product (except Diagnostic) Manufacturing,744.0,44942.25,5554468261.0
+2,Pharma,0 ,000,00000,United States,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,4663.0,227928.66,31318340553.0
+2,Pharma,0 ,000,00000,United States,2024,0,0,325411,Medicinal and Botanical Manufacturing,1470.0,44399.41,6179888809.0
+2,Pharma,0 ,000,00000,United States,2024,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,499.0,28055.0,3220629669.0
+2,Pharma,0 ,000,00000,United States,2024,0,0,325414,Biological Product (except Diagnostic) Manufacturing,804.0,46279.08,5893008302.0
+2,Pharma,0 ,000,00000,United States,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,4886.0,229552.16,33587475291.0
+2,Pharma,00,000,14020,Bloomington,2019,0,2,325412,Pharmaceutical Preparation Manufacturing,5.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2020,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2020,0,2,325412,Pharmaceutical Preparation Manufacturing,5.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2021,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2021,0,2,325412,Pharmaceutical Preparation Manufacturing,6.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2022,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2022,0,2,325412,Pharmaceutical Preparation Manufacturing,6.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2023,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2023,0,2,325412,Pharmaceutical Preparation Manufacturing,7.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,14020,Bloomington,2024,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,325412,Pharmaceutical Preparation Manufacturing,74.0,16713.0,3171667456.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,325414,Biological Product (except Diagnostic) Manufacturing,8.0,13.5,2316046.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2019,0,5,325411,Medicinal and Botanical Manufacturing,20.0,183.16,10000823.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2020,0,3,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2020,0,4,325414,Biological Product (except Diagnostic) Manufacturing,7.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2020,0,5,325412,Pharmaceutical Preparation Manufacturing,83.0,17059.41,3401305278.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2020,0,6,325411,Medicinal and Botanical Manufacturing,20.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2021,0,3,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,325411,Medicinal and Botanical Manufacturing,20.0,92.0,6179219.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,325412,Pharmaceutical Preparation Manufacturing,90.0,17163.66,3614382095.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,325414,Biological Product (except Diagnostic) Manufacturing,7.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2022,0,3,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2022,0,4,325414,Biological Product (except Diagnostic) Manufacturing,10.0,8.0,1277694.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,325411,Medicinal and Botanical Manufacturing,23.0,90.0,6783753.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,325412,Pharmaceutical Preparation Manufacturing,105.0,17037.4,3837036112.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2023,0,2,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,325412,Pharmaceutical Preparation Manufacturing,111.0,17949.16,3956919103.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2023,0,6,325411,Medicinal and Botanical Manufacturing,24.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2023,0,6,325414,Biological Product (except Diagnostic) Manufacturing,12.0,3.25,480546.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2024,0,2,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2024,0,3,325412,Pharmaceutical Preparation Manufacturing,110.0,18038.06,4307803308.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2024,0,6,325411,Medicinal and Botanical Manufacturing,22.0,0.0,0.0
+2,Pharma,00,000,16980,Chicago-Naperville-Elgin,2024,0,7,325414,Biological Product (except Diagnostic) Manufacturing,13.0,0.0,0.0
+2,Pharma,00,000,17140,Cincinnati,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,17140,Cincinnati,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,17140,Cincinnati,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,17140,Cincinnati,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,17140,Cincinnati,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,18020,Columbus,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,18020,Columbus,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,18020,Columbus,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,18020,Columbus,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,18020,Columbus,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,18020,Columbus,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,21140,Elkhart-Goshen,2019,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,141.16,10139044.0
+2,Pharma,00,000,21140,Elkhart-Goshen,2020,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,167.66,11975486.0
+2,Pharma,00,000,21140,Elkhart-Goshen,2021,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,6.0,225.33,15586878.0
+2,Pharma,00,000,21140,Elkhart-Goshen,2022,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,91.41,6512156.0
+2,Pharma,00,000,21140,Elkhart-Goshen,2023,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,89.66,6212955.0
+2,Pharma,00,000,21140,Elkhart-Goshen,2024,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,4.0,88.08,6330713.0
+2,Pharma,00,000,21780,Evansville,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2021,0,1,325411,Medicinal and Botanical Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2021,0,2,325412,Pharmaceutical Preparation Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2022,0,1,325411,Medicinal and Botanical Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2022,0,2,325412,Pharmaceutical Preparation Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2023,0,2,325412,Pharmaceutical Preparation Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,21780,Evansville,2024,0,2,325412,Pharmaceutical Preparation Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,0.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2022,0,1,325414,Biological Product (except Diagnostic) Manufacturing,0.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,23060,Fort Wayne,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,2836.91,380019809.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,2,325411,Medicinal and Botanical Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,2,325414,Biological Product (except Diagnostic) Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,5,325412,Pharmaceutical Preparation Manufacturing,16.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,1,325411,Medicinal and Botanical Manufacturing,6.0,5.83,298582.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,2796.41,400541328.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,2,325414,Biological Product (except Diagnostic) Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,6,325412,Pharmaceutical Preparation Manufacturing,20.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,1,325411,Medicinal and Botanical Manufacturing,6.0,10.08,356848.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,2783.16,432683978.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,2,325414,Biological Product (except Diagnostic) Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,5,325412,Pharmaceutical Preparation Manufacturing,22.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,2836.58,432157967.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,4,325411,Medicinal and Botanical Manufacturing,10.0,6.0,130441.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,4,325414,Biological Product (except Diagnostic) Manufacturing,6.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,5,325412,Pharmaceutical Preparation Manufacturing,23.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,2724.33,393936872.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,325414,Biological Product (except Diagnostic) Manufacturing,5.0,7.0,1147041.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,4,325411,Medicinal and Botanical Manufacturing,7.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,4,325412,Pharmaceutical Preparation Manufacturing,25.0,31.0,4688769.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,5.0,2571.0,370316507.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,325411,Medicinal and Botanical Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,325412,Pharmaceutical Preparation Manufacturing,30.0,40.5,5377564.0
+2,Pharma,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,325414,Biological Product (except Diagnostic) Manufacturing,5.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,4.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2023,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,29200,Lafayette-West Lafayette,2024,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2020,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2021,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,31140,Louisville/Jefferson County,2024,0,2,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,34620,Muncie,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,34620,Muncie,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,34620,Muncie,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,34620,Muncie,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,34620,Muncie,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,34620,Muncie,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2019,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2019,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2020,0,1,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2020,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2021,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2021,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2022,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2022,0,1,325414,Biological Product (except Diagnostic) Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2023,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2023,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2024,0,1,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,43780,South Bend-Mishawaka,2024,0,1,325413,In-Vitro Diagnostic Substance Manufacturing,1.0,0.0,0.0
+2,Pharma,00,000,45460,Terre Haute,2019,0,2,325412,Pharmaceutical Preparation Manufacturing,3.0,0.0,0.0
+2,Pharma,00,000,45460,Terre Haute,2020,0,2,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,45460,Terre Haute,2021,0,2,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,45460,Terre Haute,2022,0,2,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,45460,Terre Haute,2023,0,2,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,00,000,45460,Terre Haute,2024,0,2,325412,Pharmaceutical Preparation Manufacturing,2.0,0.0,0.0
+2,Pharma,18,000,00000,Indiana,2019,0,0,325411,Medicinal and Botanical Manufacturing,7.0,96.0,3429298.0
+2,Pharma,18,000,00000,Indiana,2019,0,0,325412,Pharmaceutical Preparation Manufacturing,56.0,15277.0,2499294299.0
+2,Pharma,18,000,00000,Indiana,2019,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,13.0,3023.91,392549315.0
+2,Pharma,18,000,00000,Indiana,2019,0,0,325414,Biological Product (except Diagnostic) Manufacturing,9.0,116.0,8239131.0
+2,Pharma,18,000,00000,Indiana,2020,0,0,325412,Pharmaceutical Preparation Manufacturing,61.0,15667.83,2564750653.0
+2,Pharma,18,000,00000,Indiana,2020,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,13.0,3006.33,414509835.0
+2,Pharma,18,000,00000,Indiana,2020,0,1,325411,Medicinal and Botanical Manufacturing,9.0,0.0,0.0
+2,Pharma,18,000,00000,Indiana,2020,0,1,325414,Biological Product (except Diagnostic) Manufacturing,9.0,0.0,0.0
+2,Pharma,18,000,00000,Indiana,2021,0,0,325411,Medicinal and Botanical Manufacturing,10.0,90.5,3674011.0
+2,Pharma,18,000,00000,Indiana,2021,0,0,325412,Pharmaceutical Preparation Manufacturing,66.0,17538.83,2747555339.0
+2,Pharma,18,000,00000,Indiana,2021,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,17.0,3050.16,450604907.0
+2,Pharma,18,000,00000,Indiana,2021,0,0,325414,Biological Product (except Diagnostic) Manufacturing,9.0,111.91,7293965.0
+2,Pharma,18,000,00000,Indiana,2022,0,0,325411,Medicinal and Botanical Manufacturing,13.0,103.5,4792467.0
+2,Pharma,18,000,00000,Indiana,2022,0,0,325412,Pharmaceutical Preparation Manufacturing,71.0,19232.91,2899772657.0
+2,Pharma,18,000,00000,Indiana,2022,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,15.0,2968.41,441114559.0
+2,Pharma,18,000,00000,Indiana,2022,0,0,325414,Biological Product (except Diagnostic) Manufacturing,11.0,114.25,8152251.0
+2,Pharma,18,000,00000,Indiana,2023,0,0,325411,Medicinal and Botanical Manufacturing,10.0,96.91,4852822.0
+2,Pharma,18,000,00000,Indiana,2023,0,0,325412,Pharmaceutical Preparation Manufacturing,73.0,19568.16,3273782246.0
+2,Pharma,18,000,00000,Indiana,2023,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,15.0,2874.83,404485226.0
+2,Pharma,18,000,00000,Indiana,2023,0,0,325414,Biological Product (except Diagnostic) Manufacturing,11.0,98.66,7160315.0
+2,Pharma,18,000,00000,Indiana,2024,0,0,325411,Medicinal and Botanical Manufacturing,8.0,102.0,6112756.0
+2,Pharma,18,000,00000,Indiana,2024,0,0,325412,Pharmaceutical Preparation Manufacturing,73.0,19678.33,3946642414.0
+2,Pharma,18,000,00000,Indiana,2024,0,0,325413,In-Vitro Diagnostic Substance Manufacturing,15.0,2720.25,381390749.0
+2,Pharma,18,000,00000,Indiana,2024,0,0,325414,Biological Product (except Diagnostic) Manufacturing,11.0,102.66,6998261.0
+3,MedDev,0 ,000,00000,United States,2019,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1590.0,71093.08,8617320252.0
+3,MedDev,0 ,000,00000,United States,2019,0,0,334516,Analytical Laboratory Instrument Manufacturing,924.0,39494.0,4192632270.0
+3,MedDev,0 ,000,00000,United States,2019,0,0,334517,Irradiation Apparatus Manufacturing,275.0,14627.41,1620078684.0
+3,MedDev,0 ,000,00000,United States,2019,0,0,339112,Surgical and Medical Instrument Manufacturing,2493.0,132983.08,12103529672.0
+3,MedDev,0 ,000,00000,United States,2019,0,0,339113,Surgical Appliance and Supplies Manufacturing,3126.0,104326.91,8383037794.0
+3,MedDev,0 ,000,00000,United States,2019,0,0,339114,Dental Equipment and Supplies Manufacturing,662.0,15972.0,1102380650.0
+3,MedDev,0 ,000,00000,United States,2020,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1729.0,73147.0,9291780047.0
+3,MedDev,0 ,000,00000,United States,2020,0,0,334516,Analytical Laboratory Instrument Manufacturing,964.0,39064.83,4302702953.0
+3,MedDev,0 ,000,00000,United States,2020,0,0,334517,Irradiation Apparatus Manufacturing,284.0,13968.83,1607499224.0
+3,MedDev,0 ,000,00000,United States,2020,0,0,339112,Surgical and Medical Instrument Manufacturing,2659.0,135654.5,11991203260.0
+3,MedDev,0 ,000,00000,United States,2020,0,0,339113,Surgical Appliance and Supplies Manufacturing,3186.0,102052.58,8357999191.0
+3,MedDev,0 ,000,00000,United States,2020,0,0,339114,Dental Equipment and Supplies Manufacturing,683.0,14843.33,1039771402.0
+3,MedDev,0 ,000,00000,United States,2021,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1866.0,74854.33,9674688864.0
+3,MedDev,0 ,000,00000,United States,2021,0,0,334516,Analytical Laboratory Instrument Manufacturing,1050.0,40722.66,4723695361.0
+3,MedDev,0 ,000,00000,United States,2021,0,0,334517,Irradiation Apparatus Manufacturing,287.0,13896.0,1606350479.0
+3,MedDev,0 ,000,00000,United States,2021,0,0,339112,Surgical and Medical Instrument Manufacturing,2996.0,136317.83,12875886143.0
+3,MedDev,0 ,000,00000,United States,2021,0,0,339113,Surgical Appliance and Supplies Manufacturing,3330.0,102794.75,8574291566.0
+3,MedDev,0 ,000,00000,United States,2021,0,0,339114,Dental Equipment and Supplies Manufacturing,702.0,15713.83,1160440031.0
+3,MedDev,0 ,000,00000,United States,2022,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2082.0,76097.0,9445231325.0
+3,MedDev,0 ,000,00000,United States,2022,0,0,334516,Analytical Laboratory Instrument Manufacturing,1174.0,48196.75,5643574689.0
+3,MedDev,0 ,000,00000,United States,2022,0,0,334517,Irradiation Apparatus Manufacturing,291.0,14298.83,1653933150.0
+3,MedDev,0 ,000,00000,United States,2022,0,0,339112,Surgical and Medical Instrument Manufacturing,3448.0,142469.0,13656654513.0
+3,MedDev,0 ,000,00000,United States,2022,0,0,339113,Surgical Appliance and Supplies Manufacturing,3464.0,106385.75,9144723334.0
+3,MedDev,0 ,000,00000,United States,2022,0,0,339114,Dental Equipment and Supplies Manufacturing,762.0,16461.25,1239772995.0
+3,MedDev,0 ,000,00000,United States,2023,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2157.0,75159.25,9381310864.0
+3,MedDev,0 ,000,00000,United States,2023,0,0,334516,Analytical Laboratory Instrument Manufacturing,1263.0,46324.58,5413407329.0
+3,MedDev,0 ,000,00000,United States,2023,0,0,334517,Irradiation Apparatus Manufacturing,292.0,13879.41,1799416608.0
+3,MedDev,0 ,000,00000,United States,2023,0,0,339112,Surgical and Medical Instrument Manufacturing,3895.0,142942.66,14056045471.0
+3,MedDev,0 ,000,00000,United States,2023,0,0,339113,Surgical Appliance and Supplies Manufacturing,3497.0,103859.5,9246903147.0
+3,MedDev,0 ,000,00000,United States,2023,0,0,339114,Dental Equipment and Supplies Manufacturing,863.0,16489.5,1302092580.0
+3,MedDev,0 ,000,00000,United States,2024,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2226.0,74185.41,9915370087.0
+3,MedDev,0 ,000,00000,United States,2024,0,0,334516,Analytical Laboratory Instrument Manufacturing,1287.0,44648.33,5208381427.0
+3,MedDev,0 ,000,00000,United States,2024,0,0,334517,Irradiation Apparatus Manufacturing,286.0,13319.58,1632630806.0
+3,MedDev,0 ,000,00000,United States,2024,0,0,339112,Surgical and Medical Instrument Manufacturing,4236.0,141327.16,14853687580.0
+3,MedDev,0 ,000,00000,United States,2024,0,0,339113,Surgical Appliance and Supplies Manufacturing,3539.0,100956.91,9602423849.0
+3,MedDev,0 ,000,00000,United States,2024,0,0,339114,Dental Equipment and Supplies Manufacturing,893.0,16309.5,1350107699.0
+3,MedDev,00,000,14020,Bloomington,2019,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2019,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2019,0,2,339112,Surgical and Medical Instrument Manufacturing,8.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2020,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2020,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2020,0,2,339112,Surgical and Medical Instrument Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2021,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2021,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2021,0,2,339112,Surgical and Medical Instrument Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2022,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2022,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2022,0,2,339112,Surgical and Medical Instrument Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2023,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2023,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2023,0,2,339112,Surgical and Medical Instrument Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2024,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2024,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,14020,Bloomington,2024,0,2,339112,Surgical and Medical Instrument Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2019,0,2,339112,Surgical and Medical Instrument Manufacturing,85.0,5474.74,905193358.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2019,0,3,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,50.0,928.48,89887718.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,334516,Analytical Laboratory Instrument Manufacturing,17.0,316.41,27038709.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,334517,Irradiation Apparatus Manufacturing,15.0,329.57,26072669.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,339113,Surgical Appliance and Supplies Manufacturing,71.0,1143.32,198488196.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,339114,Dental Equipment and Supplies Manufacturing,42.0,1403.66,119329644.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2020,0,2,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,51.0,846.98,84883565.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2020,0,2,339112,Surgical and Medical Instrument Manufacturing,87.0,5790.73,795624677.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2020,0,3,334516,Analytical Laboratory Instrument Manufacturing,22.0,358.25,29388584.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2020,0,4,334517,Irradiation Apparatus Manufacturing,15.0,327.41,27755980.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2020,0,4,339113,Surgical Appliance and Supplies Manufacturing,74.0,1101.49,174106779.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2020,0,4,339114,Dental Equipment and Supplies Manufacturing,43.0,1273.33,91446072.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2021,0,2,339112,Surgical and Medical Instrument Manufacturing,88.0,5554.65,694095582.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2021,0,3,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,57.0,841.07,86470259.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2021,0,3,334517,Irradiation Apparatus Manufacturing,14.0,343.33,30376861.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2021,0,3,339113,Surgical Appliance and Supplies Manufacturing,72.0,1098.15,148816606.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2021,0,4,334516,Analytical Laboratory Instrument Manufacturing,23.0,366.08,34590912.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2021,0,6,339114,Dental Equipment and Supplies Manufacturing,43.0,1296.25,101976376.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2022,0,1,339112,Surgical and Medical Instrument Manufacturing,94.0,5623.16,718081011.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2022,0,3,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,63.0,874.32,96116695.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2022,0,3,334516,Analytical Laboratory Instrument Manufacturing,25.0,365.66,35757105.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2022,0,4,334517,Irradiation Apparatus Manufacturing,14.0,363.16,31116447.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2022,0,4,339113,Surgical Appliance and Supplies Manufacturing,69.0,1045.66,144625134.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,339114,Dental Equipment and Supplies Manufacturing,45.0,1353.0,105733610.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2023,0,2,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,65.0,908.66,102323438.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2023,0,2,339112,Surgical and Medical Instrument Manufacturing,96.0,5571.98,660621022.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,339113,Surgical Appliance and Supplies Manufacturing,72.0,1221.98,147129697.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,339114,Dental Equipment and Supplies Manufacturing,46.0,1450.16,114287060.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2023,0,4,334516,Analytical Laboratory Instrument Manufacturing,27.0,358.33,34867330.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2023,0,4,334517,Irradiation Apparatus Manufacturing,15.0,373.0,33975556.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2024,0,2,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,70.0,984.64,136273917.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2024,0,3,339112,Surgical and Medical Instrument Manufacturing,106.0,6036.32,751275591.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2024,0,4,334516,Analytical Laboratory Instrument Manufacturing,26.0,395.58,39001075.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2024,0,4,334517,Irradiation Apparatus Manufacturing,15.0,386.66,36777678.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2024,0,4,339113,Surgical Appliance and Supplies Manufacturing,73.0,920.07,146865708.0
+3,MedDev,00,000,16980,Chicago-Naperville-Elgin,2024,0,4,339114,Dental Equipment and Supplies Manufacturing,46.0,1514.23,122997745.0
+3,MedDev,00,000,17140,Cincinnati,2019,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2020,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2021,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2022,0,2,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2023,0,2,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2024,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,17140,Cincinnati,2024,0,2,339112,Surgical and Medical Instrument Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2019,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2020,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2021,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2022,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2023,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2024,0,1,339113,Surgical Appliance and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,18020,Columbus,2024,0,1,339114,Dental Equipment and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2019,0,0,339113,Surgical Appliance and Supplies Manufacturing,4.0,50.0,3195603.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2019,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2019,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2020,0,0,339113,Surgical Appliance and Supplies Manufacturing,4.0,63.58,4397725.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2020,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2020,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2021,0,0,339113,Surgical Appliance and Supplies Manufacturing,4.0,61.66,4280936.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2021,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2021,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2022,0,0,339113,Surgical Appliance and Supplies Manufacturing,4.0,64.58,4225652.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2022,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2022,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2023,0,0,339113,Surgical Appliance and Supplies Manufacturing,4.0,73.08,4531039.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2023,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2023,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2024,0,0,339113,Surgical Appliance and Supplies Manufacturing,3.0,65.0,4236253.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2024,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21140,Elkhart-Goshen,2024,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2019,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2019,0,1,334516,Analytical Laboratory Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2020,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2021,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2022,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,21780,Evansville,2024,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2019,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2019,0,2,339112,Surgical and Medical Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2019,0,3,339113,Surgical Appliance and Supplies Manufacturing,6.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2020,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2020,0,2,339112,Surgical and Medical Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2020,0,3,339113,Surgical Appliance and Supplies Manufacturing,6.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2021,0,2,339112,Surgical and Medical Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2021,0,3,339113,Surgical Appliance and Supplies Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2022,0,2,339112,Surgical and Medical Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2022,0,3,339113,Surgical Appliance and Supplies Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2023,0,2,339112,Surgical and Medical Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2023,0,3,339113,Surgical Appliance and Supplies Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2024,0,2,339112,Surgical and Medical Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,23060,Fort Wayne,2024,0,2,339113,Surgical Appliance and Supplies Manufacturing,8.0,117.0,12528776.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,7.0,8.0,1080359.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,1,334517,Irradiation Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,2,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,3,334516,Analytical Laboratory Instrument Manufacturing,6.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,4,339112,Surgical and Medical Instrument Manufacturing,14.0,270.41,17981544.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,4,339113,Surgical Appliance and Supplies Manufacturing,22.0,520.66,27335147.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,9.0,12.66,1754918.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,1,334517,Irradiation Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,2,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,334516,Analytical Laboratory Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,339112,Surgical and Medical Instrument Manufacturing,16.0,228.0,15491864.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,339113,Surgical Appliance and Supplies Manufacturing,23.0,535.75,29812807.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,9.0,157.25,15438796.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,1,334517,Irradiation Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,2,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,4,334516,Analytical Laboratory Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,4,339113,Surgical Appliance and Supplies Manufacturing,22.0,568.0,32947391.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,5,339112,Surgical and Medical Instrument Manufacturing,16.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,1,334517,Irradiation Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,2,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,9.0,16.66,2139616.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,3,339113,Surgical Appliance and Supplies Manufacturing,22.0,1133.41,66898875.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,3,339114,Dental Equipment and Supplies Manufacturing,6.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,4,334516,Analytical Laboratory Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,6,339112,Surgical and Medical Instrument Manufacturing,15.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,1,334517,Irradiation Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,10.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,339113,Surgical Appliance and Supplies Manufacturing,22.0,1138.16,71431338.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,339114,Dental Equipment and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,4,334516,Analytical Laboratory Instrument Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,5,339112,Surgical and Medical Instrument Manufacturing,16.0,408.0,32402595.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,1,334517,Irradiation Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,2,339114,Dental Equipment and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,3,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,12.0,20.0,2986177.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,334516,Analytical Laboratory Instrument Manufacturing,5.0,0.0,0.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,339113,Surgical Appliance and Supplies Manufacturing,22.0,1213.33,74168045.0
+3,MedDev,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,6,339112,Surgical and Medical Instrument Manufacturing,18.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2019,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2019,0,1,334516,Analytical Laboratory Instrument Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2019,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2020,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2020,0,1,334516,Analytical Laboratory Instrument Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2020,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2021,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2021,0,1,334516,Analytical Laboratory Instrument Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2021,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2022,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2022,0,1,334516,Analytical Laboratory Instrument Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2022,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2023,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2023,0,1,334516,Analytical Laboratory Instrument Manufacturing,7.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2023,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2024,0,1,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2024,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2024,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,29200,Lafayette-West Lafayette,2024,0,1,339113,Surgical Appliance and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2019,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2019,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2020,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2020,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2021,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2021,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2022,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2022,0,2,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2023,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2023,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2024,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,31140,Louisville/Jefferson County,2024,0,2,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2019,0,1,339114,Dental Equipment and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2020,0,1,339114,Dental Equipment and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2021,0,1,339114,Dental Equipment and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2022,0,1,339114,Dental Equipment and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2023,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2024,0,1,339113,Surgical Appliance and Supplies Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,33140,Michigan City-La Porte,2024,0,1,339114,Dental Equipment and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2019,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2019,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2019,0,1,339114,Dental Equipment and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2020,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2020,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2020,0,1,339114,Dental Equipment and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2021,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2021,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,6.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2021,0,1,339114,Dental Equipment and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2022,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2022,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,6.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2022,0,1,339114,Dental Equipment and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2023,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2023,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,5.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2023,0,1,339114,Dental Equipment and Supplies Manufacturing,4.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2024,0,0,339113,Surgical Appliance and Supplies Manufacturing,7.0,227.0,13228607.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2024,0,1,334516,Analytical Laboratory Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2024,0,1,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,43780,South Bend-Mishawaka,2024,0,1,339114,Dental Equipment and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2019,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2019,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2020,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2020,0,1,339113,Surgical Appliance and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2021,0,1,339112,Surgical and Medical Instrument Manufacturing,1.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2021,0,1,339113,Surgical Appliance and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2022,0,1,339113,Surgical Appliance and Supplies Manufacturing,3.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2022,0,2,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2023,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2023,0,2,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2024,0,1,339113,Surgical Appliance and Supplies Manufacturing,2.0,0.0,0.0
+3,MedDev,00,000,45460,Terre Haute,2024,0,2,339112,Surgical and Medical Instrument Manufacturing,2.0,0.0,0.0
+3,MedDev,18,000,00000,Indiana,2019,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,14.0,200.75,19467321.0
+3,MedDev,18,000,00000,Indiana,2019,0,0,334516,Analytical Laboratory Instrument Manufacturing,16.0,194.25,20225761.0
+3,MedDev,18,000,00000,Indiana,2019,0,0,339112,Surgical and Medical Instrument Manufacturing,59.0,7829.16,426295119.0
+3,MedDev,18,000,00000,Indiana,2019,0,0,339113,Surgical Appliance and Supplies Manufacturing,94.0,10903.16,874700859.0
+3,MedDev,18,000,00000,Indiana,2019,0,0,339114,Dental Equipment and Supplies Manufacturing,13.0,304.66,15171001.0
+3,MedDev,18,000,00000,Indiana,2019,0,1,334517,Irradiation Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,18,000,00000,Indiana,2020,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,17.0,189.25,19396013.0
+3,MedDev,18,000,00000,Indiana,2020,0,0,334516,Analytical Laboratory Instrument Manufacturing,14.0,196.33,18786471.0
+3,MedDev,18,000,00000,Indiana,2020,0,0,339112,Surgical and Medical Instrument Manufacturing,62.0,7669.0,428309101.0
+3,MedDev,18,000,00000,Indiana,2020,0,0,339113,Surgical Appliance and Supplies Manufacturing,92.0,10345.83,828525296.0
+3,MedDev,18,000,00000,Indiana,2020,0,0,339114,Dental Equipment and Supplies Manufacturing,12.0,275.25,14771543.0
+3,MedDev,18,000,00000,Indiana,2020,0,1,334517,Irradiation Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,18,000,00000,Indiana,2021,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,19.0,179.75,18526980.0
+3,MedDev,18,000,00000,Indiana,2021,0,0,334516,Analytical Laboratory Instrument Manufacturing,15.0,210.5,20747269.0
+3,MedDev,18,000,00000,Indiana,2021,0,0,339112,Surgical and Medical Instrument Manufacturing,65.0,7726.66,499877887.0
+3,MedDev,18,000,00000,Indiana,2021,0,0,339113,Surgical Appliance and Supplies Manufacturing,92.0,9845.75,793054006.0
+3,MedDev,18,000,00000,Indiana,2021,0,0,339114,Dental Equipment and Supplies Manufacturing,10.0,310.75,18136111.0
+3,MedDev,18,000,00000,Indiana,2021,0,1,334517,Irradiation Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,18,000,00000,Indiana,2022,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,20.0,207.41,19759426.0
+3,MedDev,18,000,00000,Indiana,2022,0,0,334516,Analytical Laboratory Instrument Manufacturing,15.0,265.33,23810760.0
+3,MedDev,18,000,00000,Indiana,2022,0,0,339112,Surgical and Medical Instrument Manufacturing,62.0,8210.5,533524093.0
+3,MedDev,18,000,00000,Indiana,2022,0,0,339113,Surgical Appliance and Supplies Manufacturing,86.0,9630.66,807770034.0
+3,MedDev,18,000,00000,Indiana,2022,0,0,339114,Dental Equipment and Supplies Manufacturing,13.0,338.5,19565367.0
+3,MedDev,18,000,00000,Indiana,2022,0,1,334517,Irradiation Apparatus Manufacturing,2.0,0.0,0.0
+3,MedDev,18,000,00000,Indiana,2023,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,22.0,239.5,24602407.0
+3,MedDev,18,000,00000,Indiana,2023,0,0,334516,Analytical Laboratory Instrument Manufacturing,18.0,291.91,26211779.0
+3,MedDev,18,000,00000,Indiana,2023,0,0,339112,Surgical and Medical Instrument Manufacturing,65.0,7988.08,540104487.0
+3,MedDev,18,000,00000,Indiana,2023,0,0,339113,Surgical Appliance and Supplies Manufacturing,85.0,9750.83,852221436.0
+3,MedDev,18,000,00000,Indiana,2023,0,0,339114,Dental Equipment and Supplies Manufacturing,12.0,282.66,16824500.0
+3,MedDev,18,000,00000,Indiana,2023,0,1,334517,Irradiation Apparatus Manufacturing,3.0,0.0,0.0
+3,MedDev,18,000,00000,Indiana,2024,0,0,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,22.0,247.5,25827395.0
+3,MedDev,18,000,00000,Indiana,2024,0,0,334516,Analytical Laboratory Instrument Manufacturing,14.0,169.91,14978491.0
+3,MedDev,18,000,00000,Indiana,2024,0,0,339112,Surgical and Medical Instrument Manufacturing,65.0,7581.16,543431290.0
+3,MedDev,18,000,00000,Indiana,2024,0,0,339113,Surgical Appliance and Supplies Manufacturing,89.0,9089.58,824271695.0
+3,MedDev,18,000,00000,Indiana,2024,0,0,339114,Dental Equipment and Supplies Manufacturing,11.0,250.5,15687140.0
+3,MedDev,18,000,00000,Indiana,2024,0,1,334517,Irradiation Apparatus Manufacturing,3.0,0.0,0.0
+4,Research/Testing,0 ,000,00000,United States,2019,0,0,541380,Testing Laboratories and Services,1718.0,15835.27,1262844199.6
+4,Research/Testing,0 ,000,00000,United States,2019,0,1,621511,Medical Laboratories,16058.0,205694.08,13816977386.0
+4,Research/Testing,0 ,000,00000,United States,2020,0,0,541380,Testing Laboratories and Services,1761.2,15517.18,1281814109.6
+4,Research/Testing,0 ,000,00000,United States,2020,0,1,621511,Medical Laboratories,16886.0,207233.33,14376592095.0
+4,Research/Testing,0 ,000,00000,United States,2021,0,0,541380,Testing Laboratories and Services,1823.8,15687.1,1324457075.9
+4,Research/Testing,0 ,000,00000,United States,2021,0,1,621511,Medical Laboratories,18362.0,226356.91,18539878269.0
+4,Research/Testing,0 ,000,00000,United States,2022,0,1,541380,Testing Laboratories and Services,1900.9,15978.33,1432241960.0
+4,Research/Testing,0 ,000,00000,United States,2022,0,1,621511,Medical Laboratories,21359.0,237500.33,18395223589.0
+4,Research/Testing,0 ,000,00000,United States,2023,0,1,541380,Testing Laboratories and Services,1953.5,15747.33,1462268022.5
+4,Research/Testing,0 ,000,00000,United States,2023,0,1,621511,Medical Laboratories,22510.0,231771.66,18325607076.0
+4,Research/Testing,0 ,000,00000,United States,2024,0,0,621511,Medical Laboratories,21877.0,226487.66,18632867607.0
+4,Research/Testing,0 ,000,00000,United States,2024,0,1,541380,Testing Laboratories and Services,1968.1,15844.62,1538263278.7
+4,Research/Testing,00,000,14020,Bloomington,2019,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",4.7,120.59,7775339.7
+4,Research/Testing,00,000,14020,Bloomington,2019,0,0,621511,Medical Laboratories,3.0,3.0,461759.0
+4,Research/Testing,00,000,14020,Bloomington,2019,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),6.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2019,0,2,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2020,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",5.2,120.67,8306514.7
+4,Research/Testing,00,000,14020,Bloomington,2020,0,0,621511,Medical Laboratories,3.0,4.0,276802.0
+4,Research/Testing,00,000,14020,Bloomington,2020,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),7.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2020,0,2,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2021,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",5.2,119.38,9051190.2
+4,Research/Testing,00,000,14020,Bloomington,2021,0,0,621511,Medical Laboratories,3.0,4.0,463726.0
+4,Research/Testing,00,000,14020,Bloomington,2021,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),8.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2021,0,2,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2022,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",4.7,131.27,9951910.2
+4,Research/Testing,00,000,14020,Bloomington,2022,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2022,0,2,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2022,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),10.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2023,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",5.8,144.45,12243919.1
+4,Research/Testing,00,000,14020,Bloomington,2023,0,1,621511,Medical Laboratories,5.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2023,0,2,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2023,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),11.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2024,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",7.3,152.03,13290820.8
+4,Research/Testing,00,000,14020,Bloomington,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),10.0,12.5,1277270.0
+4,Research/Testing,00,000,14020,Bloomington,2024,0,1,621511,Medical Laboratories,5.0,0.0,0.0
+4,Research/Testing,00,000,14020,Bloomington,2024,0,2,541380,Testing Laboratories and Services,0.4,0.0,0.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2019,0,3,541713,Research and Development in Nanotechnology,17.1,369.93,87850124.3
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2019,0,4,541380,Testing Laboratories and Services,25.5,613.13,53132134.7
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2019,0,5,541714,Research and Development in Biotechnology (except Nanobiotechnology),98.0,2757.33,520494559.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2019,0,5,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",111.9,8381.5,1007945808.1
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2019,0,5,621511,Medical Laboratories,217.0,6310.82,356468524.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2020,0,4,541713,Research and Development in Nanotechnology,22.0,360.62,81119645.2
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2020,0,5,541380,Testing Laboratories and Services,24.8,585.84,53845989.9
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2020,0,5,541714,Research and Development in Biotechnology (except Nanobiotechnology),112.0,2938.33,517508497.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2020,0,6,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",115.6,8419.68,1062458857.1
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2020,0,7,621511,Medical Laboratories,216.0,5507.66,336472873.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2021,0,4,541713,Research and Development in Nanotechnology,38.2,439.09,95246284.1
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2021,0,4,541714,Research and Development in Biotechnology (except Nanobiotechnology),142.0,3226.24,784159348.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,541380,Testing Laboratories and Services,26.3,596.62,54784375.9
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",121.9,8603.07,1059759985.2
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2021,0,6,621511,Medical Laboratories,235.0,6697.99,409550464.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,541380,Testing Laboratories and Services,32.2,613.61,61339818.1
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,541713,Research and Development in Nanotechnology,50.4,421.52,84482939.3
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,541714,Research and Development in Biotechnology (except Nanobiotechnology),185.0,3202.49,705581810.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",132.8,8583.98,1210112899.3
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2022,0,7,621511,Medical Laboratories,244.0,5260.74,365820023.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,541380,Testing Laboratories and Services,31.6,627.86,64851827.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,541713,Research and Development in Nanotechnology,49.6,422.12,78257189.6
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2023,0,6,541714,Research and Development in Biotechnology (except Nanobiotechnology),219.0,3047.81,698223651.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2023,0,6,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",142.8,8828.95,1193995788.5
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2023,0,7,621511,Medical Laboratories,270.0,4611.66,328487072.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2024,0,3,541713,Research and Development in Nanotechnology,46.3,399.95,77210529.3
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2024,0,5,541380,Testing Laboratories and Services,29.0,628.66,65042334.4
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2024,0,6,541714,Research and Development in Biotechnology (except Nanobiotechnology),227.0,3031.31,679689097.0
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2024,0,6,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",140.7,8717.98,1257295258.8
+4,Research/Testing,00,000,16980,Chicago-Naperville-Elgin,2024,0,6,621511,Medical Laboratories,274.0,5150.65,355721851.0
+4,Research/Testing,00,000,17140,Cincinnati,2019,0,0,621511,Medical Laboratories,3.0,6.0,286017.0
+4,Research/Testing,00,000,17140,Cincinnati,2019,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2020,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2020,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2021,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2021,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2021,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2022,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2022,0,1,621511,Medical Laboratories,4.0,5.83,345989.0
+4,Research/Testing,00,000,17140,Cincinnati,2023,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2023,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2024,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),3.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,17140,Cincinnati,2024,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2019,0,1,541380,Testing Laboratories and Services,0.4,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2019,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2019,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2019,0,1,621511,Medical Laboratories,1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2020,0,1,541380,Testing Laboratories and Services,0.4,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2020,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2020,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2020,0,1,621511,Medical Laboratories,1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2021,0,1,541380,Testing Laboratories and Services,0.5,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2021,0,1,541713,Research and Development in Nanotechnology,1.6,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2021,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2021,0,1,621511,Medical Laboratories,1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2022,0,1,541380,Testing Laboratories and Services,0.5,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2022,0,1,541713,Research and Development in Nanotechnology,1.6,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2022,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2023,0,1,541380,Testing Laboratories and Services,0.5,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2023,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2023,0,1,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2024,0,0,541380,Testing Laboratories and Services,0.7,37.42,2327029.3
+4,Research/Testing,00,000,18020,Columbus,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,18020,Columbus,2024,0,1,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2019,0,0,541380,Testing Laboratories and Services,0.4,7.54,467270.4
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2019,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2019,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2020,0,1,541380,Testing Laboratories and Services,0.4,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2020,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2020,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2021,0,1,541380,Testing Laboratories and Services,0.4,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2021,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2021,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2021,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2022,0,1,541380,Testing Laboratories and Services,0.5,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2022,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2022,0,1,621511,Medical Laboratories,6.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2023,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2023,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2023,0,1,621511,Medical Laboratories,6.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2024,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,0.0,0.0
+4,Research/Testing,00,000,21140,Elkhart-Goshen,2024,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2019,0,1,541380,Testing Laboratories and Services,1.2,13.26,508896.3
+4,Research/Testing,00,000,21780,Evansville,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,64.0,5386870.4
+4,Research/Testing,00,000,21780,Evansville,2019,0,1,621511,Medical Laboratories,10.0,147.16,5350366.0
+4,Research/Testing,00,000,21780,Evansville,2019,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,60.9,5406804.7
+4,Research/Testing,00,000,21780,Evansville,2020,0,1,621511,Medical Laboratories,11.0,119.66,5164385.0
+4,Research/Testing,00,000,21780,Evansville,2020,0,2,541380,Testing Laboratories and Services,1.3,8.0,352418.4
+4,Research/Testing,00,000,21780,Evansville,2020,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2021,0,1,541380,Testing Laboratories and Services,1.3,9.91,423366.4
+4,Research/Testing,00,000,21780,Evansville,2021,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,58.18,5469432.1
+4,Research/Testing,00,000,21780,Evansville,2021,0,1,621511,Medical Laboratories,12.0,113.0,4939384.0
+4,Research/Testing,00,000,21780,Evansville,2021,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),4.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2022,0,1,541380,Testing Laboratories and Services,1.2,10.83,484375.4
+4,Research/Testing,00,000,21780,Evansville,2022,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),5.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2022,0,1,621511,Medical Laboratories,11.0,82.0,4322753.0
+4,Research/Testing,00,000,21780,Evansville,2022,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2023,0,1,541380,Testing Laboratories and Services,1.3,10.98,605019.9
+4,Research/Testing,00,000,21780,Evansville,2023,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),5.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,24.16,1349513.2
+4,Research/Testing,00,000,21780,Evansville,2023,0,2,621511,Medical Laboratories,15.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2024,0,1,541380,Testing Laboratories and Services,1.3,9.65,491013.5
+4,Research/Testing,00,000,21780,Evansville,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),4.0,0.0,0.0
+4,Research/Testing,00,000,21780,Evansville,2024,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",3.7,21.89,1199164.6
+4,Research/Testing,00,000,21780,Evansville,2024,0,2,621511,Medical Laboratories,14.0,0.0,0.0
+4,Research/Testing,00,000,23060,Fort Wayne,2019,0,0,541380,Testing Laboratories and Services,1.9,26.09,1411630.2
+4,Research/Testing,00,000,23060,Fort Wayne,2019,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),6.0,15.25,1968384.0
+4,Research/Testing,00,000,23060,Fort Wayne,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",6.8,91.2,4727723.5
+4,Research/Testing,00,000,23060,Fort Wayne,2019,0,2,621511,Medical Laboratories,10.0,70.83,3047059.0
+4,Research/Testing,00,000,23060,Fort Wayne,2020,0,0,541380,Testing Laboratories and Services,1.7,27.45,1511438.4
+4,Research/Testing,00,000,23060,Fort Wayne,2020,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),8.0,39.5,5754185.0
+4,Research/Testing,00,000,23060,Fort Wayne,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",6.3,80.9,4588293.9
+4,Research/Testing,00,000,23060,Fort Wayne,2020,0,2,621511,Medical Laboratories,12.0,70.0,3123533.0
+4,Research/Testing,00,000,23060,Fort Wayne,2021,0,0,541380,Testing Laboratories and Services,1.8,28.25,1593277.5
+4,Research/Testing,00,000,23060,Fort Wayne,2021,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),9.0,36.91,5539524.0
+4,Research/Testing,00,000,23060,Fort Wayne,2021,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",6.8,80.97,4681600.0
+4,Research/Testing,00,000,23060,Fort Wayne,2021,0,2,621511,Medical Laboratories,13.0,106.91,5763773.0
+4,Research/Testing,00,000,23060,Fort Wayne,2022,0,0,541380,Testing Laboratories and Services,1.8,28.14,1681380.9
+4,Research/Testing,00,000,23060,Fort Wayne,2022,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,23060,Fort Wayne,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),11.0,32.5,8920692.0
+4,Research/Testing,00,000,23060,Fort Wayne,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",6.3,85.45,5278065.8
+4,Research/Testing,00,000,23060,Fort Wayne,2022,0,1,621511,Medical Laboratories,16.0,78.25,5979239.0
+4,Research/Testing,00,000,23060,Fort Wayne,2023,0,0,541380,Testing Laboratories and Services,1.9,27.78,1736680.1
+4,Research/Testing,00,000,23060,Fort Wayne,2023,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,23060,Fort Wayne,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),6.0,17.0,3102561.0
+4,Research/Testing,00,000,23060,Fort Wayne,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",6.8,90.9,6588983.8
+4,Research/Testing,00,000,23060,Fort Wayne,2023,0,1,621511,Medical Laboratories,20.0,83.66,6486352.0
+4,Research/Testing,00,000,23060,Fort Wayne,2024,0,0,541380,Testing Laboratories and Services,2.0,27.99,1842265.0
+4,Research/Testing,00,000,23060,Fort Wayne,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,23060,Fort Wayne,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),5.0,0.0,0.0
+4,Research/Testing,00,000,23060,Fort Wayne,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",8.4,89.08,6862013.7
+4,Research/Testing,00,000,23060,Fort Wayne,2024,0,2,621511,Medical Laboratories,12.0,69.83,3692936.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,3,541713,Research and Development in Nanotechnology,7.3,0.0,0.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,4,541380,Testing Laboratories and Services,6.7,103.3,6548919.1
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,6,541714,Research and Development in Biotechnology (except Nanobiotechnology),45.0,105.58,15318741.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,6,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",32.9,439.95,33512974.7
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,6,621511,Medical Laboratories,75.0,2836.57,189802072.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,2,541713,Research and Development in Nanotechnology,9.8,18.33,1920396.7
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,541380,Testing Laboratories and Services,6.8,100.43,6883843.1
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,5,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",38.7,449.26,35307438.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,7,541714,Research and Development in Biotechnology (except Nanobiotechnology),61.0,287.25,71128295.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,7,621511,Medical Laboratories,81.0,3002.0,204847168.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,3,541380,Testing Laboratories and Services,7.4,110.88,7763134.8
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,4,541713,Research and Development in Nanotechnology,15.4,35.76,5775672.6
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,5,541714,Research and Development in Biotechnology (except Nanobiotechnology),79.0,326.08,46540263.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,6,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",40.3,564.1,48307219.7
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,6,621511,Medical Laboratories,94.0,3379.23,235339873.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,3,541380,Testing Laboratories and Services,7.8,120.88,8703073.8
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,4,541713,Research and Development in Nanotechnology,22.0,58.66,6644443.3
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,4,541714,Research and Development in Biotechnology (except Nanobiotechnology),115.0,478.99,80320581.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,5,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",47.1,890.43,81909520.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,6,621511,Medical Laboratories,121.0,3254.73,242975301.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,541380,Testing Laboratories and Services,7.8,106.32,7810711.4
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,541713,Research and Development in Nanotechnology,21.1,64.55,7041220.8
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,5,621511,Medical Laboratories,144.0,3362.65,269051553.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,6,541714,Research and Development in Biotechnology (except Nanobiotechnology),147.0,663.58,107627514.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,6,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",54.9,917.31,86789904.7
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,541380,Testing Laboratories and Services,7.3,102.33,7836606.4
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,4,541713,Research and Development in Nanotechnology,21.1,48.74,5903078.5
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,5,541714,Research and Development in Biotechnology (except Nanobiotechnology),170.0,723.07,936252605.0
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,5,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",62.8,1295.17,142574785.6
+4,Research/Testing,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,5,621511,Medical Laboratories,106.0,3258.82,278535431.0
+4,Research/Testing,00,000,29020,Kokomo,2019,0,1,541380,Testing Laboratories and Services,0.6,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2019,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2019,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2020,0,0,541380,Testing Laboratories and Services,0.6,19.49,938555.0
+4,Research/Testing,00,000,29020,Kokomo,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2020,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2021,0,0,541380,Testing Laboratories and Services,0.6,19.37,892823.9
+4,Research/Testing,00,000,29020,Kokomo,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2021,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2022,0,0,541380,Testing Laboratories and Services,0.6,17.91,837831.6
+4,Research/Testing,00,000,29020,Kokomo,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2022,0,1,621511,Medical Laboratories,6.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2023,0,0,541380,Testing Laboratories and Services,0.6,17.24,840846.5
+4,Research/Testing,00,000,29020,Kokomo,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2023,0,1,621511,Medical Laboratories,8.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2024,0,0,541380,Testing Laboratories and Services,0.5,6.34,521919.3
+4,Research/Testing,00,000,29020,Kokomo,2024,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,29020,Kokomo,2024,0,1,621511,Medical Laboratories,8.0,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2019,0,1,541380,Testing Laboratories and Services,1.0,5.03,438139.1
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2019,0,1,541713,Research and Development in Nanotechnology,2.4,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2019,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),16.0,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",14.1,442.3,36683476.7
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2019,0,2,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2020,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),20.0,159.91,22061820.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2020,0,1,541380,Testing Laboratories and Services,0.9,7.12,538876.8
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2020,0,1,541713,Research and Development in Nanotechnology,3.3,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",13.6,435.78,35706880.8
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2020,0,2,621511,Medical Laboratories,5.0,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2021,0,1,541380,Testing Laboratories and Services,0.7,5.52,503867.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2021,0,1,541713,Research and Development in Nanotechnology,2.4,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2021,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),18.0,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",15.7,459.73,41010096.8
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2021,0,2,621511,Medical Laboratories,8.0,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2022,0,1,541380,Testing Laboratories and Services,0.9,6.43,635798.9
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),20.0,157.83,18474548.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",17.8,430.71,39737632.2
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2022,0,1,621511,Medical Laboratories,10.0,90.0,4790449.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2022,0,2,541713,Research and Development in Nanotechnology,4.1,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2023,0,1,541380,Testing Laboratories and Services,1.0,7.31,736013.4
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),26.0,229.16,29690291.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",21.4,413.6,40743367.1
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2023,0,1,621511,Medical Laboratories,15.0,108.33,6275016.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2023,0,2,541713,Research and Development in Nanotechnology,2.4,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2024,0,1,541380,Testing Laboratories and Services,0.9,7.29,766022.5
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",22.0,408.6,46007415.2
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2024,0,1,621511,Medical Laboratories,11.0,102.0,5372341.0
+4,Research/Testing,00,000,29200,Lafayette-West Lafayette,2024,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),25.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2019,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2019,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),2.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2019,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2019,0,3,541380,Testing Laboratories and Services,0.5,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2019,0,4,621511,Medical Laboratories,9.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2020,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2020,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2020,0,3,541380,Testing Laboratories and Services,0.6,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2020,0,4,621511,Medical Laboratories,7.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2021,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2021,0,2,541380,Testing Laboratories and Services,0.9,1.86,128875.2
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2021,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),3.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2021,0,4,621511,Medical Laboratories,12.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2022,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2022,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2022,0,3,541380,Testing Laboratories and Services,1.1,2.76,177490.7
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2022,0,3,541714,Research and Development in Biotechnology (except Nanobiotechnology),4.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2022,0,4,621511,Medical Laboratories,16.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2023,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2023,0,2,541380,Testing Laboratories and Services,1.0,2.77,175625.4
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2023,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2023,0,3,541714,Research and Development in Biotechnology (except Nanobiotechnology),5.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2023,0,4,621511,Medical Laboratories,18.0,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2024,0,2,541380,Testing Laboratories and Services,1.2,3.05,206471.8
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2024,0,2,541714,Research and Development in Biotechnology (except Nanobiotechnology),8.0,5.0,709605.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2024,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,31140,Louisville/Jefferson County,2024,0,4,621511,Medical Laboratories,16.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2019,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2019,0,1,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2020,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2020,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2021,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2021,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2022,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2022,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2023,0,1,541380,Testing Laboratories and Services,0.1,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2023,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2024,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,33140,Michigan City-La Porte,2024,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2019,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2019,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2019,0,1,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2020,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2020,0,1,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2021,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2021,0,1,621511,Medical Laboratories,2.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2022,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.5,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2022,0,1,621511,Medical Laboratories,4.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2023,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2023,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2023,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2024,0,1,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2024,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.0,0.0,0.0
+4,Research/Testing,00,000,34620,Muncie,2024,0,1,621511,Medical Laboratories,3.0,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2019,0,0,541380,Testing Laboratories and Services,0.7,18.16,1237457.1
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2019,0,0,541713,Research and Development in Nanotechnology,2.4,7.41,394628.7
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2019,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),3.0,17.0,1297879.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2019,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,3.64,345158.2
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2019,0,1,621511,Medical Laboratories,7.0,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2020,0,0,541380,Testing Laboratories and Services,0.7,17.48,1269541.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2020,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),4.0,17.16,1338974.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2020,0,1,541713,Research and Development in Nanotechnology,2.4,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.6,0.91,128009.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2020,0,1,621511,Medical Laboratories,7.0,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2021,0,0,541380,Testing Laboratories and Services,0.7,18.23,1418128.8
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2021,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),5.0,17.25,1727257.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2021,0,1,541713,Research and Development in Nanotechnology,1.6,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2021,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",3.7,0.91,135037.4
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2021,0,1,621511,Medical Laboratories,9.0,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2022,0,0,541380,Testing Laboratories and Services,1.0,23.1,2061335.3
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2022,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),8.0,27.75,3194030.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2022,0,1,541713,Research and Development in Nanotechnology,1.6,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2022,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",6.3,0.6,99005.6
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2022,0,1,621511,Medical Laboratories,13.0,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2023,0,0,541380,Testing Laboratories and Services,1.1,27.9,2570247.4
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2023,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),8.0,27.5,3364323.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2023,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",5.2,14.77,2389719.2
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2023,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2023,0,1,621511,Medical Laboratories,18.0,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2024,0,0,541380,Testing Laboratories and Services,1.1,30.31,2820483.4
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2024,0,0,541714,Research and Development in Biotechnology (except Nanobiotechnology),9.0,26.0,3484534.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2024,0,0,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",4.7,12.57,3598071.1
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2024,0,1,541713,Research and Development in Nanotechnology,0.8,0.0,0.0
+4,Research/Testing,00,000,43780,South Bend-Mishawaka,2024,0,1,621511,Medical Laboratories,16.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2019,0,2,541380,Testing Laboratories and Services,0.3,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2019,0,2,621511,Medical Laboratories,7.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2020,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2020,0,1,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",0.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2020,0,2,621511,Medical Laboratories,5.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2021,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2021,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",1.6,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2021,0,3,621511,Medical Laboratories,9.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2022,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2022,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2022,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2022,0,3,621511,Medical Laboratories,14.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2023,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2023,0,1,541714,Research and Development in Biotechnology (except Nanobiotechnology),1.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2023,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2023,0,3,621511,Medical Laboratories,14.0,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2024,0,1,541380,Testing Laboratories and Services,0.2,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2024,0,2,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2.1,0.0,0.0
+4,Research/Testing,00,000,45460,Terre Haute,2024,0,3,621511,Medical Laboratories,8.0,0.0,0.0
+4,Research/Testing,18,000,00000,Indiana,2019,0,0,541380,Testing Laboratories and Services,38.3,294.43,18062563.1
+4,Research/Testing,18,000,00000,Indiana,2019,0,1,621511,Medical Laboratories,225.0,5357.16,312791770.0
+4,Research/Testing,18,000,00000,Indiana,2020,0,0,541380,Testing Laboratories and Services,40.1,267.38,17501668.2
+4,Research/Testing,18,000,00000,Indiana,2020,0,1,621511,Medical Laboratories,235.0,5203.41,323447433.0
+4,Research/Testing,18,000,00000,Indiana,2021,0,0,541380,Testing Laboratories and Services,41.7,267.55,17672231.3
+4,Research/Testing,18,000,00000,Indiana,2021,0,1,621511,Medical Laboratories,265.0,5608.16,360750474.0
+4,Research/Testing,18,000,00000,Indiana,2022,0,0,541380,Testing Laboratories and Services,44.2,282.16,19418027.5
+4,Research/Testing,18,000,00000,Indiana,2022,0,0,621511,Medical Laboratories,333.0,5367.66,372856458.0
+4,Research/Testing,18,000,00000,Indiana,2023,0,0,541380,Testing Laboratories and Services,44.9,275.79,19667049.5
+4,Research/Testing,18,000,00000,Indiana,2023,0,0,621511,Medical Laboratories,383.0,5340.83,399122284.0
+4,Research/Testing,18,000,00000,Indiana,2024,0,0,541380,Testing Laboratories and Services,44.0,264.9,19705633.2
+4,Research/Testing,18,000,00000,Indiana,2024,0,0,621511,Medical Laboratories,316.0,5364.08,441554849.0
+6,Bio-Logistics,0 ,000,00000,United States,2019,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",27559.0,248634.66,27735292795.1
+6,Bio-Logistics,0 ,000,00000,United States,2019,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,20120.0,222932.54,28404557027.2
+6,Bio-Logistics,0 ,000,00000,United States,2019,0,0,424910,Farm Supplies Merchant Wholesalers,9688.7,98563.16,6381019538.4
+6,Bio-Logistics,0 ,000,00000,United States,2020,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",28840.0,255441.46,29167908446.9
+6,Bio-Logistics,0 ,000,00000,United States,2020,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,20982.0,221476.05,30769403295.4
+6,Bio-Logistics,0 ,000,00000,United States,2020,0,0,424910,Farm Supplies Merchant Wholesalers,9788.2,98449.65,6727764630.3
+6,Bio-Logistics,0 ,000,00000,United States,2021,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",30572.0,269292.68,32764789916.6
+6,Bio-Logistics,0 ,000,00000,United States,2021,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,21972.0,229593.42,33015982730.5
+6,Bio-Logistics,0 ,000,00000,United States,2021,0,0,424910,Farm Supplies Merchant Wholesalers,9848.6,98361.66,7143230299.6
+6,Bio-Logistics,0 ,000,00000,United States,2022,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,22995.0,239885.72,36284730458.7
+6,Bio-Logistics,0 ,000,00000,United States,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",32727.0,289772.13,35818018898.4
+6,Bio-Logistics,0 ,000,00000,United States,2022,0,1,424910,Farm Supplies Merchant Wholesalers,10090.1,99666.06,7936381010.4
+6,Bio-Logistics,0 ,000,00000,United States,2023,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,23315.0,243668.94,39556760221.3
+6,Bio-Logistics,0 ,000,00000,United States,2023,0,0,424910,Farm Supplies Merchant Wholesalers,10180.2,100987.27,8276756868.1
+6,Bio-Logistics,0 ,000,00000,United States,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",33894.0,299542.49,38172499562.4
+6,Bio-Logistics,0 ,000,00000,United States,2024,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,23096.0,243128.55,40582580471.2
+6,Bio-Logistics,0 ,000,00000,United States,2024,0,0,424910,Farm Supplies Merchant Wholesalers,10278.2,101492.33,8363018043.4
+6,Bio-Logistics,0 ,000,00000,United States,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",34919.0,307008.99,41113377582.2
+6,Bio-Logistics,00,000,14020,Bloomington,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",5.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,6.0,9.42,1125832.2
+6,Bio-Logistics,00,000,14020,Bloomington,2019,0,1,424910,Farm Supplies Merchant Wholesalers,0.8,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",5.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2020,0,1,424910,Farm Supplies Merchant Wholesalers,0.8,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2020,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,6.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2021,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,6.0,14.28,2238973.9
+6,Bio-Logistics,00,000,14020,Bloomington,2021,0,1,424910,Farm Supplies Merchant Wholesalers,0.8,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2021,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",7.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2022,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,9.0,28.65,6806294.8
+6,Bio-Logistics,00,000,14020,Bloomington,2022,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",8.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2022,0,2,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2023,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,9.0,25.82,6625759.5
+6,Bio-Logistics,00,000,14020,Bloomington,2023,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",10.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2023,0,2,424910,Farm Supplies Merchant Wholesalers,2.4,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2024,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,9.0,26.92,4649028.1
+6,Bio-Logistics,00,000,14020,Bloomington,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",12.0,0.0,0.0
+6,Bio-Logistics,00,000,14020,Bloomington,2024,0,2,424910,Farm Supplies Merchant Wholesalers,2.4,0.0,0.0
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2019,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",498.0,8284.22,797147206.9
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2019,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,245.0,10856.14,1851931409.2
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2019,0,3,424910,Farm Supplies Merchant Wholesalers,88.6,1172.93,138228475.9
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2020,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,244.0,10756.28,1898142317.6
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2020,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",510.0,8712.6,844185971.7
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2020,0,5,424910,Farm Supplies Merchant Wholesalers,89.4,1052.65,137691833.7
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2021,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",526.0,9150.19,934618387.5
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2021,0,3,424910,Farm Supplies Merchant Wholesalers,89.4,1111.94,170258377.1
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2021,0,5,424210,Drugs and Druggists' Sundries Merchant Wholesalers,252.0,8981.56,1873178062.8
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2022,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",563.0,9882.32,978712700.6
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2022,0,3,424910,Farm Supplies Merchant Wholesalers,92.5,1057.44,252115503.0
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2022,0,5,424210,Drugs and Druggists' Sundries Merchant Wholesalers,258.0,9074.02,1897232479.4
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2023,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",555.0,9810.95,975015797.7
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2023,0,3,424910,Farm Supplies Merchant Wholesalers,87.8,1063.55,187599356.4
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2023,0,5,424210,Drugs and Druggists' Sundries Merchant Wholesalers,255.0,8707.04,2237318950.6
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2024,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",559.0,9986.38,1040979835.0
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2024,0,2,424910,Farm Supplies Merchant Wholesalers,87.0,1235.09,200695496.8
+6,Bio-Logistics,00,000,16980,Chicago-Naperville-Elgin,2024,0,5,424210,Drugs and Druggists' Sundries Merchant Wholesalers,256.0,8627.61,1745678272.4
+6,Bio-Logistics,00,000,17140,Cincinnati,2019,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2019,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2019,0,3,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2020,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2020,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2020,0,3,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2021,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2021,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2021,0,3,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2022,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",3.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2022,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2022,0,3,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2023,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",3.0,4.86,721731.7
+6,Bio-Logistics,00,000,17140,Cincinnati,2023,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,3.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2023,0,3,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2024,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",5.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2024,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,3.0,0.0,0.0
+6,Bio-Logistics,00,000,17140,Cincinnati,2024,0,3,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2019,0,1,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2020,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2020,0,1,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2021,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2021,0,1,424910,Farm Supplies Merchant Wholesalers,3.1,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2022,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2022,0,1,424910,Farm Supplies Merchant Wholesalers,4.7,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2023,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2023,0,1,424910,Farm Supplies Merchant Wholesalers,4.7,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2024,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,18020,Columbus,2024,0,1,424910,Farm Supplies Merchant Wholesalers,5.5,0.0,0.0
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2019,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",4.0,17.8,1000013.5
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2019,0,0,424910,Farm Supplies Merchant Wholesalers,8.6,91.08,5103487.4
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2020,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",3.0,13.99,936177.0
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2020,0,0,424910,Farm Supplies Merchant Wholesalers,9.4,91.29,5237255.5
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2020,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2021,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",4.0,13.84,973709.1
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2021,0,0,424910,Farm Supplies Merchant Wholesalers,9.4,79.55,5060913.5
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2022,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",5.0,23.55,1513272.4
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2022,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,4.0,3.77,96058.6
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2022,0,0,424910,Farm Supplies Merchant Wholesalers,7.1,62.67,4313957.5
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2023,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",5.0,25.89,1673927.3
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2023,0,0,424910,Farm Supplies Merchant Wholesalers,7.1,65.06,4922610.6
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2023,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,4.0,0.0,0.0
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2024,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",7.0,26.86,1803107.2
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2024,0,0,424910,Farm Supplies Merchant Wholesalers,7.1,65.33,4724339.0
+6,Bio-Logistics,00,000,21140,Elkhart-Goshen,2024,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,4.0,0.0,0.0
+6,Bio-Logistics,00,000,21780,Evansville,2019,0,0,424910,Farm Supplies Merchant Wholesalers,12.5,144.04,9114866.6
+6,Bio-Logistics,00,000,21780,Evansville,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",9.0,31.71,2305480.3
+6,Bio-Logistics,00,000,21780,Evansville,2019,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,6.0,0.0,0.0
+6,Bio-Logistics,00,000,21780,Evansville,2020,0,0,424910,Farm Supplies Merchant Wholesalers,11.8,131.31,9257394.6
+6,Bio-Logistics,00,000,21780,Evansville,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",10.0,23.94,1884873.2
+6,Bio-Logistics,00,000,21780,Evansville,2020,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,7.0,4.71,690271.2
+6,Bio-Logistics,00,000,21780,Evansville,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",12.0,22.17,1824213.8
+6,Bio-Logistics,00,000,21780,Evansville,2021,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,7.0,4.71,759270.8
+6,Bio-Logistics,00,000,21780,Evansville,2021,0,1,424910,Farm Supplies Merchant Wholesalers,11.0,114.22,9123327.7
+6,Bio-Logistics,00,000,21780,Evansville,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",13.0,23.14,2407477.0
+6,Bio-Logistics,00,000,21780,Evansville,2022,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,8.0,42.47,5111692.4
+6,Bio-Logistics,00,000,21780,Evansville,2022,0,1,424910,Farm Supplies Merchant Wholesalers,11.0,128.57,9676738.5
+6,Bio-Logistics,00,000,21780,Evansville,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",13.0,24.84,2595930.6
+6,Bio-Logistics,00,000,21780,Evansville,2023,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,7.0,0.0,0.0
+6,Bio-Logistics,00,000,21780,Evansville,2023,0,2,424910,Farm Supplies Merchant Wholesalers,11.0,27.08,3334487.0
+6,Bio-Logistics,00,000,21780,Evansville,2024,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",12.0,24.52,2381492.1
+6,Bio-Logistics,00,000,21780,Evansville,2024,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,7.0,0.0,0.0
+6,Bio-Logistics,00,000,21780,Evansville,2024,0,2,424910,Farm Supplies Merchant Wholesalers,12.5,24.54,2989540.0
+6,Bio-Logistics,00,000,23060,Fort Wayne,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",29.0,165.47,12622564.0
+6,Bio-Logistics,00,000,23060,Fort Wayne,2019,0,1,424910,Farm Supplies Merchant Wholesalers,18.0,100.44,6924567.6
+6,Bio-Logistics,00,000,23060,Fort Wayne,2019,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,9.0,63.9,3660338.8
+6,Bio-Logistics,00,000,23060,Fort Wayne,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",30.0,142.89,11645150.6
+6,Bio-Logistics,00,000,23060,Fort Wayne,2020,0,1,424910,Farm Supplies Merchant Wholesalers,16.5,98.32,7298875.7
+6,Bio-Logistics,00,000,23060,Fort Wayne,2020,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,8.0,64.53,3859848.8
+6,Bio-Logistics,00,000,23060,Fort Wayne,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",32.0,154.47,12597799.6
+6,Bio-Logistics,00,000,23060,Fort Wayne,2021,0,1,424910,Farm Supplies Merchant Wholesalers,17.2,95.36,7408399.1
+6,Bio-Logistics,00,000,23060,Fort Wayne,2021,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,10.0,69.47,4497999.1
+6,Bio-Logistics,00,000,23060,Fort Wayne,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",38.0,189.26,17608275.2
+6,Bio-Logistics,00,000,23060,Fort Wayne,2022,0,1,424910,Farm Supplies Merchant Wholesalers,17.2,96.63,8253357.8
+6,Bio-Logistics,00,000,23060,Fort Wayne,2022,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,15.0,80.38,5103696.7
+6,Bio-Logistics,00,000,23060,Fort Wayne,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",44.0,205.85,19139259.6
+6,Bio-Logistics,00,000,23060,Fort Wayne,2023,0,1,424910,Farm Supplies Merchant Wholesalers,18.8,96.98,9073523.3
+6,Bio-Logistics,00,000,23060,Fort Wayne,2023,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,16.0,81.72,5642749.6
+6,Bio-Logistics,00,000,23060,Fort Wayne,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",46.0,252.78,28586156.5
+6,Bio-Logistics,00,000,23060,Fort Wayne,2024,0,1,424910,Farm Supplies Merchant Wholesalers,18.8,104.44,9130121.9
+6,Bio-Logistics,00,000,23060,Fort Wayne,2024,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,18.0,92.7,6863004.1
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,3,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",219.0,2517.38,252421343.5
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,3,424210,Drugs and Druggists' Sundries Merchant Wholesalers,109.0,1023.86,113906684.3
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2019,0,4,424910,Farm Supplies Merchant Wholesalers,53.3,603.72,57359195.4
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,3,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",228.0,2483.72,243418229.6
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,424210,Drugs and Druggists' Sundries Merchant Wholesalers,120.0,1044.11,130553742.2
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2020,0,4,424910,Farm Supplies Merchant Wholesalers,51.7,592.74,53776904.1
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,3,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",236.0,2491.39,260565992.5
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,3,424910,Farm Supplies Merchant Wholesalers,56.4,626.8,58710036.8
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2021,0,5,424210,Drugs and Druggists' Sundries Merchant Wholesalers,130.0,1063.89,138371176.0
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,3,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",268.0,2809.57,295333441.8
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,3,424910,Farm Supplies Merchant Wholesalers,54.1,606.68,60234882.3
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2022,0,5,424210,Drugs and Druggists' Sundries Merchant Wholesalers,155.0,1149.62,153858639.4
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",296.0,3267.23,361748910.6
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,3,424210,Drugs and Druggists' Sundries Merchant Wholesalers,168.0,1257.16,193886910.7
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2023,0,5,424910,Farm Supplies Merchant Wholesalers,55.7,453.85,50926743.9
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",333.0,3379.54,383556402.5
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,2,424910,Farm Supplies Merchant Wholesalers,58.8,607.47,59146816.1
+6,Bio-Logistics,00,000,26900,Indianapolis-Carmel-Greenwood,2024,0,3,424210,Drugs and Druggists' Sundries Merchant Wholesalers,177.0,1240.6,197017749.5
+6,Bio-Logistics,00,000,29020,Kokomo,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2019,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2020,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2020,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2021,0,0,424910,Farm Supplies Merchant Wholesalers,2.4,6.75,284185.8
+6,Bio-Logistics,00,000,29020,Kokomo,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2021,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2022,0,0,424910,Farm Supplies Merchant Wholesalers,3.1,9.71,512637.2
+6,Bio-Logistics,00,000,29020,Kokomo,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2022,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2023,0,0,424910,Farm Supplies Merchant Wholesalers,3.1,8.93,484527.7
+6,Bio-Logistics,00,000,29020,Kokomo,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",3.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2023,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,29020,Kokomo,2024,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",4.0,3.88,319918.3
+6,Bio-Logistics,00,000,29020,Kokomo,2024,0,0,424910,Farm Supplies Merchant Wholesalers,3.1,7.24,503753.2
+6,Bio-Logistics,00,000,29020,Kokomo,2024,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2019,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",6.0,9.71,518596.5
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2019,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,4.0,16.32,1073668.1
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2019,0,2,424910,Farm Supplies Merchant Wholesalers,20.4,115.55,7206862.0
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2020,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",6.0,10.68,458046.9
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2020,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,6.0,11.85,589823.9
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2020,0,2,424910,Farm Supplies Merchant Wholesalers,21.2,118.51,8514086.3
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2021,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",9.0,17.15,624187.9
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2021,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,6.0,10.51,476922.4
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2021,0,3,424910,Farm Supplies Merchant Wholesalers,21.2,43.32,4235105.1
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2022,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",11.0,20.95,879707.6
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2022,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,5.0,9.26,375624.4
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2022,0,3,424910,Farm Supplies Merchant Wholesalers,22.7,61.61,6016876.0
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2023,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",11.0,21.68,881750.5
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2023,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,7.0,8.48,874887.2
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2023,0,1,424910,Farm Supplies Merchant Wholesalers,22.0,218.1,18933545.7
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2024,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",11.0,20.71,921916.9
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2024,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,8.0,10.04,1541475.6
+6,Bio-Logistics,00,000,29200,Lafayette-West Lafayette,2024,0,1,424910,Farm Supplies Merchant Wholesalers,22.7,222.17,18573681.0
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,7.0,66.56,3961486.8
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2019,0,2,424910,Farm Supplies Merchant Wholesalers,8.6,39.95,1588459.5
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2019,0,3,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",7.0,0.0,0.0
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2020,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",10.0,30.34,1398913.9
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2020,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,10.0,7.92,275962.7
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2020,0,2,424910,Farm Supplies Merchant Wholesalers,7.8,43.18,1644401.5
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2021,0,0,424910,Farm Supplies Merchant Wholesalers,8.6,52.95,2647217.8
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2021,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",15.0,33.09,1722206.4
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2021,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,12.0,20.72,711616.0
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2022,0,0,424910,Farm Supplies Merchant Wholesalers,7.8,51.76,3024618.3
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2022,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",18.0,9.95,749977.1
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2022,0,2,424210,Drugs and Druggists' Sundries Merchant Wholesalers,12.0,68.61,3926961.6
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2023,0,1,424910,Farm Supplies Merchant Wholesalers,7.1,39.38,2556673.5
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2023,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",18.0,10.35,841111.3
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2023,0,3,424210,Drugs and Druggists' Sundries Merchant Wholesalers,11.0,0.0,0.0
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2024,0,2,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",22.0,10.59,1027303.4
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2024,0,2,424910,Farm Supplies Merchant Wholesalers,7.8,38.82,2613496.6
+6,Bio-Logistics,00,000,31140,Louisville/Jefferson County,2024,0,3,424210,Drugs and Druggists' Sundries Merchant Wholesalers,12.0,0.0,0.0
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2019,0,0,424910,Farm Supplies Merchant Wholesalers,5.5,47.82,2311629.1
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2020,0,0,424910,Farm Supplies Merchant Wholesalers,5.5,51.97,2908594.5
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2021,0,0,424910,Farm Supplies Merchant Wholesalers,6.3,54.02,2972458.3
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",3.0,0.0,0.0
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2022,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",4.0,21.36,1780930.5
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2022,0,0,424910,Farm Supplies Merchant Wholesalers,7.1,63.58,4032252.2
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2022,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2023,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",4.0,22.33,1824461.4
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2023,0,0,424910,Farm Supplies Merchant Wholesalers,8.6,67.44,3905819.3
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2023,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2024,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",6.0,21.03,1718496.2
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2024,0,0,424910,Farm Supplies Merchant Wholesalers,6.3,46.91,2499002.1
+6,Bio-Logistics,00,000,33140,Michigan City-La Porte,2024,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,0.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",3.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2019,0,1,424910,Farm Supplies Merchant Wholesalers,2.4,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2020,0,0,424910,Farm Supplies Merchant Wholesalers,2.4,10.13,801791.6
+6,Bio-Logistics,00,000,34620,Muncie,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2020,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2021,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2021,0,1,424910,Farm Supplies Merchant Wholesalers,2.4,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2022,0,0,424910,Farm Supplies Merchant Wholesalers,2.4,13.08,1174750.1
+6,Bio-Logistics,00,000,34620,Muncie,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2022,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2023,0,0,424910,Farm Supplies Merchant Wholesalers,3.1,14.84,1343210.0
+6,Bio-Logistics,00,000,34620,Muncie,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2023,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2024,0,0,424910,Farm Supplies Merchant Wholesalers,3.1,15.61,1391574.5
+6,Bio-Logistics,00,000,34620,Muncie,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,34620,Muncie,2024,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2019,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",16.0,86.01,6279037.5
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2019,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,11.0,109.35,10336509.5
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2019,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2020,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",17.0,111.74,7261488.5
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2020,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,11.0,153.62,14623709.7
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2020,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2021,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",20.0,139.9,9307461.3
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2021,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,11.0,145.93,14175046.4
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2021,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2022,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",26.0,130.68,9048314.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2022,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,11.0,173.17,16988109.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2022,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2023,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",29.0,105.02,7397128.5
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2023,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,11.0,192.24,19204942.1
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2023,0,1,424910,Farm Supplies Merchant Wholesalers,1.6,0.0,0.0
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2024,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",25.0,114.49,7285242.1
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2024,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,12.0,149.31,13907473.2
+6,Bio-Logistics,00,000,43780,South Bend-Mishawaka,2024,0,0,424910,Farm Supplies Merchant Wholesalers,2.4,9.84,608378.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2019,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2019,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2019,0,4,424910,Farm Supplies Merchant Wholesalers,9.4,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2020,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2020,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2020,0,4,424910,Farm Supplies Merchant Wholesalers,9.4,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2021,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2021,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2021,0,4,424910,Farm Supplies Merchant Wholesalers,9.4,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2022,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",1.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2022,0,4,424910,Farm Supplies Merchant Wholesalers,9.4,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2023,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2023,0,3,424910,Farm Supplies Merchant Wholesalers,9.4,31.44,3095725.3
+6,Bio-Logistics,00,000,45460,Terre Haute,2024,0,1,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2024,0,1,424210,Drugs and Druggists' Sundries Merchant Wholesalers,1.0,0.0,0.0
+6,Bio-Logistics,00,000,45460,Terre Haute,2024,0,3,424910,Farm Supplies Merchant Wholesalers,10.2,31.57,2932348.9
+6,Bio-Logistics,18,000,00000,Indiana,2019,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",676.0,5457.18,572663974.5
+6,Bio-Logistics,18,000,00000,Indiana,2019,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,389.0,3087.95,378093315.1
+6,Bio-Logistics,18,000,00000,Indiana,2019,0,0,424910,Farm Supplies Merchant Wholesalers,359.1,3732.94,239948010.8
+6,Bio-Logistics,18,000,00000,Indiana,2020,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",723.0,5737.15,611075325.6
+6,Bio-Logistics,18,000,00000,Indiana,2020,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,425.0,3189.69,423207916.4
+6,Bio-Logistics,18,000,00000,Indiana,2020,0,0,424910,Farm Supplies Merchant Wholesalers,355.2,3584.32,240688354.9
+6,Bio-Logistics,18,000,00000,Indiana,2021,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",779.0,6049.97,692534353.7
+6,Bio-Logistics,18,000,00000,Indiana,2021,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,468.0,3394.81,469343158.6
+6,Bio-Logistics,18,000,00000,Indiana,2021,0,0,424910,Farm Supplies Merchant Wholesalers,359.1,3469.96,245980060.2
+6,Bio-Logistics,18,000,00000,Indiana,2022,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",881.0,7016.45,798167622.1
+6,Bio-Logistics,18,000,00000,Indiana,2022,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,557.0,3651.66,531478209.6
+6,Bio-Logistics,18,000,00000,Indiana,2022,0,0,424910,Farm Supplies Merchant Wholesalers,366.1,3495.43,276519590.9
+6,Bio-Logistics,18,000,00000,Indiana,2023,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",908.0,7675.59,876286841.3
+6,Bio-Logistics,18,000,00000,Indiana,2023,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,566.0,3780.48,596396347.8
+6,Bio-Logistics,18,000,00000,Indiana,2023,0,0,424910,Farm Supplies Merchant Wholesalers,367.7,3542.69,298155559.6
+6,Bio-Logistics,18,000,00000,Indiana,2024,0,0,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",948.0,8048.45,955998588.9
+6,Bio-Logistics,18,000,00000,Indiana,2024,0,0,424210,Drugs and Druggists' Sundries Merchant Wholesalers,566.0,3820.43,630995909.8
+6,Bio-Logistics,18,000,00000,Indiana,2024,0,0,424910,Farm Supplies Merchant Wholesalers,384.9,3582.64,293831886.8
