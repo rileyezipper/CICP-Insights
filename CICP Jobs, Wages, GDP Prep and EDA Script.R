@@ -549,3 +549,452 @@ if (nrow(high_wage_industries_in) > 0) {
 }
 
 cat("\n", rep("=", 70), "\n", sep = "")
+
+# ============================================================================
+# INITIATIVE DEEP DIVE - INDUSTRY-LEVEL ANALYSIS
+# ============================================================================
+# Add this section after your existing analyses
+
+cat("\n" , rep("=", 70), "\n", sep = "")
+cat("INITIATIVE DEEP DIVE - INDUSTRY-LEVEL ANALYSIS\n")
+cat(rep("=", 70), "\n\n", sep = "")
+
+# ANALYSIS 7: TOP INDUSTRIES WITHIN EACH INITIATIVE --------------------------
+
+cat("\n=== ANALYSIS 7: Top Industries Within Each Initiative ===\n")
+
+# Top industries by employment within each initiative (all geographies)
+top_industries_by_initiative <- jobs_data %>%
+  filter(display_level >= 2,  # Industry detail level
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000") %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
+  arrange(initiative, statefips, countyfips, geo_area, year, desc(jobs)) %>%
+  slice_head(n = 10) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, display_level, geo_area, year, initiative, 
+         naics_title, naics_code, jobs) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, year, initiative, desc(jobs))
+
+print(top_industries_by_initiative)
+
+# Calculate concentration metrics by initiative and geography
+initiative_concentration <- jobs_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000") %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
+  mutate(
+    total_init_jobs = sum(jobs, na.rm = TRUE),
+    industry_share = jobs / total_init_jobs * 100
+  ) %>%
+  arrange(desc(jobs)) %>%
+  mutate(
+    cumulative_share = cumsum(industry_share),
+    industry_rank = row_number()
+  ) %>%
+  summarise(
+    total_industries = n(),
+    top5_concentration = sum(industry_share[industry_rank <= 5], na.rm = TRUE),
+    top10_concentration = sum(industry_share[industry_rank <= 10], na.rm = TRUE),
+    herfindahl_index = sum(industry_share^2, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  select(statefips, countyfips, metrofips, geo_area, year, initiative,
+         total_industries, top5_concentration, top10_concentration, 
+         herfindahl_index) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, year, initiative)
+
+cat("\nInitiative Concentration Metrics:\n")
+print(initiative_concentration)
+
+# ANALYSIS 8: INDUSTRY GROWTH CONTRIBUTORS ------------------------------------
+
+cat("\n=== ANALYSIS 8: Industry Growth Contributors by Initiative ===\n")
+
+# Industries contributing most to growth/decline within each initiative
+industry_growth_contrib <- jobs_growth %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         !is.na(yoy_change)) %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
+  mutate(
+    total_init_change = sum(yoy_change, na.rm = TRUE),
+    contribution_pct = (yoy_change / abs(total_init_change)) * 100
+  ) %>%
+  arrange(desc(abs(yoy_change))) %>%
+  slice_head(n = 15) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, geo_area, year, initiative,
+         naics_title, naics_code, jobs, yoy_change, yoy_growth, 
+         contribution_pct) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, year, initiative, 
+          desc(yoy_change))
+
+print(industry_growth_contrib)
+
+# ANALYSIS 9: INDUSTRY WAGE DISTRIBUTION -------------------------------------
+
+cat("\n=== ANALYSIS 9: Industry Wage Distribution by Initiative ===\n")
+
+# Wage distribution within initiatives by geography
+industry_wage_dist <- wage_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         !is.na(wages)) %>%
+  # Remove any duplicate rows before joining
+  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+           naics_code, naics_title, year, .keep_all = TRUE) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level >= 2, year == recent_year, 
+             naics_code != "000000") %>%
+      # Remove any duplicate rows before joining
+      distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+               naics_code, naics_title, .keep_all = TRUE) %>%
+      select(statefips, countyfips, metrofips, geo_area, initiative, 
+             naics_code, naics_title, jobs),
+    by = c("statefips", "countyfips", "metrofips", "geo_area", 
+           "initiative", "naics_code", "naics_title")
+  ) %>%
+  group_by(statefips, countyfips, metrofips, geo_area, year, initiative) %>%
+  summarise(
+    n_industries = n(),
+    min_wage = min(wages, na.rm = TRUE),
+    q25_wage = quantile(wages, 0.25, na.rm = TRUE),
+    median_wage = median(wages, na.rm = TRUE),
+    q75_wage = quantile(wages, 0.75, na.rm = TRUE),
+    max_wage = max(wages, na.rm = TRUE),
+    weighted_avg_wage = weighted.mean(wages, jobs, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  select(statefips, countyfips, metrofips, geo_area, year, initiative,
+         n_industries, min_wage, q25_wage, median_wage, q75_wage, 
+         max_wage, weighted_avg_wage) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, year, initiative)
+
+cat("\nWage Distribution by Initiative and Geography:\n")
+print(industry_wage_dist)
+
+# High-wage vs low-wage industries within initiatives
+wage_extremes_by_init <- wage_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         !is.na(wages)) %>%
+  # Remove any duplicate rows before joining
+  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+           naics_code, naics_title, year, .keep_all = TRUE) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level >= 2, year == recent_year,
+             naics_code != "000000") %>%
+      # Remove any duplicate rows before joining
+      distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+               naics_code, naics_title, .keep_all = TRUE) %>%
+      select(statefips, countyfips, metrofips, geo_area, initiative, 
+             naics_code, naics_title, jobs),
+    by = c("statefips", "countyfips", "metrofips", "geo_area", 
+           "initiative", "naics_code", "naics_title")
+  ) %>%
+  filter(jobs >= 50) %>%  # Minimum threshold
+  group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
+  filter(n() >= 6) %>%  # Only include groups with at least 6 industries
+  arrange(desc(wages)) %>%
+  slice(c(1:3, (n()-2):n())) %>%
+  mutate(category = ifelse(row_number() <= 3, "Highest Wage", "Lowest Wage")) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, geo_area, year, initiative, 
+         category, naics_title, naics_code, wages, jobs) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, year, initiative, 
+          desc(wages))
+
+print(wage_extremes_by_init)
+
+# ANALYSIS 10: INDUSTRY PRODUCTIVITY METRICS ----------------------------------
+
+cat("\n=== ANALYSIS 10: Industry Productivity by Initiative ===\n")
+
+# GDP per job by industry within initiatives
+industry_productivity <- gdp_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         !is.na(grp), !is.na(jobs)) %>%
+  mutate(gdp_per_job = grp / jobs) %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
+  arrange(desc(gdp_per_job)) %>%
+  slice_head(n = 10) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, geo_area, year, initiative,
+         naics_title, naics_code, jobs, grp, gdp_per_job) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, year, initiative, 
+          desc(gdp_per_job))
+
+cat("\nTop Productivity Industries by Initiative and Geography:\n")
+print(industry_productivity)
+
+# ANALYSIS 11: CROSS-METRO INDUSTRY COMPARISON --------------------------------
+
+cat("\n=== ANALYSIS 11: Cross-Geography Industry Comparison ===\n")
+
+# For each initiative, compare key industries across geographies
+industry_geo_comparison <- jobs_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000") %>%
+  group_by(initiative, naics_title, naics_code, year) %>%
+  summarise(
+    n_geographies = n_distinct(geo_area),
+    total_jobs = sum(jobs, na.rm = TRUE),
+    avg_jobs_per_geo = mean(jobs, na.rm = TRUE),
+    max_geo_jobs = max(jobs, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  group_by(initiative, year) %>%
+  arrange(desc(total_jobs)) %>%
+  slice_head(n = 10) %>%
+  ungroup() %>%
+  select(year, initiative, naics_title, naics_code, n_geographies, 
+         total_jobs, avg_jobs_per_geo, max_geo_jobs) %>%
+  arrange(year, initiative, desc(total_jobs))
+
+print(industry_geo_comparison)
+
+# Industries unique to or concentrated in specific geographies
+industry_specialization <- jobs_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000") %>%
+  # Remove duplicates before joining
+  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+           naics_code, naics_title, year, .keep_all = TRUE) %>%
+  # Get US industry jobs by initiative
+  left_join(
+    jobs_data %>%
+      filter(display_level >= 2, year == recent_year,
+             geo_area == "United States", initiative != "Total Employment",
+             naics_code != "000000") %>%
+      distinct(initiative, naics_code, naics_title, .keep_all = TRUE) %>%
+      select(initiative, naics_code, naics_title, us_industry_jobs = jobs),
+    by = c("initiative", "naics_code", "naics_title")
+  ) %>%
+  # Get local initiative total employment
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             initiative != "Total Employment") %>%
+      distinct(statefips, countyfips, metrofips, geo_area, initiative, .keep_all = TRUE) %>%
+      select(statefips, countyfips, metrofips, geo_area, initiative, 
+             local_init_total = jobs),
+    by = c("statefips", "countyfips", "metrofips", "geo_area", "initiative")
+  ) %>%
+  # Get US initiative total employment
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "United States", initiative != "Total Employment") %>%
+      distinct(initiative, .keep_all = TRUE) %>%
+      select(initiative, us_init_total = jobs),
+    by = "initiative"
+  ) %>%
+  mutate(
+    local_industry_share = jobs / local_init_total * 100,
+    us_industry_share = us_industry_jobs / us_init_total * 100,
+    init_specific_lq = local_industry_share / us_industry_share
+  ) %>%
+  filter(init_specific_lq >= 2,  # Strong specialization
+         jobs >= 100,  # Minimum size
+         geo_area != "United States") %>%  # Exclude US from specialization
+  select(statefips, countyfips, metrofips, geo_area, year, initiative,
+         naics_title, naics_code, jobs, init_specific_lq) %>%
+  arrange(desc(init_specific_lq)) %>%
+  head(30)
+
+cat("\nHighly Specialized Industries (LQ >= 2):\n")
+print(industry_specialization)
+
+# ANALYSIS 12: INDUSTRY VOLATILITY AND STABILITY -----------------------------
+
+cat("\n=== ANALYSIS 12: Industry Volatility Analysis ===\n")
+
+# Calculate coefficient of variation in growth rates
+industry_volatility <- jobs_growth %>%
+  filter(display_level >= 2,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         !is.na(yoy_growth)) %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area, 
+           naics_title, naics_code) %>%
+  summarise(
+    n_years = n(),
+    avg_growth = mean(yoy_growth, na.rm = TRUE),
+    sd_growth = sd(yoy_growth, na.rm = TRUE),
+    cv_growth = sd_growth / abs(avg_growth),
+    current_jobs = last(jobs),
+    .groups = "drop"
+  ) %>%
+  filter(n_years >= 3, current_jobs >= 50) %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area) %>%
+  arrange(desc(cv_growth)) %>%
+  slice_head(n = 10) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, geo_area, initiative,
+         naics_title, naics_code, n_years, avg_growth, sd_growth, 
+         cv_growth, current_jobs) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, initiative, 
+          desc(cv_growth))
+
+cat("\nMost Volatile Industries by Initiative and Geography:\n")
+print(industry_volatility)
+
+# Most stable industries (lowest volatility, positive growth)
+industry_stability <- jobs_growth %>%
+  filter(display_level >= 2,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         !is.na(yoy_growth)) %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area,
+           naics_title, naics_code) %>%
+  summarise(
+    n_years = n(),
+    avg_growth = mean(yoy_growth, na.rm = TRUE),
+    sd_growth = sd(yoy_growth, na.rm = TRUE),
+    cv_growth = sd_growth / abs(avg_growth),
+    current_jobs = last(jobs),
+    .groups = "drop"
+  ) %>%
+  filter(n_years >= 3, current_jobs >= 100, avg_growth > 0) %>%
+  group_by(initiative, statefips, countyfips, metrofips, geo_area) %>%
+  arrange(cv_growth) %>%
+  slice_head(n = 10) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, geo_area, initiative,
+         naics_title, naics_code, n_years, avg_growth, sd_growth,
+         cv_growth, current_jobs) %>%
+  arrange(statefips, countyfips, metrofips, geo_area, initiative, cv_growth)
+
+cat("\nMost Stable High-Growth Industries by Initiative and Geography:\n")
+print(industry_stability)
+
+# EXPORT INITIATIVE DEEP DIVE TABLES ------------------------------------------
+
+cat("\n=== Exporting Initiative Deep Dive Results ===\n")
+
+write_csv(top_industries_by_initiative,
+          file.path(output_dir, "top_industries_by_initiative.csv"))
+write_csv(initiative_concentration,
+          file.path(output_dir, "initiative_concentration_metrics.csv"))
+write_csv(industry_growth_contrib,
+          file.path(output_dir, "industry_growth_contributors.csv"))
+write_csv(industry_wage_dist,
+          file.path(output_dir, "industry_wage_distribution.csv"))
+write_csv(wage_extremes_by_init,
+          file.path(output_dir, "wage_extremes_by_initiative.csv"))
+write_csv(industry_productivity,
+          file.path(output_dir, "industry_productivity.csv"))
+write_csv(industry_geo_comparison,
+          file.path(output_dir, "industry_geo_comparison.csv"))
+write_csv(industry_specialization,
+          file.path(output_dir, "industry_specialization.csv"))
+write_csv(industry_volatility,
+          file.path(output_dir, "industry_volatility.csv"))
+write_csv(industry_stability,
+          file.path(output_dir, "industry_stability.csv"))
+
+# SAVE ADDITIONAL DATA FOR VISUALIZATIONS ------------------------------------
+
+save(top_industries_by_initiative, initiative_concentration,
+     industry_growth_contrib, industry_wage_dist, wage_extremes_by_init,
+     industry_productivity, industry_geo_comparison, industry_specialization,
+     industry_volatility, industry_stability,
+     file = file.path(output_dir, "processed_data_initiative_deepdive.RData"))
+
+cat(sprintf("Initiative deep dive data saved to '%s/processed_data_initiative_deepdive.RData'\n", 
+            output_dir))
+
+# DEEP DIVE SUMMARY -----------------------------------------------------------
+
+cat("\n" , rep("=", 70), "\n", sep = "")
+cat("INITIATIVE DEEP DIVE SUMMARY\n")
+cat(rep("=", 70), "\n\n", sep = "")
+
+# Summary by geography type
+for(geo_type in c("State", "Metro")) {
+  cat(sprintf("\n%s LEVEL SUMMARY\n", toupper(geo_type)))
+  cat(rep("=", 70), "\n", sep = "")
+  
+  # Get relevant geographies
+  if(geo_type == "State") {
+    geo_list <- c("Indiana")
+  } else {
+    geo_list <- top_industries_by_initiative %>%
+      filter(statefips == 18, !is.na(metrofips)) %>%
+      distinct(geo_area) %>%
+      arrange(geo_area) %>%
+      pull(geo_area) %>%
+      head(5)  # Top 5 metros
+  }
+  
+  for(geo in geo_list) {
+    cat(sprintf("\n%s\n", geo))
+    cat(rep("-", nchar(geo)), "\n", sep = "")
+    
+    for(init in unique(top_industries_by_initiative$initiative)) {
+      # Top 3 industries
+      top_3 <- top_industries_by_initiative %>%
+        filter(geo_area == geo, initiative == init) %>%
+        head(3)
+      
+      if(nrow(top_3) > 0) {
+        cat(sprintf("\n  %s:\n", init))
+        cat(sprintf("    Top 3 Industries by Employment:\n"))
+        for(i in 1:min(3, nrow(top_3))) {
+          cat(sprintf("      %d. %s (%s jobs)\n", i, top_3$naics_title[i], 
+                      comma(top_3$jobs[i])))
+        }
+        
+        # Concentration
+        conc <- initiative_concentration %>% 
+          filter(geo_area == geo, initiative == init)
+        if(nrow(conc) > 0) {
+          cat(sprintf("    Concentration: Top 5 industries = %.1f%% of jobs\n", 
+                      conc$top5_concentration))
+        }
+        
+        # Growth contributors
+        growth_top <- industry_growth_contrib %>%
+          filter(geo_area == geo, initiative == init) %>%
+          head(2)
+        
+        if(nrow(growth_top) > 0) {
+          cat(sprintf("    Top Growth Contributor: %s (%+s jobs)\n",
+                      growth_top$naics_title[1],
+                      comma(round(growth_top$yoy_change[1]))))
+        }
+        
+        # Wages
+        wages <- industry_wage_dist %>% 
+          filter(geo_area == geo, initiative == init)
+        if(nrow(wages) > 0) {
+          cat(sprintf("    Wage Range: $%s - $%s (median: $%s)\n",
+                      comma(round(wages$min_wage)),
+                      comma(round(wages$max_wage)),
+                      comma(round(wages$median_wage))))
+        }
+      }
+    }
+  }
+}
+
+cat("\n", rep("=", 70), "\n", sep = "")

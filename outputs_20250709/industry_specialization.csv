@@ -1,0 +1,31 @@
+statefips,countyfips,metrofips,geo_area,year,initiative,naics_title,naics_code,jobs,init_specific_lq
+00,000,18020,Columbus MSA,2023,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,7443.33104839,168.5353733914926
+00,000,18020,Columbus MSA,2023,Advanced & Traded Industries,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,7468.3272331703,137.73932550558467
+00,000,21140,Elkhart-Goshen MSA,2023,Advanced & Traded Industries,Motor Vehicle Body and Trailer Manufacturing,3362,31074.807435408,97.53305112520313
+00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Railroad Rolling Stock Manufacturing,3365,359.575131349,75.36499599283634
+00,000,34620,Muncie MSA,2023,Conexus,Railroad Rolling Stock Manufacturing,3365,359.575131349,66.20547588095499
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Motor Vehicle Body and Trailer Manufacturing,3362,31074.807435408,59.910253418789495
+00,000,21780,Evansville MSA,2023,AgriNovus,Specialty Canning,311422,666.274270527,58.79404355453271
+00,000,29020,Kokomo MSA,2023,Advanced & Traded Industries,Motor Vehicle Parts Manufacturing,3363,7592.482166298323,46.50619611818371
+00,000,18020,Columbus MSA,2023,TechPoint,Electronic Connector Manufacturing,334417,142.501413045,44.85247122634638
+00,000,45460,Terre Haute MSA,2023,AgriNovus,Rendering and Meat Byproduct Processing,311613,152.928062065,44.75182485361303
+00,000,29200,Lafayette-West Lafayette MSA,2023,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,665.587100808,43.79211379507225
+00,000,29200,Lafayette-West Lafayette MSA,2023,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,665.587100808,43.64613992620018
+00,000,31140,Louisville/Jefferson County MSA,2023,AgriNovus,Distilleries,312140,4660.55978084,43.55957858712304
+00,000,14020,Bloomington MSA,2023,Advanced & Traded Industries,Medical Equipment and Supplies Manufacturing,3391,5754.072222928925,40.97829827176413
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,2132.18386403,38.95731634306984
+00,000,21780,Evansville MSA,2023,AgriNovus,"Dry, Condensed, and Evaporated Dairy Product Manufacturing",311514,647.922149562,35.76043323336432
+00,000,29200,Lafayette-West Lafayette MSA,2023,Advanced & Traded Industries,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,2371.2630017130004,34.109730252894295
+00,000,33140,Michigan City-La Porte MSA,2023,Advanced & Traded Industries,Foundries,3315,1138.668687308,33.79562601827116
+00,000,17140,Cincinnati MSA,2023,AgriNovus,Flavoring Syrup and Concentrate Manufacturing,311930,1892.49725856,33.22245462292835
+00,000,29200,Lafayette-West Lafayette MSA,2023,Advanced & Traded Industries,Motor Vehicle Manufacturing,3361,7185.96797742,32.38420703186217
+00,000,34620,Muncie MSA,2023,TechPoint,Computer Facilities Management Services,541513,446.41753611,31.918795400538198
+00,000,33140,Michigan City-La Porte MSA,2023,AgriNovus,Cookie and Cracker Manufacturing,311821,544.521812551,31.82264316067156
+00,000,29020,Kokomo MSA,2023,Conexus,Motor Vehicle Parts Manufacturing,3363,7592.482166298323,29.932977982358157
+00,000,29200,Lafayette-West Lafayette MSA,2023,AgriNovus,Wet Corn Milling and Starch Manufacturing,311221,386.154115845,28.337387854181955
+00,000,29200,Lafayette-West Lafayette MSA,2023,BioCrossroads,Wet Corn Milling and Starch Manufacturing,311221,386.154115845,28.242929793578615
+00,000,33140,Michigan City-La Porte MSA,2023,AgriNovus,Nonchocolate Confectionery Manufacturing,311340,328.313202307,28.227991740310053
+00,000,21780,Evansville MSA,2023,Conexus,Other Chemical Product and Preparation Manufacturing,3259,572.736500929,28.024258713317426
+00,000,23060,Fort Wayne MSA,2023,TechPoint,Other Measuring and Controlling Device Manufacturing,334519,1129.6846825,27.98241860500006
+00,000,21780,Evansville MSA,2023,BioCrossroads,Ethyl Alcohol Manufacturing,325193,199.294885556,26.04116054524244
+00,000,29020,Kokomo MSA,2023,AgriNovus,Frozen Specialty Food Manufacturing,311412,220.806046462,24.40117329457213
