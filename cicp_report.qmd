@@ -38,6 +38,9 @@ library(knitr)
 library(kableExtra)
 library(plotly)
 library(htmlwidgets)
+library(DT)
+library(janitor)
+library(readxl)
 
 # Load processed data
 output_dir <- "outputs_20250709"  # Modify to match your output directory
@@ -119,8 +122,8 @@ top_employer <- jobs_data %>%
 fastest_growing <- jobs_growth %>%
   filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative != "Total Employment",
-         !is.na(cagr_3yr)) %>%
-  arrange(desc(cagr_3yr)) %>%
+         !is.na(cagr_2yr)) %>%
+  arrange(desc(cagr_2yr)) %>%
   slice(1)
 
 # Highest wage initiative
@@ -154,7 +157,7 @@ wage_premium <- ((avg_wage_advanced - avg_wage_all) / avg_wage_all) * 100
 
 cat(sprintf("
 - **%s** is the largest initiative with **%s jobs**
-- **%s** shows the strongest growth at **%.1f%% 3-year CAGR**
+- **%s** shows the strongest growth at **%.1f%% 2-Year CAGR**
 - **%s** offers the highest wages at **%s annually**
 - Advanced industries pay **%.0f%% more** than the state average
 - **Significant regional variation** exists across Indiana's metro areas
@@ -162,7 +165,7 @@ cat(sprintf("
 top_employer$initiative,
 comma(round(top_employer$jobs, 0)),
 fastest_growing$initiative,
-as.numeric(fastest_growing$cagr_3yr),
+as.numeric(fastest_growing$cagr_2yr),
 highest_wage$initiative,
 dollar(highest_wage$wages, accuracy = 1),
 as.numeric(wage_premium)
@@ -197,7 +200,7 @@ growth_rates <- jobs_growth %>%
     geo_area == "Indiana",
     initiative != "Total Employment"
   ) %>%
-  select(initiative, cagr_3yr)
+  select(initiative, cagr_2yr)
 
 # Now, build the main table using a join
 indiana_jobs <- jobs_data %>%
@@ -214,7 +217,7 @@ indiana_jobs <- jobs_data %>%
   mutate(
     `Total Jobs` = scales::comma(round(jobs, 0)),
     `Share of Total Employment` = sprintf("%.1f%%", (jobs / total_employment) * 100),
-    `3-Yr CAGR` = sprintf("%.1f%%", cagr_3yr)
+    `3-Yr CAGR` = sprintf("%.1f%%", cagr_2yr)
   ) %>%
   select(
     Initiative = initiative, 
@@ -252,7 +255,7 @@ Growth rates reveal which initiatives are expanding and which face headwinds. Th
 indiana_growth <- jobs_growth %>%
   filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative != "Total Employment",
-         !is.na(cagr_3yr)) %>%
+         !is.na(cagr_2yr)) %>%
   left_join(
     jobs_data %>%
       filter(display_level == 0, year == recent_year, 
@@ -260,17 +263,17 @@ indiana_growth <- jobs_growth %>%
       select(initiative, current_jobs = jobs),
     by = "initiative"
   ) %>%
-  arrange(desc(cagr_3yr)) %>%
+  arrange(desc(cagr_2yr)) %>%
   mutate(
     `Current Jobs` = comma(round(current_jobs, 0)),
     `YoY Growth` = sprintf("%.1f%%", yoy_growth),
-    `3-Year CAGR` = sprintf("%.1f%%", cagr_3yr),
-    `5-Year CAGR` = if_else(!is.na(cagr_5yr), 
-                            sprintf("%.1f%%", cagr_5yr), 
+    `2-Year CAGR` = sprintf("%.1f%%", cagr_2yr),
+    `4-Year CAGR` = if_else(!is.na(cagr_4yr), 
+                            sprintf("%.1f%%", cagr_4yr), 
                             "—")
   ) %>%
   select(Initiative = initiative, `Current Jobs`, 
-         `YoY Growth`, `3-Year CAGR`, `5-Year CAGR`)
+         `YoY Growth`, `2-Year CAGR`, `4-Year CAGR`)
 
 create_table(indiana_growth)
 ```
@@ -575,16 +578,16 @@ all_metros_initiatives %>%
 Growth rates reveal which metro areas are **emerging** versus **mature** advanced industry centers. Understanding these dynamics helps target economic development resources.
 
 ```{r metro_growth_table}
-#| tbl-cap: "Metro Area Growth Rankings (5-Year CAGR)"
+#| tbl-cap: "Metro Area Growth Rankings (4-Year CAGR)"
 
 metro_growth <- jobs_growth %>%
   filter(display_level == 0, year == recent_year, 
          geo_type == "Metro", initiative != "Total Employment",
-         !is.na(cagr_5yr)) %>%
+         !is.na(cagr_4yr)) %>%
   group_by(geo_area) %>%
   summarise(
     total_jobs = sum(jobs, na.rm = TRUE),
-    avg_cagr = weighted.mean(cagr_5yr, jobs, na.rm = TRUE),
+    avg_cagr = weighted.mean(cagr_4yr, jobs, na.rm = TRUE),
     .groups = "drop"
   ) %>%
   arrange(desc(avg_cagr)) %>%
@@ -592,10 +595,10 @@ metro_growth <- jobs_growth %>%
   mutate(
     Rank = row_number(),
     `Current Employment` = comma(round(total_jobs, 0)),
-    `5-Year CAGR` = sprintf("%.1f%%", avg_cagr)
+    `4-Year CAGR` = sprintf("%.1f%%", avg_cagr)
   ) %>%
   select(Rank, `Metro Area` = geo_area, 
-         `Current Employment`, `5-Year CAGR`)
+         `Current Employment`, `4-Year CAGR`)
 
 create_table(metro_growth, striped = TRUE)
 ```
@@ -823,7 +826,7 @@ knitr::include_url(file.path(viz_path, "13_growth_vs_level_quadrant_interactive.
 quadrant_summary <- jobs_growth %>%
   filter(display_level == 0, year == recent_year, 
          geo_type == "Metro", initiative != "Total Employment",
-         !is.na(cagr_5yr)) %>%
+         !is.na(cagr_4yr)) %>%
   left_join(
     jobs_data %>%
       filter(display_level == 0, year == recent_year,
@@ -836,12 +839,12 @@ quadrant_summary <- jobs_growth %>%
   ) %>%
   group_by(initiative) %>%
   mutate(
-    median_growth = median(cagr_5yr, na.rm = TRUE),
+    median_growth = median(cagr_4yr, na.rm = TRUE),
     median_share = median(employment_share, na.rm = TRUE),
     quadrant = case_when(
-      cagr_5yr >= median_growth & employment_share >= median_share ~ "⭐ Stars",
-      cagr_5yr >= median_growth & employment_share < median_share ~ "🚀 Emerging",
-      cagr_5yr < median_growth & employment_share >= median_share ~ "📊 Mature",
+      cagr_4yr >= median_growth & employment_share >= median_share ~ "⭐ Stars",
+      cagr_4yr >= median_growth & employment_share < median_share ~ "🚀 Emerging",
+      cagr_4yr < median_growth & employment_share >= median_share ~ "📊 Mature",
       TRUE ~ "⚠️ Declining"
     )
   ) %>%
@@ -1017,8 +1020,8 @@ top3_employment <- jobs_data %>%
 top3_growth <- jobs_growth %>%
   filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative != "Total Employment",
-         !is.na(cagr_3yr)) %>%
-  arrange(desc(cagr_3yr)) %>%
+         !is.na(cagr_2yr)) %>%
+  arrange(desc(cagr_2yr)) %>%
   head(3)
 
 cat("**Scale Leaders:**\n")
@@ -1030,9 +1033,9 @@ for(i in 1:3) {
 
 cat("\n**Growth Leaders:**\n\n")
 for(i in 1:3) {
-  cat(sprintf("- **%s**: %.1f%% 3-year CAGR\n\n", 
+  cat(sprintf("- **%s**: %.1f%% 2-Year CAGR\n\n", 
               top3_growth$initiative[i],
-              top3_growth$cagr_3yr[i]))
+              top3_growth$cagr_2yr[i]))
 }
 ```
 :::
@@ -1143,6 +1146,318 @@ for(i in 1:5) {
               top_specialists$lq[i]))
 }
 ```
+:::
+
+# Industry Deep Dive {#sec-industry-deepdive}
+
+Moving beyond initiative-level aggregates, this section examines the **individual industries** that compose each advanced industry initiative. Understanding industry-level composition reveals the **specific sectors driving growth**, identifies **concentration risks**, and highlights opportunities for **targeted interventions**.
+
+## Industry Composition Within Initiatives
+
+Each initiative comprises multiple industries with varying employment levels. Some initiatives are **highly concentrated** in a few dominant sectors, while others exhibit more **diversified portfolios**.
+
+::: column-page
+```{r top_industries_viz, fig.height=14}
+#| fig-cap: "The top 10 industries by employment within each initiative reveal concentration patterns and dominant sectors. Use the dropdown to examine different initiatives and geographies."
+
+knitr::include_url(file.path(viz_path, "15_top_industries_by_initiative.html"), height = "1200px")
+```
+:::
+
+```{r industry_concentration_summary}
+#| tbl-cap: "Initiative Concentration Metrics"
+
+# Load deep dive data if not already loaded
+if(!exists("initiative_concentration")) {
+  load(file.path(output_dir, "processed_data_initiative_deepdive.RData"))
+}
+
+concentration_summary <- initiative_concentration %>%
+  filter(geo_area == "Indiana", year == recent_year) %>%
+  arrange(desc(top5_concentration)) %>%
+  mutate(
+    `Top 5 Concentration` = sprintf("%.1f%%", top5_concentration),
+    `Top 10 Concentration` = sprintf("%.1f%%", top10_concentration),
+    `Total Industries` = comma(total_industries),
+  ) %>%
+  select(Initiative = initiative, `Total Industries`, 
+         `Top 5 Concentration`, `Top 10 Concentration`)
+
+create_table(concentration_summary, striped = TRUE)
+```
+
+::: {.callout-note icon="false"}
+## 📊 Interpretation
+
+**Concentration metrics** reveal strategic implications:
+
+- **Top 5 Concentration** shows the share of initiative employment in the five largest industries. Higher values indicate concentration in fewer sectors.
+- Highly concentrated initiatives face **greater sector-specific risks** but may benefit from **stronger cluster effects** and **specialized infrastructure**.
+- Diversified initiatives offer **portfolio resilience** but may struggle to achieve the **critical mass** needed for cluster competitiveness.
+:::
+
+## Industry Concentration Curves
+
+**Lorenz curves** visualize how employment is distributed across industries within each initiative. A curve closer to the diagonal indicates more equal distribution, while curves bowing toward the axes reveal concentration in just a few industries.
+
+::: column-page
+```{r concentration_curves_viz, fig.height=12}
+#| fig-cap: "Lorenz curves show cumulative employment share by industry rank. Curves further from the diagonal (closer to the axes) indicate higher concentration in fewer industries. The Gini coefficient quantifies inequality (0 = perfect equality, 1 = perfect inequality)."
+
+knitr::include_url(file.path(viz_path, "16_industry_concentration_lorenz.html"), height = "1000px")
+```
+:::
+
+::: {.callout-important icon="false"}
+## 🎯 Strategic Implications
+
+The degree of industry concentration within initiatives suggests different **economic development strategies**:
+
+- **Highly concentrated initiatives** should prioritize **cluster development** and **supply chain deepening** around dominant industries, while monitoring **concentration risk**.
+- **Moderately concentrated initiatives** can pursue **adjacent diversification** by supporting industries that complement existing strengths.
+- **Highly diversified initiatives** may benefit from **targeted investment** to build **critical mass** in high-potential sectors rather than spreading resources too thin.
+
+Understanding concentration patterns helps **prioritize resources**, **design interventions**, and **manage portfolio risk** at both state and regional levels.
+:::
+
+## Growth Contributors: Which Industries Drive Change?
+
+Not all industries contribute equally to initiative employment growth. Identifying the **specific industries** responsible for gains or losses enables **targeted policy interventions** and **resource allocation**.
+
+::: column-page
+```{r growth_contributors_viz, fig.height=14}
+#| fig-cap: "Waterfall charts decompose employment change into industry-level contributions. Positive bars show industries adding jobs; negative bars indicate job losses. Use dropdowns to select geography and time period."
+
+knitr::include_url(file.path(viz_path, "17_growth_contributors_waterfall.html"), height = "1200px")
+```
+:::
+
+::: {.callout-important icon="false"}
+## ❓ How to Read This Chart
+
+This waterfall chart displays the top 10 industries contributing most to job growth within the selected initiative and geography. Industries are ranked from smallest to largest net change in jobs. 
+
+- **Green bars** represent industries that gained jobs (positive contribution)
+- **Red bars** represent industries that lost jobs (negative contribution)
+- The **horizontal position** of each bar shows the cumulative job change - as you read from **bottom to top**, each bar adds to (or subtracts from) the running total
+- The number on each bar shows that industry's individual job change
+
+**Key insights**:
+
+- Industries at the **bottom** of each chart had the largest impact on total employment growth
+- The cumulative effect shows how multiple industries combine to drive overall growth
+- A mix of <span style="color: green;">green</span> and <span style="color: red;">red</span> bars indicates **offsetting trends** - some industries <span style="color: green;">growing</span> while others <span style="color: red;">contract</span>
+
+**Example**: If the bottom bar is <span style="color: green;">green</span> and shows +500 jobs and ends at 500, and the next bar is <span style="color: green;">green</span> and shows +300 jobs and ends at 800, the second industry added 300 jobs on top of the first industry's 500. If the next bar is <span style="color: red;">red</span> and shows -100, the third industry shed 100 jobs from the first two industries, for cumulative growth of 700 jobs. 
+:::
+
+```{r top_growth_contributors}
+#| tbl-cap: "Top 3 Growth Contributors by Initiative (Indiana)"
+
+if(!exists("industry_growth_contrib")) {
+  load(file.path(output_dir, "processed_data_initiative_deepdive.RData"))
+}
+
+top_contributors <- industry_growth_contrib %>%
+  filter(geo_area == "Indiana") %>%
+  group_by(initiative) %>%
+  arrange(desc(yoy_change)) %>%
+  slice_head(n = 3) %>%
+  ungroup() %>%
+  mutate(
+    `Job Change` = comma(round(yoy_change, 0)),
+    `% of Initiative Growth` = sprintf("%.1f%%", contribution_pct)
+  ) %>%
+  select(Initiative = initiative, Industry = naics_title, 
+         `Job Change`, `% of Initiative Growth`) %>%
+  arrange(Initiative, desc(as.numeric(gsub(",", "", `Job Change`))))
+
+create_table(top_contributors)
+```
+
+::: {.callout-tip icon="false"}
+## 💡 Analysis
+
+**Growth decomposition** reveals:
+
+- A small number of industries often account for the **majority of employment change** within initiatives, suggesting that **targeted interventions** in high-impact sectors can yield disproportionate returns.
+- In most geography-initiative combinations, there's a mix of red and green bars, which indicates there are **fewer than 10 industries** that grew year-over-year in that geography-initiative. 
+- Industries driving growth vary by **geography and initiative**, indicating the need for **context-specific strategies** rather than one-size-fits-all approaches.
+- Identifying **consistent growth contributors** across multiple periods helps distinguish **structural trends** from **cyclical fluctuations**.
+- Understanding which industries drive **losses** is equally important for **transition planning** and **workforce retraining** efforts.
+:::
+
+## Wage Distribution Across Industries
+
+While initiative-level average wages provide useful benchmarks, **substantial variation exists across component industries**. Understanding this distribution reveals opportunities to **promote high-wage sectors** and identifies industries where **wage improvements** could have significant impact.
+
+::: column-page
+```{r wage_distribution_viz, fig.height=14}
+#| fig-cap: "Box plots show wage distribution within each initiative. Wider boxes indicate greater wage variation. Points beyond whiskers represent outlier industries with exceptionally high or low wages."
+
+knitr::include_url(file.path(viz_path, "18_wage_distribution_boxplots.html"), height = "1000px")
+```
+:::
+
+```{r wage_extremes_table}
+#| tbl-cap: "Highest and Lowest Wage Industries by Initiative (Indiana)"
+
+if(!exists("wage_extremes_by_init")) {
+  load(file.path(output_dir, "processed_data_initiative_deepdive.RData"))
+}
+
+wage_extremes_display <- wage_extremes_by_init %>%
+  filter(geo_area == "Indiana", year == recent_year) %>%
+  select(initiative, category, naics_title, wages, jobs) %>%
+  mutate(
+    `Average Wage` = dollar(wages, accuracy = 1),
+    `Employment` = comma(jobs)
+  ) %>%
+  select(Initiative = initiative, `Wage Category` = category, 
+         Industry = naics_title, `Average Wage`, Employment) %>%
+  arrange(Initiative, `Wage Category`)
+
+create_table(wage_extremes_display)
+```
+
+::: {.callout-important icon="false"}
+## 🎯 Strategic Implications
+
+**Wage heterogeneity** within initiatives suggests several strategic opportunities:
+
+- Initiatives with **large wage spreads** offer opportunities to **shift employment mix** toward higher-paying industries through targeted **recruitment** and **business development**.
+- Understanding which specific industries pay **premium wages** helps focus **workforce development** and **talent attraction** efforts on the most impactful sectors.
+- Industries with **high employment but below-average wages** represent opportunities for increasing productivity and  **quality job creation**.
+- The presence of **high-wage outliers** within an initiative indicates potential for **value chain upgrading** and **innovation-driven wage growth**.
+:::
+
+## Industry Size vs. Growth: Strategic Positioning
+
+The relationship between **current employment levels** and **growth rates** reveals strategic positioning of individual industries within each initiative.
+
+::: column-page
+```{r industry_scatter_viz, fig.height=16}
+#| fig-cap: "Scatter plots position industries by current employment (bubble size) and growth rate (vertical axis). Large, fast-growing industries (top-right) are key drivers. Small, fast-growing industries (top-left) are emerging opportunities. Use dropdown to examine different initiatives."
+
+knitr::include_url(file.path(viz_path, "19_size_vs_growth_scatter.html"), height = "1200px")
+```
+:::
+
+::: {.callout-note icon="false"}
+## 📈 Quadrant Interpretation
+
+Industries fall into distinct strategic categories:
+
+- **Stars** (Large + Fast-Growing): Dominant industries driving overall initiative growth. These merit continued support and should be protected through cluster development initiatives.
+- **Emerging Opportunities** (Small + Fast-Growing): High-growth industries with potential to become significant employment drivers. These warrant investment in infrastructure and talent pipelines.
+- **Mature Anchors** (Large + Slow/Negative Growth): Established industries facing headwinds. These may need productivity enhancements, innovation initiatives, or transition support.
+- **Declining Sectors** (Small + Negative Growth): Industries losing jobs without significant current employment. May warrant **sunset strategies** or **repurposing resources** toward higher-growth sectors.
+:::
+
+## Regional Industry Specialization
+
+Indiana metros don't simply replicate the state's industry mix — they develop **distinct specializations** within each initiative. **Location quotients (LQ)** identify which industries are **over-represented** in specific regions relative to the U.S. average.
+
+::: column-page
+```{r specialized_industries_viz, fig.height=16}
+#| fig-cap: "Heatmaps show the top 3 most specialized industries within each initiative by metro area. Darker colors indicate stronger specialization (higher LQ). Use dropdown to examine different geographies."
+
+knitr::include_url(file.path(viz_path, "20_specialized_industries_heatmap.html"), height = "1200px")
+```
+:::
+
+```{r specialization_summary}
+#| tbl-cap: "Most Specialized Industries by Geography (LQ)"
+
+# Calculate traditional LQ for all geographies
+top_specializations_all <- jobs_data %>%
+  filter(display_level >= 2,
+         year == recent_year,
+         initiative != "Total Employment",
+         naics_code != "000000",
+         geo_area != "United States",
+         !is.na(jobs)) %>%
+  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+           naics_code, naics_title, year, .keep_all = TRUE) %>%
+  # Get total employment for each geography
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             initiative == "Total Employment") %>%
+      select(statefips, countyfips, metrofips, geo_area, total_employment = jobs),
+    by = c("statefips", "countyfips", "metrofips", "geo_area")
+  ) %>%
+  # Get US industry employment
+  left_join(
+    jobs_data %>%
+      filter(display_level >= 2, year == recent_year,
+             geo_area == "United States",
+             naics_code != "000000") %>%
+      distinct(initiative, naics_code, naics_title, .keep_all = TRUE) %>%
+      select(initiative, naics_code, naics_title, us_industry_jobs = jobs),
+    by = c("initiative", "naics_code", "naics_title")
+  ) %>%
+  # Get US total employment
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "United States", initiative == "Total Employment") %>%
+      select(us_total = jobs),
+    by = character()
+  ) %>%
+  mutate(
+    local_share = (jobs / total_employment) * 100,
+    us_share = (us_industry_jobs / us_total) * 100,
+    location_quotient = local_share / us_share
+  ) %>%
+  filter(!is.na(location_quotient), 
+         !is.infinite(location_quotient),
+         jobs >= 100) %>%
+  # Get top 5 per initiative per geography
+  group_by(geo_area, initiative) %>%
+  arrange(desc(location_quotient)) %>%
+  slice_head(n = 5) %>%
+  ungroup() %>%
+  mutate(
+    `Location Quotient` = round(location_quotient, 2),
+    Jobs = jobs,
+    `% of Total Employment` = round(local_share, 3),
+    # Create sort order: Indiana first, then MSAs alphabetically
+    sort_order = if_else(geo_area == "Indiana", "0", paste0("1_", geo_area))
+  ) %>%
+  arrange(sort_order, initiative, desc(`Location Quotient`)) %>%
+  select(Geography = geo_area, Initiative = initiative, Industry = naics_title,
+         `Location Quotient`, Jobs, `% of Total Employment`)
+
+# Create interactive table with search/filter
+datatable(
+  top_specializations_all,
+  filter = 'top',
+  options = list(
+    pageLength = 15,
+    autoWidth = TRUE,
+    dom = 'Bfrtip',
+    buttons = c('copy', 'csv', 'excel'),
+    ordering = TRUE,
+    order = list()  # Start with the default order from the data
+  ),
+  rownames = FALSE
+) %>%
+  formatRound(columns = c('Location Quotient', '% of Total Employment'), digits = 2) %>%
+  formatCurrency(columns = 'Jobs', currency = '', digits = 0)
+```
+
+::: {.callout-important icon="false"}
+## 🎯 Regional Strategy Implications
+
+**Industry-level specialization patterns** inform differentiated regional strategies:
+
+- Metros with **high LQ industries** possess **competitive advantages** that should be leveraged through cluster development, specialized workforce programs, and targeted marketing to related firms.
+- **Comparing specializations across metros** reveals opportunities for **inter-regional collaboration** (complementary strengths) or **competitive differentiation** (similar specializations).
+- Industries with **high LQ but small absolute employment** represent **niche specializations** that may offer unique competitive positioning but face scalability constraints.
+- Metros lacking specialization in fast-growing industries may benefit from **strategic recruitment** efforts or **entrepreneurship support** to build new clusters.
+
+Understanding these patterns at the industry level provides the **granular insights** needed to move from **generic strategies** to **targeted, evidence-based interventions** tailored to each region's unique industrial composition.
 :::
 
 

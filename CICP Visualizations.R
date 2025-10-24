@@ -78,15 +78,15 @@ p2_data <- jobs_growth %>%
          year == recent_year, 
          geo_area == "Indiana",
          initiative != "Total Employment",
-         !is.na(cagr_3yr)) %>%
-  mutate(growth_type = ifelse(cagr_3yr >= 0, "Growth", "Decline"))
+         !is.na(cagr_2yr)) %>%
+  mutate(growth_type = ifelse(cagr_2yr >= 0, "Growth", "Decline"))
 
 p2 <- p2_data %>%
-  ggplot(aes(x = reorder(initiative, cagr_3yr), y = cagr_3yr, fill = growth_type)) +
+  ggplot(aes(x = reorder(initiative, cagr_2yr), y = cagr_2yr, fill = growth_type)) +
   geom_col(show.legend = FALSE, alpha = 0.9) +
   geom_hline(yintercept = 0, linetype = "solid", color = "gray30", linewidth = 0.5) +
-  geom_text(aes(label = sprintf("%.1f%%", cagr_3yr)), 
-            hjust = ifelse(p2_data$cagr_3yr >= 0, -0.15, 1.15), 
+  geom_text(aes(label = sprintf("%.1f%%", cagr_2yr)), 
+            hjust = ifelse(p2_data$cagr_2yr >= 0, -0.15, 1.15), 
             size = 4,
             fontface = "bold") +
   coord_flip() +
@@ -95,9 +95,9 @@ p2 <- p2_data %>%
   scale_fill_manual(values = c("Growth" = "#2E7D32", "Decline" = "#C62828")) +
   labs(
     title = "Job Growth Rate by Initiative",
-    subtitle = paste("3-Year CAGR | Indiana | Through", recent_year),
+    subtitle = paste("2-Year CAGR | Indiana | Through", recent_year),
     x = NULL, 
-    y = "3-Year Compound Annual Growth Rate",
+    y = "2-Year Compound Annual Growth Rate",
     caption = "Source: CICP Advanced Industries Dashboard"
   ) +
   theme(panel.grid.major.y = element_blank(),
@@ -234,14 +234,14 @@ p5_data <- jobs_data %>%
       filter(display_level == 0, 
              year == recent_year,
              geo_type == "Metro",
-             !is.na(cagr_5yr)) %>%
-      select(initiative, geo_area, cagr_5yr),
+             !is.na(cagr_4yr)) %>%
+      select(initiative, geo_area, cagr_4yr),
     by = c("initiative", "geo_area")
   ) %>%
-  filter(!is.na(cagr_5yr)) %>%
-  select(initiative, geo_area, current_jobs = jobs, starting_jobs, cagr_5yr) %>%
-  mutate(growth_type = ifelse(cagr_5yr >= 0, "Growth", "Decline"),
-         color_var = ifelse(cagr_5yr >= 0, "#2E7D32", "#C62828"))
+  filter(!is.na(cagr_4yr)) %>%
+  select(initiative, geo_area, current_jobs = jobs, starting_jobs, cagr_4yr) %>%
+  mutate(growth_type = ifelse(cagr_4yr >= 0, "Growth", "Decline"),
+         color_var = ifelse(cagr_4yr >= 0, "#2E7D32", "#C62828"))
 
 # Get all metros
 all_metros_list <- p5_data %>%
@@ -263,23 +263,23 @@ initiative_list <- unique(p5_data$initiative)
 for(init in initiative_list) {
   trace_data <- p5_data %>% 
     filter(initiative == init) %>%
-    arrange(cagr_5yr)
+    arrange(cagr_4yr)
   
   p5_interactive <- p5_interactive %>%
     add_trace(
-      x = trace_data$cagr_5yr,
+      x = trace_data$cagr_4yr,
       y = trace_data$geo_area,
       type = "bar",
       orientation = "h",
       name = init,
       visible = if(init == initiative_list[1]) TRUE else FALSE,
       marker = list(color = trace_data$color_var),
-      text = sprintf("%.1f%%", trace_data$cagr_5yr),
+      text = sprintf("%.1f%%", trace_data$cagr_4yr),
       textposition = "outside",
       textfont = list(size = 12, color = "black"),
       hovertemplate = paste0(
         "<b>", trace_data$geo_area, "</b><br>",
-        "5-Year CAGR: ", sprintf("%.1f%%", trace_data$cagr_5yr), "<br>",
+        "4-Year CAGR: ", sprintf("%.1f%%", trace_data$cagr_4yr), "<br>",
         "Starting Jobs (", recent_year - 4, "): ", format(trace_data$starting_jobs, big.mark = ","), "<br>",
         "Current Jobs (", recent_year, "): ", format(trace_data$current_jobs, big.mark = ","), "<br>",
         "<extra></extra>"
@@ -302,7 +302,7 @@ updatemenus <- list(
         args = list(
           list(visible = sapply(seq_along(initiative_list), function(j) j == i)),
           list(title = list(
-            text = paste0("<b>Job Growth Rate Across All Metro Areas</b><br><sup>5-Year CAGR | ", 
+            text = paste0("<b>Job Growth Rate Across All Metro Areas</b><br><sup>4-Year CAGR | ", 
                          initiative_list[i], " | ", recent_year, "</sup>")
           ))
         ),
@@ -315,12 +315,12 @@ updatemenus <- list(
 p5_interactive <- p5_interactive %>%
   layout(
     title = list(
-      text = paste0("<b>Job Growth Rate Across All Metro Areas</b><br><sup>5-Year CAGR | ", 
+      text = paste0("<b>Job Growth Rate Across All Metro Areas</b><br><sup>4-Year CAGR | ", 
                    initiative_list[1], " | ", recent_year, "</sup>"),
       font = list(size = 18)
     ),
     xaxis = list(
-      title = "5-Year Compound Annual Growth Rate (%)",
+      title = "4-Year Compound Annual Growth Rate (%)",
       showgrid = TRUE,
       gridcolor = "lightgray",
       zeroline = TRUE,
@@ -351,11 +351,11 @@ p5_static_data <- p5_data %>%
   head(10)
 
 p5 <- p5_static_data %>%
-  ggplot(aes(x = reorder(geo_area, cagr_5yr), y = cagr_5yr, fill = growth_type)) +
+  ggplot(aes(x = reorder(geo_area, cagr_4yr), y = cagr_4yr, fill = growth_type)) +
   geom_col(show.legend = FALSE, alpha = 0.9) +
   geom_hline(yintercept = 0, linetype = "solid", color = "gray30", linewidth = 0.5) +
-  geom_text(aes(label = sprintf("%.1f%%", cagr_5yr)), 
-            hjust = ifelse(p5_static_data$cagr_5yr >= 0, -0.15, 1.15), 
+  geom_text(aes(label = sprintf("%.1f%%", cagr_4yr)), 
+            hjust = ifelse(p5_static_data$cagr_4yr >= 0, -0.15, 1.15), 
             size = 4,
             fontface = "bold") +
   coord_flip() +
@@ -364,9 +364,9 @@ p5 <- p5_static_data %>%
   scale_fill_manual(values = c("Growth" = "#2E7D32", "Decline" = "#C62828")) +
   labs(
     title = "Job Growth Rate - Top 10 Metro Areas",
-    subtitle = paste("5-Year CAGR |", initiative_list[1], "|", recent_year),
+    subtitle = paste("4-Year CAGR |", initiative_list[1], "|", recent_year),
     x = NULL, 
-    y = "5-Year Compound Annual Growth Rate",
+    y = "4-Year Compound Annual Growth Rate",
     caption = "Source: CICP Advanced Industries Dashboard"
   ) +
   theme(panel.grid.major.y = element_blank(),
@@ -1618,7 +1618,7 @@ quadrant_data <- jobs_growth %>%
          year == recent_year,
          geo_type == "Metro",
          initiative != "Total Employment",
-         !is.na(cagr_5yr)) %>%
+         !is.na(cagr_4yr)) %>%
   left_join(
     jobs_data %>%
       filter(display_level == 0, year == recent_year,
@@ -1631,12 +1631,12 @@ quadrant_data <- jobs_growth %>%
   ) %>%
   group_by(initiative) %>%
   mutate(
-    median_growth = median(cagr_5yr, na.rm = TRUE),
+    median_growth = median(cagr_4yr, na.rm = TRUE),
     median_share = median(employment_share, na.rm = TRUE),
     quadrant = case_when(
-      cagr_5yr >= median_growth & employment_share >= median_share ~ "Stars",
-      cagr_5yr >= median_growth & employment_share < median_share ~ "Emerging",
-      cagr_5yr < median_growth & employment_share >= median_share ~ "Mature",
+      cagr_4yr >= median_growth & employment_share >= median_share ~ "Stars",
+      cagr_4yr >= median_growth & employment_share < median_share ~ "Emerging",
+      cagr_4yr < median_growth & employment_share >= median_share ~ "Mature",
       TRUE ~ "Declining"
     )
   ) %>%
@@ -1648,7 +1648,7 @@ benchmark_data <- jobs_growth %>%
          year == recent_year,
          geo_area %in% c("Indiana", "United States"),
          initiative != "Total Employment",
-         !is.na(cagr_5yr)) %>%
+         !is.na(cagr_4yr)) %>%
   left_join(
     jobs_data %>%
       filter(display_level == 0, year == recent_year,
@@ -1662,7 +1662,7 @@ benchmark_data <- jobs_growth %>%
   )
 
 p13 <- quadrant_data %>%
-  ggplot(aes(x = employment_share, y = cagr_5yr)) +
+  ggplot(aes(x = employment_share, y = cagr_4yr)) +
   geom_hline(aes(yintercept = median_growth), linetype = "dashed", color = "gray50") +
   geom_vline(aes(xintercept = median_share), linetype = "dashed", color = "gray50") +
   geom_point(aes(color = quadrant, size = jobs), alpha = 0.6) +
@@ -1683,10 +1683,10 @@ p13 <- quadrant_data %>%
   scale_y_continuous(labels = label_percent(scale = 1)) +
   labs(
     title = "Strategic Positioning: Growth vs. Employment Share",
-    subtitle = paste("5-Year CAGR vs. Share of Total Employment |", recent_year, 
+    subtitle = paste("4-Year CAGR vs. Share of Total Employment |", recent_year, 
                     "| Quadrants based on median values"),
     x = "Share of Total Employment (%)",
-    y = "5-Year CAGR (%)",
+    y = "4-Year CAGR (%)",
     caption = "Source: CICP Advanced Industries Dashboard\nDashed lines represent median values for each initiative"
   ) +
   theme_minimal() +
@@ -1733,7 +1733,7 @@ for(init in initiative_list) {
         add_trace(
           data = quad_data,
           x = ~employment_share,
-          y = ~cagr_5yr,
+          y = ~cagr_4yr,
           type = "scatter",
           mode = "markers",
           name = quad,
@@ -1750,7 +1750,7 @@ for(init in initiative_list) {
           text = paste0("<b>", quad_data$geo_area, "</b><br>",
                        "Quadrant: ", quad, "<br>",
                        "Share: ", sprintf("%.1f%%", quad_data$employment_share), "<br>",
-                       "5-Year CAGR: ", sprintf("%.1f%%", quad_data$cagr_5yr), "<br>",
+                       "4-Year CAGR: ", sprintf("%.1f%%", quad_data$cagr_4yr), "<br>",
                        "Total Jobs: ", format(round(quad_data$jobs, 0), big.mark = ","))
         )
     }
@@ -1763,7 +1763,7 @@ for(init in initiative_list) {
       add_trace(
         data = in_data,
         x = ~employment_share,
-        y = ~cagr_5yr,
+        y = ~cagr_4yr,
         type = "scatter",
         mode = "markers",
         name = "Indiana",
@@ -1779,7 +1779,7 @@ for(init in initiative_list) {
         hoverinfo = "text",
         text = paste0("<b>Indiana</b><br>",
                      "Share: ", sprintf("%.1f%%", in_data$employment_share), "<br>",
-                     "5-Year CAGR: ", sprintf("%.1f%%", in_data$cagr_5yr), "<br>",
+                     "4-Year CAGR: ", sprintf("%.1f%%", in_data$cagr_4yr), "<br>",
                      "Total Jobs: ", format(round(in_data$jobs, 0), big.mark = ","))
       )
   }
@@ -1791,7 +1791,7 @@ for(init in initiative_list) {
       add_trace(
         data = us_data,
         x = ~employment_share,
-        y = ~cagr_5yr,
+        y = ~cagr_4yr,
         type = "scatter",
         mode = "markers",
         name = "United States",
@@ -1807,7 +1807,7 @@ for(init in initiative_list) {
         hoverinfo = "text",
         text = paste0("<b>United States</b><br>",
                      "Share: ", sprintf("%.1f%%", us_data$employment_share), "<br>",
-                     "5-Year CAGR: ", sprintf("%.1f%%", us_data$cagr_5yr), "<br>",
+                     "4-Year CAGR: ", sprintf("%.1f%%", us_data$cagr_4yr), "<br>",
                      "Total Jobs: ", format(round(us_data$jobs, 0), big.mark = ","))
       )
   }
@@ -1843,7 +1843,7 @@ updatemenus <- list(
           list(
             title = list(
               text = paste0("<b>Strategic Positioning: Growth vs. Employment Share - ", 
-                           init, "</b><br><sup>5-Year CAGR vs. Share of Total Employment | ", 
+                           init, "</b><br><sup>4-Year CAGR vs. Share of Total Employment | ", 
                            recent_year, " | Quadrants based on median values</sup>")
             ),
             shapes = list(
@@ -1885,7 +1885,7 @@ p13_interactive <- p13_interactive %>%
   layout(
     title = list(
       text = paste0("<b>Strategic Positioning: Growth vs. Employment Share - ", 
-                   initiative_list[1], "</b><br><sup>5-Year CAGR vs. Share of Total Employment | ", 
+                   initiative_list[1], "</b><br><sup>4-Year CAGR vs. Share of Total Employment | ", 
                    recent_year, " | Quadrants based on median values</sup>"),
       font = list(size = 16)
     ),
@@ -1895,7 +1895,7 @@ p13_interactive <- p13_interactive %>%
       gridcolor = "lightgray"
     ),
     yaxis = list(
-      title = "5-Year CAGR (%)",
+      title = "4-Year CAGR (%)",
       showgrid = TRUE,
       gridcolor = "lightgray"
     ),
@@ -2206,20 +2206,6 @@ htmlwidgets::saveWidget(
 
 cat("Visualization 14 created (interactive + static)\n")
 
-# SUMMARY ---------------------------------------------------------------------
-
-cat("\n", rep("=", 70), "\n", sep = "")
-cat("COMPARATIVE VISUALIZATIONS CREATED (9-14)\n")
-cat(rep("=", 70), "\n\n", sep = "")
-cat("Visualizations saved to:", viz_dir, "\n\n")
-cat("  9. Location Quotient Heatmap (interactive + static)\n")
-cat(" 10. Initiative Mix Faceted Comparison (static)\n")
-cat(" 11. Wage Premium Analysis (interactive + static)\n")
-cat(" 12. Growth Rate Comparison Faceted Time Series (static)\n")
-cat(" 13. Growth vs. Level Quadrant Chart (static)\n")
-cat(" 14. Acceleration/Deceleration Analysis (static)\n")
-cat("\n", rep("=", 70), "\n", sep = "")
-
 # SUMMARY ----------------------------------------------------------------------
 
 cat("\n", rep("=", 70), "\n", sep = "")
@@ -2236,11 +2222,16 @@ cat("  5. Top 10 Metro Areas Growth Rates\n")
 cat("  6. Initiative Mix in Top 10 Metro Areas\n")
 cat("  7. Indiana Jobs Time Series\n")
 cat("  8. GDP vs Jobs Growth Scatter Plot\n")
-cat("\n", rep("=", 70), "\n", sep = "")_data <- wage_data %>%
-  filter(display_level == 0, 
-         year == recent_year, 
-         geo_area == "Indiana",
-         initiative != "Total Employment",
-         !is.na(wages)) %>%
-  arrange(desc(wages))
+cat("\n", rep("=", 70), "\n", sep = "")
 
+cat("\n", rep("=", 70), "\n", sep = "")
+cat("COMPARATIVE VISUALIZATIONS CREATED (9-14)\n")
+cat(rep("=", 70), "\n\n", sep = "")
+cat("Visualizations saved to:", viz_dir, "\n\n")
+cat("  9. Location Quotient Heatmap (interactive + static)\n")
+cat(" 10. Initiative Mix Faceted Comparison (static)\n")
+cat(" 11. Wage Premium Analysis (interactive + static)\n")
+cat(" 12. Growth Rate Comparison Faceted Time Series (static)\n")
+cat(" 13. Growth vs. Level Quadrant Chart (static)\n")
+cat(" 14. Acceleration/Deceleration Analysis (static)\n")
+cat("\n", rep("=", 70), "\n", sep = "")

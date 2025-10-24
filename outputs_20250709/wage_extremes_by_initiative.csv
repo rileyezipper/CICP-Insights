@@ -17,6 +17,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 0,000,00000,United States,2023,BioCrossroads,Lowest Wage,Farm Supplies Merchant Wholesalers,424910,95585.0249814,101444.568775644
 0,000,00000,United States,2023,BioCrossroads,Lowest Wage,Medical Laboratories,621511,94969.06213,232227.498609
 0,000,00000,United States,2023,BioCrossroads,Lowest Wage,Compost Manufacturing,325315,86567.1467312,1055.70226351
+0,000,00000,United States,2023,Conexus,Highest Wage,Computer and Peripheral Equipment Manufacturing,3341,312619.3133045281,162112.95077559998
+0,000,00000,United States,2023,Conexus,Highest Wage,Petroleum and Coal Products Manufacturing,3241,240434.0242192367,67098.26553721
+0,000,00000,United States,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,188181.90304,259580.249944
+0,000,00000,United States,2023,Conexus,Lowest Wage,Bakeries and Tortilla Manufacturing,3118,59524.902092553064,337737.62276089995
+0,000,00000,United States,2023,Conexus,Lowest Wage,Apparel Knitting Mills,3151,56159.7834493,7147.92720673
+0,000,00000,United States,2023,Conexus,Lowest Wage,"Fiber, Yarn, and Thread Mills",3131,55609.7874393,22661.1673389
 0,000,00000,United States,2023,TechPoint,Highest Wage,Electronic Computer Manufacturing,334111,364602.401676,115898.199094
 0,000,00000,United States,2023,TechPoint,Highest Wage,Semiconductor and Related Device Manufacturing,334413,232914.211927,203893.851
 0,000,00000,United States,2023,TechPoint,Highest Wage,Software Publishers,513210,225604.892389,650182.816757
@@ -41,6 +47,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,14020,Bloomington MSA,2023,BioCrossroads,Lowest Wage,Surgical and Medical Instrument Manufacturing,339112,82484.1359003,5677.99776981
 00,000,14020,Bloomington MSA,2023,BioCrossroads,Lowest Wage,Biological Product (except Diagnostic) Manufacturing,325414,76574.1128551,72.3591470449
 00,000,14020,Bloomington MSA,2023,BioCrossroads,Lowest Wage,Surgical Appliance and Supplies Manufacturing,339113,72047.0951184,75.8766108512
+00,000,14020,Bloomington MSA,2023,Conexus,Highest Wage,Pharmaceutical and Medicine Manufacturing,3254,116799.73934629036,2937.9589005049
+00,000,14020,Bloomington MSA,2023,Conexus,Highest Wage,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,100866.72352270734,444.697731535528
+00,000,14020,Bloomington MSA,2023,Conexus,Highest Wage,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,84967.61756477102,136.56436148773
+00,000,14020,Bloomington MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,48259.930761881216,317.7532286796
+00,000,14020,Bloomington MSA,2023,Conexus,Lowest Wage,Communications Equipment Manufacturing,3342,47887.9429612,130.306219451
+00,000,14020,Bloomington MSA,2023,Conexus,Lowest Wage,Bakeries and Tortilla Manufacturing,3118,23356.68728102672,58.9166650688
 00,000,14020,Bloomington MSA,2023,TechPoint,Highest Wage,Computer Systems Design Services,541512,134349.748822,157.843613219
 00,000,14020,Bloomington MSA,2023,TechPoint,Highest Wage,Custom Computer Programming Services,541511,121411.664927,277.990749821
 00,000,14020,Bloomington MSA,2023,TechPoint,Highest Wage,Book Publishers,513130,96736.0742992,110.702599689
@@ -65,6 +77,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,16980,Chicago-Naperville-Elgin MSA,2023,BioCrossroads,Lowest Wage,Medicinal and Botanical Manufacturing,325411,84616.8215887,2508.97448684
 00,000,16980,Chicago-Naperville-Elgin MSA,2023,BioCrossroads,Lowest Wage,Medical Laboratories,621511,82349.4667954,5827.93420707
 00,000,16980,Chicago-Naperville-Elgin MSA,2023,BioCrossroads,Lowest Wage,Fertilizer (Mixing Only) Manufacturing,325314,57879.8609931,103.455126518
+00,000,16980,Chicago-Naperville-Elgin MSA,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,282010.268845,10912.7867622
+00,000,16980,Chicago-Naperville-Elgin MSA,2023,Conexus,Highest Wage,Petroleum and Coal Products Manufacturing,3241,257312.6392357748,2836.1190847498
+00,000,16980,Chicago-Naperville-Elgin MSA,2023,Conexus,Highest Wage,Manufacturing and Reproducing Magnetic and Optical Media,3346,251468.356565,413.654528088
+00,000,16980,Chicago-Naperville-Elgin MSA,2023,Conexus,Lowest Wage,Textile Furnishings Mills,3141,57439.228487265165,629.1983082516999
+00,000,16980,Chicago-Naperville-Elgin MSA,2023,Conexus,Lowest Wage,Local Messengers and Local Delivery,4922,51585.6273498,4396.37028115
+00,000,16980,Chicago-Naperville-Elgin MSA,2023,Conexus,Lowest Wage,Other Leather and Allied Product Manufacturing,3169,49516.118448,373.845890749
 00,000,16980,Chicago-Naperville-Elgin MSA,2023,TechPoint,Highest Wage,Manufacturing and Reproducing Magnetic and Optical Media,334610,251468.356565,413.654528088
 00,000,16980,Chicago-Naperville-Elgin MSA,2023,TechPoint,Highest Wage,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,212981.571898,11298.3933677
 00,000,16980,Chicago-Naperville-Elgin MSA,2023,TechPoint,Highest Wage,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,194633.890324,8724.15210996
@@ -89,6 +107,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,17140,Cincinnati MSA,2023,BioCrossroads,Lowest Wage,Analytical Laboratory Instrument Manufacturing,334516,78289.5497187,342.495013532
 00,000,17140,Cincinnati MSA,2023,BioCrossroads,Lowest Wage,Testing Laboratories and Services,541380,78081.0189797,167.36341442640003
 00,000,17140,Cincinnati MSA,2023,BioCrossroads,Lowest Wage,Farm Supplies Merchant Wholesalers,424910,68340.8457347,225.034428026744
+00,000,17140,Cincinnati MSA,2023,Conexus,Highest Wage,"Soap, Cleaning Compound, and Toilet Preparation Manufacturing",3256,250284.34408493064,5126.8681853369835
+00,000,17140,Cincinnati MSA,2023,Conexus,Highest Wage,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,173033.007925,56.4994970823
+00,000,17140,Cincinnati MSA,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,167295.425662,1659.63023969
+00,000,17140,Cincinnati MSA,2023,Conexus,Lowest Wage,Warehousing and Storage,4931,55502.62040259181,21021.612958846872
+00,000,17140,Cincinnati MSA,2023,Conexus,Lowest Wage,Other Leather and Allied Product Manufacturing,3169,53167.3203084,78.0100465596
+00,000,17140,Cincinnati MSA,2023,Conexus,Lowest Wage,Local Messengers and Local Delivery,4922,42797.9644465,1185.12564431
 00,000,17140,Cincinnati MSA,2023,TechPoint,Highest Wage,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,166588.058042,852.124331335
 00,000,17140,Cincinnati MSA,2023,TechPoint,Highest Wage,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,158336.696666,1751.13179738
 00,000,17140,Cincinnati MSA,2023,TechPoint,Highest Wage,Software Publishers,513210,153890.36715,2885.00513033
@@ -101,6 +125,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,18020,Columbus MSA,2023,Advanced & Traded Industries,Lowest Wage,Forging and Stamping,3321,58471.29579261074,415.006242853
 00,000,18020,Columbus MSA,2023,Advanced & Traded Industries,Lowest Wage,"Other Professional, Scientific, and Technical Services",5419,51219.938737783326,59.28884156448
 00,000,18020,Columbus MSA,2023,Advanced & Traded Industries,Lowest Wage,Beverage Manufacturing,3121,41248.83081199495,59.3333163274
+00,000,18020,Columbus MSA,2023,Conexus,Highest Wage,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,166099.9959880805,366.7418915025699
+00,000,18020,Columbus MSA,2023,Conexus,Highest Wage,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,155976.542634,7443.33104839
+00,000,18020,Columbus MSA,2023,Conexus,Highest Wage,Cement and Concrete Product Manufacturing,3273,140014.61048075545,58.0315818464
+00,000,18020,Columbus MSA,2023,Conexus,Lowest Wage,Architectural and Structural Metals Manufacturing,3323,60565.39846432733,59.91666672974
+00,000,18020,Columbus MSA,2023,Conexus,Lowest Wage,Forging and Stamping,3321,58471.2958067,415.006242853
+00,000,18020,Columbus MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,41248.83088151547,59.3333163274
 00,000,21140,Elkhart-Goshen MSA,2023,Advanced & Traded Industries,Highest Wage,Scientific Research and Development Services,5417,401397.9329622335,119.636700537635
 00,000,21140,Elkhart-Goshen MSA,2023,Advanced & Traded Industries,Highest Wage,Management of Companies and Enterprises,5511,285547.02306705184,2685.0016155272
 00,000,21140,Elkhart-Goshen MSA,2023,Advanced & Traded Industries,Highest Wage,Securities and Commodity Contracts Intermediation and Brokerage,5231,221948.82674350537,103.08275873611301
@@ -113,6 +143,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,21140,Elkhart-Goshen MSA,2023,AgriNovus,Lowest Wage,Farm Machinery and Equipment Manufacturing,333111,53223.0908006,159.553963764
 00,000,21140,Elkhart-Goshen MSA,2023,AgriNovus,Lowest Wage,Roasted Nuts and Peanut Butter Manufacturing,311911,48282.2184581,68.4254694086
 00,000,21140,Elkhart-Goshen MSA,2023,AgriNovus,Lowest Wage,Retail Bakeries,311811,31759.0423521,50.0833333333
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Highest Wage,Iron and Steel Mills and Ferroalloy Manufacturing,3311,172838.069605,73.8283944272
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Highest Wage,Chemical and Allied Products Merchant Wholesalers,4246,114746.97329090389,248.3153703536
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Highest Wage,Cement and Concrete Product Manufacturing,3273,104395.05565641822,96.2041621048
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Lowest Wage,Other Support Services,5619,43176.913522,219.984846698
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Lowest Wage,Textile Furnishings Mills,3141,40597.992922075384,233.1666628897
+00,000,21140,Elkhart-Goshen MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,28720.539289679204,71.61154315479999
 00,000,21140,Elkhart-Goshen MSA,2023,TechPoint,Highest Wage,Custom Computer Programming Services,541511,101363.042313,88.2924815223
 00,000,21140,Elkhart-Goshen MSA,2023,TechPoint,Highest Wage,Wired Telecommunications Carriers,517111,93195.8909868,96.6102982167
 00,000,21140,Elkhart-Goshen MSA,2023,TechPoint,Highest Wage,Wireless Telecommunications Carriers (except Satellite),517112,86069.1682546,77.1859759876
@@ -131,6 +167,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,21780,Evansville MSA,2023,AgriNovus,Lowest Wage,Confectionery Merchant Wholesalers,424450,65903.3695424,113.477772332
 00,000,21780,Evansville MSA,2023,AgriNovus,Lowest Wage,Commercial Bakeries,311812,62675.5643359,452.758565378
 00,000,21780,Evansville MSA,2023,AgriNovus,Lowest Wage,Farm Labor Contractors and Crew Leaders,115115,33509.1335931,52.6195855947
+00,000,21780,Evansville MSA,2023,Conexus,Highest Wage,Petroleum and Coal Products Manufacturing,3241,191795.762073,358.313243353
+00,000,21780,Evansville MSA,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,168776.014328,51.7870686115
+00,000,21780,Evansville MSA,2023,Conexus,Highest Wage,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,162868.3011988062,388.6131671497
+00,000,21780,Evansville MSA,2023,Conexus,Lowest Wage,Warehousing and Storage,4931,50968.25981960127,2902.46911621648
+00,000,21780,Evansville MSA,2023,Conexus,Lowest Wage,Couriers and Express Delivery Services,4921,49086.6607856,672.973069068
+00,000,21780,Evansville MSA,2023,Conexus,Lowest Wage,Local Messengers and Local Delivery,4922,43003.5962193,234.610427344
 00,000,21780,Evansville MSA,2023,TechPoint,Highest Wage,Computer Facilities Management Services,541513,185346.507548,98.5853425445
 00,000,21780,Evansville MSA,2023,TechPoint,Highest Wage,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,180833.454798,279.249395674
 00,000,21780,Evansville MSA,2023,TechPoint,Highest Wage,Custom Computer Programming Services,541511,133775.89038,171.777725352
@@ -155,6 +197,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,23060,Fort Wayne MSA,2023,BioCrossroads,Lowest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,424210,92610.9407458,101.002885566612
 00,000,23060,Fort Wayne MSA,2023,BioCrossroads,Lowest Wage,Medical Laboratories,621511,91779.1323413,86.8935105945
 00,000,23060,Fort Wayne MSA,2023,BioCrossroads,Lowest Wage,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,83587.4513516,85.1685780425157
+00,000,23060,Fort Wayne MSA,2023,Conexus,Highest Wage,Iron and Steel Mills and Ferroalloy Manufacturing,3311,218611.985587,584.509992309
+00,000,23060,Fort Wayne MSA,2023,Conexus,Highest Wage,Other Chemical Product and Preparation Manufacturing,3259,156142.860095,74.0879388218
+00,000,23060,Fort Wayne MSA,2023,Conexus,Highest Wage,Semiconductor and Other Electronic Component Manufacturing,3344,135169.883677038,126.888258190288
+00,000,23060,Fort Wayne MSA,2023,Conexus,Lowest Wage,Bakeries and Tortilla Manufacturing,3118,45298.01425973428,526.742484823053
+00,000,23060,Fort Wayne MSA,2023,Conexus,Lowest Wage,Other Support Services,5619,43945.7503832,79.8011499217
+00,000,23060,Fort Wayne MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,42621.82153171301,165.56817816865998
 00,000,23060,Fort Wayne MSA,2023,TechPoint,Highest Wage,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,185841.036947,72.4500050274
 00,000,23060,Fort Wayne MSA,2023,TechPoint,Highest Wage,Software Publishers,513210,167721.782542,53.1275292336
 00,000,23060,Fort Wayne MSA,2023,TechPoint,Highest Wage,Printed Circuit Assembly (Electronic Assembly) Manufacturing,334418,142856.268253,114.469253574
@@ -179,6 +227,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,BioCrossroads,Lowest Wage,Testing Laboratories and Services,541380,86261.8267239,109.471920036904
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,BioCrossroads,Lowest Wage,Dental Equipment and Supplies Manufacturing,339114,80908.1087103,105.564190409
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,BioCrossroads,Lowest Wage,Ethyl Alcohol Manufacturing,325193,61076.7937371,61.5966732271
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,Conexus,Highest Wage,Pharmaceutical and Medicine Manufacturing,3254,242974.75045946325,16319.183022933998
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,182628.095016,1459.64665414
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,Conexus,Highest Wage,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,165615.703036,739.457249471
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,Conexus,Lowest Wage,Apparel Knitting Mills,3151,58301.4112269,104.73338962
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,Conexus,Lowest Wage,Other Textile Product Mills,3149,54575.957674399775,919.7256629023
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,Conexus,Lowest Wage,Cut and Sew Apparel Manufacturing,3152,49465.21605945512,167.35931517649001
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,TechPoint,Highest Wage,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,202923.232783,56.7243509038
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,TechPoint,Highest Wage,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,176463.505431,1802.63320922
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,TechPoint,Highest Wage,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",334511,165615.703036,739.457249471
@@ -191,6 +245,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,29020,Kokomo MSA,2023,Advanced & Traded Industries,Lowest Wage,Couriers and Express Delivery Services,4921,48152.08671155443,342.827660104
 00,000,29020,Kokomo MSA,2023,Advanced & Traded Industries,Lowest Wage,"Other Professional, Scientific, and Technical Services",5419,47912.1401613026,111.70057609873
 00,000,29020,Kokomo MSA,2023,Advanced & Traded Industries,Lowest Wage,Printing and Related Support Activities,3231,41145.65410101639,55.5
+00,000,29020,Kokomo MSA,2023,Conexus,Highest Wage,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,198008.55994920144,114.6532370294
+00,000,29020,Kokomo MSA,2023,Conexus,Highest Wage,Nonferrous Metal (except Aluminum) Production and Processing,3314,152517.170726,261.660537065
+00,000,29020,Kokomo MSA,2023,Conexus,Highest Wage,Motor Vehicle Parts Manufacturing,3363,136663.6116766439,7592.482166298323
+00,000,29020,Kokomo MSA,2023,Conexus,Lowest Wage,Metalworking Machinery Manufacturing,3335,59554.690913500664,189.988360063674
+00,000,29020,Kokomo MSA,2023,Conexus,Lowest Wage,Couriers and Express Delivery Services,4921,48152.0867256,342.827660104
+00,000,29020,Kokomo MSA,2023,Conexus,Lowest Wage,Printing and Related Support Activities,3231,41145.65417515271,55.5
 00,000,29200,Lafayette-West Lafayette MSA,2023,Advanced & Traded Industries,Highest Wage,Securities and Commodity Contracts Intermediation and Brokerage,5231,242081.2554435704,98.9872203889
 00,000,29200,Lafayette-West Lafayette MSA,2023,Advanced & Traded Industries,Highest Wage,Basic Chemical Manufacturing,3251,157502.93552872486,56.657924017499994
 00,000,29200,Lafayette-West Lafayette MSA,2023,Advanced & Traded Industries,Highest Wage,Grain and Oilseed Milling,3112,130952.8704656162,610.659918329
@@ -209,6 +269,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,29200,Lafayette-West Lafayette MSA,2023,BioCrossroads,Lowest Wage,Surgical Appliance and Supplies Manufacturing,339113,107493.960788,192.430471884
 00,000,29200,Lafayette-West Lafayette MSA,2023,BioCrossroads,Lowest Wage,Farm Supplies Merchant Wholesalers,424910,98647.9636767,262.395155225076
 00,000,29200,Lafayette-West Lafayette MSA,2023,BioCrossroads,Lowest Wage,Medical Laboratories,621511,72094.0448467,127.823915224
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,Highest Wage,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,133333.864139,2132.18386403
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,Highest Wage,Grain and Oilseed Milling,3112,130952.87048706067,610.659918329
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,Highest Wage,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,121575.94230156911,222.0920749702
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,Lowest Wage,Couriers and Express Delivery Services,4921,47879.5938912,547.271830198
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,Lowest Wage,Bakeries and Tortilla Manufacturing,3118,40061.537876289134,401.8300257161
+00,000,29200,Lafayette-West Lafayette MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,32060.145657085857,50.3514957932
 00,000,29200,Lafayette-West Lafayette MSA,2023,TechPoint,Highest Wage,Software Publishers,513210,127491.465818,73.8979660345
 00,000,29200,Lafayette-West Lafayette MSA,2023,TechPoint,Highest Wage,Analytical Laboratory Instrument Manufacturing,334516,120637.463905,216.553056103
 00,000,29200,Lafayette-West Lafayette MSA,2023,TechPoint,Highest Wage,Custom Computer Programming Services,541511,114432.436883,245.316874677
@@ -233,6 +299,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,31140,Louisville/Jefferson County MSA,2023,BioCrossroads,Lowest Wage,Testing Laboratories and Services,541380,84927.9020879,54.157012051452
 00,000,31140,Louisville/Jefferson County MSA,2023,BioCrossroads,Lowest Wage,Farm Supplies Merchant Wholesalers,424910,81304.4497494,272.358522254792
 00,000,31140,Louisville/Jefferson County MSA,2023,BioCrossroads,Lowest Wage,Medical Laboratories,621511,73423.936098,866.540549078
+00,000,31140,Louisville/Jefferson County MSA,2023,Conexus,Highest Wage,Basic Chemical Manufacturing,3251,190088.213295,104.962228196
+00,000,31140,Louisville/Jefferson County MSA,2023,Conexus,Highest Wage,Other Electrical Equipment and Component Manufacturing,3359,175142.05767188605,291.2978103779
+00,000,31140,Louisville/Jefferson County MSA,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,165598.138961,1556.59862061
+00,000,31140,Louisville/Jefferson County MSA,2023,Conexus,Lowest Wage,Other Support Services,5619,47834.9598375,537.033586042
+00,000,31140,Louisville/Jefferson County MSA,2023,Conexus,Lowest Wage,Cut and Sew Apparel Manufacturing,3152,47784.32330009046,104.3555714628
+00,000,31140,Louisville/Jefferson County MSA,2023,Conexus,Lowest Wage,Support Activities for Road Transportation,4884,47589.7266279,65.7446491434
 00,000,31140,Louisville/Jefferson County MSA,2023,TechPoint,Highest Wage,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,164748.21826,1336.03872893
 00,000,31140,Louisville/Jefferson County MSA,2023,TechPoint,Highest Wage,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,160972.855924,1129.72917676
 00,000,31140,Louisville/Jefferson County MSA,2023,TechPoint,Highest Wage,Computer Facilities Management Services,541513,159938.129344,186.0121031
@@ -251,12 +323,24 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,33140,Michigan City-La Porte MSA,2023,AgriNovus,Lowest Wage,Farm Supplies Merchant Wholesalers,424910,69021.0016014,80.3447132741
 00,000,33140,Michigan City-La Porte MSA,2023,AgriNovus,Lowest Wage,Commercial Bakeries,311812,55915.9361202,688.311518683
 00,000,33140,Michigan City-La Porte MSA,2023,AgriNovus,Lowest Wage,General Line Grocery Merchant Wholesalers,424410,53343.8683651,51.7990640679
+00,000,33140,Michigan City-La Porte MSA,2023,Conexus,Highest Wage,Steel Product Manufacturing from Purchased Steel,3312,142665.66413107258,58.6619697957
+00,000,33140,Michigan City-La Porte MSA,2023,Conexus,Highest Wage,Basic Chemical Manufacturing,3251,117156.5352,76.0748561116
+00,000,33140,Michigan City-La Porte MSA,2023,Conexus,Highest Wage,Alumina and Aluminum Production and Processing,3313,114371.058322,72.7546914077
+00,000,33140,Michigan City-La Porte MSA,2023,Conexus,Lowest Wage,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,48350.757713357874,158.7671655602
+00,000,33140,Michigan City-La Porte MSA,2023,Conexus,Lowest Wage,Warehousing and Storage,4931,46274.0308804,229.697781727
+00,000,33140,Michigan City-La Porte MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,32142.54158399618,91.66542641003
 00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Highest Wage,Other Financial Investment Activities,5239,178724.96701177774,80.5833419830239
 00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Highest Wage,Management of Companies and Enterprises,5511,129461.16056717504,350.69433871669503
 00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Highest Wage,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,107449.70679497904,218.75434404872996
 00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Lowest Wage,"Coating, Engraving, Heat Treating, and Allied Activities",3328,51020.20359786988,110.9166666557
 00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Lowest Wage,Sugar and Confectionery Product Manufacturing,3113,39721.96903981311,63.5684917546
 00,000,34620,Muncie MSA,2023,Advanced & Traded Industries,Lowest Wage,Other Support Services,5619,37346.84776293184,141.636118161
+00,000,34620,Muncie MSA,2023,Conexus,Highest Wage,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,107449.70684409792,218.75434404873
+00,000,34620,Muncie MSA,2023,Conexus,Highest Wage,Petroleum and Petroleum Products Merchant Wholesalers,4247,102361.95023366297,93.5241467278
+00,000,34620,Muncie MSA,2023,Conexus,Highest Wage,Rail Transportation,4821,94453.0873404,91.9316309437
+00,000,34620,Muncie MSA,2023,Conexus,Lowest Wage,"Coating, Engraving, Heat Treating, and Allied Activities",3328,51020.20364386856,110.9166666557
+00,000,34620,Muncie MSA,2023,Conexus,Lowest Wage,Sugar and Confectionery Product Manufacturing,3113,39721.9691023,63.5684917546
+00,000,34620,Muncie MSA,2023,Conexus,Lowest Wage,Other Support Services,5619,37346.8477893,141.636118161
 00,000,43780,South Bend-Mishawaka MSA,2023,Advanced & Traded Industries,Highest Wage,Securities and Commodity Contracts Intermediation and Brokerage,5231,222281.4257675232,250.0926388119
 00,000,43780,South Bend-Mishawaka MSA,2023,Advanced & Traded Industries,Highest Wage,Pharmaceutical and Medicine Manufacturing,3254,149457.4548966072,81.85923550832
 00,000,43780,South Bend-Mishawaka MSA,2023,Advanced & Traded Industries,Highest Wage,Scientific Research and Development Services,5417,147118.8743895192,98.0505031877
@@ -275,6 +359,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,43780,South Bend-Mishawaka MSA,2023,BioCrossroads,Lowest Wage,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,86517.2946357,106.291490945303
 00,000,43780,South Bend-Mishawaka MSA,2023,BioCrossroads,Lowest Wage,Surgical Appliance and Supplies Manufacturing,339113,86258.6073599,198.425319962
 00,000,43780,South Bend-Mishawaka MSA,2023,BioCrossroads,Lowest Wage,Medical Laboratories,621511,77719.7623304,210.384300435
+00,000,43780,South Bend-Mishawaka MSA,2023,Conexus,Highest Wage,Pharmaceutical and Medicine Manufacturing,3254,149457.4550791858,81.85923550832
+00,000,43780,South Bend-Mishawaka MSA,2023,Conexus,Highest Wage,Cement and Concrete Product Manufacturing,3273,124921.69771155508,109.34230623439998
+00,000,43780,South Bend-Mishawaka MSA,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,123013.724321,206.489614844
+00,000,43780,South Bend-Mishawaka MSA,2023,Conexus,Lowest Wage,Local Messengers and Local Delivery,4922,36238.1128786,156.396294904
+00,000,43780,South Bend-Mishawaka MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,30466.98121850939,96.219917577915
+00,000,43780,South Bend-Mishawaka MSA,2023,Conexus,Lowest Wage,Bakeries and Tortilla Manufacturing,3118,27977.29280630319,241.88909290509997
 00,000,43780,South Bend-Mishawaka MSA,2023,TechPoint,Highest Wage,Computer Systems Design Services,541512,150048.955651,387.810851336
 00,000,43780,South Bend-Mishawaka MSA,2023,TechPoint,Highest Wage,Computer Facilities Management Services,541513,122681.337519,135.253331214
 00,000,43780,South Bend-Mishawaka MSA,2023,TechPoint,Highest Wage,Other Computer Related Services,541519,118021.490855,58.5136078923
@@ -293,6 +383,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 00,000,45460,Terre Haute MSA,2023,AgriNovus,Lowest Wage,Logging,113310,55814.7287971,77.0433025767
 00,000,45460,Terre Haute MSA,2023,AgriNovus,Lowest Wage,Wineries,312130,35639.2926425,70.6350110273
 00,000,45460,Terre Haute MSA,2023,AgriNovus,Lowest Wage,Farm Labor Contractors and Crew Leaders,115115,33509.1335931,61.7476223692
+00,000,45460,Terre Haute MSA,2023,Conexus,Highest Wage,Wholesale Trade Agents and Brokers,4251,196304.261898,53.4985593282
+00,000,45460,Terre Haute MSA,2023,Conexus,Highest Wage,Steel Product Manufacturing from Purchased Steel,3312,162617.73721,153.705378621
+00,000,45460,Terre Haute MSA,2023,Conexus,Highest Wage,Metal and Mineral (except Petroleum) Merchant Wholesalers,4235,128085.758103,61.4747125658
+00,000,45460,Terre Haute MSA,2023,Conexus,Lowest Wage,Other Support Services,5619,47507.8490243,64.1209238802
+00,000,45460,Terre Haute MSA,2023,Conexus,Lowest Wage,Other Textile Product Mills,3149,46693.5455326,68.7410302544
+00,000,45460,Terre Haute MSA,2023,Conexus,Lowest Wage,Beverage Manufacturing,3121,29602.61176482586,102.1013924799
 18,000,00000,Indiana,2023,Advanced & Traded Industries,Highest Wage,Petroleum and Coal Products Manufacturing,3241,217011.73541253124,3686.8737265403
 18,000,00000,Indiana,2023,Advanced & Traded Industries,Highest Wage,Pharmaceutical and Medicine Manufacturing,3254,209331.34405738895,22672.2638995497
 18,000,00000,Indiana,2023,Advanced & Traded Industries,Highest Wage,Securities and Commodity Contracts Intermediation and Brokerage,5231,196363.2037178464,5834.2500741740005
@@ -311,6 +407,12 @@ statefips,countyfips,metrofips,geo_area,year,initiative,category,naics_title,nai
 18,000,00000,Indiana,2023,BioCrossroads,Lowest Wage,Testing Laboratories and Services,541380,83500.9974725,356.66549000812
 18,000,00000,Indiana,2023,BioCrossroads,Lowest Wage,Dental Equipment and Supplies Manufacturing,339114,82571.4714169,283.814290328
 18,000,00000,Indiana,2023,BioCrossroads,Lowest Wage,Medicinal and Botanical Manufacturing,325411,64719.337135,97.1430256911
+18,000,00000,Indiana,2023,Conexus,Highest Wage,Petroleum and Coal Products Manufacturing,3241,255120.94153555107,1766.2174338553
+18,000,00000,Indiana,2023,Conexus,Highest Wage,Pharmaceutical and Medicine Manufacturing,3254,209331.34405831224,22672.2638995497
+18,000,00000,Indiana,2023,Conexus,Highest Wage,Drugs and Druggists' Sundries Merchant Wholesalers,4242,189339.429783,4043.55041921
+18,000,00000,Indiana,2023,Conexus,Lowest Wage,Local Messengers and Local Delivery,4922,48996.9969326,1836.61704009
+18,000,00000,Indiana,2023,Conexus,Lowest Wage,Cut and Sew Apparel Manufacturing,3152,48166.78015303358,398.666668208
+18,000,00000,Indiana,2023,Conexus,Lowest Wage,Textile Furnishings Mills,3141,47747.3041188673,644.5000002008
 18,000,00000,Indiana,2023,TechPoint,Highest Wage,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,164494.552137,3664.95895639
 18,000,00000,Indiana,2023,TechPoint,Highest Wage,Software Publishers,513210,157480.278121,2686.33332528
 18,000,00000,Indiana,2023,TechPoint,Highest Wage,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,154305.628907,240.01643711

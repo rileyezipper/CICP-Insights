@@ -1,0 +1,1375 @@
+---
+title: "CICP Innovation Metrics Analysis"
+date: today
+date-format: "MMMM D, YYYY"
+author: "Riley Hudelson-Zipper"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    toc-title: "Contents"
+    number-sections: true
+    code-fold: true
+    code-summary: "Show code"
+    theme: 
+      - cosmo
+      - custom.scss
+    fontsize: 1.1em
+    fig-width: 18
+    fig-height: 9
+    fig-align: center
+    embed-resources: true
+    smooth-scroll: true
+    link-external-newwindow: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+
+library(tidyverse)
+library(scales)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(htmlwidgets)
+library(DT)
+library(janitor)
+library(readxl)
+
+# Helper function for beautiful tables
+create_table <- function(df, title = NULL, striped = TRUE) {
+  df %>%
+    kable(
+      format = "html",
+      caption = title,
+      digits = 1,
+      format.args = list(big.mark = ","),
+      align = "l",
+      escape = FALSE
+    ) %>%
+    kable_styling(
+      bootstrap_options = c(
+        if(striped) "striped" else NULL, 
+        "hover", 
+        "condensed", 
+        "responsive"
+      ),
+      full_width = FALSE,
+      position = "left",
+      font_size = 13
+    ) %>%
+    row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
+    as.character() %>%
+    htmltools::HTML()
+}
+
+```
+
+# State R&D Performance {#sec-rd-performance}
+
+Indiana's research and development activity is a critical driver of innovation and advanced industry competitiveness. This section examines R&D value added, employment, and compensation using data from the [Bureau of Economic Analysis R&D Satellite Account](https://www.bea.gov/data/special-topics/research-and-development-satellite-account).
+
+```{r rd_data_import}
+#| include: false
+
+# Import R&D data
+rd_raw <- read_excel(file.path("CICP_20250709", "rd-satellite-account-va-emp-comp-2012-2023.xlsx"))
+
+# Separate notes (rows starting from 2343)
+rd_notes <- rd_raw %>%
+  slice(2343:n())
+
+# Clean main data
+rd_data <- rd_raw %>%
+  slice(1:2342) %>%
+  clean_names() %>%
+  # Remove superscripts from description
+  mutate(description = str_remove_all(description, "\\d+$")) %>%
+  # Filter for US, Indiana, and neighboring states
+  filter(geo_fips %in% c("00000", "18000", "26000", "17000", "39000", "21000")) %>%
+  # Convert to long format
+  pivot_longer(
+    cols = matches("^x?\\d{4}$"),
+    names_to = "year",
+    values_to = "value"
+  ) %>%
+  # Clean year column (remove 'x' prefix if present)
+  mutate(
+    year = as.numeric(str_remove(year, "^x")),
+    # Convert (L) to NA
+    value = if_else(value == "(L)", NA_character_, value),
+    value = as.numeric(value)
+  ) %>%
+  # Create cleaner geography name
+  mutate(
+    geography = case_when(
+      geo_fips == "00000" ~ "United States",
+      geo_fips == "18000" ~ "Indiana",
+      geo_fips == "26000" ~ "Michigan",
+      geo_fips == "17000" ~ "Illinois",
+      geo_fips == "39000" ~ "Ohio",
+      geo_fips == "21000" ~ "Kentucky",
+      TRUE ~ geo_name
+    )
+  )
+
+# Create separate datasets by table type
+rd_value_added <- rd_data %>% filter(table_name == "SARDVA")
+rd_employment <- rd_data %>% filter(table_name == "SARDEMP")
+rd_compensation <- rd_data %>% filter(table_name == "SARDCOMP")
+
+# Define color palette for states
+state_colors <- c(
+  "Indiana" = "#1565C0",
+  "Michigan" = "#D84315",
+  "Illinois" = "#6A1B9A",
+  "Ohio" = "#2E7D32",
+  "Kentucky" = "#F57C00",
+  "United States" = "#424242"
+)
+```
+
+## R&D Value Added Trends
+
+R&D value added measures the economic contribution of research and development activities.
+
+```{r rd_value_trends}
+#| fig-cap: "R&D Value Added: Indiana and Neighboring States vs. United States (Indexed to 2012)"
+#| fig-height: 16
+
+# Filter for top-level R&D and index to 2012
+rd_va_total <- rd_value_added %>%
+  filter(line_code == 1) %>%  # Total R&D
+  select(geography, year, value, description, unit) %>%
+  group_by(geography) %>%
+  mutate(
+    base_value = first(value[year == 2012]),
+    indexed_value = (value / base_value) * 100
+  ) %>%
+  ungroup()
+
+# Create interactive line chart
+p_rd_va <- plot_ly()
+
+# 1. Add US first (dashed reference line)
+us_data <- rd_va_total %>% filter(geography == "United States")
+p_rd_va <- p_rd_va %>%
+  add_trace(
+    data = us_data,
+    x = ~year, y = ~indexed_value,
+    name = "United States",
+    type = 'scatter', mode = 'lines',
+    line = list(color = state_colors["United States"], width = 2, dash = "dash"),
+    hovertemplate = paste0(
+      "<b>United States</b><br>",
+      "Year: %{x}<br>",
+      "Indexed Value: %{y:.1f}<br>",
+      "Actual Value: $%{customdata:,.0f}M<br>",
+      "<extra></extra>"
+    ),
+    customdata = ~value
+  )
+
+# 2. Add Indiana second (thicker line)
+indiana_data <- rd_va_total %>% filter(geography == "Indiana")
+p_rd_va <- p_rd_va %>%
+  add_trace(
+    data = indiana_data,
+    x = ~year, y = ~indexed_value,
+    name = "Indiana",
+    type = 'scatter', mode = 'lines+markers',
+    line = list(color = state_colors["Indiana"], width = 5),  # Thicker line
+    marker = list(color = state_colors["Indiana"], size = 10),  # Larger markers too
+    hovertemplate = paste0(
+      "<b>Indiana</b><br>",
+      "Year: %{x}<br>",
+      "Indexed Value: %{y:.1f}<br>",
+      "Actual Value: $%{customdata:,.0f}M<br>",
+      "<extra></extra>"
+    ),
+    customdata = ~value
+  )
+
+# 3. Add other states (in alphabetical order)
+other_states <- rd_va_total %>% 
+  filter(!geography %in% c("United States", "Indiana")) %>%
+  arrange(geography) %>%
+  distinct(geography) %>%
+  pull(geography)
+
+for(state in other_states) {
+  state_subset <- rd_va_total %>% filter(geography == state)
+  p_rd_va <- p_rd_va %>%
+    add_trace(
+      data = state_subset,
+      x = ~year, y = ~indexed_value,
+      name = state,
+      type = 'scatter', mode = 'lines+markers',
+      line = list(color = state_colors[state], width = 3),
+      marker = list(color = state_colors[state], size = 8),
+      hovertemplate = paste0(
+        "<b>", state, "</b><br>",
+        "Year: %{x}<br>",
+        "Indexed Value: %{y:.1f}<br>",
+        "Actual Value: $%{customdata:,.0f}M<br>",
+        "<extra></extra>"
+      ),
+      customdata = ~value
+    )
+}
+
+p_rd_va <- p_rd_va %>%
+  layout(
+    title = list(
+      text = "<b>Total R&D Value Added by State (Indexed to 2012 = 100)</b><br><sup>Easier comparison of relative growth trajectories</sup>",
+      font = list(size = 16)
+    ),
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Indexed Value (2012 = 100)"),
+    hovermode = "x unified",
+    legend = list(
+      orientation = "v", 
+      x = 1.02, 
+      y = 0.5,
+      traceorder = "normal"  # Keeps the order traces were added
+    ),
+    shapes = list(
+      list(
+        type = "line",
+        x0 = 2012,
+        x1 = 2023,
+        y0 = 100,
+        y1 = 100,
+        line = list(color = "gray", width = 1, dash = "dot")
+      )
+    )
+  )
+
+p_rd_va
+```
+
+```{r rd_va_summary_table}
+#| tbl-cap: "R&D Value Added Summary Statistics by State (2012-2023)"
+
+rd_va_summary <- rd_va_total %>%
+  group_by(geography) %>%
+  summarise(
+    `2012` = dollar(first(value[year == 2012]), scale = 1e-3, suffix = "M", accuracy = .1),
+    `2023` = dollar(last(value[year == 2023]), scale = 1e-3, suffix = "M", accuracy = .1),
+    `Total Growth` = sprintf("%.1f%%", ((last(value) / first(value)) - 1) * 100),
+    `CAGR` = sprintf("%.1f%%", ((last(value) / first(value))^(1/11) - 1) * 100),
+    cagr_numeric = ((last(value) / first(value))^(1/11) - 1) * 100,  # Keep numeric for sorting
+    .groups = "drop"
+  ) %>%
+  # Create custom sort order
+  mutate(
+    sort_order = case_when(
+      geography == "United States" ~ 1,
+      geography == "Indiana" ~ 2,
+      TRUE ~ 3
+    )
+  ) %>%
+  arrange(sort_order, desc(cagr_numeric)) %>%
+  select(-sort_order, -cagr_numeric)
+
+create_table(rd_va_summary)
+```
+
+## Regional R&D Comparison
+
+How does Indiana's R&D intensity compare to neighboring states?
+```{r rd_state_comparison}
+#| fig-cap: "R&D Value Added by State (2023)"
+#| fig-height: 8
+
+# 2023 comparison
+rd_2023_comparison <- rd_va_total %>%
+  filter(geography != "United States", year == 2023) %>%
+  arrange(desc(value))
+
+p_rd_comparison <- plot_ly(
+  rd_2023_comparison,
+  x = ~value,
+  y = ~reorder(geography, value),
+  type = 'bar',
+  orientation = 'h',
+  marker = list(
+    color = ~geography,
+    colors = state_colors
+  ),
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "Value Added: $%{x:,.1f}M<br>",
+    "<extra></extra>"
+  )
+) %>%
+  layout(
+    title = list(
+      text = "<b>R&D Value Added by State (2023)</b><br><sup>Millions of Current Dollars</sup>",
+      font = list(size = 16)
+    ),
+    xaxis = list(title = "Value Added ($ Millions)", tickformat = ","),
+    yaxis = list(title = ""),
+    showlegend = FALSE,
+    margin = list(l = 100)
+  )
+
+p_rd_comparison
+```
+
+## R&D Employment Comparison
+
+R&D employment captures the workforce dedicated to research and development activities across the region.
+```{r rd_employment_trends}
+#| fig-cap: "R&D Employment: Indiana and Neighboring States (Indexed to 2012)"
+#| fig-height: 14
+
+# Filter for top-level R&D employment and index to 2012
+rd_emp_total <- rd_employment %>%
+  filter(line_code == 1) %>%
+  select(geography, year, value, description, unit) %>%
+  group_by(geography) %>%
+  mutate(
+    base_value = first(value[year == 2012]),
+    indexed_value = (value / base_value) * 100
+  ) %>%
+  ungroup()
+
+# Create interactive line chart
+p_rd_emp <- plot_ly()
+
+# 1. Add US first (dashed reference line)
+us_emp_data <- rd_emp_total %>% filter(geography == "United States")
+p_rd_emp <- p_rd_emp %>%
+  add_trace(
+    data = us_emp_data,
+    x = ~year, y = ~indexed_value,
+    name = "United States",
+    type = 'scatter', mode = 'lines',
+    line = list(color = state_colors["United States"], width = 2, dash = "dash"),
+    hovertemplate = paste0(
+      "<b>United States</b><br>",
+      "Year: %{x}<br>",
+      "Indexed Value: %{y:.1f}<br>",
+      "Actual Employment (thousands of jobs): %{customdata:,}<br>",
+      "<extra></extra>"
+    ),
+    customdata = ~value
+  )
+
+# 2. Add Indiana second (thicker line)
+indiana_emp_data <- rd_emp_total %>% filter(geography == "Indiana")
+p_rd_emp <- p_rd_emp %>%
+  add_trace(
+    data = indiana_emp_data,
+    x = ~year, y = ~indexed_value,
+    name = "Indiana",
+    type = 'scatter', mode = 'lines+markers',
+    line = list(color = state_colors["Indiana"], width = 5),
+    marker = list(color = state_colors["Indiana"], size = 10),
+    hovertemplate = paste0(
+      "<b>Indiana</b><br>",
+      "Year: %{x}<br>",
+      "Indexed Value: %{y:.1f}<br>",
+      "Actual Employment (thousands of jobs): %{customdata:,}<br>",
+      "<extra></extra>"
+    ),
+    customdata = ~value
+  )
+
+# 3. Add other states (in alphabetical order)
+other_states_emp <- rd_emp_total %>% 
+  filter(!geography %in% c("United States", "Indiana")) %>%
+  arrange(geography) %>%
+  distinct(geography) %>%
+  pull(geography)
+
+for(state in other_states_emp) {
+  state_subset <- rd_emp_total %>% filter(geography == state)
+  p_rd_emp <- p_rd_emp %>%
+    add_trace(
+      data = state_subset,
+      x = ~year, y = ~indexed_value,
+      name = state,
+      type = 'scatter', mode = 'lines+markers',
+      line = list(color = state_colors[state], width = 3),
+      marker = list(color = state_colors[state], size = 8),
+      hovertemplate = paste0(
+        "<b>", state, "</b><br>",
+        "Year: %{x}<br>",
+        "Indexed Value: %{y:.1f}<br>",
+        "Actual Employment (thousands of jobs): %{customdata:,}<br>",
+        "<extra></extra>"
+      ),
+      customdata = ~value
+    )
+}
+
+p_rd_emp <- p_rd_emp %>%
+  layout(
+    title = list(
+      text = "<b>Total R&D Employment by State (Indexed to 2012 = 100)</b><br><sup>Easier comparison of relative growth trajectories</sup>",
+      font = list(size = 16)
+    ),
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Indexed Employment (2012 = 100)"),
+    hovermode = "x unified",
+    legend = list(
+      orientation = "v", 
+      x = 1.02, 
+      y = 0.5,
+      traceorder = "normal"
+    ),
+    shapes = list(
+      list(
+        type = "line",
+        x0 = 2012,
+        x1 = 2023,
+        y0 = 100,
+        y1 = 100,
+        line = list(color = "gray", width = 1, dash = "dot")
+      )
+    )
+  )
+
+p_rd_emp
+```
+```{r rd_emp_summary_table}
+#| tbl-cap: "R&D Employment (in Thousands of Jobs) Summary by State (2012-2023)"
+
+rd_emp_summary <- rd_emp_total %>%
+  group_by(geography) %>%
+  summarise(
+    `2012` = comma(first(value[year == 2012])),
+    `2023` = comma(last(value[year == 2023])),
+    `Total Growth` = sprintf("%.1f%%", ((last(value) / first(value)) - 1) * 100),
+    `CAGR` = sprintf("%.1f%%", ((last(value) / first(value))^(1/11) - 1) * 100),
+    cagr_numeric = ((last(value) / first(value))^(1/11) - 1) * 100,
+    .groups = "drop"
+  ) %>%
+  mutate(
+    sort_order = case_when(
+      geography == "United States" ~ 1,
+      geography == "Indiana" ~ 2,
+      TRUE ~ 3
+    )
+  ) %>%
+  arrange(sort_order, desc(cagr_numeric)) %>%
+  select(-sort_order, -cagr_numeric)
+
+create_table(rd_emp_summary)
+```
+
+## R&D Compensation per Worker
+
+Examining compensation per R&D worker reveals the economic value and competitiveness of R&D employment across states.
+
+```{r rd_compensation_per_worker}
+#| tbl-cap: "R&D Compensation per Worker by State (2023)"
+
+# Calculate compensation per worker
+rd_comp_per_worker <- rd_compensation %>%
+  filter(line_code == 1) %>%
+  left_join(
+    rd_employment %>% filter(line_code == 1) %>% select(geography, year, employment = value),
+    by = c("geography", "year")
+  ) %>%
+  mutate(comp_per_worker = (value * 1000000) / (employment * 1000)) %>%
+  filter(year == 2023) %>%
+  arrange(desc(comp_per_worker)) %>%
+  select(geography, `Total Compensation` = value, Employment = employment, comp_per_worker) %>%
+  mutate(
+    `Total Compensation` = dollar(`Total Compensation`, suffix = "M", accuracy = .1),
+    Employment = comma(Employment, suffix = "K", accuracy = 1),
+    `Compensation per Worker` = dollar(comp_per_worker, accuracy = 1)
+  ) %>%
+  select(State = geography, `Total Compensation`, Employment, `Compensation per Worker`)
+
+create_table(rd_comp_per_worker)
+```
+```{r rd_comp_comparison_viz}
+#| fig-cap: "R&D Compensation per Worker by State (2023)"
+#| fig-height: 8
+
+# Visualization of compensation per worker
+rd_comp_viz_data <- rd_compensation %>%
+  filter(line_code == 1) %>%
+  left_join(
+    rd_employment %>% filter(line_code == 1) %>% select(geography, year, employment = value),
+    by = c("geography", "year")
+  ) %>%
+  mutate(comp_per_worker = (value * 1000000) / (employment * 1000)) %>%
+  filter(year == 2023) %>%
+  arrange(desc(comp_per_worker))
+
+p_comp <- plot_ly(
+  rd_comp_viz_data,
+  x = ~comp_per_worker,
+  y = ~reorder(geography, comp_per_worker),
+  type = 'bar',
+  orientation = 'h',
+  marker = list(
+    color = ~geography,
+    colors = state_colors
+  ),
+  text = "",  # Remove text labels
+  textposition = "none",
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "Comp per Worker: $%{x:,.0f}<br>",
+    "<extra></extra>"
+  )
+) %>%
+  layout(
+    title = list(
+      text = "<b>R&D Compensation per Worker by State (2023)</b><br><sup>Average Annual Compensation</sup>",
+      font = list(size = 16)
+    ),
+    xaxis = list(title = "Compensation per Worker ($)", tickformat = "$,"),
+    yaxis = list(title = ""),
+    showlegend = FALSE,
+    margin = list(l = 100)
+  )
+
+p_comp
+```
+
+## R&D by Sector
+
+Breaking down R&D activity by manufacturing vs. nonmanufacturing sectors reveals concentration patterns.
+
+```{r rd_sector_time_series}
+#| fig-cap: "R&D Value Added by Sector Over Time - All States"
+#| fig-height: 16
+
+# Get manufacturing and nonmanufacturing data for all geographies
+rd_sector_time <- rd_value_added %>%
+  filter(line_code %in% c(4, 9)) %>%  # 4 = Manufacturing, 9 = Nonmanufacturing
+  select(geography, year, description, value)
+
+# Create faceted interactive chart
+p_rd_sector_time <- plot_ly()
+
+# Get unique geographies
+geographies <- c("United States", "Indiana", sort(setdiff(unique(rd_sector_time$geography), c("United States", "Indiana"))))
+
+# Create subplot data
+subplot_list <- list()
+
+for(i in seq_along(geographies)) {
+  geo <- geographies[i]
+  geo_data <- rd_sector_time %>% filter(geography == geo)
+  
+  # Create subplot for this geography
+  p_subplot <- plot_ly(geo_data) %>%
+    add_trace(
+      x = ~year, 
+      y = ~value,
+      color = ~description,
+      colors = c("Manufacturing" = "#1565C0", "Nonmanufacturing" = "#2E7D32"),
+      type = 'scatter',
+      mode = 'lines+markers',
+      line = list(width = 3),
+      marker = list(size = 6),
+      hovertemplate = paste0(
+        "<b>%{fullData.name}</b><br>",
+        "Year: %{x}<br>",
+        "Value: $%{y:,.1f}M<br>",
+        "<extra></extra>"
+      ),
+      showlegend = if(i == 1) TRUE else FALSE  # Only show legend for first subplot
+    ) %>%
+    layout(
+      xaxis = list(title = if(i > length(geographies) - 2) "Year" else ""),
+      yaxis = list(title = "Value Added ($M)", tickformat = ","),
+      annotations = list(
+        list(
+          text = paste0("<b>", geo, "</b>"),
+          x = 0.5,
+          y = 1,
+          xref = "paper",
+          yref = "paper",
+          xanchor = "center",
+          yanchor = "bottom",
+          showarrow = FALSE,
+          font = list(size = 12)
+        )
+      )
+    )
+  
+  subplot_list[[i]] <- p_subplot
+}
+
+# Combine into subplots
+p_rd_sector_time <- subplot(
+  subplot_list,
+  nrows = 3,
+  shareX = TRUE,
+  titleY = TRUE,
+  margin = 0.05
+) %>%
+  layout(
+    title = list(
+      text = "<b>R&D Value Added by Sector Over Time</b><br><sup>Manufacturing vs. Nonmanufacturing | Millions of Current Dollars</sup>",
+      font = list(size = 16)
+    ),
+    showlegend = TRUE,
+    legend = list(
+      orientation = "h",
+      x = 0.5,
+      y = -0.05,
+      xanchor = "center",
+      yanchor = "top"
+    ),
+    margin = list(t = 150, l = 80)
+  )
+
+p_rd_sector_time
+```
+
+
+```{r rd_sector_breakdown}
+#| fig-cap: "R&D Value Added by Sector - Indiana"
+#| fig-height: 8
+
+# Get sector breakdown for Indiana
+rd_sector <- rd_value_added %>%
+  filter(
+    geography == "Indiana",
+    line_code %in% c(4, 9),  # Manufacturing and Nonmanufacturing
+    year == 2023
+  ) %>%
+  arrange(desc(value))
+
+# Create bar chart
+p_rd_sector <- plot_ly(
+  rd_sector,
+  x = ~value,
+  y = ~reorder(description, value),
+  type = 'bar',
+  orientation = 'h',
+  marker = list(color = c("#1565C0", "#2E7D32")),
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "Value Added: $%{x:.1f}M<br>",
+    "<extra></extra>"
+  )
+) %>%
+  layout(
+    title = list(
+      text = "<b>R&D Value Added by Sector - Indiana (2023)</b><br><sup>Millions of Current Dollars</sup>",
+      font = list(size = 16)
+    ),
+    xaxis = list(title = "Value Added ($ Millions)", tickformat = ","),
+    yaxis = list(title = ""),
+    margin = list(l = 150)
+  )
+
+p_rd_sector
+```
+
+::: {.callout-important icon="false"}
+## ⚙️ Sector R&D VA Insights
+```{r sector_insights}
+#| output: asis
+
+# Calculate key metrics
+in_mfg_2023 <- rd_sector_time %>% filter(geography == "Indiana", description == "Manufacturing", year == 2023) %>% pull(value)
+in_nonmfg_2023 <- rd_sector_time %>% filter(geography == "Indiana", description == "Nonmanufacturing", year == 2023) %>% pull(value)
+in_mfg_share <- (in_mfg_2023 / (in_mfg_2023 + in_nonmfg_2023)) * 100
+
+oh_mfg_2023 <- rd_sector_time %>% filter(geography == "Ohio", description == "Manufacturing", year == 2023) %>% pull(value)
+oh_nonmfg_2023 <- rd_sector_time %>% filter(geography == "Ohio", description == "Nonmanufacturing", year == 2023) %>% pull(value)
+oh_mfg_share <- (oh_mfg_2023 / (oh_mfg_2023 + oh_nonmfg_2023)) * 100
+
+mi_mfg_2023 <- rd_sector_time %>% filter(geography == "Michigan", description == "Manufacturing", year == 2023) %>% pull(value)
+mi_nonmfg_2023 <- rd_sector_time %>% filter(geography == "Michigan", description == "Nonmanufacturing", year == 2023) %>% pull(value)
+mi_mfg_share <- (mi_mfg_2023 / (mi_mfg_2023 + mi_nonmfg_2023)) * 100
+
+il_mfg_2023 <- rd_sector_time %>% filter(geography == "Illinois", description == "Manufacturing", year == 2023) %>% pull(value)
+il_nonmfg_2023 <- rd_sector_time %>% filter(geography == "Illinois", description == "Nonmanufacturing", year == 2023) %>% pull(value)
+il_mfg_share <- (il_mfg_2023 / (il_mfg_2023 + il_nonmfg_2023)) * 100
+
+# Growth rates
+in_mfg_growth <- rd_sector_time %>% 
+  filter(geography == "Indiana", description == "Manufacturing", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+in_nonmfg_growth <- rd_sector_time %>% 
+  filter(geography == "Indiana", description == "Nonmanufacturing", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+oh_mfg_growth <- rd_sector_time %>% 
+  filter(geography == "Ohio", description == "Manufacturing", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+oh_nonmfg_growth <- rd_sector_time %>% 
+  filter(geography == "Ohio", description == "Nonmanufacturing", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+cat("**Indiana's Manufacturing R&D Dominance:**\n\n")
+cat(sprintf("- Manufacturing accounts for **%.0f%%** of Indiana's total R&D value added (vs. %.0f%% nonmanufacturing), reflecting the state's strong industrial base\n", in_mfg_share, 100 - in_mfg_share))
+cat(sprintf("- Indiana's manufacturing R&D grew **%.1f%%** from 2012-2023, while nonmanufacturing R&D grew **%.1f%%**\n\n", in_mfg_growth, in_nonmfg_growth))
+
+cat("**Regional Comparison:**\n\n")
+cat(sprintf("- **Michigan** (%.0f%% mfg) and **Indiana** (%.0f%% mfg) show the highest manufacturing R&D concentration among neighbors\n", mi_mfg_share, in_mfg_share))
+cat(sprintf("- **Illinois** has the most balanced R&D portfolio (%.0f%% mfg, %.0f%% nonmfg), reflecting its diversified economy with strong services sectors\n", il_mfg_share, 100 - il_mfg_share))
+cat(sprintf("- **Ohio** presents a notable contrast: its nonmanufacturing R&D has **nearly converged** with manufacturing, driven by %.1f%% nonmanufacturing growth vs. %.1f%% manufacturing growth\n\n", oh_nonmfg_growth, oh_mfg_growth))
+
+cat("**Strategic Implications for Indiana:**\n\n")
+cat("- Ohio's convergence demonstrates that even manufacturing-intensive states can **diversify their R&D portfolios** through investments in technology services, healthcare innovation, and other knowledge-intensive sectors\n")
+cat("- Indiana's **persistent and widening gap** suggests potential vulnerability to manufacturing sector disruptions and missed opportunities in high-growth nonmanufacturing R&D fields\n")
+cat("- The state may benefit from **targeted initiatives** to strengthen R&D in emerging sectors like software, data analytics, healthcare technology, and professional services to create a more **resilient innovation ecosystem**\n")
+```
+:::
+
+## Regional R&D Share Analysis
+
+Understanding Indiana's position relative to the broader Midwest R&D ecosystem.
+```{r rd_regional_share}
+#| tbl-cap: "State Share of Regional R&D Activity (2023)"
+
+# Calculate regional shares
+regional_totals <- rd_va_total %>%
+  filter(year == 2023, geography != "United States") %>%
+  summarise(regional_total = sum(value, na.rm = TRUE))
+
+rd_regional_share <- rd_va_total %>%
+  filter(year == 2023, geography != "United States") %>%
+  mutate(
+    regional_total = regional_totals$regional_total,
+    share_of_region = (value / regional_total) * 100
+  ) %>%
+  arrange(desc(share_of_region)) %>%
+  select(geography, value, share_of_region) %>%
+  mutate(
+    `R&D Value Added` = dollar(value, suffix = "M", accuracy = 1),
+    `Share of 5-State Region` = sprintf("%.1f%%", share_of_region)
+  ) %>%
+  select(State = geography, `R&D Value Added`, `Share of 5-State Region`)
+
+create_table(rd_regional_share)
+```
+
+## R&D Value Added by Detailed Industry
+
+Breaking down R&D by specific industries reveals concentration patterns and growth dynamics within the broader manufacturing and nonmanufacturing categories.
+```{r rd_industry_detail_data}
+#| include: false
+
+# Get detailed industry data
+rd_industry_detail <- rd_value_added %>%
+  filter(
+    line_code %in% c(5:8, 10:12, 16, 21),
+    !is.na(value)
+  ) %>%
+  mutate(
+    sector_group = case_when(
+      line_code %in% 5:8 ~ "Manufacturing",
+      line_code %in% 10:12 ~ "Nonmanufacturing",
+      line_code == 16 ~ "Government",
+      line_code == 21 ~ "Higher Education"
+    )
+  ) %>%
+  select(geography, year, line_code, description, value, sector_group)
+```
+
+### Manufacturing R&D by Industry
+```{r rd_mfg_industries_viz}
+#| fig-cap: "Manufacturing R&D Value Added by Industry - Indiana and Neighboring States (2023)"
+#| fig-height: 16
+
+# 2023 manufacturing industries comparison
+rd_mfg_2023 <- rd_industry_detail %>%
+  filter(sector_group == "Manufacturing", year == 2023) %>%
+  mutate(
+    description_full = description,  # Keep original for hover
+    description = case_when(
+      str_detect(description, "Computer and electronic") ~ "Electronic product mfg.",
+      str_detect(description, "Chemical") ~ "Chemical mfg.",
+      str_detect(description, "Transportation equipment") ~ "Transportation equip. mfg.",
+      str_detect(description, "Other manufacturing") ~ "Other",
+      TRUE ~ description
+    )
+  ) %>%
+  arrange(geography, desc(value))
+
+# Create faceted bar chart
+p_mfg_detail <- plot_ly()
+
+geographies_mfg <- c("United States", "Indiana", sort(setdiff(unique(rd_mfg_2023$geography), c("United States", "Indiana"))))
+
+subplot_list_mfg <- list()
+
+for(i in seq_along(geographies_mfg)) {
+  geo <- geographies_mfg[i]
+  geo_data <- rd_mfg_2023 %>% filter(geography == geo)
+  
+  if(nrow(geo_data) > 0) {
+    p_subplot <- plot_ly(
+      geo_data,
+      x = ~value,
+      y = ~reorder(description, value),
+      type = 'bar',
+      orientation = 'h',
+      marker = list(color = "#1565C0"),
+      customdata = ~description_full,
+      hovertemplate = paste0(
+        "<b>%{customdata}</b><br>",
+        "Value: $%{x:,.1f}M<br>",
+        "<extra></extra>"
+      ),
+      showlegend = FALSE
+    ) %>%
+      layout(
+        xaxis = list(title = ""),
+        yaxis = list(title = ""),
+        annotations = list(
+          list(
+            text = paste0("<b>", geo, "</b>"),
+            x = 0.5,
+            y = 1.08,
+            xref = "paper",
+            yref = "paper",
+            xanchor = "center",
+            yanchor = "bottom",
+            showarrow = FALSE,
+            font = list(size = 11)
+          )
+        ),
+        margin = list(t = 40)
+      )
+    
+    subplot_list_mfg[[i]] <- p_subplot
+  }
+}
+
+p_mfg_detail <- subplot(
+  subplot_list_mfg,
+  nrows = 3,
+  shareX = FALSE,
+  titleY = TRUE,
+  margin = 0.1
+) %>%
+  layout(
+    title = list(
+      text = "<b>Manufacturing R&D Value Added by Industry in (2023), Millions of Dollars</b><br><sup>Detailed industry breakdown</sup>",
+      font = list(size = 16)
+    ),
+    margin = list(t = 150, l = 80)
+  )
+
+p_mfg_detail
+```
+
+```{r rd_mfg_industries_table}
+#| tbl-cap: "Manufacturing R&D Industries - Indiana (2023)"
+
+rd_mfg_in_table <- rd_industry_detail %>%
+  filter(sector_group == "Manufacturing", geography == "Indiana", year == 2023) %>%
+  arrange(desc(value)) %>%
+  mutate(
+    total_mfg = sum(value, na.rm = TRUE),
+    share = (value / total_mfg) * 100,
+    `R&D Value Added` = dollar(value, suffix = "M", accuracy = 0.1),
+    `Share of Mfg R&D` = sprintf("%.1f%%", share)
+  ) %>%
+  select(Industry = description, `R&D Value Added`, `Share of Mfg R&D`)
+
+create_table(rd_mfg_in_table)
+```
+
+### Nonmanufacturing R&D by Industry
+```{r rd_nonmfg_industries_viz}
+#| fig-cap: "Nonmanufacturing R&D Value Added by Industry - Indiana and Neighboring States (2023)"
+#| fig-height: 16
+
+# 2023 nonmanufacturing industries comparison
+rd_nonmfg_2023 <- rd_industry_detail %>%
+  filter(sector_group == "Nonmanufacturing", year == 2023) %>%
+  mutate(
+    description_full = description,  # Keep original for hover
+    description = case_when(
+      str_detect(description, "Professional") ~ "Professional svcs.",
+      str_detect(description, "Information") ~ "Information",
+      str_detect(description, "Other nonmanufacturing") ~ "Other",
+      TRUE ~ description
+    )
+  ) %>%
+  arrange(geography, desc(value))
+
+# Create faceted bar chart
+p_nonmfg_detail <- plot_ly()
+
+geographies_nonmfg <- c("United States", "Indiana", sort(setdiff(unique(rd_nonmfg_2023$geography), c("United States", "Indiana"))))
+
+subplot_list_nonmfg <- list()
+
+for(i in seq_along(geographies_nonmfg)) {
+  geo <- geographies_nonmfg[i]
+  geo_data <- rd_nonmfg_2023 %>% filter(geography == geo)
+  
+  if(nrow(geo_data) > 0) {
+    p_subplot <- plot_ly(
+      geo_data,
+      x = ~value,
+      y = ~reorder(description, value),
+      type = 'bar',
+      orientation = 'h',
+      marker = list(color = "#2E7D32"),
+      customdata = ~description_full,
+      hovertemplate = paste0(
+        "<b>%{customdata}</b><br>",
+        "Value: $%{x:,.1f}M<br>",
+        "<extra></extra>"
+      ),
+      showlegend = FALSE
+    ) %>%
+      layout(
+        xaxis = list(
+          title = "",
+          tickformat = ",.0f"
+        ),
+        yaxis = list(title = ""),
+        annotations = list(
+          list(
+            text = paste0("<b>", geo, "</b>"),
+            x = 0.5,
+            y = 1.08,
+            xref = "paper",
+            yref = "paper",
+            xanchor = "center",
+            yanchor = "bottom",
+            showarrow = FALSE,
+            font = list(size = 11)
+          )
+        ),
+        margin = list(t = 40)
+      )
+    
+    subplot_list_nonmfg[[i]] <- p_subplot
+  }
+}
+
+p_nonmfg_detail <- subplot(
+  subplot_list_nonmfg,
+  nrows = 3,
+  shareX = FALSE,
+  titleY = TRUE,
+  margin = 0.1
+) %>%
+  layout(
+    title = list(
+      text = "<b>Nonmanufacturing R&D Value Added by Industry in (2023), Millions of Dollars</b><br><sup>Detailed industry breakdown</sup>",
+      font = list(size = 16)
+    ),
+    margin = list(t = 150, l = 80)
+  )
+
+p_nonmfg_detail
+```
+
+```{r rd_nonmfg_industries_table}
+#| tbl-cap: "Nonmanufacturing R&D Industries - Indiana (2023)"
+
+rd_nonmfg_in_table <- rd_industry_detail %>%
+  filter(sector_group == "Nonmanufacturing", geography == "Indiana", year == 2023) %>%
+  arrange(desc(value)) %>%
+  mutate(
+    total_nonmfg = sum(value, na.rm = TRUE),
+    share = (value / total_nonmfg) * 100,
+    `R&D Value Added` = dollar(value, suffix = "M", accuracy = 0.1),
+    `Share of Nonmfg R&D` = sprintf("%.1f%%", share)
+  ) %>%
+  select(Industry = description, `R&D Value Added`, `Share of Nonmfg R&D`)
+
+create_table(rd_nonmfg_in_table)
+```
+
+### Government and Higher Education R&D
+
+Government and university R&D represent critical components of the regional innovation ecosystem, supporting basic research and workforce development.
+```{r rd_govt_university_viz}
+#| fig-cap: "Government and Higher Education R&D Value Added Over Time (Indexed to 2012)"
+#| fig-height: 16
+
+# Get government and university R&D indexed to 2012
+rd_govt_univ <- rd_industry_detail %>%
+  filter(sector_group %in% c("Government", "Higher Education")) %>%
+  group_by(geography, description) %>%
+  mutate(
+    base_value = first(value[year == 2012]),
+    indexed_value = (value / base_value) * 100
+  ) %>%
+  ungroup()
+
+# Create faceted chart by sector
+sector_groups <- c("Government", "Higher Education")
+subplot_list_gu <- list()
+
+for(i in seq_along(sector_groups)) {
+  sector <- sector_groups[i]
+  sector_data <- rd_govt_univ %>% filter(sector_group == sector)
+  
+  # Create subplot for this sector
+  p_subplot <- plot_ly()
+  
+  # 1. Add US first (dashed reference line)
+  us_data <- sector_data %>% filter(geography == "United States")
+  p_subplot <- p_subplot %>%
+    add_trace(
+      data = us_data,
+      x = ~year, y = ~indexed_value,
+      name = "United States",
+      type = 'scatter', mode = 'lines',
+      line = list(color = state_colors["United States"], width = 2, dash = "dash"),
+      customdata = ~value,
+      hovertemplate = paste0(
+        "<b>United States</b><br>",
+        "Year: %{x}<br>",
+        "Indexed: %{y:.1f}<br>",
+        "Actual: $%{customdata:,.1f}M<br>",
+        "<extra></extra>"
+      ),
+      showlegend = if(i == 1) TRUE else FALSE
+    )
+  
+  # 2. Add Indiana (thicker line)
+  indiana_data <- sector_data %>% filter(geography == "Indiana")
+  p_subplot <- p_subplot %>%
+    add_trace(
+      data = indiana_data,
+      x = ~year, y = ~indexed_value,
+      name = "Indiana",
+      type = 'scatter', mode = 'lines+markers',
+      line = list(color = state_colors["Indiana"], width = 5),
+      marker = list(color = state_colors["Indiana"], size = 10),
+      customdata = ~value,
+      hovertemplate = paste0(
+        "<b>Indiana</b><br>",
+        "Year: %{x}<br>",
+        "Indexed: %{y:.1f}<br>",
+        "Actual: $%{customdata:,.1f}M<br>",
+        "<extra></extra>"
+      ),
+      showlegend = if(i == 1) TRUE else FALSE
+    )
+  
+  # 3. Add other states (alphabetically)
+  other_states_gu <- sector_data %>% 
+    filter(!geography %in% c("United States", "Indiana")) %>%
+    arrange(geography) %>%
+    distinct(geography) %>%
+    pull(geography)
+  
+  for(state in other_states_gu) {
+    state_subset <- sector_data %>% filter(geography == state)
+    p_subplot <- p_subplot %>%
+      add_trace(
+        data = state_subset,
+        x = ~year, y = ~indexed_value,
+        name = state,
+        type = 'scatter', mode = 'lines+markers',
+        line = list(color = state_colors[state], width = 3),
+        marker = list(color = state_colors[state], size = 8),
+        customdata = ~value,
+        hovertemplate = paste0(
+          "<b>", state, "</b><br>",
+          "Year: %{x}<br>",
+          "Indexed: %{y:.1f}<br>",
+          "Actual: $%{customdata:,.1f}M<br>",
+          "<extra></extra>"
+        ),
+        showlegend = if(i == 1) TRUE else FALSE
+      )
+  }
+  
+  # Layout for subplot
+  p_subplot <- p_subplot %>%
+    layout(
+      xaxis = list(title = if(i == 2) "Year" else ""),
+      yaxis = list(title = "Indexed Value (2012 = 100)"),
+      annotations = list(
+        list(
+          text = paste0("<b>", sector, "</b>"),
+          x = 0.5,
+          y = 1,
+          xref = "paper",
+          yref = "paper",
+          xanchor = "center",
+          yanchor = "top",
+          showarrow = FALSE,
+          font = list(size = 13, color = "black")
+        )
+      ),
+      shapes = list(
+        list(
+          type = "line",
+          x0 = 2012,
+          x1 = 2023,
+          xref = "x",
+          y0 = 100,
+          y1 = 100,
+          yref = "y",
+          line = list(color = "gray", width = 1, dash = "dot")
+        )
+      )
+    )
+  
+  subplot_list_gu[[i]] <- p_subplot
+}
+
+# Combine subplots
+p_govt_univ <- subplot(
+  subplot_list_gu,
+  nrows = 2,
+  shareX = TRUE,
+  titleY = TRUE,
+  margin = 0.1
+) %>%
+  layout(
+    title = list(
+      text = "<b>Government and Higher Education R&D Value Added (Indexed to 2012 = 100)</b><br><sup>Critical components of the innovation ecosystem</sup>",
+      font = list(size = 16)
+    ),
+    showlegend = TRUE,
+    legend = list(
+      orientation = "v",
+      x = 1.02,
+      y = 0.5,
+      traceorder = "normal"
+    ),
+    margin = list(t = 120)
+  )
+
+p_govt_univ
+```
+*Note: "Higher Education" includes public and private nonprofit colleges and universities. "Government" includes federal, national defense, nondefense, and state and local governments.*
+
+```{r rd_govt_univ_table}
+#| tbl-cap: "Government and Higher Education R&D - All States (2023)"
+
+rd_govt_univ_table <- rd_industry_detail %>%
+  filter(sector_group %in% c("Government", "Higher Education"), year == 2023) %>%
+  group_by(geography, sector_group) %>%
+  summarise(value = sum(value, na.rm = TRUE), .groups = "drop") %>%
+  pivot_wider(names_from = sector_group, values_from = value) %>%
+  mutate(
+    across(c(Government, `Higher Education`), ~dollar(.x, suffix = "M", accuracy = 0.1)),
+    sort_order = case_when(
+      geography == "United States" ~ 1,
+      geography == "Indiana" ~ 2,
+      TRUE ~ 3
+    )
+  ) %>%
+  arrange(sort_order) %>%
+  select(State = geography, `Government R&D` = Government, `Higher Education R&D` = `Higher Education`) %>%
+  select(-matches("sort_order"))
+
+create_table(rd_govt_univ_table)
+```
+
+::: {.callout-note icon="false"}
+## 🎓 Government and Higher Education R&D Insights
+```{r govt_univ_insights}
+#| output: asis
+
+# Calculate key metrics
+in_govt_2023 <- rd_industry_detail %>% filter(geography == "Indiana", sector_group == "Government", year == 2023) %>% pull(value)
+in_univ_2023 <- rd_industry_detail %>% filter(geography == "Indiana", sector_group == "Higher Education", year == 2023) %>% pull(value)
+
+in_govt_growth <- rd_industry_detail %>% 
+  filter(geography == "Indiana", sector_group == "Government", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+in_univ_growth <- rd_industry_detail %>% 
+  filter(geography == "Indiana", sector_group == "Higher Education", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+us_univ_growth <- rd_industry_detail %>% 
+  filter(geography == "United States", sector_group == "Higher Education", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+# Get neighboring states data
+neighbor_govt_2023 <- rd_industry_detail %>%
+  filter(geography %in% c("Indiana", "Illinois", "Michigan", "Ohio", "Kentucky"), 
+         sector_group == "Government", year == 2023) %>%
+  arrange(desc(value))
+
+neighbor_univ_2023 <- rd_industry_detail %>%
+  filter(geography %in% c("Indiana", "Illinois", "Michigan", "Ohio", "Kentucky"), 
+         sector_group == "Higher Education", year == 2023) %>%
+  arrange(desc(value))
+
+neighbor_govt_growth <- rd_industry_detail %>%
+  filter(geography %in% c("Indiana", "Illinois", "Michigan", "Ohio", "Kentucky"), 
+         sector_group == "Government", year %in% c(2012, 2023)) %>%
+  group_by(geography) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100, .groups = "drop") %>%
+  arrange(desc(growth))
+
+neighbor_univ_growth <- rd_industry_detail %>%
+  filter(geography %in% c("Indiana", "Illinois", "Michigan", "Ohio", "Kentucky"), 
+         sector_group == "Higher Education", year %in% c(2012, 2023)) %>%
+  group_by(geography) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100, .groups = "drop") %>%
+  arrange(desc(growth))
+
+# Get Indiana's ranks
+in_govt_rank <- which(neighbor_govt_2023$geography == "Indiana")
+in_univ_rank <- which(neighbor_univ_2023$geography == "Indiana")
+in_govt_growth_rank <- which(neighbor_govt_growth$geography == "Indiana")
+in_univ_growth_rank <- which(neighbor_univ_growth$geography == "Indiana")
+
+# Helper for ordinal suffix
+ordinal <- function(x) {
+  suffix <- case_when(
+    x == 1 ~ "st",
+    x == 2 ~ "nd",
+    x == 3 ~ "rd",
+    TRUE ~ "th"
+  )
+  paste0(x, suffix)
+}
+
+cat(sprintf("- Indiana's government R&D totaled **$%sM** in 2023, growing **%.1f%%** since 2012\n", format(in_govt_2023, big.mark = ",", nsmall = 1), in_govt_growth))
+cat(sprintf("- Higher education R&D reached **$%sM** in 2023, with **%.1f%%** growth (vs. **%.1f%%** nationally)\n", format(in_univ_2023, big.mark = ",", nsmall = 1), in_univ_growth, us_univ_growth))
+cat(sprintf("- Among neighboring states, Indiana ranks **%s** in government R&D value added and **%s** in growth rate (%.1f%%)\n", 
+            ordinal(in_govt_rank), ordinal(in_govt_growth_rank), in_govt_growth))
+cat(sprintf("- For higher education R&D, Indiana ranks **%s** in total value and **%s** in growth (%.1f%%) among the five-state region\n", 
+            ordinal(in_univ_rank), ordinal(in_univ_growth_rank), in_univ_growth))
+cat("- University R&D is essential for **basic research**, **workforce development**, and **technology transfer** to industry\n")
+cat("- States with strong university R&D systems often see spillover benefits in commercial innovation and startup formation\n")
+```
+:::
+
+## Key R&D Insights
+```{r rd_key_insights}
+#| output: asis
+
+# Calculate key metrics for callout
+in_va_2023 <- rd_value_added %>% filter(geography == "Indiana", line_code == 1, year == 2023) %>% pull(value)
+in_va_2012 <- rd_value_added %>% filter(geography == "Indiana", line_code == 1, year == 2012) %>% pull(value)
+in_growth <- ((in_va_2023 / in_va_2012) - 1) * 100
+
+us_va_2023 <- rd_value_added %>% filter(geography == "United States", line_code == 1, year == 2023) %>% pull(value)
+in_va_share <- (in_va_2023 / us_va_2023) * 100
+
+in_emp_2023 <- rd_employment %>% filter(geography == "Indiana", line_code == 1, year == 2023) %>% pull(value) * 1000
+us_emp_2023 <- rd_employment %>% filter(geography == "United States", line_code == 1, year == 2023) %>% pull(value) * 1000
+in_emp_share <- (in_emp_2023 / us_emp_2023) * 100
+
+in_comp_2023 <- rd_compensation %>% filter(geography == "Indiana", line_code == 1, year == 2023) %>% pull(value)
+us_comp_2023 <- rd_compensation %>% filter(geography == "United States", line_code == 1, year == 2023) %>% pull(value)
+in_comp_share <- (in_comp_2023 / us_comp_2023) * 100
+
+# Get Indiana's rank among neighboring states
+in_rank <- rd_va_total %>% 
+  filter(year == 2023, geography != "United States") %>% 
+  arrange(desc(value)) %>% 
+  mutate(rank = row_number()) %>% 
+  filter(geography == "Indiana") %>% 
+  pull(rank)
+
+rank_suffix <- case_when(
+  in_rank == 1 ~ "st",
+  in_rank == 2 ~ "nd",
+  in_rank == 3 ~ "rd",
+  TRUE ~ "th"
+)
+
+# Sector breakdown insights
+in_mfg_2023 <- rd_value_added %>% filter(geography == "Indiana", line_code == 4, year == 2023) %>% pull(value)
+in_nonmfg_2023 <- rd_value_added %>% filter(geography == "Indiana", line_code == 9, year == 2023) %>% pull(value)
+in_mfg_share <- (in_mfg_2023 / (in_mfg_2023 + in_nonmfg_2023)) * 100
+
+in_mfg_growth <- rd_value_added %>%
+  filter(geography == "Indiana", line_code == 4, year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>%
+  pull(growth)
+
+in_nonmfg_growth <- rd_value_added %>%
+  filter(geography == "Indiana", line_code == 9, year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>%
+  pull(growth)
+
+# Get top manufacturing industry
+top_mfg_industry <- rd_industry_detail %>%
+  filter(geography == "Indiana", sector_group == "Manufacturing", year == 2023) %>%
+  arrange(desc(value)) %>%
+  slice(1)
+
+# Gov't and Higher Ed
+# Calculate metrics
+in_govt_2023 <- rd_industry_detail %>% filter(geography == "Indiana", sector_group == "Government", year == 2023) %>% pull(value)
+in_univ_2023 <- rd_industry_detail %>% filter(geography == "Indiana", sector_group == "Higher Education", year == 2023) %>% pull(value)
+
+in_govt_growth <- rd_industry_detail %>% 
+  filter(geography == "Indiana", sector_group == "Government", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+in_univ_growth <- rd_industry_detail %>% 
+  filter(geography == "Indiana", sector_group == "Higher Education", year %in% c(2012, 2023)) %>%
+  summarise(growth = ((last(value) / first(value)) - 1) * 100) %>% pull(growth)
+
+# Get ranks
+neighbor_univ_2023 <- rd_industry_detail %>%
+  filter(geography %in% c("Indiana", "Illinois", "Michigan", "Ohio", "Kentucky"), 
+         sector_group == "Higher Education", year == 2023) %>%
+  arrange(desc(value))
+
+in_univ_rank <- which(neighbor_univ_2023$geography == "Indiana")
+
+univ_rank_suffix <- case_when(
+  in_univ_rank == 1 ~ "st",
+  in_univ_rank == 2 ~ "nd",
+  in_univ_rank == 3 ~ "rd",
+  TRUE ~ "th"
+)
+
+cat("**Overall R&D Performance:**\n\n")
+cat(sprintf("- Indiana's R&D value added grew **%.1f%%** from 2012 to 2023, reaching **$%sM**\n", 
+            in_growth, format(in_va_2023, big.mark = ",", nsmall = 1)))
+cat(sprintf("- Indiana ranks **%d%s** among the five-state region in total R&D value added\n", in_rank, rank_suffix))
+cat(sprintf("- Indiana accounts for **%.2f%%** of U.S. R&D value added, **%.2f%%** of R&D employment, and **%.2f%%** of R&D compensation\n", 
+            in_va_share, in_emp_share, in_comp_share))
+cat(sprintf("- **%s** workers were employed in R&D activities across Indiana in 2023\n\n", comma(in_emp_2023)))
+
+cat("**Sector Composition & Dynamics:**\n\n")
+cat(sprintf("- Manufacturing R&D dominates at **%.0f%%** of Indiana's total R&D value added, reflecting the state's industrial heritage\n", 
+            in_mfg_share))
+cat(sprintf("- Manufacturing R&D grew **%.1f%%** (2012-2023) while nonmanufacturing R&D grew **%.1f%%**—the gap is slightly **%s**\n",
+            in_mfg_growth, in_nonmfg_growth, 
+            if_else(in_mfg_growth > in_nonmfg_growth, "widening", "narrowing")))
+cat(sprintf("- **%s** is Indiana's largest manufacturing R&D industry at **$%sM** in 2023\n",
+            top_mfg_industry$description,
+            format(top_mfg_industry$value, big.mark = ",", nsmall = 1)))
+cat("- Compared to Ohio's balanced R&D portfolio, Indiana's persistent manufacturing dominance creates both **competitive advantages** in industrial innovation and **vulnerability** to sector-specific disruptions\n")
+
+cat("\n**Government & Higher Education R&D:**\n\n")
+
+cat(sprintf("- Government R&D totaled **$%sM** (%.1f%% growth) and higher education R&D reached **$%sM** (%.1f%% growth) from 2012-2023\n",
+            format(in_govt_2023, big.mark = ",", nsmall = 1), in_govt_growth,
+            format(in_univ_2023, big.mark = ",", nsmall = 1), in_univ_growth))
+cat(sprintf("- Indiana ranks **%d%s** among neighboring states in higher education R&D value added\n", 
+            in_univ_rank, univ_rank_suffix))
+cat("- Public sector R&D — particularly university research — is critical for **basic research**, **talent development**, and **technology transfer** that supports private sector innovation\n")
+cat("- States with robust university R&D ecosystems typically see stronger **startup formation** and **technology commercialization** outcomes\n")
+
+```
+
+## Data Notes
+
+Key definitions from BEA R&D Satellite Account:
+
+- **Value Added**: The contribution of R&D activities to GDP
+- **Employment**: Full-time equivalent jobs in R&D activities
+- **Compensation**: Total wages, salaries, and benefits for R&D workers
+- **Five-State Region**: Indiana and its neighboring states (Michigan, Illinois, Ohio, and Kentucky)
+
+See the full technical notes from BEA for detailed methodology.

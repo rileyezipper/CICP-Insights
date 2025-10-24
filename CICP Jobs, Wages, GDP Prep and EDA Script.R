@@ -94,12 +94,12 @@ calculate_growth <- function(df, value_col, group_vars) {
     mutate(
       yoy_growth = ({{value_col}} / lag({{value_col}}) - 1) * 100,
       yoy_change = {{value_col}} - lag({{value_col}}),
-      cagr_3yr = if_else(
+      cagr_2yr = if_else(
         n() >= 3 & !is.na({{value_col}}) & !is.na(lag({{value_col}}, 2)),
         ({{value_col}} / lag({{value_col}}, 2))^(1/2) - 1,
         NA_real_
       ) * 100,
-      cagr_5yr = if_else(
+      cagr_4yr = if_else(
         n() >= 5 & !is.na({{value_col}}) & !is.na(lag({{value_col}}, 4)),
         ({{value_col}} / lag({{value_col}}, 4))^(1/4) - 1,
         NA_real_
@@ -240,7 +240,7 @@ gdp_growth <- gdp_growth %>%
 cat("\n=== ANALYSIS 1: Initiative-Level Overview ===\n")
 
 # ANALYSIS SETUP - Define most recent years for each dataset
-# Use 2023 as the most recent year with complete data across all metrics
+
 recent_year <- 2023
 
 cat(sprintf("Using %d as most recent year (last year with complete data)\n", recent_year))
@@ -295,9 +295,9 @@ indiana_jobs_growth <- jobs_growth %>%
          year == recent_year,
          geo_area == "Indiana",
          initiative != "Total Employment",
-         !is.na(cagr_3yr)) %>%
-  select(initiative, cagr_3yr, yoy_growth, jobs) %>%
-  arrange(desc(cagr_3yr))
+         !is.na(cagr_2yr)) %>%
+  select(initiative, cagr_2yr, yoy_growth, jobs) %>%
+  arrange(desc(cagr_2yr))
 
 print(indiana_jobs_growth)
 
@@ -519,9 +519,9 @@ cat("\n2. GROWTH TRENDS IN INDIANA\n")
 if (nrow(indiana_jobs_growth) > 0) {
   cat(sprintf("   - Fastest growing initiative: %s (%.1f%% CAGR)\n",
               indiana_jobs_growth$initiative[1],
-              indiana_jobs_growth$cagr_3yr[1]))
-  if (any(indiana_jobs_growth$cagr_3yr < 0)) {
-    declining <- indiana_jobs_growth %>% filter(cagr_3yr < 0)
+              indiana_jobs_growth$cagr_2yr[1]))
+  if (any(indiana_jobs_growth$cagr_2yr < 0)) {
+    declining <- indiana_jobs_growth %>% filter(cagr_2yr < 0)
     cat(sprintf("   - Declining initiatives: %d\n", nrow(declining)))
   }
 }
