@@ -43,11 +43,11 @@ library(janitor)
 library(readxl)
 
 # Load processed data
-output_dir <- "outputs_20250709"  # Modify to match your output directory
+output_dir <- "outputs_20251031"  # Modify to match your output directory
 load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
 
 viz_dir <- file.path(output_dir, "visualizations")
-viz_path <- "outputs_20250709/visualizations"
+viz_path <- "outputs_20251031/visualizations"
 
 # Define color palette
 initiative_colors <- c(
@@ -56,6 +56,8 @@ initiative_colors <- c(
   "BioCrossroads" = "#6A1B9A",
   "Conexus" = "#D84315",
   "TechPoint" = "#F57C00",
+  "Healthcare" = "#c92f6c",
+  "Finance & Insurance" = "#19909a",
   "Total Employment" = "#424242"
 )
 
@@ -294,17 +296,17 @@ Wage levels reflect the economic value and skill requirements of the advanced in
 #| tbl-cap: "Indiana Average Annual Wages by Initiative"
 
 avg_state_wage <- wage_data %>%
-  filter(display_level == 0, year == recent_year, 
+  filter(display_level == 0, year == recent_year - 1, 
          geo_area == "Indiana", initiative == "Total Employment") %>%
   pull(wages)
 
 indiana_wages <- wage_data %>%
-  filter(display_level == 0, year == recent_year, 
+  filter(display_level == 0, year == recent_year - 1, 
          geo_area == "Indiana", initiative != "Total Employment",
          !is.na(wages)) %>%
   left_join(
     jobs_data %>%
-      filter(display_level == 0, year == recent_year, 
+      filter(display_level == 0, year == recent_year - 1, 
              geo_area == "Indiana") %>%
       select(initiative, jobs),
     by = "initiative"
@@ -335,7 +337,7 @@ knitr::include_url(file.path(viz_path, "04_indiana_wages_by_initiative.html"), h
 #| tbl-cap: "Wage Distribution Across Initiatives (Indiana)"
 
 wage_percentiles <- wage_data %>%
-  filter(display_level >= 2, year == recent_year, 
+  filter(display_level >= 2, year == recent_year - 1, 
          geo_area == "Indiana", !is.na(wages)) %>%
   group_by(initiative) %>%
   summarise(
@@ -356,19 +358,19 @@ create_table(wage_percentiles)
 #| tbl-cap: "Indiana vs. US Average Wages by Initiative"
 
 wage_comparison <- wage_data %>%
-  filter(display_level == 0, year == recent_year,
+  filter(display_level == 0, year == recent_year - 1,
          initiative != "Total Employment", !is.na(wages),
          geo_area %in% c("Indiana", "United States")) %>%
   select(geo_area, initiative, wages) %>%
   pivot_wider(names_from = geo_area, values_from = wages) %>%
   mutate(
-    `Indiana Wage` = dollar(Indiana, accuracy = 1),
-    `US Wage` = dollar(`United States`, accuracy = 1),
-    `Difference` = dollar(Indiana - `United States`, accuracy = 1),
-    `% Difference` = sprintf("%+.1f%%", ((Indiana - `United States`) / `United States`) * 100),
-    Gap = ifelse(Indiana < `United States`, "Below", "Above")
+    `Indiana Wage` = dollar(`Indiana`, accuracy = 1),  # Add backticks here
+    `US Wage` = dollar(`United States`, accuracy = 1),  # And here
+    `Difference` = dollar(`Indiana` - `United States`, accuracy = 1),  # And here
+    `% Difference` = sprintf("%+.1f%%", ((`Indiana` - `United States`) / `United States`) * 100),  # And here
+    Gap = ifelse(`Indiana` < `United States`, "Below", "Above")  # And here
   ) %>%
-  arrange(desc(Indiana)) %>%
+  arrange(desc(`Indiana`)) %>%  # And here
   select(Initiative = initiative, `Indiana Wage`, `US Wage`, 
          `Difference`, `% Difference`, Gap)
 
@@ -1043,12 +1045,14 @@ for(i in 1:3) {
 ::: {.callout-tip icon="false"}
 ## 💰 Wage & Economic Value
 
+Note: All wage information is from 2023 because that's the latest year available for wages from the BLS.
+
 ```{r findings_wages}
 #| output: asis
 
 # Top 3 by wages
 top3_wages <- wage_data %>%
-  filter(display_level == 0, year == recent_year, 
+  filter(display_level == 0, year == recent_year - 1, 
          geo_area == "Indiana", initiative != "Total Employment",
          !is.na(wages)) %>%
   arrange(desc(wages)) %>%
@@ -1056,11 +1060,11 @@ top3_wages <- wage_data %>%
 
 # Calculate total payroll impact
 total_payroll <- wage_data %>%
-  filter(display_level == 0, year == recent_year, 
+  filter(display_level == 0, year == recent_year - 1, 
          geo_area == "Indiana", initiative != "Total Employment") %>%
   left_join(
     jobs_data %>%
-      filter(display_level == 0, year == recent_year, 
+      filter(display_level == 0, year == recent_year - 1, 
              geo_area == "Indiana") %>%
       select(initiative, jobs),
     by = "initiative"
@@ -1464,6 +1468,8 @@ Understanding these patterns at the industry level provides the **granular insig
 
 Indiana's entrepreneurial ecosystem and business formation patterns provide critical insights into economic vitality and future growth potential. This section examines new establishment formation across advanced industry initiatives, distinguishing between true startups and larger qualified establishments.
 
+Note that the two new initiatives, Finance & Insurance and Healthcare, have not yet been integrated into the business formation data.
+
 ## New Establishment Formation Overview
 
 New establishments represent fresh economic activity and entrepreneurial dynamism. Understanding where and how new businesses form helps identify emerging clusters and entrepreneurial hotspots.
@@ -1516,7 +1522,7 @@ Understanding these dynamics helps **target entrepreneurship support programs**,
 
 Tracking establishment cohorts over time reveals survival rates and growth patterns. This longitudinal perspective distinguishes between **sustainable entrepreneurship** and **high-churn activity**.
 
-```{r cohort_performance_table}
+<!-- ```{r cohort_performance_table}
 #| tbl-cap: "Establishment Cohort Performance by Initiative"
 
 cohort_data <- read_csv("estab_output_2022/tables/Q_cohort_performance_all_initiatives.csv", 
@@ -1539,9 +1545,9 @@ cohort_display <- cohort_data %>%
                str_replace("Avg", "Average"))
 
 create_table(cohort_display, striped = TRUE)
-```
+``` -->
 
-::: {.callout-note icon="false"}
+<!-- ::: {.callout-note icon="false"}
 ## 📊 Cohort Insights
 
 **Cohort analysis** reveals the long-term viability of new establishment formation:
@@ -1552,7 +1558,7 @@ create_table(cohort_display, striped = TRUE)
 - **Initiative-level differences** highlight which sectors foster more durable entrepreneurship
 
 Comparing recent cohorts to earlier ones reveals whether entrepreneurial ecosystem strength is improving or declining over time.
-:::
+::: -->
 
 ## Startup-Scale vs. Qualified Establishments
 
