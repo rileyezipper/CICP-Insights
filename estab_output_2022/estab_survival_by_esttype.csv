@@ -1,0 +1,32 @@
+cicp_initiative,new_est_type,new_est_type_desc,Cohorts_Analyzed,Year_1,Year_3,Year_5
+Advanced & Traded Industries,1,Qualified New - 1-20 or fewer Employees at start,6,98.45283707789744,81.96094233276764,76.51666797738865
+Advanced & Traded Industries,2,Qualified - 21-50 Employees at start,6,101.78852312998654,94.1775837796377,88.64184063674726
+Advanced & Traded Industries,3,Qualified - 51-100 Employees at start,6,96.80555555555556,102.77777777777777,107.5
+Advanced & Traded Industries,4,Qualified - 101+ Employees at start,5,96,100,NA
+Advanced & Traded Industries,4,Qualified - 101+ Employees at start,4,NA,NA,100
+AgriNovus,1,Qualified New - 1-20 or fewer Employees at start,6,100.56505973835702,88.902194498760025,87.31440725636682
+AgriNovus,2,Qualified - 21-50 Employees at start,6,108.89217619636372,NA,NA
+AgriNovus,2,Qualified - 21-50 Employees at start,5,NA,100.86728721811225,88.44880441367944
+AgriNovus,3,Qualified - 51-100 Employees at start,5,100,NA,90
+AgriNovus,3,Qualified - 51-100 Employees at start,6,NA,100,NA
+AgriNovus,4,Qualified - 101+ Employees at start,2,100,100,87.5
+BioX,1,Qualified New - 1-20 or fewer Employees at start,6,104.4466938423659,95.00145791309774,91.07829133896796
+BioX,2,Qualified - 21-50 Employees at start,3,133.33333333333334,103.43813200956058,NA
+BioX,2,Qualified - 21-50 Employees at start,2,NA,NA,100
+BioX,3,Qualified - 51-100 Employees at start,2,100,NA,NA
+BioX,3,Qualified - 51-100 Employees at start,3,NA,109.18367346938776,100
+Conexus,1,Qualified New - 1-20 or fewer Employees at start,6,98.49186091357231,82.73575605704207,79.33722767944143
+Conexus,2,Qualified - 21-50 Employees at start,6,103.53535353535354,92.67237593324549,89.50102529049897
+Conexus,3,Qualified - 51-100 Employees at start,6,100,109.72222222222221,104.16666666666667
+Conexus,4,Qualified - 101+ Employees at start,4,87.5,104.16666666666667,100
+Other,1,Qualified New - 1-20 or fewer Employees at start,6,98.0093598482215,81.17468092383702,76.73204203367575
+Other,2,Qualified - 21-50 Employees at start,6,98.2107207449374,88.1418486937976,82.56277381714519
+Other,3,Qualified - 51-100 Employees at start,6,102.27657004830917,95.7473544973545,86.2012987012987
+Other,4,Qualified - 101+ Employees at start,6,95.76923076923077,92.18559218559218,79.42980222391986
+TechPoint,1,Qualified New - 1-20 or fewer Employees at start,6,98.93557458134198,80.20813109046271,72.919928696825
+TechPoint,2,Qualified - 21-50 Employees at start,5,86.66666666666667,NA,NA
+TechPoint,2,Qualified - 21-50 Employees at start,4,NA,105,125
+TechPoint,3,Qualified - 51-100 Employees at start,4,100,NA,NA
+TechPoint,3,Qualified - 51-100 Employees at start,1,NA,100,NA
+TechPoint,4,Qualified - 101+ Employees at start,2,100,NA,NA
+TechPoint,4,Qualified - 101+ Employees at start,1,NA,100,NA

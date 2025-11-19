@@ -1,0 +1,613 @@
+display_level,sector,sector_name,subsector,subsector_name,statefips,countyfips,metrofips,geo_area,Year,naics,naics_title,group_by_sort,sort,posting_hourly_wage
+0,0,Healthcare Total,,,0,000,00000,United States,2023,000000,,0,0,35.19032967033143
+0,0,Healthcare Total,,,00,000,14020,Bloomington MSA,2023,000000,,0,0,28.714423076920834
+0,0,Healthcare Total,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,0,0,38.07560439559143
+0,0,Healthcare Total,,,00,000,17140,Cincinnati MSA,2023,000000,,0,0,29.160425824168573
+0,0,Healthcare Total,,,00,000,18020,Columbus MSA,2023,000000,,0,0,26.294381009605
+0,0,Healthcare Total,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,0,0,25.395563811186367
+0,0,Healthcare Total,,,00,000,21780,Evansville MSA,2023,000000,,0,0,34.187143874640746
+0,0,Healthcare Total,,,00,000,23060,Fort Wayne MSA,2023,000000,,0,0,30.872521033656252
+0,0,Healthcare Total,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,0,0,30.64796380090295
+0,0,Healthcare Total,,,00,000,29020,Kokomo MSA,2023,000000,,0,0,26.44320512819333
+0,0,Healthcare Total,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,0,0,32.018990384625
+0,0,Healthcare Total,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,0,0,30.780712669679414
+0,0,Healthcare Total,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,0,0,35.49954594015
+0,0,Healthcare Total,,,00,000,34620,Muncie MSA,2023,000000,,0,0,27.15188127089565
+0,0,Healthcare Total,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,0,0,29.88718501326552
+0,0,Healthcare Total,,,00,000,45460,Terre Haute MSA,2023,000000,,0,0,27.259069055936365
+0,0,Healthcare Total,,,18,000,00000,Indiana,2023,000000,,0,0,29.047912087908575
+1,1,    521 - Central Bank,,,0,000,00000,United States,2023,000000,,1,1,43.5076923077
+1,1,    521 - Central Bank,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,
+1,1,    521 - Central Bank,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,54.5846153846
+1,1,    521 - Central Bank,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,33.6615384615
+1,1,    521 - Central Bank,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,
+1,1,    521 - Central Bank,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,
+1,1,    521 - Central Bank,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,21.6
+1,1,    521 - Central Bank,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,
+1,1,    521 - Central Bank,,,18,000,00000,Indiana,2023,000000,,1,1,26.6461538462
+1,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,000000,,1,1,33.14405594405455
+1,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,26.68230769231
+1,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,34.984615384600005
+1,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,30.646153846136368
+1,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,000000,,1,1,14.864102564096669
+1,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,24.280096153849996
+1,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,000000,,1,1,29.68465909089091
+1,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,28.747552447545456
+1,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,28.16223776223637
+1,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,000000,,1,1,16.736263736242858
+1,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,35.33066239316667
+1,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,25.57762237760909
+1,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,44.26340144225
+1,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,000000,,1,1,21.32961538461
+1,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,35.02989510489999
+1,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,18.324038461544443
+1,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,000000,,1,1,26.072727272709088
+1,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,000000,,1,1,36.421978021971434
+1,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,22.023076923075003
+1,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,41.35384615384286
+1,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,25.20000000001429
+1,3,    523 - Securities and Investments,,,00,000,18020,Columbus MSA,2023,000000,,1,1,26.430769230750002
+1,3,    523 - Securities and Investments,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,24.8
+1,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,000000,,1,1,33.724038461549995
+1,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,28.7794871795
+1,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,28.008791208785713
+1,3,    523 - Securities and Investments,,,00,000,29020,Kokomo MSA,2023,000000,,1,1,30.07403846155
+1,3,    523 - Securities and Investments,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,22.369230769250002
+1,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,27.948717948716666
+1,3,    523 - Securities and Investments,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,17.87692307695
+1,3,    523 - Securities and Investments,,,00,000,34620,Muncie MSA,2023,000000,,1,1,20.7076923077
+1,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,21.650769230759998
+1,3,    523 - Securities and Investments,,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,32.3641025641
+1,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,000000,,1,1,23.942857142857143
+1,4,    524 - Insurance,,,0,000,00000,United States,2023,000000,,1,1,36.88615384616
+1,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,31.3901098901
+1,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,40.84923076922
+1,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,29.93615384615
+1,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,000000,,1,1,32.63550824174285
+1,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,29.489560439542856
+1,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,000000,,1,1,40.509795673087496
+1,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,38.090758547011106
+1,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,35.24923076924
+1,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,000000,,1,1,36.55769230768333
+1,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,30.23901098902857
+1,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,35.01711538462
+1,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,33.529670329671426
+1,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,000000,,1,1,34.46497252745714
+1,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,33.35122863248889
+1,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,26.2858774038625
+1,4,    524 - Insurance,,,18,000,00000,Indiana,2023,000000,,1,1,35.13846153847
+1,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,000000,,1,1,33.29230769231666
+1,5,    525 - Funds and Trusts,,,00,000,14020,Bloomington MSA,2023,000000,,1,1,38.166666666666664
+1,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,1,1,32.54358974356666
+1,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,000000,,1,1,29.01402243588333
+1,5,    525 - Funds and Trusts,,,00,000,18020,Columbus MSA,2023,000000,,1,1,50.2153846154
+1,5,    525 - Funds and Trusts,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,1,1,17.5372596154
+1,5,    525 - Funds and Trusts,,,00,000,21780,Evansville MSA,2023,000000,,1,1,34.38677884615
+1,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,000000,,1,1,26.033974358983333
+1,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,1,1,30.615384615366665
+1,5,    525 - Funds and Trusts,,,00,000,29020,Kokomo MSA,2023,000000,,1,1,
+1,5,    525 - Funds and Trusts,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,1,1,32.99615384615
+1,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,1,1,37.62115384615
+1,5,    525 - Funds and Trusts,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,1,1,14.4230769231
+1,5,    525 - Funds and Trusts,,,00,000,34620,Muncie MSA,2023,000000,,1,1,35.93974358973333
+1,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,1,1,18.24615384615
+1,5,    525 - Funds and Trusts,,,00,000,45460,Terre Haute MSA,2023,000000,,1,1,63.70192307675
+1,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,000000,,1,1,30.70769230768333
+2,1,    521 - Central Bank,,,0,000,00000,United States,2023,521110,Monetary Authorities–Central Bank,2,2,43.5076923077
+2,1,    521 - Central Bank,,,00,000,14020,Bloomington MSA,2023,521110,Monetary Authorities–Central Bank,2,2,
+2,1,    521 - Central Bank,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,521110,Monetary Authorities–Central Bank,2,2,54.5846153846
+2,1,    521 - Central Bank,,,00,000,17140,Cincinnati MSA,2023,521110,Monetary Authorities–Central Bank,2,2,33.6615384615
+2,1,    521 - Central Bank,,,00,000,23060,Fort Wayne MSA,2023,521110,Monetary Authorities–Central Bank,2,2,
+2,1,    521 - Central Bank,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,521110,Monetary Authorities–Central Bank,2,2,
+2,1,    521 - Central Bank,,,00,000,31140,Louisville/Jefferson County MSA,2023,521110,Monetary Authorities–Central Bank,2,2,21.6
+2,1,    521 - Central Bank,,,00,000,43780,South Bend-Mishawaka MSA,2023,521110,Monetary Authorities–Central Bank,2,2,
+2,1,    521 - Central Bank,,,18,000,00000,Indiana,2023,521110,Monetary Authorities–Central Bank,2,2,26.6461538462
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522110,Commercial Banking,2,2,46.7384615385
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522130,Credit Unions,2,2,21.3846153846
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,25.0461538462
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522210,Credit Card Issuing,2,2,51.6307692308
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522220,Sales Financing,2,2,38.3692307692
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522291,Consumer Lending,2,2,19.0461538462
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522292,Real Estate Credit,2,2,28.4923076923
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,32.9538461538
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,39.0769230769
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,43.2923076923
+2,2,    522 - Credit Intermediation,,,0,000,00000,United States,2023,522390,Other Activities Related to Credit Intermediation,2,2,18.5538461538
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522110,Commercial Banking,2,2,28.3692307692
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522130,Credit Unions,2,2,28.4923076923
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,19.2
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522210,Credit Card Issuing,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522220,Sales Financing,2,2,19.0
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522291,Consumer Lending,2,2,17.0461538462
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522292,Real Estate Credit,2,2,20.1923076923
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,13.3538461538
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,48.1230769231
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,25.0461538462
+2,2,    522 - Credit Intermediation,,,00,000,14020,Bloomington MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,48.0
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522110,Commercial Banking,2,2,44.2769230769
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522130,Credit Unions,2,2,20.8615384615
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,34.8923076923
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522210,Credit Card Issuing,2,2,57.2923076923
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522220,Sales Financing,2,2,48.1846153846
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522291,Consumer Lending,2,2,17.1692307692
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522292,Real Estate Credit,2,2,25.1692307692
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,21.6
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,31.2
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,56.3076923077
+2,2,    522 - Credit Intermediation,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,27.8769230769
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522110,Commercial Banking,2,2,40.0615384615
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522130,Credit Unions,2,2,18.1538461538
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,17.0461538462
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522210,Credit Card Issuing,2,2,29.9076923077
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522220,Sales Financing,2,2,61.4769230769
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522291,Consumer Lending,2,2,14.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522292,Real Estate Credit,2,2,28.8615384615
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,13.9692307692
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,48.1846153846
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,46.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,17140,Cincinnati MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,17.5384615385
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522110,Commercial Banking,2,2,12.0
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522130,Credit Unions,2,2,23.0769230769
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522210,Credit Card Issuing,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522291,Consumer Lending,2,2,9.61538461538
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,11.3846153846
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,21.1076923077
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,12.0
+2,2,    522 - Credit Intermediation,,,00,000,18020,Columbus MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522110,Commercial Banking,2,2,20.4923076923
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522130,Credit Unions,2,2,15.2307692308
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,11.5
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522220,Sales Financing,2,2,16.0615384615
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522291,Consumer Lending,2,2,31.8769230769
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522292,Real Estate Credit,2,2,11.0
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,19.0153846154
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,83.9384615385
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,17.0461538462
+2,2,    522 - Credit Intermediation,,,00,000,21140,Elkhart-Goshen MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,16.6394230769
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522110,Commercial Banking,2,2,31.0769230769
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522130,Credit Unions,2,2,16.5538461538
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,32.1846153846
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522210,Credit Card Issuing,2,2,26.1466346154
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522220,Sales Financing,2,2,25.0
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522291,Consumer Lending,2,2,21.4769230769
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522292,Real Estate Credit,2,2,37.8461538462
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,14.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,75.2615384615
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,29.9692307692
+2,2,    522 - Credit Intermediation,,,00,000,21780,Evansville MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,16.0615384615
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522110,Commercial Banking,2,2,21.3538461538
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522130,Credit Unions,2,2,18.5230769231
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,32.6769230769
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522210,Credit Card Issuing,2,2,24.0384615385
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522220,Sales Financing,2,2,28.8615384615
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522291,Consumer Lending,2,2,20.0
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522292,Real Estate Credit,2,2,23.0769230769
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,26.0307692308
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,84.1230769231
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,21.4769230769
+2,2,    522 - Credit Intermediation,,,00,000,23060,Fort Wayne MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,16.0615384615
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522110,Commercial Banking,2,2,36.1230769231
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522130,Credit Unions,2,2,17.5384615385
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,43.4461538462
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522210,Credit Card Issuing,2,2,46.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522220,Sales Financing,2,2,19.5076923077
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522291,Consumer Lending,2,2,16.6769230769
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522292,Real Estate Credit,2,2,33.6615384615
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,23.3230769231
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,28.3692307692
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,18.8923076923
+2,2,    522 - Credit Intermediation,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,25.2923076923
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522110,Commercial Banking,2,2,22.0307692308
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522130,Credit Unions,2,2,18.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522220,Sales Financing,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522291,Consumer Lending,2,2,16.5538461538
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522292,Real Estate Credit,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,15.2
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,14.4615384615
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,14.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,29020,Kokomo MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,15.0
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522110,Commercial Banking,2,2,23.9384615385
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522130,Credit Unions,2,2,20.2461538462
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,50.0
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522210,Credit Card Issuing,2,2,26.7009615385
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522220,Sales Financing,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522291,Consumer Lending,2,2,19.8769230769
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522292,Real Estate Credit,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,43.2692307692
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,70.9134615385
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,14.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,29200,Lafayette-West Lafayette MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,48.0769230769
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522110,Commercial Banking,2,2,20.9846153846
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522130,Credit Unions,2,2,18.0307692308
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,14.8923076923
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522210,Credit Card Issuing,2,2,46.4615384615
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522220,Sales Financing,2,2,23.8153846154
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522291,Consumer Lending,2,2,15.2
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522292,Real Estate Credit,2,2,26.8923076923
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,19.7538461538
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,52.3692307692
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,21.4769230769
+2,2,    522 - Credit Intermediation,,,00,000,31140,Louisville/Jefferson County MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,21.4769230769
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522110,Commercial Banking,2,2,19.0153846154
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522130,Credit Unions,2,2,14.9538461538
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522210,Credit Card Issuing,2,2,18.2225961538
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522220,Sales Financing,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522291,Consumer Lending,2,2,19.0153846154
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522292,Real Estate Credit,2,2,120.192307692
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,16.0
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,105.723076923
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,40.9846153846
+2,2,    522 - Credit Intermediation,,,00,000,33140,Michigan City-La Porte MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522110,Commercial Banking,2,2,24.4307692308
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522130,Credit Unions,2,2,13.9692307692
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,16.4307692308
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522220,Sales Financing,2,2,58.7692307692
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522291,Consumer Lending,2,2,13.0153846154
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522292,Real Estate Credit,2,2,19.4913461538
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,14.4615384615
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,13.2201923077
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,22.4615384615
+2,2,    522 - Credit Intermediation,,,00,000,34620,Muncie MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,17.0461538462
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522110,Commercial Banking,2,2,67.8769230769
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522130,Credit Unions,2,2,18.1538461538
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,33.1692307692
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522210,Credit Card Issuing,2,2,55.9134615385
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522220,Sales Financing,2,2,25.5384615385
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522291,Consumer Lending,2,2,16.307692307700002
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522292,Real Estate Credit,2,2,21.5384615385
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,30.3384615385
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,84.1230769231
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,16.0615384615
+2,2,    522 - Credit Intermediation,,,00,000,43780,South Bend-Mishawaka MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,16.307692307700002
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522110,Commercial Banking,2,2,24.6769230769
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522130,Credit Unions,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,13.0
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522210,Credit Card Issuing,2,2,13.2759615385
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522220,Sales Financing,2,2,
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522291,Consumer Lending,2,2,17.2923076923
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522292,Real Estate Credit,2,2,27.1634615385
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,14.4615384615
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,15.0
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,25.0461538462
+2,2,    522 - Credit Intermediation,,,00,000,45460,Terre Haute MSA,2023,522390,Other Activities Related to Credit Intermediation,2,2,15.0
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522110,Commercial Banking,2,2,27.6615384615
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522130,Credit Unions,2,2,18.0615384615
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522180,Savings Institutions and Other Depository Credit Intermediation,2,2,23.9384615385
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522210,Credit Card Issuing,2,2,46.4615384615
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522220,Sales Financing,2,2,22.4615384615
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522291,Consumer Lending,2,2,16.9538461538
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522292,Real Estate Credit,2,2,31.6923076923
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522299,"International, Secondary Market, and All Other Nondepository Credit Intermediation",2,2,22.4615384615
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522310,Mortgage and Nonmortgage Loan Brokers,2,2,38.5846153846
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",2,2,19.0153846154
+2,2,    522 - Credit Intermediation,,,18,000,00000,Indiana,2023,522390,Other Activities Related to Credit Intermediation,2,2,19.5076923077
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523150,Investment Banking and Securities Intermediation,2,2,48.2153846154
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523160,Commodity Contracts Intermediation,2,2,26.5230769231
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523210,Securities and Commodity Exchanges,2,2,52.615384615400004
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523910,Miscellaneous Intermediation,2,2,26.5538461538
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523940,Portfolio Management and Investment Advice,2,2,33.6923076923
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,24.0615384615
+2,3,    523 - Securities and Investments,,,0,000,00000,United States,2023,523999,Miscellaneous Financial Investment Activities,2,2,43.2923076923
+2,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,21.1076923077
+2,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,523210,Securities and Commodity Exchanges,2,2,
+2,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,523910,Miscellaneous Intermediation,2,2,
+2,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,523940,Portfolio Management and Investment Advice,2,2,33.6923076923
+2,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,15.8153846154
+2,3,    523 - Securities and Investments,,,00,000,14020,Bloomington MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,17.4769230769
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,59.0153846154
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523160,Commodity Contracts Intermediation,2,2,48.1846153846
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523210,Securities and Commodity Exchanges,2,2,60.1846153846
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523910,Miscellaneous Intermediation,2,2,28.3692307692
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523940,Portfolio Management and Investment Advice,2,2,31.2
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,26.4
+2,3,    523 - Securities and Investments,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,36.1230769231
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,30.0923076923
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523160,Commodity Contracts Intermediation,2,2,18.0
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523210,Securities and Commodity Exchanges,2,2,19.9384615385
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523910,Miscellaneous Intermediation,2,2,17.0461538462
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523940,Portfolio Management and Investment Advice,2,2,31.2
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,21.5384615385
+2,3,    523 - Securities and Investments,,,00,000,17140,Cincinnati MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,38.5846153846
+2,3,    523 - Securities and Investments,,,00,000,18020,Columbus MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,28.8
+2,3,    523 - Securities and Investments,,,00,000,18020,Columbus MSA,2023,523940,Portfolio Management and Investment Advice,2,2,24.0615384615
+2,3,    523 - Securities and Investments,,,00,000,18020,Columbus MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,
+2,3,    523 - Securities and Investments,,,00,000,18020,Columbus MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,
+2,3,    523 - Securities and Investments,,,00,000,21140,Elkhart-Goshen MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,20.7384615385
+2,3,    523 - Securities and Investments,,,00,000,21140,Elkhart-Goshen MSA,2023,523210,Securities and Commodity Exchanges,2,2,
+2,3,    523 - Securities and Investments,,,00,000,21140,Elkhart-Goshen MSA,2023,523910,Miscellaneous Intermediation,2,2,20.0
+2,3,    523 - Securities and Investments,,,00,000,21140,Elkhart-Goshen MSA,2023,523940,Portfolio Management and Investment Advice,2,2,33.6615384615
+2,3,    523 - Securities and Investments,,,00,000,21140,Elkhart-Goshen MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,
+2,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,27.3846153846
+2,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,523160,Commodity Contracts Intermediation,2,2,
+2,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,523210,Securities and Commodity Exchanges,2,2,
+2,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,523910,Miscellaneous Intermediation,2,2,50.4807692308
+2,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,523940,Portfolio Management and Investment Advice,2,2,42.0307692308
+2,3,    523 - Securities and Investments,,,00,000,21780,Evansville MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,15.0
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,32.4307692308
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523160,Commodity Contracts Intermediation,2,2,
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523210,Securities and Commodity Exchanges,2,2,29.0461538462
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523910,Miscellaneous Intermediation,2,2,20.4923076923
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523940,Portfolio Management and Investment Advice,2,2,36.1230769231
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,36.0615384615
+2,3,    523 - Securities and Investments,,,00,000,23060,Fort Wayne MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,18.5230769231
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,25.7846153846
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523160,Commodity Contracts Intermediation,2,2,43.2
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523210,Securities and Commodity Exchanges,2,2,24.4923076923
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523910,Miscellaneous Intermediation,2,2,19.0153846154
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523940,Portfolio Management and Investment Advice,2,2,33.6615384615
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,19.9384615385
+2,3,    523 - Securities and Investments,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,29.9692307692
+2,3,    523 - Securities and Investments,,,00,000,29020,Kokomo MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,34.8557692308
+2,3,    523 - Securities and Investments,,,00,000,29020,Kokomo MSA,2023,523940,Portfolio Management and Investment Advice,2,2,25.2923076923
+2,3,    523 - Securities and Investments,,,00,000,29200,Lafayette-West Lafayette MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,20.7384615385
+2,3,    523 - Securities and Investments,,,00,000,29200,Lafayette-West Lafayette MSA,2023,523910,Miscellaneous Intermediation,2,2,
+2,3,    523 - Securities and Investments,,,00,000,29200,Lafayette-West Lafayette MSA,2023,523940,Portfolio Management and Investment Advice,2,2,24.0
+2,3,    523 - Securities and Investments,,,00,000,29200,Lafayette-West Lafayette MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,22.4615384615
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523160,Commodity Contracts Intermediation,2,2,36.0615384615
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523210,Securities and Commodity Exchanges,2,2,26.3384615385
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523910,Miscellaneous Intermediation,2,2,20.0
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523940,Portfolio Management and Investment Advice,2,2,34.8923076923
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,
+2,3,    523 - Securities and Investments,,,00,000,31140,Louisville/Jefferson County MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,27.9384615385
+2,3,    523 - Securities and Investments,,,00,000,33140,Michigan City-La Porte MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,18.7076923077
+2,3,    523 - Securities and Investments,,,00,000,33140,Michigan City-La Porte MSA,2023,523940,Portfolio Management and Investment Advice,2,2,17.0461538462
+2,3,    523 - Securities and Investments,,,00,000,33140,Michigan City-La Porte MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,
+2,3,    523 - Securities and Investments,,,00,000,34620,Muncie MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,20.0
+2,3,    523 - Securities and Investments,,,00,000,34620,Muncie MSA,2023,523940,Portfolio Management and Investment Advice,2,2,24.0923076923
+2,3,    523 - Securities and Investments,,,00,000,34620,Muncie MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,
+2,3,    523 - Securities and Investments,,,00,000,34620,Muncie MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,18.0307692308
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,22.0923076923
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523160,Commodity Contracts Intermediation,2,2,
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523210,Securities and Commodity Exchanges,2,2,
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523910,Miscellaneous Intermediation,2,2,16.9846153846
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523940,Portfolio Management and Investment Advice,2,2,33.6615384615
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,16.5
+2,3,    523 - Securities and Investments,,,00,000,43780,South Bend-Mishawaka MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,19.0153846154
+2,3,    523 - Securities and Investments,,,00,000,45460,Terre Haute MSA,2023,523150,Investment Banking and Securities Intermediation,2,2,42.0307692308
+2,3,    523 - Securities and Investments,,,00,000,45460,Terre Haute MSA,2023,523210,Securities and Commodity Exchanges,2,2,
+2,3,    523 - Securities and Investments,,,00,000,45460,Terre Haute MSA,2023,523910,Miscellaneous Intermediation,2,2,
+2,3,    523 - Securities and Investments,,,00,000,45460,Terre Haute MSA,2023,523940,Portfolio Management and Investment Advice,2,2,24.0615384615
+2,3,    523 - Securities and Investments,,,00,000,45460,Terre Haute MSA,2023,523999,Miscellaneous Financial Investment Activities,2,2,31.0
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523150,Investment Banking and Securities Intermediation,2,2,25.7846153846
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523160,Commodity Contracts Intermediation,2,2,25.2923076923
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523210,Securities and Commodity Exchanges,2,2,22.8307692308
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523910,Miscellaneous Intermediation,2,2,20.0
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523940,Portfolio Management and Investment Advice,2,2,31.2307692308
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523991,"Trust, Fiduciary, and Custody Activities",2,2,20.0
+2,3,    523 - Securities and Investments,,,18,000,00000,Indiana,2023,523999,Miscellaneous Financial Investment Activities,2,2,22.4615384615
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524113,Direct Life Insurance Carriers,2,2,44.2769230769
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524114,Direct Health and Medical Insurance Carriers,2,2,46.0
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,31.7230769231
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524127,Direct Title Insurance Carriers,2,2,31.9384615385
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,39.1076923077
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524130,Reinsurance Carriers,2,2,40.5846153846
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524210,Insurance Agencies and Brokerages,2,2,34.9230769231
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524291,Claims Adjusting,2,2,32.4615384615
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,32.7076923077
+2,4,    524 - Insurance,,,0,000,00000,United States,2023,524298,All Other Insurance Related Activities,2,2,35.1384615385
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524113,Direct Life Insurance Carriers,2,2,38.5846153846
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,40.5538461538
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,24.5538461538
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,24.0384615385
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524210,Insurance Agencies and Brokerages,2,2,33.6615384615
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524291,Claims Adjusting,2,2,24.7384615385
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,
+2,4,    524 - Insurance,,,00,000,14020,Bloomington MSA,2023,524298,All Other Insurance Related Activities,2,2,33.6
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524113,Direct Life Insurance Carriers,2,2,48.1846153846
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,50.1538461538
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,28.8615384615
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524127,Direct Title Insurance Carriers,2,2,38.0923076923
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,47.9384615385
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524130,Reinsurance Carriers,2,2,56.5538461538
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524210,Insurance Agencies and Brokerages,2,2,38.5846153846
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524291,Claims Adjusting,2,2,31.2
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,25.9076923077
+2,4,    524 - Insurance,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,524298,All Other Insurance Related Activities,2,2,43.0153846154
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524113,Direct Life Insurance Carriers,2,2,37.6
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,47.4461538462
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,24.0615384615
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524127,Direct Title Insurance Carriers,2,2,30.4615384615
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,19.0153846154
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524130,Reinsurance Carriers,2,2,22.5
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524210,Insurance Agencies and Brokerages,2,2,33.6615384615
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524291,Claims Adjusting,2,2,31.2
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,20.9846153846
+2,4,    524 - Insurance,,,00,000,17140,Cincinnati MSA,2023,524298,All Other Insurance Related Activities,2,2,32.4307692308
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524113,Direct Life Insurance Carriers,2,2,43.5076923077
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,40.0615384615
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,27.2615384615
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,24.0384615385
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524210,Insurance Agencies and Brokerages,2,2,38.5846153846
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524291,Claims Adjusting,2,2,
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,17.7846153846
+2,4,    524 - Insurance,,,00,000,18020,Columbus MSA,2023,524298,All Other Insurance Related Activities,2,2,37.2100961538
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524113,Direct Life Insurance Carriers,2,2,34.8923076923
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,40.4923076923
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,19.2615384615
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524210,Insurance Agencies and Brokerages,2,2,38.5846153846
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524291,Claims Adjusting,2,2,33.9076923077
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,16.8269230769
+2,4,    524 - Insurance,,,00,000,21140,Elkhart-Goshen MSA,2023,524298,All Other Insurance Related Activities,2,2,22.4615384615
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524113,Direct Life Insurance Carriers,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,58.0307692308
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,26.4
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,62.4
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524210,Insurance Agencies and Brokerages,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524291,Claims Adjusting,2,2,26.4
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,58.1706730769
+2,4,    524 - Insurance,,,00,000,21780,Evansville MSA,2023,524298,All Other Insurance Related Activities,2,2,20.4307692308
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524113,Direct Life Insurance Carriers,2,2,46.7076923077
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,64.4307692308
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,24.0923076923
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524127,Direct Title Insurance Carriers,2,2,22.4
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,22.2153846154
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524130,Reinsurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524210,Insurance Agencies and Brokerages,2,2,39.8153846154
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524291,Claims Adjusting,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,58.1706730769
+2,4,    524 - Insurance,,,00,000,23060,Fort Wayne MSA,2023,524298,All Other Insurance Related Activities,2,2,28.8615384615
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524113,Direct Life Insurance Carriers,2,2,42.7692307692
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,49.4153846154
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,31.2
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524127,Direct Title Insurance Carriers,2,2,20.4923076923
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,33.9076923077
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524130,Reinsurance Carriers,2,2,53.5384615385
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524210,Insurance Agencies and Brokerages,2,2,32.4307692308
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524291,Claims Adjusting,2,2,31.6923076923
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,30.0307692308
+2,4,    524 - Insurance,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,524298,All Other Insurance Related Activities,2,2,27.0153846154
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524113,Direct Life Insurance Carriers,2,2,42.7076923077
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,60.1846153846
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,24.0
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524210,Insurance Agencies and Brokerages,2,2,43.7538461538
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524291,Claims Adjusting,2,2,31.2
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,
+2,4,    524 - Insurance,,,00,000,29020,Kokomo MSA,2023,524298,All Other Insurance Related Activities,2,2,17.5
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524113,Direct Life Insurance Carriers,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,42.2153846154
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,27.0153846154
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,15.5
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524130,Reinsurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524210,Insurance Agencies and Brokerages,2,2,42.0307692308
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524291,Claims Adjusting,2,2,31.25
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,
+2,4,    524 - Insurance,,,00,000,29200,Lafayette-West Lafayette MSA,2023,524298,All Other Insurance Related Activities,2,2,17.5384615385
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524113,Direct Life Insurance Carriers,2,2,36.615384615400004
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,46.4615384615
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,24.0615384615
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524127,Direct Title Insurance Carriers,2,2,27.6307692308
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,21.6
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524130,Reinsurance Carriers,2,2,45.4326923077
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524210,Insurance Agencies and Brokerages,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524291,Claims Adjusting,2,2,32.4307692308
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,54.5230769231
+2,4,    524 - Insurance,,,00,000,31140,Louisville/Jefferson County MSA,2023,524298,All Other Insurance Related Activities,2,2,25.2923076923
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524113,Direct Life Insurance Carriers,2,2,35.8153846154
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,62.9538461538
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,19.5076923077
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,23.5076923077
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524210,Insurance Agencies and Brokerages,2,2,34.8923076923
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524291,Claims Adjusting,2,2,33.9076923077
+2,4,    524 - Insurance,,,00,000,33140,Michigan City-La Porte MSA,2023,524298,All Other Insurance Related Activities,2,2,24.1230769231
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524113,Direct Life Insurance Carriers,2,2,48.1846153846
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,32.8615384615
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,28.3692307692
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524210,Insurance Agencies and Brokerages,2,2,33.6615384615
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524291,Claims Adjusting,2,2,44.6
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,40.625
+2,4,    524 - Insurance,,,00,000,34620,Muncie MSA,2023,524298,All Other Insurance Related Activities,2,2,12.9528846154
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524113,Direct Life Insurance Carriers,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,26.4
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524127,Direct Title Insurance Carriers,2,2,
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,15.4461538462
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524130,Reinsurance Carriers,2,2,26.2980769231
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524210,Insurance Agencies and Brokerages,2,2,41.0461538462
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524291,Claims Adjusting,2,2,31.2
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,58.1706730769
+2,4,    524 - Insurance,,,00,000,43780,South Bend-Mishawaka MSA,2023,524298,All Other Insurance Related Activities,2,2,29.3538461538
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524113,Direct Life Insurance Carriers,2,2,36.1230769231
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524114,Direct Health and Medical Insurance Carriers,2,2,40.0
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,21.6
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,21.6346153846
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524210,Insurance Agencies and Brokerages,2,2,41.0461538462
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524291,Claims Adjusting,2,2,11.5384615385
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,12.3447115385
+2,4,    524 - Insurance,,,00,000,45460,Terre Haute MSA,2023,524298,All Other Insurance Related Activities,2,2,26.0
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524113,Direct Life Insurance Carriers,2,2,43.0153846154
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524114,Direct Health and Medical Insurance Carriers,2,2,48.4307692308
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524126,Direct Property and Casualty Insurance Carriers,2,2,27.0461538462
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524127,Direct Title Insurance Carriers,2,2,21.6
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",2,2,33.4153846154
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524130,Reinsurance Carriers,2,2,53.5384615385
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524210,Insurance Agencies and Brokerages,2,2,34.9230769231
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524291,Claims Adjusting,2,2,33.1692307692
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524292,Third-Party Administration of Insurance and Pension Funds,2,2,30.0923076923
+2,4,    524 - Insurance,,,18,000,00000,Indiana,2023,524298,All Other Insurance Related Activities,2,2,26.1538461538
+2,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,525110,Pension Funds,2,2,41.0461538462
+2,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,525120,Health and Welfare Funds,2,2,23.8153846154
+2,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,525190,Other Insurance Funds,2,2,26.0307692308
+2,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,525910,Open-End Investment Funds,2,2,52.3692307692
+2,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,27.6307692308
+2,5,    525 - Funds and Trusts,,,0,000,00000,United States,2023,525990,Other Financial Vehicles,2,2,28.8615384615
+2,5,    525 - Funds and Trusts,,,00,000,14020,Bloomington MSA,2023,525120,Health and Welfare Funds,2,2,20.0
+2,5,    525 - Funds and Trusts,,,00,000,14020,Bloomington MSA,2023,525910,Open-End Investment Funds,2,2,57.5
+2,5,    525 - Funds and Trusts,,,00,000,14020,Bloomington MSA,2023,525990,Other Financial Vehicles,2,2,37.0
+2,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,525110,Pension Funds,2,2,33.3538461538
+2,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,525120,Health and Welfare Funds,2,2,16.8615384615
+2,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,525190,Other Insurance Funds,2,2,23.6923076923
+2,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,525910,Open-End Investment Funds,2,2,48.1846153846
+2,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,40.9846153846
+2,5,    525 - Funds and Trusts,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,525990,Other Financial Vehicles,2,2,32.1846153846
+2,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,525110,Pension Funds,2,2,19.0153846154
+2,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,525120,Health and Welfare Funds,2,2,21.0379807692
+2,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,525190,Other Insurance Funds,2,2,27.5692307692
+2,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,525910,Open-End Investment Funds,2,2,68.8
+2,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,16.0615384615
+2,5,    525 - Funds and Trusts,,,00,000,17140,Cincinnati MSA,2023,525990,Other Financial Vehicles,2,2,21.6
+2,5,    525 - Funds and Trusts,,,00,000,18020,Columbus MSA,2023,525910,Open-End Investment Funds,2,2,50.2153846154
+2,5,    525 - Funds and Trusts,,,00,000,21140,Elkhart-Goshen MSA,2023,525190,Other Insurance Funds,2,2,18.4355769231
+2,5,    525 - Funds and Trusts,,,00,000,21140,Elkhart-Goshen MSA,2023,525910,Open-End Investment Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,21140,Elkhart-Goshen MSA,2023,525990,Other Financial Vehicles,2,2,16.6389423077
+2,5,    525 - Funds and Trusts,,,00,000,21780,Evansville MSA,2023,525120,Health and Welfare Funds,2,2,16.307692307700002
+2,5,    525 - Funds and Trusts,,,00,000,21780,Evansville MSA,2023,525190,Other Insurance Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,21780,Evansville MSA,2023,525910,Open-End Investment Funds,2,2,87.5
+2,5,    525 - Funds and Trusts,,,00,000,21780,Evansville MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,17.5
+2,5,    525 - Funds and Trusts,,,00,000,21780,Evansville MSA,2023,525990,Other Financial Vehicles,2,2,16.2394230769
+2,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,525110,Pension Funds,2,2,14.5
+2,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,525120,Health and Welfare Funds,2,2,18.5
+2,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,525190,Other Insurance Funds,2,2,24.0384615385
+2,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,525910,Open-End Investment Funds,2,2,55.3230769231
+2,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,16.8269230769
+2,5,    525 - Funds and Trusts,,,00,000,23060,Fort Wayne MSA,2023,525990,Other Financial Vehicles,2,2,27.0153846154
+2,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,525110,Pension Funds,2,2,44.4923076923
+2,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,525120,Health and Welfare Funds,2,2,16.0615384615
+2,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,525190,Other Insurance Funds,2,2,24.0615384615
+2,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,525910,Open-End Investment Funds,2,2,54.0307692308
+2,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,14.9538461538
+2,5,    525 - Funds and Trusts,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,525990,Other Financial Vehicles,2,2,30.0923076923
+2,5,    525 - Funds and Trusts,,,00,000,29020,Kokomo MSA,2023,525910,Open-End Investment Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,29200,Lafayette-West Lafayette MSA,2023,525190,Other Insurance Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,29200,Lafayette-West Lafayette MSA,2023,525910,Open-End Investment Funds,2,2,51.5692307692
+2,5,    525 - Funds and Trusts,,,00,000,29200,Lafayette-West Lafayette MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,
+2,5,    525 - Funds and Trusts,,,00,000,29200,Lafayette-West Lafayette MSA,2023,525990,Other Financial Vehicles,2,2,14.4230769231
+2,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,525110,Pension Funds,2,2,40.9846153846
+2,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,525120,Health and Welfare Funds,2,2,56.25
+2,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,525190,Other Insurance Funds,2,2,27.5692307692
+2,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,525910,Open-End Investment Funds,2,2,47.4461538462
+2,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,36.0615384615
+2,5,    525 - Funds and Trusts,,,00,000,31140,Louisville/Jefferson County MSA,2023,525990,Other Financial Vehicles,2,2,17.4153846154
+2,5,    525 - Funds and Trusts,,,00,000,33140,Michigan City-La Porte MSA,2023,525910,Open-End Investment Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,33140,Michigan City-La Porte MSA,2023,525990,Other Financial Vehicles,2,2,14.4230769231
+2,5,    525 - Funds and Trusts,,,00,000,34620,Muncie MSA,2023,525190,Other Insurance Funds,2,2,41.8269230769
+2,5,    525 - Funds and Trusts,,,00,000,34620,Muncie MSA,2023,525910,Open-End Investment Funds,2,2,51.5692307692
+2,5,    525 - Funds and Trusts,,,00,000,34620,Muncie MSA,2023,525990,Other Financial Vehicles,2,2,14.4230769231
+2,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,525110,Pension Funds,2,2,22.0
+2,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,525120,Health and Welfare Funds,2,2,20.8692307692
+2,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,525190,Other Insurance Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,525910,Open-End Investment Funds,2,2,15.6923076923
+2,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,
+2,5,    525 - Funds and Trusts,,,00,000,43780,South Bend-Mishawaka MSA,2023,525990,Other Financial Vehicles,2,2,14.4230769231
+2,5,    525 - Funds and Trusts,,,00,000,45460,Terre Haute MSA,2023,525120,Health and Welfare Funds,2,2,
+2,5,    525 - Funds and Trusts,,,00,000,45460,Terre Haute MSA,2023,525190,Other Insurance Funds,2,2,24.0384615385
+2,5,    525 - Funds and Trusts,,,00,000,45460,Terre Haute MSA,2023,525910,Open-End Investment Funds,2,2,103.365384615
+2,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,525110,Pension Funds,2,2,44.4923076923
+2,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,525120,Health and Welfare Funds,2,2,16.4307692308
+2,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,525190,Other Insurance Funds,2,2,24.0615384615
+2,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,525910,Open-End Investment Funds,2,2,54.0923076923
+2,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,525920,"Trusts, Estates, and Agency Accounts",2,2,18.7692307692
+2,5,    525 - Funds and Trusts,,,18,000,00000,Indiana,2023,525990,Other Financial Vehicles,2,2,26.4

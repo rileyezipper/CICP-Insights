@@ -1,0 +1,558 @@
+################################################################################
+# CICP ESTABLISHMENT GROWTH ANALYSIS - DOCUMENTATION
+# 
+# This document explains what the script does at each step.
+#
+# 
+# Last Updated: November 2025
+################################################################################
+
+================================================================================
+0. CONFIGURATION
+================================================================================
+
+Sets key parameters:
+- estab_recent_year = 2022 (most recent year of data)
+- Used throughout for filtering to current year
+- Update annually when new data available
+
+================================================================================
+1. DATA LOADING AND INITIAL STRUCTURE
+================================================================================
+
+SOURCE FILE:
+"Estab Growth by Initiative.xlsx" from IBRC Longitudinal Database (LDB)
+
+PROCESSING STEPS:
+
+1. Load Excel file
+2. Clean column names (janitor::clean_names)
+3. Recode initiative names:
+   - "Advanced Industries" → "Advanced & Traded Industries"
+   - "All Indiana" → "Total"
+4. Create calculated variables:
+   - establishment_age = reporting_yr - cohort_year
+   - is_true_startup = (new_est_type == 1)
+5. Filter out new_est_type == 5 (Not Qualified - Not Verified Indiana)
+
+ESTABLISHMENT TYPE DEFINITIONS:
+
+Type 1: "Qualified New - 1-20 or fewer Employees at start" (TRUE STARTUPS)
+Type 2: "Qualified - 21-50 Employees at start"
+Type 3: "Qualified - 51-100 Employees at start"  
+Type 4: "Qualified - 101+ Employees at start"
+Type 5: "Not Qualified - Not Verified Indiana" (EXCLUDED)
+
+KEY CONCEPTS:
+
+Cohort Year: Year of first positive employment (birth year)
+Reporting Year: Year data is being reported for
+Establishment Age: reporting_yr - cohort_year
+
+SECTOR STRUCTURE:
+- All initiatives have sector-level detail (not just Advanced & Traded)
+- Each establishment appears in ONE sector per initiative
+- NO "All" summary rows exist alongside sector detail
+- Therefore: Summing all sectors = initiative total (no double-counting)
+
+Sector counts by initiative:
+- Advanced & Traded: 1 sector (2017-2021), 3 sectors (2022)
+- AgriNovus: 6 sectors
+- BioX: 5 sectors
+- Conexus: 2 sectors
+- TechPoint: 7 sectors (2017-2021), 4 sectors (2022)
+- Other: 29-32 NAICS codes
+- Total: NULL
+
+================================================================================
+2. DATA PREPARATION - CALCULATE ANNUAL METRICS
+================================================================================
+
+Creates three annual metrics from monthly/quarterly data:
+
+1. annual_employment
+   - Average of 12 monthly employment_adjusted values
+   - rowMeans(month_1 through month_12)
+
+2. annual_wages  
+   - Sum of 4 quarterly wages_adjusted values
+   - q1 + q2 + q3 + q4
+
+3. avg_annual_wage
+   - annual_wages / annual_employment
+   - Set to NA if annual_employment = 0
+
+ADJUSTED VALUES:
+- Account for NAICS proportion adjustments
+- Apply mainly to 2017 NAICS definitions
+- 2022+ generally not adjusted
+
+================================================================================
+3. DATA QUALITY AND SUMMARY STATISTICS
+================================================================================
+
+Produces summary tables showing:
+
+1. Missing values: Count and % for key columns
+2. Year ranges: Min/max cohort_year and reporting_yr
+3. Initiative distribution: Record counts by initiative
+4. Geographic distribution: Counts by EGR, MSA, County
+5. Sector distribution: Unique sector names
+6. Establishment type distribution: Counts by new_est_type
+
+Purpose: Verify data integrity before analysis
+
+================================================================================
+4. KEY METRICS BY INITIATIVE (STATEWIDE)
+================================================================================
+
+FILTER: reporting_yr == most_recent_year (2022)
+AGGREGATION: Sum all sectors by initiative (no sector filtering)
+
+METRICS CALCULATED:
+
+For each initiative:
+- Total_Establishments = sum(est_count_adjusted)
+- Total_Employment = sum(annual_employment)
+- Total_Wages = sum(annual_wages)
+- Avg_Wage = weighted.mean(avg_annual_wage, weights = annual_employment)
+- Counties = n_distinct(county_desc)
+- Pct_of_Total_Estabs = initiative / total * 100
+- Pct_of_Total_Employment = initiative / total * 100
+
+OUTPUT: Single row per initiative for most recent year
+
+================================================================================
+4B. KEY METRICS BY GEOGRAPHY, INITIATIVE, AND SECTOR
+================================================================================
+
+Same metrics as Section 4, but with sector detail preserved.
+
+THREE TABLES CREATED:
+
+1. Statewide by initiative × init_sect × sector
+   - Groups by: cicp_initiative, cicp_init_sect, sector_name
+   
+2. EGR by initiative × init_sect × sector
+   - Groups by: egr, cicp_initiative, cicp_init_sect, sector_name
+   
+3. MSA by initiative × init_sect × sector
+   - Groups by: msa, cicp_initiative, cicp_init_sect, sector_name
+
+All three calculate same metrics as Section 4.
+Difference: Preserves sector-level detail instead of aggregating.
+
+================================================================================
+5. COHORT ANALYSIS - NEW ESTABLISHMENT TRENDS
+================================================================================
+
+FILTER: cohort_year == reporting_yr (birth year only)
+AGGREGATION: Sum all sectors by cohort_year × initiative
+
+METRICS:
+
+For each cohort year × initiative:
+- New_Establishments = sum(est_count_adjusted)
+- Initial_Employment = sum(annual_employment)
+- Initial_Wages = sum(annual_wages)
+
+ADDITIONAL TABLE:
+
+Total by cohort year (excludes "Total" initiative to avoid double counting):
+- Total_New_Establishments = sum across all initiatives
+- Total_Initial_Employment = sum across all initiatives
+
+OUTPUT: Time series showing new establishment formation by year
+
+================================================================================
+6. SURVIVAL ANALYSIS - ESTABLISHMENT PERSISTENCE
+================================================================================
+
+METHODOLOGY:
+
+1. Calculate Years_Since_Start = reporting_yr - cohort_year
+2. Filter to Years_Since_Start >= 0
+3. Group by initiative × cohort_year × Years_Since_Start
+4. Sum establishments and employment
+5. For each cohort, calculate:
+   - Initial_Establishments = establishments at Year 0
+   - Survival_Rate = (establishments at Year X / Initial_Establishments) * 100
+
+AGGREGATE ACROSS COHORTS:
+
+For key milestones (Years 1, 3, 5, 10):
+- Calculate mean Survival_Rate across all cohorts
+- Count number of cohorts analyzed
+- Pivot wider to show one row per initiative
+
+OUTPUT: survival_milestones table with columns Year_1, Year_3, Year_5, Year_10
+
+NOTE: Data availability depends on cohort range. With 2018-2022 data:
+- Year 1: Available for 2018-2021 cohorts
+- Year 3: Available for 2018-2019 cohorts  
+- Year 5, 10: Not yet available
+
+================================================================================
+6B. SURVIVAL ANALYSIS - TRUE STARTUPS VS ALL QUALIFIED
+================================================================================
+
+Performs Section 6 analysis twice with different filters:
+
+TABLE 1: TRUE STARTUPS (Type 1 only)
+- Filter: new_est_type == 1
+- Same survival methodology as Section 6
+- Output: true_startup_milestones
+
+TABLE 2: ALL QUALIFIED (Types 1-4)
+- Filter: new_est_type %in% c(1, 2, 3, 4)
+- Same survival methodology as Section 6
+- Output: all_qualified_milestones
+
+COMPARISON TABLES:
+
+1. comparison_survival
+   - Combines both tables with Category column
+   - Side-by-side comparison
+
+2. survival_difference
+   - Calculates: TrueStartup_Year_X - AllQualified_Year_X
+   - Shows which group survives better
+   - Positive = true startups survive better
+   - Negative = larger establishments survive better
+
+3. Key findings summary
+   - If Year_5 available: reports average 5-year survival rates
+   - If not: reports Year_3 or best available
+   - Automatic interpretation based on difference
+
+EXPORTS: 6 CSV files with detailed and summary data
+
+================================================================================
+7. GEOGRAPHIC PATTERNS BY ECONOMIC GROWTH REGION
+================================================================================
+
+FILTER: reporting_yr == most_recent_year
+AGGREGATION: Sum all sectors by EGR × initiative
+
+METRICS:
+
+For each EGR × initiative:
+- Establishments = sum(est_count_adjusted)
+- Employment = sum(annual_employment)
+- Avg_Wage = weighted.mean(avg_annual_wage, weights = annual_employment)
+- Counties = n_distinct(county_desc)
+
+ADDITIONAL TABLE:
+
+EGR totals (using "Total" initiative only):
+- Total_Establishments
+- Total_Employment
+- Avg_Wage
+- Counties
+
+OUTPUT: Two tables showing EGR-level distribution
+
+================================================================================
+7B. GEOGRAPHIC PATTERNS BY MSA (METRO AREAS)
+================================================================================
+
+Same as Section 7 but for Metropolitan Statistical Areas.
+
+FILTER: reporting_yr == most_recent_year, msa not NULL/NA
+AGGREGATION: Sum all sectors by MSA × initiative
+
+METRICS: Same as Section 7
+
+OUTPUT: Two tables showing MSA-level distribution
+
+================================================================================
+8. GROWTH RATE CALCULATIONS (CAGR)
+================================================================================
+
+Calculates Compound Annual Growth Rate for new establishment formation.
+
+FORMULA:
+CAGR = [(Ending Value / Beginning Value)^(1 / Years)] - 1
+
+PROCESS:
+
+For each initiative (using new_estabs_by_year from Section 5):
+1. Identify first cohort year and new establishment count
+2. Identify last cohort year and new establishment count
+3. Calculate years between
+4. Apply CAGR formula
+5. Calculate Total_New_Over_Period (sum)
+
+OUTPUT: One row per initiative with:
+- First_Year, Last_Year
+- Initial_New_Estabs, Recent_New_Estabs
+- Years
+- CAGR (as percentage)
+- Total_New_Over_Period
+
+================================================================================
+8B. YEAR-OVER-YEAR ESTABLISHMENT GROWTH ANALYSIS
+================================================================================
+
+Measures annual changes in TOTAL establishment stock (not just new formations).
+
+PROCESS:
+
+1. Sum establishments by reporting_yr × initiative (all cohorts)
+2. Calculate employment by reporting_yr × initiative
+3. For each initiative:
+   - lag(Total_Establishments) = previous year
+   - YoY_Estab_Change = current - previous
+   - YoY_Estab_Pct_Change = (current / previous - 1) * 100
+   - Same for employment
+
+SUMMARY STATISTICS:
+
+For each initiative (excludes Total):
+- Years_Analyzed = count of years with data
+- Avg_Annual_Growth_Rate = mean(YoY_Estab_Pct_Change)
+- Median_Annual_Growth = median(YoY_Estab_Pct_Change)
+- Total_Growth_Period = (last / first - 1) * 100
+
+OUTPUT: Time series and summary tables
+
+================================================================================
+9. EMPLOYMENT CHARACTERISTICS OF NEW ESTABLISHMENTS
+================================================================================
+
+FILTER: cohort_year == reporting_yr (birth year only)
+AGGREGATION: Sum by initiative × cohort_year
+
+METRICS:
+
+For each initiative × cohort_year:
+- Total_New_Estabs = sum(est_count_adjusted)
+- Total_New_Employment = sum(annual_employment)
+- Avg_Initial_Employment = Total_New_Employment / Total_New_Estabs
+- Median_Initial_Wage = median(avg_annual_wage)
+
+AVERAGE ACROSS COHORTS:
+
+For each initiative:
+- Avg_Employees_Per_New_Estab = mean(Avg_Initial_Employment)
+- Avg_Starting_Wage = mean(Median_Initial_Wage)
+- Total_New_Jobs_Created = sum(Total_New_Employment)
+
+OUTPUT: Average characteristics per initiative
+
+================================================================================
+10. TOP COUNTIES FOR NEW ESTABLISHMENT ACTIVITY
+================================================================================
+
+FILTER:
+- cohort_year in last 5 years
+- cohort_year == reporting_yr (birth year only)
+- cicp_initiative == "Total"
+
+AGGREGATION: Sum by county
+
+METRICS:
+
+For each county:
+- New_Establishments = sum(est_count_adjusted)
+- New_Jobs = sum(annual_employment)
+- Avg_Wage = weighted.mean(avg_annual_wage, weights = annual_employment)
+- EGR = regional context
+
+RANKING: Sort by New_Establishments descending, take top 20
+
+OUTPUT: Top 20 counties for 5-year period
+
+================================================================================
+11. YEAR-OVER-YEAR CHANGES IN NEW ESTABLISHMENTS
+================================================================================
+
+Calculates annual changes in NEW establishment formation (not total stock).
+
+PROCESS:
+
+Using new_estabs_by_year from Section 5:
+1. For each initiative, sort by cohort_year
+2. lag(New_Establishments) = previous year's new formations
+3. YoY_Change = current - previous
+4. YoY_Pct_Change = (current / previous - 1) * 100
+
+FILTER FOR DISPLAY: Most recent 4 cohort years
+
+OUTPUT: Recent year-over-year changes table
+
+================================================================================
+12. SUMMARY STATISTICS FOR REPORT
+================================================================================
+
+Calculates high-level metrics for executive summaries:
+
+1. Total Establishments (Most Recent Year)
+   - Filter: reporting_yr == most_recent_year, cicp_initiative == "Total"
+   - sum(est_count_adjusted)
+
+2. Total Employment (Most Recent Year)
+   - Same filters
+   - sum(annual_employment)
+
+3. Counties Analyzed
+   - n_distinct(county_desc)
+
+4. Initiatives Tracked
+   - n_distinct(cicp_initiative) excluding "Total"
+
+5. Cohort Years Covered
+   - min to max cohort_year
+
+6. Reporting Years Covered
+   - min to max reporting_yr
+
+OUTPUT: Formatted summary statistics printed to console
+
+================================================================================
+13. DATA EXPORT FOR FURTHER ANALYSIS
+================================================================================
+
+Creates output directory: estab_output_{estab_recent_year}/
+
+EXPORTS 16 CSV FILES:
+
+INITIATIVE-LEVEL AGGREGATIONS (10 files):
+1. estab_initiative_summary.csv (Section 4)
+2. estab_new_by_year_initiative.csv (Section 5)
+3. estab_survival_rates.csv (Section 6)
+4. estab_egr_initiative_summary.csv (Section 7)
+5. estab_msa_initiative_summary.csv (Section 7B)
+6. estab_growth_rates.csv (Section 8)
+7. estab_yoy_growth.csv (Section 8B)
+8. survival_true_startups_detailed.csv (Section 6B)
+9. survival_all_qualified_detailed.csv (Section 6B)
+10. (top_counties not exported - displayed only)
+
+SECTOR-LEVEL DETAIL (3 files):
+11. estab_statewide_init_sect_sector.csv (Section 4B)
+12. estab_egr_init_sect_sector.csv (Section 4B)
+13. estab_msa_init_sect_sector.csv (Section 4B)
+
+SURVIVAL COMPARISON (6 files):
+14. survival_true_startups_milestones.csv
+15. survival_all_qualified_milestones.csv
+16. survival_comparison.csv
+17. survival_difference.csv
+(Plus 2 detailed files listed above)
+
+Note: Section 14 adds 5 more files (see below)
+
+================================================================================
+14. NEW ESTABLISHMENT TYPE AGGREGATIONS
+================================================================================
+
+Same metrics as earlier sections, but grouped by new_est_type.
+
+FOUR AGGREGATION LEVELS:
+
+14.1 STATEWIDE BY INITIATIVE × EST_TYPE
+- Group by: cicp_initiative, new_est_type, new_est_type_desc
+- Metrics: Establishments, Employment, Wages, Avg_Wage
+- Filter: reporting_yr == estab_recent_year
+
+14.2 EGR BY INITIATIVE × EST_TYPE
+- Group by: egr, cicp_initiative, new_est_type, new_est_type_desc
+- Same metrics
+- Same filter
+
+14.3 MSA BY INITIATIVE × EST_TYPE
+- Group by: msa, cicp_initiative, new_est_type, new_est_type_desc
+- Same metrics
+- Same filter
+
+14.4 COHORT ANALYSIS BY EST_TYPE
+- Filter: cohort_year == reporting_yr (birth year)
+- Group by: cohort_year, cicp_initiative, new_est_type, new_est_type_desc
+- Metrics: New_Establishments, Initial_Employment, Initial_Wages
+
+14.5 SURVIVAL BY EST_TYPE
+- Same methodology as Section 6
+- Additional grouping by: new_est_type, new_est_type_desc
+- Pivot to show Year_1, Year_3, Year_5, Year_10 columns
+
+EXPORTS 5 CSV FILES:
+18. estab_statewide_by_esttype.csv
+19. estab_egr_by_esttype.csv
+20. estab_msa_by_esttype.csv
+21. estab_new_by_year_esttype.csv
+22. estab_survival_by_esttype.csv
+
+================================================================================
+15. OUTPUT FILES REFERENCE
+================================================================================
+
+TOTAL: 24 CSV FILES
+
+INITIATIVE-LEVEL (10):
+- estab_initiative_summary.csv
+- estab_new_by_year_initiative.csv
+- estab_survival_rates.csv
+- estab_egr_initiative_summary.csv
+- estab_msa_initiative_summary.csv
+- estab_growth_rates.csv
+- estab_yoy_growth.csv
+- survival_true_startups_detailed.csv
+- survival_all_qualified_detailed.csv
+- (Note: top_counties_new displayed but not exported)
+
+SECTOR-LEVEL (3):
+- estab_statewide_init_sect_sector.csv
+- estab_egr_init_sect_sector.csv
+- estab_msa_init_sect_sector.csv
+
+SURVIVAL COMPARISON (6):
+- survival_true_startups_milestones.csv
+- survival_all_qualified_milestones.csv
+- survival_comparison.csv
+- survival_difference.csv
+- survival_true_startups_detailed.csv (duplicate from above)
+- survival_all_qualified_detailed.csv (duplicate from above)
+
+ESTABLISHMENT TYPE (5):
+- estab_statewide_by_esttype.csv
+- estab_egr_by_esttype.csv
+- estab_msa_by_esttype.csv
+- estab_new_by_year_esttype.csv
+- estab_survival_by_esttype.csv
+
+================================================================================
+KEY METHODOLOGICAL NOTES
+================================================================================
+
+SECTOR AGGREGATION:
+- All initiative-level analyses sum across ALL sectors
+- No filtering by sector_name == "All" (that row doesn't exist in 2022)
+- Each establishment appears once per initiative (no double-counting)
+- Sector detail preserved in separate tables (Section 4B, 14)
+
+ADJUSTED VALUES:
+- Always use _adjusted fields (est_count_adjusted, employment_adjusted, wages_adjusted)
+- Account for partial NAICS inclusion in initiatives
+- Primarily affects 2017 NAICS definitions
+
+SURVIVAL CALCULATIONS:
+- Track cohorts forward from birth year
+- Survival_Rate = (establishments at Year X / initial establishments) * 100
+- Average across multiple cohorts for stable estimates
+- Data availability limited by cohort range
+
+ESTABLISHMENT AGE:
+- establishment_age = reporting_yr - cohort_year
+- 0 = birth year
+- 1 = one year after birth
+- Used for survival analysis and maturity tracking
+
+TRUE STARTUPS:
+- Type 1 (1-20 employees) = traditional micro-startups
+- Types 2-4 (21+ employees) = larger qualified establishments
+- Distinction important for policy targeting
+
+================================================================================
+END OF DOCUMENTATION
+================================================================================

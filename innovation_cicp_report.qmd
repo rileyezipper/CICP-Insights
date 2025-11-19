@@ -1,5 +1,5 @@
 ---
-title: "CICP Innovation Metrics Analysis"
+title: "CICP Supplemental Report"
 date: today
 date-format: "MMMM D, YYYY"
 author: "Riley Hudelson-Zipper"
@@ -69,6 +69,22 @@ create_table <- function(df, title = NULL, striped = TRUE) {
 }
 
 ```
+
+# Introduction
+
+This supplemental report examines **cross-cutting economic metrics** that provide important context for understanding Indiana's advanced industry ecosystem but don't fit neatly within the initiative- or industry-specific analyses presented in the main report.
+
+While the primary CICP report focuses on employment, wages, and GDP trends within specific advanced industry initiatives (TechPoint, BioCrossroads, Conexus, AgriNovus, and the broader Advanced & Traded Industries category), this analysis explores **economy-wide performance indicators** that influence and reflect the competitiveness of these sectors.
+
+## Scope of Analysis
+
+This report includes:
+
+- **Innovation Metrics**: Research and development investment, patent activity, and other indicators of Indiana's innovation capacity (covered in separate R&D analysis)
+- **Labor Productivity Trends**: Bureau of Labor Statistics data on output per hour worked, providing insights into efficiency gains and competitiveness across industries
+- **Additional Economic Indicators**: As relevant data becomes available, this report may expand to include other cross-cutting metrics that inform advanced industry policy and strategy
+
+These metrics complement rather than duplicate the main report's industry-focused analysis, offering a broader economic context for evaluating Indiana's advanced industry performance relative to national trends and peer states.
 
 # State R&D Performance {#sec-rd-performance}
 
@@ -1373,3 +1389,327 @@ Key definitions from BEA R&D Satellite Account:
 - **Five-State Region**: Indiana and its neighboring states (Michigan, Illinois, Ohio, and Kentucky)
 
 See the full technical notes from BEA for detailed methodology.
+
+# Labor Productivity Performance {#sec-labor-productivity}
+
+Labor productivity, measured as output per hour worked, is a fundamental indicator of economic efficiency and competitiveness. This section examines Indiana's labor productivity trends relative to neighboring states using data from the [Bureau of Labor Statistics State Labor Productivity program](https://www.bls.gov/productivity/).
+
+::: {.callout-note icon="false"}
+## 📊 About Labor Productivity Indexes
+
+The BLS labor productivity indexes measure **real output per hour worked** with 2017 as the base year (2017 = 100). These indexes:
+
+- Capture efficiency gains from technological improvements, capital investment, and workforce skills
+- Are adjusted for inflation to reflect real economic output
+- Allow comparison across states and over time
+- Reflect the combined productivity of all industries within a state's economy
+:::
+
+```{r productivity_data_import}
+#| include: false
+
+# Import labor productivity data
+productivity_raw <- read_excel(file.path("CICP_20250709", "BLS Labor Productivity.xlsx"))
+
+# Filter for five-state region and clean data
+productivity_data <- productivity_raw %>%
+  # Convert state FIPS to character for matching
+  mutate(statefips = sprintf("%02d", statefips)) %>%
+  # Filter for our five states
+  filter(statefips %in% c("18", "17", "21", "26", "39")) %>%
+  # Create clean state names
+  mutate(
+    state = case_when(
+      statefips == "18" ~ "Indiana",
+      statefips == "17" ~ "Illinois",
+      statefips == "21" ~ "Kentucky",
+      statefips == "26" ~ "Michigan",
+      statefips == "39" ~ "Ohio",
+      TRUE ~ area
+    )
+  ) %>%
+  # Ensure year and data are numeric
+  mutate(
+    year = as.numeric(year),
+    productivity_index = as.numeric(data)
+  ) %>%
+  # Keep only needed columns
+  select(state, year, productivity_index) %>%
+  # Remove any missing values
+  filter(!is.na(productivity_index))
+
+# Define color palette (matching other reports)
+state_colors <- c(
+  "Indiana" = "#1565C0",
+  "Michigan" = "#D84315",
+  "Illinois" = "#6A1B9A",
+  "Ohio" = "#2E7D32",
+  "Kentucky" = "#F57C00"
+)
+```
+
+## Productivity Trends Over Time
+
+The following chart shows how labor productivity has evolved across the five-state region from 2007-2024.
+```{r productivity_trends}
+#| fig-cap: "Labor Productivity Index: Indiana and Neighboring States (2017 = 100)"
+#| fig-height: 9
+
+# Create interactive line chart
+p_productivity <- plot_ly()
+
+# Add Indiana first (thicker line)
+indiana_data <- productivity_data %>% filter(state == "Indiana")
+p_productivity <- p_productivity %>%
+  add_trace(
+    data = indiana_data,
+    x = ~year, y = ~productivity_index,
+    name = "Indiana",
+    type = 'scatter', mode = 'lines+markers',
+    line = list(color = state_colors["Indiana"], width = 4),
+    marker = list(color = state_colors["Indiana"], size = 8),
+    hovertemplate = paste0(
+      "<b>Indiana</b><br>",
+      "Year: %{x}<br>",
+      "Productivity Index: %{y:.1f}<br>",
+      "<extra></extra>"
+    )
+  )
+
+# Add other states
+other_states <- c("Illinois", "Kentucky", "Michigan", "Ohio")
+for(state in other_states) {
+  state_subset <- productivity_data %>% filter(state == !!state)
+  p_productivity <- p_productivity %>%
+    add_trace(
+      data = state_subset,
+      x = ~year, y = ~productivity_index,
+      name = state,
+      type = 'scatter', mode = 'lines+markers',
+      line = list(color = state_colors[state], width = 2),
+      marker = list(color = state_colors[state], size = 6),
+      hovertemplate = paste0(
+        "<b>", state, "</b><br>",
+        "Year: %{x}<br>",
+        "Productivity Index: %{y:.1f}<br>",
+        "<extra></extra>"
+      )
+    )
+}
+
+# Update layout
+p_productivity <- p_productivity %>%
+  layout(
+    xaxis = list(
+      title = "Year",
+      gridcolor = "#E5E5E5",
+      showgrid = TRUE
+    ),
+    yaxis = list(
+      title = "Labor Productivity Index (2017 = 100)",
+      gridcolor = "#E5E5E5",
+      showgrid = TRUE
+    ),
+    hovermode = "x unified",
+    plot_bgcolor = "white",
+    paper_bgcolor = "white",
+    font = list(family = "Arial, sans-serif", size = 12),
+    legend = list(
+      orientation = "h",
+      yanchor = "bottom",
+      y = -0.2,
+      xanchor = "center",
+      x = 0.5
+    ),
+    margin = list(b = 100)
+  )
+
+p_productivity
+```
+
+## Growth Rate Comparison
+
+Comparing growth rates across different time periods reveals how productivity gains have been distributed over time.
+```{r productivity_growth_table}
+#| tbl-cap: "Labor Productivity Growth Rates by State and Time Period"
+
+# Calculate growth rates for different periods
+productivity_growth <- productivity_data %>%
+  arrange(state, year) %>%
+  group_by(state) %>%
+  summarise(
+    index_2007 = productivity_index[year == 2007],
+    index_2024 = productivity_index[year == 2024],
+    index_2017 = productivity_index[year == 2017],
+    # Overall growth 2007-2024
+    growth_total = ((index_2024 / index_2007) - 1) * 100,
+    # Pre-base period 2007-2017
+    growth_pre = ((index_2017 / index_2007) - 1) * 100,
+    # Post-base period 2017-2024
+    growth_post = ((index_2024 / index_2017) - 1) * 100,
+    .groups = "drop"
+  ) %>%
+  arrange(desc(growth_total))
+
+# Create formatted table
+productivity_growth_display <- productivity_growth %>%
+  mutate(
+    sort_order = case_when(
+      state == "Indiana" ~ 0,
+      TRUE ~ 1
+    )
+  ) %>%
+  arrange(sort_order, desc(growth_total)) %>%
+  select(
+    State = state,
+    `2007-2024` = growth_total,
+    `2007-2017` = growth_pre,
+    `2017-2024` = growth_post
+  ) %>%
+  mutate(
+    across(where(is.numeric), ~sprintf("%.1f%%", .))
+  )
+
+create_table(productivity_growth_display, 
+             title = "Cumulative labor productivity growth across time periods")
+```
+
+## Recent Performance (2020-2024)
+
+The post-pandemic period offers insights into recent productivity dynamics.
+```{r recent_productivity}
+#| fig-cap: "Labor Productivity Growth: 2020-2024"
+#| fig-height: 8
+
+# Calculate 2020-2024 growth
+recent_growth <- productivity_data %>%
+  filter(year %in% c(2020, 2024)) %>%
+  group_by(state) %>%
+  summarise(
+    growth = ((last(productivity_index) / first(productivity_index)) - 1) * 100,
+    .groups = "drop"
+  ) %>%
+  arrange(desc(growth)) %>%
+  mutate(
+    is_indiana = state == "Indiana",
+    fill_color = ifelse(is_indiana, state_colors["Indiana"], "#95A5A6")
+  )
+
+# Create bar chart
+p_recent <- plot_ly(
+  data = recent_growth,
+  x = ~growth,
+  y = ~reorder(state, growth),
+  type = 'bar',
+  orientation = 'h',
+  marker = list(color = ~fill_color),
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "Growth: %{x:.1f}%<br>",
+    "<extra></extra>"
+  )
+) %>%
+  layout(
+    xaxis = list(
+      title = "Cumulative Growth (%)",
+      gridcolor = "#E5E5E5",
+      showgrid = TRUE
+    ),
+    yaxis = list(
+      title = "",
+      categoryorder = "total ascending"
+    ),
+    plot_bgcolor = "white",
+    paper_bgcolor = "white",
+    font = list(family = "Arial, sans-serif", size = 12),
+    showlegend = FALSE,
+    margin = list(l = 100)
+  )
+
+p_recent
+```
+
+::: {.callout-note icon="false"}
+## 🔍 Key Productivity Insights
+```{r productivity_insights}
+#| output: asis
+
+# Calculate key metrics
+in_2024 <- productivity_data %>% filter(state == "Indiana", year == 2024) %>% pull(productivity_index)
+in_2007 <- productivity_data %>% filter(state == "Indiana", year == 2007) %>% pull(productivity_index)
+in_total_growth <- ((in_2024 / in_2007) - 1) * 100
+
+in_2017 <- productivity_data %>% filter(state == "Indiana", year == 2017) %>% pull(productivity_index)
+in_recent_growth <- ((in_2024 / in_2017) - 1) * 100
+
+# Rankings
+rank_2024 <- productivity_data %>%
+  filter(year == 2024) %>%
+  arrange(desc(productivity_index)) %>%
+  mutate(rank = row_number()) %>%
+  filter(state == "Indiana") %>%
+  pull(rank)
+
+rank_growth <- productivity_growth %>%
+  arrange(desc(growth_total)) %>%
+  mutate(rank = row_number()) %>%
+  filter(state == "Indiana") %>%
+  pull(rank)
+
+# Get top and bottom performers
+top_state <- productivity_growth %>% slice_max(growth_total, n = 1)
+bottom_state <- productivity_growth %>% slice_min(growth_total, n = 1)
+
+# Regional average (excluding Indiana)
+regional_avg_growth <- productivity_growth %>%
+  filter(state != "Indiana") %>%
+  summarise(avg = mean(growth_total)) %>%
+  pull(avg)
+
+# Ordinal helper
+ordinal <- function(x) {
+  suffix <- case_when(
+    x == 1 ~ "st",
+    x == 2 ~ "nd", 
+    x == 3 ~ "rd",
+    TRUE ~ "th"
+  )
+  paste0(x, suffix)
+}
+
+cat(sprintf("- Indiana's labor productivity index reached **%.1f** in 2024, representing **%.1f%%** growth since 2007\n", 
+            in_2024, in_total_growth))
+cat(sprintf("- Compared to its neighbors, Indiana ranks **%s** in current productivity levels (2024)\n", 
+            ordinal(rank_2024)))
+cat(sprintf("- Indiana ranks **%s** in total productivity growth (2007-2024) among neighboring states\n", 
+            ordinal(rank_growth)))
+cat(sprintf("- **%s** leads the region with **%.1f%%** growth, while **%s** trails at **%.1f%%**\n",
+            top_state$state, top_state$growth_total, bottom_state$state, bottom_state$growth_total))
+cat(sprintf("- Indiana's growth of **%.1f%%** is **%s** the regional average of **%.1f%%** (excluding Indiana)\n",
+            in_total_growth,
+            ifelse(in_total_growth > regional_avg_growth, "above", "below"),
+            regional_avg_growth))
+cat(sprintf("- Since 2017, Indiana's productivity has grown **%.1f%%**, reflecting post-recession recovery and modernization efforts\n",
+            in_recent_growth))
+cat("- Labor productivity is influenced by **capital investment**, **technology adoption**, **workforce skills**, and **industry composition**\n")
+cat("- States with higher productivity growth often see stronger **wage growth** and **economic resilience**\n")
+```
+:::
+
+## Data Notes
+
+**About the BLS State Labor Productivity Program:**
+
+- Measures real output per hour worked for each state's private nonfarm business sector
+- Base year is 2017 (2017 = 100), allowing for easy comparison across states and time periods
+- Output is measured using real GDP data from the Bureau of Economic Analysis
+- Hours worked data comes from the BLS Current Employment Statistics and Quarterly Census of Employment and Wages programs
+- Productivity indexes reflect combined effects of capital investment, technology, workforce skills, and industrial composition
+
+**Key Concepts:**
+
+- **Labor Productivity**: Real economic output produced per hour of labor input
+- **Index (2017=100)**: A value above 100 indicates productivity above the 2017 level; below 100 indicates productivity below the 2017 level
+- **Growth Rates**: Percentage change in the index over a specified time period
+
+For detailed methodology, see the [BLS State Labor Productivity Technical Notes](https://www.bls.gov/productivity/technical-notes/).

@@ -1,0 +1,71 @@
+year,initiative,naics_title,naics_code,n_geographies,total_jobs,avg_jobs_per_geo,max_geo_jobs
+2024,Advanced & Traded Industries,Management of Companies and Enterprises,5511,17,2794831.678331552,164401.86343126776,2617304.0342002995
+2024,Advanced & Traded Industries,Computer Systems Design and Related Services,5415,17,2598787.977442623,152869.88102603663,2459833.903077
+2024,Advanced & Traded Industries,Warehousing and Storage,4931,17,2112977.019866217,124292.76587448335,1895348.1933846
+2024,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,17,2030287.0338679606,59714.32452552825,1715507.4605513
+2024,Advanced & Traded Industries,Depository Credit Intermediation,5221,17,1913470.4132438775,112557.0831319928,1783626.6062915002
+2024,Advanced & Traded Industries,"Agencies, Brokerages, and Other Insurance Related Activities",5242,17,1848854.122578472,108756.12485755718,1711856.3458568002
+2024,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,17,1789892.5343188706,105287.79613640415,1692488.9551221502
+2024,Advanced & Traded Industries,Insurance Carriers,5241,17,1407412.8378995305,82788.99046467827,1300702.4249661
+2024,Advanced & Traded Industries,General Freight Trucking,4841,17,1211443.2369979818,71261.36688223422,1082004.584581
+2024,Advanced & Traded Industries,Couriers and Express Delivery Services,4921,17,1009600.563432139,59388.26843718465,897032.568801
+2024,AgriNovus,Crop Production,111000,17,609219.572775681,35836.445457393,592571.951931
+2024,AgriNovus,Farm Labor Contractors and Crew Leaders,115115,17,346345.1604673345,20373.24473337262,341913.196362
+2024,AgriNovus,Animal Production and Aquaculture,112000,17,321075.9923336257,18886.82307844857,309956.296313
+2024,AgriNovus,General Line Grocery Merchant Wholesalers,424410,17,277393.75114314497,16317.279479008528,259834.136985
+2024,AgriNovus,Other Grocery and Related Products Merchant Wholesalers,424490,17,268569.6599272261,15798.21528983683,246864.796239
+2024,AgriNovus,Poultry Processing,311615,17,252815.2229369855,14871.483702175618,247655.627628
+2024,AgriNovus,Meat Processed from Carcasses,311612,17,173038.32630792106,10178.725076936535,152722.851787
+2024,AgriNovus,Commercial Bakeries,311812,17,171797.34000523752,10105.72588266103,149476.263866
+2024,AgriNovus,Animal (except Poultry) Slaughtering,311611,17,155424.6382667679,9142.625780398112,149085.338777
+2024,AgriNovus,Farm Supplies Merchant Wholesalers,424910,17,129059.43316171419,7591.7313624537765,120869.746219
+2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,17,519184.86397172126,30540.286115983607,499117.48676964897
+2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,17,335219.5992183003,19718.799954017664,308469.248814165
+2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,17,295585.27049976366,17387.368852927277,287884.322562
+2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,17,289069.1165585824,17004.06567991661,229571.062747
+2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,17,263087.8272934253,15475.754546672073,244182.999294744
+2024,BioCrossroads,Medical Laboratories,621511,17,244172.4023553066,14363.082491488623,225954.819291
+2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,17,162661.88702089927,9568.346295347017,141335.236313
+2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,17,115024.39611345976,6766.140947850575,101377.03348
+2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,17,108926.1615884868,6407.421269910988,102014.065808836
+2024,BioCrossroads,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,17,76082.67978271648,4475.451751924498,74287.0325425
+2024,Conexus,Warehousing and Storage,4931,17,2112977.019866217,124292.76587448335,1895348.1933846
+2024,Conexus,General Freight Trucking,4841,17,1211443.2369979818,71261.36688223422,1082004.584581
+2024,Conexus,Couriers and Express Delivery Services,4921,17,1009600.563432139,59388.26843718465,897032.568801
+2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,17,894903.7648801735,52641.397934127854,827654.8840582998
+2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,17,859872.994854612,50580.76440321247,778874.7113723
+2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,17,810596.157441539,47682.12690832582,745302.8397057
+2024,Conexus,Plastics Product Manufacturing,3261,17,682243.6379620862,40131.97870365213,589253.4493734
+2024,Conexus,Motor Vehicle Parts Manufacturing,3363,17,673580.5340421316,39622.384355419505,558625.9869397001
+2024,Conexus,Animal Slaughtering and Processing,3116,17,589868.7155110344,34698.1597359432,557676.78377746
+2024,Conexus,Aerospace Product and Parts Manufacturing,3364,17,585255.4205302057,34426.789442953275,561310.38364336
+2024,Finance & Insurance,Commercial Banking,522110,17,1479884.349076193,87052.02053389371,1376502.63418
+2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,17,1408372.709232927,82845.45348428983,1310683.3347
+2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,17,546458.2920953607,32144.605417374158,514179.123464
+2024,Finance & Insurance,Direct Property and Casualty Insurance Carriers,524126,17,523420.01658290054,30789.412740170617,483102.458264
+2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,17,514719.3290112835,30277.60758889903,476894.318876
+2024,Finance & Insurance,Investment Banking and Securities Intermediation,523150,17,488441.481278475,28731.851839910294,457341.458469
+2024,Finance & Insurance,Credit Unions,522130,17,331440.9172044885,19496.5245414405,310772.680841
+2024,Finance & Insurance,Third-Party Administration of Insurance and Pension Funds,524292,17,253998.7756047367,14941.104447337453,230423.31685
+2024,Finance & Insurance,Direct Life Insurance Carriers,524113,17,243026.7651811506,14295.692069479446,225000.846946
+2024,Finance & Insurance,Real Estate Credit,522292,17,188791.85408855087,11105.403181679463,179734.87202
+2024,Healthcare,General Medical and Surgical Hospitals,622110,17,5588809.292953245,328753.48782077915,5120255.20508
+2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,17,3086113.51504609,181536.08912035823,2880904.87064
+2024,Healthcare,Home Health Care Services,621610,17,1887945.426746574,111055.61333803377,1762917.75943
+2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,17,1655802.537098591,97400.14924109359,1514614.03868
+2024,Healthcare,Offices of Dentists,621210,17,1118813.550366026,65812.56178623682,1043459.44011
+2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,17,541263.693783052,31839.040810767765,493091.001161
+2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,17,432230.0865653657,25425.299209727396,409493.068458
+2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,17,341494.5631415709,20087.915478915937,313025.562571
+2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,17,298752.5331013149,17573.678417724408,276545.413338
+2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,17,279884.26410570665,16463.78024151216,265541.73655
+2024,TechPoint,Computer Systems Design Services,541512,17,1215317.6312228232,71489.27242487196,1150882.46214
+2024,TechPoint,Custom Computer Programming Services,541511,17,1155592.7108020945,67976.04181188792,1092558.78895
+2024,TechPoint,Software Publishers,513210,17,656566.9394944856,38621.584676146216,638498.362604
+2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,17,504414.0783044405,29671.41637084944,484245.571029
+2024,TechPoint,Wired Telecommunications Carriers,517111,17,477639.3291312351,28096.43112536677,455448.871389
+2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,17,245060.66801614297,14415.333412714292,227886.933305
+2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,17,204552.1980307666,12032.482237103917,204072.849895
+2024,TechPoint,Other Computer Related Services,541519,17,143811.9574486505,8459.526908744148,136554.008188
+2024,TechPoint,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",334511,17,130236.28255355061,7660.957797267683,122795.344887
+2024,TechPoint,Electronic and Precision Equipment Repair and Maintenance,811210,17,118248.8100770832,6955.812357475483,106894.960966

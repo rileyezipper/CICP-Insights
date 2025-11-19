@@ -1,0 +1,540 @@
+egr,cicp_initiative,cicp_init_sect,sector_name,Total_Establishments,Total_Employment,Total_Wages,Avg_Wage,Counties
+1,Advanced & Traded Industries,1,Manufacturing,215,2737,153551989,56102.29777128243,7
+1,Advanced & Traded Industries,2,Logistics,890,3968.4166666666665,230070828,57966.74853531006,7
+1,Advanced & Traded Industries,3,All Other,1172,2773.8333333333335,195318619,70412.08159586613,7
+1,AgriNovus,1,Agricultural Production and Distribution,86,487.4166666666667,20372913,41797.73568131305,7
+1,AgriNovus,2,Value-Added Food and Nutrition,53,738.6666666666666,33483841,45330.10965703971,6
+1,AgriNovus,3,Animal Health and Nutrition,18,133.25,4942272,37090.22138836773,4
+1,AgriNovus,4,Plant Science and Crop Protection,16,59.08333333333333,4104772,69474.27926657264,6
+1,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",8,43.75,1915812,43789.98857142857,5
+1,BioX,1,Ag/Biotech,3,11.416666666666666,949923,83204.93430656935,2
+1,BioX,2,Pharma,1,12.666666666666666,2151311,169840.34210526317,1
+1,BioX,4,Research/Testing,34,94.08333333333333,6836754,72667.00442869797,4
+1,BioX,6,Bio-Logistics,54,237.66666666666666,14558245,61254.88779803647,6
+1,Conexus,1,Manufacturing,215,2737,153551989,56102.29777128243,7
+1,Conexus,2,Logistics,469,2136.4166666666665,119664286,55995.476381791945,7
+1,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",5,27.916666666666668,2180191,78088.19104477612,4
+1,Other,22,Utilities,9,35.916666666666664,3840487,106927.71229698377,2
+1,Other,23,Construction,812,2861.0833333333335,173376719,60584.85713453528,7
+1,Other,441,Motor Vehicle and Parts Dealers,85,578.6666666666666,36795208,63586.18894009217,6
+1,Other,444,Building Material and Garden Equipment and Supplies Dealers,22,130.5,6733223,51595.5785440613,5
+1,Other,445,Food and Beverage Retailers,115,538.0833333333334,11942376,22174.959269010375,6
+1,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",49,363.1666666666667,14197597,39090.50114731528,3
+1,Other,455,General Merchandise Retailers,13,78.83333333333333,3408174,43232.6511627907,3
+1,Other,456,Health and Personal Care Retailers,50,185.41666666666666,5503434,29681.44179775281,4
+1,Other,457,Gasoline Stations and Fuel Dealers,82,252.33333333333334,6009408,23779.84676354029,6
+1,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",44,113,2759247,24418.11504424779,4
+1,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",151,630.1666666666666,16043158,25458.59508066649,7
+1,Other,485,Transit and Ground Passenger Transportation,11,44.66666666666667,1397573,31288.947761194027,3
+1,Other,51,Information,25,156.33333333333334,3178848,20333.78251599147,4
+1,Other,52,Finance and Insurance,4,1.0833333333333333,78019,72017.53846153847,2
+1,Other,53,Real Estate and Rental and Leasing,318,539.4166666666666,25215151,46745.22045419435,7
+1,Other,54,"Professional, Scientific, and Technical Services",231,461.5,27790884,60212.22751895992,6
+1,Other,56,Administrative and Support and Waste Management and Remediation Services,484,3233.3333333333335,128311954,39682.532164948454,7
+1,Other,61,Educational Services,85,543.25,19498279,35891.907961343764,5
+1,Other,62,Health Care and Social Assistance,594,5244.166666666667,224185022,42749.40829493087,7
+1,Other,71,"Arts, Entertainment, and Recreation",120,847.6666666666666,17808697,21009.08022021235,6
+1,Other,72,Accommodation and Food Services,689,7291.666666666667,147246988,20192.344045714286,7
+1,Other,81,Other Services (except Public Administration),594,2151.5,88672788,41213.58958865907,7
+1,Other,99,Unclassified,5,3,108698,30630.666666666668,1
+1,TechPoint,1,IT/Tech Services,246,372.9166666666667,31151669,83535.20178770949,6
+1,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",33,41.25,3277822,79462.35151515152,3
+1,TechPoint,3,Software,20,40.166666666666664,5246916,130628.61410788383,4
+1,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",7,11.083333333333332,609760,55015.93984962407,3
+1,Total,NULL,NULL,6990,36270.333333333336,1568305450,43235.51764986996,7
+2,Advanced & Traded Industries,1,Manufacturing,365,5446.416666666667,328072986,60236.48319231298,5
+2,Advanced & Traded Industries,2,Logistics,541,2758.3333333333335,173551929,62918.1132326284,5
+2,Advanced & Traded Industries,3,All Other,735,1834.8333333333333,129922904,70807.46225815243,5
+2,AgriNovus,1,Agricultural Production and Distribution,100,292.5833333333333,11008578,37625.4446026773,5
+2,AgriNovus,2,Value-Added Food and Nutrition,48,324.8333333333333,6397588,19694.98614674192,5
+2,AgriNovus,3,Animal Health and Nutrition,13,75.41666666666667,3114553,41297.94033149171,3
+2,AgriNovus,4,Plant Science and Crop Protection,11,21.166666666666668,1024454,48399.401574803145,4
+2,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",18,68.5,3499167,51082.7299270073,4
+2,AgriNovus,6,Biomass Processing,5,15.5,798724,51530.58064516129,2
+2,BioX,2,Pharma,1,8,668131,83516.375,1
+2,BioX,3,MedDev,6,49.5,5951050,120223.23232323233,3
+2,BioX,4,Research/Testing,32,100.08333333333334,8743784,87365.03580349707,3
+2,BioX,6,Bio-Logistics,54,186.83333333333331,14888660,79689.52720785014,5
+2,Conexus,1,Manufacturing,365,5446.416666666667,328072986,60236.48319231298,5
+2,Conexus,2,Logistics,193,1064.1666666666667,57894503,54400.9738449491,5
+2,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",1,1.5833333333333333,338964,214082.5263157895,1
+2,Other,22,Utilities,6,12.25,582424,47544.816326530614,5
+2,Other,23,Construction,568,2354.5,129275430,54900.95052028031,5
+2,Other,441,Motor Vehicle and Parts Dealers,68,366,19136171,52280.66393442623,5
+2,Other,444,Building Material and Garden Equipment and Supplies Dealers,17,76.91666666666667,3449617,44848.75839653304,5
+2,Other,445,Food and Beverage Retailers,74,244.75,5098185,20769.593462717057,5
+2,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",37,154.25,5948752,38565.65316045381,4
+2,Other,455,General Merchandise Retailers,18,59.25,1279135,21588.776371308017,4
+2,Other,456,Health and Personal Care Retailers,30,91.83333333333333,3950277,43015.720508166974,5
+2,Other,457,Gasoline Stations and Fuel Dealers,72,251.83333333333334,5703088,22646.279285241562,5
+2,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",40,118.5,2228516,18806.042194092828,5
+2,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",131,397.75,12048017,30286.564424890006,5
+2,Other,485,Transit and Ground Passenger Transportation,5,1.8333333333333333,25416,13863.272727272728,3
+2,Other,486,Pipeline Transportation,1,7,789675,112810.71428571429,1
+2,Other,487,Scenic and Sightseeing Transportation,2,31.75,1341663,42257.10236220472,1
+2,Other,491,Postal Service,1,24,639757,26656.541666666668,1
+2,Other,51,Information,16,63.083333333333336,8329096,132033.2258916777,3
+2,Other,52,Finance and Insurance,5,6.5,452025,69542.30769230769,3
+2,Other,53,Real Estate and Rental and Leasing,212,628.3333333333334,28737726,45736.433952254636,5
+2,Other,54,"Professional, Scientific, and Technical Services",109,409.9166666666667,18749796,45740.506607033945,5
+2,Other,56,Administrative and Support and Waste Management and Remediation Services,345,1890.25,66770670,35320.61632059251,5
+2,Other,61,Educational Services,52,369.1666666666667,8920360,24133.728216704287,5
+2,Other,62,Health Care and Social Assistance,352,2793.25,129670442,46421.72057638951,5
+2,Other,71,"Arts, Entertainment, and Recreation",82,1157.75,45430659,39233.23860937163,5
+2,Other,72,Accommodation and Food Services,410,4230.25,84151562,19892.81059039064,5
+2,Other,81,Other Services (except Public Administration),453,1424.25,59811654,41995.19325961032,5
+2,Other,99,Unclassified,2,3,159576,53192,2
+2,TechPoint,1,IT/Tech Services,185,399.3333333333333,37848632,94778.91485809683,5
+2,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",31,80.33333333333333,6903812,85939.5684647303,4
+2,TechPoint,3,Software,12,10.75,1161730,108067.90697674418,4
+2,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",8,43.416666666666664,3363722,77475.36276391555,3
+2,Total,NULL,NULL,4874,27513,1286970696,46774.532620942824,5
+3,Advanced & Traded Industries,1,Manufacturing,347,4470.333333333333,213987114,47868.26798896429,11
+3,Advanced & Traded Industries,2,Logistics,702,3062.25,175964839,57457.288594987345,11
+3,Advanced & Traded Industries,3,All Other,1019,2357.4166666666665,169285870,71803.36059952632,11
+3,AgriNovus,1,Agricultural Production and Distribution,137,496.8333333333333,20368753,40997.15464609192,11
+3,AgriNovus,2,Value-Added Food and Nutrition,64,1150,40119503,34886.52434782609,9
+3,AgriNovus,3,Animal Health and Nutrition,16,93,4096640,44049.89247311828,6
+3,AgriNovus,4,Plant Science and Crop Protection,15,70.25,4804904,68397.20996441282,8
+3,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",14,56.166666666666664,3031601,53975.09198813057,8
+3,AgriNovus,6,Biomass Processing,3,18.166666666666668,666284,36676.18348623853,3
+3,BioX,1,Ag/Biotech,2,30,2724612,90820.4,2
+3,BioX,3,MedDev,7,170.58333333333331,10905584,63931.122618466055,5
+3,BioX,4,Research/Testing,28,93.25,13338900,143023.02412868635,6
+3,BioX,6,Bio-Logistics,49,94.5,7342004,77693.16402116402,11
+3,Conexus,1,Manufacturing,347,4470.333333333333,213987114,47868.26798896429,11
+3,Conexus,2,Logistics,329,1930.6666666666667,98696204,51114.0942679558,11
+3,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",4,10,437093,43709.3,3
+3,Other,22,Utilities,4,16.666666666666668,411777,24706.62,4
+3,Other,23,Construction,858,3086.5,160472497,51989.46282196663,11
+3,Other,441,Motor Vehicle and Parts Dealers,55,285,15372418,53938.30877192983,11
+3,Other,444,Building Material and Garden Equipment and Supplies Dealers,22,106.5,4938401,46369.96244131456,7
+3,Other,445,Food and Beverage Retailers,55,229.91666666666666,4289654,18605.236679956506,9
+3,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",44,128.16666666666666,4310242,33629.976592977895,10
+3,Other,455,General Merchandise Retailers,23,68.25,2474871,36261.846153846156,9
+3,Other,456,Health and Personal Care Retailers,21,69.08333333333333,2436760,35272.762364294336,6
+3,Other,457,Gasoline Stations and Fuel Dealers,79,328.0833333333333,7682392,23415.977647955297,11
+3,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",69,216.5,4647891,21468.31870669746,9
+3,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",152,610.4166666666666,15312700,25085.651877133107,11
+3,Other,485,Transit and Ground Passenger Transportation,13,127.08333333333333,3725931,29318.80131147541,3
+3,Other,486,Pipeline Transportation,1,1.8333333333333333,140000,76363.63636363637,1
+3,Other,487,Scenic and Sightseeing Transportation,1,1,28800,28800,1
+3,Other,491,Postal Service,1,4.916666666666667,72141,14672.745762711864,1
+3,Other,51,Information,30,72.75,2087293,28691.31271477663,8
+3,Other,52,Finance and Insurance,4,4,105093,26273.25,1
+3,Other,53,Real Estate and Rental and Leasing,344,726.75,35253339,48507.15514275886,11
+3,Other,54,"Professional, Scientific, and Technical Services",149,412.3333333333333,16586049,40218.64025869038,11
+3,Other,56,Administrative and Support and Waste Management and Remediation Services,434,3867.0833333333335,146104168,37781.489408468915,11
+3,Other,61,Educational Services,73,537.25,14794658,27537.75337366217,9
+3,Other,62,Health Care and Social Assistance,449,3645.1666666666665,137192888,37636.93146175301,11
+3,Other,71,"Arts, Entertainment, and Recreation",115,742.25,15562832,20967.10272819131,11
+3,Other,72,Accommodation and Food Services,493,5284.083333333333,102772554,19449.45745872037,11
+3,Other,81,Other Services (except Public Administration),537,1740.6666666666667,61159776,35130.599195710456,11
+3,Other,99,Unclassified,1,0.25,43599,174396,1
+3,TechPoint,1,IT/Tech Services,212,451.6666666666667,37914112,83942.68339483395,11
+3,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",37,88.66666666666667,5484295,61852.95112781954,7
+3,TechPoint,3,Software,10,14.666666666666666,1454914,99198.68181818182,4
+3,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",13,54.166666666666664,3686199,68052.90461538461,7
+3,Total,NULL,NULL,6266,32790.5,1342859311,40950.76814931154,11
+4,Advanced & Traded Industries,1,Manufacturing,106,991.4166666666666,63626613,64177.469614188456,10
+4,Advanced & Traded Industries,2,Logistics,388,1207.6666666666667,62614799,51829.51780292575,12
+4,Advanced & Traded Industries,3,All Other,560,1247.9166666666667,88924801,71230.63692821369,12
+4,AgriNovus,1,Agricultural Production and Distribution,147,505.0833333333333,21151442,41847.98944068636,12
+4,AgriNovus,2,Value-Added Food and Nutrition,27,310.1666666666667,9297193,29974.829661472326,9
+4,AgriNovus,3,Animal Health and Nutrition,10,68.41666666666667,1860623,27195.464068209498,6
+4,AgriNovus,4,Plant Science and Crop Protection,12,19.5,1116276,57244.92307692308,7
+4,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",10,48.25,2890047,59897.34715025907,6
+4,AgriNovus,6,Biomass Processing,4,3.5,313098,89456.57142857143,3
+4,BioX,1,Ag/Biotech,1,1,246974,246974,1
+4,BioX,2,Pharma,1,0.75,164087,218782.66666666666,1
+4,BioX,3,MedDev,3,55.58333333333333,4834317,86974.21889055474,1
+4,BioX,4,Research/Testing,52,253.83333333333334,23133796,91137.73867367038,6
+4,BioX,6,Bio-Logistics,28,46.833333333333336,2377934,50774.39145907473,7
+4,Conexus,1,Manufacturing,106,991.4166666666666,63626613,64177.469614188456,10
+4,Conexus,2,Logistics,226,811.1666666666666,38438975,47370.865420176706,12
+4,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",2,5,348419,69683.8,2
+4,Other,22,Utilities,6,5.666666666666667,232039,40948.05882352941,4
+4,Other,23,Construction,449,1560.6666666666667,78323241,50184.589491670224,12
+4,Other,441,Motor Vehicle and Parts Dealers,44,293.5,13813868,47065.989778534924,11
+4,Other,444,Building Material and Garden Equipment and Supplies Dealers,15,41.916666666666664,1488919,35520.93041749503,6
+4,Other,445,Food and Beverage Retailers,57,249.08333333333334,4753625,19084.476413516226,11
+4,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",25,140.08333333333334,3954135,28227.01963117192,6
+4,Other,455,General Merchandise Retailers,7,8.666666666666666,321585,37105.96153846154,4
+4,Other,456,Health and Personal Care Retailers,13,28.666666666666668,933465,32562.732558139534,5
+4,Other,457,Gasoline Stations and Fuel Dealers,64,277,6034037,21783.527075812275,11
+4,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",20,52.75,633100,12001.895734597156,8
+4,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",81,269.3333333333333,5460433,20273.8849009901,9
+4,Other,485,Transit and Ground Passenger Transportation,3,8.25,245545,29763.030303030308,3
+4,Other,51,Information,13,38,1186105,31213.28947368421,5
+4,Other,52,Finance and Insurance,2,1.0833333333333333,343350,316938.46153846156,1
+4,Other,53,Real Estate and Rental and Leasing,173,358.0833333333333,15990689,44656.33418664185,11
+4,Other,54,"Professional, Scientific, and Technical Services",89,190.25,8405618,44181.9605781866,11
+4,Other,56,Administrative and Support and Waste Management and Remediation Services,209,2098.1666666666665,62033667,29565.559297799668,12
+4,Other,61,Educational Services,24,91.83333333333333,1774899,19189.350272232306,8
+4,Other,62,Health Care and Social Assistance,212,1619.25,78879156,48713.38953219083,10
+4,Other,71,"Arts, Entertainment, and Recreation",78,642.4166666666666,10771655,16767.396549487614,10
+4,Other,72,Accommodation and Food Services,360,3217.1666666666665,58488805,18180.222245246852,12
+4,Other,81,Other Services (except Public Administration),328,935.75,31116407,33252.90622495324,12
+4,Other,99,Unclassified,4,2,130160,65080,1
+4,TechPoint,1,IT/Tech Services,151,265.5833333333333,20672547,77838.26921870098,9
+4,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",20,49.416666666666664,2728969,55223.65598650928,7
+4,TechPoint,3,Software,10,7,552212,78887.42857142857,3
+4,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",8,164.91666666666666,15571503,94420.43254168773,2
+4,Total,NULL,NULL,3490,16100.166666666666,622043685,38630.49121644704,12
+5,Advanced & Traded Industries,1,Manufacturing,317,4132.166666666667,240097219,58104.437300851045,8
+5,Advanced & Traded Industries,2,Logistics,1402,5769.916666666667,367604100,63707.20622770404,8
+5,Advanced & Traded Industries,3,All Other,2855,6830.083333333333,600046082,87849.05947950855,8
+5,AgriNovus,1,Agricultural Production and Distribution,83,295.6666666666667,10426253,35263.538895152196,8
+5,AgriNovus,2,Value-Added Food and Nutrition,97,1077.9166666666667,42166929,39115.17216853498,8
+5,AgriNovus,3,Animal Health and Nutrition,42,231.33333333333334,10019520,43312.046109510084,7
+5,AgriNovus,4,Plant Science and Crop Protection,17,40,3768489,94212.225,6
+5,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",11,58.666666666666664,3362269,57311.40340909091,5
+5,AgriNovus,6,Biomass Processing,3,41.75,3531966,84597.9880239521,3
+5,BioX,1,Ag/Biotech,4,61.83333333333333,5384885,87087.08894878707,3
+5,BioX,2,Pharma,6,27.416666666666664,2798088,102057.92097264438,3
+5,BioX,3,MedDev,11,11.916666666666666,1967489,165103.97202797205,3
+5,BioX,4,Research/Testing,126,286.5833333333333,40323351,140696.62925268975,8
+5,BioX,6,Bio-Logistics,137,248.58333333333331,32427939,130450.97820985586,8
+5,Conexus,1,Manufacturing,317,4132.166666666667,240097219,58104.437300851045,8
+5,Conexus,2,Logistics,579,3708.5,184961888,49873.4995281111,8
+5,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",8,35.333333333333336,3283605,92932.21698113206,5
+5,Other,22,Utilities,10,70.16666666666667,6790408,96599.82897862232,5
+5,Other,23,Construction,1277,5432.583333333333,318875146,58695.68241014864,8
+5,Other,441,Motor Vehicle and Parts Dealers,90,697.6666666666666,50294873,72065.41662685141,8
+5,Other,444,Building Material and Garden Equipment and Supplies Dealers,37,176.66666666666666,7947148,44983.85660377359,8
+5,Other,445,Food and Beverage Retailers,68,398.5,7832707,19655.475533249686,8
+5,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",46,369.4166666666667,19391001,52490.86668170539,7
+5,Other,455,General Merchandise Retailers,26,96.16666666666666,3708662,38564.94280762565,5
+5,Other,456,Health and Personal Care Retailers,55,281.6666666666667,15851431,56277.26982248521,8
+5,Other,457,Gasoline Stations and Fuel Dealers,78,276.8333333333333,7182814,25918.23359422035,8
+5,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",79,1079.25,34033314,31534.22654621265,8
+5,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",242,1826.5833333333333,67638167,37022.91199416032,8
+5,Other,485,Transit and Ground Passenger Transportation,16,56.16666666666667,1491895,26561.928783382788,6
+5,Other,486,Pipeline Transportation,1,1,188692,188692,1
+5,Other,487,Scenic and Sightseeing Transportation,1,0.5,14500,29000,1
+5,Other,491,Postal Service,2,148.5,6097703,41061.97306397306,1
+5,Other,51,Information,78,171.41666666666666,16757663,97681.38259601362,8
+5,Other,52,Finance and Insurance,4,4,466422,116605.5,2
+5,Other,53,Real Estate and Rental and Leasing,799,1456.3333333333333,87447088,60043.62050812543,8
+5,Other,54,"Professional, Scientific, and Technical Services",428,872.5,62674560,71833.30659025788,8
+5,Other,56,Administrative and Support and Waste Management and Remediation Services,824,4462.166666666667,173806354,38946.201471631866,8
+5,Other,61,Educational Services,205,1167.4166666666667,28309155,24248.540224141623,8
+5,Other,62,Health Care and Social Assistance,895,8514.5,374580299,43989.338070350575,8
+5,Other,71,"Arts, Entertainment, and Recreation",275,1770.5833333333333,45648171,25767.31077328564,8
+5,Other,72,Accommodation and Food Services,801,10738.25,242362181,22568.063790654902,8
+5,Other,81,Other Services (except Public Administration),1222,3182.25,121886167,38289.98098829445,8
+5,Other,99,Unclassified,4,1.3333333333333333,162778,122083.5,3
+5,TechPoint,1,IT/Tech Services,747,1498.1666666666667,167371962,111709.02124819224,8
+5,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",103,259.9166666666667,22781614,87593.57871112536,8
+5,TechPoint,3,Software,56,108.41666666666667,13371099,123330.65949269792,7
+5,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",24,149.66666666666666,13372862,89350.9710467706,6
+5,Total,NULL,NULL,12322,60479,2938964133,48590.228938970555,8
+6,Advanced & Traded Industries,1,Manufacturing,95,1475.8333333333333,79345670,53763.299830604185,9
+6,Advanced & Traded Industries,2,Logistics,218,878.6666666666666,46539895,52966.496585735964,9
+6,Advanced & Traded Industries,3,All Other,240,595.5,32006624,53742.4416456759,9
+6,AgriNovus,1,Agricultural Production and Distribution,86,557.8333333333334,22551464,40422.94472662085,9
+6,AgriNovus,2,Value-Added Food and Nutrition,19,685.3333333333334,29838190,43538.21498054475,7
+6,AgriNovus,3,Animal Health and Nutrition,6,54.916666666666664,2623860,47778.93778452201,4
+6,AgriNovus,4,Plant Science and Crop Protection,7,8.583333333333334,322441,37565.94174757281,6
+6,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",5,23.666666666666668,902566,38136.59154929577,4
+6,AgriNovus,6,Biomass Processing,1,1.25,47740,38192,1
+6,BioX,3,MedDev,1,45.916666666666664,3748822,81644.03629764066,1
+6,BioX,4,Research/Testing,5,9.333333333333334,691980,74140.71428571428,3
+6,BioX,6,Bio-Logistics,11,21,1134503,54023.95238095238,6
+6,Conexus,1,Manufacturing,95,1475.8333333333333,79345670,53763.299830604185,9
+6,Conexus,2,Logistics,114,504.1666666666667,28176216,55886.7094214876,9
+6,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",2,5.416666666666667,334364,61728.73846153846,1
+6,Other,22,Utilities,4,9.666666666666668,690849,71467.13793103448,4
+6,Other,23,Construction,281,1537.9166666666667,78098686,50782.13123814684,9
+6,Other,441,Motor Vehicle and Parts Dealers,28,140.58333333333334,5096385,36251.701244813274,9
+6,Other,444,Building Material and Garden Equipment and Supplies Dealers,14,65.16666666666667,1661901,25502.31713554987,5
+6,Other,445,Food and Beverage Retailers,29,188.75,2949012,15623.90463576159,9
+6,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",16,85.08333333333333,2697999,31710.076395690503,5
+6,Other,455,General Merchandise Retailers,5,111.41666666666666,2262810,20309.439042632763,4
+6,Other,456,Health and Personal Care Retailers,8,37.75,1453953,38515.31125827815,5
+6,Other,457,Gasoline Stations and Fuel Dealers,43,152.66666666666666,2665178,17457.49781659389,6
+6,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",15,24.583333333333332,221843,9024.122033898306,6
+6,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",64,290.5,6632574,22831.58003442341,8
+6,Other,485,Transit and Ground Passenger Transportation,4,87.08333333333333,2519035,28926.717703349284,2
+6,Other,51,Information,7,11.666666666666666,188446,16152.514285714287,5
+6,Other,53,Real Estate and Rental and Leasing,89,329.5,13342511,40493.20485584219,7
+6,Other,54,"Professional, Scientific, and Technical Services",47,137.5,7506576,54593.28,9
+6,Other,56,Administrative and Support and Waste Management and Remediation Services,148,617.1666666666666,22377230,36258.00162030786,9
+6,Other,61,Educational Services,10,84.33333333333333,1662680,19715.573122529644,5
+6,Other,62,Health Care and Social Assistance,127,1046.3333333333333,47151966,45062.89869385155,9
+6,Other,71,"Arts, Entertainment, and Recreation",28,130.08333333333334,1958697,15057.24791800128,7
+6,Other,72,Accommodation and Food Services,174,1639.9166666666667,26970678,16446.37105543981,9
+6,Other,81,Other Services (except Public Administration),140,421.25,12733065,30226.86053412463,9
+6,Other,99,Unclassified,3,3.0833333333333335,80371,26066.27027027027,3
+6,TechPoint,1,IT/Tech Services,54,104.25,7100477,68110.09112709832,8
+6,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",9,44.75,1844327,41214.01117318436,4
+6,TechPoint,3,Software,3,2.8333333333333335,221883,78311.64705882352,3
+6,Total,NULL,NULL,1926,10685.5,422187220,39509.6971597024,9
+7,Advanced & Traded Industries,1,Manufacturing,48,328.25,17879657,54469.63290175171,6
+7,Advanced & Traded Industries,2,Logistics,122,561.3333333333334,35697444,63584.03266033254,6
+7,Advanced & Traded Industries,3,All Other,179,302.1666666666667,17780331,58842.794263651405,6
+7,AgriNovus,1,Agricultural Production and Distribution,43,149.33333333333334,5783561,38729.203125,6
+7,AgriNovus,2,Value-Added Food and Nutrition,9,48.583333333333336,745275,15340.137221269297,4
+7,AgriNovus,3,Animal Health and Nutrition,1,0.9166666666666666,31200,34036.36363636364,1
+7,AgriNovus,4,Plant Science and Crop Protection,5,19.333333333333332,1013110,52402.24137931035,3
+7,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",2,7.25,513778,70865.93103448275,1
+7,AgriNovus,6,Biomass Processing,2,6.666666666666667,231551,34732.65,2
+7,BioX,3,MedDev,1,0.75,72401,96534.66666666667,1
+7,BioX,4,Research/Testing,7,21.083333333333332,1211829,57478.05533596838,3
+7,BioX,6,Bio-Logistics,5,19.333333333333332,1013110,52402.24137931035,3
+7,Conexus,1,Manufacturing,48,328.25,17879657,54469.63290175171,6
+7,Conexus,2,Logistics,76,279.5833333333333,13193513,47169.85752608048,6
+7,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",3,18.75,1694203,90357.49333333333,2
+7,Other,22,Utilities,2,28.583333333333332,1330805,46558.77551020408,2
+7,Other,23,Construction,196,733.6666666666666,35471364,48348.06542480691,6
+7,Other,441,Motor Vehicle and Parts Dealers,24,171.58333333333334,8883771,51775.25594949004,6
+7,Other,444,Building Material and Garden Equipment and Supplies Dealers,13,35.25,933487,26481.90070921986,5
+7,Other,445,Food and Beverage Retailers,16,64.58333333333333,1046394,16148.268387096776,5
+7,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",6,19.416666666666668,598203,30808.73819742489,2
+7,Other,455,General Merchandise Retailers,4,27,475575,17613.88888888889,3
+7,Other,456,Health and Personal Care Retailers,6,28.666666666666664,1310010,45698.023255813954,2
+7,Other,457,Gasoline Stations and Fuel Dealers,28,104.91666666666667,2129820,20300.111199364575,5
+7,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",9,61.083333333333336,1154201,18895.514324693042,3
+7,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",36,193.08333333333331,5415115,28045.48122572292,6
+7,Other,485,Transit and Ground Passenger Transportation,3,7.25,119193,16440.41379310345,3
+7,Other,487,Scenic and Sightseeing Transportation,1,5.083333333333333,136560,26864.262295081968,1
+7,Other,51,Information,3,4,142247,35561.75,1
+7,Other,52,Finance and Insurance,1,1,33000,33000,1
+7,Other,53,Real Estate and Rental and Leasing,55,122.66666666666667,4357190,35520.57065217391,5
+7,Other,54,"Professional, Scientific, and Technical Services",38,68.16666666666667,2336152,34271.17848410758,5
+7,Other,56,Administrative and Support and Waste Management and Remediation Services,84,332.4166666666667,14143376,42547.132614690396,6
+7,Other,61,Educational Services,16,96.58333333333333,3479870,36029.71527178602,6
+7,Other,62,Health Care and Social Assistance,137,1123.8333333333333,43438215,38646.023135103074,6
+7,Other,71,"Arts, Entertainment, and Recreation",30,118.83333333333333,2689963,22636.434782608696,6
+7,Other,72,Accommodation and Food Services,137,1394.25,24539396,17598.731934731935,6
+7,Other,81,Other Services (except Public Administration),122,376.0833333333333,11184813,29740.251717261246,6
+7,TechPoint,1,IT/Tech Services,30,29.833333333333332,2237094,74986.39106145252,5
+7,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",8,23.25,1651350,71025.80645161291,3
+7,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",1,0.75,4500,6000,1
+7,Total,NULL,NULL,1366,6489.083333333333,244846512,37729.293557127996,6
+8,Advanced & Traded Industries,1,Manufacturing,116,976.25,38374313,39306.44609475032,8
+8,Advanced & Traded Industries,2,Logistics,184,745.1666666666666,38337841,51442.69693580855,8
+8,Advanced & Traded Industries,3,All Other,420,1559.6666666666667,117447934,75303.22761273776,8
+8,AgriNovus,1,Agricultural Production and Distribution,45,165.75,6643495,40081.41779788839,8
+8,AgriNovus,2,Value-Added Food and Nutrition,20,115.75,3811938,32920.45788336933,7
+8,AgriNovus,3,Animal Health and Nutrition,7,47.416666666666664,1706833,35996.478031634455,4
+8,AgriNovus,4,Plant Science and Crop Protection,2,8.083333333333332,338247,41844.98969072165,2
+8,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",2,3.166666666666667,143767,45400.10526315789,2
+8,AgriNovus,6,Biomass Processing,4,40.5,1394362,34428.69135802469,1
+8,BioX,2,Pharma,2,12.333333333333332,538743,43681.86486486487,2
+8,BioX,3,MedDev,3,23.166666666666668,1095619,47292.90647482014,1
+8,BioX,4,Research/Testing,17,53.333333333333336,4366955,81880.40625,5
+8,BioX,6,Bio-Logistics,12,16,1413287,88330.4375,4
+8,Conexus,1,Manufacturing,116,976.25,38374313,39306.44609475032,8
+8,Conexus,2,Logistics,94,453.8333333333333,22654918,49909.20308483291,8
+8,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",3,144.83333333333334,9961263,68777.42002301496,2
+8,Other,22,Utilities,1,3,58117,19372.333333333332,1
+8,Other,23,Construction,386,1496.3333333333333,75168758,50223.824682557366,8
+8,Other,441,Motor Vehicle and Parts Dealers,21,64.25,2800247,43583.61089494164,7
+8,Other,444,Building Material and Garden Equipment and Supplies Dealers,15,34.666666666666664,1626086,46906.32692307693,6
+8,Other,445,Food and Beverage Retailers,25,73,1382685,18940.890410958906,6
+8,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",11,43.916666666666664,2051950,46723.71916508539,4
+8,Other,455,General Merchandise Retailers,8,29,291654,10057.034482758621,5
+8,Other,456,Health and Personal Care Retailers,11,55.166666666666664,2330187,42239.03927492447,5
+8,Other,457,Gasoline Stations and Fuel Dealers,30,137.58333333333334,2532740,18408.770442156267,7
+8,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",21,91.83333333333333,2136586,23265.90925589837,6
+8,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",71,272.6666666666667,6051954,22182.025672371637,8
+8,Other,485,Transit and Ground Passenger Transportation,3,9.583333333333332,187488,19563.965217391305,1
+8,Other,487,Scenic and Sightseeing Transportation,1,1,12000,12000,1
+8,Other,51,Information,18,103.75,3669722,35370.81445783132,4
+8,Other,52,Finance and Insurance,2,3.166666666666667,131574,41549.68421052631,2
+8,Other,53,Real Estate and Rental and Leasing,101,356.6666666666667,14819515,41550.042056074766,8
+8,Other,54,"Professional, Scientific, and Technical Services",55,240,11831540,49298.083333333336,8
+8,Other,56,Administrative and Support and Waste Management and Remediation Services,164,805.75,29206900,36241.91498603785,8
+8,Other,61,Educational Services,40,224.75,7885769,35086.847608453834,6
+8,Other,62,Health Care and Social Assistance,167,1632.8333333333333,58734747,35969.485556803105,8
+8,Other,71,"Arts, Entertainment, and Recreation",50,339.5833333333333,5616838,16540.381840490798,8
+8,Other,72,Accommodation and Food Services,218,2151.25,38882290,18066.706333527018,8
+8,Other,81,Other Services (except Public Administration),223,550.1666666666666,18175655,33036.30354438049,8
+8,Other,99,Unclassified,3,5.833333333333333,582246,99813.6,3
+8,TechPoint,1,IT/Tech Services,106,336.08333333333337,27675233,82346.34168113067,8
+8,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",14,34.25,2225708,64984.175182481755,4
+8,TechPoint,3,Software,5,14.083333333333332,1204741,85543.73964497042,2
+8,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",3,158.41666666666666,7990779,50441.529721199375,1
+8,Total,NULL,NULL,2427,12346.666666666666,499280924,40434.41322894169,8
+9,Advanced & Traded Industries,1,Manufacturing,106,1063.3333333333333,56539461,53171.90689655173,10
+9,Advanced & Traded Industries,2,Logistics,210,857.25,44083045,51401.56313794109,10
+9,Advanced & Traded Industries,3,All Other,356,714.8333333333334,48057781,67224.93308463511,10
+9,AgriNovus,1,Agricultural Production and Distribution,41,100.83333333333333,4091154,40573.42809917356,9
+9,AgriNovus,2,Value-Added Food and Nutrition,22,135.75,5721380,42146.445672191534,7
+9,AgriNovus,3,Animal Health and Nutrition,8,52.666666666666664,1822236,34599.41772151899,5
+9,AgriNovus,4,Plant Science and Crop Protection,5,18.583333333333332,792438,42642.40358744395,3
+9,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",7,22.333333333333332,721126,32289.223880597016,4
+9,AgriNovus,6,Biomass Processing,2,9.833333333333334,253126,25741.627118644064,2
+9,BioX,3,MedDev,2,3.1666666666666665,280976,88729.26315789475,2
+9,BioX,4,Research/Testing,15,42.75,3383755,79152.16374269006,6
+9,BioX,6,Bio-Logistics,7,19.666666666666664,871863,44332.016949152545,5
+9,Conexus,1,Manufacturing,106,1063.3333333333333,56539461,53171.90689655173,10
+9,Conexus,2,Logistics,113,643.25,28765298,44707.643995336184,9
+9,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",4,14.333333333333334,700413,48866.023255813954,4
+9,Other,22,Utilities,2,3.0833333333333335,190772,61872,2
+9,Other,23,Construction,351,1181.4166666666667,52051530,44048.565140720886,10
+9,Other,441,Motor Vehicle and Parts Dealers,24,168.16666666666666,10774967,64073.14370664024,6
+9,Other,444,Building Material and Garden Equipment and Supplies Dealers,13,53.666666666666664,2914905,54315,7
+9,Other,445,Food and Beverage Retailers,35,151.41666666666666,2675152,17667.487066593287,8
+9,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",12,28.083333333333332,594425,21166.46884272997,6
+9,Other,455,General Merchandise Retailers,5,7.833333333333333,100996,12893.106382978724,5
+9,Other,456,Health and Personal Care Retailers,10,33.25,950269,28579.51879699248,5
+9,Other,457,Gasoline Stations and Fuel Dealers,34,121.5,2282337,18784.666666666668,8
+9,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",21,239.91666666666669,3673360,15310.982980201457,6
+9,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",59,184.91666666666666,3717008,20100.98963497071,8
+9,Other,485,Transit and Ground Passenger Transportation,13,31.083333333333336,736134,23682.595174262733,5
+9,Other,51,Information,5,2.75,152574,55481.454545454544,2
+9,Other,52,Finance and Insurance,1,1.0833333333333333,2675,2469.2307692307695,1
+9,Other,53,Real Estate and Rental and Leasing,102,202.5,8328393,41127.86666666667,10
+9,Other,54,"Professional, Scientific, and Technical Services",69,142.91666666666666,6603608,46206.003498542275,9
+9,Other,56,Administrative and Support and Waste Management and Remediation Services,158,1104.4166666666667,40176882,36377.61291782992,10
+9,Other,61,Educational Services,21,134.25,5009704,37197.452513966484,7
+9,Other,62,Health Care and Social Assistance,162,958.5,35293589,36811.05477308294,9
+9,Other,71,"Arts, Entertainment, and Recreation",29,137.33333333333334,1879474,13685.490291262135,7
+9,Other,72,Accommodation and Food Services,210,2433.5833333333335,46584242,19142.242372359004,10
+9,Other,81,Other Services (except Public Administration),189,574.4166666666666,19561298,34042.79355868272,9
+9,TechPoint,1,IT/Tech Services,80,136.58333333333334,10263897,75147.50701647345,10
+9,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",9,33.583333333333336,3745361,111524.3970223325,4
+9,TechPoint,3,Software,3,3,394747,131582.33333333334,2
+9,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",1,0,0,NA,1
+9,Total,NULL,NULL,2246,10650,397879822,37353.263755868546,10
+10,Advanced & Traded Industries,1,Manufacturing,96,1380.25,71093078,51506.025719978265,6
+10,Advanced & Traded Industries,2,Logistics,263,1186.4166666666667,70885063,59736.375921893654,6
+10,Advanced & Traded Industries,3,All Other,434,1211.3333333333333,83300299,68756.97110621905,6
+10,AgriNovus,1,Agricultural Production and Distribution,23,45.416666666666664,1898059,41792.12477064221,6
+10,AgriNovus,2,Value-Added Food and Nutrition,18,673.4166666666666,34348451,51004.98651157035,4
+10,AgriNovus,3,Animal Health and Nutrition,10,72.91666666666667,7171369,98350.20342857142,5
+10,AgriNovus,4,Plant Science and Crop Protection,2,3.0833333333333335,251660,81619.45945945947,2
+10,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",6,32.5,2297776,70700.8,4
+10,AgriNovus,6,Biomass Processing,1,6.75,189733,28108.59259259259,1
+10,BioX,2,Pharma,1,3.5833333333333335,360241,100532.37209302325,1
+10,BioX,3,MedDev,1,0.16666666666666666,6176,37056,1
+10,BioX,4,Research/Testing,12,36.333333333333336,3037472,83600.14678899082,2
+10,BioX,6,Bio-Logistics,18,48,4745365,98861.77083333333,4
+10,Conexus,1,Manufacturing,96,1380.25,71093078,51506.025719978265,6
+10,Conexus,2,Logistics,126,695,35690768,51343.880575539566,6
+10,Other,22,Utilities,1,1,7812,7812,1
+10,Other,23,Construction,332,1413,68594254,48519.43524416136,6
+10,Other,441,Motor Vehicle and Parts Dealers,29,103.5,4435562,42855.67149758454,6
+10,Other,444,Building Material and Garden Equipment and Supplies Dealers,5,44.416666666666664,1924505,43328.442776735465,3
+10,Other,445,Food and Beverage Retailers,24,82.5,1905575,23097.878787878788,4
+10,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",19,77.33333333333333,3570518,46170.49137931035,4
+10,Other,455,General Merchandise Retailers,5,6.583333333333333,152339,23140.101265822785,2
+10,Other,456,Health and Personal Care Retailers,21,415.5,23072870,55530.37304452467,5
+10,Other,457,Gasoline Stations and Fuel Dealers,28,86.16666666666667,1706909,19809.388781431335,5
+10,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",12,40.833333333333336,826368,20237.583673469388,2
+10,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",48,249.25,6656394,26705.693079237713,6
+10,Other,485,Transit and Ground Passenger Transportation,5,46.25,1460700,31582.702702702703,3
+10,Other,487,Scenic and Sightseeing Transportation,2,403.1666666666667,29159282,72325.62711864406,1
+10,Other,51,Information,10,48.75,1923607,39458.60512820513,3
+10,Other,52,Finance and Insurance,1,0.16666666666666666,2767,16602,1
+10,Other,53,Real Estate and Rental and Leasing,141,320,17336699,54109.996875,6
+10,Other,54,"Professional, Scientific, and Technical Services",64,163.75,9890837,60402.058015267176,6
+10,Other,56,Administrative and Support and Waste Management and Remediation Services,195,1369.6666666666667,54522346,39807.0182526162,6
+10,Other,61,Educational Services,32,125.41666666666667,2072370,16523.880398671095,3
+10,Other,62,Health Care and Social Assistance,184,1667.25,77350976,46394.34757834758,5
+10,Other,71,"Arts, Entertainment, and Recreation",30,150.25,3424246,22752.925124792015,5
+10,Other,72,Accommodation and Food Services,195,2491,53026893,21283.377358490565,6
+10,Other,81,Other Services (except Public Administration),181,623.4166666666666,24410278,39155.63908568373,6
+10,Other,99,Unclassified,1,0.25,2188,8752,1
+10,TechPoint,1,IT/Tech Services,104,348.1666666666667,20581063,59112.67496409765,4
+10,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",16,22.916666666666668,1436854,62699.08363636363,5
+10,TechPoint,3,Software,4,2.75,4444090,1616032.7272727273,3
+10,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",2,1.0833333333333333,65511,60471.69230769231,1
+10,Total,NULL,NULL,2392,13763.25,619075555,44973.007029589666,6
+11,Advanced & Traded Industries,1,Manufacturing,116,1130,57009413,50450.80796460177,9
+11,Advanced & Traded Industries,2,Logistics,305,1730.25,100450668,58049.707267735874,9
+11,Advanced & Traded Industries,3,All Other,583,1442.6666666666667,93215456,64611.562846580404,9
+11,AgriNovus,1,Agricultural Production and Distribution,90,254.25,9668769,38028.589970501474,9
+11,AgriNovus,2,Value-Added Food and Nutrition,19,162.41666666666666,7016079,43198.023601847104,7
+11,AgriNovus,3,Animal Health and Nutrition,12,72.25,3105862,42987.709342560556,7
+11,AgriNovus,4,Plant Science and Crop Protection,10,35.75,2868281,80231.63636363637,5
+11,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",6,19.5,1446693,74189.38461538461,4
+11,AgriNovus,6,Biomass Processing,2,8.333333333333332,324174,38900.880000000005,2
+11,BioX,1,Ag/Biotech,2,3.25,479745,147613.84615384616,2
+11,BioX,2,Pharma,2,1.8333333333333333,248972,135802.9090909091,2
+11,BioX,3,MedDev,3,9.25,1613376,174419.02702702704,2
+11,BioX,4,Research/Testing,14,23.166666666666668,1310477,56459.09352517985,5
+11,BioX,6,Bio-Logistics,20,53.083333333333336,5673975,106888.06907378335,6
+11,Conexus,1,Manufacturing,116,1130,57009413,50450.80796460177,9
+11,Conexus,2,Logistics,144,1171,57785691,49338.62425277541,9
+11,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",13,90.5,5993549,66227.06077348067,5
+11,Other,22,Utilities,5,86.83333333333334,6896146,79418.18809980805,4
+11,Other,23,Construction,422,1421.1666666666667,73371480,51621.31347484461,9
+11,Other,441,Motor Vehicle and Parts Dealers,37,208.25,10655300,51165.906362545014,8
+11,Other,444,Building Material and Garden Equipment and Supplies Dealers,11,34.833333333333336,1087108,31208.842105263157,6
+11,Other,445,Food and Beverage Retailers,48,192.5,4155792,21588.52987012987,7
+11,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",24,139.33333333333334,5202901,37341.3947368421,4
+11,Other,455,General Merchandise Retailers,16,130.75,2559994,19579.304015296366,4
+11,Other,456,Health and Personal Care Retailers,28,86.66666666666667,2987115,34466.71153846154,5
+11,Other,457,Gasoline Stations and Fuel Dealers,45,163,2903939,17815.576687116565,8
+11,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",36,177.83333333333334,2898846,16300.914714151826,6
+11,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",102,384.25,7628881,19853.951854261548,9
+11,Other,485,Transit and Ground Passenger Transportation,9,41.833333333333336,863140,20632.828685258963,4
+11,Other,487,Scenic and Sightseeing Transportation,1,6.5,69594,10706.76923076923,1
+11,Other,491,Postal Service,1,16,599225,37451.5625,1
+11,Other,51,Information,8,15.416666666666666,637928,41379.11351351351,5
+11,Other,52,Finance and Insurance,1,0.16666666666666666,593,3558,1
+11,Other,53,Real Estate and Rental and Leasing,159,322.75,12286636,38068.585592563904,9
+11,Other,54,"Professional, Scientific, and Technical Services",96,219.33333333333334,10593193,48210.91641337386,9
+11,Other,56,Administrative and Support and Waste Management and Remediation Services,228,2084.75,80405579,38565.07111164408,9
+11,Other,61,Educational Services,35,166.33333333333334,3428311,20611.088176352703,7
+11,Other,62,Health Care and Social Assistance,280,2240.0833333333335,83114432,37100.75101372717,9
+11,Other,71,"Arts, Entertainment, and Recreation",56,431.1666666666667,8203785,19026.94626981059,7
+11,Other,72,Accommodation and Food Services,294,3433.75,63558730,18510.005096468874,9
+11,Other,81,Other Services (except Public Administration),309,1064.3333333333333,31109595,29217.108048856877,9
+11,Other,99,Unclassified,3,2.25,147500,65555.55555555556,2
+11,TechPoint,1,IT/Tech Services,115,209.16666666666666,16389959,78358.36972111554,9
+11,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",14,29.25,1873490,64050.94017094017,6
+11,TechPoint,3,Software,10,12.25,889543,72615.75510204081,4
+11,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",2,1.5,87110,58073.333333333336,1
+11,Total,NULL,NULL,3376,17725.166666666668,683218431,38541.374185480156,9
+12,Advanced & Traded Industries,1,Manufacturing,273,3088.0833333333335,160675207,52030.708260247724,1
+12,Advanced & Traded Industries,2,Logistics,979,4658.916666666667,309750477,66482.6132684637,1
+12,Advanced & Traded Industries,3,All Other,2297,8455.916666666666,772955518,91407.05289195929,1
+12,AgriNovus,1,Agricultural Production and Distribution,20,98.5,4634888,47054.700507614216,1
+12,AgriNovus,2,Value-Added Food and Nutrition,72,1421,63598799,44756.36805066855,1
+12,AgriNovus,3,Animal Health and Nutrition,15,69.16666666666667,4076055,58930.9156626506,1
+12,AgriNovus,4,Plant Science and Crop Protection,4,6.416666666666666,557769,86925.03896103897,1
+12,AgriNovus,5,"Agricultural Equipment, Technologies, and Systems",5,4.25,549314,129250.35294117648,1
+12,BioX,1,Ag/Biotech,1,1.5,200464,133642.66666666666,1
+12,BioX,2,Pharma,11,58.25,4791151,82251.51931330471,1
+12,BioX,3,MedDev,8,2.8333333333333335,179034,63172.94117647059,1
+12,BioX,4,Research/Testing,92,344.0833333333333,44384336,128992.98425768952,1
+12,BioX,6,Bio-Logistics,81,294.8333333333333,41925897,142202.0248728095,1
+12,Conexus,1,Manufacturing,273,3088.0833333333335,160675207,52030.708260247724,1
+12,Conexus,2,Logistics,459,2513.75,133232745,52997.00646444555,1
+12,Other,21,"Mining, Quarrying, and Oil and Gas Extraction",5,22.583333333333332,1035380,45847.08487084871,1
+12,Other,22,Utilities,5,9.166666666666668,1133472,123651.49090909089,1
+12,Other,23,Construction,939,4687.5,322016503,68696.76522666667,1
+12,Other,441,Motor Vehicle and Parts Dealers,90,1082.6666666666667,48926446,45190.6828817734,1
+12,Other,444,Building Material and Garden Equipment and Supplies Dealers,33,283.5833333333333,11680192,41187.864825154276,1
+12,Other,445,Food and Beverage Retailers,144,792.8333333333334,24603022,31027.570317426947,1
+12,Other,449,"Furniture, Home Furnishings, Electronics, and Appliance Retailers",72,440.9166666666667,19562940,44368.79228879229,1
+12,Other,455,General Merchandise Retailers,24,104.33333333333334,5097149,48854.46325878594,1
+12,Other,456,Health and Personal Care Retailers,61,334.5,14832421,44342.06576980568,1
+12,Other,457,Gasoline Stations and Fuel Dealers,160,463.58333333333337,9836831,21219.121337407872,1
+12,Other,458,"Clothing, Clothing Accessories, Shoe, and Jewelry Retailers",73,424.25,12541614,29561.84796700059,1
+12,Other,459,"Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers",174,858.4166666666666,27087011,31554.619163188043,1
+12,Other,482,Rail Transportation,1,0.75,48163,64217.333333333336,1
+12,Other,483,Water Transportation,2,3.5,402646,115041.71428571429,1
+12,Other,485,Transit and Ground Passenger Transportation,26,306.5833333333333,11851946,38655.806469149225,1
+12,Other,486,Pipeline Transportation,1,0,0,NA,1
+12,Other,487,Scenic and Sightseeing Transportation,2,26.5,371458,14017.283018867925,1
+12,Other,51,Information,81,331.1666666666667,25725045,77680.05535983895,1
+12,Other,52,Finance and Insurance,12,11.25,2736469,243241.6888888889,1
+12,Other,53,Real Estate and Rental and Leasing,624,1584.5,114429552,72218.08267592301,1
+12,Other,54,"Professional, Scientific, and Technical Services",380,1395,90842233,65119.88028673835,1
+12,Other,56,Administrative and Support and Waste Management and Remediation Services,774,9016.25,400610494,44431.184139747675,1
+12,Other,61,Educational Services,170,1632.8333333333333,75703335,46363.17342043483,1
+12,Other,62,Health Care and Social Assistance,878,9531.25,405920173,42588.34601967213,1
+12,Other,71,"Arts, Entertainment, and Recreation",193,1540.4166666666667,42692311,27714.781282120635,1
+12,Other,72,Accommodation and Food Services,794,8776.166666666666,219463443,25006.754239702226,1
+12,Other,81,Other Services (except Public Administration),964,2780,105764149,38042.49964028777,1
+12,Other,99,Unclassified,1,0.75,17336,23114.666666666668,1
+12,TechPoint,1,IT/Tech Services,597,2249.25,243847973,108403.0112259642,1
+12,TechPoint,2,"Telecommunications, Internet Services and Data Hosting",99,459.25,37645922,81972.61186717474,1
+12,TechPoint,3,Software,42,205.83333333333331,23461686,113983.89959514172,1
+12,TechPoint,4,"Manufacturing: Computer, Peripheral and Communications Equipment",17,60.75,4936849,81265.00411522634,1
+12,Total,NULL,NULL,10334,63168.916666666664,3284150358,51989.07268474606,1

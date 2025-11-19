@@ -1,0 +1,171 @@
+display_level,sector,sector_name,subsector,subsector_name,statefips,countyfips,metrofips,geo_area,year,naics,naics_title,group_by_sort,sort,jobs
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2019,000000,,0,0,77112.2786960324
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2023,000000,,0,0,79766.8921032152
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2028,000000,,0,0,1164492.0578104372
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2022,000000,,0,0,145321.00656047382
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2023,000000,,0,0,36694.54787371723
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2027,000000,,0,0,36838.868416797304
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2023,000000,,0,0,111244.79739825343
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2026,000000,,0,0,114604.9591049834
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2023,000000,,0,0,709046.695280707
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2027,000000,,0,0,733735.7118449028
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2021,000000,,0,0,46456.863752517245
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2027,000000,,0,0,48279.61287141321
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2020,000000,,0,0,136970.49575733574
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2028,000000,,0,0,68445.71443841579
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2025,000000,,0,0,130572.20070375202
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2019,000000,,0,0,227371.60881279316
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2022,000000,,0,0,230399.204757295
+0,0,Total - All Industries,,,18,000,00000,Indiana,2019,000000,,0,0,3240392.4250975945
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,000000,,0,0,1142751.6617667521
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2024,000000,,0,0,715669.0752638236
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2025,000000,,0,0,52427.99728070862
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2019,000000,,0,0,136761.21869253376
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2024,000000,,0,0,139731.42573401213
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2025,000000,,0,0,140616.9443590705
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2023,000000,,0,0,233377.40797706094
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2022,000000,,0,0,696450.7462493236
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2019,000000,,0,0,42111.24570293151
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2021,000000,,0,0,134984.06240966768
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2021,000000,,0,0,36939.336504042396
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2020,000000,,0,0,652334.6872473864
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2021,000000,,0,0,673659.2626979529
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2028,000000,,0,0,736817.5219207514
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2028,000000,,0,0,48299.58067556674
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2021,000000,,0,0,75126.85199764806
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2023,000000,,0,0,4631370.196455169
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2022,000000,,0,0,1117550.4338549208
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2021,000000,,0,0,140748.46881006664
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2019,000000,,0,0,1072956.9441302367
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2022,000000,,0,0,1103199.162808078
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2024,000000,,0,0,37432.99434894573
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2028,000000,,0,0,36622.00792559047
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2024,000000,,0,0,111477.42591740256
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2028,000000,,0,0,42415.30816331127
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2026,000000,,0,0,48214.645661818875
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2019,000000,,0,0,146133.7885309699
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2020,000000,,0,0,65853.58362316478
+0,0,Total - All Industries,,,0,000,00000,United States,2023,000000,,0,0,161341988.63256085
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2026,000000,,0,0,81376.34605796264
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2019,000000,,0,0,4685575.966535403
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2027,000000,,0,0,1188177.203614591
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2026,000000,,0,0,37046.28442713005
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2019,000000,,0,0,48532.78195119259
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2023,000000,,0,0,47522.985589556025
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2022,000000,,0,0,141197.81230746378
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2023,000000,,0,0,144443.757889823
+0,0,Total - All Industries,,,0,000,00000,United States,2019,000000,,0,0,156650158.83519906
+0,0,Total - All Industries,,,0,000,00000,United States,2020,000000,,0,0,147359212.4391545
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2025,000000,,0,0,80656.24900480674
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2022,000000,,0,0,4555148.008287686
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2028,000000,,0,0,4708401.075452249
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2021,000000,,0,0,49522.112706598185
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2026,000000,,0,0,141230.68479002488
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2026,000000,,0,0,729536.5632479228
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2026,000000,,0,0,42403.69805004856
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2023,000000,,0,0,67714.22347755195
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2022,000000,,0,0,79237.14692740708
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2021,000000,,0,0,4399799.683088049
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2020,000000,,0,0,49211.3978193739
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2026,000000,,0,0,52653.09034450203
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2026,000000,,0,0,129935.81983975907
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2020,000000,,0,0,132952.71388436278
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2028,000000,,0,0,241871.39559305503
+0,0,Total - All Industries,,,18,000,00000,Indiana,2021,000000,,0,0,3161340.049937708
+0,0,Total - All Industries,,,18,000,00000,Indiana,2025,000000,,0,0,3378410.769823039
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2020,000000,,0,0,1025759.2808134343
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2026,000000,,0,0,1176606.0281257243
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2023,000000,,0,0,42472.98686284027
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2027,000000,,0,0,68488.38646251749
+0,0,Total - All Industries,,,0,000,00000,United States,2021,000000,,0,0,151702127.08736777
+0,0,Total - All Industries,,,0,000,00000,United States,2025,000000,,0,0,165795239.1282397
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2024,000000,,0,0,79724.25903221047
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2027,000000,,0,0,1161039.8301496266
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2024,000000,,0,0,52070.97546841156
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2023,000000,,0,0,135398.25816605013
+0,0,Total - All Industries,,,18,000,00000,Indiana,2023,000000,,0,0,3314860.112455709
+0,0,Total - All Industries,,,18,000,00000,Indiana,2024,000000,,0,0,3337511.059806694
+0,0,Total - All Industries,,,18,000,00000,Indiana,2027,000000,,0,0,3432419.3805477475
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2028,000000,,0,0,1197514.5430721913
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2022,000000,,0,0,36230.009352736924
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2022,000000,,0,0,108135.16651568079
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2021,000000,,0,0,40285.075688520374
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2022,000000,,0,0,47242.01331922033
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2021,000000,,0,0,137207.45805131525
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2025,000000,,0,0,68382.96354848829
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2020,000000,,0,0,73180.15380136092
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2027,000000,,0,0,81961.38740182694
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2020,000000,,0,0,4335899.83179856
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2019,000000,,0,0,1117934.1999129113
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2027,000000,,0,0,129263.50575606847
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2028,000000,,0,0,128582.1122265315
+0,0,Total - All Industries,,,18,000,00000,Indiana,2020,000000,,0,0,3074722.0326632387
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2025,000000,,0,0,37245.47940591574
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2021,000000,,0,0,103466.14564885756
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2025,000000,,0,0,113242.70413752816
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2019,000000,,0,0,689084.5160129626
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2024,000000,,0,0,47960.390174757675
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2028,000000,,0,0,148021.6698304282
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2023,000000,,0,0,1134447.8983284542
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2019,000000,,0,0,53007.35684004095
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2028,000000,,0,0,52841.39551524393
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2024,000000,,0,0,131176.57622545547
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2026,000000,,0,0,239249.68156124998
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2027,000000,,0,0,240743.91535330037
+0,0,Total - All Industries,,,18,000,00000,Indiana,2026,000000,,0,0,3409070.493796577
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2027,000000,,0,0,115681.91756578069
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2028,000000,,0,0,116545.52136470682
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2022,000000,,0,0,41338.4681473788
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2025,000000,,0,0,48117.167791659354
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2024,000000,,0,0,145032.97626005276
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2019,000000,,0,0,69645.72512221309
+0,0,Total - All Industries,,,0,000,00000,United States,2026,000000,,0,0,167780385.7073174
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2026,000000,,0,0,4688333.362031103
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2020,000000,,0,0,1054325.4790889737
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2028,000000,,0,0,141931.6758578226
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2025,000000,,0,0,1161882.0639597457
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2020,000000,,0,0,37733.17228290265
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2020,000000,,0,0,100354.50353096437
+0,0,Total - All Industries,,,00,000,31140,Louisville/Jefferson County MSA,2025,000000,,0,0,723717.8027634294
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2024,000000,,0,0,42206.83298367266
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2025,000000,,0,0,42336.537842358135
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2026,000000,,0,0,146974.35170222112
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2024,000000,,0,0,68207.29385324729
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2026,000000,,0,0,1156052.2640388673
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2027,000000,,0,0,141656.28531446974
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2020,000000,,0,0,216372.19192926248
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2020,000000,,0,0,39676.01035433665
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2025,000000,,0,0,146147.93950315707
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2021,000000,,0,0,66215.64746087654
+0,0,Total - All Industries,,,0,000,00000,United States,2027,000000,,0,0,169369959.22986284
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2024,000000,,0,0,4645443.453051169
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2027,000000,,0,0,4700535.209971474
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2021,000000,,0,0,1086475.785459464
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2019,000000,,0,0,140890.18973120794
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2022,000000,,0,0,137986.73608992758
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2023,000000,,0,0,1128524.1606243127
+0,0,Total - All Industries,,,00,000,43780,South Bend-Mishawaka MSA,2027,000000,,0,0,147549.19349805926
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2022,000000,,0,0,67363.21280072257
+0,0,Total - All Industries,,,0,000,00000,United States,2024,000000,,0,0,163254622.4511811
+0,0,Total - All Industries,,,00,000,14020,Bloomington MSA,2028,000000,,0,0,82417.58836751872
+0,0,Total - All Industries,,,00,000,16980,Chicago-Naperville-Elgin MSA,2025,000000,,0,0,4670817.190277539
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2024,000000,,0,0,1138616.9851873405
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2022,000000,,0,0,51611.75634775354
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2023,000000,,0,0,52240.46953273927
+0,0,Total - All Industries,,,00,000,21780,Evansville MSA,2023,000000,,0,0,139216.65412603162
+0,0,Total - All Industries,,,18,000,00000,Indiana,2022,000000,,0,0,3269419.057686974
+0,0,Total - All Industries,,,00,000,33140,Michigan City-La Porte MSA,2027,000000,,0,0,42428.965021559234
+0,0,Total - All Industries,,,00,000,34620,Muncie MSA,2020,000000,,0,0,46324.38216154399
+0,0,Total - All Industries,,,0,000,00000,United States,2022,000000,,0,0,158157129.6009011
+0,0,Total - All Industries,,,00,000,17140,Cincinnati MSA,2025,000000,,0,0,1148861.1362551313
+0,0,Total - All Industries,,,00,000,18020,Columbus MSA,2027,000000,,0,0,52780.868477731
+0,0,Total - All Industries,,,00,000,21140,Elkhart-Goshen MSA,2020,000000,,0,0,128388.90977722015
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2021,000000,,0,0,222077.89422101984
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2024,000000,,0,0,234694.59780000604
+0,0,Total - All Industries,,,00,000,23060,Fort Wayne MSA,2025,000000,,0,0,237303.248611739
+0,0,Total - All Industries,,,18,000,00000,Indiana,2028,000000,,0,0,3450416.962608496
+0,0,Total - All Industries,,,00,000,26900,Indianapolis-Carmel-Greenwood MSA,2021,000000,,0,0,1061320.4028270917
+0,0,Total - All Industries,,,00,000,29020,Kokomo MSA,2019,000000,,0,0,40089.843831325285
+0,0,Total - All Industries,,,00,000,29200,Lafayette-West Lafayette MSA,2019,000000,,0,0,106176.60005197857
+0,0,Total - All Industries,,,00,000,45460,Terre Haute MSA,2026,000000,,0,0,68465.30325634682
+0,0,Total - All Industries,,,0,000,00000,United States,2028,000000,,0,0,170674444.46960565

@@ -11,7 +11,7 @@ library(plotly)
 library(patchwork)
 
 # Load processed data from main analysis
-output_dir <- "outputs_20250709"  # Modify to match your output directory
+output_dir <- "outputs_20251031"  # Modify to match your output directory
 load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
 
 # Create visualizations directory
@@ -78,15 +78,15 @@ p2_data <- jobs_growth %>%
          year == recent_year, 
          geo_area == "Indiana",
          initiative != "Total Employment",
-         !is.na(cagr_2yr)) %>%
-  mutate(growth_type = ifelse(cagr_2yr >= 0, "Growth", "Decline"))
+         !is.na(cagr_4yr)) %>%
+  mutate(growth_type = ifelse(cagr_4yr >= 0, "Growth", "Decline"))
 
 p2 <- p2_data %>%
-  ggplot(aes(x = reorder(initiative, cagr_2yr), y = cagr_2yr, fill = growth_type)) +
+  ggplot(aes(x = reorder(initiative, cagr_4yr), y = cagr_4yr, fill = growth_type)) +
   geom_col(show.legend = FALSE, alpha = 0.9) +
   geom_hline(yintercept = 0, linetype = "solid", color = "gray30", linewidth = 0.5) +
-  geom_text(aes(label = sprintf("%.1f%%", cagr_2yr)), 
-            hjust = ifelse(p2_data$cagr_2yr >= 0, -0.15, 1.15), 
+  geom_text(aes(label = sprintf("%.1f%%", cagr_4yr)), 
+            hjust = ifelse(p2_data$cagr_4yr >= 0, -0.15, 1.15), 
             size = 4,
             fontface = "bold") +
   coord_flip() +
@@ -95,9 +95,9 @@ p2 <- p2_data %>%
   scale_fill_manual(values = c("Growth" = "#2E7D32", "Decline" = "#C62828")) +
   labs(
     title = "Job Growth Rate by Initiative",
-    subtitle = paste("2-Year CAGR | Indiana | Through", recent_year),
+    subtitle = paste("4-Year CAGR | Indiana | Through", recent_year),
     x = NULL, 
-    y = "2-Year Compound Annual Growth Rate",
+    y = "4-Year Compound Annual Growth Rate",
     caption = "Source: CICP Advanced Industries Dashboard"
   ) +
   theme(panel.grid.major.y = element_blank(),
@@ -172,7 +172,7 @@ htmlwidgets::saveWidget(
 
 p4_data <- wage_data %>%
   filter(display_level == 0, 
-         year == recent_year, 
+         year == recent_year - 1, 
          geo_area == "Indiana",
          initiative != "Total Employment",
          !is.na(wages)) %>%
@@ -191,7 +191,7 @@ p4 <- p4_data %>%
   scale_fill_manual(values = initiative_colors) +
   labs(
     title = "Average Annual Wage by Initiative",
-    subtitle = paste("Indiana |", recent_year),
+    subtitle = paste("Indiana |", recent_year - 1),
     x = NULL, 
     y = "Average Annual Wage",
     caption = "Source: CICP Advanced Industries Dashboard"
@@ -404,14 +404,16 @@ metro_order <- p6_data %>%
   pull(geo_area)
 
 p6_data <- p6_data %>%
-  filter(geo_area %in% metro_order) %>%  # ADD THIS LINE
+  filter(geo_area %in% metro_order) %>%
   mutate(
     geo_area = factor(geo_area, levels = metro_order),
     initiative = factor(initiative, 
                        levels = c("Advanced & Traded Industries", 
                                  "AgriNovus", 
                                  "BioCrossroads", 
-                                 "Conexus", 
+                                 "Conexus",
+                                 "Finance & Insurance",  # ADD THIS
+                                 "Healthcare",           # ADD THIS
                                  "TechPoint"))
   )
 
@@ -454,7 +456,7 @@ p6_interactive <- plot_ly(
     "Jobs: %{customdata:,}<br>",
     "<extra></extra>"
   ),
-  customdata = ~jobs
+  customdata = ~round(jobs, 0)
 ) %>%
   layout(
     title = list(
@@ -502,8 +504,6 @@ htmlwidgets::saveWidget(
   file.path(viz_dir, "06_metro_initiative_share.html"),
   selfcontained = TRUE
 )
-
-# VISUALIZATION 7: Time Series - Jobs by Initiative with Geography Dropdown ----
 
 # VISUALIZATION 7: Time Series - Jobs by Initiative with Geography Dropdown ----
 
@@ -588,7 +588,7 @@ for(geo in geography_list) {
           hovertemplate = paste0(
             "<b>", init, "</b><br>",
             "Year: %{x}<br>",
-            "Jobs: %{y:,}<br>",
+            "Jobs: %{y:,.0f}<br>",
             "<extra></extra>"
           )
         )
@@ -623,11 +623,12 @@ for(geo in geography_list) {
           legendgroup = init,
           showlegend = FALSE,
           hovertemplate = paste0(
-            "<b>", init, " (Projected)</b><br>",
+            "<b>", init, "%{text}</b><br>",
             "Year: %{x}<br>",
-            "Jobs: %{y:,}<br>",
+            "Jobs: %{y:,.0f}<br>",
             "<extra></extra>"
-          )
+          ),
+          text = ~ifelse(year > recent_year, " (Projected)", "")
         )
     }
   }
@@ -814,13 +815,13 @@ if(nrow(p8_data) > 0) {
       "<b>%{text}</b><br>",
       "Jobs Growth: %{x:.1f}%<br>",
       "GDP Growth: %{y:.1f}%<br>",
-      "GDP per Job: $", format(p8_data$gdp_per_job, big.mark = ",", digits = 2, nsmall = 0), "<br>",
-      "Jobs Start: ", format(p8_data$total_jobs_start, big.mark = ",", nsmall = 0), "<br>",
-      "Jobs End: ", format(p8_data$total_jobs_end, big.mark = ",", nsmall = 0), "<br>",
-      "GRP Start: $", format(p8_data$total_grp_start, big.mark = ",", nsmall = 0), "<br>",
-      "GRP End: $", format(p8_data$total_grp_end, big.mark = ",", nsmall = 0), "<br>",
+      "GDP per Job: $", format(round(p8_data$gdp_per_job, 0), big.mark = ","), "<br>",
+      "Jobs Start: ", format(round(p8_data$total_jobs_start, 0), big.mark = ","), "<br>",  # CHANGED
+      "Jobs End: ", format(round(p8_data$total_jobs_end, 0), big.mark = ","), "<br>",  # CHANGED
+      "GRP Start: $", format(round(p8_data$total_grp_start, 0), big.mark = ","), "<br>",  # CHANGED
+      "GRP End: $", format(round(p8_data$total_grp_end, 0), big.mark = ","), "<br>",  # CHANGED
       "<extra></extra>"
-    )
+)
   ) %>%
     add_annotations(
       x = p8_data$jobs_growth,
@@ -1040,7 +1041,7 @@ initiative_mix_data <- initiative_mix_data %>%
 p10 <- initiative_mix_data %>%
   ggplot(aes(x = geo_area, y = share, fill = geo_category)) +
   geom_col(alpha = 0.8) +
-  facet_wrap(~initiative, nrow = 5, ncol = 1, scales = "free_y") +
+  facet_wrap(~initiative, nrow = 7, ncol = 1, scales = "free_y") +
   scale_fill_manual(
     values = c("Metro" = "#1565C0", "State" = "#2E7D32", "National" = "#D84315"),
     name = "Geography Type"
@@ -1119,32 +1120,43 @@ for(i in seq_along(initiative_list)) {
 
 p10_interactive <- subplot(
   plots_list,
-  nrows = 5,
-  shareX = TRUE,
+  nrows = 7,
+  shareX = FALSE,
   titleY = TRUE,
   titleX = FALSE,
-  margin = 0.03
+  margin = 0.01
 ) %>%
   layout(
     title = list(
       text = paste0("<br><b>Initiative Share of Total Employment by Geography</b><br><sup>All Geographies | ", 
                    recent_year, "</sup>"),
-      font = list(size = 16),
+      font = list(size = 14),
       y = 0.99
     ),
-    xaxis5 = list(tickangle = 90, tickfont = list(size = 7)),
-    height = 925,  # Reduced from 1000
+    xaxis = list(showticklabels = FALSE),
+    xaxis2 = list(showticklabels = FALSE),
+    xaxis3 = list(showticklabels = FALSE),
+    xaxis4 = list(showticklabels = FALSE),
+    xaxis5 = list(showticklabels = FALSE),
+    xaxis6 = list(showticklabels = FALSE),
+    xaxis7 = list(
+      showticklabels = TRUE,
+      tickangle = 90, 
+      tickfont = list(size = 8)
+    ),
+    height = 1400,
     plot_bgcolor = "white",
     paper_bgcolor = "white",
-    margin = list(l = 60, r = 60, t = 100, b = 120),  # Increased top margin
+    margin = list(l = 60, r = 60, t = 100, b = 180),
     legend = list(
       orientation = "h",
       x = 0.5,
-      y = 1.05,  # Moved up
+      y = 1.01,
       xanchor = "center",
       yanchor = "bottom"
     )
   )
+
 
 htmlwidgets::saveWidget(
   p10_interactive,
@@ -1161,12 +1173,12 @@ cat("\n=== Creating Visualization 11: Wage Premium Analysis ===\n")
 # Calculate wage premiums
 wage_premium_data <- wage_data %>%
   filter(display_level == 0,
-         year == recent_year,
+         year == recent_year - 1,
          initiative != "Total Employment",
          !is.na(wages)) %>%
   left_join(
     wage_data %>%
-      filter(display_level == 0, year == recent_year,
+      filter(display_level == 0, year == recent_year - 1,
              initiative == "Total Employment") %>%
       select(geo_area, total_wage = wages),
     by = "geo_area"
@@ -1224,7 +1236,7 @@ p11 <- wage_premium_data %>%
   ) +
   labs(
     title = "Wage Premium by Initiative and Geography",
-    subtitle = paste("% Difference from Total Employment Wage |", recent_year),
+    subtitle = paste("% Difference from Total Employment Wage |", recent_year - 1),
     x = NULL,
     y = NULL,
     caption = "Source: CICP Advanced Industries Dashboard\nPositive values indicate initiative wages exceed regional average"
@@ -1276,7 +1288,7 @@ p11_interactive <- plot_ly(
   layout(
     title = list(
       text = paste0("<b>Wage Premium by Initiative and Geography</b><br><sup>% Difference from Total Employment Wage | ", 
-                   recent_year, "<br>Positive values indicate initiative wages exceed regional average</sup>"),
+                   recent_year - 1, "<br>Positive values indicate initiative wages exceed regional average</sup>"),
       font = list(size = 16)
     ),
     xaxis = list(title = "", tickangle = 45),
@@ -1668,7 +1680,7 @@ p13 <- quadrant_data %>%
   geom_point(aes(color = quadrant, size = jobs), alpha = 0.6) +
   geom_point(data = benchmark_data, aes(shape = geo_area), 
              size = 4, color = "black", stroke = 2) +
-  facet_wrap(~initiative, scales = "free", ncol = 2) +
+  facet_wrap(~initiative, scales = "free", ncol = 3) +
   scale_color_manual(
     values = c("Stars" = "#2E7D32", "Emerging" = "#1565C0", 
                "Mature" = "#F57C00", "Declining" = "#C62828"),
@@ -1996,7 +2008,7 @@ p14 <- accel_data %>%
   geom_point(alpha = 0.6, size = 3) +
   geom_text(data = filter(accel_data, geo_area %in% c("Indiana", "United States")),
             aes(label = geo_area), vjust = -1, size = 3, show.legend = FALSE) +
-  facet_wrap(~initiative, scales = "free", ncol = 2) +
+  facet_wrap(~initiative, scales = "free", ncol = 3) +
   scale_color_manual(
     values = c("Metro" = "#1565C0", "State" = "#2E7D32", "National" = "#D84315"),
     name = "Geography Type"

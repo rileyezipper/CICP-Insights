@@ -1460,6 +1460,194 @@ datatable(
 Understanding these patterns at the industry level provides the **granular insights** needed to move from **generic strategies** to **targeted, evidence-based interventions** tailored to each region's unique industrial composition.
 :::
 
+# Business Formation & Establishment Dynamics {#sec-establishments}
+
+Indiana's entrepreneurial ecosystem and business formation patterns provide critical insights into economic vitality and future growth potential. This section examines new establishment formation across advanced industry initiatives, distinguishing between true startups and larger qualified establishments.
+
+## New Establishment Formation Overview
+
+New establishments represent fresh economic activity and entrepreneurial dynamism. Understanding where and how new businesses form helps identify emerging clusters and entrepreneurial hotspots.
+
+::: column-page
+```{r new_establishments_timeline, fig.height=14}
+#| fig-cap: "New establishment formation trends reveal entrepreneurial activity across initiatives and geographies. Use the dropdown to explore different regions. Distinct patterns emerge between true startups (1-20 employees) and larger qualified establishments (21+ employees)."
+
+knitr::include_url("estab_output_2022/plots/A_new_establishments_timeline_interactive.html", height = "1000px")
+```
+:::
+
+::: {.callout-note icon="false"}
+## 💡 Analysis
+
+Sustained formation of new establishments indicates a **healthy innovation ecosystem**, while declining trends may signal **barriers to entry** or **market saturation**. The distinction between startup-scale establishments (1-20 employees) and larger qualified establishments (21+ employees) reveals whether growth is driven by **small-scale entrepreneurship** or **larger-scale business development**.
+:::
+
+## Year-over-Year Growth in New Establishments
+
+Examining the growth rate of new establishment formation reveals acceleration or deceleration in entrepreneurial activity.
+
+::: column-page
+```{r yoy_growth_heatmap, fig.height=14}
+#| fig-cap: "Year-over-year growth rates in new establishment formation show momentum shifts across initiatives and geographies. Darker colors indicate stronger growth, revealing which sectors and regions are experiencing entrepreneurial surges."
+
+knitr::include_url("estab_output_2022/plots/B_yoy_growth_heatmap_interactive.html", height = "1000px")
+```
+:::
+
+::: {.callout-important icon="false"}
+## 🎯 Strategic Implications
+
+**Acceleration in new establishment formation** signals:
+
+- Improving **business climate** and **entrepreneurial support infrastructure**
+- Emerging **market opportunities** attracting new entrants
+- Potential **cluster formation** in high-growth sectors
+
+**Deceleration or negative growth** may indicate:
+
+- **Maturing markets** with higher barriers to entry
+- **Economic headwinds** or **policy constraints**
+- **Consolidation trends** reducing net new establishment formation
+
+Understanding these dynamics helps **target entrepreneurship support programs**, **assess economic development effectiveness**, and **identify emerging clusters** before they appear in traditional employment metrics.
+:::
+
+## Cohort Performance Analysis
+
+Tracking establishment cohorts over time reveals survival rates and growth patterns. This longitudinal perspective distinguishes between **sustainable entrepreneurship** and **high-churn activity**.
+
+```{r cohort_performance_table}
+#| tbl-cap: "Establishment Cohort Performance by Initiative"
+
+cohort_data <- read_csv("estab_output_2022/tables/Q_cohort_performance_all_initiatives.csv", 
+                        show_col_types = FALSE)
+
+# Format the data using actual column names
+cohort_display <- cohort_data %>%
+  mutate(
+    # Format year columns (no commas)
+    across(matches("year", ignore.case = TRUE), ~as.character(.x)),
+    # Format count/employment columns (with commas)
+    across(where(is.numeric) & !matches("year|rate|growth|pct", ignore.case = TRUE), ~comma(round(.x, 0))),
+    # Format rate/percentage columns (just add %)
+    across(matches("rate|growth|pct", ignore.case = TRUE) & where(is.numeric), ~sprintf("%.1f%%", .x))
+  ) %>%
+  # Clean up column names for display
+  rename_with(~str_replace_all(.x, "_", " ") %>% 
+               str_to_title() %>%
+               str_replace("Yr", "Year") %>%
+               str_replace("Avg", "Average"))
+
+create_table(cohort_display, striped = TRUE)
+```
+
+::: {.callout-note icon="false"}
+## 📊 Cohort Insights
+
+**Cohort analysis** reveals the long-term viability of new establishment formation:
+
+- **Higher survival rates** indicate supportive ecosystems with adequate infrastructure, talent, and market access
+- **Employment growth** in surviving establishments shows whether businesses are scaling or remaining small
+- **Variation across cohorts** may reflect economic cycle impacts, with recession cohorts often showing different patterns
+- **Initiative-level differences** highlight which sectors foster more durable entrepreneurship
+
+Comparing recent cohorts to earlier ones reveals whether entrepreneurial ecosystem strength is improving or declining over time.
+:::
+
+## Startup-Scale vs. Qualified Establishments
+
+The composition of new establishments by size reveals the nature of entrepreneurial activity. Startup-scale businesses (1-20 employees) represent **grassroots entrepreneurship**, while larger qualified establishments (21+ employees) often indicate **expansion activity** or **branch locations**.
+
+::: column-page
+```{r survival_by_size, fig.height=14}
+#| fig-cap: "Survival rates and growth trajectories differ between startup-scale and larger qualified establishments. This analysis reveals which establishment types demonstrate greater resilience and growth potential across initiatives."
+
+knitr::include_url("estab_output_2022/plots/H_survival_by_size_interactive.html", height = "1000px")
+```
+:::
+
+## Sector-Level Entrepreneurship Patterns
+
+Within each initiative, specific sectors demonstrate varying levels of entrepreneurial activity and business formation success.
+
+```{r sector_entrepreneurship_table}
+#| tbl-cap: "Top Entrepreneurial Sectors by Initiative"
+
+sector_data <- read_csv("estab_output_2022/tables/R_sector_entrepreneurship_all_initiatives.csv", 
+                        show_col_types = FALSE)
+
+# Get top 5 sectors per initiative
+sector_display <- sector_data %>%
+  group_by(across(matches("initiative", ignore.case = TRUE))) %>%
+  arrange(desc(across(matches("new.*establishments|formation.*count", ignore.case = TRUE)))) %>%
+  slice_head(n = 5) %>%
+  ungroup() %>%
+  mutate(
+    # Format year columns (no commas)
+    across(matches("year", ignore.case = TRUE), ~as.character(.x)),
+    # Format numeric columns (with commas)
+    across(where(is.numeric) & !matches("year|rate|growth|pct", ignore.case = TRUE), ~comma(round(.x, 1))),
+    # Format rate/percentage columns (just add %)
+    across(matches("rate|pct", ignore.case = TRUE) & where(is.numeric), ~sprintf("%.1f%%", .x))
+  ) %>%
+  # Clean up column names
+  rename_with(~str_replace_all(.x, "_", " ") %>% 
+               str_to_title() %>%
+               str_replace("Avg", "Average"))
+
+create_table(sector_display, striped = TRUE)
+```
+
+::: {.callout-important icon="false"}
+## 🎯 Sector-Specific Strategies
+
+**Sector-level entrepreneurship patterns** inform targeted interventions:
+
+- **High-formation sectors** with **strong survival rates** are proven areas for continued entrepreneurship support and cluster development
+- **High-formation but low-survival sectors** may need enhanced business support services, mentorship programs, or market access assistance
+- **Low-formation sectors** with **high survival rates** suggest high barriers to entry but sustainable business models once established
+- **Concentration of formation** in specific sectors indicates where entrepreneurial momentum exists and where it may need cultivation
+
+Understanding which sectors drive new business creation within each initiative helps **allocate entrepreneurship resources effectively** and **identify emerging specializations** before they appear in employment data.
+:::
+
+## New Startup Formation by Type
+
+Breaking down startup formation by establishment type (true startups vs. qualified establishments) provides granular insights into entrepreneurial dynamics.
+
+::: column-page
+```{r startup_by_type, fig.height=14}
+#| fig-cap: "Distinguishing between true startups and qualified establishments reveals whether growth is driven by grassroots entrepreneurship or larger-scale business development. Use dropdowns to explore different geographies and time periods."
+
+knitr::include_url("estab_output_2022/plots/O_new_startups_by_type_interactive.html", height = "1000px")
+```
+:::
+
+## Growth and Survival Patterns
+
+Understanding how new establishments grow and survive over time distinguishes **sustainable business formation** from **churn**. Survival analysis reveals which initiatives and geographies foster **durable entrepreneurship**.
+
+::: column-page
+```{r growth_survival_bubble, fig.height=14}
+#| fig-cap: "Bubble charts position establishments by employment growth and survival rates. Larger bubbles represent more establishments. High-growth, high-survival quadrants indicate robust entrepreneurial ecosystems."
+
+knitr::include_url("estab_output_2022/plots/J_growth_survival_scale_bubble_interactive.html", height = "1000px")
+```
+:::
+
+::: {.callout-important icon="false"}
+## 🎯 Ecosystem Health Indicators
+
+Strong entrepreneurial ecosystems demonstrate:
+
+- **High formation rates** of new establishments
+- **Strong survival rates** beyond initial years
+- **Employment growth** in surviving establishments
+- **Rising wage quality** as businesses mature
+- **Balanced mix** of startup-scale and qualified establishments
+
+Regions exhibiting these characteristics possess the **entrepreneurial infrastructure**, **talent pools**, and **market conditions** that support sustainable business creation. Understanding where these conditions exist—and where they're lacking—informs **targeted interventions** to strengthen entrepreneurial ecosystems across Indiana's advanced industries.
+:::
 
 # Methodology & Technical Notes {#sec-methodology}
 

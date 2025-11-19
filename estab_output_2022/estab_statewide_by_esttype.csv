@@ -1,0 +1,29 @@
+cicp_initiative,new_est_type,new_est_type_desc,Total_Establishments,Total_Employment,Total_Wages,Avg_Wage
+Advanced & Traded Industries,1,Qualified New - 1-20 or fewer Employees at start,18824,60865.25,4186319133,68775.34187405786
+Advanced & Traded Industries,2,Qualified - 21-50 Employees at start,307,12786.333333333334,804324791,62904.29985140384
+Advanced & Traded Industries,3,Qualified - 51-100 Employees at start,90,5979.083333333333,302921652,50663.56080224115
+Advanced & Traded Industries,4,Qualified - 101+ Employees at start,33,4299.416666666667,190500291,44308.40408582559
+AgriNovus,1,Qualified New - 1-20 or fewer Employees at start,1679,7824.583333333333,320075550,40903.43822354758
+AgriNovus,2,Qualified - 21-50 Employees at start,53,1599.0833333333333,80196227,50151.37443326906
+AgriNovus,3,Qualified - 51-100 Employees at start,17,1230.5833333333333,55955873,45471.014830365006
+AgriNovus,4,Qualified - 101+ Employees at start,5,1460.8333333333333,53475383,36606.080775812894
+BioX,1,Qualified New - 1-20 or fewer Employees at start,985,2817.5833333333335,296906599,105373.9914229097
+BioX,2,Qualified - 21-50 Employees at start,6,236.91666666666666,14371343,60659.90714034471
+BioX,3,Qualified - 51-100 Employees at start,2,101.41666666666666,17347435,171051.12571898111
+BioX,4,Qualified - 101+ Employees at start,1,95,2872965,30241.736842105263
+Conexus,1,Qualified New - 1-20 or fewer Employees at start,4820,24977.75,1336127641,53488.005364774646
+Conexus,2,Qualified - 21-50 Employees at start,204,9598.25,569125136,59294.677258875316
+Conexus,3,Qualified - 51-100 Employees at start,72,4791.166666666667,232449055,48516.169687271715
+Conexus,4,Qualified - 101+ Employees at start,26,3763.6666666666665,161705893,42964.987955008415
+Other,1,Qualified New - 1-20 or fewer Employees at start,35622,148119.08333333334,5859673769,39556.156162637155
+Other,2,Qualified - 21-50 Employees at start,1457,38908,1262455743,32447.11719954765
+Other,3,Qualified - 51-100 Employees at start,365,19007.916666666668,632511955,33275.90682829523
+Other,4,Qualified - 101+ Employees at start,90,13798.666666666666,456571223,33088.06814668084
+TechPoint,1,Qualified New - 1-20 or fewer Employees at start,3256,7624.833333333333,742239804,97338.42125510941
+TechPoint,2,Qualified - 21-50 Employees at start,21,666.9166666666666,54157586,81205.92677745846
+TechPoint,3,Qualified - 51-100 Employees at start,2,54.75,4437292,81046.42922374429
+TechPoint,4,Qualified - 101+ Employees at start,2,288.83333333333337,15911816,55089.95729948066
+Total,1,Qualified New - 1-20 or fewer Employees at start,55637,212478.91666666666,10225192164,48118.739917332976
+Total,2,Qualified - 21-50 Employees at start,1789,52226.083333333336,2093569144,40086.413883228844
+Total,3,Qualified - 51-100 Employees at start,460,25178.5,943949275,37490.040471036795
+Total,4,Qualified - 101+ Employees at start,123,18098.083333333332,647071514,35753.59346523803

@@ -1,0 +1,31 @@
+statefips,countyfips,metrofips,geo_area,year,initiative,naics_title,naics_code,jobs,init_specific_lq
+00,000,18020,Columbus MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,8687.5850321,200.56558654713896
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,8688.78683073626,161.52090725314267
+00,000,45460,Terre Haute MSA,2024,TechPoint,Manufacturing and Reproducing Magnetic and Optical Media,334610,153.198271597,123.6002822692508
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Railroad Rolling Stock Manufacturing,3365,560.854090393,112.92272776045924
+00,000,34620,Muncie MSA,2024,Conexus,Railroad Rolling Stock Manufacturing,3365,560.854090393,98.49844287992198
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Motor Vehicle Body and Trailer Manufacturing,3362,28791.083061948004,98.37426381088115
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",334513,272.054293312,61.57672424780262
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Motor Vehicle Body and Trailer Manufacturing,3362,28791.083061948004,60.38585756568497
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Creamery Butter Manufacturing,311512,110.455582553,59.66585379119138
+00,000,21780,Evansville MSA,2024,AgriNovus,Specialty Canning,311422,588.481523993,58.91224689948573
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,653.030392916,47.51725374966886
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use",334512,122.678101644,47.02266173317166
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,653.030392916,46.486135522995454
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Motor Vehicle Parts Manufacturing,3363,7097.802797516903,45.14342254160199
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Distilleries,312140,4731.21907795,44.68243824632946
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Nonferrous Metal (except Aluminum) Production and Processing,3314,703.365596231,39.88886583389176
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,2137.09057621,39.46427755557523
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Manufacturing and Reproducing Magnetic and Optical Media,3346,153.198271597,38.82634748351078
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Cookie and Cracker Manufacturing,311821,680.394569444,38.58028472411417
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,2659.1096400290003,38.211717201738644
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Medical Equipment and Supplies Manufacturing,3391,4832.0784478,36.69141376438488
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Foundries,3315,1155.992742865,35.62068064335921
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Flavoring Syrup and Concentrate Manufacturing,311930,2217.33295785,34.80175051347075
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Wet Corn Milling and Starch Manufacturing,311221,431.600140955,32.42018769340264
+00,000,21780,Evansville MSA,2024,AgriNovus,"Dry, Condensed, and Evaporated Dairy Product Manufacturing",311514,547.285092691,32.1506702102456
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Wet Corn Milling and Starch Manufacturing,311221,431.600140955,31.716673836752765
+00,000,34620,Muncie MSA,2024,TechPoint,Computer Facilities Management Services,541513,404.965735818,31.663928080548914
+00,000,34620,Muncie MSA,2024,Finance & Insurance,"International, Secondary Market, and All Other Nondepository Credit Intermediation",522299,664.090061136,30.69763258727204
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Other Measuring and Controlling Device Manufacturing,334519,1216.20717457,30.516873267254223
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Alumina and Aluminum Production and Processing,3313,1602.614681330075,29.015354909290437

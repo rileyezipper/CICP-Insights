@@ -2,8 +2,8 @@
 # CICP Advanced Industries Dashboard - Exploratory Data Analysis
 # ============================================================================
 # Purpose: Automated EDA and insights generation for CICP data refreshes
-# Author: [Your Name]
-# Last Updated: 2025-10-07
+# Author: Riley Hudelson-Zipper
+# Last Updated: 2025-11-03
 # ============================================================================
 
 # SETUP -----------------------------------------------------------------------
@@ -15,7 +15,7 @@ library(scales)
 library(patchwork)
 
 # Set data directory (MODIFY THIS FOR EACH DATA RUN)
-data_dir <- "CICP_20250709"
+data_dir <- "CICP_20251031"
 output_dir <- paste0("outputs_", gsub("CICP_", "", data_dir))
 
 # Create output directory if it doesn't exist
@@ -63,6 +63,8 @@ initiative_colors <- c(
   "BioCrossroads" = "#6A1B9A",
   "Conexus" = "#D84315",
   "TechPoint" = "#F57C00",
+  "Finance & Insurance" = "#00838F",  
+  "Healthcare" = "#C2185B",  
   "Total Employment" = "#424242"
 )
 
@@ -159,6 +161,8 @@ extract_initiative <- function(filename) {
     str_replace("Biox", "BioCrossroads") %>%
     str_replace("Conexus", "Conexus") %>%
     str_replace("Techpoint", "TechPoint") %>%
+    str_replace("Finance", "Finance & Insurance") %>%
+    str_replace("Health", "Healthcare") %>%
     str_replace("Totals", "Total Employment")
 }
 
@@ -241,7 +245,7 @@ cat("\n=== ANALYSIS 1: Initiative-Level Overview ===\n")
 
 # ANALYSIS SETUP - Define most recent years for each dataset
 
-recent_year <- 2023
+recent_year <- 2024
 
 cat(sprintf("Using %d as most recent year (last year with complete data)\n", recent_year))
 
@@ -664,6 +668,7 @@ industry_wage_dist <- wage_data %>%
            "initiative", "naics_code", "naics_title")
   ) %>%
   group_by(statefips, countyfips, metrofips, geo_area, year, initiative) %>%
+  filter(n() >= 1) %>%  # ADD THIS LINE - only groups with at least 1 row
   summarise(
     n_industries = n(),
     min_wage = min(wages, na.rm = TRUE),
@@ -708,8 +713,12 @@ wage_extremes_by_init <- wage_data %>%
   group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
   filter(n() >= 6) %>%  # Only include groups with at least 6 industries
   arrange(desc(wages)) %>%
-  slice(c(1:3, (n()-2):n())) %>%
-  mutate(category = ifelse(row_number() <= 3, "Highest Wage", "Lowest Wage")) %>%
+  mutate(
+    top3 = row_number() <= 3,
+    bottom3 = row_number() > (n() - 3)
+  ) %>%
+  filter(top3 | bottom3) %>%  # CHANGED THIS LINE
+  mutate(category = ifelse(top3, "Highest Wage", "Lowest Wage")) %>%
   ungroup() %>%
   select(statefips, countyfips, metrofips, geo_area, year, initiative, 
          category, naics_title, naics_code, wages, jobs) %>%
