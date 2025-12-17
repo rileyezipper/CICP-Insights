@@ -1,0 +1,10 @@
+# Large data files
+CICP_*/iomatrix_*.csv
+CICP_*/industrySoc_crosswalk_*.csv
+CICP_*/talentDemand_*.csv
+outputs_occupation_*/processed_data_occupations.RData
+
+# R files
+.Rproj.user
+.Rhistory
+.Ruserdata
