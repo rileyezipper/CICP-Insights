@@ -1,0 +1,230 @@
+sector,sector_name,naics_version,naics_code,naics_title,compTia_reportYear
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,333242,  Semiconductor machinery manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,333242,  Semiconductor machinery manufacturing,2021
+,,2017,334111,  Electronic computer manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334111,  Electronic computer manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334112,  Computer storage device manufacturing,2023
+,,2017,334112,  Computer storage device manufacturing,2021
+,,2017,334118,  Other computer peripheral equipment mfg,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334118,  Other computer peripheral equipment mfg,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334210,  Telephone apparatus manufacturing,2023
+,,2017,334210,  Telephone apparatus manufacturing,2021
+,,2017,334220,  Broadcast and wireless communications equip.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334220,  Broadcast and wireless communications equip.,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334290,  Other communications equipment manufacturing,2023
+,,2017,334290,  Other communications equipment manufacturing,2021
+,,2017,334310,  Audio and video equipment manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334310,  Audio and video equipment manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334412,  Bare printed circuit board manufacturing,2023
+,,2017,334412,  Bare printed circuit board manufacturing,2021
+,,2017,334413,  Semiconductors and related device mfg.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334413,  Semiconductors and related device mfg.,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334416,"  Capacitor, resistor, and inductor mfg.",2023
+,,2017,334416,"  Capacitor, resistor, and inductor mfg.",2021
+,,2017,334417,  Electronic connector manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334417,  Electronic connector manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334418,  Printed circuit assembly manufacturing,2023
+,,2017,334418,  Printed circuit assembly manufacturing,2021
+,,2017,334419,  Other electronic component manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334419,  Other electronic component manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334510,  Electromedical apparatus manufacturing,2023
+,,2017,334510,  Electromedical apparatus manufacturing,2021
+,,2017,334511,"  Search, detection, and navigation instruments",2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334511,"  Search, detection, and navigation instruments",2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334512,  Automatic environmental control manufacturing,2023
+,,2017,334512,  Automatic environmental control manufacturing,2021
+,,2017,334513,  Industrial process variable instruments,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334513,  Industrial process variable instruments,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334514,  Totalizing fluid meters and counting devices,2023
+,,2017,334514,  Totalizing fluid meters and counting devices,2021
+,,2017,334515,  Electricity and signal testing instruments,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334515,  Electricity and signal testing instruments,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334516,  Analytical laboratory instrument mfg.,2023
+,,2017,334516,  Analytical laboratory instrument mfg.,2021
+,,2017,334517,  Irradiation apparatus manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334517,  Irradiation apparatus manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334519,  Other measuring and controlling device mfg.,2023
+,,2017,334519,  Other measuring and controlling device mfg.,2021
+,,2017,334613,  Blank magnetic and optical media mfg,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334613,  Blank magnetic and optical media mfg,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2017,334614,  Software and prerecorded media reproducing,2023
+,,2017,334614,  Software and prerecorded media reproducing,2021
+,,2017,336414,  Guided missile and space vehicle mfg.,2021
+,,2017,336415,  Space vehicle propulsion units and parts mfg.,2021
+,,2017,336419,  Other guided missile and space vehicle parts,2021
+,,2017,423430,  Computer and software merchant wholesalers,2021
+1,IT/Tech Services,2017,423430,  Computer and software merchant wholesalers,2023
+3,Software,2017,511210,  Software publishers,2023
+,,2017,511210,  Software publishers,2021
+2,"Telecommunications, Internet Services and Data Hosting",2017,517311,  Wired telecommunications carriers,2023
+,,2017,517311,  Wired telecommunications carriers,2021
+,,2017,517312,  Wireless telecommunications carriers (except satellite),2021
+2,"Telecommunications, Internet Services and Data Hosting",2017,517312,  Wireless telecommunications carriers (except satellite),2023
+2,"Telecommunications, Internet Services and Data Hosting",2017,517410,  Satellite telecommunications,2023
+,,2017,517410,  Satellite telecommunications,2021
+,,2017,517911,  Telecommunications resellers,2021
+2,"Telecommunications, Internet Services and Data Hosting",2017,517911,  Telecommunications resellers,2023
+2,"Telecommunications, Internet Services and Data Hosting",2017,517919,  All other telecommunications,2023
+,,2017,517919,  All other telecommunications,2021
+,,2017,518210,"  Data processing, hosting and related services",2021
+2,"Telecommunications, Internet Services and Data Hosting",2017,518210,"  Data processing, hosting and related services",2023
+2,"Telecommunications, Internet Services and Data Hosting",2017,519130,  Internet publishing and web search portals,2023
+,,2017,519130,  Internet publishing and web search portals,2021
+,,2017,541330,  Engineering services,2021
+ ,,2017,541330,,
+,,2017,541380,  Testing laboratories,2021
+,,2017,541511,  Custom computer programming services,2021
+1,IT/Tech Services,2017,541511,  Custom computer programming services,2023
+1,IT/Tech Services,2017,541512,  Computer systems design services,2023
+,,2017,541512,  Computer systems design services,2021
+,,2017,541513,  Computer facilities management services,2021
+1,IT/Tech Services,2017,541513,  Computer facilities management services,2023
+1,IT/Tech Services,2017,541519,  Other computer related services,2023
+,,2017,541519,  Other computer related services,2021
+,,2017,541713,  Research and development in nanotechnology,2021
+,,2017,541714,  Research and development in biotechnology (except nanobiotechnology),2021
+,,2017,541715,"  Research and development in the physical, engineering, and life sciences (except nanotechnology and biotechnology)",2021
+,,2017,611420,  Computer training,2021
+1,IT/Tech Services,2017,611420,  Computer training,2023
+1,IT/Tech Services,2017,811211,  Consumer electronics repair and maintenance,2023
+,,2017,811211,  Consumer electronics repair and maintenance,2021
+,,2017,811212,  Computer and office machine repair,2021
+1,IT/Tech Services,2017,811212,  Computer and office machine repair,2023
+1,IT/Tech Services,2017,811213,  Communication equipment repair,2023
+,,2017,811213,  Communication equipment repair,2021
+,,2017,811219,  Other electronic equipment repair,2021
+1,IT/Tech Services,2017,811219,  Other electronic equipment repair,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,333242,Semiconductor Machinery Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,333242,  Semiconductor machinery manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,333242,Semiconductor Machinery Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334111,  Electronic computer manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334111,Electronic Computer Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334111,Electronic Computer Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334112,Computer Storage Device Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334112,  Computer storage device manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334112,Computer Storage Device Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334118,  Other computer peripheral equipment mfg,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334118,Computer Terminal and Other Computer Peripheral Equipment Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334210,Telephone Apparatus Manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334210,  Telephone apparatus manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334210,Telephone Apparatus Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334220,  Broadcast and wireless communications equip.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334290,Other Communications Equipment Manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334290,  Other communications equipment manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334290,Other Communications Equipment Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334310,  Audio and video equipment manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334310,Audio and Video Equipment Manufacturing,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334310,Audio and Video Equipment Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334412,Bare Printed Circuit Board Manufacturing  ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334412,  Bare printed circuit board manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334412,Bare Printed Circuit Board Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334413,  Semiconductors and related device mfg.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334413,Semiconductor and Related Device Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334413,Semiconductor and Related Device Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334416,"  Capacitor, resistor, and inductor mfg.",2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334416,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing",2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334417,  Electronic connector manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334417,Electronic Connector Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334417,Electronic Connector Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334418,  Printed circuit assembly manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334419,  Other electronic component manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334419,Other Electronic Component Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334419,Other Electronic Component Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334510,  Electromedical apparatus manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334511,"  Search, detection, and navigation instruments",2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334512,  Automatic environmental control manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use",2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334513,  Industrial process variable instruments,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334514,Totalizing Fluid Meter and Counting Device Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334514,  Totalizing fluid meters and counting devices,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334514,Totalizing Fluid Meter and Counting Device Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334515,  Electricity and signal testing instruments,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334516,Analytical Laboratory Instrument Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334516,  Analytical laboratory instrument mfg.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334516,Analytical Laboratory Instrument Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334517,  Irradiation apparatus manufacturing,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334517,Irradiation Apparatus Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334517,Irradiation Apparatus Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334519,Other Measuring and Controlling Device Manufacturing ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334519,  Other measuring and controlling device mfg.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334519,Other Measuring and Controlling Device Manufacturing,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334610,Manufacturing and Reproducing Magnetic and Optical Media ,2023
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,334610,Manufacturing and Reproducing Magnetic and Optical Media,2025
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,336414,  Guided missile and space vehicle mfg.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,336415,  Space vehicle propulsion units and parts mfg.,2021
+4,"Manufacturing: Computer, Peripheral and Communications Equipment",2022,336419,  Other guided missile and space vehicle parts,2021
+1,IT/Tech Services,2022,423430,  Computer and software merchant wholesalers,2021
+1,IT/Tech Services,2022,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ,2023
+1,IT/Tech Services,2022,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,513110,Newspaper Publishers ,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,513110,Newspaper Publishers ,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,513120,Periodical Publishers ,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,513120,Periodical Publishers ,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,513130,Book Publishers ,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,513130,Book Publishers ,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,513199,All Other Publishers ,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,513199,All Other Publishers ,2023
+3,Software,2022,513210,Software Publishers,2023
+3,Software,2022,513210,  Software publishers,2021
+3,Software,2022,513210,Software Publishers,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,516210,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,517111,  Wired telecommunications carriers,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,517111,Wired Telecommunications Carriers ,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,517111,Wired Telecommunications Carriers,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,517112,Wireless Telecommunications Carriers (except Satellite),2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,517112,  Wireless telecommunications carriers (except satellite),2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,517112,Wireless Telecommunications Carriers (except Satellite),2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,517121,Telecommunications Resellers,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,517121,  Telecommunications resellers,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,517121,Telecommunications Resellers,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,517122,Agents for Wireless Telecommunications Services,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,517122,Agents for Wireless Telecommunications Services,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,517410,  Satellite telecommunications,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,517410,Satellite Telecommunications,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,517410,Satellite Telecommunications,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,517810,All Other Telecommunications ,2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,517810,  All other telecommunications,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,517810,All Other Telecommunications,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2023
+2,"Telecommunications, Internet Services and Data Hosting",2022,518210,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,519290,Web Search Portals and All Other Information Services,2025
+2,"Telecommunications, Internet Services and Data Hosting",2022,541330,  Engineering services,2021
+2,"Telecommunications, Internet Services and Data Hosting",2022,541380,Testing Laboratories and Services,2021
+1,IT/Tech Services,2022,541511,Custom Computer Programming Services ,2023
+1,IT/Tech Services,2022,541511,  Custom computer programming services,2021
+1,IT/Tech Services,2022,541511,Custom Computer Programming Services,2025
+1,IT/Tech Services,2022,541512,  Computer systems design services,2021
+1,IT/Tech Services,2022,541512,Computer Systems Design Services ,2023
+1,IT/Tech Services,2022,541512,Computer Systems Design Services,2025
+1,IT/Tech Services,2022,541513,Computer Facilities Management Services ,2023
+1,IT/Tech Services,2022,541513,  Computer facilities management services,2021
+1,IT/Tech Services,2022,541513,Computer Facilities Management Services,2025
+1,IT/Tech Services,2022,541519,  Other computer related services,2021
+1,IT/Tech Services,2022,541519,Other Computer Related Services,2023
+1,IT/Tech Services,2022,541519,Other Computer Related Services,2025
+1,IT/Tech Services,2022,541713,  Research and development in nanotechnology,2021
+1,IT/Tech Services,2022,541714,  Research and development in biotechnology (except nanobiotechnology),2021
+1,IT/Tech Services,2022,541715,"  Research and development in the physical, engineering, and life sciences (except nanotechnology and biotechnology)",2021
+1,IT/Tech Services,2022,611420,Computer Training ,2023
+1,IT/Tech Services,2022,611420,  Computer training,2021
+1,IT/Tech Services,2022,611420,Computer Training,2025
+1,IT/Tech Services,2022,811210,Electronic and Precision Equipment Repair and Maintenance ,2021
+1,IT/Tech Services,2022,811210,Electronic and Precision Equipment Repair and Maintenance ,2023
+1,IT/Tech Services,2022,811210,Electronic and Precision Equipment Repair and Maintenance,2025

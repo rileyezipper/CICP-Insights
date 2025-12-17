@@ -15,7 +15,7 @@ library(scales)
 library(patchwork)
 
 # Set data directory (MODIFY THIS FOR EACH DATA RUN)
-data_dir <- "CICP_20250709"  # Update with your data folder name
+data_dir <- "CICP_20251104"  # Update with your data folder name
 output_dir <- paste0("outputs_occupation_", gsub("CICP_", "", data_dir))
 
 # Create output directory if it doesn't exist
@@ -205,7 +205,7 @@ wage_growth <- wage_growth %>%
 # ANALYSIS SETUP --------------------------------------------------------------
 
 # Define most recent year
-recent_year <- 2023
+recent_year <- 2024
 cat(sprintf("Using %d as most recent year\n", recent_year))
 
 # ANALYSIS 1: INITIATIVE-LEVEL OCCUPATION OVERVIEW ---------------------------

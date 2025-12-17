@@ -11,7 +11,7 @@ library(plotly)
 library(patchwork)
 
 # Load processed data
-output_dir <- "outputs_20251031"
+output_dir <- "outputs_20251104"
 load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
 load(file.path(output_dir, "processed_data_initiative_deepdive.RData"))
 
@@ -285,7 +285,7 @@ waterfall_data <- industry_growth_contrib %>%
   ) %>%
   ungroup()
 
-prior_year <- recent_year - 1
+prior_year <- recent_year
 
 # Create static version for one initiative AND one geography (Indiana)
 init_example <- initiative_list[1]
@@ -311,7 +311,7 @@ p17 <- p17_data %>%
   coord_flip() +
   labs(
     title = paste("Top Growth Contributors -", init_example),
-    subtitle = paste("Year-over-Year Job Change |", geo_example, "|", recent_year - 1, "to", recent_year),
+    subtitle = paste("Year-over-Year Job Change |", geo_example, "|", recent_year, "to", recent_year),
     x = NULL,
     y = "Cumulative Job Change",
     caption = "Source: CICP Advanced Industries Dashboard"
@@ -489,7 +489,7 @@ cat("\n=== Creating Visualization 18: Wage Distribution by Initiative ===\n")
 
 p18_data <- wage_data %>%
   filter(display_level >= 2,
-         year == recent_year - 1,
+         year == recent_year,
          geo_area == "Indiana",
          initiative != "Total Employment",
          naics_code != "000000",
@@ -546,7 +546,7 @@ trace_geographies <- c()
 for(geo in geography_list_viz18) {
   geo_data <- wage_data %>%
     filter(display_level >= 2,
-           year == recent_year - 1,
+           year == recent_year,
            geo_area == geo,
            initiative != "Total Employment",
            naics_code != "000000",
@@ -555,7 +555,7 @@ for(geo in geography_list_viz18) {
              naics_code, naics_title, year, .keep_all = TRUE) %>%
     left_join(
       jobs_data %>%
-        filter(display_level >= 2, year == recent_year - 1, geo_area == geo,
+        filter(display_level >= 2, year == recent_year, geo_area == geo,
                naics_code != "000000") %>%
         distinct(statefips, countyfips, metrofips, geo_area, initiative, 
                  naics_code, naics_title, .keep_all = TRUE) %>%
@@ -621,7 +621,7 @@ updatemenus <- list(
             text = paste0("<b>Wage Distribution by Initiative - ", 
                          geo, 
                          "</b><br><sup>Industries with 50+ jobs | ", 
-                         recent_year - 1, "</sup>")
+                         recent_year, "</sup>")
           ))
         ),
         label = geo
@@ -636,7 +636,7 @@ p18_interactive <- p18_interactive %>%
       text = paste0("<b>Wage Distribution by Initiative - ", 
                    geography_list_viz18[1], 
                    "</b><br><sup>Industries with 50+ jobs | ", 
-                   recent_year - 1, "</sup>"),
+                   recent_year, "</sup>"),
       font = list(size = 16)
     ),
     xaxis = list(title = ""),

@@ -3,7 +3,7 @@
 # ============================================================================
 # Purpose: Automated EDA and insights generation for CICP data refreshes
 # Author: Riley Hudelson-Zipper
-# Last Updated: 2025-11-03
+# Last Updated: 2025-12-02
 # ============================================================================
 
 # SETUP -----------------------------------------------------------------------
@@ -15,7 +15,7 @@ library(scales)
 library(patchwork)
 
 # Set data directory (MODIFY THIS FOR EACH DATA RUN)
-data_dir <- "CICP_20251031"
+data_dir <- "CICP_20251104"
 output_dir <- paste0("outputs_", gsub("CICP_", "", data_dir))
 
 # Create output directory if it doesn't exist

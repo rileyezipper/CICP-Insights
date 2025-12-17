@@ -1,0 +1,1191 @@
+statefips,countyfips,metrofips,geo_area,year,initiative,naics_title,naics_code,jobs,grp,gdp_per_job
+0,000,00000,United States,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,20186.47140241,108665880525.7,5383104.276100811
+0,000,00000,United States,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,10678.6086173,35260307491.1,3301957.0952320644
+0,000,00000,United States,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,110848.4236397,228906539310.89,2065040.9973796676
+0,000,00000,United States,2024,Advanced & Traded Industries,Securities and Commodity Exchanges,5232,7458.04608562,14331639313.9,1921634.5875809356
+0,000,00000,United States,2024,Advanced & Traded Industries,Petroleum and Petroleum Products Merchant Wholesalers,4247,101551.6125362,192394121690.5,1894545.2158321706
+0,000,00000,United States,2024,Advanced & Traded Industries,Insurance and Employee Benefit Funds,5251,12935.21069537,19849870304.98,1534561.0344085866
+0,000,00000,United States,2024,Advanced & Traded Industries,Other Financial Investment Activities,5239,608501.3754151,532084792370,874418.3889593165
+0,000,00000,United States,2024,Advanced & Traded Industries,Basic Chemical Manufacturing,3251,155293.34242759,123658258366.93002,796288.2145098349
+0,000,00000,United States,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,348426.70799980004,242384284650,695653.573864777
+0,000,00000,United States,2024,Advanced & Traded Industries,Drugs and Druggists' Sundries Merchant Wholesalers,4242,259217.621332,178213858447,687506.7270937872
+0,000,00000,United States,2024,AgriNovus,Tobacco Manufacturing,312230,10678.6086173,35260307491.1,3301957.0952320644
+0,000,00000,United States,2024,AgriNovus,Ethyl Alcohol Manufacturing,325193,10624.6857869,9692478720.85,912260.2696449255
+0,000,00000,United States,2024,AgriNovus,Shellfish Fishing,114112,3167.54543748,2881862050.39,909809.2220841886
+0,000,00000,United States,2024,AgriNovus,Biological Product (except Diagnostic) Manufacturing,325414,923.196529516,809509676.28,876855.1986481121
+0,000,00000,United States,2024,AgriNovus,Pharmaceutical Preparation Manufacturing,325412,4591.42125494,3443073558.94,749892.7603812283
+0,000,00000,United States,2024,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,13977.116307,9121433026.95,652597.6336321833
+0,000,00000,United States,2024,AgriNovus,Finfish Fishing,114111,4765.27562736,3080957932.92,646543.4895791904
+0,000,00000,United States,2024,AgriNovus,Soybean and Other Oilseed Processing,311224,10044.0495487,5940820562.52,591476.6283972503
+0,000,00000,United States,2024,AgriNovus,Nitrogenous Fertilizer Manufacturing,325311,8895.22814567,5164961544.41,580644.0779064434
+0,000,00000,United States,2024,AgriNovus,Distilleries,312140,26814.7496022,14918820628.6,556366.2107579776
+0,000,00000,United States,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,10624.6857869,9692478720.85,912260.2696449255
+0,000,00000,United States,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,46159.8264758,40475483814,876855.1986481122
+0,000,00000,United States,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,229571.062747,172153677947,749892.7603812283
+0,000,00000,United States,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,244182.999294744,167877454657.074,687506.7270937873
+0,000,00000,United States,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,13977.116307,9121433026.95,652597.6336321833
+0,000,00000,United States,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,8895.22814567,5164961544.41,580644.0779064434
+0,000,00000,United States,2024,BioCrossroads,Phosphatic Fertilizer Manufacturing,325312,5840.41671058,3204780385.45,548724.6106334319
+0,000,00000,United States,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,28154.831385,13129224647,466322.2616206053
+0,000,00000,United States,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,7205.95648233,3146168283.73,436606.61724017333
+0,000,00000,United States,2024,BioCrossroads,Compost Manufacturing,325315,1184.82161611,506990678.796,427904.6498666602
+0,000,00000,United States,2024,Conexus,Tobacco Manufacturing,3122,10678.6086173,35260307491.1,3301957.0952320644
+0,000,00000,United States,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,68382.4896863,200631572687.16,2933961.2173751444
+0,000,00000,United States,2024,Conexus,Petroleum and Petroleum Products Merchant Wholesalers,4247,101551.6125362,192394121690.5,1894545.2158321706
+0,000,00000,United States,2024,Conexus,Basic Chemical Manufacturing,3251,41525.2265299,42246022510.6,1017358.0264560627
+0,000,00000,United States,2024,Conexus,Basic Chemical Manufacturing,3251,10624.6857869,9692478720.85,912260.2696449255
+0,000,00000,United States,2024,Conexus,Basic Chemical Manufacturing,3251,93458.38558738,69004309854.63,738342.6261960584
+0,000,00000,United States,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,348426.7079998,242384284650,695653.5738647771
+0,000,00000,United States,2024,Conexus,Drugs and Druggists' Sundries Merchant Wholesalers,4242,259217.621332,178213858447,687506.7270937872
+0,000,00000,United States,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,42465.9339534,28274966623.730003,665827.0286662609
+0,000,00000,United States,2024,Conexus,"Soap, Cleaning Compound, and Toilet Preparation Manufacturing",3256,114431.68176724,69545138372.12,607743.7410522238
+0,000,00000,United States,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,4442.05189291,33487536031.1,7538753.89986996
+0,000,00000,United States,2024,Finance & Insurance,Other Financial Vehicles,525990,11790.6164255,56787690361.5,4816346.17836292
+0,000,00000,United States,2024,Finance & Insurance,Open-End Investment Funds,525910,3953.803084,18390654133.1,4651383.42562434
+0,000,00000,United States,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,7458.04608562,14331639313.9,1921634.5875809356
+0,000,00000,United States,2024,Finance & Insurance,Pension Funds,525110,5102.03223558,8905471670.42,1745475.38298876
+0,000,00000,United States,2024,Finance & Insurance,Miscellaneous Intermediation,523910,34498.0001749,52183793598.7,1512661.4103465567
+0,000,00000,United States,2024,Finance & Insurance,Other Insurance Funds,525190,2510.07024021,3757109029.33,1496814.299912049
+0,000,00000,United States,2024,Finance & Insurance,Health and Welfare Funds,525120,5323.10821958,7187289605.23,1350205.4267454073
+0,000,00000,United States,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,514179.123464,451005152741,877136.2588636427
+0,000,00000,United States,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,26437.3801415,17954186610.9,679121.2485807725
+0,000,00000,United States,2024,Healthcare,HMO Medical Centers,621491,219073.787695,45687044644.1,208546.37665600888
+0,000,00000,United States,2024,Healthcare,Diagnostic Imaging Centers,621512,85456.9365749,15703168083.4,183755.33587769934
+0,000,00000,United States,2024,Healthcare,Medical Laboratories,621511,225954.819291,39831845153,176282.3438684963
+0,000,00000,United States,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,158000.294504,27422776921.2,173561.5557381493
+0,000,00000,United States,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,83379.2084852,13939979434.2,167187.71606802166
+0,000,00000,United States,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,2880904.87064,431945845441,149934.08836336972
+0,000,00000,United States,2024,Healthcare,All Other Outpatient Care Centers,621498,251213.671884,35039752628.2,139481.8696188633
+0,000,00000,United States,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,250636.472434,33440794774.4,133423.49758455827
+0,000,00000,United States,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,99869.9500267,13243983529.1,132612.29754855443
+0,000,00000,United States,2024,Healthcare,Offices of Dentists,621210,1043459.44011,134046129266,128463.19091412796
+0,000,00000,United States,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,81569.904256,135677171528,1663323.9031664068
+0,000,00000,United States,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,225545.805512,243031762791,1077527.2997842103
+0,000,00000,United States,2024,TechPoint,Web Search Portals and All Other Information Services,519290,153179.335269,101498424987,662611.7342052532
+0,000,00000,United States,2024,TechPoint,Software Publishers,513210,638498.362604,386201097607,604858.399373099
+0,000,00000,United States,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,484245.571029,254185213994,524909.7342364286
+0,000,00000,United States,2024,TechPoint,All Other Telecommunications,517810,45918.9319156,22043057108.6,480042.89710212813
+0,000,00000,United States,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,204072.849895,91681242953.4,449257.4244960661
+0,000,00000,United States,2024,TechPoint,Wired Telecommunications Carriers,517111,455448.871389,194521122166,427097.6049907895
+0,000,00000,United States,2024,TechPoint,Satellite Telecommunications,517410,8958.21666447,3467511268.84,387076.0664444312
+0,000,00000,United States,2024,TechPoint,Other Measuring and Controlling Device Manufacturing,334519,40878.3334004,15005860430.9,367085.91526760155
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Textile Furnishings Mills,3141,0,31963.2340638,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,4382.36039553,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,20624.858771,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Other Leather and Allied Product Manufacturing,3169,0,447295.319083,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Converted Paper Product Manufacturing,3222,0,101786.0275628,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,0,392910.838197,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Basic Chemical Manufacturing,3251,0,1544857.1912739002,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,1894433.516713,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Rubber Product Manufacturing,3262,0,119931.207724,Inf
+00,000,14020,Bloomington MSA,2024,Advanced & Traded Industries,Clay Product and Refractory Manufacturing,3271,0,1510351.507727,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Shellfish Fishing,114112,0,63115.3444868,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Hunting and Trapping,114210,0,196626.877143,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Support Activities for Forestry,115310,0,1437790.76418,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,24708.9979577,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Commercial Bakeries,311812,0,222880.667129,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0,187988.766377,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Ice Manufacturing,312113,0,44824.1769768,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Distilleries,312140,0,173459.895935,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Packaged Frozen Food Merchant Wholesalers,424420,0,92625.3951844,Inf
+00,000,14020,Bloomington MSA,2024,AgriNovus,Dairy Product (except Dried or Canned) Merchant Wholesalers,424430,0,127012.013185,Inf
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,744545.478066,Inf
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Compost Manufacturing,325315,0,411488.627289,Inf
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,0,239797.043034,Inf
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,0,738399.411358,Inf
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,27.354576794127,43198954.583316594,1579222.186781971
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,0.37794272078274,403567.39836915,1067800.4263009483
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,3.11921516982,1627325.11639,521709.79807202844
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,3290.99183186,1587926239.1,482506.89160858147
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,1.59946357899,723694.693273,452460.87674593093
+00,000,14020,Bloomington MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,13.304284625,4304869.92357,323570.19147656724
+00,000,14020,Bloomington MSA,2024,Conexus,Converted Paper Product Manufacturing,3222,0,101786.0275628,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Clay Product and Refractory Manufacturing,3271,0,1510351.507727,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Basic Chemical Manufacturing,3251,0,1151645.82499,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Apparel Knitting Mills,3151,0,4382.36039553,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Office Furniture (including Fixtures) Manufacturing,3372,0,172959.09807970002,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Other Transportation Equipment Manufacturing,3369,0,298213.4295829,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Rubber Product Manufacturing,3262,0,119931.207724,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Electrical Equipment Manufacturing,3353,0,144882.149455,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Scheduled Air Transportation,4811,0,3555.0142072,Inf
+00,000,14020,Bloomington MSA,2024,Conexus,Other Support Services,5619,0,44597.5201745,Inf
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,0,1751795.68517,Inf
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Pension Funds,525110,0,2536354.7629,Inf
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0,26542.2025285,Inf
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Claims Adjusting,524291,0.17559951923,1090425.54948,6209729.697788991
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.444530292712,2295596.87047,5164095.469096094
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0.416966678093,1338321.40981,3209660.3400799856
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,0.250000686264,632655.274145,2530614.149902444
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,85.25,69568510.4095,816052.9080293255
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,17.414940359,10341229.5472,593813.6642458081
+00,000,14020,Bloomington MSA,2024,Finance & Insurance,Consumer Lending,522291,15.1083778092,5265725.85513,348530.19441461953
+00,000,14020,Bloomington MSA,2024,Healthcare,Ambulance Services,621910,0,129149.233405,Inf
+00,000,14020,Bloomington MSA,2024,Healthcare,Other Residential Care Facilities,623990,0,17326.1227436,Inf
+00,000,14020,Bloomington MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,31.8976618605,8810148.87637,276200.45992398955
+00,000,14020,Bloomington MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,9.41666666667,2544316.74664,270192.92884663003
+00,000,14020,Bloomington MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,9.82814015062,1966680.35622,200107.07276044835
+00,000,14020,Bloomington MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,1645.78590435,287464018.948,174666.71587610504
+00,000,14020,Bloomington MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,88.2402516071,14751320.3598,167172.23819217982
+00,000,14020,Bloomington MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,25.2285630708,4032015.60618,159819.47108381803
+00,000,14020,Bloomington MSA,2024,Healthcare,HMO Medical Centers,621491,5.72228423585,808628.378519,141312.16576991384
+00,000,14020,Bloomington MSA,2024,Healthcare,Offices of Dentists,621210,445.291025943,59209462.9663,132968.01308966684
+00,000,14020,Bloomington MSA,2024,TechPoint,All Other Telecommunications,517810,0,313778.85282,Inf
+00,000,14020,Bloomington MSA,2024,TechPoint,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",334513,0,4755.71730081,Inf
+00,000,14020,Bloomington MSA,2024,TechPoint,Telecommunications Resellers,517121,0,385640.984308,Inf
+00,000,14020,Bloomington MSA,2024,TechPoint,Other Electronic Component Manufacturing,334419,0,37518.4174761,Inf
+00,000,14020,Bloomington MSA,2024,TechPoint,Other Computer Related Services,541519,0.42758534729,1170803.14227,2738174.143923434
+00,000,14020,Bloomington MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,42.7314737752,64203677.0935,1502491.5225545482
+00,000,14020,Bloomington MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0.96720811902,821759.714827,849620.3647045767
+00,000,14020,Bloomington MSA,2024,TechPoint,Computer Facilities Management Services,541513,1.36001464855,745611.090724,548237.5439992094
+00,000,14020,Bloomington MSA,2024,TechPoint,Analytical Laboratory Instrument Manufacturing,334516,3.11921516982,1627325.11639,521709.79807202844
+00,000,14020,Bloomington MSA,2024,TechPoint,Software Publishers,513210,74.8333333333,38553834.826,515196.0110380913
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,906.5393264462,5018162704.64,5535515.733566812
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Petroleum and Petroleum Products Merchant Wholesalers,4247,2155.691859477,8920510557.416,4138119.5174992387
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,77.2996924547,278689629.712,3605313.564155779
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,4671.3402826745,11103833881.109,2377012.422385911
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Insurance and Employee Benefit Funds,5251,660.2923138343,859720712.2359,1302030.4707827426
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,21147.787495055996,22494926053.091904,1063701.1582583212
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Drugs and Druggists' Sundries Merchant Wholesalers,4242,10884.3951461,9865737327.37,906411.1689205812
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Other Financial Investment Activities,5239,24511.611419439003,20687440701.427,843985.3401486597
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,965.61665345252,736136626.29994,762348.7267622361
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Advanced & Traded Industries,Basic Chemical Manufacturing,3251,3732.393870682534,2563639878.5125437,686862.0963745547
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Timber Tract Operations,113110,0,436325.391718,Inf
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Shellfish Fishing,114112,0,2866058.03112,Inf
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Other Marine Fishing,114119,0,6213421.23501,Inf
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Cotton Ginning,115111,0,124700.705561,Inf
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Finfish Fishing,114111,0.300938262984,2993434.18288,9947004.256614428
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Tobacco Manufacturing,312230,77.2996924547,278689629.712,3605313.564155779
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Pharmaceutical Preparation Manufacturing,325412,364.6219882,434105065.728,1190561.9512169617
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Biological Product (except Diagnostic) Manufacturing,325414,2.97147660206,3266144.4056599997,1099165.446362835
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Ethyl Alcohol Manufacturing,325193,0.751720093734,745129.359844,991232.4627944133
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,814.17179619,674876460.147,828911.6170630734
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,18231.09941,21705253286.4,1190561.951216962
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,148.573830103,163307220.283,1099165.446362835
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,0.751720093734,745129.359844,991232.4627944133
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,10253.1002276262,9293524562.38254,906411.168920581
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,814.17179619,674876460.147,828911.6170630734
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,9.72433253722,8000361.14081,822715.7092981468
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,112.704997183,56231602.0089,498927.31834770646
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,1270.82678323312,581749412.611588,457772.38903602184
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,3066.97486043,1378775651.72,449555.5765744657
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,1293.18361261,560309038.261,433278.79567708285
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Petroleum and Petroleum Products Merchant Wholesalers,4247,2155.691859477,8920510557.416,4138119.5174992387
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Tobacco Manufacturing,3122,77.2996924547,278689629.712,3605313.564155779
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,2863.1249354445,9795406271.931,3421229.0741026513
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Basic Chemical Manufacturing,3251,1132.19211797,1236341879.84,1091989.4779489709
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,21147.787495056,22494926053.091904,1063701.158258321
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Basic Chemical Manufacturing,3251,0.751720093734,745129.359844,991232.4627944133
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Drugs and Druggists' Sundries Merchant Wholesalers,4242,10884.3951461,9865737327.37,906411.1689205812
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,965.61665345252,736136626.29994,762348.7267622361
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,1808.21534723,1308427609.178,723601.6502029897
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Conexus,Industrial Machinery Manufacturing,3332,0.305897583679,198721.0273,649632.5499207998
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,747.017632938,4234958069.01,5669154.0899162255
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Open-End Investment Funds,525910,96.7450143101,500284268.132,5171163.306963005
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,62.7766791981,282920367.498,4506774.985742841
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,220.790629419,357153613.389,1617612.189107992
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,871.748957869,1326572306.5,1521736.612961168
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Pension Funds,525110,380.787108977,452722926.05,1188913.4778387286
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,18722.2500733,17533907656.4,936527.7991562185
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Other Insurance Funds,525190,58.7145754383,49844172.7969,848923.3282335247
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Reinsurance Carriers,524130,4419.92380303,2435229116.6,550966.3118922032
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Monetary Authorities–Central Bank,521110,1429.90675916,766376388.101,535962.4906949935
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,2077.25714472,632982124.613,304720.1576472718
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,3110.6703625,591502177.041,190152.63853467855
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,Medical Laboratories,621511,5650.58246771,993208923.212,175771.06942295734
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,HMO Medical Centers,621491,1778.69716886,302039713.814,169809.5207559041
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,Family Planning Centers,621410,783.100740746,120485658.003,153857.16260237803
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,65997.632927,9930262913.65,150463.9253446236
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,2701.46258915,396259088.35,146683.16708938053
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,3400.56469183,487223639.895,143277.27423200486
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,3731.8651636,531135391.733,142324.37894959532
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,Healthcare,Kidney Dialysis Centers,621492,4225.68067271,551268921.728,130456.83392220501
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,2370.83576524,4857607549.78,2048900.9070133811
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,3832.83632298,3091329683.29,806538.4020590045
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Software Publishers,513210,10178.3589855,7898250371.84,775984.6536255773
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,10995.4231816,7520673806.58,683982.2062660828
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,3283.34518163,2219694793.47,676046.7360815362
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Semiconductor Machinery Manufacturing,333242,0.305897583679,198721.0273,649632.5499207998
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,8349.05075814,4594696040.82,550325.5608238277
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,All Other Telecommunications,517810,762.158926781,413898625.072,543060.7849994131
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Telecommunications Resellers,517121,840.276421817,370262415.492,440643.58570403606
+00,000,16980,Chicago-Naperville-Elgin MSA,2024,TechPoint,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,1058.72120812,422241689.764,398822.3590172393
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,600339.920646,Inf
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Leather and Hide Tanning and Finishing,3161,0,503428.892805,Inf
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,56.682311720438,178369365.1307,3146825.8741886346
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Footwear Manufacturing,3162,0.773435868177,1811359.51747,2341964.721314776
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Securities and Commodity Exchanges,5232,12.000780012,27712413.8312,2309217.7178057916
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Insurance and Employee Benefit Funds,5251,101.128446735871,209278713.42947295,2069434.6663513053
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Petroleum and Petroleum Products Merchant Wholesalers,4247,552.264947582,975607091.871,1766556.244683884
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Drugs and Druggists' Sundries Merchant Wholesalers,4242,1675.75511321,2917922911.38,1741258.5457015615
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,7.77356121498,13024161.1508,1675443.3123523695
+00,000,17140,Cincinnati MSA,2024,Advanced & Traded Industries,Seafood Product Preparation and Packaging,3117,0.645126416254,1041426.04318,1614297.6274745637
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Timber Tract Operations,113110,0,41234.6980662,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Shellfish Fishing,114112,0,938163.249671,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Wet Corn Milling and Starch Manufacturing,311221,0,69912.9082723,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,"Frozen Fruit, Juice, and Vegetable Manufacturing",311411,0,43166.7357918,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Cotton Ginning,115111,0,28751.693195,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,"Crop Harvesting, Primarily by Machine",115113,0,692018.355628,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Fertilizer (Mixing Only) Manufacturing,325314,0,204433.117899,Inf
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Finfish Fishing,114111,0.291093760597,682906.296192,2346001.1468175664
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Tobacco Manufacturing,312230,7.77356121498,13024161.1508,1675443.3123523695
+00,000,17140,Cincinnati MSA,2024,AgriNovus,Seafood Product Preparation and Packaging,311710,0.645126416254,1041426.04318,1614297.6274745637
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,204433.117899,Inf
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Wet Corn Milling and Starch Manufacturing,311221,0,69912.9082723,Inf
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,1578.56131664382,2748683382.51996,1741258.5457015615
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,2.04237869517,2156238.40406,1055748.5784390846
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,67.3080018286,40791181.6278,606037.625833476
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Phosphatic Fertilizer Manufacturing,325312,5.15213422687,2989000.97954,580148.1188031593
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,2393.70769441,1297282016.95,541955.0682731768
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,51.7308876537,24886303.4916,481072.4234657518
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,2.41810076236,1115300.98242,461230.1521014769
+00,000,17140,Cincinnati MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,2273.7477212290196,963255123.307581,423642.0401058903
+00,000,17140,Cincinnati MSA,2024,Conexus,Apparel Knitting Mills,3151,0,600339.920646,Inf
+00,000,17140,Cincinnati MSA,2024,Conexus,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,570111.544623,Inf
+00,000,17140,Cincinnati MSA,2024,Conexus,Leather and Hide Tanning and Finishing,3161,0,503428.892805,Inf
+00,000,17140,Cincinnati MSA,2024,Conexus,Footwear Manufacturing,3162,0.773435868177,1811359.51747,2341964.721314776
+00,000,17140,Cincinnati MSA,2024,Conexus,Petroleum and Petroleum Products Merchant Wholesalers,4247,552.264947582,975607091.871,1766556.244683884
+00,000,17140,Cincinnati MSA,2024,Conexus,Drugs and Druggists' Sundries Merchant Wholesalers,4242,1675.75511321,2917922911.38,1741258.5457015615
+00,000,17140,Cincinnati MSA,2024,Conexus,Tobacco Manufacturing,3122,7.77356121498,13024161.1508,1675443.3123523695
+00,000,17140,Cincinnati MSA,2024,Conexus,Seafood Product Preparation and Packaging,3117,0.645126416254,1041426.04318,1614297.6274745637
+00,000,17140,Cincinnati MSA,2024,Conexus,"Soap, Cleaning Compound, and Toilet Preparation Manufacturing",3256,5068.6869476891,7324983790.599899,1445144.2486380981
+00,000,17140,Cincinnati MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,247.8698830569,270122566.5901,1089775.664791401
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Open-End Investment Funds,525910,0.699397191438,25184590.7416,36008996.10394354
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,13.388253565,65181732.4281,4868576.182221419
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Pension Funds,525110,66.6615073774,186446610.395,2796915.6073750937
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,48.0412454664,121169107.798,2522189.1443831436
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,12.000780012,27712413.8312,2309217.7178057916
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,42.594660964,88003041.961,2066058.0450535358
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,9.88025807734,10114152.1378,1023672.8695373279
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,3063.6772053,2067678999.45,674901.0619895022
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,33.9787493908,22788460.0123,670668.0034101004
+00,000,17140,Cincinnati MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,53.1938128108,34175354.3604,642468.598405515
+00,000,17140,Cincinnati MSA,2024,Healthcare,HMO Medical Centers,621491,22.3821373083,8763688.49143,391548.33029194886
+00,000,17140,Cincinnati MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,283.327117222,59102112.825,208600.26884998352
+00,000,17140,Cincinnati MSA,2024,Healthcare,Medical Laboratories,621511,2298.19428929,426327217.639,185505.29849706864
+00,000,17140,Cincinnati MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,1339.78201149,247005297.229,184362.3030542858
+00,000,17140,Cincinnati MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,708.3701741,123219284.107,173947.5892862836
+00,000,17140,Cincinnati MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,21162.5547023,3628804588.77,171472.89823074208
+00,000,17140,Cincinnati MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,490.795620272,75826072.3892,154496.22868919862
+00,000,17140,Cincinnati MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,1218.21992295,179145002.717,147054.73071166704
+00,000,17140,Cincinnati MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,309.364578383,43653672.457,141107.5330122501
+00,000,17140,Cincinnati MSA,2024,Healthcare,Kidney Dialysis Centers,621492,741.787418569,96593405.4396,130217.09862097779
+00,000,17140,Cincinnati MSA,2024,TechPoint,Totalizing Fluid Meter and Counting Device Manufacturing,334514,0,83840.7156783,Inf
+00,000,17140,Cincinnati MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,293.645819033,478696053.296,1630181.7436815063
+00,000,17140,Cincinnati MSA,2024,TechPoint,Satellite Telecommunications,517410,2.36100919981,2947867.83398,1248562.620686623
+00,000,17140,Cincinnati MSA,2024,TechPoint,Manufacturing and Reproducing Magnetic and Optical Media,334610,0.848204154529,705068.563636,831248.6562006032
+00,000,17140,Cincinnati MSA,2024,TechPoint,Telecommunications Resellers,517121,251.101089069,172974391.079,688863.563755665
+00,000,17140,Cincinnati MSA,2024,TechPoint,Software Publishers,513210,2816.23813957,1566864929.38,556368.052603406
+00,000,17140,Cincinnati MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,1706.4110667099999,800727754.341,469246.69557190675
+00,000,17140,Cincinnati MSA,2024,TechPoint,All Other Telecommunications,517810,63.6664284613,28889684.2079,453766.3711646831
+00,000,17140,Cincinnati MSA,2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,747.752383091,330744627.222,442318.38600740244
+00,000,17140,Cincinnati MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,2986.7771176,1286513132.15,430736.2355794955
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Textile and Fabric Finishing and Fabric Coating Mills,3133,0,26663.1640829,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Textile Furnishings Mills,3141,0,15632.0569865,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Cut and Sew Apparel Manufacturing,3152,0,76041.2134403,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Sawmills and Wood Preservation,3211,0,336699.533211,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,"Veneer, Plywood, and Engineered Wood Product Manufacturing",3212,0,82582.5630411,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Rubber Product Manufacturing,3262,0,63326.6724277,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Glass and Glass Product Manufacturing,3272,0,3269.65672611,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,292402.013191,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Industrial Machinery Manufacturing,3332,0,179024.436352,Inf
+00,000,18020,Columbus MSA,2024,Advanced & Traded Industries,Commercial and Service Industry Machinery Manufacturing,3333,0,793366.851913,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Timber Tract Operations,113110,0,1184.03615325,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Logging,113310,0,214692.830105,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Shellfish Fishing,114112,0,56320.4336418,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Hunting and Trapping,114210,0,7252.46030524,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Sawmills,321113,0,336699.533211,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Cookie and Cracker Manufacturing,311821,0,73604.0913676,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,"Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour",311824,0,47891.0017812,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Support Activities for Animal Production,115210,0,133738.229671,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,Cotton Ginning,115111,0,38794.1616361,Inf
+00,000,18020,Columbus MSA,2024,AgriNovus,"Soil Preparation, Planting, and Cultivating",115112,0,186329.557685,Inf
+00,000,18020,Columbus MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,2.51827919362602,2097327.19480608,832841.4101639701
+00,000,18020,Columbus MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,1.93898924599,1197660.25622,617672.4593480169
+00,000,18020,Columbus MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,0.6987272019282,331464.919486707,474383.8776735756
+00,000,18020,Columbus MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,7.504607711484,2750198.5278087,366467.9932037196
+00,000,18020,Columbus MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,178.261778739,57182703.8179,320779.3853646183
+00,000,18020,Columbus MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,22.1022577873348,5369242.879540199,242927.3484728299
+00,000,18020,Columbus MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,10.7901866647515,2421291.87748587,224397.58946854444
+00,000,18020,Columbus MSA,2024,BioCrossroads,Medical Laboratories,621511,48.2708707771,8901048.98016,184397.93682741502
+00,000,18020,Columbus MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,120.592187611,21542777.185,178641.56552571687
+00,000,18020,Columbus MSA,2024,BioCrossroads,Dental Equipment and Supplies Manufacturing,339114,10.7586452844,1603708.65512,149062.32269274388
+00,000,18020,Columbus MSA,2024,Conexus,Household Appliance Manufacturing,3352,0,368225.86368,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Other Wood Product Manufacturing,3219,0,68295.18069986001,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Inland Water Transportation,4832,0,20430.0426981,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Textile Furnishings Mills,3141,0,15632.0569865,Inf
+00,000,18020,Columbus MSA,2024,Conexus,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,292402.013191,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Glass and Glass Product Manufacturing,3272,0,3269.65672611,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Commercial and Service Industry Machinery Manufacturing,3333,0,793366.851913,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Industrial Machinery Manufacturing,3332,0,179024.436352,Inf
+00,000,18020,Columbus MSA,2024,Conexus,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,298454.730136,Inf
+00,000,18020,Columbus MSA,2024,Conexus,Electrical Equipment Manufacturing,3353,0,159034.073627,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0,1871951.57791,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0,1005786.02723,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Claims Adjusting,524291,0,172147.191753,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Other Insurance Funds,525190,0,327507.675807,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Open-End Investment Funds,525910,0,359821.805196,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,0,2136146.54523,Inf
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Pension Funds,525110,0.140906430501,952024.4975,6756430.449022294
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0.994883670159,1278477.38402,1285052.1346035127
+00,000,18020,Columbus MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,2.18812702063,2203677.59264,1007106.7958410946
+00,000,18020,Columbus MSA,2024,Finance & Insurance,Sales Financing,522220,0.407302843517,352962.470319,866584.8420581135
+00,000,18020,Columbus MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,0,47878.3007244,Inf
+00,000,18020,Columbus MSA,2024,Healthcare,Blood and Organ Banks,621991,0,37699.192199,Inf
+00,000,18020,Columbus MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,0,554530.583504,Inf
+00,000,18020,Columbus MSA,2024,Healthcare,Other Residential Care Facilities,623990,0,102764.506345,Inf
+00,000,18020,Columbus MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,5.79849770124,2072836.27138,357478.1569606775
+00,000,18020,Columbus MSA,2024,Healthcare,Kidney Dialysis Centers,621492,1.05822932389,317438.162953,299971.05144101713
+00,000,18020,Columbus MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,0.715357736537,171717.469646,240044.1917036825
+00,000,18020,Columbus MSA,2024,Healthcare,HMO Medical Centers,621491,8.54022870693,1996321.18159,233755.002365461
+00,000,18020,Columbus MSA,2024,Healthcare,Medical Laboratories,621511,48.2708707771,8901048.98016,184397.93682741502
+00,000,18020,Columbus MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,905.480784504,144714963.989,159821.13200587826
+00,000,18020,Columbus MSA,2024,TechPoint,Computer Facilities Management Services,541513,0,305603.506955,Inf
+00,000,18020,Columbus MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,0,960951.401416,Inf
+00,000,18020,Columbus MSA,2024,TechPoint,Computer Training,611420,0,40355.3977872,Inf
+00,000,18020,Columbus MSA,2024,TechPoint,Telecommunications Resellers,517121,0,311286.047985,Inf
+00,000,18020,Columbus MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,45.8812562843,52724670.7994,1149154.9070211865
+00,000,18020,Columbus MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,11,5447205.19017,495200.4718336364
+00,000,18020,Columbus MSA,2024,TechPoint,Software Publishers,513210,16.9509501629,6561449.96418,387084.49385573884
+00,000,18020,Columbus MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,24.7829220819,9559738.08507,385738.9396406921
+00,000,18020,Columbus MSA,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,5.50188994381,2115058.78879,384424.045262771
+00,000,18020,Columbus MSA,2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,11,3092342.72302,281122.0657290909
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Fruit and Vegetable Preserving and Specialty Food Manufacturing,3114,0,651552.1068375,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,8555.95370638,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Leather and Hide Tanning and Finishing,3161,0,816661.750854,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,1465543.161568,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Computer and Peripheral Equipment Manufacturing,3341,0,1773.57119494,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Scheduled Air Transportation,4811,0,31132.3621363,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Support Activities for Rail Transportation,4882,0,303705.851312,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Support Activities for Water Transportation,4883,0,193367.320878,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Satellite Telecommunications,5174,0,52453.1444191,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,3.31998926245,11284905.84899,3399079.0201117266
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Shellfish Fishing,114112,0,101660.506626,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Hunting and Trapping,114210,0,113413.776152,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Support Activities for Forestry,115310,0,335103.928554,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Livestock Merchant Wholesalers,424520,0,130445.927708,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,100066.137247,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,"Frozen Fruit, Juice, and Vegetable Manufacturing",311411,0,45022.3931685,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Frozen Specialty Food Manufacturing,311412,0,241262.396921,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Fruit and Vegetable Canning,311421,0,140207.592734,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Specialty Canning,311422,0,113132.605271,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,AgriNovus,Dried and Dehydrated Food Manufacturing,311423,0,111927.118743,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,0,592192.619436,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,508072.998579,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Compost Manufacturing,325315,0,365277.543553,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,3.01934492086782,2463515.6108793,815910.6281144045
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,0.36626803853,221922.487694,605901.8651604867
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Medical Laboratories,621511,17.6346069872,10102658.1287,572888.1928603777
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,4.4734433472582,2517212.3670578995,562701.2955469111
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,31.7688767393,16471773.7473,518487.7602840591
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,72.7513095744567,29214472.0123521,401566.2698477311
+00,000,21140,Elkhart-Goshen MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,65.7174160137364,19869160.3658128,302342.3860983777
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Scheduled Air Transportation,4811,0,31132.3621363,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Support Activities for Rail Transportation,4882,0,303705.851312,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,1465543.161568,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Support Activities for Water Transportation,4883,0,193367.320878,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Other Electrical Equipment and Component Manufacturing,3359,0,20615.1080883,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,423773.315706,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Leather and Hide Tanning and Finishing,3161,0,816661.750854,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Industrial Machinery Manufacturing,3332,0,132777.121294,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,Basic Chemical Manufacturing,3251,0,196760.1979234,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Conexus,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,63212.244141,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,0,841175.424678,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,0,2123506.42058,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.378003009339,2731541.81687,7226243.573157121
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,3.31998926245,9161399.42841,2759466.583831451
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,34.9166666667,93057477.7791,2665130.6285158326
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Third-Party Administration of Insurance and Pension Funds,524292,0.302072749184,346266.853224,1146302.8497584874
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Mortgage and Nonmortgage Loan Brokers,522310,0.405008068329,429709.983997,1060991.1693115553
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Claims Adjusting,524291,2.41837422719,2169601.37248,897132.1923989163
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,3.87192446555,2320154.55671,599225.1598277051
+00,000,21140,Elkhart-Goshen MSA,2024,Finance & Insurance,All Other Insurance Related Activities,524298,0.865150602401,442763.851623,511776.62061868113
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,HMO Medical Centers,621491,0,632963.400343,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,0,615072.906944,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Other Residential Care Facilities,623990,0,41790.3519498,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,10.0789638063,10217321.9195,1013727.4144305903
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Medical Laboratories,621511,17.6346069872,10102658.1287,572888.1928603777
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Kidney Dialysis Centers,621492,1.73582484684,602907.920634,347332.23327893356
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,46.7619237062,9324320.91463,199399.85731155283
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,7.50420869984,1398117.61249,186311.13131485932
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,41.6204475365,7711516.75986,185281.92790568166
+00,000,21140,Elkhart-Goshen MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,1943.13903269,238974427.177,122983.69965126675
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Telephone Apparatus Manufacturing,334210,0,45939.7710593,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,All Other Telecommunications,517810,0,168431.618302,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Computer Training,611420,0,63920.0993765,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Other Computer Related Services,541519,0,311533.166742,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Satellite Telecommunications,517410,0,52453.1444191,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0,264497.287126,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Computer Terminal and Other Computer Peripheral Equipment Manufacturing,334118,0,1773.57119494,Inf
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,104.491070824,110418247.882,1056724.2445814672
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,Computer Facilities Management Services,541513,0.306422171279,271968.769327,887562.3072306023
+00,000,21140,Elkhart-Goshen MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,16.9620697919,11399179.6821,672039.4280858058
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,8236.05172315,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Cut and Sew Apparel Manufacturing,3152,0,348714.789369,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,40724.748885,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Clay Product and Refractory Manufacturing,3271,0,13250.2570002,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Other Electrical Equipment and Component Manufacturing,3359,0,28412.1380404,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Aerospace Product and Parts Manufacturing,3364,0,438292.327416,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,112247.206446,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Inland Water Transportation,4832,0,5286.9819167,Inf
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,1.38243277094,10195280.654983,7374883.516433577
+00,000,21780,Evansville MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0.879116390162,5373599.88453,6112501.080249198
+00,000,21780,Evansville MSA,2024,AgriNovus,Shellfish Fishing,114112,0,172844.87578,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Support Activities for Forestry,115310,0,108439.720625,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Fats and Oils Refining and Blending,311225,0,869411.590974,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Livestock Merchant Wholesalers,424520,0,33435.1321706,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,33260.5198362,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Coffee and Tea Manufacturing,311920,0,646168.995457,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0,171705.210862,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Wineries,312130,0,80988.6827477,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Cotton Ginning,115111,0,50268.6568477,Inf
+00,000,21780,Evansville MSA,2024,AgriNovus,Postharvest Crop Activities (except Cotton Ginning),115114,0,1463252.11701,Inf
+00,000,21780,Evansville MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,2686088.23392,Inf
+00,000,21780,Evansville MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,0,22624.8287061,Inf
+00,000,21780,Evansville MSA,2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,0,215165.781834,Inf
+00,000,21780,Evansville MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,0,2068640.14916,Inf
+00,000,21780,Evansville MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,42.4646711641956,59208352.965785995,1394296.749334255
+00,000,21780,Evansville MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,0.879116390162,618871.50145,703969.9275040894
+00,000,21780,Evansville MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,1061.51590399,699533094.314,658994.4547082264
+00,000,21780,Evansville MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,138.776432692,76242924.182,549393.889892049
+00,000,21780,Evansville MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,6.15663481837,3139821.76397,509989.93063572416
+00,000,21780,Evansville MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,28.2979929011945,8594772.626577608,303723.7537159326
+00,000,21780,Evansville MSA,2024,Conexus,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,0,22624.8287061,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Basic Chemical Manufacturing,3251,0,3245035.49187,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Cut and Sew Apparel Manufacturing,3152,0,348714.789369,Inf
+00,000,21780,Evansville MSA,2024,Conexus,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,112247.206446,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Apparel Knitting Mills,3151,0,8236.05172315,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Inland Water Transportation,4832,0,5286.9819167,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Apparel Accessories and Other Apparel Manufacturing,3159,0,40724.748885,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Aerospace Product and Parts Manufacturing,3364,0,438292.327416,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Other Electrical Equipment and Component Manufacturing,3359,0,28412.1380404,Inf
+00,000,21780,Evansville MSA,2024,Conexus,Clay Product and Refractory Manufacturing,3271,0,13250.2570002,Inf
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,0,23285.6378161,Inf
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0,1956238.11544,Inf
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0,227477.689854,Inf
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,0.25,9671940.57561,38687762.30244
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.773486008128,7736097.17395,10001599.373042306
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Sales Financing,522220,0.383269405193,1408470.18011,3674882.891841439
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,0.45553568779,1035050.89626,2272162.0369228986
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,242.561230595,162578809.379,670258.8413663469
+00,000,21780,Evansville MSA,2024,Finance & Insurance,Pension Funds,525110,0.442691792166,226234.086917,511041.9730397148
+00,000,21780,Evansville MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,1.13243277094,523340.079373,462137.87944214157
+00,000,21780,Evansville MSA,2024,Healthcare,HMO Medical Centers,621491,0,169745.829161,Inf
+00,000,21780,Evansville MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,0.813055737897,1105680.86171,1359907.8269466325
+00,000,21780,Evansville MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,32.3092632117,10819698.1709,334879.1366737795
+00,000,21780,Evansville MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,48.4027178442,8894658.17939,183763.61030015652
+00,000,21780,Evansville MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,85.9372952056,14204722.9986,165291.7160659528
+00,000,21780,Evansville MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,3370.14015662,555674041.844,164881.5823735057
+00,000,21780,Evansville MSA,2024,Healthcare,Medical Laboratories,621511,87.3837847431,12114246.6668,138632.66168219576
+00,000,21780,Evansville MSA,2024,Healthcare,Offices of Dentists,621210,801.107538861,108761110.668,135763.43423585122
+00,000,21780,Evansville MSA,2024,Healthcare,Kidney Dialysis Centers,621492,98.3462997467,11829399.1883,120283.11404463323
+00,000,21780,Evansville MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,46.3262308067,5247808.65768,113279.42218258404
+00,000,21780,Evansville MSA,2024,TechPoint,Computer Training,611420,0,360013.721663,Inf
+00,000,21780,Evansville MSA,2024,TechPoint,Analytical Laboratory Instrument Manufacturing,334516,0,22624.8287061,Inf
+00,000,21780,Evansville MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,266.38586251,312281812.336,1172291.2372058677
+00,000,21780,Evansville MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0.865009526483,630326.797421,728693.4746069387
+00,000,21780,Evansville MSA,2024,TechPoint,Other Computer Related Services,541519,3.0222104918,1993875.38945,659740.7410436413
+00,000,21780,Evansville MSA,2024,TechPoint,All Other Telecommunications,517810,0.474947166888,278203.824911,585757.4153644858
+00,000,21780,Evansville MSA,2024,TechPoint,Software Publishers,513210,17.4823830264,9837316.25554,562698.8174715512
+00,000,21780,Evansville MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,8.4630171662,4655156.7105,550058.7578968864
+00,000,21780,Evansville MSA,2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,245.246419451,113240956.815,461743.56823841593
+00,000,21780,Evansville MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,785.670657322,277852158.502,353649.65703196015
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Grain and Oilseed Milling,3112,0,3600603.68854,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Seafood Product Preparation and Packaging,3117,0,810896.411232,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,"Fiber, Yarn, and Thread Mills",3131,0,105419.146826,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,34353.2844514,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,166228.247542,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Leather and Hide Tanning and Finishing,3161,0,814499.098518,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Cutlery and Handtool Manufacturing,3322,0,27642.6685701,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,994569.173451,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Inland Water Transportation,4832,0,427542.668549,Inf
+00,000,23060,Fort Wayne MSA,2024,Advanced & Traded Industries,Support Activities for Water Transportation,4883,0,91924.8682698,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Timber Tract Operations,113110,0,5652.46421832,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Shellfish Fishing,114112,0,292045.947875,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Hunting and Trapping,114210,0,859594.177856,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Soybean and Other Oilseed Processing,311224,0,1181605.56492,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Fats and Oils Refining and Blending,311225,0,1376352.1848,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,1063247.50989,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Flour Milling,311211,0,1042645.93882,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Cheese Manufacturing,311513,0,997644.892113,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,"Dry, Condensed, and Evaporated Dairy Product Manufacturing",311514,0,288457.439383,Inf
+00,000,23060,Fort Wayne MSA,2024,AgriNovus,Seafood Product Preparation and Packaging,311710,0,810896.411232,Inf
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,0,121125.04728,Inf
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,15.7321928832,15599259.9367,991550.2595546006
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,113.453832787596,79561435.086024,701267.054018139
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,19.124716141,9014665.14421,471362.0363171904
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,0.7466912220626999,337768.92393893993,452354.21812763374
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,29.5978324644,13181451.3714,445351.91511927533
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,6.44515526017,2053786.02555,318655.78758700506
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,274.65630683802397,84000691.77118269,305839.2968952332
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,167.160896618408,42709016.7626668,255496.45656760386
+00,000,23060,Fort Wayne MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,381.80741422,82261781.8199,215453.59978918644
+00,000,23060,Fort Wayne MSA,2024,Conexus,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,994569.173451,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,"Fiber, Yarn, and Thread Mills",3131,0,105419.146826,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Leather and Hide Tanning and Finishing,3161,0,814499.098518,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Industrial Machinery Manufacturing,3332,0,74776.4775929,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,0,48640.691542,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Apparel Knitting Mills,3151,0,34353.2844514,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Seafood Product Preparation and Packaging,3117,0,810896.411232,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Grain and Oilseed Milling,3112,0,3600603.6885399995,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Cutlery and Handtool Manufacturing,3322,0,27642.6685701,Inf
+00,000,23060,Fort Wayne MSA,2024,Conexus,Inland Water Transportation,4832,0,427542.668549,Inf
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0,20130.8716174,Inf
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,0.390354068066,15668391.6334,40138922.36611924
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,0.526310053512,2388725.13849,4538627.226575553
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,1.56826016644,4956653.95813,3160606.9351246487
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,8.49926971531,10630358.311,1250737.8477295768
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,14.1710165648,13433806.5684,947977.6208694027
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,All Other Insurance Related Activities,524298,5.55947209033,5243922.44007,943241.0766466731
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Pension Funds,525110,13.4790620747,8720318.48365,646952.9137355862
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,44.3188408633,27434528.703,619026.3140595419
+00,000,23060,Fort Wayne MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,549.640977437,320102650.728,582384.981957955
+00,000,23060,Fort Wayne MSA,2024,Healthcare,HMO Medical Centers,621491,0,212824.23634,Inf
+00,000,23060,Fort Wayne MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,16.6869233554,5764514.98414,345451.0374001667
+00,000,23060,Fort Wayne MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,31.961745716,6446138.28672,201682.92257869613
+00,000,23060,Fort Wayne MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,137.594772741,23510374.5674,170866.77131008817
+00,000,23060,Fort Wayne MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,3516.01927195,540805708.644,153811.92957570645
+00,000,23060,Fort Wayne MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,331.298564068,46187433.1099,139413.32115287977
+00,000,23060,Fort Wayne MSA,2024,Healthcare,Medical Laboratories,621511,73.6799823966,10249308.4684,139105.73991767075
+00,000,23060,Fort Wayne MSA,2024,Healthcare,Kidney Dialysis Centers,621492,160.195082744,22064946.5377,137737.97647060693
+00,000,23060,Fort Wayne MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,80.2475481942,10215333.0074,127297.75846457983
+00,000,23060,Fort Wayne MSA,2024,Healthcare,General Medical and Surgical Hospitals,622110,17319.8615352,2127016810.42,122807.95698609714
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Electronic Computer Manufacturing,334111,0,5778.03865989,Inf
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,0,69096.9897135,Inf
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Analytical Laboratory Instrument Manufacturing,334516,0,121125.04728,Inf
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Satellite Telecommunications,517410,0,102616.023623,Inf
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0.715742102031,823165.12524,1150086.2152780658
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,196.613359656,225863015.698,1148767.3884072579
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Software Publishers,513210,57.686013839,39432518.865,683571.566845562
+00,000,23060,Fort Wayne MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,81.681693043,53510063.7496,655104.7334612727
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Telecommunications Resellers,517121,21.6617049991,11627322.0961,536768.5552260587
+00,000,23060,Fort Wayne MSA,2024,TechPoint,Computer Terminal and Other Computer Peripheral Equipment Manufacturing,334118,0.41939255066,195291.071777,465652.218833333
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Inland Water Transportation,4832,0,962201.497139,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,58.52450138564,315994134.95101,5399347.7512743855
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,63.9538882702,179252807.136,2802844.549164414
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Securities and Commodity Exchanges,5232,8.47028393659,21472303.7229,2535015.813359428
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Seafood Product Preparation and Packaging,3117,2.42478917804,5273867.05185,2174979.622811151
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Petroleum and Petroleum Products Merchant Wholesalers,4247,939.381183442,1553641474.35,1653898.866333771
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Drugs and Druggists' Sundries Merchant Wholesalers,4242,1442.38875108,1984531829.65,1375864.7439284772
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,599.4204887406,760969537.4145,1269508.7200194295
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,16730.345119249796,19340277983.581047,1155999.9417661913
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Advanced & Traded Industries,Monetary Authorities-Central Bank,5211,8.43550606874,8824743.7032,1046142.7721452803
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Shellfish Fishing,114112,0,2745638.5866,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Poultry and Poultry Product Merchant Wholesalers,424440,0,359099.633666,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Cotton Ginning,115111,0,271602.714135,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Nitrogenous Fertilizer Manufacturing,325311,0,437030.600912,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Compost Manufacturing,325315,0,2017276.06381,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0.333333407842,2548226.73267,7644678.489225595
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Ice Cream and Frozen Dessert Manufacturing,311520,0.560071318379,3349003.23393,5979601.3900924865
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Tobacco Manufacturing,312230,63.9538882702,179252807.136,2802844.549164414
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Seafood Product Preparation and Packaging,311710,2.42478917804,5273867.05185,2174979.622811151
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,11.9769140654,17764247.3325,1483207.380089582
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,0,437030.600912,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Compost Manufacturing,325315,0,2017276.06381,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,11.9769140654,17764247.3325,1483207.380089582
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,1358.73020351736,1869428983.5303,1375864.743928477
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,14038.1469766,17801511293.3,1268081.2733313807
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,1355.43133526,1488468578.34,1098151.2228758386
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,2584.46582336,1497290326.73,579342.2815641686
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,194.031362666,92886183.609,478717.3698763926
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,74.9940325437,34093143.7409,454611.4215292194
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,119.744275259,51514566.524,430204.8378728498
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Basic Chemical Manufacturing,3251,0,262514.480136,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Inland Water Transportation,4832,0,962201.497139,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Tobacco Manufacturing,3122,63.9538882702,179252807.136,2802844.549164414
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,39.9620554107,104232492.45,2608286.5703171846
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Seafood Product Preparation and Packaging,3117,2.42478917804,5273867.05185,2174979.622811151
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Petroleum and Petroleum Products Merchant Wholesalers,4247,939.381183442,1553641474.35,1653898.866333771
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Drugs and Druggists' Sundries Merchant Wholesalers,4242,1442.38875108,1984531829.65,1375864.7439284772
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,559.4584333299,656737044.9645,1173879.9629055497
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,16730.345119249796,19340277983.581047,1155999.9417661913
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Scheduled Air Transportation,4811,7.13006965066,6272546.48716,879731.4464634125
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,40.3205072588,272436584.576,6756774.730718209
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Other Insurance Funds,525190,6.89199474498,30523821.423,4428880.542201948
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,9.74766147136,36775020.6244,3772701.866232242
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Pension Funds,525110,3.84424500082,12217072.5996,3178016.1246210965
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,8.47028393659,21472303.7229,2535015.813359428
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,14.5873464903,25643018.2296,1757894.6415409807
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,78.6121566117,109296643.356,1390327.5023462868
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Monetary Authorities–Central Bank,521110,8.43550606874,8824743.7032,1046142.7721452803
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Open-End Investment Funds,525910,8.45633265548,6782529.75061,802065.1536472709
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,58.9219674289,39079951.242,663249.2591011497
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,493.196712946,124825622.867,253095.00163004358
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Medical Laboratories,621511,3335.40952655,684327806.414,205170.5498130655
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Kidney Dialysis Centers,621492,647.163738313,129239517.17,199701.4194690455
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,301.376431035,58668158.3565,194667.37380563992
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,HMO Medical Centers,621491,822.432897138,155135503.629,188629.98327141217
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,25360.0286977,4510642877.1,177864.2654891431
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,572.447902176,101081521.305,176577.67793499984
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,536.472305415,76688507.742,142949.61169090716
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,926.738257696,124289476.67,134114.97328166952
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Offices of Dentists,621210,7462.11043606,928189126.707,124386.94584599107
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Totalizing Fluid Meter and Counting Device Manufacturing,334514,0,141067.432806,Inf
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,1138.02804764,1805738920.33,1586726.2007071562
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Manufacturing and Reproducing Magnetic and Optical Media,334610,0.910453016348,602532.549855,661794.2266497974
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Software Publishers,513210,1156.43331497,748378983.09,647144.0881218597
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,972.418724772,445884080.319,458530.9486132582
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,All Other Telecommunications,517810,55.2571543264,23664971.2872,428269.8154778788
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Telecommunications Resellers,517121,127.844977595,53637986.1061,419554.89464763907
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,1977.37591966,817683265.548,413519.3806186315
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,1807.46428714,689547367.52,381499.857245362
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,174.48186169,61186335.4008,350674.4758919932
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Other Food Manufacturing,3119,0,278260.781358,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,6663.00347431,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Cut and Sew Apparel Manufacturing,3152,0,174857.1385077,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,27018.8135824,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,"Veneer, Plywood, and Engineered Wood Product Manufacturing",3212,0,61122.3409095,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Basic Chemical Manufacturing,3251,0,249570.814932,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,208498.625259,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,0,389976.845397,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,"Paint, Coating, and Adhesive Manufacturing",3255,0,294516.773095,Inf
+00,000,29020,Kokomo MSA,2024,Advanced & Traded Industries,Other Nonmetallic Mineral Product Manufacturing,3279,0,16026.6520945,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Logging,113310,0,128423.890931,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Shellfish Fishing,114112,0,117521.0642,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,"Frozen Cakes, Pies, and Other Pastries Manufacturing",311813,0,188863.616896,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Coffee and Tea Manufacturing,311920,0,152963.029905,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",311941,0,51252.5741164,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0,31400.0476612,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Perishable Prepared Food Manufacturing,311991,0,42645.1296754,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Wineries,312130,0,67429.2780161,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Support Activities for Animal Production,115210,0,422128.970948,Inf
+00,000,29020,Kokomo MSA,2024,AgriNovus,Pharmaceutical Preparation Manufacturing,325412,0,7799.536907940001,Inf
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,0,389976.845397,Inf
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,208498.625259,Inf
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,0.761199939685608,1180498.4918525398,1550838.9193253368
+00,000,29020,Kokomo MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,3.83933508210182,914350.131119935,238153.2509059823
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,8.3204785342,1898590.78689,228182.88384329647
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,7.4618339500152,1638236.6389148,219548.79321744526
+00,000,29020,Kokomo MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,5.14077429567573,728832.8595468061,141774.91903503315
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,6.3939683125616,882795.8440208801,138066.97200649837
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Medical Laboratories,621511,58.6588052409,6660437.11708,113545.39339365871
+00,000,29020,Kokomo MSA,2024,BioCrossroads,Dental Equipment and Supplies Manufacturing,339114,0,0,NA
+00,000,29020,Kokomo MSA,2024,Conexus,Other General Purpose Machinery Manufacturing,3339,0,132308.597657,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Other Miscellaneous Manufacturing,3399,0,719500.1444945999,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Aerospace Product and Parts Manufacturing,3364,0,822186.748687,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Ship and Boat Building,3366,0,29174.6747766,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,"Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",3334,0,473035.591084,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Apparel Accessories and Other Apparel Manufacturing,3159,0,27018.8135824,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Apparel Knitting Mills,3151,0,6663.00347431,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Communications Equipment Manufacturing,3342,0,107915.7,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,Glass and Glass Product Manufacturing,3272,0,27321.8849569,Inf
+00,000,29020,Kokomo MSA,2024,Conexus,"Veneer, Plywood, and Engineered Wood Product Manufacturing",3212,0,61122.3409095,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Other Activities Related to Credit Intermediation,522390,0,595307.710187,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0,548217.631634,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,0,122376.656601,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0,248363.894535,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Claims Adjusting,524291,0,207739.697369,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,All Other Insurance Related Activities,524298,0,140628.503006,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,0,2969412.7705,Inf
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,0.102052346497,93579.359445,916974.1084566921
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Credit Unions,522130,114.080372312,30771788.6832,269737.80028558994
+00,000,29020,Kokomo MSA,2024,Finance & Insurance,Savings Institutions and Other Depository Credit Intermediation,522180,11.268492473,2918044.91052,258956.104156063
+00,000,29020,Kokomo MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,0,826809.91423,Inf
+00,000,29020,Kokomo MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,21.5289908164,4175584.75946,193951.7181771099
+00,000,29020,Kokomo MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,0.323763542834,61774.714115,190801.9463039825
+00,000,29020,Kokomo MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,15.1915546527,2354014.20431,154955.4511125443
+00,000,29020,Kokomo MSA,2024,Healthcare,Offices of Dentists,621210,393.215309815,51544002.5265,131083.40707982716
+00,000,29020,Kokomo MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,46.6448530267,5677159.81097,121710.3161997388
+00,000,29020,Kokomo MSA,2024,Healthcare,General Medical and Surgical Hospitals,622110,1448.76852292,173251501.074,119585.35703468403
+00,000,29020,Kokomo MSA,2024,Healthcare,Medical Laboratories,621511,58.6588052409,6660437.11708,113545.39339365871
+00,000,29020,Kokomo MSA,2024,Healthcare,Kidney Dialysis Centers,621492,9.8551467662,1102830.2417899999,111903.9896566893
+00,000,29020,Kokomo MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,6.11396053801,679567.137629,111150.06932154467
+00,000,29020,Kokomo MSA,2024,TechPoint,Other Computer Related Services,541519,0,68049.6686325,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,Computer Training,611420,0,15862.6157586,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0,92042.2715432,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",334513,0,7280.83658637,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,Computer Facilities Management Services,541513,0,114231.952922,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,Telecommunications Resellers,517121,0,93541.2211921,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,0,2418677.8467,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,334220,0,107915.7,Inf
+00,000,29020,Kokomo MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,40.7152624787,50822208.2046,1248234.816886847
+00,000,29020,Kokomo MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,3.83333333333,2692957.28456,702510.5959727848
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,0,1820264.95339,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Textile and Fabric Finishing and Fabric Coating Mills,3133,0,67208.9166987,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Textile Furnishings Mills,3141,0,34163.4803748,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,3371.42112971,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Cut and Sew Apparel Manufacturing,3152,0,251308.4892195,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,22145.1850156,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Leather and Hide Tanning and Finishing,3161,0,2893218.54819,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Other Leather and Allied Product Manufacturing,3169,0,4409184.05366,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Sawmills and Wood Preservation,3211,0,840967.956618,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,0,2161626.912025,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Logging,113310,0,359003.218534,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Shellfish Fishing,114112,0,290201.277892,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Hunting and Trapping,114210,0,195984.206768,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Support Activities for Forestry,115310,0,132852.458424,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Sawmills,321113,0,840967.956618,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,50031.8665288,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Nonchocolate Confectionery Manufacturing,311340,0,37416.0739344,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,Meat Processed from Carcasses,311612,0,486383.961517,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,"Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour",311824,0,44383.2120435,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,AgriNovus,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",311941,0,273200.375589,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,0,300092.259731,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,169439.333776,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Medicinal and Botanical Manufacturing,325411,0,654472.703096,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Dental Equipment and Supplies Manufacturing,339114,0,282829.487061,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,10.3250503536066,14280138.6024984,1383057.526446858
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,23.081163395,31647147.6879,1371124.4596429493
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,0.35374161598473,369098.65652019,1043413.1576311986
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,11.2555098698,9792221.35105,869993.5821942467
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,33.2648748502,27301990.8765,820745.3357166576
+00,000,29200,Lafayette-West Lafayette MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,653.030392916,375412400.907,574877.379337059
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Tobacco Manufacturing,3122,0,1820264.95339,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Scheduled Air Transportation,4811,0,158947.145367,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Cut and Sew Apparel Manufacturing,3152,0,251308.4892195,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Leather and Hide Tanning and Finishing,3161,0,2893218.54819,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Other Chemical Product and Preparation Manufacturing,3259,0,162066.733779,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Foundries,3315,0,1250014.190138,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Textile and Fabric Finishing and Fabric Coating Mills,3133,0,67208.9166987,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,"Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",3334,0,761730.697385,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Other Electrical Equipment and Component Manufacturing,3359,0,55423.1163823,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Conexus,Apparel Accessories and Other Apparel Manufacturing,3159,0,22145.1850156,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",522320,0,54377.1992285,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,0,15677484.5268,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,0,1957705.05504,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0,970143.447462,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,All Other Insurance Related Activities,524298,0,657428.146119,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0,77797.9463086,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,2.76086719098,15605817.3009,5652505.615585422
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,1.37956694654,2363959.90903,1713552.1512449184
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,58.5431685678,67593190.2186,1154587.1511945752
+00,000,29200,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Sales Financing,522220,1.15135691101,838721.075339,728463.1440682041
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,HMO Medical Centers,621491,0,360035.76708,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,1.68192004931,1130045.93362,671878.5081868762
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,43.2414200333,7648887.45811,176887.9803720514
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,68.8739487451,10801368.3666,156828.06871688852
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,Kidney Dialysis Centers,621492,58.5050407965,8485487.2235,145038.56604451142
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,1427.5801043,205845881.36,144192.17579453066
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,81.8843604797,11280788.5262,137764.8730491902
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,17.9271070607,2372132.22991,132320.97191577635
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,Offices of Dentists,621210,538.098415492,65259431.571,121277.87351191379
+00,000,29200,Lafayette-West Lafayette MSA,2024,Healthcare,Medical Laboratories,621511,105.725141028,12534344.0452,118555.94538181258
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,All Other Telecommunications,517810,0,275596.056566,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Computer Training,611420,0,89313.4970196,Inf
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,12.0585929553,17619331.0309,1461143.1944185446
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Computer Facilities Management Services,541513,0.399590683409,449001.174737,1123652.7611366406
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0.659903249211,702283.014246,1064221.1795224082
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Software Publishers,513210,34.25,35291484.7934,1030408.3151357663
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,11.3550862014,8597432.79028,757143.7713277771
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,16.8960593819,7389178.21754,437331.45407003595
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,125.057399459,42109213.0042,336719.0840875072
+00,000,29200,Lafayette-West Lafayette MSA,2024,TechPoint,Telecommunications Resellers,517121,9.61743578215,2848419.23795,296172.4208480474
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Leather and Hide Tanning and Finishing,3161,0,7360.46799387,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Ship and Boat Building,3366,0,162754.8027435,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,"Fiber, Yarn, and Thread Mills",3131,1.23540053751,10684876.3384,8648916.698656943
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,180.495302665,479182864.871,2654821.8030934874
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Securities and Commodity Exchanges,5232,5.22692713729,10723371.3346,2051563.1943857048
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,114.04742567899,202158133.4664,1772579.5410359877
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Petroleum and Petroleum Products Merchant Wholesalers,4247,689.581726201,945706177.73,1371420.0098370132
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Insurance and Employee Benefit Funds,5251,67.32959369014,69770588.5836,1036254.41295092
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,339.59526133194004,312451393.226086,920069.9444409442
+00,000,31140,Louisville/Jefferson County MSA,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,178.93536629871497,160801194.512902,898655.1839308292
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Timber Tract Operations,113110,0,3893.61520716,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Shellfish Fishing,114112,0,1454391.46141,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Hunting and Trapping,114210,0,459403.167006,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Wet Corn Milling and Starch Manufacturing,311221,0,193539.571323,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,820588.166154,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Flour Milling,311211,0,2641812.68935,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Chocolate and Confectionery Manufacturing from Cacao Beans,311351,0,62900.2232261,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Cotton Ginning,115111,0,29961.1645374,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,"Soil Preparation, Planting, and Cultivating",115112,0,2680087.94585,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,AgriNovus,Compost Manufacturing,325315,0,12854.4498538,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Irradiation Apparatus Manufacturing,334517,0,12390.6092416,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Compost Manufacturing,325315,0,12854.4498538,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Wet Corn Milling and Starch Manufacturing,311221,0,193539.571323,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,2.60413451766,2435195.88327,935126.7635199571
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,172.690429556,156483004.296,906147.518992972
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,1504.6494936744598,1202688983.2377598,799315.0486501071
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,87.7309441316,60851536.1922,693615.4260567424
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Medicinal and Botanical Manufacturing,325411,2.66070559978,1460948.88354,549083.2520744867
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,27.564972586,14054448.0955,509866.2097940241
+00,000,31140,Louisville/Jefferson County MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,19.274959109,9643558.05134,500315.3571847092
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Ship and Boat Building,3366,0,162754.8027435,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,0,188266.8718,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Leather and Hide Tanning and Finishing,3161,0,7360.46799387,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,"Fiber, Yarn, and Thread Mills",3131,1.23540053751,10684876.3384,8648916.698656943
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Tobacco Manufacturing,3122,180.495302665,479182864.871,2654821.8030934874
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,5.234334357610001,8793123.46494,1679893.3473090061
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Petroleum and Petroleum Products Merchant Wholesalers,4247,689.581726201,945706177.73,1371420.0098370132
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,334.36092697433,303658269.761146,908175.1043968688
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Basic Chemical Manufacturing,3251,162.331875165,147344035.117,907671.6138911978
+00,000,31140,Louisville/Jefferson County MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,178.935366298715,160801194.512902,898655.183930829
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,4.25621871541,11686349.6989,2745711.740937697
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,5.22692713729,10723371.3346,2051563.1943857048
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Pension Funds,525110,7.33945568024,13345627.1516,1818340.1784863148
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,103.570157829,187219123.007,1807655.090340878
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Other Insurance Funds,525190,22.7278662681,36015197.8472,1584627.3214723023
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,35.7634403244,54324493.4698,1518995.179911048
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,16.5387261152,17666301.8785,1068177.9089541663
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,1094.23466394,899366174.072,821913.4375012952
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,37.2622717418,20409763.5848,547732.6698228326
+00,000,31140,Louisville/Jefferson County MSA,2024,Finance & Insurance,Open-End Investment Funds,525910,6.22104913458,3252660.7605,522847.62427287846
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,378.236107464,68567920.7246,181283.38191806874
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,280.142083741,49077157.2181,175186.66443372835
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,756.292318479,127305496.156,168328.42678083462
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Family Planning Centers,621410,49.1224809517,7694241.28732,156633.80876233458
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,603.19957951,91004478.8123,150869.599223239
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,13517.4841815,1887635649.07,139644.00651220395
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,1841.3668884,249096200.85,135277.8755929757
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,1199.34188937,151672791.742,126463.34884681791
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Offices of Dentists,621210,3785.22630201,475510749.278,125622.80596684488
+00,000,31140,Louisville/Jefferson County MSA,2024,Healthcare,Medical Laboratories,621511,802.746416641,97015511.7577,120854.4937063067
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,Irradiation Apparatus Manufacturing,334517,0,12390.6092416,Inf
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,453.665860166,630365599.857,1389493.138466148
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,8.47314378936,6266162.84168,739532.2205612304
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,Telephone Apparatus Manufacturing,334210,1.27195779443,841917.786154,661907.0144000234
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,Satellite Telecommunications,517410,3.16666666667,1978825.06488,624892.1257509212
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,All Other Telecommunications,517810,52.907908207,23300906.4362,440404.9834107251
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",334511,0.54838570062,225922.217666,411976.85754857276
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,268.803076151,108102910.968,402163.9652191823
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,Computer Storage Device Manufacturing,334112,1.10072358282,431999.289174,392468.4597628398
+00,000,31140,Louisville/Jefferson County MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,1242.08313654,442278610.681,356078.1059414672
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Other Food Manufacturing,3119,0,1262497.412911,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Cut and Sew Apparel Manufacturing,3152,0,241450.2081928,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,29884.9252746,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Sawmills and Wood Preservation,3211,0,249692.701563,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,416223.934712,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,0,1377277.65769,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,"Paint, Coating, and Adhesive Manufacturing",3255,0,928748.182957,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Other Chemical Product and Preparation Manufacturing,3259,0,155169.506346,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Glass and Glass Product Manufacturing,3272,0,43076.1543684,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Advanced & Traded Industries,Electric Lighting Equipment Manufacturing,3351,0,25560.4037027,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Shellfish Fishing,114112,0,190573.153324,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Hunting and Trapping,114210,0,52882.5951658,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Sawmills,321113,0,249692.701563,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Livestock Merchant Wholesalers,424520,0,122323.586932,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,36318.1398384,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Retail Bakeries,311811,0,257282.400899,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,"Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour",311824,0,154534.137903,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Coffee and Tea Manufacturing,311920,0,690427.08718,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",311941,0,223467.961465,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0,157344.65805,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,0,19348.5316178,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,0,63067.7128976,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,0,136094.08514,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,416223.934712,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,0,1377277.65769,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,2.48356254109764,2467780.9936146,993645.6009374078
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,21.3856764082126,5012473.774793839,234384.62637866024
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,38.5252331353,7242463.50846,187992.7237046064
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,47.3134182823168,7669735.653597119,162104.87282555216
+00,000,33140,Michigan City-La Porte MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,9.06110903307654,1416287.0065896,156303.93602147445
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Glass and Glass Product Manufacturing,3272,0,43076.1543684,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Other Chemical Product and Preparation Manufacturing,3259,0,155169.506346,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,0,1377277.65769,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Cut and Sew Apparel Manufacturing,3152,0,241450.2081928,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,0,19348.5316178,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,416223.934712,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Other Transportation Equipment Manufacturing,3369,0,156011.2861431,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Electric Lighting Equipment Manufacturing,3351,0,25560.4037027,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,Other Food Manufacturing,3119,0,1262497.412911,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Conexus,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,109835.296386,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0,296831.387289,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,0.530898958429,2667357.54497,5024228.250255119
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Claims Adjusting,524291,0.197951333532,922024.786529,4657835.691619371
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.556267437629,805902.634678,1448768.3084831096
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Third-Party Administration of Insurance and Pension Funds,524292,0.619640512857,624512.662406,1007862.8647544942
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Sales Financing,522220,0.339153277007,304989.539695,899267.5594542616
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,54,29186254.564,540486.1956296297
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,12.5972358543,6228295.80971,494417.65493213374
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,Real Estate Credit,522292,3.42197408657,1513157.12061,442188.3633042663
+00,000,33140,Michigan City-La Porte MSA,2024,Finance & Insurance,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",522320,15.0342274862,5334220.10847,354805.0681929823
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,HMO Medical Centers,621491,0,165496.74416,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,20.3633551738,3396396.10209,166789.61168736516
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,879.21806115,138440874.083,157459.0880241041
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Family Planning Centers,621410,11.603548436,1773758.15331,152863.42476124945
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Medical Laboratories,621511,57.8419579885,8095415.47294,139957.4937374961
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,17.8506804602,2437740.50793,136562.88976575446
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Kidney Dialysis Centers,621492,59.6137052897,7928824.72151,133003.3871066883
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,9.10876372632,1100719.76639,120841.83973390843
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Offices of Dentists,621210,215.472729089,23662598.0728,109817.13636265438
+00,000,33140,Michigan City-La Porte MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,87.6385060829,8439712.07174,96301.41417240286
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,All Other Telecommunications,517810,0,89064.3391075,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Other Electronic Component Manufacturing,334419,0,35694.2264799,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Analytical Laboratory Instrument Manufacturing,334516,0,19348.5316178,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,0,39719.8391034,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Computer Facilities Management Services,541513,0,352585.13494,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Computer Training,611420,0,20252.58049,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Other Measuring and Controlling Device Manufacturing,334519,0,8328.39743582,Inf
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,38.371468937,31247956.5496,814353.9305441837
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Other Computer Related Services,541519,0.940480471299,736780.108143,783408.1946702761
+00,000,33140,Michigan City-La Porte MSA,2024,TechPoint,Software Publishers,513210,3.48803010871,1723887.83296,494229.63083238876
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Other Food Manufacturing,3119,0,104224.93418157,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Textile and Fabric Finishing and Fabric Coating Mills,3133,0,12414.33644,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,7968.25502657,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Cut and Sew Apparel Manufacturing,3152,0,57372.23858030001,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,22513.4327074,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Sawmills and Wood Preservation,3211,0,344810.042506,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,"Veneer, Plywood, and Engineered Wood Product Manufacturing",3212,0,45535.4742888,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,0,54656.9314821,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,167666.1702,Inf
+00,000,34620,Muncie MSA,2024,Advanced & Traded Industries,Glass and Glass Product Manufacturing,3272,0,499989.0290448,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Timber Tract Operations,113110,0,4031.30290803,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Logging,113310,0,266254.776234,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Shellfish Fishing,114112,0,163024.927956,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Sawmills,321113,0,344810.042506,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Commercial Bakeries,311812,0,76768.9127472,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Cookie and Cracker Manufacturing,311821,0,68673.0944577,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Coffee and Tea Manufacturing,311920,0,51978.5298483,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",311941,0,23170.0890366,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0,9728.51408702,Inf
+00,000,34620,Muncie MSA,2024,AgriNovus,Perishable Prepared Food Manufacturing,311991,0,11578.8747656,Inf
+00,000,34620,Muncie MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,0,167666.1702,Inf
+00,000,34620,Muncie MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,0,14488.042853,Inf
+00,000,34620,Muncie MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,0,13616.689990160998,Inf
+00,000,34620,Muncie MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,3.7810890981388794,3840954.73634952,1015832.9086294494
+00,000,34620,Muncie MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,15.891631804952798,4426922.05506636,278569.3822636051
+00,000,34620,Muncie MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,17.9484999197576,4440216.021975289,247386.46916601236
+00,000,34620,Muncie MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,11.4397365479,2182901.96992,190817.50360070282
+00,000,34620,Muncie MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,12.502006573144,1637431.0034964,130973.4556542166
+00,000,34620,Muncie MSA,2024,BioCrossroads,Medical Laboratories,621511,33.2673946169,3622088.94686,108878.04676534426
+00,000,34620,Muncie MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,13.133181972276,1129289.8139973,85987.525062945
+00,000,34620,Muncie MSA,2024,Conexus,Electric Lighting Equipment Manufacturing,3351,0,55515.7583349,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Other Electrical Equipment and Component Manufacturing,3359,0,33031.3144699,Inf
+00,000,34620,Muncie MSA,2024,Conexus,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,167666.1702,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Apparel Accessories and Other Apparel Manufacturing,3159,0,22513.4327074,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Support Activities for Rail Transportation,4882,0,71906.572767,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Electrical Equipment Manufacturing,3353,0,56105.7031303,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Communications Equipment Manufacturing,3342,0,157824.269408,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Sawmills and Wood Preservation,3211,0,344810.042506,Inf
+00,000,34620,Muncie MSA,2024,Conexus,"Veneer, Plywood, and Engineered Wood Product Manufacturing",3212,0,45535.4742888,Inf
+00,000,34620,Muncie MSA,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,0,54656.9314821,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0,747127.726484,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Pension Funds,525110,0,246363.894395,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0,362302.901337,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Other Insurance Funds,525190,0,83338.2045729,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Open-End Investment Funds,525910,0,98818.7865073,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,0,327406.207191,Inf
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.175078495417,1857478.4904,10609404.004620206
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,0.661290996094,807740.12917,1221459.4390987032
+00,000,34620,Muncie MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,10.5837268084,9777873.87532,923859.2465897347
+00,000,34620,Muncie MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,71.9911379654,55737668.2106,774229.5758317967
+00,000,34620,Muncie MSA,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,0,570997.051555,Inf
+00,000,34620,Muncie MSA,2024,Healthcare,Family Planning Centers,621410,0.356332865809,110855.424669,311100.7580435206
+00,000,34620,Muncie MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,19.6787419302,3867472.70574,196530.48550856696
+00,000,34620,Muncie MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,11.8154340018,2033912.32531,172140.2975972061
+00,000,34620,Muncie MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,1687.0793375,257756742.407,152782.8221694405
+00,000,34620,Muncie MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,20.8971610008,2888124.4248,138206.54512301623
+00,000,34620,Muncie MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,11.6779552497,1590410.8189,136189.15168739465
+00,000,34620,Muncie MSA,2024,Healthcare,Kidney Dialysis Centers,621492,71.7276146741,9459303.31994,131878.12480477823
+00,000,34620,Muncie MSA,2024,Healthcare,Offices of Dentists,621210,361.07760434,47570934.6249,131747.120433717
+00,000,34620,Muncie MSA,2024,Healthcare,Medical Laboratories,621511,33.2673946169,3622088.94686,108878.04676534426
+00,000,34620,Muncie MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,0,42587.4508566,Inf
+00,000,34620,Muncie MSA,2024,TechPoint,Other Electronic Component Manufacturing,334419,0,32069.4751454,Inf
+00,000,34620,Muncie MSA,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,0,39765.2083454,Inf
+00,000,34620,Muncie MSA,2024,TechPoint,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",334513,0,17308.8129285,Inf
+00,000,34620,Muncie MSA,2024,TechPoint,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,334220,0,157824.269408,Inf
+00,000,34620,Muncie MSA,2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,0.414053121125,446693.787455,1078832.0741099932
+00,000,34620,Muncie MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,32.5270208092,30907493.0116,950209.7715281096
+00,000,34620,Muncie MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,3.68341261517,1659967.01125,450660.07658590475
+00,000,34620,Muncie MSA,2024,TechPoint,Software Publishers,513210,117.467856588,47052133.702,400553.2668143247
+00,000,34620,Muncie MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,26.4670628763,7776828.35655,293830.42587297363
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Textile and Fabric Finishing and Fabric Coating Mills,3133,0,11348.2892242,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Textile Furnishings Mills,3141,0,6888.89993901,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,4430515.93186,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Nonferrous Metal (except Aluminum) Production and Processing,3314,0,126052.41048,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Cutlery and Handtool Manufacturing,3322,0,92450.8957208,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Hardware Manufacturing,3325,0,44479.2487615,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Household Appliance Manufacturing,3352,0,264152.274001,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Railroad Rolling Stock Manufacturing,3365,0,113236.748378,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,470871.022039,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Advanced & Traded Industries,Inland Water Transportation,4832,0,585566.799949,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Finfish Fishing,114111,0,17614.7045369,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Shellfish Fishing,114112,0,218939.225502,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Hunting and Trapping,114210,0,242894.990973,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Sawmills,321113,0,1210282.04703,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Farm Product Warehousing and Storage,493130,0,30794.1336183,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Animal (except Poultry) Slaughtering,311611,0,23262.2814249,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Cookie and Cracker Manufacturing,311821,0,713246.308889,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,"Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour",311824,0,132897.744894,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Other Snack Food Manufacturing,311919,0,38273.8410239,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,AgriNovus,Soft Drink Manufacturing,312111,0,42377.0915721,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,0,1301566.56662,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,1589672.39308,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,0,1539276.97216,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,151.683869706558,127338859.77843,839501.6558107005
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,0.24037407240777,122070.53818781998,507835.71191796346
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,72.2180643953,33230126.3497,460135.9317498218
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,29.987288632688404,12435668.5993164,414697.9992636141
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,0.354492523292,109552.21198,309039.55593376636
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Irradiation Apparatus Manufacturing,334517,1.80882405629,548452.044114,303209.17184112757
+00,000,43780,South Bend-Mishawaka MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,35.9464958703,10750593.8287,299072.0950239392
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,0,4430515.93186,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,Household Appliance Manufacturing,3352,0,264152.274001,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,"Deep Sea, Coastal, and Great Lakes Water Transportation",4831,0,470871.022039,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,Railroad Rolling Stock Manufacturing,3365,0,113236.748378,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,300452.4098841,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,0,37975.8981972,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,Cutlery and Handtool Manufacturing,3322,0,92450.8957208,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,Other Electrical Equipment and Component Manufacturing,3359,0,100303.584387,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,Textile and Fabric Finishing and Fabric Coating Mills,3133,0,11348.2892242,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Conexus,Hardware Manufacturing,3325,0,44479.2487615,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Health and Welfare Funds,525120,0,11614448.2931,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,0,3464720.89786,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.515937649813,7818115.0206,15153216.718015542
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Pension Funds,525110,6.77436017634,12275860.9566,1812106.3299046948
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,"Trust, Fiduciary, and Custody Activities",523991,2.6062503619,4454072.25665,1708996.3120054617
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,10.5846489389,10907515.9131,1030503.3238290428
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,17.113963662,14028927.1763,819735.711339037
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Real Estate Credit,522292,32.2029468653,25997367.666,807297.7847258206
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,174.639615972,121653237.459,696595.8827950279
+00,000,43780,South Bend-Mishawaka MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,32.8807436212,15262654.3132,464182.15138417186
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,HMO Medical Centers,621491,0,400834.419134,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Ambulance Services,621910,0.511601967309,688394.821383,1345567.1896727085
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,46.4805494913,16600129.6966,357141.4253548601
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,32.2762024072,10441837.0342,323515.04376086977
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,16.8632997245,3880955.22878,230142.1010231775
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Medical Laboratories,621511,196.840528079,39702420.6998,201698.40574632998
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,75.3309489307,12374788.1489,164272.2987637401
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Kidney Dialysis Centers,621492,83.6358926892,12035812.1432,143907.25986421137
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,3213.32431223,458150422.574,142578.33261033348
+00,000,43780,South Bend-Mishawaka MSA,2024,Healthcare,Offices of Dentists,621210,1116.56223347,158023438.526,141526.76294173245
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Satellite Telecommunications,517410,0,28264.6716449,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Bare Printed Circuit Board Manufacturing,334412,0,33237.8364095,Inf
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,191.324118084,246338501.243,1287545.4684434829
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Software Publishers,513210,20.3409250416,16876674.0216,829690.5861992448
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,47.3234359153,32584438.2487,688547.6005381347
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Web Search Portals and All Other Information Services,519290,2.85076088345,1880652.54299,659701.9602408842
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,86.848990104,44548978.5143,512947.5709614293
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,All Other Telecommunications,517810,2.9893302335,1513460.96191,506287.64428545366
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Computer Training,611420,6.77227072209,3066172.6394,452753.99717832665
+00,000,43780,South Bend-Mishawaka MSA,2024,TechPoint,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,334220,3.09417704396,1251638.7637,404514.2685494569
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Sugar and Confectionery Product Manufacturing,3113,0,47050.8691507,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Fruit and Vegetable Preserving and Specialty Food Manufacturing,3114,0,95606.146997500007,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Seafood Product Preparation and Packaging,3117,0,198963.112838,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Apparel Knitting Mills,3151,0,9428.57957673,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Apparel Accessories and Other Apparel Manufacturing,3159,0,24769.157861,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,"Soap, Cleaning Compound, and Toilet Preparation Manufacturing",3256,0,765957.237519,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Glass and Glass Product Manufacturing,3272,0,28460.4597097,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,244800.298793,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Industrial Machinery Manufacturing,3332,0,186780.237154,Inf
+00,000,45460,Terre Haute MSA,2024,Advanced & Traded Industries,Commercial and Service Industry Machinery Manufacturing,3333,0,74018.458462,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Shellfish Fishing,114112,0,88492.290582,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Confectionery Manufacturing from Purchased Chocolate,311352,0,47050.8691507,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Fruit and Vegetable Canning,311421,0,95606.146997500007,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Seafood Product Preparation and Packaging,311710,0,198963.112838,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Cookie and Cracker Manufacturing,311821,0,81860.8552241,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Other Snack Food Manufacturing,311919,0,260223.612372,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Coffee and Tea Manufacturing,311920,0,1864653.48395,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",311941,0,460554.511286,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Spice and Extract Manufacturing,311942,0,411175.391496,Inf
+00,000,45460,Terre Haute MSA,2024,AgriNovus,Perishable Prepared Food Manufacturing,311991,0,428678.247659,Inf
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,0,12548.198721768,Inf
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,0,94607.4959104,Inf
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,0,425417.628943,Inf
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,0.399673417988766,1028697.85280472,2573846.061570286
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,278.359604106,193427380.008,694883.0834460534
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,12.210747412,6344068.27628,519547.90826689487
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,7.78740606300396,1721806.9347388,221101.47086315157
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,88.809997990088,19394272.354342,218379.38062453934
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,5.903613189884431,1252975.75575705,212238.79604848876
+00,000,45460,Terre Haute MSA,2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,3.53729997922,532151.124741,150439.919675216
+00,000,45460,Terre Haute MSA,2024,Conexus,Audio and Video Equipment Manufacturing,3343,0,267842.353869,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Apparel Accessories and Other Apparel Manufacturing,3159,0,24769.157861,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Fruit and Vegetable Preserving and Specialty Food Manufacturing,3114,0,95606.146997500007,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,"Agriculture, Construction, and Mining Machinery Manufacturing",3331,0,244800.298793,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Communications Equipment Manufacturing,3342,0,762324.16629,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Commercial and Service Industry Machinery Manufacturing,3333,0,74018.458462,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Electrical Equipment Manufacturing,3353,0,143455.612876,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Apparel Knitting Mills,3151,0,9428.57957673,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,"Soap, Cleaning Compound, and Toilet Preparation Manufacturing",3256,0,765957.237519,Inf
+00,000,45460,Terre Haute MSA,2024,Conexus,Semiconductor and Other Electronic Component Manufacturing,3344,0,994276.7415443,Inf
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Mortgage and Nonmortgage Loan Brokers,522310,0,159925.674011,Inf
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Commodity Contracts Intermediation,523160,0,350389.540626,Inf
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,0,4055560.27807,Inf
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Other Financial Vehicles,525990,0,249636.520196,Inf
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Miscellaneous Intermediation,523910,0.637949178405,2971012.43293,4657130.275421191
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Pension Funds,525110,0.565447014923,1978312.2079,3498669.469798859
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,0.324401563582,552478.203085,1703068.8662058448
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,1.62491525867,1975468.52689,1215736.3384641544
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,32.2323431803,12400695.5723,384728.33026545675
+00,000,45460,Terre Haute MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,43.8675216339,16567455.3609,377670.19297705166
+00,000,45460,Terre Haute MSA,2024,Healthcare,Other Residential Care Facilities,623990,0,12732.0911084,Inf
+00,000,45460,Terre Haute MSA,2024,Healthcare,HMO Medical Centers,621491,80.8760052018,29699124.0889,367217.99024068273
+00,000,45460,Terre Haute MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,153.252982975,47364629.9466,309061.7163016431
+00,000,45460,Terre Haute MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,57.6455653314,13416719.6675,232745.04448639357
+00,000,45460,Terre Haute MSA,2024,Healthcare,Diagnostic Imaging Centers,621512,14.7899289046,3397105.74824,229690.47181717175
+00,000,45460,Terre Haute MSA,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,30.6223361532,6398481.05305,208948.16845583371
+00,000,45460,Terre Haute MSA,2024,Healthcare,Kidney Dialysis Centers,621492,3.32545050973,629752.706725,189373.6517450476
+00,000,45460,Terre Haute MSA,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,56.0161027834,7306521.29693,130436.08772967404
+00,000,45460,Terre Haute MSA,2024,Healthcare,Medical Laboratories,621511,97.101773605100007,12480389.946,128528.95969496999
+00,000,45460,Terre Haute MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,849.165180949,101652574.114,119708.83450543309
+00,000,45460,Terre Haute MSA,2024,TechPoint,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,334220,0,516913.518132,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Audio and Video Equipment Manufacturing,334310,0,267842.353869,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Computer Training,611420,0,121540.347134,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing",334416,0,105105.842928,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Other Measuring and Controlling Device Manufacturing,334519,0,7317.36507046,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,0,1399150.47033,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Telephone Apparatus Manufacturing,334210,0,245410.648158,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Electronic Connector Manufacturing,334417,0,85206.8067723,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Semiconductor and Related Device Manufacturing,334413,0,251392.654962,Inf
+00,000,45460,Terre Haute MSA,2024,TechPoint,Printed Circuit Assembly (Electronic Assembly) Manufacturing,334418,0,194263.024222,Inf
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Leather and Hide Tanning and Finishing,3161,0.43236750298,6159820.67066,14246724.43743982
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Securities and Commodity Exchanges,5232,18.8333473353,64401758.0279,3419559.8308320655
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Seafood Product Preparation and Packaging,3117,2.42478917804,7933931.43681,3272008.7621073667
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Tobacco Manufacturing,3122,68.2557377544,191929690.374,2811920.238333774
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Other Investment Pools and Funds,5259,177.0868776871,427176014.5981,2412239.801036471
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Petroleum and Coal Products Manufacturing,3241,3805.6027005564993,8046275317.3854,2114323.5252089715
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Petroleum and Petroleum Products Merchant Wholesalers,4247,2863.0165337,4226947793.11,1476396.571013627
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,22661.172084513997,22419638490.3518,989341.5224392893
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Drugs and Druggists' Sundries Merchant Wholesalers,4242,4088.68535807,2896515833.9,708422.2874188722
+18,000,00000,Indiana,2024,Advanced & Traded Industries,Other Financial Investment Activities,5239,5751.333344933,3967372585.9375,689817.8818713068
+18,000,00000,Indiana,2024,AgriNovus,Shellfish Fishing,114112,0,9108516.52892,Inf
+18,000,00000,Indiana,2024,AgriNovus,Cotton Ginning,115111,0,2136072.07722,Inf
+18,000,00000,Indiana,2024,AgriNovus,Seafood Product Preparation and Packaging,311710,2.42478917804,7933931.43681,3272008.7621073667
+18,000,00000,Indiana,2024,AgriNovus,Tobacco Manufacturing,312230,68.2557377544,191929690.374,2811920.238333774
+18,000,00000,Indiana,2024,AgriNovus,Pharmaceutical Preparation Manufacturing,325412,394.616180502,416133565.22,1054527.3756657096
+18,000,00000,Indiana,2024,AgriNovus,Hunting and Trapping,114210,9.18876367489,7766129.1538,845176.7211101955
+18,000,00000,Indiana,2024,AgriNovus,Nitrogenous Fertilizer Manufacturing,325311,23.3333358975,16629895.7266,712709.7385325762
+18,000,00000,Indiana,2024,AgriNovus,Ethyl Alcohol Manufacturing,325193,741.482735947,515234298.271,694870.2556276753
+18,000,00000,Indiana,2024,AgriNovus,Soybean and Other Oilseed Processing,311224,551.750000066,340012388.293,616243.5672901276
+18,000,00000,Indiana,2024,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,670.693888814,407246068.011,607201.1014311468
+18,000,00000,Indiana,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,19730.8090251,20806678261,1054527.3756657096
+18,000,00000,Indiana,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,2083.9978797,1611533705.82,773289.5131601511
+18,000,00000,Indiana,2024,BioCrossroads,Nitrogenous Fertilizer Manufacturing,325311,23.3333358975,16629895.7266,712709.7385325762
+18,000,00000,Indiana,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,3851.541607301939,2728517915.5338,708422.2874188724
+18,000,00000,Indiana,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,741.482735947,515234298.271,694870.2556276753
+18,000,00000,Indiana,2024,BioCrossroads,Pesticide and Other Agricultural Chemical Manufacturing,325320,670.693888814,407246068.011,607201.1014311468
+18,000,00000,Indiana,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,2725.00896977,1541606883.46,565725.4345075117
+18,000,00000,Indiana,2024,BioCrossroads,Compost Manufacturing,325315,20.59048583,10541582.8947,511963.77694697655
+18,000,00000,Indiana,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,335.018101038,163560153.792,488212.8854686807
+18,000,00000,Indiana,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,103.050226134,49894574.1366,484177.24063720397
+18,000,00000,Indiana,2024,Conexus,Leather and Hide Tanning and Finishing,3161,0.43236750298,6159820.67066,14246724.43743982
+18,000,00000,Indiana,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,1850.6955282745,6392170769.3444,3453928.899533331
+18,000,00000,Indiana,2024,Conexus,Seafood Product Preparation and Packaging,3117,2.42478917804,7933931.43681,3272008.7621073667
+18,000,00000,Indiana,2024,Conexus,Tobacco Manufacturing,3122,68.2557377544,191929690.374,2811920.238333774
+18,000,00000,Indiana,2024,Conexus,Petroleum and Petroleum Products Merchant Wholesalers,4247,2863.0165337,4226947793.11,1476396.571013627
+18,000,00000,Indiana,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,22661.172084513997,22419638490.3518,989341.5224392893
+18,000,00000,Indiana,2024,Conexus,Petroleum and Coal Products Manufacturing,3241,1954.907172282,1654104548.041,846129.4589809768
+18,000,00000,Indiana,2024,Conexus,Drugs and Druggists' Sundries Merchant Wholesalers,4242,4088.68535807,2896515833.9,708422.2874188722
+18,000,00000,Indiana,2024,Conexus,Basic Chemical Manufacturing,3251,741.482735947,515234298.271,694870.2556276753
+18,000,00000,Indiana,2024,Conexus,Basic Chemical Manufacturing,3251,1157.92774599,799292421.963,690278.3224005264
+18,000,00000,Indiana,2024,Finance & Insurance,Securities and Commodity Exchanges,523210,18.8333473353,64401758.0279,3419559.8308320655
+18,000,00000,Indiana,2024,Finance & Insurance,Other Financial Vehicles,525990,117.2249685,337608741.746,2880007.101439315
+18,000,00000,Indiana,2024,Finance & Insurance,"Trusts, Estates, and Agency Accounts",525920,49.5442448597,81557350.6513,1646151.8564316623
+18,000,00000,Indiana,2024,Finance & Insurance,Other Insurance Funds,525190,21.4406149591,32649117.5778,1522769.642572346
+18,000,00000,Indiana,2024,Finance & Insurance,Miscellaneous Intermediation,523910,181.833338776,231008474.108,1270440.699505489
+18,000,00000,Indiana,2024,Finance & Insurance,Miscellaneous Financial Investment Activities,523999,105.500005414,90229331.1864,855254.2801521642
+18,000,00000,Indiana,2024,Finance & Insurance,Open-End Investment Funds,525910,10.3176643274,8009922.2008,776330.9550135811
+18,000,00000,Indiana,2024,Finance & Insurance,Pension Funds,525110,69.2546405366,50696507.664,732030.4786970584
+18,000,00000,Indiana,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,5155.7499965,3546822755.53,687935.3649687774
+18,000,00000,Indiana,2024,Finance & Insurance,Monetary Authorities–Central Bank,521110,23.2348355941,10913595.404,469708.31189230696
+18,000,00000,Indiana,2024,Healthcare,Offices of All Other Miscellaneous Health Practitioners,621399,1406.18091523,298399382.933,212205.54176287676
+18,000,00000,Indiana,2024,Healthcare,HMO Medical Centers,621491,989.802014691,198152793.929,200194.3732058982
+18,000,00000,Indiana,2024,Healthcare,Diagnostic Imaging Centers,621512,922.438256407,184443793.876,199952.4549149004
+18,000,00000,Indiana,2024,Healthcare,Medical Laboratories,621511,5335.39851702,919871957.594,172409.23141159836
+18,000,00000,Indiana,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,59425.7526117,9227891602.16,155284.38760308057
+18,000,00000,Indiana,2024,Healthcare,All Other Outpatient Care Centers,621498,2527.11289144,348134527.969,137759.78475208755
+18,000,00000,Indiana,2024,Healthcare,All Other Miscellaneous Ambulatory Health Care Services,621999,1425.73589285,180921816.797,126897.14673265546
+18,000,00000,Indiana,2024,Healthcare,"Offices of Physicians, Mental Health Specialists",621112,1229.36655902,154352502.954,125554.49944648193
+18,000,00000,Indiana,2024,Healthcare,Kidney Dialysis Centers,621492,2436.94302068,298640511.767,122547.18687828325
+18,000,00000,Indiana,2024,Healthcare,Offices of Dentists,621210,20874.3131511,2490924802.67,119329.66534703622
+18,000,00000,Indiana,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,2882.34489333,3627489170.41,1258520.1648853088
+18,000,00000,Indiana,2024,TechPoint,Software Publishers,513210,2698.33336402,1143364468.44,423729.87848195527
+18,000,00000,Indiana,2024,TechPoint,"Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers",516210,1198.83334743,402092682.658,335403.3181676056
+18,000,00000,Indiana,2024,TechPoint,Wired Telecommunications Carriers,517111,5126.89532472,1687430752.68,329133.06120057317
+18,000,00000,Indiana,2024,TechPoint,Totalizing Fluid Meter and Counting Device Manufacturing,334514,41.9287645969,13397717.4197,319535.22953763726
+18,000,00000,Indiana,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,3704.41668254,1180432751.75,318655.5004229749
+18,000,00000,Indiana,2024,TechPoint,All Other Telecommunications,517810,207.872854912,63555087.2927,305740.19546518056
+18,000,00000,Indiana,2024,TechPoint,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,248.493862903,71093997.929,286099.6126763568
+18,000,00000,Indiana,2024,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,3518.0769663,983373099.089,279520.06408865587
+18,000,00000,Indiana,2024,TechPoint,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,334220,1546.3001339,425036364.134,274873.13414504775

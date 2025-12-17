@@ -1,0 +1,411 @@
+year,statefips,metrofips,geo_area,code,category,data
+2017,18,00000,Indiana,100,Total High School Graduates,73238
+2017,18,00000,Indiana,101,Diploma Type - Core 40,38046
+2017,18,00000,Indiana,102,Diploma Type - General,8794
+2017,18,00000,Indiana,103,Diploma Type - Honors,26398
+2017,18,00000,Indiana,200,No ACT data,0
+2017,18,00000,Indiana,201,ACT - < 15,0
+2017,18,00000,Indiana,202,ACT - 15-19,0
+2017,18,00000,Indiana,203,ACT - 20-25,0
+2017,18,00000,Indiana,204,ACT - 26-36,0
+2017,18,00000,Indiana,300,Gender - Female,37327
+2017,18,00000,Indiana,301,Gender - Male,35911
+2017,18,00000,Indiana,302,Race/Ethnicity - Asian,1673
+2017,18,00000,Indiana,303,Race/Ethnicity - Black,7942
+2017,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,13282
+2017,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,6641
+2017,18,00000,Indiana,305,Race/Ethnicity - Other,2985
+2017,18,00000,Indiana,306,Race/Ethnicity - White,53997
+2017,18,00000,Indiana,400,Waiver Status - Graduated with Waiver,6450
+2017,18,00000,Indiana,401,Waiver Status - Graduated without Waiver,66788
+2017,18,00000,Indiana,500,Socioeconomic Status - Free or Reduced Lunch,24407
+2017,18,00000,Indiana,501,Socioeconomic Status - Non Free or Reduced Lunch,48831
+2017,18,00000,Indiana,600,No SAT data,28108
+2017,18,00000,Indiana,601,SAT - < 800,1822
+2017,18,00000,Indiana,602,SAT - 1000-1199,19569
+2017,18,00000,Indiana,603,SAT - 1200-1600,11103
+2017,18,00000,Indiana,604,SAT - 800-999,12636
+2017,18,00000,Indiana,700,College Enrollments,46149
+2017,18,00000,Indiana,800,Indiana Public College Enrollments,33594
+2017,18,00000,Indiana,900,Area of Study - Arts and Humanities,5542
+2017,18,00000,Indiana,901,Area of Study - Business and Communication,5417
+2017,18,00000,Indiana,902,Area of Study - Education,2125
+2017,18,00000,Indiana,903,Area of Study - Health,5730
+2017,18,00000,Indiana,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",7332
+2017,18,00000,Indiana,905,Area of Study - Social and Behavioral Sciences and Human Services,3018
+2017,18,00000,Indiana,906,Area of Study - Trades,1936
+2017,18,00000,Indiana,907,Area of Study - Undecided,2494
+2017,18,00000,Indiana,908,Degree Level - Associate,9339
+2017,18,00000,Indiana,909,Degree Level - Award of at least 1 but less than 2 academic years,480
+2017,18,00000,Indiana,910,Degree Level - Award of less than 1 academic year,170
+2017,18,00000,Indiana,911,Degree Level - Bachelor's,23159
+2017,18,00000,Indiana,912,Degree Level - Unclassified undergraduate,446
+2018,18,00000,Indiana,100,Total High School Graduates,73959
+2018,18,00000,Indiana,101,Diploma Type - Core 40,39243
+2018,18,00000,Indiana,102,Diploma Type - General,7397
+2018,18,00000,Indiana,103,Diploma Type - Honors,27319
+2018,18,00000,Indiana,200,No ACT data,0
+2018,18,00000,Indiana,201,ACT - < 15,56497
+2018,18,00000,Indiana,202,ACT - 15-19,4802
+2018,18,00000,Indiana,203,ACT - 20-25,7295
+2018,18,00000,Indiana,204,ACT - 26-36,5365
+2018,18,00000,Indiana,300,Gender - Female,37426
+2018,18,00000,Indiana,301,Gender - Male,36533
+2018,18,00000,Indiana,302,Race/Ethnicity - Asian,1820
+2018,18,00000,Indiana,303,Race/Ethnicity - Black,7912
+2018,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,13864
+2018,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,6932
+2018,18,00000,Indiana,305,Race/Ethnicity - Other,3115
+2018,18,00000,Indiana,306,Race/Ethnicity - White,54180
+2018,18,00000,Indiana,400,Waiver Status - Graduated with Waiver,6777
+2018,18,00000,Indiana,401,Waiver Status - Graduated without Waiver,67182
+2018,18,00000,Indiana,500,Socioeconomic Status - Free or Reduced Lunch,26694
+2018,18,00000,Indiana,501,Socioeconomic Status - Non Free or Reduced Lunch,47265
+2018,18,00000,Indiana,600,No SAT data,0
+2018,18,00000,Indiana,601,SAT - < 800,31013
+2018,18,00000,Indiana,602,SAT - 1000-1199,19793
+2018,18,00000,Indiana,603,SAT - 1200-1600,11687
+2018,18,00000,Indiana,604,SAT - 800-999,11466
+2018,18,00000,Indiana,700,College Enrollments,45221
+2018,18,00000,Indiana,800,Indiana Public College Enrollments,32242
+2018,18,00000,Indiana,900,Area of Study - Arts and Humanities,4819
+2018,18,00000,Indiana,901,Area of Study - Business and Communication,5180
+2018,18,00000,Indiana,902,Area of Study - Education,2051
+2018,18,00000,Indiana,903,Area of Study - Health,5409
+2018,18,00000,Indiana,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",7413
+2018,18,00000,Indiana,905,Area of Study - Social and Behavioral Sciences and Human Services,3048
+2018,18,00000,Indiana,906,Area of Study - Trades,1885
+2018,18,00000,Indiana,907,Area of Study - Undecided,2437
+2018,18,00000,Indiana,908,Degree Level - Associate,8375
+2018,18,00000,Indiana,909,Degree Level - Award of at least 1 but less than 2 academic years,497
+2018,18,00000,Indiana,910,Degree Level - Award of less than 1 academic year,207
+2018,18,00000,Indiana,911,Degree Level - Bachelor's,22933
+2018,18,00000,Indiana,912,Degree Level - Unclassified undergraduate,230
+2019,18,00000,Indiana,100,Total High School Graduates,76248
+2019,18,00000,Indiana,101,Diploma Type - Core 40,40733
+2019,18,00000,Indiana,102,Diploma Type - General,7754
+2019,18,00000,Indiana,103,Diploma Type - Honors,27761
+2019,18,00000,Indiana,200,No ACT data,59809
+2019,18,00000,Indiana,201,ACT - < 15,1159
+2019,18,00000,Indiana,202,ACT - 15-19,4130
+2019,18,00000,Indiana,203,ACT - 20-25,6392
+2019,18,00000,Indiana,204,ACT - 26-36,4758
+2019,18,00000,Indiana,300,Gender - Female,38726
+2019,18,00000,Indiana,301,Gender - Male,37522
+2019,18,00000,Indiana,302,Race/Ethnicity - Asian,1979
+2019,18,00000,Indiana,303,Race/Ethnicity - Black,8376
+2019,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,16124
+2019,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,8062
+2019,18,00000,Indiana,305,Race/Ethnicity - Other,3174
+2019,18,00000,Indiana,306,Race/Ethnicity - White,54657
+2019,18,00000,Indiana,400,Waiver Status - Graduated with Waiver,9440
+2019,18,00000,Indiana,401,Waiver Status - Graduated without Waiver,66808
+2019,18,00000,Indiana,500,Socioeconomic Status - Free or Reduced Lunch,27143
+2019,18,00000,Indiana,501,Socioeconomic Status - Non Free or Reduced Lunch,49105
+2019,18,00000,Indiana,600,No SAT data,51211
+2019,18,00000,Indiana,601,SAT - < 800,1169
+2019,18,00000,Indiana,602,SAT - 1000-1199,11212
+2019,18,00000,Indiana,603,SAT - 1200-1600,4735
+2019,18,00000,Indiana,604,SAT - 800-999,7921
+2019,18,00000,Indiana,700,College Enrollments,44541
+2019,18,00000,Indiana,800,Indiana Public College Enrollments,32631
+2019,18,00000,Indiana,900,Area of Study - Arts and Humanities,4814
+2019,18,00000,Indiana,901,Area of Study - Business and Communication,5131
+2019,18,00000,Indiana,902,Area of Study - Education,2006
+2019,18,00000,Indiana,903,Area of Study - Health,5522
+2019,18,00000,Indiana,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",7607
+2019,18,00000,Indiana,905,Area of Study - Social and Behavioral Sciences and Human Services,3339
+2019,18,00000,Indiana,906,Area of Study - Trades,2126
+2019,18,00000,Indiana,907,Area of Study - Undecided,2086
+2019,18,00000,Indiana,908,Degree Level - Associate,8112
+2019,18,00000,Indiana,909,Degree Level - Award of at least 1 but less than 2 academic years,1075
+2019,18,00000,Indiana,910,Degree Level - Award of less than 1 academic year,236
+2019,18,00000,Indiana,911,Degree Level - Bachelor's,22956
+2019,18,00000,Indiana,912,Degree Level - Unclassified undergraduate,252
+2020,18,00000,Indiana,100,Total High School Graduates,76326
+2020,18,00000,Indiana,101,Diploma Type - Core 40,41216
+2020,18,00000,Indiana,102,Diploma Type - General,7309
+2020,18,00000,Indiana,103,Diploma Type - Honors,27801
+2020,18,00000,Indiana,200,No ACT data,0
+2020,18,00000,Indiana,201,ACT - < 15,62773
+2020,18,00000,Indiana,202,ACT - 15-19,3695
+2020,18,00000,Indiana,203,ACT - 20-25,5601
+2020,18,00000,Indiana,204,ACT - 26-36,4257
+2020,18,00000,Indiana,300,Gender - Female,38795
+2020,18,00000,Indiana,301,Gender - Male,37531
+2020,18,00000,Indiana,302,Race/Ethnicity - Asian,2040
+2020,18,00000,Indiana,303,Race/Ethnicity - Black,8623
+2020,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,17212
+2020,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,8606
+2020,18,00000,Indiana,305,Race/Ethnicity - Other,3398
+2020,18,00000,Indiana,306,Race/Ethnicity - White,53659
+2020,18,00000,Indiana,400,Waiver Status - Graduated with Waiver,139
+2020,18,00000,Indiana,401,Waiver Status - Graduated without Waiver,76187
+2020,18,00000,Indiana,500,Socioeconomic Status - Free or Reduced Lunch,27695
+2020,18,00000,Indiana,501,Socioeconomic Status - Non Free or Reduced Lunch,48631
+2020,18,00000,Indiana,600,No SAT data,0
+2020,18,00000,Indiana,601,SAT - < 800,47690
+2020,18,00000,Indiana,602,SAT - 1000-1199,13349
+2020,18,00000,Indiana,603,SAT - 1200-1600,7993
+2020,18,00000,Indiana,604,SAT - 800-999,7294
+2020,18,00000,Indiana,700,College Enrollments,40721
+2020,18,00000,Indiana,800,Indiana Public College Enrollments,29238
+2020,18,00000,Indiana,900,Area of Study - Arts and Humanities,3981
+2020,18,00000,Indiana,901,Area of Study - Business and Communication,4580
+2020,18,00000,Indiana,902,Area of Study - Education,1817
+2020,18,00000,Indiana,903,Area of Study - Health,4814
+2020,18,00000,Indiana,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",7164
+2020,18,00000,Indiana,905,Area of Study - Social and Behavioral Sciences and Human Services,3260
+2020,18,00000,Indiana,906,Area of Study - Trades,1791
+2020,18,00000,Indiana,907,Area of Study - Undecided,1831
+2020,18,00000,Indiana,908,Degree Level - Associate,6310
+2020,18,00000,Indiana,909,Degree Level - Award of at least 1 but less than 2 academic years,978
+2020,18,00000,Indiana,910,Degree Level - Award of less than 1 academic year,577
+2020,18,00000,Indiana,911,Degree Level - Bachelor's,21222
+2020,18,00000,Indiana,912,Degree Level - Unclassified undergraduate,151
+2021,18,00000,Indiana,100,Total High School Graduates,73015
+2021,18,00000,Indiana,101,Diploma Type - Core 40,38998
+2021,18,00000,Indiana,102,Diploma Type - General,7559
+2021,18,00000,Indiana,103,Diploma Type - Honors,26458
+2021,18,00000,Indiana,200,No ACT data,65036
+2021,18,00000,Indiana,201,ACT - < 15,544
+2021,18,00000,Indiana,202,ACT - 15-19,1799
+2021,18,00000,Indiana,203,ACT - 20-25,2978
+2021,18,00000,Indiana,204,ACT - 26-36,2658
+2021,18,00000,Indiana,300,Gender - Female,37009
+2021,18,00000,Indiana,301,Gender - Male,36006
+2021,18,00000,Indiana,302,Race/Ethnicity - Asian,2098
+2021,18,00000,Indiana,303,Race/Ethnicity - Black,7653
+2021,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,16790
+2021,18,00000,Indiana,304,Race/Ethnicity - Hispanic or Latino,8395
+2021,18,00000,Indiana,305,Race/Ethnicity - Other,3239
+2021,18,00000,Indiana,306,Race/Ethnicity - White,51630
+2021,18,00000,Indiana,400,Waiver Status - Graduated with Waiver,6642
+2021,18,00000,Indiana,401,Waiver Status - Graduated without Waiver,66373
+2021,18,00000,Indiana,500,Socioeconomic Status - Free or Reduced Lunch,24993
+2021,18,00000,Indiana,501,Socioeconomic Status - Non Free or Reduced Lunch,48022
+2021,18,00000,Indiana,600,No SAT data,48296
+2021,18,00000,Indiana,601,SAT - < 800,988
+2021,18,00000,Indiana,602,SAT - 1000-1199,10678
+2021,18,00000,Indiana,603,SAT - 1200-1600,6905
+2021,18,00000,Indiana,604,SAT - 800-999,6148
+2021,18,00000,Indiana,700,College Enrollments,38590
+2021,18,00000,Indiana,800,Indiana Public College Enrollments,27385
+2021,18,00000,Indiana,900,Area of Study - Arts and Humanities,3473
+2021,18,00000,Indiana,901,Area of Study - Business and Communication,4702
+2021,18,00000,Indiana,902,Area of Study - Education,1691
+2021,18,00000,Indiana,903,Area of Study - Health,4125
+2021,18,00000,Indiana,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",6935
+2021,18,00000,Indiana,905,Area of Study - Social and Behavioral Sciences and Human Services,3117
+2021,18,00000,Indiana,906,Area of Study - Trades,1680
+2021,18,00000,Indiana,907,Area of Study - Undecided,1662
+2021,18,00000,Indiana,908,Degree Level - Associate,5299
+2021,18,00000,Indiana,909,Degree Level - Award of at least 1 but less than 2 academic years,829
+2021,18,00000,Indiana,910,Degree Level - Award of less than 1 academic year,669
+2021,18,00000,Indiana,911,Degree Level - Bachelor's,20448
+2021,18,00000,Indiana,912,Degree Level - Unclassified undergraduate,140
+2017,18,26900,Indianapolis MSA,100,Total High School Graduates,23434
+2017,18,26900,Indianapolis MSA,101,Diploma Type - Core 40,12031
+2017,18,26900,Indianapolis MSA,102,Diploma Type - General,2462
+2017,18,26900,Indianapolis MSA,103,Diploma Type - Honors,8941
+2017,18,26900,Indianapolis MSA,200,No ACT data,0
+2017,18,26900,Indianapolis MSA,201,ACT - < 15,0
+2017,18,26900,Indianapolis MSA,202,ACT - 15-19,0
+2017,18,26900,Indianapolis MSA,203,ACT - 20-25,0
+2017,18,26900,Indianapolis MSA,204,ACT - 26-36,0
+2017,18,26900,Indianapolis MSA,300,Gender - Female,12052
+2017,18,26900,Indianapolis MSA,301,Gender - Male,11382
+2017,18,26900,Indianapolis MSA,302,Race/Ethnicity - Asian,819
+2017,18,26900,Indianapolis MSA,303,Race/Ethnicity - Black,3998
+2017,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,1906
+2017,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,1906
+2017,18,26900,Indianapolis MSA,305,Race/Ethnicity - Other,998
+2017,18,26900,Indianapolis MSA,306,Race/Ethnicity - White,15713
+2017,18,26900,Indianapolis MSA,400,Waiver Status - Graduated with Waiver,2019
+2017,18,26900,Indianapolis MSA,401,Waiver Status - Graduated without Waiver,21415
+2017,18,26900,Indianapolis MSA,500,Socioeconomic Status - Free or Reduced Lunch,7668
+2017,18,26900,Indianapolis MSA,501,Socioeconomic Status - Non Free or Reduced Lunch,15766
+2017,18,26900,Indianapolis MSA,600,No SAT data,8538
+2017,18,26900,Indianapolis MSA,601,SAT - < 800,522
+2017,18,26900,Indianapolis MSA,602,SAT - 1000-1199,6286
+2017,18,26900,Indianapolis MSA,603,SAT - 1200-1600,4387
+2017,18,26900,Indianapolis MSA,604,SAT - 800-999,3701
+2017,18,26900,Indianapolis MSA,700,College Enrollments,15218
+2017,18,26900,Indianapolis MSA,800,Indiana Public College Enrollments,10785
+2017,18,26900,Indianapolis MSA,900,Area of Study - Arts and Humanities,1804
+2017,18,26900,Indianapolis MSA,901,Area of Study - Business and Communication,2029
+2017,18,26900,Indianapolis MSA,902,Area of Study - Education,633
+2017,18,26900,Indianapolis MSA,903,Area of Study - Health,1572
+2017,18,26900,Indianapolis MSA,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",2458
+2017,18,26900,Indianapolis MSA,905,Area of Study - Social and Behavioral Sciences and Human Services,1066
+2017,18,26900,Indianapolis MSA,906,Area of Study - Trades,524
+2017,18,26900,Indianapolis MSA,907,Area of Study - Undecided,699
+2017,18,26900,Indianapolis MSA,908,Degree Level - Associate,2783
+2017,18,26900,Indianapolis MSA,909,Degree Level - Award of at least 1 but less than 2 academic years,137
+2017,18,26900,Indianapolis MSA,910,Degree Level - Award of less than 1 academic year,39
+2017,18,26900,Indianapolis MSA,911,Degree Level - Bachelor's,7782
+2017,18,26900,Indianapolis MSA,912,Degree Level - Unclassified undergraduate,44
+2018,18,26900,Indianapolis MSA,100,Total High School Graduates,24289
+2018,18,26900,Indianapolis MSA,101,Diploma Type - Core 40,12803
+2018,18,26900,Indianapolis MSA,102,Diploma Type - General,2056
+2018,18,26900,Indianapolis MSA,103,Diploma Type - Honors,9430
+2018,18,26900,Indianapolis MSA,200,No ACT data,0
+2018,18,26900,Indianapolis MSA,201,ACT - < 15,17876
+2018,18,26900,Indianapolis MSA,202,ACT - 15-19,1755
+2018,18,26900,Indianapolis MSA,203,ACT - 20-25,2571
+2018,18,26900,Indianapolis MSA,204,ACT - 26-36,2087
+2018,18,26900,Indianapolis MSA,300,Gender - Female,12413
+2018,18,26900,Indianapolis MSA,301,Gender - Male,11876
+2018,18,26900,Indianapolis MSA,302,Race/Ethnicity - Asian,926
+2018,18,26900,Indianapolis MSA,303,Race/Ethnicity - Black,4027
+2018,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2095
+2018,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2095
+2018,18,26900,Indianapolis MSA,305,Race/Ethnicity - Other,1092
+2018,18,26900,Indianapolis MSA,306,Race/Ethnicity - White,16149
+2018,18,26900,Indianapolis MSA,400,Waiver Status - Graduated with Waiver,2135
+2018,18,26900,Indianapolis MSA,401,Waiver Status - Graduated without Waiver,22154
+2018,18,26900,Indianapolis MSA,500,Socioeconomic Status - Free or Reduced Lunch,8661
+2018,18,26900,Indianapolis MSA,501,Socioeconomic Status - Non Free or Reduced Lunch,15628
+2018,18,26900,Indianapolis MSA,600,No SAT data,0
+2018,18,26900,Indianapolis MSA,601,SAT - < 800,9851
+2018,18,26900,Indianapolis MSA,602,SAT - 1000-1199,6491
+2018,18,26900,Indianapolis MSA,603,SAT - 1200-1600,4543
+2018,18,26900,Indianapolis MSA,604,SAT - 800-999,3404
+2018,18,26900,Indianapolis MSA,700,College Enrollments,15381
+2018,18,26900,Indianapolis MSA,800,Indiana Public College Enrollments,10683
+2018,18,26900,Indianapolis MSA,900,Area of Study - Arts and Humanities,1584
+2018,18,26900,Indianapolis MSA,901,Area of Study - Business and Communication,1936
+2018,18,26900,Indianapolis MSA,902,Area of Study - Education,599
+2018,18,26900,Indianapolis MSA,903,Area of Study - Health,1529
+2018,18,26900,Indianapolis MSA,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",2590
+2018,18,26900,Indianapolis MSA,905,Area of Study - Social and Behavioral Sciences and Human Services,1107
+2018,18,26900,Indianapolis MSA,906,Area of Study - Trades,573
+2018,18,26900,Indianapolis MSA,907,Area of Study - Undecided,765
+2018,18,26900,Indianapolis MSA,908,Degree Level - Associate,2713
+2018,18,26900,Indianapolis MSA,909,Degree Level - Award of at least 1 but less than 2 academic years,137
+2018,18,26900,Indianapolis MSA,910,Degree Level - Award of less than 1 academic year,61
+2018,18,26900,Indianapolis MSA,911,Degree Level - Bachelor's,7740
+2018,18,26900,Indianapolis MSA,912,Degree Level - Unclassified undergraduate,32
+2019,18,26900,Indianapolis MSA,100,Total High School Graduates,25353
+2019,18,26900,Indianapolis MSA,101,Diploma Type - Core 40,13482
+2019,18,26900,Indianapolis MSA,102,Diploma Type - General,2147
+2019,18,26900,Indianapolis MSA,103,Diploma Type - Honors,9724
+2019,18,26900,Indianapolis MSA,200,No ACT data,18960
+2019,18,26900,Indianapolis MSA,201,ACT - < 15,511
+2019,18,26900,Indianapolis MSA,202,ACT - 15-19,1504
+2019,18,26900,Indianapolis MSA,203,ACT - 20-25,2354
+2019,18,26900,Indianapolis MSA,204,ACT - 26-36,2024
+2019,18,26900,Indianapolis MSA,300,Gender - Female,12945
+2019,18,26900,Indianapolis MSA,301,Gender - Male,12408
+2019,18,26900,Indianapolis MSA,302,Race/Ethnicity - Asian,995
+2019,18,26900,Indianapolis MSA,303,Race/Ethnicity - Black,4299
+2019,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2538
+2019,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2538
+2019,18,26900,Indianapolis MSA,305,Race/Ethnicity - Other,1078
+2019,18,26900,Indianapolis MSA,306,Race/Ethnicity - White,16443
+2019,18,26900,Indianapolis MSA,400,Waiver Status - Graduated with Waiver,3181
+2019,18,26900,Indianapolis MSA,401,Waiver Status - Graduated without Waiver,22172
+2019,18,26900,Indianapolis MSA,500,Socioeconomic Status - Free or Reduced Lunch,8935
+2019,18,26900,Indianapolis MSA,501,Socioeconomic Status - Non Free or Reduced Lunch,16418
+2019,18,26900,Indianapolis MSA,600,No SAT data,16563
+2019,18,26900,Indianapolis MSA,601,SAT - < 800,413
+2019,18,26900,Indianapolis MSA,602,SAT - 1000-1199,3853
+2019,18,26900,Indianapolis MSA,603,SAT - 1200-1600,1907
+2019,18,26900,Indianapolis MSA,604,SAT - 800-999,2617
+2019,18,26900,Indianapolis MSA,700,College Enrollments,15294
+2019,18,26900,Indianapolis MSA,800,Indiana Public College Enrollments,10823
+2019,18,26900,Indianapolis MSA,900,Area of Study - Arts and Humanities,1523
+2019,18,26900,Indianapolis MSA,901,Area of Study - Business and Communication,1927
+2019,18,26900,Indianapolis MSA,902,Area of Study - Education,623
+2019,18,26900,Indianapolis MSA,903,Area of Study - Health,1567
+2019,18,26900,Indianapolis MSA,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",2669
+2019,18,26900,Indianapolis MSA,905,Area of Study - Social and Behavioral Sciences and Human Services,1223
+2019,18,26900,Indianapolis MSA,906,Area of Study - Trades,618
+2019,18,26900,Indianapolis MSA,907,Area of Study - Undecided,673
+2019,18,26900,Indianapolis MSA,908,Degree Level - Associate,2518
+2019,18,26900,Indianapolis MSA,909,Degree Level - Award of at least 1 but less than 2 academic years,316
+2019,18,26900,Indianapolis MSA,910,Degree Level - Award of less than 1 academic year,69
+2019,18,26900,Indianapolis MSA,911,Degree Level - Bachelor's,7895
+2019,18,26900,Indianapolis MSA,912,Degree Level - Unclassified undergraduate,25
+2020,18,26900,Indianapolis MSA,100,Total High School Graduates,25586
+2020,18,26900,Indianapolis MSA,101,Diploma Type - Core 40,13821
+2020,18,26900,Indianapolis MSA,102,Diploma Type - General,1952
+2020,18,26900,Indianapolis MSA,103,Diploma Type - Honors,9813
+2020,18,26900,Indianapolis MSA,200,No ACT data,0
+2020,18,26900,Indianapolis MSA,201,ACT - < 15,20255
+2020,18,26900,Indianapolis MSA,202,ACT - 15-19,1426
+2020,18,26900,Indianapolis MSA,203,ACT - 20-25,2077
+2020,18,26900,Indianapolis MSA,204,ACT - 26-36,1828
+2020,18,26900,Indianapolis MSA,300,Gender - Female,13143
+2020,18,26900,Indianapolis MSA,301,Gender - Male,12443
+2020,18,26900,Indianapolis MSA,302,Race/Ethnicity - Asian,1075
+2020,18,26900,Indianapolis MSA,303,Race/Ethnicity - Black,4435
+2020,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2832
+2020,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2832
+2020,18,26900,Indianapolis MSA,305,Race/Ethnicity - Other,1229
+2020,18,26900,Indianapolis MSA,306,Race/Ethnicity - White,16015
+2020,18,26900,Indianapolis MSA,400,Waiver Status - Graduated with Waiver,45
+2020,18,26900,Indianapolis MSA,401,Waiver Status - Graduated without Waiver,25541
+2020,18,26900,Indianapolis MSA,500,Socioeconomic Status - Free or Reduced Lunch,9189
+2020,18,26900,Indianapolis MSA,501,Socioeconomic Status - Non Free or Reduced Lunch,16397
+2020,18,26900,Indianapolis MSA,600,No SAT data,0
+2020,18,26900,Indianapolis MSA,601,SAT - < 800,16034
+2020,18,26900,Indianapolis MSA,602,SAT - 1000-1199,4273
+2020,18,26900,Indianapolis MSA,603,SAT - 1200-1600,3199
+2020,18,26900,Indianapolis MSA,604,SAT - 800-999,2080
+2020,18,26900,Indianapolis MSA,700,College Enrollments,14286
+2020,18,26900,Indianapolis MSA,800,Indiana Public College Enrollments,10036
+2020,18,26900,Indianapolis MSA,900,Area of Study - Arts and Humanities,1267
+2020,18,26900,Indianapolis MSA,901,Area of Study - Business and Communication,1776
+2020,18,26900,Indianapolis MSA,902,Area of Study - Education,592
+2020,18,26900,Indianapolis MSA,903,Area of Study - Health,1415
+2020,18,26900,Indianapolis MSA,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",2626
+2020,18,26900,Indianapolis MSA,905,Area of Study - Social and Behavioral Sciences and Human Services,1142
+2020,18,26900,Indianapolis MSA,906,Area of Study - Trades,569
+2020,18,26900,Indianapolis MSA,907,Area of Study - Undecided,649
+2020,18,26900,Indianapolis MSA,908,Degree Level - Associate,1990
+2020,18,26900,Indianapolis MSA,909,Degree Level - Award of at least 1 but less than 2 academic years,262
+2020,18,26900,Indianapolis MSA,910,Degree Level - Award of less than 1 academic year,168
+2020,18,26900,Indianapolis MSA,911,Degree Level - Bachelor's,7604
+2020,18,26900,Indianapolis MSA,912,Degree Level - Unclassified undergraduate,12
+2021,18,26900,Indianapolis MSA,100,Total High School Graduates,24850
+2021,18,26900,Indianapolis MSA,101,Diploma Type - Core 40,13105
+2021,18,26900,Indianapolis MSA,102,Diploma Type - General,2196
+2021,18,26900,Indianapolis MSA,103,Diploma Type - Honors,9549
+2021,18,26900,Indianapolis MSA,200,No ACT data,21972
+2021,18,26900,Indianapolis MSA,201,ACT - < 15,188
+2021,18,26900,Indianapolis MSA,202,ACT - 15-19,560
+2021,18,26900,Indianapolis MSA,203,ACT - 20-25,1058
+2021,18,26900,Indianapolis MSA,204,ACT - 26-36,1072
+2021,18,26900,Indianapolis MSA,300,Gender - Female,12704
+2021,18,26900,Indianapolis MSA,301,Gender - Male,12146
+2021,18,26900,Indianapolis MSA,302,Race/Ethnicity - Asian,1102
+2021,18,26900,Indianapolis MSA,303,Race/Ethnicity - Black,4024
+2021,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2844
+2021,18,26900,Indianapolis MSA,304,Race/Ethnicity - Hispanic or Latino,2844
+2021,18,26900,Indianapolis MSA,305,Race/Ethnicity - Other,1234
+2021,18,26900,Indianapolis MSA,306,Race/Ethnicity - White,15646
+2021,18,26900,Indianapolis MSA,400,Waiver Status - Graduated with Waiver,2936
+2021,18,26900,Indianapolis MSA,401,Waiver Status - Graduated without Waiver,21914
+2021,18,26900,Indianapolis MSA,500,Socioeconomic Status - Free or Reduced Lunch,8219
+2021,18,26900,Indianapolis MSA,501,Socioeconomic Status - Non Free or Reduced Lunch,16631
+2021,18,26900,Indianapolis MSA,600,No SAT data,15334
+2021,18,26900,Indianapolis MSA,601,SAT - < 800,474
+2021,18,26900,Indianapolis MSA,602,SAT - 1000-1199,3814
+2021,18,26900,Indianapolis MSA,603,SAT - 1200-1600,3012
+2021,18,26900,Indianapolis MSA,604,SAT - 800-999,2216
+2021,18,26900,Indianapolis MSA,700,College Enrollments,13813
+2021,18,26900,Indianapolis MSA,800,Indiana Public College Enrollments,9488
+2021,18,26900,Indianapolis MSA,900,Area of Study - Arts and Humanities,1145
+2021,18,26900,Indianapolis MSA,901,Area of Study - Business and Communication,1832
+2021,18,26900,Indianapolis MSA,902,Area of Study - Education,507
+2021,18,26900,Indianapolis MSA,903,Area of Study - Health,1266
+2021,18,26900,Indianapolis MSA,904,"Area of Study - Science, Technology, Engineering, and Math (STEM)",2518
+2021,18,26900,Indianapolis MSA,905,Area of Study - Social and Behavioral Sciences and Human Services,1129
+2021,18,26900,Indianapolis MSA,906,Area of Study - Trades,501
+2021,18,26900,Indianapolis MSA,907,Area of Study - Undecided,590
+2021,18,26900,Indianapolis MSA,908,Degree Level - Associate,1656
+2021,18,26900,Indianapolis MSA,909,Degree Level - Award of at least 1 but less than 2 academic years,204
+2021,18,26900,Indianapolis MSA,910,Degree Level - Award of less than 1 academic year,236
+2021,18,26900,Indianapolis MSA,911,Degree Level - Bachelor's,7383
+2021,18,26900,Indianapolis MSA,912,Degree Level - Unclassified undergraduate,9

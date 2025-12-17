@@ -12,7 +12,7 @@ library(patchwork)
 library(htmlwidgets)
 
 # Load processed data
-output_dir <- "outputs_occupation_20250709"  # Update with your output folder name
+output_dir <- "outputs_occupation_20251104"  # Update with your output folder name
 load(file.path(output_dir, "processed_data_occupations.RData"))
 
 # Create visualizations directory
@@ -714,7 +714,7 @@ p6_data <- emp_data %>%
   filter(geo_area == "Indiana",
          cicp_initiative != "Total Employment") %>%
   inner_join(top_occs_per_init, by = c("cicp_initiative", "occ_code")) %>%
-  mutate(occ_short = str_trunc(occupation, 35, "right"))
+  mutate(occ_short = str_trunc(occupation.x, 35, "right"))
 
 p6 <- p6_data %>%
   ggplot(aes(x = year, y = jobs, color = occ_short, group = occ_code)) +
@@ -1097,6 +1097,889 @@ saveWidget(
 )
 
 cat("Visualization 8 created (static + interactive)\n")
+
+# ============================================================================
+# CICP Talent Demand - STEM and TECH Classification Visualizations
+# ============================================================================
+# Purpose: Analyze STEM vs non-STEM and TECH vs non-TECH employment patterns
+# ============================================================================
+
+cat("\n=== Loading STEM and TECH Classifications ===\n")
+
+library(readxl)
+
+# Load STEM classifications
+stem_classifications <- read_excel(file.path(data_dir, "CICP_STEM.xlsx")) %>%
+  clean_names() %>%
+  mutate(
+    soccode = str_trim(soccode),  # Clean any whitespace
+    is_stem = TRUE
+  ) %>%
+  select(soccode, is_stem) %>%
+  distinct()
+
+# Load TECH classifications
+tech_classifications <- read_excel(file.path(data_dir, "CICP_TECH.xlsx")) %>%
+  clean_names() %>%
+  mutate(
+    soccode = str_trim(soccode),
+    is_tech = TRUE
+  ) %>%
+  select(soccode, is_tech) %>%
+  distinct()
+
+cat(sprintf("Loaded %d STEM occupations and %d TECH occupations\n", 
+            nrow(stem_classifications), nrow(tech_classifications)))
+
+# Join STEM and TECH flags to employment data
+emp_data_classified <- emp_data %>%
+  left_join(stem_classifications, by = c("occ_code" = "soccode")) %>%
+  left_join(tech_classifications, by = c("occ_code" = "soccode")) %>%
+  mutate(
+    is_stem = replace_na(is_stem, FALSE),
+    is_tech = replace_na(is_tech, FALSE),
+    stem_category = if_else(is_stem, "STEM", "Non-STEM"),
+    tech_category = if_else(is_tech, "TECH", "Non-TECH")
+  )
+
+# Join to wage data as well
+wage_data_classified <- wage_data %>%
+  left_join(stem_classifications, by = c("occ_code" = "soccode")) %>%
+  left_join(tech_classifications, by = c("occ_code" = "soccode")) %>%
+  mutate(
+    is_stem = replace_na(is_stem, FALSE),
+    is_tech = replace_na(is_tech, FALSE),
+    stem_category = if_else(is_stem, "STEM", "Non-STEM"),
+    tech_category = if_else(is_tech, "TECH", "Non-TECH")
+  )
+
+# Diagnostic: Check classification coverage
+cat("\n=== Classification Coverage ===\n")
+coverage <- emp_data_classified %>%
+  filter(year == recent_year, geo_area == "Indiana") %>%
+  summarise(
+    total_jobs = sum(jobs, na.rm = TRUE),
+    stem_jobs = sum(jobs[is_stem], na.rm = TRUE),
+    tech_jobs = sum(jobs[is_tech], na.rm = TRUE),
+    stem_pct = stem_jobs / total_jobs * 100,
+    tech_pct = tech_jobs / total_jobs * 100
+  )
+print(coverage)
+
+# VISUALIZATION 9: STEM vs Non-STEM Employment -------------------------------
+
+cat("\n=== Creating Visualization 9: STEM vs Non-STEM Employment ===\n")
+
+# Prepare data by initiative only (Indiana)
+stem_by_initiative <- emp_data_classified %>%
+  filter(year == recent_year,
+         geo_area == "Indiana",
+         cicp_initiative != "Total Employment") %>%
+  group_by(cicp_initiative, stem_category) %>%
+  summarise(
+    jobs = sum(jobs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Static: Stacked bar chart
+p9_static <- stem_by_initiative %>%
+  ggplot(aes(x = cicp_initiative, y = jobs, fill = stem_category)) +
+  geom_col(position = "stack", alpha = 0.8) +
+  geom_text(
+    data = stem_by_initiative %>%
+      group_by(cicp_initiative) %>%
+      summarise(total = sum(jobs), .groups = "drop"),
+    aes(x = cicp_initiative, y = total, label = comma(total)),
+    inherit.aes = FALSE,
+    vjust = -0.5,
+    size = 3,
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.1))) +
+  scale_fill_manual(
+    values = c("STEM" = "#1565C0", "Non-STEM" = "#BDBDBD"),
+    name = NULL
+  ) +
+  labs(
+    title = "STEM vs Non-STEM Employment by Initiative",
+    subtitle = paste("Indiana |", recent_year),
+    x = NULL,
+    y = "Total Jobs",
+    caption = "Source: CICP Talent Demand Data"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    legend.position = "top",
+    panel.grid.major.x = element_blank()
+  )
+
+ggsave(file.path(viz_dir, "09_stem_employment_by_initiative.png"),
+       p9_static, width = 12, height = 8, dpi = 300, bg = "white")
+
+# Interactive: Dropdown for geography breakdown
+stem_by_geo <- emp_data_classified %>%
+  filter(year == recent_year,
+         cicp_initiative != "Total Employment") %>%
+  group_by(cicp_initiative, geo_area, stem_category) %>%
+  summarise(
+    jobs = sum(jobs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Get unique initiative-geography combinations
+init_geo_combos <- stem_by_geo %>%
+  distinct(cicp_initiative, geo_area) %>%
+  arrange(cicp_initiative, geo_area)
+
+p9_interactive <- plot_ly()
+
+trace_counter <- 0
+trace_map <- list()
+
+# Add traces for each combo
+for(i in 1:nrow(init_geo_combos)) {
+  combo <- init_geo_combos[i, ]
+  
+  combo_data <- stem_by_geo %>%
+    filter(cicp_initiative == combo$cicp_initiative,
+           geo_area == combo$geo_area)
+  
+  if(nrow(combo_data) > 0) {
+    # Add STEM bar
+    stem_data <- combo_data %>% filter(stem_category == "STEM")
+    if(nrow(stem_data) > 0) {
+      trace_counter <- trace_counter + 1
+      trace_map[[trace_counter]] <- list(
+        initiative = combo$cicp_initiative,
+        geo = combo$geo_area
+      )
+      
+      p9_interactive <- p9_interactive %>%
+        add_trace(
+          data = stem_data,
+          x = ~stem_category,
+          y = ~jobs,
+          type = "bar",
+          name = "STEM",
+          marker = list(color = "#1565C0"),
+          visible = (combo$cicp_initiative == init_geo_combos$cicp_initiative[1] &&
+                    combo$geo_area == init_geo_combos$geo_area[1]),
+          legendgroup = "STEM",
+          showlegend = (i == 1),
+          hovertemplate = paste0(
+            "<b>STEM</b><br>",
+            "Jobs: %{y:,}<br>",
+            "<extra></extra>"
+          )
+        )
+    }
+    
+    # Add Non-STEM bar
+    nonstem_data <- combo_data %>% filter(stem_category == "Non-STEM")
+    if(nrow(nonstem_data) > 0) {
+      trace_counter <- trace_counter + 1
+      trace_map[[trace_counter]] <- list(
+        initiative = combo$cicp_initiative,
+        geo = combo$geo_area
+      )
+      
+      p9_interactive <- p9_interactive %>%
+        add_trace(
+          data = nonstem_data,
+          x = ~stem_category,
+          y = ~jobs,
+          type = "bar",
+          name = "Non-STEM",
+          marker = list(color = "#BDBDBD"),
+          visible = (combo$cicp_initiative == init_geo_combos$cicp_initiative[1] &&
+                    combo$geo_area == init_geo_combos$geo_area[1]),
+          legendgroup = "Non-STEM",
+          showlegend = (i == 1),
+          hovertemplate = paste0(
+            "<b>Non-STEM</b><br>",
+            "Jobs: %{y:,}<br>",
+            "<extra></extra>"
+          )
+        )
+    }
+  }
+}
+
+# Create two-level dropdown: Initiative first, then Geography
+init_list <- unique(init_geo_combos$cicp_initiative)
+
+dropdown_buttons_init <- lapply(seq_along(init_list), function(i) {
+  init <- init_list[i]
+  
+  # Get first geography for this initiative
+  first_geo <- init_geo_combos %>%
+    filter(cicp_initiative == init) %>%
+    slice(1) %>%
+    pull(geo_area)
+  
+  visible_vec <- sapply(trace_map, function(tm) {
+    tm$initiative == init && tm$geo == first_geo
+  })
+  
+  list(
+    method = "update",
+    args = list(
+      list(visible = visible_vec),
+      list(
+        title = list(
+          text = paste0("<b>STEM vs Non-STEM Employment</b><br><sup>",
+                       init, " | ", first_geo, " | ", recent_year, "</sup>")
+        )
+      )
+    ),
+    label = init
+  )
+})
+
+dropdown_buttons_geo <- lapply(1:nrow(init_geo_combos), function(i) {
+  combo <- init_geo_combos[i, ]
+  
+  visible_vec <- sapply(trace_map, function(tm) {
+    tm$initiative == combo$cicp_initiative && tm$geo == combo$geo_area
+  })
+  
+  list(
+    method = "update",
+    args = list(
+      list(visible = visible_vec),
+      list(
+        title = list(
+          text = paste0("<b>STEM vs Non-STEM Employment</b><br><sup>",
+                       combo$cicp_initiative, " | ", combo$geo_area, 
+                       " | ", recent_year, "</sup>")
+        )
+      )
+    ),
+    label = combo$geo_area
+  )
+})
+
+p9_interactive <- p9_interactive %>%
+  layout(
+    title = list(
+      text = paste0("<b>STEM vs Non-STEM Employment</b><br><sup>",
+                   init_geo_combos$cicp_initiative[1], " | ", 
+                   init_geo_combos$geo_area[1], " | ", recent_year, "</sup>"),
+      font = list(size = 16)
+    ),
+    xaxis = list(title = ""),
+    yaxis = list(title = "Total Jobs", tickformat = ","),
+    barmode = "stack",
+    updatemenus = list(
+      # Initiative dropdown
+      list(
+        active = 0,
+        type = "dropdown",
+        x = 0.15,
+        y = 1.15,
+        xanchor = "left",
+        yanchor = "top",
+        buttons = dropdown_buttons_init
+      ),
+      # Geography dropdown
+      list(
+        active = 0,
+        type = "dropdown",
+        x = 0.4,
+        y = 1.15,
+        xanchor = "left",
+        yanchor = "top",
+        buttons = dropdown_buttons_geo
+      )
+    ),
+    legend = list(orientation = "h", x = 0.5, y = -0.15, xanchor = "center"),
+    margin = list(l = 80, r = 80, t = 120, b = 80)
+  )
+
+saveWidget(
+  p9_interactive,
+  file.path(viz_dir, "09_stem_employment_interactive.html"),
+  selfcontained = TRUE
+)
+
+cat("Visualization 9 created (static + interactive)\n")
+
+# VISUALIZATION 10: TECH vs Non-TECH Employment ------------------------------
+
+cat("\n=== Creating Visualization 10: TECH vs Non-TECH Employment ===\n")
+
+# Prepare data by initiative only (Indiana)
+tech_by_initiative <- emp_data_classified %>%
+  filter(year == recent_year,
+         geo_area == "Indiana",
+         cicp_initiative != "Total Employment") %>%
+  group_by(cicp_initiative, tech_category) %>%
+  summarise(
+    jobs = sum(jobs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Static: Stacked bar chart
+p10_static <- tech_by_initiative %>%
+  ggplot(aes(x = cicp_initiative, y = jobs, fill = tech_category)) +
+  geom_col(position = "stack", alpha = 0.8) +
+  geom_text(
+    data = tech_by_initiative %>%
+      group_by(cicp_initiative) %>%
+      summarise(total = sum(jobs), .groups = "drop"),
+    aes(x = cicp_initiative, y = total, label = comma(total)),
+    inherit.aes = FALSE,
+    vjust = -0.5,
+    size = 3,
+    fontface = "bold"
+  ) +
+  scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.1))) +
+  scale_fill_manual(
+    values = c("TECH" = "#2E7D32", "Non-TECH" = "#BDBDBD"),
+    name = NULL
+  ) +
+  labs(
+    title = "TECH vs Non-TECH Employment by Initiative",
+    subtitle = paste("Indiana |", recent_year),
+    x = NULL,
+    y = "Total Jobs",
+    caption = "Source: CICP Talent Demand Data"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    legend.position = "top",
+    panel.grid.major.x = element_blank()
+  )
+
+ggsave(file.path(viz_dir, "10_tech_employment_by_initiative.png"),
+       p10_static, width = 12, height = 8, dpi = 300, bg = "white")
+
+# Interactive: Dropdown for geography breakdown
+tech_by_geo <- emp_data_classified %>%
+  filter(year == recent_year,
+         cicp_initiative != "Total Employment") %>%
+  group_by(cicp_initiative, geo_area, tech_category) %>%
+  summarise(
+    jobs = sum(jobs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+p10_interactive <- plot_ly()
+
+trace_counter <- 0
+trace_map <- list()
+
+# Add traces for each combo (reuse init_geo_combos from above)
+for(i in 1:nrow(init_geo_combos)) {
+  combo <- init_geo_combos[i, ]
+  
+  combo_data <- tech_by_geo %>%
+    filter(cicp_initiative == combo$cicp_initiative,
+           geo_area == combo$geo_area)
+  
+  if(nrow(combo_data) > 0) {
+    # Add TECH bar
+    tech_data <- combo_data %>% filter(tech_category == "TECH")
+    if(nrow(tech_data) > 0) {
+      trace_counter <- trace_counter + 1
+      trace_map[[trace_counter]] <- list(
+        initiative = combo$cicp_initiative,
+        geo = combo$geo_area
+      )
+      
+      p10_interactive <- p10_interactive %>%
+        add_trace(
+          data = tech_data,
+          x = ~tech_category,
+          y = ~jobs,
+          type = "bar",
+          name = "TECH",
+          marker = list(color = "#2E7D32"),
+          visible = (combo$cicp_initiative == init_geo_combos$cicp_initiative[1] &&
+                    combo$geo_area == init_geo_combos$geo_area[1]),
+          legendgroup = "TECH",
+          showlegend = (i == 1),
+          hovertemplate = paste0(
+            "<b>TECH</b><br>",
+            "Jobs: %{y:,}<br>",
+            "<extra></extra>"
+          )
+        )
+    }
+    
+    # Add Non-TECH bar
+    nontech_data <- combo_data %>% filter(tech_category == "Non-TECH")
+    if(nrow(nontech_data) > 0) {
+      trace_counter <- trace_counter + 1
+      trace_map[[trace_counter]] <- list(
+        initiative = combo$cicp_initiative,
+        geo = combo$geo_area
+      )
+      
+      p10_interactive <- p10_interactive %>%
+        add_trace(
+          data = nontech_data,
+          x = ~tech_category,
+          y = ~jobs,
+          type = "bar",
+          name = "Non-TECH",
+          marker = list(color = "#BDBDBD"),
+          visible = (combo$cicp_initiative == init_geo_combos$cicp_initiative[1] &&
+                    combo$geo_area == init_geo_combos$geo_area[1]),
+          legendgroup = "Non-TECH",
+          showlegend = (i == 1),
+          hovertemplate = paste0(
+            "<b>Non-TECH</b><br>",
+            "Jobs: %{y:,}<br>",
+            "<extra></extra>"
+          )
+        )
+    }
+  }
+}
+
+# Create two-level dropdown
+dropdown_buttons_init_tech <- lapply(seq_along(init_list), function(i) {
+  init <- init_list[i]
+  
+  first_geo <- init_geo_combos %>%
+    filter(cicp_initiative == init) %>%
+    slice(1) %>%
+    pull(geo_area)
+  
+  visible_vec <- sapply(trace_map, function(tm) {
+    tm$initiative == init && tm$geo == first_geo
+  })
+  
+  list(
+    method = "update",
+    args = list(
+      list(visible = visible_vec),
+      list(
+        title = list(
+          text = paste0("<b>TECH vs Non-TECH Employment</b><br><sup>",
+                       init, " | ", first_geo, " | ", recent_year, "</sup>")
+        )
+      )
+    ),
+    label = init
+  )
+})
+
+dropdown_buttons_geo_tech <- lapply(1:nrow(init_geo_combos), function(i) {
+  combo <- init_geo_combos[i, ]
+  
+  visible_vec <- sapply(trace_map, function(tm) {
+    tm$initiative == combo$cicp_initiative && tm$geo == combo$geo_area
+  })
+  
+  list(
+    method = "update",
+    args = list(
+      list(visible = visible_vec),
+      list(
+        title = list(
+          text = paste0("<b>TECH vs Non-TECH Employment</b><br><sup>",
+                       combo$cicp_initiative, " | ", combo$geo_area, 
+                       " | ", recent_year, "</sup>")
+        )
+      )
+    ),
+    label = combo$geo_area
+  )
+})
+
+p10_interactive <- p10_interactive %>%
+  layout(
+    title = list(
+      text = paste0("<b>TECH vs Non-TECH Employment</b><br><sup>",
+                   init_geo_combos$cicp_initiative[1], " | ", 
+                   init_geo_combos$geo_area[1], " | ", recent_year, "</sup>"),
+      font = list(size = 16)
+    ),
+    xaxis = list(title = ""),
+    yaxis = list(title = "Total Jobs", tickformat = ","),
+    barmode = "stack",
+    updatemenus = list(
+      list(
+        active = 0,
+        type = "dropdown",
+        x = 0.15,
+        y = 1.15,
+        xanchor = "left",
+        yanchor = "top",
+        buttons = dropdown_buttons_init_tech
+      ),
+      list(
+        active = 0,
+        type = "dropdown",
+        x = 0.4,
+        y = 1.15,
+        xanchor = "left",
+        yanchor = "top",
+        buttons = dropdown_buttons_geo_tech
+      )
+    ),
+    legend = list(orientation = "h", x = 0.5, y = -0.15, xanchor = "center"),
+    margin = list(l = 80, r = 80, t = 120, b = 80)
+  )
+
+saveWidget(
+  p10_interactive,
+  file.path(viz_dir, "10_tech_employment_interactive.html"),
+  selfcontained = TRUE
+)
+
+cat("Visualization 10 created (static + interactive)\n")
+
+# VISUALIZATION 11: STEM/TECH Summary Tables ----------------------------------
+
+cat("\n=== Creating Visualization 11: STEM/TECH Summary Tables ===\n")
+
+# Table 1: STEM by Initiative and Geography
+stem_summary_table <- emp_data_classified %>%
+  filter(year == recent_year,
+         cicp_initiative != "Total Employment") %>%
+  group_by(cicp_initiative, geo_area) %>%
+  summarise(
+    total_jobs = sum(jobs, na.rm = TRUE),
+    stem_jobs = sum(jobs[is_stem], na.rm = TRUE),
+    nonstem_jobs = sum(jobs[!is_stem], na.rm = TRUE),
+    stem_pct = (stem_jobs / total_jobs) * 100,
+    .groups = "drop"
+  ) %>%
+  arrange(cicp_initiative, geo_area)
+
+write_csv(stem_summary_table,
+          file.path(output_dir, "stem_employment_summary.csv"))
+
+# Table 2: TECH by Initiative and Geography
+tech_summary_table <- emp_data_classified %>%
+  filter(year == recent_year,
+         cicp_initiative != "Total Employment") %>%
+  group_by(cicp_initiative, geo_area) %>%
+  summarise(
+    total_jobs = sum(jobs, na.rm = TRUE),
+    tech_jobs = sum(jobs[is_tech], na.rm = TRUE),
+    nontech_jobs = sum(jobs[!is_tech], na.rm = TRUE),
+    tech_pct = (tech_jobs / total_jobs) * 100,
+    .groups = "drop"
+  ) %>%
+  arrange(cicp_initiative, geo_area)
+
+write_csv(tech_summary_table,
+          file.path(output_dir, "tech_employment_summary.csv"))
+
+cat("Summary tables saved to output directory\n")
+
+# VISUALIZATION 12: STEM/TECH Trends Over Time --------------------------------
+
+cat("\n=== Creating Visualization 12: STEM/TECH Trends Over Time ===\n")
+
+# Prepare trend data - ONLY REAL DATA (2019-2024)
+stem_trends <- emp_data_classified %>%
+  filter(geo_area == "Indiana",
+         cicp_initiative != "Total Employment",
+         year >= 2019,
+         year <= 2024) %>%
+  group_by(cicp_initiative, year, stem_category) %>%
+  summarise(
+    jobs = sum(jobs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+tech_trends <- emp_data_classified %>%
+  filter(geo_area == "Indiana",
+         cicp_initiative != "Total Employment",
+         year >= 2019,
+         year <= 2024) %>%
+  group_by(cicp_initiative, year, tech_category) %>%
+  summarise(
+    jobs = sum(jobs, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Static: STEM trends
+p12a_static <- stem_trends %>%
+  ggplot(aes(x = year, y = jobs, color = stem_category, linetype = stem_category)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(breaks = 2019:2024) +
+  scale_color_manual(values = c("STEM" = "#1565C0", "Non-STEM" = "#757575")) +
+  scale_linetype_manual(values = c("STEM" = "solid", "Non-STEM" = "dashed")) +
+  facet_wrap(~cicp_initiative, scales = "free_y", ncol = 2) +
+  labs(
+    title = "STEM vs Non-STEM Employment Trends",
+    subtitle = "Indiana | 2019-2024 (Actual Data Only)",
+    x = "Year",
+    y = "Total Jobs",
+    color = NULL,
+    linetype = NULL,
+    caption = "Source: CICP Talent Demand Data"
+  ) +
+  theme_minimal() +
+  theme(
+    strip.text = element_text(face = "bold", size = 10),
+    legend.position = "top",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+ggsave(file.path(viz_dir, "12a_stem_trends_over_time.png"),
+       p12a_static, width = 14, height = 10, dpi = 300, bg = "white")
+
+# Static: TECH trends
+p12b_static <- tech_trends %>%
+  ggplot(aes(x = year, y = jobs, color = tech_category, linetype = tech_category)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_y_continuous(labels = comma) +
+  scale_x_continuous(breaks = 2019:2024) +
+  scale_color_manual(values = c("TECH" = "#2E7D32", "Non-TECH" = "#757575")) +
+  scale_linetype_manual(values = c("TECH" = "solid", "Non-TECH" = "dashed")) +
+  facet_wrap(~cicp_initiative, scales = "free_y", ncol = 2) +
+  labs(
+    title = "TECH vs Non-TECH Employment Trends",
+    subtitle = "Indiana | 2019-2024 (Actual Data Only)",
+    x = "Year",
+    y = "Total Jobs",
+    color = NULL,
+    linetype = NULL,
+    caption = "Source: CICP Talent Demand Data"
+  ) +
+  theme_minimal() +
+  theme(
+    strip.text = element_text(face = "bold", size = 10),
+    legend.position = "top",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+ggsave(file.path(viz_dir, "12b_tech_trends_over_time.png"),
+       p12b_static, width = 14, height = 10, dpi = 300, bg = "white")
+
+# Interactive: STEM trends with initiative dropdown
+p12a_interactive <- plot_ly()
+
+for(init in unique(stem_trends$cicp_initiative)) {
+  for(category in c("STEM", "Non-STEM")) {
+    init_cat_data <- stem_trends %>%
+      filter(cicp_initiative == init, stem_category == category)
+    
+    if(nrow(init_cat_data) > 0) {
+      p12a_interactive <- p12a_interactive %>%
+        add_trace(
+          data = init_cat_data,
+          x = ~year,
+          y = ~jobs,
+          type = "scatter",
+          mode = "lines+markers",
+          name = category,
+          line = list(
+            width = 3,
+            color = if(category == "STEM") "#1565C0" else "#757575",
+            dash = if(category == "STEM") "solid" else "dash"
+          ),
+          marker = list(
+            size = 8,
+            color = if(category == "STEM") "#1565C0" else "#757575"
+          ),
+          visible = (init == unique(stem_trends$cicp_initiative)[1]),
+          legendgroup = category,
+          showlegend = (init == unique(stem_trends$cicp_initiative)[1]),
+          hovertemplate = paste0(
+            "<b>", category, "</b><br>",
+            "Year: %{x}<br>",
+            "Jobs: %{y:,}<br>",
+            "<extra></extra>"
+          )
+        )
+    }
+  }
+}
+
+# Create dropdown for STEM trends
+initiative_list_stem <- unique(stem_trends$cicp_initiative)
+updatemenus_stem <- list(
+  list(
+    active = 0,
+    type = "dropdown",
+    x = 0.15,
+    y = 1.15,
+    buttons = lapply(seq_along(initiative_list_stem), function(i) {
+      init <- initiative_list_stem[i]
+      
+      visible_vec <- rep(FALSE, length(initiative_list_stem) * 2)  # 2 categories
+      start_idx <- (i - 1) * 2 + 1
+      visible_vec[start_idx:(start_idx + 1)] <- TRUE
+      
+      list(
+        method = "update",
+        args = list(
+          list(visible = visible_vec),
+          list(
+            title = list(
+              text = paste0("<b>STEM vs Non-STEM Trends - ", init,
+                           "</b><br><sup>Indiana | 2019-2024 (Actual Data Only)</sup>")
+            )
+          )
+        ),
+        label = init
+      )
+    })
+  )
+)
+
+p12a_interactive <- p12a_interactive %>%
+  layout(
+    title = list(
+      text = paste0("<b>STEM vs Non-STEM Trends - ", initiative_list_stem[1],
+                   "</b><br><sup>Indiana | 2019-2024 (Actual Data Only)</sup>"),
+      font = list(size = 16)
+    ),
+    xaxis = list(
+      title = "Year",
+      tickmode = "linear",
+      tick0 = 2019,
+      dtick = 1
+    ),
+    yaxis = list(title = "Total Jobs", tickformat = ","),
+    updatemenus = updatemenus_stem,
+    legend = list(orientation = "h", x = 0.5, y = -0.15, xanchor = "center"),
+    margin = list(l = 80, r = 80, t = 120, b = 80)
+  )
+
+saveWidget(
+  p12a_interactive,
+  file.path(viz_dir, "12a_stem_trends_interactive.html"),
+  selfcontained = TRUE
+)
+
+# Interactive: TECH trends with initiative dropdown
+p12b_interactive <- plot_ly()
+
+for(init in unique(tech_trends$cicp_initiative)) {
+  for(category in c("TECH", "Non-TECH")) {
+    init_cat_data <- tech_trends %>%
+      filter(cicp_initiative == init, tech_category == category)
+    
+    if(nrow(init_cat_data) > 0) {
+      p12b_interactive <- p12b_interactive %>%
+        add_trace(
+          data = init_cat_data,
+          x = ~year,
+          y = ~jobs,
+          type = "scatter",
+          mode = "lines+markers",
+          name = category,
+          line = list(
+            width = 3,
+            color = if(category == "TECH") "#2E7D32" else "#757575",
+            dash = if(category == "TECH") "solid" else "dash"
+          ),
+          marker = list(
+            size = 8,
+            color = if(category == "TECH") "#2E7D32" else "#757575"
+          ),
+          visible = (init == unique(tech_trends$cicp_initiative)[1]),
+          legendgroup = category,
+          showlegend = (init == unique(tech_trends$cicp_initiative)[1]),
+          hovertemplate = paste0(
+            "<b>", category, "</b><br>",
+            "Year: %{x}<br>",
+            "Jobs: %{y:,}<br>",
+            "<extra></extra>"
+          )
+        )
+    }
+  }
+}
+
+# Create dropdown for TECH trends
+initiative_list_tech <- unique(tech_trends$cicp_initiative)
+updatemenus_tech <- list(
+  list(
+    active = 0,
+    type = "dropdown",
+    x = 0.15,
+    y = 1.15,
+    buttons = lapply(seq_along(initiative_list_tech), function(i) {
+      init <- initiative_list_tech[i]
+      
+      visible_vec <- rep(FALSE, length(initiative_list_tech) * 2)  # 2 categories
+      start_idx <- (i - 1) * 2 + 1
+      visible_vec[start_idx:(start_idx + 1)] <- TRUE
+      
+      list(
+        method = "update",
+        args = list(
+          list(visible = visible_vec),
+          list(
+            title = list(
+              text = paste0("<b>TECH vs Non-TECH Trends - ", init,
+                           "</b><br><sup>Indiana | 2019-2024 (Actual Data Only)</sup>")
+            )
+          )
+        ),
+        label = init
+      )
+    })
+  )
+)
+
+p12b_interactive <- p12b_interactive %>%
+  layout(
+    title = list(
+      text = paste0("<b>TECH vs Non-TECH Trends - ", initiative_list_tech[1],
+                   "</b><br><sup>Indiana | 2019-2024 (Actual Data Only)</sup>"),
+      font = list(size = 16)
+    ),
+    xaxis = list(
+      title = "Year",
+      tickmode = "linear",
+      tick0 = 2019,
+      dtick = 1
+    ),
+    yaxis = list(title = "Total Jobs", tickformat = ","),
+    updatemenus = updatemenus_tech,
+    legend = list(orientation = "h", x = 0.5, y = -0.15, xanchor = "center"),
+    margin = list(l = 80, r = 80, t = 120, b = 80)
+  )
+
+saveWidget(
+  p12b_interactive,
+  file.path(viz_dir, "12b_tech_trends_interactive.html"),
+  selfcontained = TRUE
+)
+
+cat("Visualization 12 created (static + interactive for both STEM and TECH)\n")
+
+# SUMMARY ---------------------------------------------------------------------
+
+cat("\n" , rep("=", 70), "\n", sep = "")
+cat("STEM/TECH VISUALIZATION SUMMARY\n")
+cat(rep("=", 70), "\n\n", sep = "")
+
+cat("Created 4 new visualization sets:\n\n")
+
+cat("  9. STEM vs Non-STEM Employment\n")
+cat("     - Static: Stacked bar by initiative (Indiana only)\n")
+cat("     - Interactive: Two dropdowns (Initiative + Geography)\n\n")
+
+cat(" 10. TECH vs Non-TECH Employment\n")
+cat("     - Static: Stacked bar by initiative (Indiana only)\n")
+cat("     - Interactive: Two dropdowns (Initiative + Geography)\n\n")
+
+cat(" 11. Summary Tables (CSV exports)\n")
+cat("     - STEM employment by initiative/geography\n")
+cat("     - TECH employment by initiative/geography\n\n")
+
+cat(" 12. Trends Over Time\n")
+cat("     - Static: Line charts for STEM and TECH (faceted by initiative)\n")
+cat("     - Interactive: Dropdown for initiative selection\n\n")
+
+cat(rep("=", 70), "\n", sep = "")
 
 # SUMMARY ---------------------------------------------------------------------
 

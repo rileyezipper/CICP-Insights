@@ -1,0 +1,41 @@
+code,category
+100,Total High School Graduates
+101,Diploma Type - Core 40
+102,Diploma Type - General
+103,Diploma Type - Honors
+200,No ACT data
+201,ACT - < 15
+202,ACT - 15-19
+203,ACT - 20-25
+204,ACT - 26-36
+300,Gender - Female
+301,Gender - Male
+302,Race/Ethnicity - Asian
+303,Race/Ethnicity - Black
+304,Race/Ethnicity - Hispanic or Latino
+305,Race/Ethnicity - Other
+306,Race/Ethnicity - White
+400,Waiver Status - Graduated with Waiver
+401,Waiver Status - Graduated without Waiver
+500,Socioeconomic Status - Free or Reduced Lunch
+501,Socioeconomic Status - Non Free or Reduced Lunch
+600,No SAT data
+601,SAT - < 800
+602,SAT - 1000-1199
+603,SAT - 1200-1600
+604,SAT - 800-999
+700,College Enrollments
+800,Indiana Public College Enrollments
+900,Area of Study - Arts and Humanities
+901,Area of Study - Business and Communication
+902,Area of Study - Education
+903,Area of Study - Health
+904,"Area of Study - Science, Technology, Engineering, and Math (STEM)"
+905,Area of Study - Social and Behavioral Sciences and Human Services
+906,Area of Study - Trades
+907,Area of Study - Undecided
+908,Degree Level - Associate
+909,Degree Level - Award of at least 1 but less than 2 academic years
+910,Degree Level - Award of less than 1 academic year
+911,Degree Level - Bachelor's
+912,Degree Level - Unclassified undergraduate

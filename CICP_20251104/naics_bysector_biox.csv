@@ -1,0 +1,55 @@
+sector,sector_name,naics_code,naics_title,naics_version,share,share_wages
+1,Ag/Bio,311221,  Wet corn milling,2017,1.0,1.0
+1,Ag/Bio,311222,  Soybean processing,2017,1.0,1.0
+1,Ag/Bio,311223,  Other oilseed processing,2017,1.0,1.0
+1,Ag/Bio,325193,  Ethyl alcohol manufacturing,2017,1.0,1.0
+1,Ag/Bio,325220,  Artificial fibers and filaments manufacturing,2017,1.0,1.0
+1,Ag/Bio,325221,  Cellulosic organic fiber manufacturing,2017,1.0,1.0
+1,Ag/Bio,325311,  Nitrogenous fertilizer manufacturing,2017,1.0,1.0
+1,Ag/Bio,325312,  Phosphatic fertilizer manufacturing,2017,1.0,1.0
+1,Ag/Bio,325314,"  Fertilizer, mixing only, manufacturing",2017,1.0,1.0
+1,Ag/Bio,325320,  Pesticide and other ag. chemical mfg.,2017,1.0,1.0
+2,Pharma,325411,  Medicinal and botanical manufacturing,2017,1.0,1.0
+2,Pharma,325412,  Pharmaceutical preparation manufacturing,2017,1.0,1.0
+2,Pharma,325413,  In-vitro diagnostic substance manufacturing,2017,1.0,1.0
+2,Pharma,325414,  Other biological product manufacturing,2017,1.0,1.0
+3,MedDev,334510,  Electromedical apparatus manufacturing,2017,1.0,1.0
+3,MedDev,334516,  Analytical laboratory instrument mfg.,2017,1.0,1.0
+3,MedDev,334517,  Irradiation apparatus manufacturing,2017,1.0,1.0
+3,MedDev,339112,  Surgical and medical instrument manufacturing,2017,1.0,1.0
+3,MedDev,339113,  Surgical appliance and supplies manufacturing,2017,1.0,1.0
+3,MedDev,339114,  Dental equipment and supplies manufacturing,2017,1.0,1.0
+6,Bio-Logistics,423450,  Medical equipment merchant wholesalers,2017,1.0,1.0
+6,Bio-Logistics,424210,  Druggists' goods merchant wholesalers,2017,1.0,1.0
+6,Bio-Logistics,424910,  Farm supplies merchant wholesalers,2017,1.0,1.0
+4,Research/Testing,541380,  Testing laboratories,2017,1.0,1.0
+4,Research/Testing,541713,  Research and development in nanotechnology,2017,1.0,1.0
+4,Research/Testing,541714,  Research and development in biotechnology (except nanobiotechnology),2017,1.0,1.0
+4,Research/Testing,541715,"  Research and development in the physical, engineering, and life sciences (except nanotechnology and biotechnology)",2017,1.0,1.0
+4,Research/Testing,621511,  Medical laboratories,2017,1.0,1.0
+1,Ag/Bio,311221,Wet Corn Milling and Starch Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325193,Ethyl Alcohol Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325220,Artificial and Synthetic Fibers and Filaments Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325311,Nitrogenous Fertilizer Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325312,Phosphatic Fertilizer Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325314,Fertilizer (Mixing Only) Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325315,Compost Manufacturing,2022,1.0,1.0
+1,Ag/Bio,325320,Pesticide and Other Agricultural Chemical Manufacturing,2022,1.0,1.0
+2,Pharma,325411,Medicinal and Botanical Manufacturing,2022,1.0,1.0
+2,Pharma,325412,Pharmaceutical Preparation Manufacturing,2022,1.0,1.0
+2,Pharma,325413,In-Vitro Diagnostic Substance Manufacturing,2022,1.0,1.0
+2,Pharma,325414,Biological Product (except Diagnostic) Manufacturing,2022,1.0,1.0
+3,MedDev,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,2022,1.0,1.0
+3,MedDev,334516,Analytical Laboratory Instrument Manufacturing,2022,1.0,1.0
+3,MedDev,334517,Irradiation Apparatus Manufacturing,2022,1.0,1.0
+3,MedDev,339112,Surgical and Medical Instrument Manufacturing,2022,1.0,1.0
+3,MedDev,339113,Surgical Appliance and Supplies Manufacturing,2022,1.0,1.0
+3,MedDev,339114,Dental Equipment and Supplies Manufacturing,2022,1.0,1.0
+6,Bio-Logistics,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",2022,0.971,0.971
+6,Bio-Logistics,424210,Drugs and Druggists' Sundries Merchant Wholesalers,2022,0.942,0.942
+6,Bio-Logistics,424910,Farm Supplies Merchant Wholesalers,2022,0.844,0.844
+4,Research/Testing,541380,Testing Laboratories and Services,2022,0.116,0.116
+4,Research/Testing,541713,Research and Development in Nanotechnology,2022,0.57,0.57
+4,Research/Testing,541714,Research and Development in Biotechnology (except Nanobiotechnology),2022,1.0,1.0
+4,Research/Testing,541715,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",2022,0.909,0.909
+4,Research/Testing,621511,Medical Laboratories,2022,1.0,1.0

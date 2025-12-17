@@ -11,7 +11,7 @@ library(plotly)
 library(patchwork)
 
 # Load processed data from main analysis
-output_dir <- "outputs_20251031"  # Modify to match your output directory
+output_dir <- "outputs_20251104"  # Modify to match your output directory
 load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
 
 # Create visualizations directory
@@ -172,7 +172,7 @@ htmlwidgets::saveWidget(
 
 p4_data <- wage_data %>%
   filter(display_level == 0, 
-         year == recent_year - 1, 
+         year == recent_year, 
          geo_area == "Indiana",
          initiative != "Total Employment",
          !is.na(wages)) %>%
@@ -191,7 +191,7 @@ p4 <- p4_data %>%
   scale_fill_manual(values = initiative_colors) +
   labs(
     title = "Average Annual Wage by Initiative",
-    subtitle = paste("Indiana |", recent_year - 1),
+    subtitle = paste("Indiana |", recent_year),
     x = NULL, 
     y = "Average Annual Wage",
     caption = "Source: CICP Advanced Industries Dashboard"
@@ -1173,12 +1173,12 @@ cat("\n=== Creating Visualization 11: Wage Premium Analysis ===\n")
 # Calculate wage premiums
 wage_premium_data <- wage_data %>%
   filter(display_level == 0,
-         year == recent_year - 1,
+         year == recent_year,
          initiative != "Total Employment",
          !is.na(wages)) %>%
   left_join(
     wage_data %>%
-      filter(display_level == 0, year == recent_year - 1,
+      filter(display_level == 0, year == recent_year,
              initiative == "Total Employment") %>%
       select(geo_area, total_wage = wages),
     by = "geo_area"
@@ -1236,7 +1236,7 @@ p11 <- wage_premium_data %>%
   ) +
   labs(
     title = "Wage Premium by Initiative and Geography",
-    subtitle = paste("% Difference from Total Employment Wage |", recent_year - 1),
+    subtitle = paste("% Difference from Total Employment Wage |", recent_year),
     x = NULL,
     y = NULL,
     caption = "Source: CICP Advanced Industries Dashboard\nPositive values indicate initiative wages exceed regional average"
@@ -1288,7 +1288,7 @@ p11_interactive <- plot_ly(
   layout(
     title = list(
       text = paste0("<b>Wage Premium by Initiative and Geography</b><br><sup>% Difference from Total Employment Wage | ", 
-                   recent_year - 1, "<br>Positive values indicate initiative wages exceed regional average</sup>"),
+                   recent_year, "<br>Positive values indicate initiative wages exceed regional average</sup>"),
       font = list(size = 16)
     ),
     xaxis = list(title = "", tickangle = 45),

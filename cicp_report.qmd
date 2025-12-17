@@ -43,11 +43,12 @@ library(janitor)
 library(readxl)
 
 # Load processed data
-output_dir <- "outputs_20251031"  # Modify to match your output directory
+output_dir <- "outputs_20251104"  # Main analysis output directory
+output_dir_occ <- "outputs_occupation_20251104"  # Occupation analysis output directory
 load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
 
 viz_dir <- file.path(output_dir, "visualizations")
-viz_path <- "outputs_20251031/visualizations"
+viz_path <- "outputs_20251104/visualizations"
 
 # Define color palette
 initiative_colors <- c(
@@ -296,17 +297,17 @@ Wage levels reflect the economic value and skill requirements of the advanced in
 #| tbl-cap: "Indiana Average Annual Wages by Initiative"
 
 avg_state_wage <- wage_data %>%
-  filter(display_level == 0, year == recent_year - 1, 
+  filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative == "Total Employment") %>%
   pull(wages)
 
 indiana_wages <- wage_data %>%
-  filter(display_level == 0, year == recent_year - 1, 
+  filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative != "Total Employment",
          !is.na(wages)) %>%
   left_join(
     jobs_data %>%
-      filter(display_level == 0, year == recent_year - 1, 
+      filter(display_level == 0, year == recent_year, 
              geo_area == "Indiana") %>%
       select(initiative, jobs),
     by = "initiative"
@@ -337,7 +338,7 @@ knitr::include_url(file.path(viz_path, "04_indiana_wages_by_initiative.html"), h
 #| tbl-cap: "Wage Distribution Across Initiatives (Indiana)"
 
 wage_percentiles <- wage_data %>%
-  filter(display_level >= 2, year == recent_year - 1, 
+  filter(display_level >= 2, year == recent_year, 
          geo_area == "Indiana", !is.na(wages)) %>%
   group_by(initiative) %>%
   summarise(
@@ -358,7 +359,7 @@ create_table(wage_percentiles)
 #| tbl-cap: "Indiana vs. US Average Wages by Initiative"
 
 wage_comparison <- wage_data %>%
-  filter(display_level == 0, year == recent_year - 1,
+  filter(display_level == 0, year == recent_year,
          initiative != "Total Employment", !is.na(wages),
          geo_area %in% c("Indiana", "United States")) %>%
   select(geo_area, initiative, wages) %>%
@@ -1052,7 +1053,7 @@ Note: All wage information is from 2023 because that's the latest year available
 
 # Top 3 by wages
 top3_wages <- wage_data %>%
-  filter(display_level == 0, year == recent_year - 1, 
+  filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative != "Total Employment",
          !is.na(wages)) %>%
   arrange(desc(wages)) %>%
@@ -1060,11 +1061,11 @@ top3_wages <- wage_data %>%
 
 # Calculate total payroll impact
 total_payroll <- wage_data %>%
-  filter(display_level == 0, year == recent_year - 1, 
+  filter(display_level == 0, year == recent_year, 
          geo_area == "Indiana", initiative != "Total Employment") %>%
   left_join(
     jobs_data %>%
-      filter(display_level == 0, year == recent_year - 1, 
+      filter(display_level == 0, year == recent_year, 
              geo_area == "Indiana") %>%
       select(initiative, jobs),
     by = "initiative"
@@ -1625,7 +1626,15 @@ Breaking down startup formation by establishment type (true startups vs. qualifi
 ```{r startup_by_type, fig.height=14}
 #| fig-cap: "Distinguishing between true startups and qualified establishments reveals whether growth is driven by grassroots entrepreneurship or larger-scale business development. Use dropdowns to explore different geographies and time periods."
 
-knitr::include_url("estab_output_2022/plots/O_new_startups_by_type_interactive.html", height = "1000px")
+knitr::include_url("estab_output_2022/plots/O_new_startups_by_type_overview.html", height = "1000px")
+```
+:::
+
+::: column-page
+```{r startup_by_type_subcluster, fig.height=14}
+#| fig-cap: "Distinguishing between true startups and qualified establishments reveals whether growth is driven by grassroots entrepreneurship or larger-scale business development. Use dropdowns to explore different geographies, initiatives, subclusters, and time periods."
+
+knitr::include_url("estab_output_2022/plots/O_new_startups_by_subcluster.html", height = "1000px")
 ```
 :::
 
@@ -1653,6 +1662,157 @@ Strong entrepreneurial ecosystems demonstrate:
 - **Balanced mix** of startup-scale and qualified establishments
 
 Regions exhibiting these characteristics possess the **entrepreneurial infrastructure**, **talent pools**, and **market conditions** that support sustainable business creation. Understanding where these conditions exist—and where they're lacking—informs **targeted interventions** to strengthen entrepreneurial ecosystems across Indiana's advanced industries.
+:::
+
+# Talent Demand & Occupations {#sec-occupations}
+
+Understanding the **occupational composition** of Indiana's advanced industries reveals the specific skills and talent required to support these sectors. This section examines the **most in-demand occupations**, their **distribution across metro areas**, and the critical role of **STEM and TECH occupations** in driving innovation and competitiveness.
+
+## Top Occupations by Initiative
+
+Each initiative requires distinct occupational profiles reflecting its unique workforce needs. Identifying the largest occupations within each initiative helps inform **talent development strategies** and **workforce training priorities**.
+
+::: column-page
+```{r top_occupations_viz, fig.height=14}
+#| fig-cap: "The most in-demand occupations vary significantly across initiatives, reflecting distinct skill requirements and workforce compositions. Use the dropdown to examine different initiatives and geographies."
+
+knitr::include_url(file.path(output_dir_occ, "visualizations/01_top_occupations_by_initiative.html"), height = "1200px")
+```
+:::
+
+## Regional Occupation Patterns
+
+Metro areas develop specialized talent pools aligned with their dominant industries. Understanding geographic variation in occupational demand reveals **regional workforce strengths** and **talent gaps**.
+
+::: column-page
+```{r metro_occupation_comparison, fig.height=14}
+#| fig-cap: "Top occupations differ across metro areas within each initiative, revealing distinct regional talent specializations. Metro-level patterns inform targeted workforce development and talent recruitment strategies."
+
+knitr::include_url(file.path(output_dir_occ, "visualizations/07_metro_comparison_top_occupations.html"), height = "1200px")
+```
+:::
+
+## STEM Workforce Analysis
+
+**STEM occupations** (Science, Technology, Engineering, and Mathematics) represent the innovation core of advanced industries. Tracking STEM employment trends reveals the state's capacity for **technological advancement** and **knowledge-intensive production**.
+
+::: column-page
+```{r stem_trends_viz, fig.height=12}
+#| fig-cap: "STEM employment trends show the evolution of innovation-intensive occupations within each initiative. Solid lines represent STEM occupations while dashed lines show Non-STEM employment. Use the dropdown to examine different initiatives."
+
+knitr::include_url(file.path(output_dir_occ, "visualizations/12a_stem_trends_interactive.html"), height = "900px")
+```
+:::
+```{r stem_summary_table}
+#| tbl-cap: "STEM Employment by Initiative and Geography"
+
+stem_summary <- read_csv(file.path(output_dir_occ, "stem_employment_summary.csv"), 
+                         show_col_types = FALSE)
+
+# Calculate STEM percentage and get US + Indiana + top 3 metros per initiative
+stem_display <- stem_summary %>%
+  mutate(stem_pct = (stem_jobs / total_jobs) * 100) %>%
+  # Identify US and Indiana
+  mutate(
+    is_us = geo_area == "United States",
+    is_indiana = geo_area == "Indiana",
+    is_benchmark = is_us | is_indiana
+  ) %>%
+  group_by(cicp_initiative) %>%
+  arrange(desc(is_us), desc(is_indiana), desc(stem_pct)) %>%
+  # Keep US + Indiana + top 3 metros
+  filter(is_benchmark | (row_number() - sum(is_benchmark) <= 3)) %>%
+  slice_head(n = 5) %>%  # US + IN + 3 metros = 5 total
+  ungroup() %>%
+  arrange(cicp_initiative, desc(is_us), desc(is_indiana), desc(stem_pct)) %>%
+  mutate(
+    `Total Jobs` = comma(round(total_jobs, 0)),
+    `STEM Jobs` = comma(round(stem_jobs, 0)),
+    `Non-STEM Jobs` = comma(round(nonstem_jobs, 0)),
+    `STEM %` = sprintf("%.1f%%", stem_pct)
+  ) %>%
+  select(
+    Initiative = cicp_initiative,
+    Geography = geo_area,
+    `Total Jobs`,
+    `STEM Jobs`,
+    `Non-STEM Jobs`,
+    `STEM %`
+  )
+
+create_table(stem_display, striped = TRUE)
+```
+
+::: {.callout-note icon="false"}
+## 💡 STEM Workforce Insights
+
+**STEM concentration** varies substantially across initiatives and geographies:
+
+- Higher STEM percentages indicate **knowledge-intensive** production and **innovation capacity**
+- Geographic variation reveals where **technical talent** is concentrated
+- Trends over time show whether initiatives are becoming **more technology-driven**
+
+:::
+
+## TECH Workforce Analysis
+
+**TECH occupations** represent the subset of technical roles directly involved in **computing, data, and digital technologies**. These occupations are increasingly critical across all advanced industries as **digitalization** and **automation** accelerate.
+
+::: column-page
+```{r tech_trends_viz, fig.height=12}
+#| fig-cap: "TECH employment trends reveal the penetration of digital and computing occupations across initiatives. Solid lines represent TECH occupations while dashed lines show Non-TECH employment. Use the dropdown to examine different initiatives."
+
+knitr::include_url(file.path(output_dir_occ, "visualizations/12b_tech_trends_interactive.html"), height = "900px")
+```
+:::
+```{r tech_summary_table}
+#| tbl-cap: "TECH Employment by Initiative and Geography"
+
+tech_summary <- read_csv(file.path(output_dir_occ, "tech_employment_summary.csv"), 
+                         show_col_types = FALSE)
+
+# Calculate TECH percentage and get US + Indiana + top 3 metros per initiative
+tech_display <- tech_summary %>%
+  mutate(tech_pct = (tech_jobs / total_jobs) * 100) %>%
+  # Identify US and Indiana
+  mutate(
+    is_us = geo_area == "United States",
+    is_indiana = geo_area == "Indiana",
+    is_benchmark = is_us | is_indiana
+  ) %>%
+  group_by(cicp_initiative) %>%
+  arrange(desc(is_us), desc(is_indiana), desc(tech_pct)) %>%
+  # Keep US + Indiana + top 3 metros
+  filter(is_benchmark | (row_number() - sum(is_benchmark) <= 3)) %>%
+  slice_head(n = 5) %>%  # US + IN + 3 metros = 5 total
+  ungroup() %>%
+  arrange(cicp_initiative, desc(is_us), desc(is_indiana), desc(tech_pct)) %>%
+  mutate(
+    `Total Jobs` = comma(round(total_jobs, 0)),
+    `TECH Jobs` = comma(round(tech_jobs, 0)),
+    `Non-TECH Jobs` = comma(round(nontech_jobs, 0)),
+    `TECH %` = sprintf("%.1f%%", tech_pct)
+  ) %>%
+  select(
+    Initiative = cicp_initiative,
+    Geography = geo_area,
+    `Total Jobs`,
+    `TECH Jobs`,
+    `Non-TECH Jobs`,
+    `TECH %`
+  )
+
+create_table(tech_display, striped = TRUE)
+```
+
+::: {.callout-note icon="false"}
+## 💡 TECH Workforce Insights
+
+**TECH occupation concentration** reflects digital transformation progress:
+
+- TECH roles are expanding beyond traditional technology sectors into all advanced industries
+- Geographic patterns reveal **technology talent hubs** and potential **skills gaps**
+
 :::
 
 # Methodology & Technical Notes {#sec-methodology}
