@@ -145,6 +145,7 @@ cat("Preparing data for analysis...\n")
 
 # Standardize column names between datasets
 emp_data <- emp_data %>%
+  filter(year >= 2019 & year <= 2024) %>%
   rename(
     # Ensure consistent naming
     occ_code = occ,
@@ -152,6 +153,7 @@ emp_data <- emp_data %>%
   )
 
 wage_data <- wage_data %>%
+  filter(year >= 2019 & year <= 2024) %>%
   rename(
     year = `year`,  # Handle potential capital Y
     occ_code = occ,
