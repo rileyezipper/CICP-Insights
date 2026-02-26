@@ -29,16 +29,26 @@ year,initiative,naics_title,naics_code,n_geographies,total_jobs,avg_jobs_per_geo
 2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,17,115024.39611345976,6766.140947850575,101377.03348
 2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,17,108926.1615884868,6407.421269910988,102014.065808836
 2024,BioCrossroads,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,17,76082.67978271648,4475.451751924498,74287.0325425
-2024,Conexus,Warehousing and Storage,4931,17,2112977.019866217,124292.76587448335,1895348.1933846
-2024,Conexus,General Freight Trucking,4841,17,1211443.2369979818,71261.36688223422,1082004.584581
-2024,Conexus,Couriers and Express Delivery Services,4921,17,1009600.563432139,59388.26843718465,897032.568801
-2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,17,894903.7648801736,52641.39793412786,827654.8840582999
-2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,17,859872.9948546119,50580.764403212466,778874.7113722999
-2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,17,810596.157441539,47682.12690832582,745302.8397057
-2024,Conexus,Plastics Product Manufacturing,3261,17,682243.6379620864,40131.97870365214,589253.4493734001
-2024,Conexus,Motor Vehicle Parts Manufacturing,3363,17,673580.5340421315,39622.3843554195,558625.9869397
-2024,Conexus,Animal Slaughtering and Processing,3116,17,589868.7155110344,34698.1597359432,557676.78377746
-2024,Conexus,Aerospace Product and Parts Manufacturing,3364,17,585255.4205302057,34426.789442953275,561310.38364336
+2024,Conexus - Logistics,Warehousing and Storage,4931,17,2112977.019866217,124292.76587448335,1895348.1933846
+2024,Conexus - Logistics,General Freight Trucking,4841,17,1211443.2369979818,71261.36688223422,1082004.584581
+2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,17,1009600.563432139,59388.26843718465,897032.568801
+2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,17,894903.7648801736,52641.39793412786,827654.8840582999
+2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,17,859872.9948546119,50580.764403212466,778874.7113722999
+2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,17,810596.157441539,47682.12690832582,745302.8397057
+2024,Conexus - Logistics,Wholesale Trade Agents and Brokers,4251,17,523941.6929082886,30820.099582840507,493550.003335
+2024,Conexus - Logistics,Specialized Freight Trucking,4842,17,496790.9542216906,29222.997307158268,460020.8919772
+2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,17,415711.2046118245,24453.600271283794,376695.1132327
+2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,17,409550.85593828256,24091.226819898973,378089.9129465
+2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,17,682243.6379620864,40131.97870365214,589253.4493734001
+2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,17,673580.5340421315,39622.3843554195,558625.9869397
+2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,17,589868.7155110344,34698.1597359432,557676.78377746
+2024,Conexus - Manufacturing,Aerospace Product and Parts Manufacturing,3364,17,585255.4205302057,34426.789442953275,561310.38364336
+2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,17,448143.8099610792,26361.400585945838,414032.1810017
+2024,Conexus - Manufacturing,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,17,435144.9136236126,8532.253208306129,155822.52626538
+2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,17,416716.1540270396,24512.714942767034,348426.70799980004
+2024,Conexus - Manufacturing,Semiconductor and Other Electronic Component Manufacturing,3344,17,408562.47874302504,24033.086984883823,393541.5968966
+2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,17,399097.1677468664,23476.30398510979,356553.7349208
+2024,Conexus - Manufacturing,Bakeries and Tortilla Manufacturing,3118,17,391089.6760222751,23005.27506013383,348985.24163179996
 2024,Finance & Insurance,Commercial Banking,522110,17,1479884.349076193,87052.02053389371,1376502.63418
 2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,17,1408372.709232927,82845.45348428983,1310683.3347
 2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,17,546458.2920953607,32144.605417374158,514179.123464
@@ -55,10 +65,10 @@ year,initiative,naics_title,naics_code,n_geographies,total_jobs,avg_jobs_per_geo
 2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,17,1655802.537098591,97400.14924109359,1514614.03868
 2024,Healthcare,Offices of Dentists,621210,17,1118813.550366026,65812.56178623682,1043459.44011
 2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,17,541263.693783052,31839.040810767765,493091.001161
+2024,Healthcare,Assisted Living Facilities for the Elderly,623312,17,535086.5157767907,31475.677398634747,504747.05964
+2024,Healthcare,Continuing Care Retirement Communities,623311,17,532805.6205742826,31341.50709260486,491416.560232
 2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,17,432230.0865653657,25425.299209727396,409493.068458
 2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,17,341494.5631415709,20087.915478915937,313025.562571
-2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,17,298752.5331013149,17573.678417724408,276545.413338
-2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,17,279884.26410570665,16463.78024151216,265541.73655
 2024,TechPoint,Computer Systems Design Services,541512,17,1215317.6312228232,71489.27242487196,1150882.46214
 2024,TechPoint,Custom Computer Programming Services,541511,17,1155592.7108020945,67976.04181188792,1092558.78895
 2024,TechPoint,Software Publishers,513210,17,656566.9394944856,38621.584676146216,638498.362604

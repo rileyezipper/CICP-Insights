@@ -55,12 +55,23 @@ initiative_colors <- c(
   "Advanced & Traded Industries" = "#1565C0",
   "AgriNovus" = "#2E7D32",
   "BioCrossroads" = "#6A1B9A",
-  "Conexus" = "#D84315",
+  "Conexus - Manufacturing" = "#D84315",
+  "Conexus - Logistics" = "#BF360C",
   "TechPoint" = "#F57C00",
   "Healthcare" = "#c92f6c",
   "Finance & Insurance" = "#19909a",
   "Total Employment" = "#424242"
 )
+
+# Helper function for filtering to NAICS detail level
+# AgriNovus uses display_level == 3 for NAICS detail, others use display_level == 2
+filter_naics_detail <- function(df) {
+  df %>%
+    filter(
+      (initiative == "AgriNovus" & display_level == 3) |
+      (initiative != "AgriNovus" & display_level == 2)
+    )
+}
 
 # Helper function for beautiful tables
 create_table <- function(df, title = NULL, striped = TRUE) {
@@ -93,7 +104,7 @@ create_table <- function(df, title = NULL, striped = TRUE) {
 ::: {.callout-important icon="false" appearance="simple"}
 ## 📊 Executive Summary
 
-Indiana's advanced industries represent a critical component of the state's economic competitiveness. This comprehensive analysis examines **five key initiatives** across employment trends, wage dynamics, regional concentrations, and economic productivity from **`r min(jobs_data$year)` through `r recent_year`**.
+Indiana's advanced industries represent a critical component of the state's economic competitiveness. This comprehensive analysis examines **eight key initiatives** across employment trends, wage dynamics, regional concentrations, and economic productivity from **`r min(jobs_data$year)` through `r recent_year`**.
 
 ### Key Takeaways
 
@@ -338,8 +349,9 @@ knitr::include_url(file.path(viz_path, "04_indiana_wages_by_initiative.html"), h
 #| tbl-cap: "Wage Distribution Across Initiatives (Indiana)"
 
 wage_percentiles <- wage_data %>%
-  filter(display_level >= 2, year == recent_year, 
+  filter(year == recent_year,
          geo_area == "Indiana", !is.na(wages)) %>%
+  filter_naics_detail() %>%
   group_by(initiative) %>%
   summarise(
     `10th Percentile` = dollar(quantile(wages, 0.10, na.rm = TRUE), accuracy = 1),
@@ -394,24 +406,30 @@ knitr::include_url(file.path(viz_path, "07_jobs_time_series_by_geography.html"),
 ```{r indiana_timeseries_table}
 #| tbl-cap: "Employment Change Over Analysis Period: Indiana vs United States"
 
-# Get Indiana data
+# Define analysis period (excludes projection years)
+start_year <- 2019
+end_year <- recent_year  # Dynamic: uses recent_year from loaded data
+
+# Get Indiana data - filter to actual data years only
 indiana_change <- jobs_data %>%
-  filter(display_level == 0, geo_area == "Indiana", 
-         initiative != "Total Employment") %>%
+  filter(display_level == 0, geo_area == "Indiana",
+         initiative != "Total Employment",
+         year >= start_year, year <= end_year) %>%
   group_by(initiative) %>%
   arrange(year) %>%
   summarise(
     Start_Year = first(year),
-    End_Year = 2024,
+    End_Year = last(year),
     IN_Start_Jobs = first(jobs),
     IN_End_Jobs = last(jobs),
     .groups = "drop"
   )
 
-# Get US data
+# Get US data - filter to actual data years only
 us_change <- jobs_data %>%
-  filter(display_level == 0, geo_area == "United States", 
-         initiative != "Total Employment") %>%
+  filter(display_level == 0, geo_area == "United States",
+         initiative != "Total Employment",
+         year >= start_year, year <= end_year) %>%
   group_by(initiative) %>%
   arrange(year) %>%
   summarise(
@@ -446,10 +464,12 @@ create_table(time_change)
 ```{r}
 #| tbl-cap: "Employment Volatility by Initiative"
 
+# Filter to actual data years only (start_year through recent_year)
 volatility <- jobs_growth %>%
   filter(display_level == 0, geo_area == "Indiana",
          initiative != "Total Employment",
-         !is.na(yoy_growth), year <= 2024) %>%
+         year >= start_year, year <= recent_year,  # Exclude projection years
+         !is.na(yoy_growth)) %>%
   group_by(initiative) %>%
   summarise(
     mean_growth = mean(yoy_growth, na.rm = TRUE),
@@ -479,9 +499,11 @@ create_table(volatility)
 #| output: asis
 
 # Extract values for programmatic insertion
+# Filter to actual data years only (exclude projections)
 vol_data <- jobs_growth %>%
   filter(display_level == 0, geo_area == "Indiana",
          initiative != "Total Employment",
+         year >= start_year, year <= recent_year,  # Exclude projection years
          !is.na(yoy_growth)) %>%
   group_by(initiative) %>%
   summarise(
@@ -495,26 +517,31 @@ vol_data <- jobs_growth %>%
   arrange(desc(cov))
 
 # Get specific initiative data
-conexus <- vol_data %>% filter(initiative == "Conexus")
+conexus_mfg <- vol_data %>% filter(initiative == "Conexus - Manufacturing")
+conexus_log <- vol_data %>% filter(initiative == "Conexus - Logistics")
 ati <- vol_data %>% filter(initiative == "Advanced & Traded Industries")
 techpoint <- vol_data %>% filter(initiative == "TechPoint")
 agrinou <- vol_data %>% filter(initiative == "AgriNovus")
 bio <- vol_data %>% filter(initiative == "BioCrossroads")
 
 cat(sprintf("
-- **Conexus** (CoV = %.2f) shows the highest volatility, with employment swings ranging from %.1f%% to +%.1f%% despite modest average growth of %.1f%%. This reflects sensitivity to economic cycles in logistics and manufacturing.
+- **Conexus - Manufacturing** (CoV = %.2f) shows volatility typical of manufacturing sectors, with employment swings ranging from %.1f%% to +%.1f%% and average growth of %.1f%%. This reflects sensitivity to economic cycles in advanced manufacturing.
+
+- **Conexus - Logistics** (CoV = %.2f) exhibits volatility in logistics and distribution, with swings from %.1f%% to +%.1f%% and average growth of %.1f%%.
 
 - **Advanced & Traded Industries** (CoV = %.2f) exhibits moderate-high volatility, typical of advanced manufacturing and other traded sectors exposed to national and global demand fluctuations.
 
 - **TechPoint, AgriNovus, and BioCrossroads** (CoV ≈ %.2f-%.2f) demonstrate more stable growth patterns. These sectors show consistent expansion with lower cyclical sensitivity, suggesting structural growth drivers rather than cyclical fluctuations.
 
-The standard deviation column shows the typical year-to-year swing in percentage points. For example, Conexus typically varies by ±%.1f percentage points around its mean growth rate of %.1f%%, while BioCrossroads varies by ±%.1f points around %.1f%% average growth.
+The standard deviation column shows the typical year-to-year swing in percentage points. For example, Conexus - Manufacturing typically varies by ±%.1f percentage points around its mean growth rate of %.1f%%, while BioCrossroads varies by ±%.1f points around %.1f%% average growth.
 ",
-conexus$cov,
-conexus$min_growth, conexus$max_growth, conexus$mean_growth,
+conexus_mfg$cov,
+conexus_mfg$min_growth, conexus_mfg$max_growth, conexus_mfg$mean_growth,
+conexus_log$cov,
+conexus_log$min_growth, conexus_log$max_growth, conexus_log$mean_growth,
 ati$cov,
 min(bio$cov, agrinou$cov, techpoint$cov), max(bio$cov, agrinou$cov, techpoint$cov),
-conexus$std_dev, conexus$mean_growth,
+conexus_mfg$std_dev, conexus_mfg$mean_growth,
 bio$std_dev, bio$mean_growth
 ))
 ```
@@ -553,8 +580,9 @@ all_metros_initiatives <- jobs_data %>%
     `Total Employment` = comma(round(total_jobs, 0))
   ) %>%
   arrange(sort_order, geo_area) %>%
-  select(Geography = geo_area, `Total Employment`, 
-         `Advanced & Traded Industries`, AgriNovus, BioCrossroads, Conexus, TechPoint)
+  select(Geography = geo_area, `Total Employment`,
+         `Advanced & Traded Industries`, AgriNovus, BioCrossroads,
+         `Conexus - Manufacturing`, `Conexus - Logistics`, TechPoint)
 
 all_metros_initiatives %>%
   kable(
@@ -730,6 +758,60 @@ create_table(lq_summary, striped = TRUE)
 
 The location quotient analysis reveals **distinct regional specializations** that reflect historical development paths, institutional anchors (universities, research centers), natural advantages, and policy choices. High LQ values indicate **established competitive advantages** that can be leveraged for further growth. Metro areas with strong specializations should consider **cluster development strategies**, while those lacking specialization might pursue **strategic targeting** of specific initiatives aligned with workforce capabilities and infrastructure.
 :::
+
+### Indiana Statewide Specialization
+
+How does Indiana's overall industry mix compare to the national average? The **statewide location quotient** shows which initiatives Indiana specializes in relative to the US.
+
+::: column-page
+```{r indiana_lq_viz, fig.height=7}
+#| fig-cap: "Indiana's location quotient by initiative shows statewide specialization relative to the US average. LQ > 1 (red) indicates Indiana has a higher concentration than the national average; LQ < 1 (blue) indicates underrepresentation."
+
+knitr::include_url(file.path(viz_path, "09b_indiana_statewide_lq.html"), height = "500px")
+```
+:::
+
+```{r indiana_lq_table}
+#| tbl-cap: "Indiana Industry Specialization Summary"
+
+indiana_lq_summary <- jobs_data %>%
+  filter(display_level == 0, year == recent_year,
+         initiative != "Total Employment",
+         geo_area == "Indiana") %>%
+  cross_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "United States", initiative == "Total Employment") %>%
+      select(us_total = jobs)
+  ) %>%
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "United States", initiative != "Total Employment") %>%
+      select(initiative, us_initiative_jobs = jobs),
+    by = "initiative"
+  ) %>%
+  cross_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "Indiana", initiative == "Total Employment") %>%
+      select(indiana_total = jobs)
+  ) %>%
+  mutate(
+    indiana_pct = (jobs / indiana_total) * 100,
+    us_pct = (us_initiative_jobs / us_total) * 100,
+    lq = indiana_pct / us_pct
+  ) %>%
+  arrange(desc(lq)) %>%
+  mutate(
+    `Indiana %` = sprintf("%.2f%%", indiana_pct),
+    `US %` = sprintf("%.2f%%", us_pct),
+    `Location Quotient` = sprintf("%.2f", lq)
+  ) %>%
+  select(Initiative = initiative, `Indiana %`, `US %`, `Location Quotient`)
+
+create_table(indiana_lq_summary, striped = TRUE)
+```
 
 ## Initiative Composition Across Regions
 
@@ -1376,12 +1458,12 @@ knitr::include_url(file.path(viz_path, "20_specialized_industries_heatmap.html")
 
 # Calculate traditional LQ for all geographies
 top_specializations_all <- jobs_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
          geo_area != "United States",
          !is.na(jobs)) %>%
+  filter_naics_detail() %>%
   distinct(statefips, countyfips, metrofips, geo_area, initiative, 
            naics_code, naics_title, year, .keep_all = TRUE) %>%
   # Get total employment for each geography
@@ -1395,9 +1477,10 @@ top_specializations_all <- jobs_data %>%
   # Get US industry employment
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year,
+      filter(year == recent_year,
              geo_area == "United States",
              naics_code != "000000") %>%
+      filter_naics_detail() %>%
       distinct(initiative, naics_code, naics_title, .keep_all = TRUE) %>%
       select(initiative, naics_code, naics_title, us_industry_jobs = jobs),
     by = c("initiative", "naics_code", "naics_title")

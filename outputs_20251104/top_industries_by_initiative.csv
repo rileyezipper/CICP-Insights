@@ -29,16 +29,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 0,000,00000,2,United States,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,102014.065808836
 0,000,00000,2,United States,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,101377.03348
 0,000,00000,2,United States,2024,BioCrossroads,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,74287.0325425
-0,000,00000,3,United States,2024,Conexus,Warehousing and Storage,4931,1895348.1933846
-0,000,00000,3,United States,2024,Conexus,General Freight Trucking,4841,1082004.584581
-0,000,00000,3,United States,2024,Conexus,Couriers and Express Delivery Services,4921,897032.568801
-0,000,00000,3,United States,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,827654.8840582999
-0,000,00000,3,United States,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,778874.7113722999
-0,000,00000,3,United States,2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,745302.8397057
-0,000,00000,3,United States,2024,Conexus,Plastics Product Manufacturing,3261,589253.4493734001
-0,000,00000,3,United States,2024,Conexus,Aerospace Product and Parts Manufacturing,3364,561310.38364336
-0,000,00000,3,United States,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,558625.9869397
-0,000,00000,3,United States,2024,Conexus,Animal Slaughtering and Processing,3116,557676.78377746
+0,000,00000,2,United States,2024,Conexus - Logistics,Warehousing and Storage,4931,1895348.1933846
+0,000,00000,2,United States,2024,Conexus - Logistics,General Freight Trucking,4841,1082004.584581
+0,000,00000,2,United States,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,897032.568801
+0,000,00000,2,United States,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,827654.8840582999
+0,000,00000,2,United States,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,778874.7113722999
+0,000,00000,2,United States,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,745302.8397057
+0,000,00000,2,United States,2024,Conexus - Logistics,Wholesale Trade Agents and Brokers,4251,493550.003335
+0,000,00000,2,United States,2024,Conexus - Logistics,Specialized Freight Trucking,4842,460020.8919772
+0,000,00000,2,United States,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,378089.9129465
+0,000,00000,2,United States,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,376695.1132327
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,589253.4493734001
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Aerospace Product and Parts Manufacturing,3364,561310.38364336
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,558625.9869397
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,557676.78377746
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,414032.1810017
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Semiconductor and Other Electronic Component Manufacturing,3344,393541.5968966
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,356553.7349208
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Bakeries and Tortilla Manufacturing,3118,348985.24163179996
+0,000,00000,2,United States,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,348426.70799980004
+0,000,00000,2,United States,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,334411.94664140005
 0,000,00000,2,United States,2024,Finance & Insurance,Commercial Banking,522110,1376502.63418
 0,000,00000,2,United States,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,1310683.3347
 0,000,00000,2,United States,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,514179.123464
@@ -54,11 +64,11 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 0,000,00000,2,United States,2024,Healthcare,Home Health Care Services,621610,1762917.75943
 0,000,00000,2,United States,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,1514614.03868
 0,000,00000,2,United States,2024,Healthcare,Offices of Dentists,621210,1043459.44011
+0,000,00000,2,United States,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,504747.05964
 0,000,00000,2,United States,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,493091.001161
+0,000,00000,2,United States,2024,Healthcare,Continuing Care Retirement Communities,623311,491416.560232
 0,000,00000,2,United States,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,409493.068458
 0,000,00000,2,United States,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,313025.562571
-0,000,00000,2,United States,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,276545.413338
-0,000,00000,2,United States,2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,265541.73655
 0,000,00000,2,United States,2024,TechPoint,Computer Systems Design Services,541512,1150882.46214
 0,000,00000,2,United States,2024,TechPoint,Custom Computer Programming Services,541511,1092558.78895
 0,000,00000,2,United States,2024,TechPoint,Software Publishers,513210,638498.362604
@@ -99,16 +109,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,14020,2,Bloomington MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,14.3454900449
 00,000,14020,2,Bloomington MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,13.304284625
 00,000,14020,2,Bloomington MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,3.11921516982
-00,000,14020,3,Bloomington MSA,2024,Conexus,Medical Equipment and Supplies Manufacturing,3391,4832.0784478
-00,000,14020,3,Bloomington MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,3304.296116485
-00,000,14020,3,Bloomington MSA,2024,Conexus,Plastics Product Manufacturing,3261,753.166781191
-00,000,14020,3,Bloomington MSA,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,577.4140899280001
-00,000,14020,3,Bloomington MSA,2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,423.586346845826
-00,000,14020,3,Bloomington MSA,2024,Conexus,Specialized Freight Trucking,4842,314.1753907367
-00,000,14020,3,Bloomington MSA,2024,Conexus,Beverage Manufacturing,3121,275.6566827314
-00,000,14020,3,Bloomington MSA,2024,Conexus,Other Nonmetallic Mineral Product Manufacturing,3279,212.485110402
-00,000,14020,3,Bloomington MSA,2024,Conexus,Miscellaneous Durable Goods Merchant Wholesalers,4239,210.812657010428
-00,000,14020,3,Bloomington MSA,2024,Conexus,Couriers and Express Delivery Services,4921,191.786521401
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,577.4140899280001
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,423.586346845826
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,314.1753907367
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,210.812657010428
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,191.786521401
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,148.85469041101
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,General Freight Trucking,4841,137.47743787541
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,116.08666225359
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,85.72235921888
+00,000,14020,2,Bloomington MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,84.036096946771
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Medical Equipment and Supplies Manufacturing,3391,4832.0784478
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,3304.296116485
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,753.166781191
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Beverage Manufacturing,3121,275.6566827314
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Other Nonmetallic Mineral Product Manufacturing,3279,212.485110402
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Sawmills and Wood Preservation,3211,96.8333333333
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,96.5254330477
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Cement and Concrete Product Manufacturing,3273,95.2623167236
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Communications Equipment Manufacturing,3342,79.5195822957
+00,000,14020,2,Bloomington MSA,2024,Conexus - Manufacturing,Other Miscellaneous Manufacturing,3399,76.9772782601
 00,000,14020,2,Bloomington MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,654.897678168
 00,000,14020,2,Bloomington MSA,2024,Finance & Insurance,Commercial Banking,522110,348.44537344
 00,000,14020,2,Bloomington MSA,2024,Finance & Insurance,Credit Unions,522130,222.911154963
@@ -127,8 +147,8 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,14020,2,Bloomington MSA,2024,Healthcare,Home Health Care Services,621610,371.579810016
 00,000,14020,2,Bloomington MSA,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,357.355794084
 00,000,14020,2,Bloomington MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,348.480899003
+00,000,14020,2,Bloomington MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,282.479087906
 00,000,14020,2,Bloomington MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,281.060828434
-00,000,14020,2,Bloomington MSA,2024,Healthcare,Psychiatric and Substance Abuse Hospitals,622210,226.915831074
 00,000,14020,2,Bloomington MSA,2024,TechPoint,Custom Computer Programming Services,541511,262.648054642
 00,000,14020,2,Bloomington MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,261.196648488
 00,000,14020,2,Bloomington MSA,2024,TechPoint,Computer Systems Design Services,541512,149.672492535
@@ -169,16 +189,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Medicinal and Botanical Manufacturing,325411,2655.40925777
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Dental Equipment and Supplies Manufacturing,339114,1542.5448563
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,BioCrossroads,Wet Corn Milling and Starch Manufacturing,311221,1452.64024056
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Warehousing and Storage,4931,59667.9065655675
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,General Freight Trucking,4841,49323.12981764
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,36564.662800568
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Couriers and Express Delivery Services,4921,33931.4633724
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Plastics Product Manufacturing,3261,29227.710933069
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,29149.88873746
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,28385.420808079
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,21147.787495055996
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Bakeries and Tortilla Manufacturing,3118,21097.711521152
-00,000,16980,3,Chicago-Naperville-Elgin MSA,2024,Conexus,Freight Transportation Arrangement,4885,19483.8161192
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,59667.9065655675
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,General Freight Trucking,4841,49323.12981764
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,36564.662800568
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,33931.4633724
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,29149.88873746
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,28385.420808079
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Freight Transportation Arrangement,4885,19483.8161192
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Wholesale Trade Agents and Brokers,4251,15664.1720533
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Rail Transportation,4821,14178.8381686
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,12649.14174939
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,29227.710933069
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,21147.787495055996
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Bakeries and Tortilla Manufacturing,3118,21097.711521152
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,17262.29576176
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,16429.623153349
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Other Food Manufacturing,3119,15027.316930842
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Converted Paper Product Manufacturing,3222,14048.02489734
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Iron and Steel Mills and Ferroalloy Manufacturing,3311,13993.6842473
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,11523.9793679354
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Conexus - Manufacturing,Other Fabricated Metal Product Manufacturing,3329,11429.700116126
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Commercial Banking,522110,55415.1500833
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,36008.7804912
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Finance & Insurance,Portfolio Management and Investment Advice,523940,18722.2500733
@@ -195,10 +225,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,45598.28788
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Offices of Dentists,621210,30067.2190101
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,18733.219866
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,16690.1252186
+00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,10467.5739677
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,9678.57745657
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,7702.85934815
-00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,7534.50046028
-00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,Healthcare,Medical Laboratories,621511,5650.58246771
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,TechPoint,Custom Computer Programming Services,541511,28584.1464637
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,TechPoint,Computer Systems Design Services,541512,26012.1929905
 00,000,16980,2,Chicago-Naperville-Elgin MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,10995.4231816
@@ -239,16 +269,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,17140,2,Cincinnati MSA,2024,BioCrossroads,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,318.97652014
 00,000,17140,2,Cincinnati MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,305.831255366
 00,000,17140,2,Cincinnati MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,266.93863906
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Warehousing and Storage,4931,20276.11680558982
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Aerospace Product and Parts Manufacturing,3364,11562.60874295515
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Couriers and Express Delivery Services,4921,11281.2785163
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,9567.223566298
-00,000,17140,3,Cincinnati MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,7749.147581784
-00,000,17140,3,Cincinnati MSA,2024,Conexus,General Freight Trucking,4841,7615.03345371
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,6953.841912242471
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Other Food Manufacturing,3119,6819.5899852576995
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,5816.139436035601
-00,000,17140,3,Cincinnati MSA,2024,Conexus,Converted Paper Product Manufacturing,3222,5767.701394419
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,20276.11680558982
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,11281.2785163
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,7749.147581784
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,General Freight Trucking,4841,7615.03345371
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,6953.841912242471
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,5816.139436035601
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Freight Transportation Arrangement,4885,4848.0995707
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,3524.7547626059995
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,3320.38561018
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,3220.190212057
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Aerospace Product and Parts Manufacturing,3364,11562.60874295515
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,9567.223566298
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Other Food Manufacturing,3119,6819.5899852576995
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Converted Paper Product Manufacturing,3222,5767.701394419
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,5554.3598706674
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,"Soap, Cleaning Compound, and Toilet Preparation Manufacturing",3256,5068.6869476891
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,4254.6346478901
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Beverage Manufacturing,3121,3801.6102497461
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Iron and Steel Mills and Ferroalloy Manufacturing,3311,3650.7061141
+00,000,17140,2,Cincinnati MSA,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,3475.6968596066
 00,000,17140,2,Cincinnati MSA,2024,Finance & Insurance,Commercial Banking,522110,12170.6331384
 00,000,17140,2,Cincinnati MSA,2024,Finance & Insurance,Direct Property and Casualty Insurance Carriers,524126,7891.50123401
 00,000,17140,2,Cincinnati MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,7034.09017797
@@ -264,11 +304,11 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,17140,2,Cincinnati MSA,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,15897.1941577
 00,000,17140,2,Cincinnati MSA,2024,Healthcare,Home Health Care Services,621610,8808.18535379
 00,000,17140,2,Cincinnati MSA,2024,Healthcare,Offices of Dentists,621210,6332.63485909
+00,000,17140,2,Cincinnati MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,4574.99999843
 00,000,17140,2,Cincinnati MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,4154.49052083
+00,000,17140,2,Cincinnati MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,2525.44463964
 00,000,17140,2,Cincinnati MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,2509.99130813
 00,000,17140,2,Cincinnati MSA,2024,Healthcare,Medical Laboratories,621511,2298.19428929
-00,000,17140,2,Cincinnati MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,2178.83644176
-00,000,17140,2,Cincinnati MSA,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,1641.50962422
 00,000,17140,2,Cincinnati MSA,2024,TechPoint,Custom Computer Programming Services,541511,6189.52994183
 00,000,17140,2,Cincinnati MSA,2024,TechPoint,Computer Systems Design Services,541512,5314.73715533
 00,000,17140,2,Cincinnati MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,2986.7771176
@@ -309,16 +349,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,18020,2,Columbus MSA,2024,BioCrossroads,Research and Development in Nanotechnology,541713,7.504607711484
 00,000,18020,2,Columbus MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,2.51827919362602
 00,000,18020,2,Columbus MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,1.93898924599
-00,000,18020,3,Columbus MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,8687.5850321
-00,000,18020,3,Columbus MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,4111.638058461
-00,000,18020,3,Columbus MSA,2024,Conexus,Other General Purpose Machinery Manufacturing,3339,1074.06632388978
-00,000,18020,3,Columbus MSA,2024,Conexus,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,949.1666667105
-00,000,18020,3,Columbus MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,734.713165477158
-00,000,18020,3,Columbus MSA,2024,Conexus,Plastics Product Manufacturing,3261,708.5833415376001
-00,000,18020,3,Columbus MSA,2024,Conexus,Animal Slaughtering and Processing,3116,536.11491135104
-00,000,18020,3,Columbus MSA,2024,Conexus,Household and Institutional Furniture and Kitchen Cabinet Manufacturing,3371,533.441129158
-00,000,18020,3,Columbus MSA,2024,Conexus,Converted Paper Product Manufacturing,3222,423.0489577885
-00,000,18020,3,Columbus MSA,2024,Conexus,Other General Purpose Machinery Manufacturing,3339,393.924127883
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,734.713165477158
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,General Freight Trucking,4841,385.5712213331
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,342.23542446519997
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,185.382303126587
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,168.95816774972
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,94.355398860262
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,86.64945998
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,77.56901755895001
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,68.114502797305
+00,000,18020,2,Columbus MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,46.666663466550006
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,8687.5850321
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,4111.638058461
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Other General Purpose Machinery Manufacturing,3339,1074.06632388978
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,949.1666667105
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,708.5833415376001
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,536.11491135104
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Household and Institutional Furniture and Kitchen Cabinet Manufacturing,3371,533.441129158
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Converted Paper Product Manufacturing,3222,423.0489577885
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Other General Purpose Machinery Manufacturing,3339,393.924127883
+00,000,18020,2,Columbus MSA,2024,Conexus - Manufacturing,Forging and Stamping,3321,342.830260711
 00,000,18020,2,Columbus MSA,2024,Finance & Insurance,Credit Unions,522130,287.18710798
 00,000,18020,2,Columbus MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,259.174550665
 00,000,18020,2,Columbus MSA,2024,Finance & Insurance,Commercial Banking,522110,158.144553604
@@ -379,16 +429,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,21140,2,Elkhart-Goshen MSA,2024,BioCrossroads,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",423450,27.196420225652098
 00,000,21140,2,Elkhart-Goshen MSA,2024,BioCrossroads,Medical Laboratories,621511,17.6346069872
 00,000,21140,2,Elkhart-Goshen MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,8.2575165127988
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Motor Vehicle Body and Trailer Manufacturing,3362,28791.083061948004
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Plastics Product Manufacturing,3261,3938.4166581805
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Household and Institutional Furniture and Kitchen Cabinet Manufacturing,3371,3765.666666597
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Other Wood Product Manufacturing,3219,3111.2500000141
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,2642.73614951599
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Ship and Boat Building,3366,1961.77364075
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Architectural and Structural Metals Manufacturing,3323,1874.3333322381
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Other Fabricated Metal Product Manufacturing,3329,1563.99999993964
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1548.01004277762
-00,000,21140,3,Elkhart-Goshen MSA,2024,Conexus,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,1247.1268330275
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1548.01004277762
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,1247.1268330275
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Lumber and Other Construction Materials Merchant Wholesalers,4233,760.7543470940001
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,General Freight Trucking,4841,756.917651382
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,590.11200476567
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,530.84324572
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,467.2161981652
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,457.98955085198
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,444.1657123023
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Logistics,Furniture and Home Furnishing Merchant Wholesalers,4232,436.8316894387
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Motor Vehicle Body and Trailer Manufacturing,3362,28791.083061948004
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,3938.4166581805
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Household and Institutional Furniture and Kitchen Cabinet Manufacturing,3371,3765.666666597
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Other Wood Product Manufacturing,3219,3111.2500000141
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,2642.73614951599
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Ship and Boat Building,3366,1961.77364075
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,1874.3333322381
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Other Fabricated Metal Product Manufacturing,3329,1563.99999993964
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,981.75
+00,000,21140,2,Elkhart-Goshen MSA,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,948.916666792
 00,000,21140,2,Elkhart-Goshen MSA,2024,Finance & Insurance,Credit Unions,522130,545.324740522
 00,000,21140,2,Elkhart-Goshen MSA,2024,Finance & Insurance,Commercial Banking,522110,444.507586679
 00,000,21140,2,Elkhart-Goshen MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,235.831290333
@@ -402,13 +462,13 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,General Medical and Surgical Hospitals,622110,3414.1434108
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,1943.13903269
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,1164.85160824
+00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,556.277427856
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Offices of Dentists,621210,514.625013321
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,266.307598456
+00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,241.110848056
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Psychiatric and Substance Abuse Hospitals,622210,197.41369287
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,174.070651885
 00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,173.943245541
-00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Home Health Care Services,621610,150.292358129
-00,000,21140,2,Elkhart-Goshen MSA,2024,Healthcare,Offices of Chiropractors,621310,128.902821234
 00,000,21140,2,Elkhart-Goshen MSA,2024,TechPoint,Printed Circuit Assembly (Electronic Assembly) Manufacturing,334418,194.028168382
 00,000,21140,2,Elkhart-Goshen MSA,2024,TechPoint,Computer Systems Design Services,541512,166.692689844
 00,000,21140,2,Elkhart-Goshen MSA,2024,TechPoint,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use",334512,122.678101644
@@ -449,16 +509,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,21780,2,Evansville MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,21.6791680898
 00,000,21780,2,Evansville MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,11.5380086621632
 00,000,21780,2,Evansville MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,6.15663481837
-00,000,21780,3,Evansville MSA,2024,Conexus,Plastics Product Manufacturing,3261,4096.8062230304795
-00,000,21780,3,Evansville MSA,2024,Conexus,Warehousing and Storage,4931,2785.94112679863
-00,000,21780,3,Evansville MSA,2024,Conexus,Alumina and Aluminum Production and Processing,3313,1602.614681330075
-00,000,21780,3,Evansville MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1394.311621748258
-00,000,21780,3,Evansville MSA,2024,Conexus,General Freight Trucking,4841,1177.068095387
-00,000,21780,3,Evansville MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,1061.51590399
-00,000,21780,3,Evansville MSA,2024,Conexus,"Resin, Synthetic Rubber, and Artificial and Synthetic Fibers and Filaments Manufacturing",3252,1014.53011958
-00,000,21780,3,Evansville MSA,2024,Conexus,Couriers and Express Delivery Services,4921,846.181170307
-00,000,21780,3,Evansville MSA,2024,Conexus,Specialized Freight Trucking,4842,793.399512954
-00,000,21780,3,Evansville MSA,2024,Conexus,"Paint, Coating, and Adhesive Manufacturing",3255,618.7176526016
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,2785.94112679863
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1394.311621748258
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,General Freight Trucking,4841,1177.068095387
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,846.181170307
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,793.399512954
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,568.7717649043
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,496.04792220601
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,407.936615887269
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,361.7209574782
+00,000,21780,2,Evansville MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,332.32927841580005
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,4096.8062230304795
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Alumina and Aluminum Production and Processing,3313,1602.614681330075
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,1061.51590399
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,"Resin, Synthetic Rubber, and Artificial and Synthetic Fibers and Filaments Manufacturing",3252,1014.53011958
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,"Paint, Coating, and Adhesive Manufacturing",3255,618.7176526016
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Fruit and Vegetable Preserving and Specialty Food Manufacturing,3114,588.5648615983445
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Bakeries and Tortilla Manufacturing,3118,547.3303894622
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Dairy Product Manufacturing,3115,547.285092691
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Other Chemical Product and Preparation Manufacturing,3259,544.830266852
+00,000,21780,2,Evansville MSA,2024,Conexus - Manufacturing,Other Food Manufacturing,3119,499.2954934699
 00,000,21780,2,Evansville MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,1136.54186793
 00,000,21780,2,Evansville MSA,2024,Finance & Insurance,Credit Unions,522130,848.613298504
 00,000,21780,2,Evansville MSA,2024,Finance & Insurance,Commercial Banking,522110,505.679432568
@@ -475,10 +545,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,21780,2,Evansville MSA,2024,Healthcare,Home Health Care Services,621610,1019.12845098
 00,000,21780,2,Evansville MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,847.966803077
 00,000,21780,2,Evansville MSA,2024,Healthcare,Offices of Dentists,621210,801.107538861
+00,000,21780,2,Evansville MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,578.38572303
 00,000,21780,2,Evansville MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,575.889428524
 00,000,21780,2,Evansville MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,465.186852438
 00,000,21780,2,Evansville MSA,2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,336.102293742
-00,000,21780,2,Evansville MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,269.811378789
 00,000,21780,2,Evansville MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,785.670657322
 00,000,21780,2,Evansville MSA,2024,TechPoint,Computer Systems Design Services,541512,353.195945582
 00,000,21780,2,Evansville MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,266.38586251
@@ -519,16 +589,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,23060,2,Fort Wayne MSA,2024,BioCrossroads,Fertilizer (Mixing Only) Manufacturing,325314,29.5978324644
 00,000,23060,2,Fort Wayne MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,28.078502279776
 00,000,23060,2,Fort Wayne MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,19.124716141
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Motor Vehicle Manufacturing,3361,3728.14126269
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,General Freight Trucking,4841,3726.963884031
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Plastics Product Manufacturing,3261,3410.5746158740903
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,3367.93238355342
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Warehousing and Storage,4931,2999.2281426069003
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1793.74162443307
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Couriers and Express Delivery Services,4921,1635.61255417
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Rubber Product Manufacturing,3262,1542.633567084919
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Steel Product Manufacturing from Purchased Steel,3312,1462.3541498298
-00,000,23060,3,Fort Wayne MSA,2024,Conexus,Metalworking Machinery Manufacturing,3335,1349.182451569
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,General Freight Trucking,4841,3726.963884031
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,2999.2281426069003
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1793.74162443307
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,1635.61255417
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,1052.9227057052
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,1051.2097524209998
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,1019.039564288
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,985.542443262
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,941.1951487758
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,862.1582778113
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Motor Vehicle Manufacturing,3361,3728.14126269
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,3410.5746158740903
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,3367.93238355342
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Rubber Product Manufacturing,3262,1542.633567084919
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Steel Product Manufacturing from Purchased Steel,3312,1462.3541498298
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Metalworking Machinery Manufacturing,3335,1349.182451569
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,1341.1047591935
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Other Miscellaneous Manufacturing,3399,1327.2620777885002
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,Medical Equipment and Supplies Manufacturing,3391,1298.0682316349
+00,000,23060,2,Fort Wayne MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,1296.5000005409
 00,000,23060,2,Fort Wayne MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,2286.49400692
 00,000,23060,2,Fort Wayne MSA,2024,Finance & Insurance,Direct Life Insurance Carriers,524113,1493.6870742200001
 00,000,23060,2,Fort Wayne MSA,2024,Finance & Insurance,Direct Property and Casualty Insurance Carriers,524126,1382.64666882
@@ -544,11 +624,11 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,3448.18479904
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Home Health Care Services,621610,2741.54821063
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Offices of Dentists,621210,1793.2499094
+00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,1184.40552508
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,950.1132283
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,573.098225895
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,459.100491593
 00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,390.077622396
-00,000,23060,2,Fort Wayne MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,331.298564068
 00,000,23060,2,Fort Wayne MSA,2024,TechPoint,Other Measuring and Controlling Device Manufacturing,334519,1216.20717457
 00,000,23060,2,Fort Wayne MSA,2024,TechPoint,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",334511,712.631874113
 00,000,23060,2,Fort Wayne MSA,2024,TechPoint,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,334220,643.085089784
@@ -589,16 +669,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,1355.43133526
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Farm Supplies Merchant Wholesalers,424910,655.942432099324
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,630.818089006
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Warehousing and Storage,4931,42032.50735319237
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,16730.3451192498
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Couriers and Express Delivery Services,4921,14738.4635104
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,General Freight Trucking,4841,14540.33925692
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,9643.119208545
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,8278.827595243
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,7630.7297432359
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,"Management, Scientific, and Technical Consulting Services",5416,4914.50400423
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Printing and Related Support Activities,3231,4577.891643997499
-00,000,26900,3,Indianapolis-Carmel-Greenwood MSA,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,4479.8899181591
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,42032.50735319237
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,14738.4635104
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,General Freight Trucking,4841,14540.33925692
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,8278.827595243
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,7630.7297432359
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,"Management, Scientific, and Technical Consulting Services",5416,4914.50400423
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,4479.8899181591
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,4082.38176839
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,3835.724680071
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,3431.5962206773997
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,16730.3451192498
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,9643.119208545
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,4577.891643997499
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Aerospace Product and Parts Manufacturing,3364,4094.8469162636297
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,3582.7783995950003
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Bakeries and Tortilla Manufacturing,3118,3451.76851721572
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,3252.59069657247
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Beverage Manufacturing,3121,3215.3639318823
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,2606.5282587570005
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Conexus - Manufacturing,Converted Paper Product Manufacturing,3222,2560.8675126611
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,12897.3608274
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Commercial Banking,522110,6186.46447716
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Finance & Insurance,Direct Property and Casualty Insurance Carriers,524126,5384.27457111
@@ -617,8 +707,8 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,5894.06506943
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,3620.90566366
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Medical Laboratories,621511,3335.40952655
-00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,3037.48252333
-00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,2900.9904013
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,3139.5232151
+00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,3062.66123653
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Computer Systems Design Services,541512,10087.2389945
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,Custom Computer Programming Services,541511,8164.91367453
 00,000,26900,2,Indianapolis-Carmel-Greenwood MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,1977.37591966
@@ -659,16 +749,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,29020,2,Kokomo MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,0
 00,000,29020,2,Kokomo MSA,2024,BioCrossroads,Compost Manufacturing,325315,0
 00,000,29020,2,Kokomo MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,0
-00,000,29020,3,Kokomo MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,7097.802797516903
-00,000,29020,3,Kokomo MSA,2024,Conexus,Nonferrous Metal (except Aluminum) Production and Processing,3314,703.365596231
-00,000,29020,3,Kokomo MSA,2024,Conexus,Couriers and Express Delivery Services,4921,330.169886951
-00,000,29020,3,Kokomo MSA,2024,Conexus,General Freight Trucking,4841,249.1885648617
-00,000,29020,3,Kokomo MSA,2024,Conexus,Metalworking Machinery Manufacturing,3335,229.727560614
-00,000,29020,3,Kokomo MSA,2024,Conexus,Fruit and Vegetable Preserving and Specialty Food Manufacturing,3114,221.257262467
-00,000,29020,3,Kokomo MSA,2024,Conexus,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,193.5747944088
-00,000,29020,3,Kokomo MSA,2024,Conexus,Other Electrical Equipment and Component Manufacturing,3359,147.57165299378102
-00,000,29020,3,Kokomo MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,141.822710936881
-00,000,29020,3,Kokomo MSA,2024,Conexus,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,121.3556909225
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,330.169886951
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,General Freight Trucking,4841,249.1885648617
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,193.5747944088
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,141.822710936881
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,121.3556909225
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,80.337594320423
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,64.01457488291
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,"Beer, Wine, and Distilled Alcoholic Beverage Merchant Wholesalers",4248,51.7711584229
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,Rail Transportation,4821,47.3561692252
+00,000,29020,2,Kokomo MSA,2024,Conexus - Logistics,"Management, Scientific, and Technical Consulting Services",5416,42.5043275534
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,7097.802797516903
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Nonferrous Metal (except Aluminum) Production and Processing,3314,703.365596231
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Metalworking Machinery Manufacturing,3335,229.727560614
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Fruit and Vegetable Preserving and Specialty Food Manufacturing,3114,221.257262467
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Other Electrical Equipment and Component Manufacturing,3359,147.57165299378102
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,102.665308384
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Beverage Manufacturing,3121,88.97023359079
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Steel Product Manufacturing from Purchased Steel,3312,80.9262332345
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,70.5833333334
+00,000,29020,2,Kokomo MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,61.3278314967
 00,000,29020,2,Kokomo MSA,2024,Finance & Insurance,Commercial Banking,522110,281.08431966
 00,000,29020,2,Kokomo MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,199.937896966
 00,000,29020,2,Kokomo MSA,2024,Finance & Insurance,Credit Unions,522130,114.080372312
@@ -685,10 +785,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,29020,2,Kokomo MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,308.259139647
 00,000,29020,2,Kokomo MSA,2024,Healthcare,Home Health Care Services,621610,263.997290066
 00,000,29020,2,Kokomo MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,232.896093163
+00,000,29020,2,Kokomo MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,185.452727924
 00,000,29020,2,Kokomo MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,143.393699996
+00,000,29020,2,Kokomo MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,134.838162867
 00,000,29020,2,Kokomo MSA,2024,Healthcare,Offices of Optometrists,621320,104.024110316
-00,000,29020,2,Kokomo MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,103.61683728
-00,000,29020,2,Kokomo MSA,2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,103.136173012
 00,000,29020,2,Kokomo MSA,2024,TechPoint,Custom Computer Programming Services,541511,54.3861468953
 00,000,29020,2,Kokomo MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,50.8724717746
 00,000,29020,2,Kokomo MSA,2024,TechPoint,Printed Circuit Assembly (Electronic Assembly) Manufacturing,334418,42.0215593785
@@ -729,16 +829,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,85.8229772264
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,33.2648748502
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,23.081163395
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,Motor Vehicle Manufacturing,3361,5991.98321982
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,Motor Vehicle Body and Trailer Manufacturing,3362,3125.2523372546
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,2137.09057621
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,Animal Slaughtering and Processing,3116,1611.9960686
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1092.8839466914
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,Alumina and Aluminum Production and Processing,3313,1018.8328062134
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,General Freight Trucking,4841,884.6889258000001
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,653.030392916
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,649.364046276
-00,000,29200,3,Lafayette-West Lafayette MSA,2024,Conexus,Grain and Oilseed Milling,3112,613.249999934
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,1092.8839466914
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,General Freight Trucking,4841,884.6889258000001
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,506.211512119
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,444.0221986727
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Support Activities for Road Transportation,4884,329.29313449
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,309.21662433746
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Support Activities for Rail Transportation,4882,289.594301139
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,238.25229374201
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Miscellaneous Durable Goods Merchant Wholesalers,4239,218.8851737042
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,217.11339166696
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Motor Vehicle Manufacturing,3361,5991.98321982
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Motor Vehicle Body and Trailer Manufacturing,3362,3125.2523372546
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,2137.09057621
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,1611.9960686
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Alumina and Aluminum Production and Processing,3313,1018.8328062134
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",3253,653.030392916
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,649.364046276
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Grain and Oilseed Milling,3112,613.249999934
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,"Engine, Turbine, and Power Transmission Equipment Manufacturing",3336,522.019063819
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,505.28330590406
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,608.489058112
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Commercial Banking,522110,454.548657829
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Finance & Insurance,Credit Unions,522130,372.646437516
@@ -752,13 +862,13 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,General Medical and Surgical Hospitals,622110,4471.70328851
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,1427.5801043
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,852.029302115
+00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,618.999409437
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Offices of Dentists,621210,538.098415492
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Home Health Care Services,621610,449.204551918
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,415.687119002
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,299.582150534
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,244.715980483
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,208.581180378
-00,000,29200,2,Lafayette-West Lafayette MSA,2024,Healthcare,Psychiatric and Substance Abuse Hospitals,622210,178.588882064
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,TechPoint,Computer Systems Design Services,541512,367.771771302
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,TechPoint,Custom Computer Programming Services,541511,249.930595537
 00,000,29200,2,Lafayette-West Lafayette MSA,2024,TechPoint,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",334511,206.315585238
@@ -799,16 +909,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,31140,2,Louisville/Jefferson County MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,188.136651821
 00,000,31140,2,Louisville/Jefferson County MSA,2024,BioCrossroads,Pharmaceutical Preparation Manufacturing,325412,172.690429556
 00,000,31140,2,Louisville/Jefferson County MSA,2024,BioCrossroads,Ethyl Alcohol Manufacturing,325193,87.7309441316
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Couriers and Express Delivery Services,4921,24539.074954
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Warehousing and Storage,4931,20514.110473094
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Motor Vehicle Manufacturing,3361,11876.3873024657
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Household Appliance Manufacturing,3352,8382.5835621781
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,8363.2951666021
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,General Freight Trucking,4841,6930.92587233
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Beverage Manufacturing,3121,5682.3047373755
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,4608.08056304172
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,4507.7244222646
-00,000,31140,3,Louisville/Jefferson County MSA,2024,Conexus,Plastics Product Manufacturing,3261,3958.8901927263
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,24539.074954
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,20514.110473094
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,General Freight Trucking,4841,6930.92587233
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,4608.08056304172
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,4507.7244222646
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,3406.6505525279
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,2900.654179112
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,2302.8064494389996
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Freight Transportation Arrangement,4885,1822.5890039
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Logistics,Wholesale Trade Agents and Brokers,4251,1747.69389288
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Motor Vehicle Manufacturing,3361,11876.3873024657
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Household Appliance Manufacturing,3352,8382.5835621781
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,8363.2951666021
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Beverage Manufacturing,3121,5682.3047373755
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,3958.8901927263
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,3343.188847034
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,2489.1666441182997
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Other General Purpose Machinery Manufacturing,3339,2188.81218633818
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Other Food Manufacturing,3119,2077.638621819449
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Conexus - Manufacturing,Converted Paper Product Manufacturing,3222,1883.3658032022
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Finance & Insurance,Direct Health and Medical Insurance Carriers,524114,10845.3652764
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,6513.48961332
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Finance & Insurance,Commercial Banking,522110,4456.48691564
@@ -825,10 +945,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,4137.99181698
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Offices of Dentists,621210,3785.22630201
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Home Health Care Services,621610,3197.85786615
+00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,2500.26924328
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,2462.69952497
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Psychiatric and Substance Abuse Hospitals,622210,2012.95302597
 00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,1841.3668884
-00,000,31140,2,Louisville/Jefferson County MSA,2024,Healthcare,Other Residential Care Facilities,623990,1462.49537212
 00,000,31140,2,Louisville/Jefferson County MSA,2024,TechPoint,Computer Systems Design Services,541512,4017.16764737
 00,000,31140,2,Louisville/Jefferson County MSA,2024,TechPoint,Custom Computer Programming Services,541511,2650.08960435
 00,000,31140,2,Louisville/Jefferson County MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,2579.71328856
@@ -869,16 +989,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,33140,2,Michigan City-La Porte MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,0.25903585117696004
 00,000,33140,2,Michigan City-La Porte MSA,2024,BioCrossroads,Biological Product (except Diagnostic) Manufacturing,325414,0
 00,000,33140,2,Michigan City-La Porte MSA,2024,BioCrossroads,Analytical Laboratory Instrument Manufacturing,334516,0
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,Bakeries and Tortilla Manufacturing,3118,1379.583330892
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,Other General Purpose Machinery Manufacturing,3339,1254.4459080848
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,Foundries,3315,1155.992742865
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,Plastics Product Manufacturing,3261,744.9189040460001
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,"Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",3334,544.3434366961
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,Rail Transportation,4821,489.848185811
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,272.1472617583
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,272.054293312
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,Sugar and Confectionery Product Manufacturing,3113,263.369925659
-00,000,33140,3,Michigan City-La Porte MSA,2024,Conexus,General Freight Trucking,4841,259.9413616919
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Rail Transportation,4821,489.848185811
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,272.1472617583
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,General Freight Trucking,4841,259.9413616919
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Chemical and Allied Products Merchant Wholesalers,4246,249.812727938444
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,236.458873283212
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,222.379965476
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,207.944427263
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Other Support Services,5619,204.788660561
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Lumber and Other Construction Materials Merchant Wholesalers,4233,191.75702965097
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,176.1569699014
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Bakeries and Tortilla Manufacturing,3118,1379.583330892
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Other General Purpose Machinery Manufacturing,3339,1254.4459080848
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Foundries,3315,1155.992742865
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,744.9189040460001
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,"Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",3334,544.3434366961
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",3345,272.054293312
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Sugar and Confectionery Product Manufacturing,3113,263.369925659
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,206.661163024969
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,197.749999387
+00,000,33140,2,Michigan City-La Porte MSA,2024,Conexus - Manufacturing,Petroleum and Coal Products Manufacturing,3241,190.53750184300003
 00,000,33140,2,Michigan City-La Porte MSA,2024,Finance & Insurance,Commercial Banking,522110,336.442515831
 00,000,33140,2,Michigan City-La Porte MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,189.821408415
 00,000,33140,2,Michigan City-La Porte MSA,2024,Finance & Insurance,Credit Unions,522130,116.555772358
@@ -894,11 +1024,11 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Nursing Care Facilities (Skilled Nursing Facilities),623110,495.805280981
 00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Home Health Care Services,621610,318.569285113
 00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Offices of Dentists,621210,215.472729089
+00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,164.328802086
 00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,144.121752994
 00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,101.585308838
 00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,All Other Outpatient Care Centers,621498,99.7121095579
-00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,87.6385060829
-00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Kidney Dialysis Centers,621492,59.6137052897
+00,000,33140,2,Michigan City-La Porte MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,96.2979186316
 00,000,33140,2,Michigan City-La Porte MSA,2024,TechPoint,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",334513,272.054293312
 00,000,33140,2,Michigan City-La Porte MSA,2024,TechPoint,Electronic and Precision Equipment Repair and Maintenance,811210,39.9812329852
 00,000,33140,2,Michigan City-La Porte MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,38.371468937
@@ -939,16 +1069,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,34620,2,Muncie MSA,2024,BioCrossroads,Surgical Appliance and Supplies Manufacturing,339113,0
 00,000,34620,2,Muncie MSA,2024,BioCrossroads,Medicinal and Botanical Manufacturing,325411,0
 00,000,34620,2,Muncie MSA,2024,BioCrossroads,Dental Equipment and Supplies Manufacturing,339114,0
-00,000,34620,3,Muncie MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,885.877532515
-00,000,34620,3,Muncie MSA,2024,Conexus,Railroad Rolling Stock Manufacturing,3365,560.854090393
-00,000,34620,3,Muncie MSA,2024,Conexus,General Freight Trucking,4841,416.3405397936
-00,000,34620,3,Muncie MSA,2024,Conexus,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,295.025582856877
-00,000,34620,3,Muncie MSA,2024,Conexus,"Boiler, Tank, and Shipping Container Manufacturing",3324,276.2241044059
-00,000,34620,3,Muncie MSA,2024,Conexus,Plastics Product Manufacturing,3261,268.4971338932
-00,000,34620,3,Muncie MSA,2024,Conexus,Metalworking Machinery Manufacturing,3335,258.39558689349997
-00,000,34620,3,Muncie MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,231.46970027618997
-00,000,34620,3,Muncie MSA,2024,Conexus,Printing and Related Support Activities,3231,217.4999999944
-00,000,34620,3,Muncie MSA,2024,Conexus,Couriers and Express Delivery Services,4921,164.601777487
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,General Freight Trucking,4841,416.3405397936
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,295.025582856877
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,231.46970027618997
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,164.601777487
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Other Support Services,5619,132.86687237
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,125.9114802515
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,101.39862328246
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Rail Transportation,4821,98.8595839628
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,Petroleum and Petroleum Products Merchant Wholesalers,4247,96.7098470127
+00,000,34620,2,Muncie MSA,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,77.66956745352
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,885.877532515
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Railroad Rolling Stock Manufacturing,3365,560.854090393
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,"Boiler, Tank, and Shipping Container Manufacturing",3324,276.2241044059
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,268.4971338932
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Metalworking Machinery Manufacturing,3335,258.39558689349997
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,217.4999999944
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,"Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",3334,161.713839093
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Nonferrous Metal (except Aluminum) Production and Processing,3314,148.976422249
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,Other General Purpose Machinery Manufacturing,3339,124.878923084
+00,000,34620,2,Muncie MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,121.6666666667
 00,000,34620,2,Muncie MSA,2024,Finance & Insurance,"International, Secondary Market, and All Other Nondepository Credit Intermediation",522299,664.090061136
 00,000,34620,2,Muncie MSA,2024,Finance & Insurance,Commercial Banking,522110,385.670065674
 00,000,34620,2,Muncie MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,233.089617212
@@ -965,10 +1105,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,34620,2,Muncie MSA,2024,Healthcare,Home Health Care Services,621610,602.833773373
 00,000,34620,2,Muncie MSA,2024,Healthcare,Offices of Dentists,621210,361.07760434
 00,000,34620,2,Muncie MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,347.17431373
+00,000,34620,2,Muncie MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,344.19267146
+00,000,34620,2,Muncie MSA,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,309.297426999
 00,000,34620,2,Muncie MSA,2024,Healthcare,Freestanding Ambulatory Surgical and Emergency Centers,621493,300.239725803
 00,000,34620,2,Muncie MSA,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,219.258163685
-00,000,34620,2,Muncie MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,213.229380601
-00,000,34620,2,Muncie MSA,2024,Healthcare,Other Residential Care Facilities,623990,206.098413631
 00,000,34620,2,Muncie MSA,2024,TechPoint,Computer Facilities Management Services,541513,404.965735818
 00,000,34620,2,Muncie MSA,2024,TechPoint,Custom Computer Programming Services,541511,219.639852256
 00,000,34620,2,Muncie MSA,2024,TechPoint,Software Publishers,513210,117.467856588
@@ -1009,16 +1149,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,43780,2,South Bend-Mishawaka MSA,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,35.9464958703
 00,000,43780,2,South Bend-Mishawaka MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,30.396380967128003
 00,000,43780,2,South Bend-Mishawaka MSA,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,29.987288632688404
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Plastics Product Manufacturing,3261,1821.2201057694597
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,General Freight Trucking,4841,1387.265326804
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,1150.5059733226
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Couriers and Express Delivery Services,4921,970.903887372
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Medical Equipment and Supplies Manufacturing,3391,874.4373990625801
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,829.7676084729001
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Metal and Mineral (except Petroleum) Merchant Wholesalers,4235,802.625643999
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,780.8837107138501
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Architectural and Structural Metals Manufacturing,3323,749.3147380396001
-00,000,43780,3,South Bend-Mishawaka MSA,2024,Conexus,Motor Vehicle Manufacturing,3361,629.939190237
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,General Freight Trucking,4841,1387.265326804
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,1150.5059733226
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,970.903887372
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Metal and Mineral (except Petroleum) Merchant Wholesalers,4235,802.625643999
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,780.8837107138501
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,570.080278049869
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,518.2084182656899
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,498.67079138316
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Rail Transportation,4821,304.284564326
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Logistics,Lumber and Other Construction Materials Merchant Wholesalers,4233,288.5247855841
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,1821.2201057694597
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Medical Equipment and Supplies Manufacturing,3391,874.4373990625801
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,829.7676084729001
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,749.3147380396001
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Motor Vehicle Manufacturing,3361,629.939190237
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,"Coating, Engraving, Heat Treating, and Allied Activities",3328,592.8333333642
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Aerospace Product and Parts Manufacturing,3364,592.4223704429
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,560.8762339601
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Steel Product Manufacturing from Purchased Steel,3312,540.47841434
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Conexus - Manufacturing,Converted Paper Product Manufacturing,3222,506.969048553
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,1382.63187528
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Finance & Insurance,Credit Unions,522130,794.623472309
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Finance & Insurance,Commercial Banking,522110,718.09166404
@@ -1035,10 +1185,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Home Health Care Services,621610,1433.05001077
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Offices of Dentists,621210,1116.56223347
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,694.435854932
+00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,665.449131509
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,479.392996584
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,444.099348372
 00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,421.53158605
-00,000,43780,2,South Bend-Mishawaka MSA,2024,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,408.496294179
 00,000,43780,2,South Bend-Mishawaka MSA,2024,TechPoint,Electronic and Precision Equipment Repair and Maintenance,811210,930.010303625
 00,000,43780,2,South Bend-Mishawaka MSA,2024,TechPoint,Computer Systems Design Services,541512,387.034094244
 00,000,43780,2,South Bend-Mishawaka MSA,2024,TechPoint,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",518210,330.166666667
@@ -1079,16 +1229,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,45460,2,Terre Haute MSA,2024,BioCrossroads,Surgical and Medical Instrument Manufacturing,339112,3.53729997922
 00,000,45460,2,Terre Haute MSA,2024,BioCrossroads,Testing Laboratories and Services,541380,0.93174023885904
 00,000,45460,2,Terre Haute MSA,2024,BioCrossroads,Drugs and Druggists' Sundries Merchant Wholesalers,424210,0.399673417988766
-00,000,45460,3,Terre Haute MSA,2024,Conexus,Plastics Product Manufacturing,3261,1794.9211814986998
-00,000,45460,3,Terre Haute MSA,2024,Conexus,Motor Vehicle Body and Trailer Manufacturing,3362,1315.12652827
-00,000,45460,3,Terre Haute MSA,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,1017.245294172
-00,000,45460,3,Terre Haute MSA,2024,Conexus,General Freight Trucking,4841,916.747949022
-00,000,45460,3,Terre Haute MSA,2024,Conexus,Grocery and Related Product Merchant Wholesalers,4244,482.457162443062
-00,000,45460,3,Terre Haute MSA,2024,Conexus,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,429.6513170888
-00,000,45460,3,Terre Haute MSA,2024,Conexus,"Pulp, Paper, and Paperboard Mills",3221,414.145413209
-00,000,45460,3,Terre Haute MSA,2024,Conexus,Architectural and Structural Metals Manufacturing,3323,376.77270380048
-00,000,45460,3,Terre Haute MSA,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,348.078168751669
-00,000,45460,3,Terre Haute MSA,2024,Conexus,Aerospace Product and Parts Manufacturing,3364,333.108895521
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,General Freight Trucking,4841,916.747949022
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,482.457162443062
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,348.078168751669
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,254.219672693
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Warehousing and Storage,4931,223.87649905614
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,203.1889000794
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Specialized Freight Trucking,4842,183.57017701825
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Rail Transportation,4821,173.118057504
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,113.097195582101
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Logistics,Furniture and Home Furnishing Merchant Wholesalers,4232,87.7347049336
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,1794.9211814986998
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Motor Vehicle Body and Trailer Manufacturing,3362,1315.12652827
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,1017.245294172
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,429.6513170888
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,"Pulp, Paper, and Paperboard Mills",3221,414.145413209
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,376.77270380048
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Aerospace Product and Parts Manufacturing,3364,333.108895521
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Printing and Related Support Activities,3231,312.3206790723
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,278.359604106
+00,000,45460,2,Terre Haute MSA,2024,Conexus - Manufacturing,Animal Slaughtering and Processing,3116,265.2894620866
 00,000,45460,2,Terre Haute MSA,2024,Finance & Insurance,Commercial Banking,522110,723.616856881
 00,000,45460,2,Terre Haute MSA,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,350.245552049
 00,000,45460,2,Terre Haute MSA,2024,Finance & Insurance,Savings Institutions and Other Depository Credit Intermediation,522180,109.110248306
@@ -1107,8 +1267,8 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 00,000,45460,2,Terre Haute MSA,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,343.805262036
 00,000,45460,2,Terre Haute MSA,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,337.869090803
 00,000,45460,2,Terre Haute MSA,2024,Healthcare,Offices of Dentists,621210,305.438835448
+00,000,45460,2,Terre Haute MSA,2024,Healthcare,Continuing Care Retirement Communities,623311,229.484160495
 00,000,45460,2,Terre Haute MSA,2024,Healthcare,Ambulance Services,621910,195.47531312
-00,000,45460,2,Terre Haute MSA,2024,Healthcare,Psychiatric and Substance Abuse Hospitals,622210,186.451995177
 00,000,45460,2,Terre Haute MSA,2024,TechPoint,Wireless Telecommunications Carriers (except Satellite),517112,165.592283949
 00,000,45460,2,Terre Haute MSA,2024,TechPoint,Manufacturing and Reproducing Magnetic and Optical Media,334610,153.198271597
 00,000,45460,2,Terre Haute MSA,2024,TechPoint,Wired Telecommunications Carriers,517111,127.127486432
@@ -1149,16 +1309,26 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 18,000,00000,2,Indiana,2024,BioCrossroads,"Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",541715,3068.31244712364
 18,000,00000,2,Indiana,2024,BioCrossroads,In-Vitro Diagnostic Substance Manufacturing,325413,2725.00896977
 18,000,00000,2,Indiana,2024,BioCrossroads,Research and Development in Biotechnology (except Nanobiotechnology),541714,2083.9978797
-18,000,00000,3,Indiana,2024,Conexus,Warehousing and Storage,4931,67617.1915948095
-18,000,00000,3,Indiana,2024,Conexus,Motor Vehicle Parts Manufacturing,3363,55085.107444470006
-18,000,00000,3,Indiana,2024,Conexus,General Freight Trucking,4841,40731.0530584
-18,000,00000,3,Indiana,2024,Conexus,Motor Vehicle Body and Trailer Manufacturing,3362,40224.21624227
-18,000,00000,3,Indiana,2024,Conexus,Plastics Product Manufacturing,3261,32851.583336342
-18,000,00000,3,Indiana,2024,Conexus,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,23036.581934249
-18,000,00000,3,Indiana,2024,Conexus,Couriers and Express Delivery Services,4921,22723.7984552
-18,000,00000,3,Indiana,2024,Conexus,Pharmaceutical and Medicine Manufacturing,3254,22661.172084513997
-18,000,00000,3,Indiana,2024,Conexus,Motor Vehicle Manufacturing,3361,21440.762078223
-18,000,00000,3,Indiana,2024,Conexus,Medical Equipment and Supplies Manufacturing,3391,17241.018921623
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Warehousing and Storage,4931,67617.1915948095
+18,000,00000,2,Indiana,2024,Conexus - Logistics,General Freight Trucking,4841,40731.0530584
+18,000,00000,2,Indiana,2024,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,23036.581934249
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Couriers and Express Delivery Services,4921,22723.7984552
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,16102.71010344
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Specialized Freight Trucking,4842,13878.48034121
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,13531.884098874
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,11895.522679680998
+18,000,00000,2,Indiana,2024,Conexus - Logistics,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,8034.604668075
+18,000,00000,2,Indiana,2024,Conexus - Logistics,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,7929.990651198001
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Motor Vehicle Parts Manufacturing,3363,55085.107444470006
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Motor Vehicle Body and Trailer Manufacturing,3362,40224.21624227
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Plastics Product Manufacturing,3261,32851.583336342
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Pharmaceutical and Medicine Manufacturing,3254,22661.172084513997
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Motor Vehicle Manufacturing,3361,21440.762078223
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Medical Equipment and Supplies Manufacturing,3391,17241.018921623
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Iron and Steel Mills and Ferroalloy Manufacturing,3311,16979.8291301
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Household and Institutional Furniture and Kitchen Cabinet Manufacturing,3371,15343.833333229
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",3327,14405.74999985
+18,000,00000,2,Indiana,2024,Conexus - Manufacturing,Architectural and Structural Metals Manufacturing,3323,14021.76626844
 18,000,00000,2,Indiana,2024,Finance & Insurance,Insurance Agencies and Brokerages,524210,27726.5865032
 18,000,00000,2,Indiana,2024,Finance & Insurance,Commercial Banking,522110,19855.17807
 18,000,00000,2,Indiana,2024,Finance & Insurance,Direct Property and Casualty Insurance Carriers,524126,9034.13936649
@@ -1175,10 +1345,10 @@ statefips,countyfips,metrofips,display_level,geo_area,year,initiative,naics_titl
 18,000,00000,2,Indiana,2024,Healthcare,Home Health Care Services,621610,34230.3086759
 18,000,00000,2,Indiana,2024,Healthcare,Offices of Dentists,621210,20874.3131511
 18,000,00000,2,Indiana,2024,Healthcare,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",621340,14556.9135943
+18,000,00000,2,Indiana,2024,Healthcare,Continuing Care Retirement Communities,623311,11424.8755015
 18,000,00000,2,Indiana,2024,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,9725.27313641
+18,000,00000,2,Indiana,2024,Healthcare,Assisted Living Facilities for the Elderly,623312,9059.83856592
 18,000,00000,2,Indiana,2024,Healthcare,Offices of Mental Health Practitioners (except Physicians),621330,6595.0515403
-18,000,00000,2,Indiana,2024,Healthcare,Residential Intellectual and Developmental Disability Facilities,623210,6402.88273361
-18,000,00000,2,Indiana,2024,Healthcare,Specialty (except Psychiatric and Substance Abuse) Hospitals,622310,6078.41440357
 18,000,00000,2,Indiana,2024,TechPoint,Computer Systems Design Services,541512,16799.8047204
 18,000,00000,2,Indiana,2024,TechPoint,Custom Computer Programming Services,541511,15155.4897453
 18,000,00000,2,Indiana,2024,TechPoint,Wired Telecommunications Carriers,517111,5126.89532472

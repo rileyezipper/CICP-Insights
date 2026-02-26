@@ -61,10 +61,11 @@ initiative_colors <- c(
   "Advanced & Traded Industries" = "#1565C0",
   "AgriNovus" = "#2E7D32",
   "BioCrossroads" = "#6A1B9A",
-  "Conexus" = "#D84315",
+  "Conexus - Manufacturing" = "#D84315",
+  "Conexus - Logistics" = "#BF360C",
   "TechPoint" = "#F57C00",
-  "Finance & Insurance" = "#00838F",  
-  "Healthcare" = "#C2185B",  
+  "Finance & Insurance" = "#00838F",
+  "Healthcare" = "#C2185B",
   "Total Employment" = "#424242"
 )
 
@@ -94,8 +95,9 @@ calculate_growth <- function(df, value_col, group_vars) {
     arrange(!!!syms(group_vars), year) %>%
     group_by(!!!syms(group_vars)) %>%
     mutate(
-      yoy_growth = ({{value_col}} / lag({{value_col}}) - 1) * 100,
-      yoy_change = {{value_col}} - lag({{value_col}}),
+      value_lag = lag({{value_col}}),
+      yoy_growth = ({{value_col}} / value_lag - 1) * 100,
+      yoy_change = {{value_col}} - value_lag,
       cagr_2yr = if_else(
         n() >= 3 & !is.na({{value_col}}) & !is.na(lag({{value_col}}, 2)),
         ({{value_col}} / lag({{value_col}}, 2))^(1/2) - 1,
@@ -108,6 +110,16 @@ calculate_growth <- function(df, value_col, group_vars) {
       ) * 100
     ) %>%
     ungroup()
+}
+
+# Function to filter to NAICS industry detail level
+# AgriNovus uses display_level==3 for NAICS detail, other initiatives use display_level==2
+filter_naics_detail <- function(df) {
+  df %>%
+    filter(
+      (initiative == "AgriNovus" & display_level == 3) |
+      (initiative != "AgriNovus" & display_level == 2)
+    )
 }
 
 # Function to identify outliers using IQR method
@@ -166,14 +178,46 @@ extract_initiative <- function(filename) {
     str_replace("Totals", "Total Employment")
 }
 
-jobs_data <- jobs_data %>% 
+jobs_data <- jobs_data %>%
   mutate(initiative = extract_initiative(file_name))
-wage_data <- wage_data %>% 
+wage_data <- wage_data %>%
   mutate(initiative = extract_initiative(file_name))
-gdp_data <- gdp_data %>% 
+gdp_data <- gdp_data %>%
   mutate(initiative = extract_initiative(file_name))
 
-cat(sprintf("Loaded %d jobs records, %d wage records, %d GDP records\n", 
+cat(sprintf("Loaded %d jobs records, %d wage records, %d GDP records\n",
+            nrow(jobs_data), nrow(wage_data), nrow(gdp_data)))
+
+# SPLIT CONEXUS INTO MANUFACTURING AND LOGISTICS ------------------------------
+# Conexus has sector_name = "Manufacturing" and "Logistics" at display_level == 1
+# We rename these as separate initiatives while preserving all display levels
+
+cat("Splitting Conexus into Manufacturing and Logistics...\n")
+
+# Function to split Conexus data
+split_conexus <- function(df) {
+  # Get all Conexus data and rename initiative based on sector_name
+  # display_level 1 = sector totals (become new initiative totals at level 0)
+  # display_level 2+ = industry detail (keep their levels, rename initiative)
+  conexus_split <- df %>%
+    filter(initiative == "Conexus", !is.na(sector_name)) %>%
+    mutate(
+      initiative = paste0("Conexus - ", sector_name),
+      # Shift display levels: sector total (1) becomes initiative total (0), etc.
+      display_level = display_level - 1
+    )
+
+  # Remove original Conexus data and add split versions
+  df %>%
+    filter(initiative != "Conexus") %>%
+    bind_rows(conexus_split)
+}
+
+jobs_data <- split_conexus(jobs_data)
+wage_data <- split_conexus(wage_data)
+gdp_data <- split_conexus(gdp_data)
+
+cat(sprintf("After Conexus split: %d jobs records, %d wage records, %d GDP records\n",
             nrow(jobs_data), nrow(wage_data), nrow(gdp_data)))
 
 # DATA PREPARATION ------------------------------------------------------------
@@ -243,11 +287,12 @@ gdp_growth <- gdp_growth %>%
 
 cat("\n=== ANALYSIS 1: Initiative-Level Overview ===\n")
 
-# ANALYSIS SETUP - Define most recent years for each dataset
+# ANALYSIS SETUP - Define analysis period (excludes projection years)
 
-recent_year <- 2024
+start_year <- 2019  # First year of analysis
+recent_year <- 2024  # Last year with actual (non-projected) data
 
-cat(sprintf("Using %d as most recent year (last year with complete data)\n", recent_year))
+cat(sprintf("Analysis period: %d-%d (excludes projection years)\n", start_year, recent_year))
 
 # Indiana-specific summary by initiative (excluding Total Employment)
 indiana_initiative_summary <- jobs_data %>%
@@ -306,15 +351,20 @@ indiana_jobs_growth <- jobs_growth %>%
 print(indiana_jobs_growth)
 
 # Sector-level growth contributors by geography
+# Use value_lag (prior year jobs) for weighted mean, filter to actual data years
 sector_growth_contrib <- jobs_growth %>%
-  filter(display_level == 1, 
+  filter(display_level == 1,
          year == recent_year,
          geo_area == "Indiana",
-         !is.na(yoy_change)) %>%
+         !is.na(yoy_change),
+         !is.na(value_lag),
+         value_lag > 0) %>%
   group_by(initiative, sector_name) %>%
   summarise(
     job_change = sum(yoy_change, na.rm = TRUE),
-    growth_rate = weighted.mean(yoy_growth, lag(jobs), na.rm = TRUE),
+    base_jobs = sum(value_lag, na.rm = TRUE),
+    current_jobs = sum(jobs, na.rm = TRUE),
+    growth_rate = (current_jobs / base_jobs - 1) * 100,
     .groups = "drop"
   ) %>%
   arrange(initiative, desc(abs(job_change))) %>%
@@ -329,16 +379,19 @@ print(sector_growth_contrib)
 cat("\n=== ANALYSIS 3: Geographic Analysis ===\n")
 
 # Growth by metro (for metros only)
+# Use value_lag for proper weighted mean calculation
 metro_growth <- jobs_growth %>%
-  filter(display_level == 0, 
+  filter(display_level == 0,
          year == recent_year,
          geo_type == "Metro",
          initiative != "Total Employment",
-         !is.na(yoy_growth)) %>%
+         !is.na(yoy_growth),
+         !is.na(value_lag),
+         value_lag > 0) %>%
   group_by(geo_area) %>%
   summarise(
     total_jobs = sum(jobs, na.rm = TRUE),
-    avg_growth = weighted.mean(yoy_growth, lag(jobs), na.rm = TRUE),
+    avg_growth = weighted.mean(yoy_growth, value_lag, na.rm = TRUE),
     .groups = "drop"
   ) %>%
   arrange(desc(total_jobs))
@@ -367,16 +420,21 @@ if (nrow(geo_outliers) > 0) {
 cat("\n=== ANALYSIS 4: Industry Analysis ===\n")
 
 # Top growing industries in Indiana
+# Use value_lag for proper growth calculation
+# Use filter_naics_detail() for initiative-specific display levels
 top_growing_industries_in <- jobs_growth %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          geo_area == "Indiana",
-         !is.na(yoy_change)) %>%
+         !is.na(yoy_change),
+         !is.na(value_lag),
+         value_lag > 0) %>%
   group_by(initiative, naics_title) %>%
   summarise(
     job_change = sum(yoy_change, na.rm = TRUE),
-    growth_rate = weighted.mean(yoy_growth, lag(jobs), na.rm = TRUE),
+    base_jobs = sum(value_lag, na.rm = TRUE),
     current_jobs = sum(jobs, na.rm = TRUE),
+    growth_rate = (current_jobs / base_jobs - 1) * 100,
     .groups = "drop"
   ) %>%
   arrange(desc(job_change)) %>%
@@ -385,19 +443,25 @@ top_growing_industries_in <- jobs_growth %>%
 print(top_growing_industries_in)
 
 # Fastest growing industries (by percentage) in Indiana
+# Compute base_jobs from current jobs minus the change (since yoy_change = jobs - prior_jobs)
 fastest_growing_industries_in <- jobs_growth %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          geo_area == "Indiana",
-         lag(jobs) >= 50,  # Minimum base for meaningful percentages
-         !is.na(yoy_growth)) %>%
+         !is.na(yoy_growth),
+         !is.na(yoy_change),
+         (jobs - yoy_change) >= 50) %>%  # Minimum base for meaningful percentages
   group_by(initiative, naics_title) %>%
   summarise(
-    growth_rate = weighted.mean(yoy_growth, lag(jobs), na.rm = TRUE),
-    base_jobs = sum(lag(jobs), na.rm = TRUE),
     current_jobs = sum(jobs, na.rm = TRUE),
+    total_change = sum(yoy_change, na.rm = TRUE),
     .groups = "drop"
   ) %>%
+  mutate(
+    base_jobs = current_jobs - total_change,
+    growth_rate = (total_change / base_jobs) * 100
+  ) %>%
+  filter(base_jobs >= 50) %>%
   arrange(desc(growth_rate)) %>%
   head(20)
 
@@ -420,16 +484,26 @@ indiana_wage_comparison <- wage_data %>%
 print(indiana_wage_comparison)
 
 # High-wage industries in Indiana
+# Note: AgriNovus uses display_level==3 for NAICS detail, others use display_level==2
 high_wage_industries_in <- wage_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
-         geo_area == "Indiana",
-         !is.na(wages)) %>%
+  filter(
+    # Initiative-specific display level filtering
+    (initiative == "AgriNovus" & display_level == 3) |
+    (initiative != "AgriNovus" & display_level == 2),
+    year == recent_year,
+    geo_area == "Indiana",
+    !is.na(wages),
+    !is.na(naics_title)
+  ) %>%
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year, geo_area == "Indiana") %>%
-      select(initiative, naics_title, jobs),
-    by = c("initiative", "naics_title")
+      filter(
+        (initiative == "AgriNovus" & display_level == 3) |
+        (initiative != "AgriNovus" & display_level == 2),
+        year == recent_year, geo_area == "Indiana"
+      ) %>%
+      select(initiative, naics_code, naics_title, jobs),
+    by = c("initiative", "naics_code", "naics_title")
   ) %>%
   filter(jobs >= 50) %>%  # Minimum threshold
   select(initiative, naics_title, wages, jobs) %>%
@@ -496,9 +570,9 @@ write_csv(indiana_gdp_jobs_comparison,
 
 cat("\n=== Saving processed data for visualization script ===\n")
 
-save(jobs_data, wage_data, gdp_data, 
+save(jobs_data, wage_data, gdp_data,
      jobs_growth, wage_growth, gdp_growth,
-     recent_year, initiative_colors,
+     start_year, recent_year, initiative_colors,
      file = file.path(output_dir, "processed_data_jobs_gdp.RData"))
 
 cat(sprintf("Processed data saved to '%s/processed_data_jobs_gdp.RData'\n", output_dir))
@@ -569,8 +643,8 @@ cat("\n=== ANALYSIS 7: Top Industries Within Each Initiative ===\n")
 
 # Top industries by employment within each initiative (all geographies)
 top_industries_by_initiative <- jobs_data %>%
-  filter(display_level >= 2,  # Industry detail level
-         year == recent_year,
+  filter_naics_detail() %>%  # Initiative-specific NAICS detail level
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000") %>%
   group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
@@ -585,8 +659,8 @@ print(top_industries_by_initiative)
 
 # Calculate concentration metrics by initiative and geography
 initiative_concentration <- jobs_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000") %>%
   group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
@@ -620,8 +694,8 @@ cat("\n=== ANALYSIS 8: Industry Growth Contributors by Initiative ===\n")
 
 # Industries contributing most to growth/decline within each initiative
 industry_growth_contrib <- jobs_growth %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(yoy_change)) %>%
@@ -647,24 +721,24 @@ cat("\n=== ANALYSIS 9: Industry Wage Distribution by Initiative ===\n")
 
 # Wage distribution within initiatives by geography
 industry_wage_dist <- wage_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(wages)) %>%
   # Remove any duplicate rows before joining
-  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+  distinct(statefips, countyfips, metrofips, geo_area, initiative,
            naics_code, naics_title, year, .keep_all = TRUE) %>%
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year, 
-             naics_code != "000000") %>%
+      filter_naics_detail() %>%
+      filter(year == recent_year, naics_code != "000000") %>%
       # Remove any duplicate rows before joining
-      distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+      distinct(statefips, countyfips, metrofips, geo_area, initiative,
                naics_code, naics_title, .keep_all = TRUE) %>%
-      select(statefips, countyfips, metrofips, geo_area, initiative, 
+      select(statefips, countyfips, metrofips, geo_area, initiative,
              naics_code, naics_title, jobs),
-    by = c("statefips", "countyfips", "metrofips", "geo_area", 
+    by = c("statefips", "countyfips", "metrofips", "geo_area",
            "initiative", "naics_code", "naics_title")
   ) %>%
   group_by(statefips, countyfips, metrofips, geo_area, year, initiative) %>%
@@ -689,8 +763,8 @@ print(industry_wage_dist)
 
 # High-wage vs low-wage industries within initiatives
 wage_extremes_by_init <- wage_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(wages)) %>%
@@ -699,14 +773,15 @@ wage_extremes_by_init <- wage_data %>%
            naics_code, naics_title, year, .keep_all = TRUE) %>%
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year,
+      filter_naics_detail() %>%
+      filter(year == recent_year,
              naics_code != "000000") %>%
       # Remove any duplicate rows before joining
-      distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+      distinct(statefips, countyfips, metrofips, geo_area, initiative,
                naics_code, naics_title, .keep_all = TRUE) %>%
-      select(statefips, countyfips, metrofips, geo_area, initiative, 
+      select(statefips, countyfips, metrofips, geo_area, initiative,
              naics_code, naics_title, jobs),
-    by = c("statefips", "countyfips", "metrofips", "geo_area", 
+    by = c("statefips", "countyfips", "metrofips", "geo_area",
            "initiative", "naics_code", "naics_title")
   ) %>%
   filter(jobs >= 50) %>%  # Minimum threshold
@@ -733,8 +808,8 @@ cat("\n=== ANALYSIS 10: Industry Productivity by Initiative ===\n")
 
 # GDP per job by industry within initiatives
 industry_productivity <- gdp_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(grp), !is.na(jobs)) %>%
@@ -757,8 +832,8 @@ cat("\n=== ANALYSIS 11: Cross-Geography Industry Comparison ===\n")
 
 # For each initiative, compare key industries across geographies
 industry_geo_comparison <- jobs_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000") %>%
   group_by(initiative, naics_title, naics_code, year) %>%
@@ -781,8 +856,8 @@ print(industry_geo_comparison)
 
 # Industries unique to or concentrated in specific geographies
 industry_specialization <- jobs_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000") %>%
   # Remove duplicates before joining
@@ -791,7 +866,8 @@ industry_specialization <- jobs_data %>%
   # Get US industry jobs by initiative
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year,
+      filter_naics_detail() %>%
+      filter(year == recent_year,
              geo_area == "United States", initiative != "Total Employment",
              naics_code != "000000") %>%
       distinct(initiative, naics_code, naics_title, .keep_all = TRUE) %>%
@@ -838,12 +914,14 @@ print(industry_specialization)
 cat("\n=== ANALYSIS 12: Industry Volatility Analysis ===\n")
 
 # Calculate coefficient of variation in growth rates
+# Filter to actual data years only (start_year through recent_year)
 industry_volatility <- jobs_growth %>%
-  filter(display_level >= 2,
-         initiative != "Total Employment",
+  filter_naics_detail() %>%
+  filter(initiative != "Total Employment",
          naics_code != "000000",
+         year >= start_year, year <= recent_year,  # Exclude projection years
          !is.na(yoy_growth)) %>%
-  group_by(initiative, statefips, countyfips, metrofips, geo_area, 
+  group_by(initiative, statefips, countyfips, metrofips, geo_area,
            naics_title, naics_code) %>%
   summarise(
     n_years = n(),
@@ -859,19 +937,21 @@ industry_volatility <- jobs_growth %>%
   slice_head(n = 10) %>%
   ungroup() %>%
   select(statefips, countyfips, metrofips, geo_area, initiative,
-         naics_title, naics_code, n_years, avg_growth, sd_growth, 
+         naics_title, naics_code, n_years, avg_growth, sd_growth,
          cv_growth, current_jobs) %>%
-  arrange(statefips, countyfips, metrofips, geo_area, initiative, 
+  arrange(statefips, countyfips, metrofips, geo_area, initiative,
           desc(cv_growth))
 
 cat("\nMost Volatile Industries by Initiative and Geography:\n")
 print(industry_volatility)
 
 # Most stable industries (lowest volatility, positive growth)
+# Filter to actual data years only (start_year through recent_year)
 industry_stability <- jobs_growth %>%
-  filter(display_level >= 2,
-         initiative != "Total Employment",
+  filter_naics_detail() %>%
+  filter(initiative != "Total Employment",
          naics_code != "000000",
+         year >= start_year, year <= recent_year,  # Exclude projection years
          !is.na(yoy_growth)) %>%
   group_by(initiative, statefips, countyfips, metrofips, geo_area,
            naics_title, naics_code) %>%

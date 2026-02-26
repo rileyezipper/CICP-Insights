@@ -10,6 +10,19 @@ library(scales)
 library(plotly)
 library(patchwork)
 
+# HELPER FUNCTIONS ------------------------------------------------------------
+
+# Filter for NAICS industry detail level
+# AgriNovus uses display_level == 3 for NAICS detail
+# Other initiatives use display_level == 2
+filter_naics_detail <- function(df) {
+  df %>%
+    filter(
+      (initiative == "AgriNovus" & display_level == 3) |
+      (initiative != "AgriNovus" & display_level == 2)
+    )
+}
+
 # Load processed data
 output_dir <- "outputs_20251104"
 load(file.path(output_dir, "processed_data_jobs_gdp.RData"))
@@ -34,15 +47,32 @@ p15_data <- top_industries_by_initiative %>%
   ) %>%
   ungroup()
 
-p15 <- p15_data %>%
-  ggplot(aes(x = reorder(naics_short, jobs), 
-             y = jobs, fill = initiative)) +
-  geom_col(show.legend = FALSE, alpha = 0.9) +
-  geom_text(aes(label = comma(jobs)), hjust = -0.1, size = 2.5) +
-  scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.15))) +
-  scale_fill_manual(values = initiative_colors) +
-  coord_flip() +
-  facet_wrap(~initiative, scales = "free_y", ncol = 2) +
+# Create separate plots for each initiative and combine with patchwork
+# This avoids the cross-facet factor level issue entirely
+p15_list <- lapply(sort(unique(p15_data$initiative)), function(init) {
+  init_data <- p15_data %>% filter(initiative == init)
+
+  ggplot(init_data, aes(x = reorder(naics_short, jobs), y = jobs)) +
+    geom_col(fill = initiative_colors[init], alpha = 0.9) +
+    geom_text(aes(label = comma(round(jobs))), hjust = -0.1, size = 2.5) +
+    scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.15))) +
+    coord_flip() +
+    labs(title = init, x = NULL, y = NULL) +
+    theme_minimal(base_size = 10) +
+    theme(
+      plot.title = element_text(face = "bold", size = 10),
+      panel.grid.major.y = element_blank(),
+      axis.text.y = element_text(size = 7)
+    )
+})
+
+p15 <- wrap_plots(p15_list, ncol = 2) +
+  plot_annotation(
+    title = "Top 10 Industries by Employment Within Each Initiative",
+    subtitle = paste("Indiana |", recent_year),
+    caption = "Source: CICP Advanced Industries Dashboard"
+  ) &
+  theme(plot.margin = margin(5, 10, 5, 5))
   labs(
     title = "Top 10 Industries by Employment Within Each Initiative",
     subtitle = paste("Indiana |", recent_year),
@@ -61,7 +91,7 @@ ggsave(file.path(viz_dir, "15_top_industries_by_initiative.png"),
        p15, width = 16, height = 14, dpi = 300, bg = "white")
 
 # Interactive version with dropdown - RECREATION APPROACH
-initiative_list <- unique(p15_data$initiative)
+initiative_list <- sort(unique(p15_data$initiative))
 
 # Create the initial plot for the first initiative
 init_data_1 <- p15_data %>%
@@ -71,18 +101,18 @@ init_data_1 <- p15_data %>%
 p15_interactive <- plot_ly(
   data = init_data_1,
   x = ~jobs,
-  y = ~reorder(naics_short, jobs),
+  y = ~naics_short,
   type = "bar",
   orientation = "h",
   marker = list(color = initiative_colors[initiative_list[1]]),
-  text = ~comma(jobs),
+  text = ~comma(round(jobs)),
   textposition = "outside",
   textfont = list(size = 10),
-  hoverinfo = "skip",  # CHANGED: removed hovertemplate
+  hoverinfo = "skip",
   showlegend = FALSE
 )
 
-# Create update buttons that will restyle the plot with new data
+# Create update buttons that update BOTH data AND y-axis category order
 updatemenus <- list(
   list(
     active = 0,
@@ -93,17 +123,28 @@ updatemenus <- list(
       init <- initiative_list[i]
       init_data <- p15_data %>%
         filter(initiative == init) %>%
-        arrange(jobs)
-      
+        arrange(jobs)  # Sort ascending so largest is at top after coord_flip equivalent
+
       list(
-        method = "restyle",
+        method = "update",  # Use "update" to change both data and layout
         args = list(
           list(
             x = list(init_data$jobs),
             y = list(init_data$naics_short),
-            text = list(comma(init_data$jobs)),
-            marker = list(color = initiative_colors[init]),
-            hoverinfo = "skip"  # CHANGED: removed hovertemplate
+            text = list(comma(round(init_data$jobs))),
+            marker = list(color = initiative_colors[init])
+          ),
+          list(
+            title = list(
+              text = paste0("<b>Top 10 Industries by Employment - ",
+                           init, "</b><br><sup>Indiana | ",
+                           recent_year, "</sup>")
+            ),
+            yaxis = list(
+              categoryorder = "array",
+              categoryarray = init_data$naics_short,
+              title = ""
+            )
           )
         ),
         label = init
@@ -112,47 +153,24 @@ updatemenus <- list(
   )
 )
 
-# Add a second button list for title updates
-title_updatemenus <- list(
-  list(
-    active = 0,
-    type = "dropdown",
-    x = 0.15,
-    y = 1.15,
-    buttons = lapply(seq_along(initiative_list), function(i) {
-      list(
-        method = "relayout",
-        args = list(
-          list(
-            title = list(
-              text = paste0("<b>Top 10 Industries by Employment - ", 
-                           initiative_list[i], "</b><br><sup>Indiana | ", 
-                           recent_year, "</sup>")
-            )
-          )
-        ),
-        label = initiative_list[i]
-      )
-    })
-  )
-)
-
 p15_interactive <- p15_interactive %>%
   layout(
     title = list(
-      text = paste0("<b>Top 10 Industries by Employment - ", 
-                   initiative_list[1], "</b><br><sup>Indiana | ", 
+      text = paste0("<b>Top 10 Industries by Employment - ",
+                   initiative_list[1], "</b><br><sup>Indiana | ",
                    recent_year, "</sup>"),
       font = list(size = 16)
     ),
     xaxis = list(
-      title = "Total Jobs", 
-      showgrid = TRUE, 
+      title = "Total Jobs",
+      showgrid = TRUE,
       gridcolor = "lightgray"
     ),
     yaxis = list(
       title = "",
-      showgrid = FALSE
+      showgrid = FALSE,
+      categoryorder = "array",
+      categoryarray = init_data_1$naics_short
     ),
     updatemenus = updatemenus,
     margin = list(l = 300, r = 100, t = 100, b = 80),
@@ -172,8 +190,8 @@ cat("\n=== Creating Visualization 16: Industry Concentration ===\n")
 
 # Calculate Lorenz curve data for each initiative
 lorenz_data <- jobs_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          geo_area == "Indiana",
          initiative != "Total Employment") %>%
   group_by(initiative) %>%
@@ -488,19 +506,20 @@ cat("Visualization 17 created (static + interactive with combined dropdown)\n")
 cat("\n=== Creating Visualization 18: Wage Distribution by Initiative ===\n")
 
 p18_data <- wage_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          geo_area == "Indiana",
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(wages)) %>%
-  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+  distinct(statefips, countyfips, metrofips, geo_area, initiative,
            naics_code, naics_title, year, .keep_all = TRUE) %>%
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year, geo_area == "Indiana",
+      filter_naics_detail() %>%
+      filter(year == recent_year, geo_area == "Indiana",
              naics_code != "000000") %>%
-      distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+      distinct(statefips, countyfips, metrofips, geo_area, initiative,
                naics_code, naics_title, .keep_all = TRUE) %>%
       select(initiative, naics_title, naics_code, jobs),
     by = c("initiative", "naics_title", "naics_code")
@@ -545,19 +564,20 @@ trace_geographies <- c()
 # Add traces for each geography
 for(geo in geography_list_viz18) {
   geo_data <- wage_data %>%
-    filter(display_level >= 2,
-           year == recent_year,
+    filter_naics_detail() %>%
+    filter(year == recent_year,
            geo_area == geo,
            initiative != "Total Employment",
            naics_code != "000000",
            !is.na(wages)) %>%
-    distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+    distinct(statefips, countyfips, metrofips, geo_area, initiative,
              naics_code, naics_title, year, .keep_all = TRUE) %>%
     left_join(
       jobs_data %>%
-        filter(display_level >= 2, year == recent_year, geo_area == geo,
+        filter_naics_detail() %>%
+        filter(year == recent_year, geo_area == geo,
                naics_code != "000000") %>%
-        distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+        distinct(statefips, countyfips, metrofips, geo_area, initiative,
                  naics_code, naics_title, .keep_all = TRUE) %>%
         select(initiative, naics_title, naics_code, jobs),
       by = c("initiative", "naics_title", "naics_code")
@@ -659,14 +679,14 @@ cat("Visualization 18 created (static + interactive with geography dropdown)\n")
 cat("\n=== Creating Visualization 19: Industry Size vs Growth ===\n")
 
 p19_data <- jobs_growth %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          geo_area == "Indiana",
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(cagr_2yr),
          jobs >= 50) %>%
-  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+  distinct(statefips, countyfips, metrofips, geo_area, initiative,
            naics_code, naics_title, year, .keep_all = TRUE)
 
 # Count total industries before filtering
@@ -717,14 +737,14 @@ trace_counter <- 0
 # Add traces for each geography
 for(geo in geography_list_viz19) {
   geo_data <- jobs_growth %>%
-    filter(display_level >= 2,
-           year == recent_year,
+    filter_naics_detail() %>%
+    filter(year == recent_year,
            geo_area == geo,
            initiative != "Total Employment",
            naics_code != "000000",
            !is.na(cagr_2yr),
            jobs >= 50) %>%
-    distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+    distinct(statefips, countyfips, metrofips, geo_area, initiative,
              naics_code, naics_title, year, .keep_all = TRUE)
   
   # Count total industries before filtering
@@ -879,12 +899,12 @@ cat("\n=== Creating Visualization 20: Top Specialized Industries by Initiative =
 
 # Calculate traditional location quotients for all geographies
 p20_data_all <- jobs_data %>%
-  filter(display_level >= 2,
-         year == recent_year,
+  filter_naics_detail() %>%
+  filter(year == recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
          !is.na(jobs)) %>%
-  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+  distinct(statefips, countyfips, metrofips, geo_area, initiative,
            naics_code, naics_title, year, .keep_all = TRUE) %>%
   # Get total employment for each geography
   left_join(
@@ -897,7 +917,8 @@ p20_data_all <- jobs_data %>%
   # Get US industry employment
   left_join(
     jobs_data %>%
-      filter(display_level >= 2, year == recent_year,
+      filter_naics_detail() %>%
+      filter(year == recent_year,
              geo_area == "United States",
              naics_code != "000000") %>%
       distinct(initiative, naics_code, naics_title, .keep_all = TRUE) %>%
@@ -920,7 +941,8 @@ p20_data_all <- jobs_data %>%
       initiative == "Advanced & Traded Industries" ~ "A&TI",
       initiative == "AgriNovus" ~ "Ag",
       initiative == "BioCrossroads" ~ "BioX",
-      initiative == "Conexus" ~ "CX",
+      initiative == "Conexus - Manufacturing" ~ "CX-Mfg",
+      initiative == "Conexus - Logistics" ~ "CX-Log",
       initiative == "TechPoint" ~ "Tech",
       initiative == "Finance & Insurance" ~ "F&I",
       initiative == "Healthcare" ~ "Health"
@@ -1237,14 +1259,10 @@ cat("\n=== Creating Visualization 22: Top 10 Industries by Labor Productivity ==
 
 # Calculate industry-level productivity with variable display levels
 industry_productivity_data <- gdp_data %>%
-  filter(year == recent_year, 
-         naics_code != "000000", 
+  filter_naics_detail() %>%
+  filter(year == recent_year,
+         naics_code != "000000",
          initiative != "Total Employment") %>%
-  # Apply display level filter based on initiative
-  filter(
-    (initiative %in% c("AgriNovus", "Conexus") & display_level == 3) |
-    (!initiative %in% c("AgriNovus", "Conexus") & display_level == 2)
-  ) %>%
   mutate(
     gdp_per_worker = grp / jobs  # GRP already in dollars, jobs already in data
   ) %>%
@@ -1264,37 +1282,39 @@ p22_data_static <- industry_productivity_data %>%
   ungroup() %>%
   mutate(naics_short = str_trunc(naics_title, 40, "right"))
 
-# Static version
-p22_static <- p22_data_static %>%
-  ggplot(aes(x = reorder(naics_short, gdp_per_worker), 
-             y = gdp_per_worker, fill = initiative)) +
-  geom_col(show.legend = FALSE, alpha = 0.9) +
-  geom_text(aes(label = dollar(gdp_per_worker, accuracy = 1, scale = 1e-3, suffix = "K")), 
-            hjust = -0.1, size = 2) +
-  scale_y_continuous(labels = dollar, expand = expansion(mult = c(0, 0.15))) +
-  scale_fill_manual(values = initiative_colors) +
-  coord_flip() +
-  facet_wrap(~initiative, scales = "free_y", ncol = 2) +
-  labs(
+# Create separate plots for each initiative and combine with patchwork
+# This avoids the cross-facet factor level issue entirely
+p22_list <- lapply(sort(unique(p22_data_static$initiative)), function(init) {
+  init_data <- p22_data_static %>% filter(initiative == init)
+
+  ggplot(init_data, aes(x = reorder(naics_short, gdp_per_worker), y = gdp_per_worker)) +
+    geom_col(fill = initiative_colors[init], alpha = 0.9) +
+    geom_text(aes(label = dollar(gdp_per_worker, accuracy = 1, scale = 1e-3, suffix = "K")),
+              hjust = -0.1, size = 2) +
+    scale_y_continuous(labels = dollar, expand = expansion(mult = c(0, 0.15))) +
+    coord_flip() +
+    labs(title = init, x = NULL, y = NULL) +
+    theme_minimal(base_size = 10) +
+    theme(
+      plot.title = element_text(face = "bold", size = 10),
+      panel.grid.major.y = element_blank(),
+      axis.text.y = element_text(size = 7)
+    )
+})
+
+p22_static <- wrap_plots(p22_list, ncol = 2) +
+  plot_annotation(
     title = "Top 10 Industries by Labor Productivity Within Each Initiative",
     subtitle = paste("Indiana |", recent_year, "| GDP per Worker"),
-    x = NULL,
-    y = "GDP per Worker ($)",
     caption = "Source: CICP Advanced Industries Dashboard\nNote: Industries appearing in multiple initiatives show only the initiative with lowest GDP per worker"
-  ) +
-  theme_minimal(base_size = 10) +
-  theme(
-    strip.text = element_text(face = "bold", size = 10),
-    panel.grid.major.y = element_blank(),
-    axis.text.y = element_text(size = 7),
-    plot.caption = element_text(hjust = 0, size = 8, color = "gray50")
-  )
+  ) &
+  theme(plot.margin = margin(5, 10, 5, 5))
 
 ggsave(file.path(viz_dir, "22_industry_productivity_static.png"),
        p22_static, width = 16, height = 14, dpi = 300, bg = "white")
 
-# Interactive version with geography AND initiative dropdowns
-geography_list_p22 <- c("United States", "Indiana",
+# Interactive version with SINGLE combined dropdown (initiative + geography)
+geography_list_p22 <- c("Indiana", "United States",
                         sort(setdiff(unique(industry_productivity_data$geo_area), c("United States", "Indiana"))))
 initiative_list_p22 <- sort(unique(industry_productivity_data$initiative))
 
@@ -1306,18 +1326,33 @@ p22_data_interactive <- industry_productivity_data %>%
   ungroup() %>%
   mutate(naics_short = str_trunc(naics_title, 40, "right"))
 
+# Create all valid combinations of initiative + geography
+combo_list_p22 <- expand.grid(
+  initiative = initiative_list_p22,
+  geo_area = geography_list_p22,
+  stringsAsFactors = FALSE
+) %>%
+  # Filter to only combinations that have data
+
+  inner_join(
+    p22_data_interactive %>% distinct(initiative, geo_area),
+    by = c("initiative", "geo_area")
+  ) %>%
+  mutate(label = paste0(initiative, " | ", geo_area))
+
 # Create initial plot for first combination
+init_combo <- combo_list_p22[1, ]
 init_data <- p22_data_interactive %>%
-  filter(initiative == initiative_list_p22[1], geo_area == geography_list_p22[1]) %>%
+  filter(initiative == init_combo$initiative, geo_area == init_combo$geo_area) %>%
   arrange(gdp_per_worker)
 
 p22_interactive <- plot_ly(
   data = init_data,
   x = ~gdp_per_worker,
-  y = ~reorder(naics_short, gdp_per_worker),
+  y = ~naics_short,
   type = 'bar',
   orientation = 'h',
-  marker = list(color = initiative_colors[initiative_list_p22[1]]),
+  marker = list(color = initiative_colors[init_combo$initiative]),
   hovertemplate = paste0(
     "<b>%{customdata}</b><br>",
     "GDP per Worker: $%{x:,.0f}<br>",
@@ -1326,39 +1361,36 @@ p22_interactive <- plot_ly(
   customdata = ~naics_title
 )
 
-# Create dropdown menus with layout updates
+# Create SINGLE dropdown with all combinations
 updatemenus_p22 <- list(
-  # Initiative dropdown
   list(
     active = 0,
     type = "dropdown",
     x = 0.15,
-    y = 1.20,
+    y = 1.15,
     xanchor = "left",
     yanchor = "top",
-    buttons = lapply(seq_along(initiative_list_p22), function(i_idx) {
-      init <- initiative_list_p22[i_idx]
-      
-      # Get current geography (default to first)
-      geo <- geography_list_p22[1]
-      
+    buttons = lapply(seq_len(nrow(combo_list_p22)), function(i) {
+      combo <- combo_list_p22[i, ]
+
       combo_data <- p22_data_interactive %>%
-        filter(initiative == init, geo_area == geo) %>%
+        filter(initiative == combo$initiative, geo_area == combo$geo_area) %>%
         arrange(gdp_per_worker)
-      
+
       list(
         method = "update",
         args = list(
           list(
             x = list(combo_data$gdp_per_worker),
-            y = list(combo_data$naics_short),  # Use sorted labels directly
+            y = list(combo_data$naics_short),
             customdata = list(combo_data$naics_title),
-            marker = list(color = initiative_colors[init])
+            marker = list(color = initiative_colors[combo$initiative])
           ),
           list(
             title = list(
-              text = paste0("<b>Top 10 Industries by Labor Productivity - ", init,
-                           "</b><br><sup>", recent_year, " | GDP per Worker | Unique industries only</sup>")
+              text = paste0("<b>Top 10 Industries by Labor Productivity</b><br>",
+                           "<sup>", combo$initiative, " | ", combo$geo_area, " | ",
+                           recent_year, "</sup>")
             ),
             yaxis = list(
               title = "",
@@ -1367,45 +1399,7 @@ updatemenus_p22 <- list(
             )
           )
         ),
-        label = init
-      )
-    })
-  ),
-  # Geography dropdown
-  list(
-    active = 0,
-    type = "dropdown",
-    x = 0.15,
-    y = 1.15,
-    xanchor = "left",
-    yanchor = "top",
-    buttons = lapply(seq_along(geography_list_p22), function(g_idx) {
-      geo <- geography_list_p22[g_idx]
-      
-      # Get current initiative (default to first)
-      init <- initiative_list_p22[1]
-      
-      combo_data <- p22_data_interactive %>%
-        filter(initiative == init, geo_area == geo) %>%
-        arrange(gdp_per_worker)
-      
-      list(
-        method = "update",
-        args = list(
-          list(
-            x = list(combo_data$gdp_per_worker),
-            y = list(combo_data$naics_short),  # Use sorted labels directly
-            customdata = list(combo_data$naics_title)
-          ),
-          list(
-            yaxis = list(
-              title = "",
-              categoryorder = "array",
-              categoryarray = combo_data$naics_short
-            )
-          )
-        ),
-        label = geo
+        label = combo$label
       )
     })
   )
@@ -1414,8 +1408,9 @@ updatemenus_p22 <- list(
 p22_interactive <- p22_interactive %>%
   layout(
     title = list(
-      text = paste0("<br><b>Top 10 Industries by Labor Productivity - ", initiative_list_p22[1],
-                   "</b><br><sup>", recent_year, " | GDP per Worker | Unique industries only</sup>"),
+      text = paste0("<b>Top 10 Industries by Labor Productivity</b><br>",
+                   "<sup>", init_combo$initiative, " | ", init_combo$geo_area, " | ",
+                   recent_year, "</sup>"),
       font = list(size = 16)
     ),
     xaxis = list(title = "GDP per Worker ($)", tickformat = "$,"),
@@ -1425,7 +1420,7 @@ p22_interactive <- p22_interactive %>%
       categoryarray = init_data$naics_short
     ),
     updatemenus = updatemenus_p22,
-    margin = list(l = 250, t = 150, b = 80),
+    margin = list(l = 280, t = 120, b = 80),
     annotations = list(
       list(
         text = "<i>Note: Industries appearing in multiple initiatives show only the initiative with lowest GDP per worker</i>",
@@ -1447,7 +1442,7 @@ htmlwidgets::saveWidget(
   selfcontained = TRUE
 )
 
-cat("Visualization 22 created (interactive with 2 separate dropdowns)\n")
+cat("Visualization 22 created (interactive with combined initiative+geography dropdown)\n")
 
 # VISUALIZATION 23: Productivity Growth Over Time ------------------------------
 
@@ -1827,14 +1822,11 @@ cat("\n=== Creating Visualization 26: Top Industries Driving Productivity Growth
 
 # Calculate industry-level productivity growth (2018-2023)
 industry_productivity_growth <- gdp_data %>%
+  filter_naics_detail() %>%
   filter(
     year %in% c(2018, recent_year),
     naics_code != "000000",
     initiative != "Total Employment"
-  ) %>%
-  filter(
-    (initiative %in% c("AgriNovus", "Conexus") & display_level == 3) |
-    (!initiative %in% c("AgriNovus", "Conexus") & display_level == 2)
   ) %>%
   mutate(gdp_per_worker = grp / jobs) %>%
   filter(!is.na(gdp_per_worker), jobs >= 100) %>%
@@ -2183,7 +2175,7 @@ cat(rep("=", 70), "\n\n", sep = "")
 cat("Visualizations saved to:", viz_dir, "\n\n")
 cat(" 15. Top Industries by Initiative (static + interactive with dropdown)\n")
 cat(" 16. Industry Concentration Lorenz Curves (static + interactive)\n")
-cat(" 17. Growth Contributors Waterfall (static + interactive with 2 dropdowns)\n")
+cat(" 17. Growth Contributors Waterfall (static + interactive with combined dropdown)\n")
 cat(" 18. Wage Distribution Box Plots (static + interactive)\n")
 cat(" 19. Industry Size vs Growth Scatter (static + interactive)\n")
 cat(" 20. Top Specialized Industries Heatmap (static + interactive)\n")

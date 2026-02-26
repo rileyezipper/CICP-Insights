@@ -1,10 +1,35 @@
-# Large data files
+# Large data files within tracked data directories
 CICP_*/iomatrix_*.csv
 CICP_*/industrySoc_crosswalk_*.csv
 CICP_*/talentDemand_*.csv
 outputs_occupation_*/processed_data_occupations.RData
 
-# R files
+# Raw data archive directories (not for version control)
+CICP_20250709/
+CICP_20251031/
+CICP_20260212/
+
+# Build artifacts: Plotly widget dependency folders
+outputs_*/visualizations/*_files/
+
+# Data verification outputs
+outputs_*/data_verification/
+
+# Large archives
+*.zip
+
+# Claude Code files
+.claude/
+CLAUDE.md
+
+# White Paper drafts
+White Paper/
+
+# Working / scratch files
+_ul
+plan.md
+
+# R session files
 .Rproj.user
 .Rhistory
 .Ruserdata

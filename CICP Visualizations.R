@@ -407,13 +407,14 @@ p6_data <- p6_data %>%
   filter(geo_area %in% metro_order) %>%
   mutate(
     geo_area = factor(geo_area, levels = metro_order),
-    initiative = factor(initiative, 
-                       levels = c("Advanced & Traded Industries", 
-                                 "AgriNovus", 
-                                 "BioCrossroads", 
-                                 "Conexus",
-                                 "Finance & Insurance",  # ADD THIS
-                                 "Healthcare",           # ADD THIS
+    initiative = factor(initiative,
+                       levels = c("Advanced & Traded Industries",
+                                 "AgriNovus",
+                                 "BioCrossroads",
+                                 "Conexus - Manufacturing",
+                                 "Conexus - Logistics",
+                                 "Finance & Insurance",
+                                 "Healthcare",
                                  "TechPoint"))
   )
 
@@ -996,6 +997,111 @@ htmlwidgets::saveWidget(
   selfcontained = TRUE
 )
 
+# VISUALIZATION 9b: Indiana Statewide Location Quotient -----------------------
+
+cat("\n=== Creating Visualization 9b: Indiana Statewide LQ ===\n")
+
+# Calculate Indiana LQ vs US for each initiative
+indiana_lq_data <- jobs_data %>%
+  filter(display_level == 0,
+         year == recent_year,
+         initiative != "Total Employment",
+         geo_area == "Indiana") %>%
+  # Get US total employment
+  cross_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "United States", initiative == "Total Employment") %>%
+      select(us_total = jobs)
+  ) %>%
+  # Get US employment by initiative
+  left_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "United States", initiative != "Total Employment") %>%
+      select(initiative, us_initiative_jobs = jobs),
+    by = "initiative"
+  ) %>%
+  # Get Indiana total employment
+  cross_join(
+    jobs_data %>%
+      filter(display_level == 0, year == recent_year,
+             geo_area == "Indiana", initiative == "Total Employment") %>%
+      select(indiana_total = jobs)
+  ) %>%
+  mutate(
+    indiana_pct = (jobs / indiana_total) * 100,
+    us_pct = (us_initiative_jobs / us_total) * 100,
+    location_quotient = indiana_pct / us_pct
+  ) %>%
+  select(initiative, indiana_jobs = jobs, indiana_pct, us_pct, location_quotient) %>%
+  arrange(desc(location_quotient))
+
+# Create static bar chart
+p9b <- indiana_lq_data %>%
+  ggplot(aes(x = reorder(initiative, location_quotient), y = location_quotient,
+             fill = location_quotient > 1)) +
+  geom_col(alpha = 0.9) +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "gray30", linewidth = 1) +
+  geom_text(aes(label = sprintf("%.2f", location_quotient)),
+            hjust = -0.1, size = 4, fontface = "bold") +
+  coord_flip() +
+  scale_fill_manual(values = c("FALSE" = "#2166AC", "TRUE" = "#B2182B"), guide = "none") +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(
+    title = "Indiana Industry Specialization vs United States",
+    subtitle = paste("Location Quotient by Initiative |", recent_year, "| LQ > 1 indicates specialization"),
+    x = NULL,
+    y = "Location Quotient",
+    caption = "Source: CICP Advanced Industries Dashboard\nLQ = (Indiana % in Initiative) / (US % in Initiative)"
+  ) +
+  theme(panel.grid.major.y = element_blank())
+
+ggsave(file.path(viz_dir, "09b_indiana_statewide_lq.png"),
+       p9b, width = 12, height = 7, dpi = 300, bg = "white")
+
+# Interactive version
+p9b_interactive <- plot_ly(
+  indiana_lq_data,
+  x = ~location_quotient,
+  y = ~reorder(initiative, location_quotient),
+  type = "bar",
+  orientation = "h",
+  marker = list(color = ~ifelse(location_quotient > 1, "#B2182B", "#2166AC")),
+  text = ~sprintf("%.2f", location_quotient),
+  textposition = "outside",
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "Location Quotient: %{x:.2f}<br>",
+    "<extra></extra>"
+  )
+) %>%
+  layout(
+    title = list(
+      text = paste0("<b>Indiana Industry Specialization vs United States</b><br><sup>Location Quotient by Initiative | ",
+                   recent_year, "</sup>"),
+      font = list(size = 18)
+    ),
+    xaxis = list(title = "Location Quotient", zeroline = TRUE, zerolinecolor = "gray"),
+    yaxis = list(title = ""),
+    shapes = list(
+      list(type = "line", x0 = 1, x1 = 1, y0 = -0.5, y1 = nrow(indiana_lq_data) - 0.5,
+           line = list(color = "gray30", width = 2, dash = "dash"))
+    ),
+    plot_bgcolor = "white",
+    paper_bgcolor = "white",
+    margin = list(l = 200, r = 100, t = 100, b = 80)
+  )
+
+htmlwidgets::saveWidget(
+  p9b_interactive,
+  file.path(viz_dir, "09b_indiana_statewide_lq.html"),
+  selfcontained = TRUE
+)
+
+# Save indiana_lq_data for use in report
+write_csv(indiana_lq_data, file.path(output_dir, "indiana_statewide_lq.csv"))
+
 # VISUALIZATION 10: Initiative Mix Faceted Comparison -------------------------
 
 cat("\n=== Creating Visualization 10: Initiative Mix Faceted Comparison ===\n")
@@ -1041,7 +1147,7 @@ initiative_mix_data <- initiative_mix_data %>%
 p10 <- initiative_mix_data %>%
   ggplot(aes(x = geo_area, y = share, fill = geo_category)) +
   geom_col(alpha = 0.8) +
-  facet_wrap(~initiative, nrow = 7, ncol = 1, scales = "free_y") +
+  facet_wrap(~initiative, ncol = 1, scales = "free_y") +
   scale_fill_manual(
     values = c("Metro" = "#1565C0", "State" = "#2E7D32", "National" = "#D84315"),
     name = "Geography Type"
@@ -1120,7 +1226,7 @@ for(i in seq_along(initiative_list)) {
 
 p10_interactive <- subplot(
   plots_list,
-  nrows = 7,
+  nrows = length(plots_list),  # Dynamic based on number of initiatives
   shareX = FALSE,
   titleY = TRUE,
   titleX = FALSE,

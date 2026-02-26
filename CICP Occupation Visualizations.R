@@ -10,6 +10,7 @@ library(scales)
 library(plotly)
 library(patchwork)
 library(htmlwidgets)
+library(janitor)
 
 # Load processed data
 output_dir <- "outputs_occupation_20251104"  # Update with your output folder name
