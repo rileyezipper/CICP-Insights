@@ -354,6 +354,11 @@ for(init in initiative_list) {
   }
 }
 
+# Pre-compute traces per initiative (1 scatter + n segments each)
+n_traces_per_init_p3 <- sapply(initiative_list, function(init) {
+  1 + nrow(p3_data %>% filter(cicp_initiative == init))
+})
+
 # Create dropdown
 updatemenus <- list(
   list(
@@ -363,17 +368,24 @@ updatemenus <- list(
     y = 1.15,
     buttons = lapply(seq_along(initiative_list), function(i) {
       init <- initiative_list[i]
-      
-      # Calculate number of traces per initiative (1 scatter + n segments)
-      n_occs <- nrow(p3_data %>% filter(cicp_initiative == init))
-      n_traces_per_init <- 1 + n_occs  # 1 scatter + segments
-      
+
+      # Calculate correct trace start/end using cumulative sums
+      if(i == 1) {
+        start_idx <- 1
+      } else {
+        start_idx <- sum(n_traces_per_init_p3[1:(i-1)]) + 1
+      }
+      end_idx <- start_idx + n_traces_per_init_p3[i] - 1
+
       # Create visibility vector
-      visible_vec <- rep(FALSE, length(initiative_list) * n_traces_per_init)
-      start_idx <- (i - 1) * n_traces_per_init + 1
-      end_idx <- start_idx + n_traces_per_init - 1
+      visible_vec <- rep(FALSE, sum(n_traces_per_init_p3))
       visible_vec[start_idx:end_idx] <- TRUE
       
+      init_occs_ordered <- p3_data %>%
+        filter(cicp_initiative == init) %>%
+        arrange(cagr_2yr) %>%
+        pull(occ_short)
+
       list(
         method = "update",
         args = list(
@@ -383,6 +395,12 @@ updatemenus <- list(
               text = paste0("<b>Occupation Growth Rates - ", init,
                            "</b><br><sup>2-Year CAGR | Min 100 jobs | Indiana | ",
                            recent_year, "</sup>")
+            ),
+            yaxis = list(
+              categoryarray = init_occs_ordered,
+              categoryorder = "array",
+              title = "",
+              showgrid = FALSE
             )
           )
         ),
