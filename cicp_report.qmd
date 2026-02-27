@@ -1128,8 +1128,6 @@ for(i in 1:3) {
 ::: {.callout-tip icon="false"}
 ## 💰 Wage & Economic Value
 
-Note: All wage information is from 2023 because that's the latest year available for wages from the BLS.
-
 ```{r findings_wages}
 #| output: asis
 

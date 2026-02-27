@@ -11,6 +11,7 @@ CICP_20260212/
 
 # Build artifacts: Plotly widget dependency folders
 outputs_*/visualizations/*_files/
+!outputs_*/visualizations/09b_indiana_statewide_lq_files/
 
 # Data verification outputs
 outputs_*/data_verification/
@@ -32,7 +33,6 @@ CICP Data Verification.R
 
 # Generated outputs not yet fully integrated
 outputs_*/indiana_statewide_lq.csv
-outputs_*/visualizations/09b_*
 
 # R session files
 .Rproj.user

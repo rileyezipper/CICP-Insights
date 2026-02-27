@@ -56,13 +56,16 @@ theme_set(theme_minimal(base_size = 13, base_family = "sans") +
               plot.margin = margin(15, 15, 15, 15)
             ))
 
-# Define color palette for initiatives
+# Define color palette for initiatives (matches main CICP pipeline)
 initiative_colors <- c(
   "Advanced & Traded Industries" = "#1565C0",
   "AgriNovus" = "#2E7D32",
   "BioCrossroads" = "#6A1B9A",
-  "Conexus" = "#D84315",
+  "Conexus - Manufacturing" = "#D84315",
+  "Conexus - Logistics" = "#BF360C",
   "TechPoint" = "#F57C00",
+  "Finance & Insurance" = "#19909a",
+  "Healthcare" = "#c92f6c",
   "Total Employment" = "#424242"
 )
 
@@ -158,6 +161,26 @@ wage_data <- wage_data %>%
     year = `year`,  # Handle potential capital Y
     occ_code = occ,
     occupation = description
+  )
+
+# Split "Conexus" into Manufacturing and Logistics by SOC major group
+# SOC 53-xxxx = Transportation & Material Moving → Logistics; all others → Manufacturing
+emp_data <- emp_data %>%
+  mutate(
+    cicp_initiative = case_when(
+      cicp_initiative == "Conexus" & str_starts(occ_code, "53-") ~ "Conexus - Logistics",
+      cicp_initiative == "Conexus" ~ "Conexus - Manufacturing",
+      TRUE ~ cicp_initiative
+    )
+  )
+
+wage_data <- wage_data %>%
+  mutate(
+    cicp_initiative = case_when(
+      cicp_initiative == "Conexus" & str_starts(occ_code, "53-") ~ "Conexus - Logistics",
+      cicp_initiative == "Conexus" ~ "Conexus - Manufacturing",
+      TRUE ~ cicp_initiative
+    )
   )
 
 # Calculate growth rates for employment
@@ -521,9 +544,9 @@ print(occupation_stability)
 
 cat("\n=== Saving processed data for visualization script ===\n")
 
-save(emp_data, wage_data, 
+save(emp_data, wage_data,
      emp_growth, wage_growth,
-     recent_year, initiative_colors,
+     recent_year, initiative_colors, data_dir,
      file = file.path(output_dir, "processed_data_occupations.RData"))
 
 cat(sprintf("Processed data saved to '%s/processed_data_occupations.RData'\n", 
