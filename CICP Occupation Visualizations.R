@@ -896,37 +896,29 @@ p7 <- p7_data %>%
 ggsave(file.path(viz_dir, "07_metro_comparison_top_occupations.png"),
        p7, width = 16, height = 14, dpi = 300, bg = "white")
 
-# Interactive version
+# Interactive version - single trace so y-axis only shows the selected geography
 geography_list_p7 <- c("Indiana", top_metros)
 
-p7_interactive <- plot_ly()
+first_geo_p7 <- geography_list_p7[1]
+geo_data_first_p7 <- p7_data %>% filter(geo_area == first_geo_p7) %>% arrange(total_jobs)
 
-for(geo in geography_list_p7) {
-  geo_data <- p7_data %>% 
-    filter(geo_area == geo) %>%
-    arrange(total_jobs)
-  
-  p7_interactive <- p7_interactive %>%
-    add_trace(
-      data = geo_data,
-      x = ~total_jobs,
-      y = ~reorder(occ_short, total_jobs),
-      type = "bar",
-      orientation = "h",
-      marker = list(color = "#1565C0"),
-      text = ~comma(total_jobs),
-      textposition = "outside",
-      textfont = list(size = 10),
-      visible = if(geo == geography_list_p7[1]) TRUE else FALSE,
-      name = geo,
-      showlegend = FALSE,
-      hovertemplate = paste0(
-        "<b>%{y}</b><br>",
-        "Total Jobs: %{x:,}<br>",
-        "<extra></extra>"
-      )
-    )
-}
+p7_interactive <- plot_ly(
+  data = geo_data_first_p7,
+  x = ~total_jobs,
+  y = ~occ_short,
+  type = "bar",
+  orientation = "h",
+  marker = list(color = "#1565C0"),
+  text = ~comma(total_jobs),
+  textposition = "outside",
+  textfont = list(size = 10),
+  showlegend = FALSE,
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "Total Jobs: %{x:,}<br>",
+    "<extra></extra>"
+  )
+)
 
 updatemenus <- list(
   list(
@@ -936,19 +928,27 @@ updatemenus <- list(
     y = 1.15,
     buttons = lapply(seq_along(geography_list_p7), function(i) {
       geo <- geography_list_p7[i]
-      
-      visible_vec <- rep(FALSE, length(geography_list_p7))
-      visible_vec[i] <- TRUE
-      
+      geo_data <- p7_data %>% filter(geo_area == geo) %>% arrange(total_jobs)
+
       list(
         method = "update",
         args = list(
-          list(visible = visible_vec),
+          list(
+            x = list(geo_data$total_jobs),
+            y = list(geo_data$occ_short),
+            text = list(comma(geo_data$total_jobs))
+          ),
           list(
             title = list(
               text = paste0("<b>Top 10 Occupations - ", geo,
                            "</b><br><sup>Total across all initiatives | ",
                            recent_year, "</sup>")
+            ),
+            yaxis = list(
+              categoryarray = geo_data$occ_short,
+              categoryorder = "array",
+              title = "",
+              showgrid = FALSE
             )
           )
         ),
@@ -962,7 +962,7 @@ p7_interactive <- p7_interactive %>%
   layout(
     title = list(
       text = paste0("<b>Top 10 Occupations - ", geography_list_p7[1],
-                   "</b><br><sup>Total across all initiatives | ", 
+                   "</b><br><sup>Total across all initiatives | ",
                    recent_year, "</sup>"),
       font = list(size = 16)
     ),
@@ -973,7 +973,9 @@ p7_interactive <- p7_interactive %>%
     ),
     yaxis = list(
       title = "",
-      showgrid = FALSE
+      showgrid = FALSE,
+      categoryarray = geo_data_first_p7$occ_short,
+      categoryorder = "array"
     ),
     updatemenus = updatemenus,
     margin = list(l = 350, r = 100, t = 100, b = 80),
