@@ -296,70 +296,48 @@ p3 <- p3_data %>%
 ggsave(file.path(viz_dir, "03_occupation_growth_rates.png"),
        p3, width = 16, height = 14, dpi = 300, bg = "white")
 
-# Interactive version with initiative dropdown
-p3_interactive <- plot_ly()
+# Interactive version - single trace approach so y-axis categories only
+# reflect the currently selected initiative (not all initiatives at once)
 
-for(init in initiative_list) {
-  init_data <- p3_data %>%
-    filter(cicp_initiative == init) %>%
-    arrange(cagr_2yr)
-  
-  if(nrow(init_data) > 0) {
-    p3_interactive <- p3_interactive %>%
-      add_trace(
-        data = init_data,
-        x = ~cagr_2yr,
-        y = ~reorder(occ_short, cagr_2yr),
-        type = "scatter",
-        mode = "markers",
-        marker = list(
-          size = 10,
-          color = ~ifelse(cagr_2yr >= 0, "#2E7D32", "#D84315")
-        ),
-        name = init,
-        visible = if(init == initiative_list[1]) TRUE else FALSE,
-        hovertemplate = paste0(
-          "<b>%{y}</b><br>",
-          "2-Year CAGR: %{x:.1f}%<br>",
-          "Current Jobs: ", comma(init_data$jobs), "<br>",
-          "<extra></extra>"
-        )
+# Helper: build lollipop segment shapes for one initiative's data
+make_lollipop_shapes <- function(init_data) {
+  lapply(seq_len(nrow(init_data)), function(j) {
+    list(
+      type = "line",
+      x0 = 0, x1 = init_data$cagr_2yr[j],
+      y0 = init_data$occ_short[j], y1 = init_data$occ_short[j],
+      xref = "x", yref = "y",
+      line = list(
+        color = ifelse(init_data$cagr_2yr[j] >= 0, "#2E7D32", "#D84315"),
+        width = 2
       )
-  }
+    )
+  })
 }
 
-# Add segments for each initiative
-for(init in initiative_list) {
-  init_data <- p3_data %>%
-    filter(cicp_initiative == init) %>%
-    arrange(cagr_2yr)
-  
-  if(nrow(init_data) > 0) {
-    for(i in 1:nrow(init_data)) {
-      p3_interactive <- p3_interactive %>%
-        add_trace(
-          x = c(0, init_data$cagr_2yr[i]),
-          y = c(init_data$occ_short[i], init_data$occ_short[i]),
-          type = "scatter",
-          mode = "lines",
-          line = list(
-            color = ifelse(init_data$cagr_2yr[i] >= 0, "#2E7D32", "#D84315"),
-            width = 2
-          ),
-          showlegend = FALSE,
-          visible = if(init == initiative_list[1]) TRUE else FALSE,
-          hoverinfo = "skip"
-        )
-    }
-  }
-}
+first_init_p3 <- initiative_list[1]
+init_data_first <- p3_data %>%
+  filter(cicp_initiative == first_init_p3) %>%
+  arrange(cagr_2yr)
 
-# Pre-compute traces per initiative (1 scatter + n segments each)
-n_traces_per_init_p3 <- sapply(initiative_list, function(init) {
-  1 + nrow(p3_data %>% filter(cicp_initiative == init))
-})
+p3_interactive <- plot_ly(
+  data = init_data_first,
+  x = ~cagr_2yr,
+  y = ~occ_short,
+  type = "scatter",
+  mode = "markers",
+  marker = list(
+    size = 10,
+    color = ifelse(init_data_first$cagr_2yr >= 0, "#2E7D32", "#D84315")
+  ),
+  hovertemplate = paste0(
+    "<b>%{y}</b><br>",
+    "2-Year CAGR: %{x:.1f}%<br>",
+    "<extra></extra>"
+  ),
+  showlegend = FALSE
+)
 
-# Create dropdown
 updatemenus <- list(
   list(
     active = 0,
@@ -368,36 +346,32 @@ updatemenus <- list(
     y = 1.15,
     buttons = lapply(seq_along(initiative_list), function(i) {
       init <- initiative_list[i]
-
-      # Calculate correct trace start/end using cumulative sums
-      if(i == 1) {
-        start_idx <- 1
-      } else {
-        start_idx <- sum(n_traces_per_init_p3[1:(i-1)]) + 1
-      }
-      end_idx <- start_idx + n_traces_per_init_p3[i] - 1
-
-      # Create visibility vector
-      visible_vec <- rep(FALSE, sum(n_traces_per_init_p3))
-      visible_vec[start_idx:end_idx] <- TRUE
-      
-      init_occs_ordered <- p3_data %>%
+      init_data <- p3_data %>%
         filter(cicp_initiative == init) %>%
-        arrange(cagr_2yr) %>%
-        pull(occ_short)
+        arrange(cagr_2yr)
 
       list(
         method = "update",
         args = list(
-          list(visible = visible_vec),
+          # Trace update: replace x/y/color — only one trace, no bleed
+          list(
+            x = list(init_data$cagr_2yr),
+            y = list(init_data$occ_short),
+            marker = list(
+              size = 10,
+              color = list(ifelse(init_data$cagr_2yr >= 0, "#2E7D32", "#D84315"))
+            )
+          ),
+          # Layout update: title + segments + y-axis
           list(
             title = list(
               text = paste0("<b>Occupation Growth Rates - ", init,
                            "</b><br><sup>2-Year CAGR | Min 100 jobs | Indiana | ",
                            recent_year, "</sup>")
             ),
+            shapes = make_lollipop_shapes(init_data),
             yaxis = list(
-              categoryarray = init_occs_ordered,
+              categoryarray = init_data$occ_short,
               categoryorder = "array",
               title = "",
               showgrid = FALSE
@@ -409,8 +383,6 @@ updatemenus <- list(
     })
   )
 )
-
-init_data_first <- p3_data %>% filter(cicp_initiative == initiative_list[1])
 
 p3_interactive <- p3_interactive %>%
   layout(
@@ -427,8 +399,11 @@ p3_interactive <- p3_interactive %>%
     ),
     yaxis = list(
       title = "",
-      showgrid = FALSE
+      showgrid = FALSE,
+      categoryarray = init_data_first$occ_short,
+      categoryorder = "array"
     ),
+    shapes = make_lollipop_shapes(init_data_first),
     updatemenus = updatemenus,
     margin = list(l = 350, r = 100, t = 100, b = 80),
     plot_bgcolor = "white",
