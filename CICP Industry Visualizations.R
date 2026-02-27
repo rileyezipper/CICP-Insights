@@ -108,7 +108,8 @@ p15_interactive <- plot_ly(
   text = ~comma(round(jobs)),
   textposition = "outside",
   textfont = list(size = 10),
-  hoverinfo = "skip",
+  customdata = ~naics_title,
+  hovertemplate = "<b>%{customdata}</b><br>Jobs: %{x:,}<extra></extra>",
   showlegend = FALSE
 )
 
@@ -132,7 +133,9 @@ updatemenus <- list(
             x = list(init_data$jobs),
             y = list(init_data$naics_short),
             text = list(comma(round(init_data$jobs))),
-            marker = list(color = initiative_colors[init])
+            marker = list(color = initiative_colors[init]),
+            customdata = list(init_data$naics_title),
+            hovertemplate = "<b>%{customdata}</b><br>Jobs: %{x:,}<extra></extra>"
           ),
           list(
             title = list(

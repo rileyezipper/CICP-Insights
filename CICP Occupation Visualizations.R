@@ -84,7 +84,8 @@ p1_interactive <- plot_ly(
   text = ~comma(jobs),
   textposition = "outside",
   textfont = list(size = 10),
-  hoverinfo = "skip",
+  customdata = ~occupation,
+  hovertemplate = "<b>%{customdata}</b><br>Jobs: %{x:,}<extra></extra>",
   showlegend = FALSE
 )
 
@@ -108,7 +109,8 @@ updatemenus <- list(
             y = list(init_data$occ_short),
             text = list(comma(init_data$jobs)),
             marker = list(color = initiative_colors[init]),
-            hoverinfo = "skip"
+            customdata = list(init_data$occupation),
+            hovertemplate = "<b>%{customdata}</b><br>Jobs: %{x:,}<extra></extra>"
           ),
           list(
             title = list(
@@ -338,8 +340,9 @@ p3_interactive <- plot_ly(
     size = 10,
     color = ifelse(init_data_first$cagr_2yr >= 0, "#2E7D32", "#D84315")
   ),
+  customdata = ~occupation,
   hovertemplate = paste0(
-    "<b>%{y}</b><br>",
+    "<b>%{customdata}</b><br>",
     "2-Year CAGR: %{x:.1f}%<br>",
     "<extra></extra>"
   ),
@@ -361,14 +364,15 @@ updatemenus <- list(
       list(
         method = "update",
         args = list(
-          # Trace update: replace x/y/color — only one trace, no bleed
+          # Trace update: replace x/y/color/customdata — only one trace, no bleed
           list(
             x = list(init_data$cagr_2yr),
             y = list(init_data$occ_short),
             marker = list(
               size = 10,
               color = list(ifelse(init_data$cagr_2yr >= 0, "#2E7D32", "#D84315"))
-            )
+            ),
+            customdata = list(init_data$occupation)
           ),
           # Layout update: title + segments + y-axis
           list(
@@ -487,7 +491,7 @@ for(init in initiative_list) {
           opacity = 0.6,
           line = list(color = "white", width = 0.5)
         ),
-        text = ~occ_short,
+        text = ~occupation,
         hovertemplate = paste0(
           "<b>%{text}</b><br>",
           "Jobs: %{x:,}<br>",
@@ -767,8 +771,9 @@ for(init in initiative_list) {
           name = unique(occ_data$occ_short),
           visible = if(init == initiative_list[1]) TRUE else FALSE,
           legendgroup = init,
+          customdata = ~occupation.x,
           hovertemplate = paste0(
-            "<b>%{fullData.name}</b><br>",
+            "<b>%{customdata}</b><br>",
             "Year: %{x}<br>",
             "Jobs: %{y:,}<br>",
             "<extra></extra>"
@@ -921,8 +926,9 @@ p7_interactive <- plot_ly(
   textposition = "outside",
   textfont = list(size = 10),
   showlegend = FALSE,
+  customdata = ~occupation,
   hovertemplate = paste0(
-    "<b>%{y}</b><br>",
+    "<b>%{customdata}</b><br>",
     "Total Jobs: %{x:,}<br>",
     "<extra></extra>"
   )
@@ -944,7 +950,8 @@ updatemenus <- list(
           list(
             x = list(geo_data$total_jobs),
             y = list(geo_data$occ_short),
-            text = list(comma(geo_data$total_jobs))
+            text = list(comma(geo_data$total_jobs)),
+            customdata = list(geo_data$occupation)
           ),
           list(
             title = list(
@@ -1068,8 +1075,9 @@ p8_interactive <- plot_ly(
   text = ~sprintf("%.1f%%", cagr_2yr),
   texttemplate = "%{text}",
   textfont = list(size = 10),
+  customdata = ~occupation,
   hovertemplate = paste0(
-    "<b>%{y}</b><br>",
+    "<b>%{customdata}</b><br>",
     "%{x}<br>",
     "2-Year CAGR: %{z:.1f}%<br>",
     "<extra></extra>"
