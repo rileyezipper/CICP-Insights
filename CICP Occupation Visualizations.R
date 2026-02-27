@@ -112,8 +112,14 @@ updatemenus <- list(
           ),
           list(
             title = list(
-              text = paste0("<b>Top 10 Occupations - ", init, 
+              text = paste0("<b>Top 10 Occupations - ", init,
                            "</b><br><sup>Indiana | ", recent_year, "</sup>")
+            ),
+            yaxis = list(
+              categoryarray = init_data$occ_short,
+              categoryorder = "array",
+              title = "",
+              showgrid = FALSE
             )
           )
         ),
@@ -126,18 +132,20 @@ updatemenus <- list(
 p1_interactive <- p1_interactive %>%
   layout(
     title = list(
-      text = paste0("<b>Top 10 Occupations - ", initiative_list[1], 
+      text = paste0("<b>Top 10 Occupations - ", initiative_list[1],
                    "</b><br><sup>Indiana | ", recent_year, "</sup>"),
       font = list(size = 16)
     ),
     xaxis = list(
-      title = "Total Jobs", 
-      showgrid = TRUE, 
+      title = "Total Jobs",
+      showgrid = TRUE,
       gridcolor = "lightgray"
     ),
     yaxis = list(
       title = "",
-      showgrid = FALSE
+      showgrid = FALSE,
+      categoryarray = init_data_1$occ_short,
+      categoryorder = "array"
     ),
     updatemenus = updatemenus,
     margin = list(l = 350, r = 100, t = 100, b = 80),
