@@ -508,15 +508,24 @@ cat("Visualization 17 created (static + interactive with combined dropdown)\n")
 
 cat("\n=== Creating Visualization 18: Wage Distribution by Initiative ===\n")
 
-p18_data <- wage_data %>%
+# Use 3-year median wage to smooth single-year anomalies in small industries.
+# (e.g., R&D in Biotechnology spiked to $629K in 2024 from ~$165K historically.)
+wage_3yr_median <- wage_data %>%
   filter_naics_detail() %>%
-  filter(year == recent_year,
-         geo_area == "Indiana",
+  filter(year >= (recent_year - 2), year <= recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
-         !is.na(wages)) %>%
+         !is.na(wages), wages > 0) %>%
   distinct(statefips, countyfips, metrofips, geo_area, initiative,
            naics_code, naics_title, year, .keep_all = TRUE) %>%
+  group_by(statefips, countyfips, metrofips, geo_area, initiative,
+           naics_code, naics_title) %>%
+  summarise(wages = median(wages, na.rm = TRUE), .groups = "drop")
+
+p18_data <- wage_3yr_median %>%
+  filter(geo_area == "Indiana",
+         initiative != "Total Employment",
+         naics_code != "000000") %>%
   left_join(
     jobs_data %>%
       filter_naics_detail() %>%
@@ -566,15 +575,10 @@ trace_geographies <- c()
 
 # Add traces for each geography
 for(geo in geography_list_viz18) {
-  geo_data <- wage_data %>%
-    filter_naics_detail() %>%
-    filter(year == recent_year,
-           geo_area == geo,
+  geo_data <- wage_3yr_median %>%
+    filter(geo_area == geo,
            initiative != "Total Employment",
-           naics_code != "000000",
-           !is.na(wages)) %>%
-    distinct(statefips, countyfips, metrofips, geo_area, initiative,
-             naics_code, naics_title, year, .keep_all = TRUE) %>%
+           naics_code != "000000") %>%
     left_join(
       jobs_data %>%
         filter_naics_detail() %>%

@@ -163,12 +163,38 @@ wage_data <- wage_data %>%
     occupation = description
   )
 
-# Split "Conexus" into Manufacturing and Logistics by SOC major group
-# SOC 53-xxxx = Transportation & Material Moving → Logistics; all others → Manufacturing
+# Split "Conexus" into Manufacturing and Logistics using a curated SOC-based list.
+# Logistics occupations: full SOC 53 (Transportation & Material Moving) plus
+# specific dispatching, shipping, warehousing, and logistics management codes.
+# All remaining Conexus occupations are assigned to Manufacturing.
+logistics_soc <- c(
+  # SOC 53 – Transportation and Material Moving (all)
+  "53",
+  # SOC 43-5xxx – Material Recording, Scheduling, Dispatching, Distributing
+  "43-5011",  # Cargo and Freight Agents
+  "43-5021",  # Couriers and Messengers
+  "43-5032",  # Dispatchers, Except Police, Fire, and Ambulance
+  "43-5061",  # Production, Planning, and Expediting Clerks
+  "43-5071",  # Shipping, Receiving, and Inventory Clerks
+  "43-5081",  # Stock Clerks and Order Fillers
+  "43-5111",  # Weighers, Measurers, Checkers, and Samplers
+  # Management and professional logistics roles
+  "11-3071",  # Transportation, Storage, and Distribution Managers
+  "13-1081",  # Logisticians
+  # STEM occupations with direct logistics applications
+  "15-2031",  # Operations Research Analysts (supply chain/route optimization)
+  "17-2051",  # Civil Engineers (transportation infrastructure)
+  "17-2112",  # Industrial Engineers (supply chain/warehouse process optimization)
+  "17-3022",  # Civil Engineering Technologists and Technicians
+  "17-3026"   # Industrial Engineering Technologists and Technicians
+)
+
 emp_data <- emp_data %>%
   mutate(
     cicp_initiative = case_when(
-      cicp_initiative == "Conexus" & str_starts(occ_code, "53-") ~ "Conexus - Logistics",
+      cicp_initiative == "Conexus" &
+        (str_starts(occ_code, "53-") |
+           occ_code %in% logistics_soc) ~ "Conexus - Logistics",
       cicp_initiative == "Conexus" ~ "Conexus - Manufacturing",
       TRUE ~ cicp_initiative
     )
@@ -177,7 +203,9 @@ emp_data <- emp_data %>%
 wage_data <- wage_data %>%
   mutate(
     cicp_initiative = case_when(
-      cicp_initiative == "Conexus" & str_starts(occ_code, "53-") ~ "Conexus - Logistics",
+      cicp_initiative == "Conexus" &
+        (str_starts(occ_code, "53-") |
+           occ_code %in% logistics_soc) ~ "Conexus - Logistics",
       cicp_initiative == "Conexus" ~ "Conexus - Manufacturing",
       TRUE ~ cicp_initiative
     )

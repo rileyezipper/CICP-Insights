@@ -81,11 +81,11 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 0,000,00000,United States,TechPoint,Electromedical and Electrotherapeutic Apparatus Manufacturing,334510,5,0.8909374198783615,2.002504485923029,2.2476376468691015,74287.0325425
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,"Other Professional, Scientific, and Technical Services",5419,5,5.839513860360279,1.8191011208332646,0.31151584949248357,281.257918514736
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,5,10.123300983121943,6.6226283754288975,0.6541965300123412,617.085633956227
-00,000,14020,Bloomington MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,11,1784.2658807208777,1936.67082453044,1.0854160500720822,230.80024915885
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Other Financial Investment Activities,5239,5,11.23366151029834,14.999108167444287,1.3351931739881973,108.999933637305
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Management of Companies and Enterprises,5511,5,4.2105210366494905,5.8214719172010465,1.3826013138348943,568.9042449
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Grocery and Related Product Merchant Wholesalers,4244,5,4.3298789169979885,6.239156323316682,1.4409539950004981,577.4140899280001
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,5,16.74724977286516,27.549345388249527,1.6450071362097036,3304.296116485
+00,000,14020,Bloomington MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,9.472628023427873,16.1051333078158,1.7001758401136726,230.80024915885
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Miscellaneous Nondurable Goods Merchant Wholesalers,4249,5,52.401734458028784,90.15790685037733,1.720513791820944,116.08666225359
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,5,4.365225339858652,7.596830139320939,1.7403065243745075,423.586346845826
 00,000,14020,Bloomington MSA,Advanced & Traded Industries,Insurance Carriers,5241,5,3.109367979433666,6.358638665572135,2.0449939369126344,145.889791036
@@ -307,6 +307,7 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,18020,Columbus MSA,Healthcare,Offices of Dentists,621210,5,6.314046027218025,10.07438003335598,1.595550616819745,348.467882487
 00,000,18020,Columbus MSA,Healthcare,Offices of Physicians (except Mental Health Specialists),621111,5,1.6144084153057081,2.8356993843709852,1.7564944269904654,905.480784504
 00,000,18020,Columbus MSA,Healthcare,Outpatient Mental Health and Substance Abuse Centers,621420,5,1.3444073689656943,3.7173866328873233,2.7650745738973863,416.736520814
+00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,13.550039432896748,8.453633428638451,0.6238825702687435,240.294102894204
 00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,Alumina and Aluminum Production and Processing,3313,5,6.180512865327992,4.835406757755219,0.7823633512489437,263.2633871678
 00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,Commercial and Service Industry Machinery Manufacturing,3333,5,14.605407718056552,12.699116482095015,0.8694804504769281,175.666714813
 00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,Chemical and Allied Products Merchant Wholesalers,4246,5,6.786534908761652,6.088330818124924,0.8971192073682076,277.774049675
@@ -316,7 +317,6 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,Foundries,3315,5,121.95710907146854,201.5081244249521,1.6522868241068716,343.44272685478
 00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,5,4.377308634846604,7.352294218549651,1.6796380680174041,1548.01004277762
 00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,Household Appliances and Electrical and Electronic Goods Merchant Wholesalers,4236,5,5.318148538063685,9.97512883534059,1.8756769887011262,444.1657123023
-00,000,21140,Elkhart-Goshen MSA,Advanced & Traded Industries,Miscellaneous Durable Goods Merchant Wholesalers,4239,5,4.942784721469593,9.396116580246732,1.9009762936737957,457.98955085198
 00,000,21140,Elkhart-Goshen MSA,AgriNovus,Poultry Processing,311615,5,91.49264816410727,113.535700324797,1.2409270318763959,333.006281661
 00,000,21140,Elkhart-Goshen MSA,AgriNovus,Animal Production and Aquaculture,112000,5,16.16302392107746,23.395264600942678,1.4474559163668614,299.583035047
 00,000,21140,Elkhart-Goshen MSA,AgriNovus,Farm and Garden Machinery and Equipment Merchant Wholesalers,423820,5,6.198944529883201,12.359780562825753,1.9938524216893794,142.928258892
@@ -356,12 +356,12 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,21780,Evansville MSA,Advanced & Traded Industries,Animal Food Manufacturing,3111,5,7.1990328991521,5.887912390553391,0.8178754664736798,172.14075378
 00,000,21780,Evansville MSA,Advanced & Traded Industries,Electronic and Precision Equipment Repair and Maintenance,8112,5,8.063715208059161,7.293464116891373,0.9044793781409874,155.753050675
 00,000,21780,Evansville MSA,Advanced & Traded Industries,Other Financial Investment Activities,5239,5,14.274108234809972,16.859618371041595,1.181132866144758,251.980067494768
-00,000,21780,Evansville MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,11,485.9677373615896,578.5985342322175,1.1906110009967696,463.66982336878
 00,000,21780,Evansville MSA,Advanced & Traded Industries,"Coating, Engraving, Heat Treating, and Allied Activities",3328,5,10.243271307370868,12.309609124541671,1.2017263582273667,264.54690431259996
 00,000,21780,Evansville MSA,Advanced & Traded Industries,Alumina and Aluminum Production and Processing,3313,5,5.135377463061768,6.411858444962437,1.2485661455428083,1602.614681330075
 00,000,21780,Evansville MSA,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,5,3.6429033039794967,5.25059446073893,1.4413213919247312,1242.1453555709602
 00,000,21780,Evansville MSA,Advanced & Traded Industries,Sugar and Confectionery Product Manufacturing,3113,5,6.120100135181787,10.61936484862557,1.7351619440962203,104.372836467
 00,000,21780,Evansville MSA,Advanced & Traded Industries,Animal Slaughtering and Processing,3116,5,24.063366247054148,41.898621857372106,1.7411787456171623,235.69197332
+00,000,21780,Evansville MSA,Advanced & Traded Industries,Pharmaceutical and Medicine Manufacturing,3254,5,9.081406617184767,16.105103352712177,1.773415070110004,1061.51590399
 00,000,21780,Evansville MSA,AgriNovus,Dog and Cat Food Manufacturing,311111,5,13.96828547948277,11.048648891710405,0.7909810339958433,118.627280735
 00,000,21780,Evansville MSA,AgriNovus,Other Grocery and Related Products Merchant Wholesalers,424490,5,7.322101718231524,9.129366174154267,1.2468231834888035,237.301727249
 00,000,21780,Evansville MSA,AgriNovus,Farm and Garden Machinery and Equipment Merchant Wholesalers,423820,5,6.1292601846617,10.076228863672984,1.6439551528402174,147.500629931
@@ -426,7 +426,7 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,23060,Fort Wayne MSA,Advanced & Traded Industries,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,5,3.682696633271696,3.868593111505005,1.0504783577756063,1793.7416244330702
 00,000,23060,Fort Wayne MSA,Advanced & Traded Industries,Lumber and Other Construction Materials Merchant Wholesalers,4233,5,7.9166692201540645,8.922665163486705,1.1270731308024846,417.4296072782
 00,000,23060,Fort Wayne MSA,Advanced & Traded Industries,Activities Related to Credit Intermediation,5223,5,6.832649411295706,8.025521499571424,1.1745841205175356,147.39701687939998
-00,000,23060,Fort Wayne MSA,Advanced & Traded Industries,Animal Food Manufacturing,3111,5,30.19402909500999,36.06621835654199,1.1944818044340582,126.349664593
+00,000,23060,Fort Wayne MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,4.338470915140644,5.121223604766869,1.180421329297041,886.1691049591
 00,000,23060,Fort Wayne MSA,AgriNovus,Farm and Garden Machinery and Equipment Merchant Wholesalers,423820,5,7.062736760051438,7.493086158348434,1.0609323854077581,184.298068345
 00,000,23060,Fort Wayne MSA,AgriNovus,Other Animal Food Manufacturing,311119,5,30.19402909500999,36.06621835654199,1.1944818044340582,126.349664593
 00,000,23060,Fort Wayne MSA,AgriNovus,Animal Production and Aquaculture,112000,5,9.474283058401179,18.529656253938676,1.955784531633534,220.831779129
@@ -491,8 +491,8 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,Advanced & Traded Industries,Scientific Research and Development Services,5417,5,14.687402203833177,10.337799038569209,0.7038548338978018,3244.6519143449996
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,Advanced & Traded Industries,Other Wood Product Manufacturing,3219,5,4.91504483105464,3.855111299927878,0.7843491631185533,755.2231811657999
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,Advanced & Traded Industries,"Agencies, Brokerages, and Other Insurance Related Activities",5242,5,4.496824846481284,3.6610261274767883,0.8141358074779143,16359.773704619
+00,000,26900,Indianapolis-Carmel-Greenwood MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,5.544735628366791,5.040803685852107,0.9091152443884656,11234.106764141
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,Advanced & Traded Industries,Hardware Manufacturing,3325,5,3.2523070832471945,3.166294696095539,0.973553423785008,2172.69756139
-00,000,26900,Indianapolis-Carmel-Greenwood MSA,Advanced & Traded Industries,Miscellaneous Durable Goods Merchant Wholesalers,4239,5,4.164899795529573,4.353438325159256,1.0452684431524744,1976.6703834098
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,AgriNovus,Pharmaceutical Preparation Manufacturing,325412,5,5.206578686787151,2.8904960162998345,0.5551622649313088,280.76293953199996
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,AgriNovus,Packaged Frozen Food Merchant Wholesalers,424420,5,14.803588124040488,11.047090842704836,0.7462441369038607,136.340176914
 00,000,26900,Indianapolis-Carmel-Greenwood MSA,AgriNovus,Ethyl Alcohol Manufacturing,325193,5,45.581182900528866,35.80938124709706,0.7856176379898551,194.031362666
@@ -588,6 +588,7 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,29020,Kokomo MSA,Healthcare,Offices of Optometrists,621320,5,3.453164083993565,7.219399388914515,2.090662132847542,104.024110316
 00,000,29020,Kokomo MSA,Healthcare,Residential Mental Health and Substance Abuse Facilities,623220,5,Inf,NA,NA,103.136173012
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,5,16.05958823140375,8.819086343723612,0.5491477251252503,175.6926054723
+00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,7.817300198746158,5.218690717329528,0.6675822323116836,270.83098893755
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Other General Purpose Machinery Manufacturing,3339,5,14.1188825226198,10.187804875335129,0.7215730323567245,133.17701834766
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Other Electrical Equipment and Component Manufacturing,3359,5,11.081282557838204,9.753504844140847,0.880178336147726,363.500954208
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Aerospace Product and Parts Manufacturing,3364,5,16.539599570213085,15.718599606213893,0.95036155739358,275.24406756045
@@ -596,7 +597,6 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Bakeries and Tortilla Manufacturing,3118,5,27.815749242053773,35.03847173731256,1.2596630575148764,231.2424844212
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Grain and Oilseed Milling,3112,5,0.9776356359190674,1.265384324349347,1.2943312189717484,613.249999934
 00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Other Wood Product Manufacturing,3219,5,6.964135593361385,10.453005596186228,1.5009767480906941,212.1655332817
-00,000,29200,Lafayette-West Lafayette MSA,Advanced & Traded Industries,Computer Systems Design and Related Services,5415,5,11.276830974810942,17.546271998408415,1.5559577010244743,624.434859492759
 00,000,29200,Lafayette-West Lafayette MSA,AgriNovus,Crop Production,111000,5,3.4568675654890924,2.4739153146693633,0.7156523262178669,506.393626851
 00,000,29200,Lafayette-West Lafayette MSA,AgriNovus,Pesticide and Other Agricultural Chemical Manufacturing,325320,5,3.806786145403172,8.099282790621286,2.1275906975760788,653.030392916
 00,000,29200,Lafayette-West Lafayette MSA,AgriNovus,Farm Supplies Merchant Wholesalers,424910,5,3.5945943967378713,8.74248170406197,2.4321191041737156,297.54111562
@@ -651,8 +651,8 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,31140,Louisville/Jefferson County MSA,Advanced & Traded Industries,Scientific Research and Development Services,5417,5,3.8104616571388172,2.9924050761691845,0.785313000214286,669.1434043268
 00,000,31140,Louisville/Jefferson County MSA,Advanced & Traded Industries,Iron and Steel Mills and Ferroalloy Manufacturing,3311,5,27.608791534521632,26.197613752868083,0.9488866515620927,969.334385135
 00,000,31140,Louisville/Jefferson County MSA,Advanced & Traded Industries,Warehousing and Storage,4931,5,5.019844794808983,5.263693297155708,1.0485769007438015,20514.110473094
+00,000,31140,Louisville/Jefferson County MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,6.54682574693112,7.349250354534782,1.1225669719374776,5431.1351365850005
 00,000,31140,Louisville/Jefferson County MSA,Advanced & Traded Industries,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,5,5.858374009213303,7.554947925846144,1.2895980888152045,2302.806449439
-00,000,31140,Louisville/Jefferson County MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,11,168.74664397969713,236.94841581168296,1.4041666857694164,5431.1351365850005
 00,000,31140,Louisville/Jefferson County MSA,AgriNovus,Distilleries,312140,5,7.7819511068480995,4.014572460294121,0.5158825087915685,4731.21907795
 00,000,31140,Louisville/Jefferson County MSA,AgriNovus,Animal Production and Aquaculture,112000,5,5.8484235996868446,4.726371070322085,0.8081444494846715,576.586653155
 00,000,31140,Louisville/Jefferson County MSA,AgriNovus,Farm and Garden Machinery and Equipment Merchant Wholesalers,423820,5,6.341703321937957,5.421413891975021,0.8548829260461674,572.732187458
@@ -721,6 +721,7 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,31140,Louisville/Jefferson County MSA,TechPoint,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,423430,5,0.9595058039306091,8.774844353543093,9.14517068849089,1073.86586162
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,5,10.09225386871047,8.406810913676898,0.8329963775228607,272.14726175830003
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,4231,5,11.480811294658873,10.34817970760614,0.9013456838560131,176.1569699014
+00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,9.470417388709556,9.056601678780305,0.956304385229885,167.91234280125
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,Animal Slaughtering and Processing,3116,5,6.824013768790905,6.796013414953493,0.9958967911281966,109.250000109108
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,5,15.494924422222564,16.17895742564807,1.044145617286424,153.498960126426
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,Beverage Manufacturing,3121,5,17.236359638697387,19.699185722254835,1.1428855126710256,113.03815678953
@@ -728,7 +729,6 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,Bakeries and Tortilla Manufacturing,3118,5,9.381593341242958,13.437851128979784,1.4323634206041398,1379.583330892
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,Rail Transportation,4821,5,1.7036554799889436,2.4689488964083273,1.4492066767069303,489.848185811
 00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,5,2.8643044265069073,4.629521293523335,1.6162811643485657,111.75159649917
-00,000,33140,Michigan City-La Porte MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,11,198.77804266915962,339.6980545240374,1.7089314793657615,167.91234280125
 00,000,33140,Michigan City-La Porte MSA,AgriNovus,Poultry Processing,311615,5,8.465858678439668,8.571497711257225,1.01247824193978,108.430684136
 00,000,33140,Michigan City-La Porte MSA,AgriNovus,Breweries,312120,5,38.98398835044018,50.584904929391996,1.297581573097839,102.586056067
 00,000,33140,Michigan City-La Porte MSA,AgriNovus,Cookie and Cracker Manufacturing,311821,5,16.65083091773102,22.29365877161468,1.3388916674347322,680.394569444
@@ -764,9 +764,9 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,34620,Muncie MSA,Advanced & Traded Industries,Management of Companies and Enterprises,5511,5,2.6135641172398127,3.2300194449363575,1.235867688735941,349.73213535270105
 00,000,34620,Muncie MSA,Advanced & Traded Industries,"Agencies, Brokerages, and Other Insurance Related Activities",5242,5,7.296909551856072,13.966421581457421,1.9140187338494368,239.44253749048
 00,000,34620,Muncie MSA,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,5,4.196977555811022,8.146932433992209,1.9411427213167216,191.548280688693
-00,000,34620,Muncie MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,11,2615.280999309891,5110.047319516519,1.9539190323582576,134.112342383752
 00,000,34620,Muncie MSA,Advanced & Traded Industries,Grocery and Related Product Merchant Wholesalers,4244,5,5.404688590235901,14.214696720949359,2.630067668769964,101.39862328246002
 00,000,34620,Muncie MSA,Advanced & Traded Industries,Couriers and Express Delivery Services,4921,5,4.943192008315935,13.433422506692505,2.717560330267052,164.601777487
+00,000,34620,Muncie MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,6.347327427914314,17.923503654938244,2.823787469370834,134.112342383752
 00,000,34620,Muncie MSA,Advanced & Traded Industries,Plastics Product Manufacturing,3261,5,3.431123362952439,11.693634542710672,3.4081067060930286,268.4971338932
 00,000,34620,Muncie MSA,Conexus - Logistics,"Machinery, Equipment, and Supplies Merchant Wholesalers",4238,5,11.159955815153115,12.414372200569538,1.112403346948127,231.46970027618997
 00,000,34620,Muncie MSA,Conexus - Logistics,Grocery and Related Product Merchant Wholesalers,4244,5,5.404688590235895,14.214696720949375,2.63006766876997,101.39862328246
@@ -794,10 +794,10 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 00,000,34620,Muncie MSA,TechPoint,Computer Facilities Management Services,541513,5,6.03350770013074,11.041496966268314,1.8300294811969917,404.965735818
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,Miscellaneous Durable Goods Merchant Wholesalers,4239,5,4.9591205645267955,4.507222722748588,0.9088754072625923,203.03628884582
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,Computer Systems Design and Related Services,5415,5,8.485625924779686,9.01215265204472,1.0620492503360859,879.7980809501
-00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,11,1019.4091353878144,1135.5459055962035,1.1139255733314644,727.70764743542
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,Lumber and Other Construction Materials Merchant Wholesalers,4233,5,11.752877745699594,13.308118285367115,1.1323284878238937,288.5247855841
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,5,4.6805616291313745,5.725002766074238,1.2231444043899262,1169.7866284589652
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,"Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services",5182,5,22.324398235570612,29.627010015941227,1.3271134882702007,330.166666667
+00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,6.789657435539669,9.398658658318121,1.3842610982288943,727.70764743542
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,"Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing",3334,5,16.7159649984422,24.14016977242548,1.444138569007243,138.866890778
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,"Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers",4237,5,2.4050055288178496,3.616163721920567,1.5035989225763016,199.6381734292
 00,000,43780,South Bend-Mishawaka MSA,Advanced & Traded Industries,Dairy Product Manufacturing,3115,5,519.0808875412808,801.6656019093797,1.5443943731132381,134.1477383701
@@ -904,9 +904,9 @@ statefips,countyfips,metrofips,geo_area,initiative,naics_title,naics_code,n_year
 18,000,00000,Indiana,Advanced & Traded Industries,"Architectural, Engineering, and Related Services",5413,5,3.436824024758609,2.091476339185132,0.6085491500636347,24342.3465061067
 18,000,00000,Indiana,Advanced & Traded Industries,Drugs and Druggists' Sundries Merchant Wholesalers,4242,5,4.4760434687917305,2.7309165330370004,0.6101184119586283,4088.68535807
 18,000,00000,Indiana,Advanced & Traded Industries,Other Investment Pools and Funds,5259,5,25.09917609062592,16.21763132145632,0.6461419794378552,177.0868776871
+18,000,00000,Indiana,Advanced & Traded Industries,"Management, Scientific, and Technical Consulting Services",5416,5,7.87161882127095,5.877209886267649,0.7466329378635634,23375.97067064
 18,000,00000,Indiana,Advanced & Traded Industries,"Other Professional, Scientific, and Technical Services",5419,5,3.8583766140306897,3.1197558013464697,0.8085669475607222,14507.66348198
 18,000,00000,Indiana,Advanced & Traded Industries,Cement and Concrete Product Manufacturing,3273,5,2.2668370667709214,2.0879989635988356,0.9211067677542267,4511.910264954
-18,000,00000,Indiana,Advanced & Traded Industries,Professional and Commercial Equipment and Supplies Merchant Wholesalers,4234,5,4.7486914037335914,4.559522626535514,0.960164019702492,16102.71010344
 18,000,00000,Indiana,AgriNovus,Confectionery Merchant Wholesalers,424450,5,1.8519576943257388,0.8137947931618729,0.43942407305268355,1039.37251426
 18,000,00000,Indiana,AgriNovus,Crop Production,111000,5,2.2457701598298208,0.9901575246085575,0.4408988694923212,7314.91666124
 18,000,00000,Indiana,AgriNovus,Perishable Prepared Food Manufacturing,311991,5,9.433582909758806,6.265078029660716,0.6641249766490788,1467.24999814

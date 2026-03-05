@@ -220,6 +220,40 @@ gdp_data <- split_conexus(gdp_data)
 cat(sprintf("After Conexus split: %d jobs records, %d wage records, %d GDP records\n",
             nrow(jobs_data), nrow(wage_data), nrow(gdp_data)))
 
+# DEDUPLICATE: Some NAICS codes appear in multiple sector groupings within the
+# same initiative at the same display level (e.g., NAICS 5416 appears in both
+# the Logistics and Advanced and Traded Services sectors of ATI). When this
+# happens, keep only the sector grouping with the highest employment, which is
+# the more representative observation. Applying this before growth calculations
+# prevents artificially inflated or deflated year-over-year changes.
+
+cat("Deduplicating NAICS codes across sector groupings...\n")
+
+n_jobs_before <- nrow(jobs_data)
+
+preferred_sector_key <- jobs_data %>%
+  group_by(statefips, countyfips, metrofips, geo_area,
+           initiative, naics_code, naics_title, year, display_level) %>%
+  slice_max(jobs, n = 1, with_ties = FALSE) %>%
+  ungroup() %>%
+  select(statefips, countyfips, metrofips, geo_area,
+         initiative, naics_code, naics_title, year, display_level, sector)
+
+jobs_data <- jobs_data %>%
+  semi_join(preferred_sector_key,
+            by = c("statefips", "countyfips", "metrofips", "geo_area",
+                   "initiative", "naics_code", "naics_title", "year",
+                   "display_level", "sector"))
+
+wage_data <- wage_data %>%
+  semi_join(preferred_sector_key,
+            by = c("statefips", "countyfips", "metrofips", "geo_area",
+                   "initiative", "naics_code", "naics_title", "year",
+                   "display_level", "sector"))
+
+cat(sprintf("Removed %d duplicate sector entries from jobs_data\n",
+            n_jobs_before - nrow(jobs_data)))
+
 # DATA PREPARATION ------------------------------------------------------------
 
 cat("Preparing data for analysis...\n")
@@ -701,8 +735,15 @@ industry_growth_contrib <- jobs_growth %>%
          !is.na(yoy_change)) %>%
   group_by(initiative, statefips, countyfips, metrofips, geo_area, year) %>%
   mutate(
-    total_init_change = sum(yoy_change, na.rm = TRUE),
-    contribution_pct = (yoy_change / abs(total_init_change)) * 100
+    total_positive_change = sum(yoy_change[yoy_change > 0], na.rm = TRUE),
+    # Express each industry's change as % of total positive growth in the initiative.
+    # Using gross gains (not net) as the denominator keeps values bounded and
+    # interpretable: positive contributors sum to 100%, negatives are negative %.
+    contribution_pct = if_else(
+      total_positive_change > 0,
+      (yoy_change / total_positive_change) * 100,
+      0
+    )
   ) %>%
   arrange(desc(abs(yoy_change))) %>%
   slice_head(n = 15) %>%
@@ -762,15 +803,22 @@ cat("\nWage Distribution by Initiative and Geography:\n")
 print(industry_wage_dist)
 
 # High-wage vs low-wage industries within initiatives
-wage_extremes_by_init <- wage_data %>%
+# Use 3-year median wage to smooth single-year anomalies in small industries
+# (e.g., R&D in Biotechnology spiked to $629K in 2024 from ~$165K historically).
+wage_smoothed_for_extremes <- wage_data %>%
   filter_naics_detail() %>%
-  filter(year == recent_year,
+  filter(year >= (recent_year - 2), year <= recent_year,
          initiative != "Total Employment",
          naics_code != "000000",
-         !is.na(wages)) %>%
-  # Remove any duplicate rows before joining
-  distinct(statefips, countyfips, metrofips, geo_area, initiative, 
+         !is.na(wages), wages > 0) %>%
+  distinct(statefips, countyfips, metrofips, geo_area, initiative,
            naics_code, naics_title, year, .keep_all = TRUE) %>%
+  group_by(statefips, countyfips, metrofips, geo_area, initiative,
+           naics_code, naics_title) %>%
+  summarise(wages = median(wages, na.rm = TRUE), .groups = "drop") %>%
+  mutate(year = recent_year)
+
+wage_extremes_by_init <- wage_smoothed_for_extremes %>%
   left_join(
     jobs_data %>%
       filter_naics_detail() %>%

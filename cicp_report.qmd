@@ -1351,10 +1351,10 @@ top_contributors <- industry_growth_contrib %>%
   ungroup() %>%
   mutate(
     `Job Change` = comma(round(yoy_change, 0)),
-    `% of Initiative Growth` = sprintf("%.1f%%", contribution_pct)
+    `% of Job Gains` = sprintf("%.1f%%", contribution_pct)
   ) %>%
-  select(Initiative = initiative, Industry = naics_title, 
-         `Job Change`, `% of Initiative Growth`) %>%
+  select(Initiative = initiative, Industry = naics_title,
+         `Job Change`, `% of Job Gains`) %>%
   arrange(Initiative, desc(as.numeric(gsub(",", "", `Job Change`))))
 
 create_table(top_contributors)
@@ -1404,6 +1404,13 @@ wage_extremes_display <- wage_extremes_by_init %>%
 
 create_table(wage_extremes_display)
 ```
+
+::: {.callout-note icon="false"}
+## 📋 Data Note
+
+Industry wages are sourced from Lightcast and reflect average annual wages for workers in that NAICS industry. In isolated cases, wages for a specific industry-geography combination may appear anomalous (e.g., very high wages for small-employment industries like **Research and Development in Biotechnology** in 2024) due to small sample sizes or data revisions in the underlying source. These figures have been flagged for verification with Lightcast.
+
+:::
 
 ::: {.callout-important icon="false"}
 ## 🎯 Strategic Implications
@@ -1834,6 +1841,22 @@ create_table(stem_display, striped = TRUE)
 - Trends over time show whether initiatives are becoming **more technology-driven**
 
 :::
+
+::: {.callout-note icon="false"}
+## 📋 Data Notes
+
+**Total Jobs figures** in this table come from Lightcast's occupation-based talent demand dataset, which uses a modeled allocation of workers across occupations and industries. These estimates may differ from the payroll employment counts shown in earlier sections (which are derived from QCEW-based industry data). The **STEM %** column is internally consistent within each row and is the most reliable metric for cross-initiative comparison.
+
+**Conexus — Manufacturing** and **Conexus — Logistics** are split using Standard Occupational Classification (SOC) codes. Because the occupation-level data reports total Conexus employment by occupation without distinguishing which industry a worker is employed in, the split is based on whether an occupation is primarily associated with logistics or manufacturing work.
+
+**Conexus — Logistics** includes all SOC 53 occupations (Transportation and Material Moving) plus selected SOC 43-5xxx, 11-3xxx, and 13-1xxx codes directly tied to logistics operations. Examples: Heavy and Tractor-Trailer Truck Drivers (53-3032), Industrial Truck and Tractor Operators (53-7051), Laborers and Freight, Stock, and Material Movers (53-7062), Shipping, Receiving, and Inventory Clerks (43-5071), Stock Clerks and Order Fillers (43-5081), Cargo and Freight Agents (43-5011), Transportation, Storage, and Distribution Managers (11-3071), and Logisticians (13-1081).
+
+**Conexus — Manufacturing** includes all remaining Conexus occupations. Examples: Miscellaneous Assemblers and Fabricators (51-2098), First-Line Supervisors of Production and Operating Workers (51-1011), Welders, Cutters, Solderers, and Brazers (51-4121), Industrial Engineers (17-2112), and Sales Representatives, Wholesale and Manufacturing (41-4012).
+
+As a consequence of this SOC-based split, **STEM workers appear only under Conexus — Manufacturing**. STEM occupations such as engineers, data scientists, and operations research analysts are classified by their occupation type — not by which industry employs them — so STEM roles embedded within logistics firms (e.g., a supply chain engineer at a trucking company) are captured under Conexus — Manufacturing rather than Conexus — Logistics. The 0 STEM figure for Conexus — Logistics reflects this methodological constraint, not an absence of technical talent in Indiana's logistics sector.
+
+:::
+
 
 ## TECH Workforce Analysis
 

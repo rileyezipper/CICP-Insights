@@ -154,13 +154,15 @@
         <div class="report-card">
             <h3>Indiana Advanced Industries Dashboard <span class="badge-new">LATEST</span></h3>
             <div class="report-meta">
-                <strong>Last Updated:</strong> February 26, 2026 |
+                <strong>Last Updated:</strong> March 5, 2026 |
                 <strong>Data Period:</strong> 2007-2024
             </div>
             <div class="report-description">
                 <p>Comprehensive analysis of employment, wages, and economic growth across Indiana's eight advanced industry initiatives: Advanced & Traded Industries, AgriNovus, BioCrossroads, Conexus - Manufacturing, Conexus - Logistics, TechPoint, Finance & Insurance, and Healthcare.</p>
-                <p><strong>What's new in this version:</strong></p>
+                <p><strong>What's new in this version (March 5, 2026):</strong></p>
                 <ul>
+                    <li><strong>Data quality fixes in §7.3 and §7.4</strong> — corrected duplicate NAICS entry causing anomalous wages; fixed contribution percentage denominator to use gross job gains; industry wages now use a 3-year median to smooth single-year anomalies</li>
+                    <li><strong>Conexus – Logistics STEM occupations</strong> — logistics-relevant STEM roles (Operations Research Analysts, Civil Engineers, Industrial Engineers) now correctly assigned to Conexus – Logistics in §9.3</li>
                     <li><strong>Conexus split into two initiatives</strong> — Manufacturing and Logistics are now tracked separately, bringing the total to eight initiatives</li>
                     <li><strong>New Indiana statewide location quotient section</strong> — shows which initiatives Indiana specializes in relative to the US average</li>
                     <li>Improved analysis accuracy: projection years are now explicitly excluded from volatility and trend calculations</li>
@@ -271,7 +273,7 @@
             </div>
             <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
             <p style="text-align: center; margin: 0; opacity: 0.8;">
-                Generated using R, Quarto, and the tidyverse ecosystem | Last updated: February 26, 2026
+                Generated using R, Quarto, and the tidyverse ecosystem | Last updated: March 5, 2026
             </p>
         </div>
     </footer>
