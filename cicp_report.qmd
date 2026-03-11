@@ -95,7 +95,8 @@ create_table <- function(df, title = NULL, striped = TRUE) {
       position = "left",
       font_size = 13
     ) %>%
-    row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
+    row_spec(0, bold = TRUE, background = "#f8f9fa",
+             extra_css = "position: sticky; top: 0; z-index: 3;") %>%
     as.character() %>%
     htmltools::HTML()
 }
@@ -187,11 +188,19 @@ as.numeric(wage_premium)
 ```
 :::
 
+::: {.callout-note icon="false" appearance="simple"}
+**Viewing tip:** Some interactive visualizations are best viewed with your browser zoomed to **80%** (use Ctrl/Cmd + scroll, or View → Zoom Out).
+:::
+
+::: {.callout-note icon="false" appearance="simple"}
+**Year-over-year changes** throughout this report refer to **`r recent_year - 1`–`r recent_year`** unless otherwise noted.
+:::
+
 # Indiana State Performance {#sec-indiana}
 
 ## Employment Overview
 
-Indiana's advanced industries form a diverse ecosystem spanning manufacturing, life sciences, agriculture innovation, energy/logistics, and technology. Understanding the employment composition across these initiatives is fundamental to assessing the state's economic strengths.
+Indiana's advanced industries are a diverse ecosystem spanning manufacturing, logistics, life sciences, agriculture innovation, and technology. Understanding the employment composition across these initiatives is fundamental to assessing the state's economic strengths.
 
 ```{r indiana_employment_table}
 #| tbl-cap: "Indiana Employment by Initiative"
@@ -231,13 +240,13 @@ indiana_jobs <- jobs_data %>%
   mutate(
     `Total Jobs` = scales::comma(round(jobs, 0)),
     `Share of Total Employment` = sprintf("%.1f%%", (jobs / total_employment) * 100),
-    `3-Yr CAGR` = sprintf("%.1f%%", cagr_2yr)
+    `2-Yr CAGR` = sprintf("%.2f%%", cagr_2yr)
   ) %>%
   select(
     Initiative = initiative, 
     `Total Jobs`,
     `Share of Total Employment`, 
-    `3-Yr CAGR`
+    `2-Yr CAGR`
   )
 
 # This function should now receive a correctly formed data frame
@@ -256,7 +265,7 @@ knitr::include_url(file.path(viz_path, "01_indiana_jobs_by_initiative.html"), he
 ::: {.callout-note icon="false"}
 ## 💡 Analysis
 
-The employment distribution reveals Indiana's **manufacturing heritage** alongside emerging sectors. The dominance of traditional advanced industries reflects decades of industrial investment, while smaller but growing initiatives in life sciences and technology represent strategic diversification efforts. This portfolio approach provides economic resilience while positioning Indiana for future growth in high-value sectors.
+The employment distribution reveals Indiana's **manufacturing heritage** alongside emerging sectors. The dominance of traditional advanced industries reflects decades of industrial investment, while smaller but growing initiatives in life sciences and technology represent strategic diversification efforts. 
 :::
 
 ## Growth Dynamics
@@ -302,7 +311,7 @@ knitr::include_url(file.path(viz_path, "02_indiana_growth_by_initiative.html"), 
 
 ## Wage Analysis & Economic Value
 
-Wage levels reflect the economic value and skill requirements of the advanced industry sectors. Higher wages typically correlate with greater worker productivity, advanced skills, and capital intensity.
+Wages reflect human talent in advanced industry sectors. Higher wages typically correlate with greater worker productivity, advanced skills, and capital intensity. Workers in advanced industries earn higher wages than the state average. 
 
 ```{r indiana_wage_table}
 #| tbl-cap: "Indiana Average Annual Wages by Initiative"
@@ -312,28 +321,47 @@ avg_state_wage <- wage_data %>%
          geo_area == "Indiana", initiative == "Total Employment") %>%
   pull(wages)
 
-indiana_wages <- wage_data %>%
-  filter(display_level == 0, year == recent_year, 
+indiana_wages_base <- wage_data %>%
+  filter(display_level == 0, year == recent_year,
          geo_area == "Indiana", initiative != "Total Employment",
          !is.na(wages)) %>%
   left_join(
     jobs_data %>%
-      filter(display_level == 0, year == recent_year, 
+      filter(display_level == 0, year == recent_year,
              geo_area == "Indiana") %>%
       select(initiative, jobs),
     by = "initiative"
   ) %>%
-  arrange(desc(wages)) %>%
+  arrange(desc(wages))
+
+# Light-to-dark blue gradient for vs. State Avg (light = near average, dark = far above)
+vs_ratio <- (indiana_wages_base$wages - avg_state_wage) / avg_state_wage
+vs_norm  <- (vs_ratio - min(vs_ratio)) / (max(vs_ratio) - min(vs_ratio))
+blue_pal <- colorRampPalette(c("#dbeafe", "#1565C0"))(100)
+col_bg   <- blue_pal[pmax(1, ceiling(vs_norm * 99) + 1)]
+col_text <- ifelse(vs_norm > 0.5, "white", "black")
+
+indiana_wages <- indiana_wages_base %>%
   mutate(
     `Average Wage` = dollar(wages, accuracy = 1),
     `vs. State Avg` = sprintf("%+.0f%%", ((wages - avg_state_wage) / avg_state_wage) * 100),
     `Total Jobs` = comma(round(jobs, 0)),
     `Total Payroll` = dollar((wages * jobs) / 1e9, accuracy = 0.1, suffix = "B")
   ) %>%
-  select(Initiative = initiative, `Average Wage`, `vs. State Avg`, 
+  select(Initiative = initiative, `Average Wage`, `vs. State Avg`,
          `Total Jobs`, `Total Payroll`)
 
-create_table(indiana_wages)
+indiana_wages %>%
+  kable(format = "html", escape = FALSE, align = "l") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = FALSE, position = "left", font_size = 13
+  ) %>%
+  row_spec(0, bold = TRUE, background = "#f8f9fa",
+           extra_css = "position: sticky; top: 0; z-index: 3;") %>%
+  column_spec(3, background = col_bg, color = col_text, bold = TRUE) %>%
+  as.character() %>%
+  htmltools::HTML()
 ```
 
 
@@ -364,7 +392,18 @@ wage_percentiles <- wage_data %>%
   ) %>%
   arrange(desc(Median))
 
-create_table(wage_percentiles)
+wage_percentiles %>%
+  kable(format = "html", escape = FALSE, align = "l") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = FALSE, position = "left", font_size = 13
+  ) %>%
+  row_spec(0, bold = TRUE, background = "#f8f9fa",
+           extra_css = "position: sticky; top: 0; z-index: 3;") %>%
+  column_spec(1, extra_css = "position: sticky; left: 0; background-color: white; z-index: 2;") %>%
+  scroll_box(width = "100%") %>%
+  as.character() %>%
+  htmltools::HTML()
 ```
 
 ```{r in_us_wage_comparison}
@@ -386,6 +425,14 @@ wage_comparison <- wage_data %>%
   arrange(desc(`Indiana`)) %>%  # And here
   select(Initiative = initiative, `Indiana Wage`, `US Wage`, 
          `Difference`, `% Difference`, Gap)
+
+wage_comparison <- wage_comparison %>%
+  mutate(Gap = cell_spec(
+    Gap,
+    background = ifelse(Gap == "Below", "#fecaca", "#bbf7d0"),
+    bold = TRUE,
+    color = "black"
+  ))
 
 create_table(wage_comparison)
 ```
@@ -458,7 +505,19 @@ time_change <- indiana_change %>%
          `US Starting Employment`, `US Current Employment`,
          `US Change`, `US % Change`)
 
-create_table(time_change)
+time_change %>%
+  kable(format = "html", escape = FALSE, align = "l") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = FALSE, position = "left", font_size = 13
+  ) %>%
+  row_spec(0, bold = TRUE, background = "#f8f9fa",
+           extra_css = "position: sticky; top: 0; z-index: 3;") %>%
+  column_spec(1, extra_css = "position: sticky; left: 0; background-color: white; z-index: 2;") %>%
+  column_spec(c(6, 10), background = "#dbeafe") %>%
+  scroll_box(width = "100%") %>%
+  as.character() %>%
+  htmltools::HTML()
 ```
 
 ```{r}
@@ -553,7 +612,7 @@ bio$std_dev, bio$mean_growth
 Advanced industry employment is not uniformly distributed across Indiana. Metro areas vary significantly in their industrial composition, scale, and specialization patterns.
 
 ```{r metro_employment_table}
-#| tbl-cap: "Employment by Initiative, Indiana and Metros, 2023"
+#| tbl-cap: !expr paste0("Employment by Initiative, Indiana and Metros, ", recent_year)
 
 # Get total employment for each geography
 total_employment <- jobs_data %>%
@@ -596,9 +655,11 @@ all_metros_initiatives %>%
     position = "left",
     font_size = 13
   ) %>%
-  row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
+  row_spec(0, bold = TRUE, background = "#f8f9fa",
+           extra_css = "position: sticky; top: 0; z-index: 3;") %>%
   row_spec(1, bold = TRUE, background = "#e3f2fd") %>%  # Highlight Indiana row
-  scroll_box(height = "500px") %>%
+  column_spec(1, extra_css = "position: sticky; left: 0; background-color: white; z-index: 2;") %>%
+  scroll_box(height = "500px", width = "100%") %>%
   as.character() %>%
   htmltools::HTML()
 
@@ -1308,6 +1369,10 @@ Understanding concentration patterns helps **prioritize resources**, **design in
 ## Growth Contributors: Which Industries Drive Change?
 
 Not all industries contribute equally to initiative employment growth. Identifying the **specific industries** responsible for gains or losses enables **targeted policy interventions** and **resource allocation**.
+
+::: {.callout-note icon="false" appearance="simple"}
+Growth figures in the chart and table below reflect **year-over-year employment change from `r recent_year - 1` to `r recent_year`**.
+:::
 
 ::: column-page
 ```{r growth_contributors_viz, fig.height=14}
