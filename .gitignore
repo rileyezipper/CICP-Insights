@@ -9,6 +9,11 @@ CICP_20250709/
 CICP_20251031/
 CICP_20260212/
 
+# Old output folders
+outputs_20250709/
+outputs_20251031/
+outputs_occupation_20250709/
+
 # Build artifacts: Plotly widget dependency folders
 outputs_*/visualizations/*_files/
 !outputs_*/visualizations/09b_indiana_statewide_lq_files/
